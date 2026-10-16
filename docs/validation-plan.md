@@ -11,7 +11,7 @@ values. A source import or a zero-test result does not validate a board.
 | Motor | Original PDF/STEP hashes, drawing review, measured STEP bounds and lead exit | Blocked by motor host network policy |
 | Feature parity | Reference-to-NEMA11 physical pins, nets, values and DNP matrix | Not run; exact baseline missing |
 | Electrical | Actual driver current bounds, shunt derating, hot losses, power/ADC/PG review | Preliminary conditional calculation only |
-| Source | Frozen dependency install, TypeScript, native source/netlist/pin checks | v1.12.0 reference copy typecheck and unrouted source render passed; NEMA11 not run |
+| Source | Frozen dependency install, TypeScript, native source/netlist/pin checks | NEMA11 MCU subsystem render, strict schema, physical-pin contract and 10 tests pass; full controller pending |
 | Schematic | Function groups, connected symbol pins, net labels, ERC and inspected A4 PDF | Not run; no NEMA11 schematic |
 | PCB | DRC, all intended physical nets, pad identity and no unintended copper | Not run; no NEMA11 PCB |
 | Layout | Short top-layer crystal signals, ground return/reference, decoupling, thermal and every-trace widths | Not run |
@@ -32,6 +32,8 @@ values. A source import or a zero-test result does not validate a board.
    verified supplier imports and attachment/placement decision.
 3. Commit the connected schematic, A4 PDF, native circuit source and reviewed
    current/thermal values after source/ERC checks.
+   The independent RP2040 subsystem source milestone is now implemented;
+   its scope and outstanding full-controller checks are documented separately.
 4. Commit routed PCB, native assembly, exact BOM/CPL/Gerbers and full current
    check receipts after routing/CAM/assembly review. Publish only the qualified
    prototype content to the separate NEMA11 tscircuit package.

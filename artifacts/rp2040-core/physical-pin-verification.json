@@ -1,0 +1,8 @@
+{
+  "scope": "physical-pin subsystem contract; full-board ERC/DRC not run",
+  "circuit_sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "passed": true,
+  "errors": [],
+  "native_ports_checked": 119,
+  "manufacturing_release": false
+}

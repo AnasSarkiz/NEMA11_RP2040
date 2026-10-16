@@ -10,6 +10,9 @@ cd "$project_root/tools/pcb"
 npm ci --legacy-peer-deps --cache /workspace/.cache/npm --no-audit --no-fund
 # npm omits its registry integrity check for this locked Git dependency.
 sha256sum --check trace-linter.sha256
+if [ ! -e "$project_root/node_modules" ] && [ ! -L "$project_root/node_modules" ]; then
+  ln -s tools/pcb/node_modules "$project_root/node_modules"
+fi
 export UV_CACHE_DIR=/workspace/.cache/uv
 uv venv --python python3 --allow-existing /workspace/.venvs/nema11-cad
 uv pip install \

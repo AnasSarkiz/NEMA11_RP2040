@@ -1,0 +1,13 @@
+{
+  "name": "NEMA11_RP2040",
+  "version": "0.1.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "NEMA11 controller development; subsystem milestones are not a fabrication release",
+  "scripts": {
+    "core:build": "bun scripts/build-core.tsx",
+    "core:check": "python3 scripts/verify_core.py",
+    "typecheck": "tsc --noEmit",
+    "test": "python3 -m unittest discover -s tests -v"
+  }
+}

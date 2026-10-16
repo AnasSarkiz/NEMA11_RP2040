@@ -1,0 +1,204 @@
+{
+  "scope": "reused_cached_supplier_imports_not_fresh_imports",
+  "reference_repository": "AnasSarkiz/NEMA14_RP2040",
+  "reference_commit": "596a8b8a5187dfd60924de4b8ac0c93e13d99680",
+  "reference_version": "1.12.0",
+  "requested_v1_13_parity_verified": false,
+  "files": [
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.obj",
+      "reference_sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7",
+      "sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7"
+    },
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.step",
+      "reference_sha256": "55aee3da5b1518e84230f692ed298823bc71771ac97e871a21b265f0b4f8232b",
+      "sha256": "55aee3da5b1518e84230f692ed298823bc71771ac97e871a21b265f0b4f8232b"
+    },
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.tsx",
+      "reference_sha256": "65c662ea99b04db7b7de0166dfddbdb6546a0281ef969d73b0ab5180d709e02f",
+      "sha256": "65c662ea99b04db7b7de0166dfddbdb6546a0281ef969d73b0ab5180d709e02f"
+    },
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.tsx.original",
+      "reference_sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6",
+      "sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6"
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "reference_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "reference_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "reference_sha256": "9e514488b30352dd8c9432a9e44d176c2ac46c99e0f315146a3ea30bc734c81c",
+      "sha256": "9e514488b30352dd8c9432a9e44d176c2ac46c99e0f315146a3ea30bc734c81c"
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.tsx.original",
+      "reference_sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f",
+      "sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "reference_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "reference_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "reference_sha256": "8ac051ab2b4b1c1ad29fc4a913dcc2165a8bc2f18262f4f07a925144f8b53830",
+      "sha256": "8ac051ab2b4b1c1ad29fc4a913dcc2165a8bc2f18262f4f07a925144f8b53830"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx.original",
+      "reference_sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1",
+      "sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "reference_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "reference_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "reference_sha256": "59b7650d81a8dd5af397ce05a9b14dabc47965120ce092f5d80b1a92bdaf17c2",
+      "sha256": "59b7650d81a8dd5af397ce05a9b14dabc47965120ce092f5d80b1a92bdaf17c2"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx.original",
+      "reference_sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8",
+      "sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "reference_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "reference_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "reference_sha256": "1f64bb0f8f78bbb24cc9cce22c0e6c81394ceed4c2e230c28887b3ea8b30ad95",
+      "sha256": "1f64bb0f8f78bbb24cc9cce22c0e6c81394ceed4c2e230c28887b3ea8b30ad95"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx.original",
+      "reference_sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803",
+      "sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803"
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "reference_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+      "reference_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "reference_sha256": "0679f0730654c8359178c4fddf6e50a821b8b0d01db8eb27fc17161ee1882cff",
+      "sha256": "0679f0730654c8359178c4fddf6e50a821b8b0d01db8eb27fc17161ee1882cff"
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx.original",
+      "reference_sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a",
+      "sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a"
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "reference_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "reference_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "reference_sha256": "908faed6319042fda5ae9fd90f269385d3a41fe0bc1762fc0d1c79c83f93f47e",
+      "sha256": "908faed6319042fda5ae9fd90f269385d3a41fe0bc1762fc0d1c79c83f93f47e"
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx.original",
+      "reference_sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8",
+      "sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8"
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "reference_sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
+      "sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed"
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "reference_sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20",
+      "sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20"
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "reference_sha256": "5aefd61950b7f3ae45cb9fe09868b9ca6820437d890545d6bfe607bc633f9e1f",
+      "sha256": "5aefd61950b7f3ae45cb9fe09868b9ca6820437d890545d6bfe607bc633f9e1f"
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.tsx.original",
+      "reference_sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd",
+      "sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd"
+    },
+    {
+      "path": "imports/supplier/RP2040/RP2040.obj",
+      "reference_sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e",
+      "sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e"
+    },
+    {
+      "path": "imports/supplier/RP2040/RP2040.step",
+      "reference_sha256": "174a866c06fe9b824f197259a77cb3b39625ba986ddd7214fb32f0d873eb4bbd",
+      "sha256": "174a866c06fe9b824f197259a77cb3b39625ba986ddd7214fb32f0d873eb4bbd"
+    },
+    {
+      "path": "imports/supplier/RP2040/RP2040.tsx",
+      "reference_sha256": "6c7d0a81afe52686bf5e04f883a2716cd11494cf9ec6fd9e8e442ad4578ed378",
+      "sha256": "6c7d0a81afe52686bf5e04f883a2716cd11494cf9ec6fd9e8e442ad4578ed378"
+    },
+    {
+      "path": "imports/supplier/RP2040/RP2040.tsx.original",
+      "reference_sha256": "72ada7e0fdea2889683e5142de8f933482d1118c3ebb6259d1b1294e9ab1a0d6",
+      "sha256": "72ada7e0fdea2889683e5142de8f933482d1118c3ebb6259d1b1294e9ab1a0d6"
+    },
+    {
+      "path": "references/manufacturer/RP2040.pdf",
+      "reference_sha256": "8ca7cede0476b9a7dcb4e5f7669e2dc249c55ea6f9782a63cdd0fae228580724",
+      "sha256": "8ca7cede0476b9a7dcb4e5f7669e2dc249c55ea6f9782a63cdd0fae228580724"
+    },
+    {
+      "path": "references/manufacturer/GD25Q16E.pdf",
+      "reference_sha256": "cde85a649968cd40df2421bbae92f25ab0c4033b88b3d05447822c79786eef6e",
+      "sha256": "cde85a649968cd40df2421bbae92f25ab0c4033b88b3d05447822c79786eef6e"
+    },
+    {
+      "path": "references/manufacturer/ABM8-272-T3.pdf",
+      "reference_sha256": "f4b5787cbc51e7f6366333491ec09884ad406dd348fe540040f0fc043ab5457f",
+      "sha256": "f4b5787cbc51e7f6366333491ec09884ad406dd348fe540040f0fc043ab5457f"
+    }
+  ]
+}

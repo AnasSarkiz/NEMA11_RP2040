@@ -1,0 +1,7 @@
+# Preserve supplier files byte-for-byte, including original CRLF and formatting.
+imports/supplier/** -text -whitespace
+imports/supplier/**/*.step binary
+imports/supplier/**/*.obj binary
+imports/supplier/**/*.tsx.original -diff
+*.pdf binary
+*.glb binary

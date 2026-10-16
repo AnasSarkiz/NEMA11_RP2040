@@ -1,0 +1,12 @@
+{
+  "scope": "RP2040 subsystem source and supplier CAD only; not a controller PCB",
+  "sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "source_components": 31,
+  "source_ports": 119,
+  "routed_traces": 0,
+  "bare_debug_pad_paste_records_removed": 7,
+  "native_render_errors": [],
+  "native_schema_errors": [],
+  "final_NEMA11_layout": false,
+  "manufacturing_release": false
+}

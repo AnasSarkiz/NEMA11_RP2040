@@ -1,0 +1,23 @@
+{
+  "scope": "RP2040 subsystem source milestone only",
+  "source_and_render_passed": true,
+  "strict_schema_passed": true,
+  "physical_pin_contract_passed": true,
+  "tests_passed": 10,
+  "supplier_files_unchanged": 39,
+  "files_sha256": {
+    "src/rp2040-core.tsx": "c6c1ac6903453b956f03ac3dbd1ed4710969b437d7ed9718cb1fbc152576dc2b",
+    "src/core-supplier-parts.tsx": "6e00555d75e08ec6ca01dd5d2571012b2a2f9d87e7bf5b0664b8cb3a3624f31c",
+    "src/core-placements.json": "b234fdc9fa2578eae87bce4e5cbdab8bb70635fb7e7c75df3be9ad9ee4dccf27",
+    "scripts/build-core.tsx": "584356729d5b5660f410c312ef74b384e171f96aa34df295d651c13db1511510",
+    "scripts/verify_core.py": "71140d13af06bc0fac00278cf83dbe853008bf1b6540b7cd078537fe3b0166f2",
+    "examples/rp2040-core.circuit.tsx": "4242f536eb53938a8b89debc5ee90cee2978c05c4e85e668ac602a0c26eb99a6",
+    "artifacts/rp2040-core/core.circuit.json": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+    "artifacts/rp2040-core/build-report.json": "857c68180a21af73007c51d0e3a1aece53b441e2576b455598153f39590da48c",
+    "artifacts/rp2040-core/schema-verification.json": "b9287fce31d26b007e1ebba801fd4fbbbfede550e1ce53e6da06e30647f5acc1",
+    "artifacts/rp2040-core/physical-pin-verification.json": "b930c6a76dc146883a3d8786e26e72a09c3e8de97b6959c19f4aa99babd8dc4c"
+  },
+  "requested_reference_v1_13_verified": false,
+  "final_layout_ERC_DRC_CAM_assembly": "NOT_RUN",
+  "fabrication_ready": false
+}

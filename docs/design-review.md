@@ -12,6 +12,9 @@ SHA-256 is `67820851170068eb092c3b611949ce67218b58f1049365fd317e8c1a513645e6`.
 The v1.12.0 source uses **CH224K**, not the requested **CH224A**. Its A4988,
 component inventory and pin nets are recorded only as inspection evidence.
 Do not copy that PD pin map or declare feature parity until v1.13.0 is read.
+The independently documented RP2040 subsystem can be developed and checked
+against its manufacturer documents while exact controller-baseline access is
+pending; its GPIO allocation remains subject to the v1.13.0 comparison.
 No files, branches or remote refs in NEMA14 have been modified.
 
 ## Motor and attachment
