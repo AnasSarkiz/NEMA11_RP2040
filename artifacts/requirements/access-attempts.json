@@ -1,0 +1,27 @@
+{
+  "observed_at_utc": "2026-10-16T21:45:23.273675+00:00",
+  "runtime_spec_revision": "1",
+  "runtime_custom_allowed_domains": [],
+  "native_cli_login": {
+    "command": "python3 scripts/tscircuit_login.py",
+    "exit_code": 1,
+    "status": "network_proxy_HTTP_403",
+    "authorization_url_issued": false
+  },
+  "jlcpcb_import": {
+    "part": "C2040",
+    "intended_mpn": "RP2040",
+    "command": "tsci import --jlcpcb --download --use-exact-footprint C2040",
+    "exit_code": 1,
+    "supplier_files_imported": false,
+    "diagnosis": "Destination access denied by active policy. CLI labels EasyEDA 403 as rate limit; not a stock conclusion."
+  },
+  "draft_network_additions": [
+    "jlcsearch.tscircuit.com",
+    "easyeda.com",
+    "modules.easyeda.com",
+    "modelcdn.tscircuit.com"
+  ],
+  "draft_applied_to_runtime": false,
+  "NEMA11_fabrication_ready": false
+}
