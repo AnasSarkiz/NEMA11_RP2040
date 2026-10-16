@@ -10,6 +10,11 @@
     "core:schematic": "python3 scripts/schematic_core.py && bun scripts/render-core.tsx && tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt && python3 scripts/verify_core_schematic.py && /workspace/.venvs/nema11-cad/bin/python scripts/export-core-pdf.py",
     "core:3d": "bun scripts/export-core-3d.tsx",
     "typecheck": "tsc --noEmit",
-    "test": "python3 -m unittest discover -s tests -v"
+    "test": "python3 -m unittest discover -s tests -v",
+    "pcb:route": "/workspace/.venvs/nema11-cad/bin/python scripts/route_core_pcb.py",
+    "pcb:check": "bun scripts/check-render-pcb.tsx && /workspace/.venvs/nema11-cad/bin/python scripts/audit_core_pcb.py && /workspace/.venvs/nema11-cad/bin/python scripts/audit_core_clock.py",
+    "pcb:3d": "bun scripts/export-core-3d.tsx --pcb",
+    "pcb:dev": "tsci dev artifacts/rp2040-pcb/board.circuit.json",
+    "pcb:test": "/workspace/.venvs/nema11-cad/bin/python -m unittest discover -s tests-pcb -v"
   }
 }

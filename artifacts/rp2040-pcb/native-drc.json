@@ -1,0 +1,274 @@
+{
+  "scope": "MCU subsystem only",
+  "tool": "@tscircuit/checks",
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "strict_schema_pass": true,
+  "reviewed_thermal_vias": [
+    "core_thermal_via_U_MCU"
+  ],
+  "errors": [
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO2] is not connected to net [LED_G] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_3"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_1"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO3] is not connected to net [LED_B] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_4"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_2"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO6] is not connected to net [STEP] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_7"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_3"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO7] is not connected to net [DIR] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_8"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_4"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO8] is not connected to net [ENABLE_N] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_10"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_6"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO9] is not connected to net [SLEEP] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_11"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_7"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO10] is not connected to net [PD_GOOD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_12"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_8"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO16] is not connected to net [BUZZER_PWM] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_26"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_17"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO25] is not connected to net [LED_R] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_36"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_19"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO26_ADC0] is not connected to net [TEMP_SDA] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_37"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_20"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO27_ADC1] is not connected to net [TEMP_SCL] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_38"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_21"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO28_ADC2] is not connected to net [VM_SENSE] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_39"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_22"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GPIO29_ADC3] is not connected to net [DATA_PRESENT] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_40"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_23"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [R_DM.pin2] is not connected to net [USB_DM] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_109"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_22"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_92"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [R_DP.pin2] is not connected to net [USB_DP] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_111"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_23"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_94"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "source_component_pins_underspecified_warning",
+      "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_source_component_17",
+      "warning_type": "source_component_pins_underspecified_warning",
+      "message": "All pins on Y_MCU are underspecified (no pinAttributes set)",
+      "source_component_id": "source_component_17",
+      "source_port_ids": [
+        "source_port_96",
+        "source_port_97",
+        "source_port_98",
+        "source_port_99"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_17",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Y_MCU has no pin with requires_power=true",
+      "source_component_id": "source_component_17",
+      "source_port_ids": [
+        "source_port_96",
+        "source_port_97",
+        "source_port_98",
+        "source_port_99"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_ground_pin_defined_warning",
+      "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_source_component_17",
+      "warning_type": "source_no_ground_pin_defined_warning",
+      "message": "Y_MCU has no pin with requires_ground=true",
+      "source_component_id": "source_component_17",
+      "source_port_ids": [
+        "source_port_96",
+        "source_port_97",
+        "source_port_98",
+        "source_port_99"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    }
+  ],
+  "expected_open_external_interfaces": {
+    "U_MCU.4": "LED_G",
+    "U_MCU.5": "LED_B",
+    "U_MCU.8": "STEP",
+    "U_MCU.9": "DIR",
+    "U_MCU.11": "ENABLE_N",
+    "U_MCU.12": "SLEEP",
+    "U_MCU.13": "PD_GOOD",
+    "U_MCU.27": "BUZZER_PWM",
+    "U_MCU.37": "LED_R",
+    "U_MCU.38": "TEMP_SDA",
+    "U_MCU.39": "TEMP_SCL",
+    "U_MCU.40": "VM_SENSE",
+    "U_MCU.41": "DATA_PRESENT",
+    "R_DM.2": "USB_DM",
+    "R_DP.2": "USB_DP"
+  },
+  "observed_expected_open_interfaces": [
+    "U_MCU.4",
+    "U_MCU.5",
+    "U_MCU.8",
+    "U_MCU.9",
+    "U_MCU.11",
+    "U_MCU.12",
+    "U_MCU.13",
+    "U_MCU.27",
+    "U_MCU.37",
+    "U_MCU.38",
+    "U_MCU.39",
+    "U_MCU.40",
+    "U_MCU.41",
+    "R_DM.2",
+    "R_DP.2"
+  ],
+  "unexpected_errors": [],
+  "missing_expected_open_interfaces": [],
+  "subsystem_internal_drc_pass": true,
+  "full_controller_drc_pass": false,
+  "manufacturing_release": false
+}

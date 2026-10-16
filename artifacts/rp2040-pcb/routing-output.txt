@@ -1,0 +1,129 @@
+{
+  "scope": "MCU subsystem PCB development candidate; full controller incomplete",
+  "board_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "source_sha256": "e9d974d645e2eeaf0c5ef1668dc039b8fb795c7803f882523c58382b77b00621",
+  "routing_seed_sha256": "bdb01a27d5cb866834f2f8f30b8578808f120b567b814ec3e587dff5c2b25fce",
+  "all_119_supplier_pad_poses_match_reference": true,
+  "counts": {
+    "pcb_via": 95,
+    "pcb_trace": 161,
+    "pcb_copper_pour": 4
+  },
+  "removed_absent_component_stubs": [
+    "core_review_baseline_review_baseline_freerouted_trace_148_run_0_run_0_via_clearance_run_0",
+    "core_review_baseline_review_baseline_freerouted_trace_196_run_0_run_0_via_clearance_run_0",
+    "core_reviewed_local_C_BUCK_OUT1_pin1",
+    "core_reviewed_local_C_BUZZER_pin1",
+    "core_reviewed_local_C_DRV_LOGIC_pin1",
+    "core_reviewed_local_C_TEMP_pin1",
+    "core_reviewed_local_D_BUZZER_cathode",
+    "core_reviewed_local_R_ENABLE_pin1",
+    "core_reviewed_local_R_REF_H_pin1",
+    "core_reviewed_local_R_TEMP_SCL_pin2",
+    "core_reviewed_local_R_TEMP_SDA_pin2",
+    "core_reviewed_local_U_DRV_VDD",
+    "core_reviewed_local_U_ENCODER_VDD3V3",
+    "core_reviewed_local_U_ENCODER_VDD5V",
+    "core_reviewed_local_U_TEMP_V_POS",
+    "core_reviewed_local_driver_mode_MS2_MS3",
+    "core_reviewed_local_driver_mode_MS3_RESET_N",
+    "core_same_side_repair_0_V3V3_0_rerouted_layer_section_0",
+    "core_same_side_repair_10_V3V3_10",
+    "core_same_side_repair_1_V3V3_0",
+    "core_same_side_repair_1_V3V3_1",
+    "core_same_side_repair_1_V3V3_1_rerouted",
+    "core_same_side_repair_2_V3V3_1",
+    "core_same_side_repair_2_V3V3_2",
+    "core_same_side_repair_37_V3V3_8",
+    "core_same_side_repair_39_V3V3_10",
+    "core_same_side_repair_3_V3V3_3",
+    "core_same_side_repair_42_V3V3_13",
+    "core_same_side_repair_4_V3V3_4",
+    "core_same_side_repair_6_V3V3_6",
+    "core_same_side_repair_8_V3V3_8",
+    "core_same_side_repair_9_V3V3_0_layer_section_2"
+  ],
+  "removed_copper_without_retained_pad": [
+    "core_feedback_ground_stitch_0",
+    "core_feedback_ground_stitch_0_next",
+    "core_feedback_ground_stitch_0_next_next",
+    "core_feedback_ground_stitch_1",
+    "core_feedback_ground_stitch_2",
+    "core_feedback_ground_stitch_3",
+    "core_feedback_ground_stitch_4",
+    "core_feedback_ground_stitch_5",
+    "core_reviewed_local_C_BUCK_IN_pin2",
+    "core_reviewed_local_C_BUCK_IN_pin2_via",
+    "core_reviewed_local_C_BUZZER_pin1_via",
+    "core_reviewed_local_C_BUZZER_pin2",
+    "core_reviewed_local_C_BUZZER_pin2_via",
+    "core_reviewed_local_C_TEMP_pin1_via",
+    "core_reviewed_local_C_VREG_pin2",
+    "core_reviewed_local_C_VREG_pin2_via",
+    "core_reviewed_local_D_BUZZER_cathode_via",
+    "core_reviewed_local_D_PWR_cathode",
+    "core_reviewed_local_D_PWR_cathode_via",
+    "core_reviewed_local_R_BUZZER_PD_pin2",
+    "core_reviewed_local_R_BUZZER_PD_pin2_via",
+    "core_reviewed_local_R_REF_H_pin1_via",
+    "core_reviewed_local_R_USB_SENSE_L_pin2",
+    "core_reviewed_local_U_ENCODER_VDD3V3_via",
+    "core_reviewed_local_U_PD_CFG1",
+    "core_reviewed_local_U_PD_CFG1_via",
+    "core_reviewed_local_U_TEMP_ADD0",
+    "core_reviewed_local_U_TEMP_ADD0_via",
+    "core_reviewed_local_U_TEMP_V_POS_via",
+    "core_reviewed_local_driver_logic_ground_to_reference_capacitor",
+    "core_same_side_repair_25_V3V3_0_via_15",
+    "core_same_side_repair_29_V3V3_0",
+    "core_same_side_repair_48_V3V3_19",
+    "core_same_side_repair_50_V3V3_21_layer_section_0",
+    "core_same_side_repair_50_V3V3_21_via_28",
+    "core_same_side_repair_9_V3V3_0_layer_section_0",
+    "core_same_side_repair_9_V3V3_0_via_3",
+    "core_thermal_via_U_DRV",
+    "core_thermal_via_U_PD"
+  ],
+  "plane_regions": [
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 1022.1860415402355
+    },
+    {
+      "layer": "inner1",
+      "net": "GND",
+      "area_mm2": 1113.1045540918171
+    },
+    {
+      "layer": "inner2",
+      "net": "V3V3",
+      "area_mm2": 1065.718826698952
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 1049.596669053687
+    }
+  ],
+  "added_supply_fanouts": [
+    {
+      "pcb_port_id": "pcb_port_42",
+      "via": [
+        5.199944,
+        3.425063
+      ]
+    },
+    {
+      "pcb_port_id": "pcb_port_106",
+      "via": [
+        -15.71,
+        -9.192816
+      ]
+    }
+  ],
+  "physical_connectivity_errors": [],
+  "mounting_holes_added": false,
+  "motor_geometry_invented": false,
+  "manufacturing_release": false
+}

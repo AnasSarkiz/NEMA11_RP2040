@@ -1,0 +1,21 @@
+{
+  "scope": "RP2040 subsystem development PCB only",
+  "final_controller": false,
+  "expected_open_external_interfaces": {
+    "U_MCU.4": "LED_G",
+    "U_MCU.5": "LED_B",
+    "U_MCU.8": "STEP",
+    "U_MCU.9": "DIR",
+    "U_MCU.11": "ENABLE_N",
+    "U_MCU.12": "SLEEP",
+    "U_MCU.13": "PD_GOOD",
+    "U_MCU.27": "BUZZER_PWM",
+    "U_MCU.37": "LED_R",
+    "U_MCU.38": "TEMP_SDA",
+    "U_MCU.39": "TEMP_SCL",
+    "U_MCU.40": "VM_SENSE",
+    "U_MCU.41": "DATA_PRESENT",
+    "R_DM.2": "USB_DM",
+    "R_DP.2": "USB_DP"
+  }
+}

@@ -1,4 +1,4 @@
-name: MCU subsystem source checks
+name: MCU subsystem source and PCB checks
 
 on:
   push:
@@ -42,6 +42,15 @@ jobs:
           tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt
           python3 scripts/verify_core_schematic.py
           npm test
+      - name: Check native PCB and independent copper geometry
+        run: |
+          python3 -m pip install numpy==2.3.5 shapely==2.1.2
+          python3 scripts/route_core_pcb.py
+          bun scripts/check-render-pcb.tsx
+          python3 scripts/audit_core_pcb.py
+          python3 scripts/audit_core_clock.py
+          python3 -m unittest discover -s tests-pcb -v
+          git diff --exit-code -- artifacts/rp2040-pcb/board.circuit.json
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json

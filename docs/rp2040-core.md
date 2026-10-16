@@ -90,6 +90,9 @@ The development canvas retains minimum 0.30 mm via drills, 0.45 mm via pads,
 0.15 mm trace-to-pad/pad-to-pad clearance and 0.25 mm board-edge clearance.
 There are no routed traces or vias to qualify in this subsystem canvas.
 
+A separate [routed native PCB/3D development candidate](rp2040-pcb.md) now
+uses this unchanged source; the source canvas itself stays unrouted.
+
 This is source/subsystem verification. Full-controller ERC, routing, DRC,
 crystal/ground layout, thermal review, connectivity/shorts, CAM and completed
 motor assembly remain separate outstanding gates. No hardware or fabrication

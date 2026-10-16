@@ -1,0 +1,14 @@
+{
+  "scope": "MCU subsystem copper only; external controller interfaces remain open",
+  "method": "Shapely per-layer pad/trace/annulus/pour geometry; plated barrels join layers",
+  "clearance_mm": 0.15,
+  "board_edge_mm": 0.25,
+  "via_drill_pad_mm": [
+    0.3,
+    0.45
+  ],
+  "error_counts": {},
+  "errors": [],
+  "manufacturing_release": false,
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5"
+}

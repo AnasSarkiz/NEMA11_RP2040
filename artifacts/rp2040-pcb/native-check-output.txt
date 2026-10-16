@@ -1,0 +1,1 @@
+{"schema_errors":0,"native_drc_errors":15,"expected_external_opens":15,"unexpected_errors":0,"missing_expected_open_interfaces":0,"warnings":3}

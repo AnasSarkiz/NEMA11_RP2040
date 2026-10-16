@@ -1,0 +1,111 @@
+{
+  "scope": "Native tscircuit MCU PCB development milestone only",
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "native_CLI_record_roundtrip_equal": true,
+  "supplier_parts": 24,
+  "bare_testpads": 7,
+  "counts": {
+    "pcb_via": 95,
+    "pcb_trace": 161,
+    "pcb_copper_pour": 4
+  },
+  "unexpected_native_DRC_errors": 0,
+  "expected_external_open_errors": 15,
+  "independent_copper_errors": 0,
+  "clock_geometry_errors": 0,
+  "nominal_supplier_solid_collisions": 0,
+  "source_schematic_tests": 14,
+  "copper_fault_tests": 7,
+  "files": [
+    {
+      "path": "artifacts/rp2040-pcb/3d-export-output.txt",
+      "sha256": "f42ea14d0ce0d61564e5803026b5aac77796fa06c09aee75697d67aa99be153c"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/3d-export-verification.json",
+      "sha256": "6e94e291b305b87b13599d520de9b8f3e65b6cfd523ec5fc026991507b6c233c"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/board.circuit.json",
+      "sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/bottom.png",
+      "sha256": "1b72bdd7bedbc285f0f3c9ad4b48e915a84cbcdb2857688b18b1f7217d3faa6d"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/bottom.svg",
+      "sha256": "fa9ea17216ff37bc1aa049b24b77228e970db75bd5846eee8f0cf02f9f34131b"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/clock-check-output.txt",
+      "sha256": "2c5f742e6a0657211f063f9305a1b049da3abb7b4fe42b7eda81925a33d53c6f"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/clock-layout-audit.json",
+      "sha256": "c5aeae6b3fa1a231fad75bba884e9e0146bb27a698b90598fd143a8276cb6eee"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/copper-check-output.txt",
+      "sha256": "cdf008858d3ff656715e59a021c60d856db8a8fe9f7974991e37b8e52c0682e2"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/development-pcb.glb",
+      "sha256": "8cf9d819c3d3ec91333711ff0e2903fbccc2cc483bf3d4d31782e804f0d43dbf"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-copper-audit.json",
+      "sha256": "ab11feae6f706420eb74d3713a8246c1a5da46cceb4016bd7b0cfb6c2b225b8f"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/inner1.png",
+      "sha256": "35f3c303f664c0165f47b48a7c5b24438c5b78b2184a7920107a5882e933023d"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/inner1.svg",
+      "sha256": "150f249d0e38d9b312de4655432a2b3f0975f4b52eb29d7d7a6641eb67d9e52d"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/inner2.png",
+      "sha256": "fa2d2076b018ddf006673acdbe6049c82291a87c27eee0b46f573d11f424d7ac"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/inner2.svg",
+      "sha256": "7839c71f0da18c2357c21c36ebe410be1bdad9adaa509535161c3403c5df4424"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/native-check-output.txt",
+      "sha256": "559dcb6eae900c325f1c09cc3ad32014835bfe0cb445a4a3d266e300b7654a76"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/native-cli-build.txt",
+      "sha256": "b62c4f512356a1352e659048b0c8687f7c2beac4072f2ccce505fa4392acb77a"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/native-drc.json",
+      "sha256": "1e9dcda58969665353a22f531a107f9af7b6bc14c1bf2adb2e10b51593304a8d"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/nominal-assembly-audit.json",
+      "sha256": "a716b77121e059c39539fcdbb0bfd2ffd1736bf803d0e0c850242fedeeee190b"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/routing-output.txt",
+      "sha256": "675cec30fbb589fec1dcb9ffee351d48a67b7b8cc71e8f0d9205b891c1dfbd14"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/routing-report.json",
+      "sha256": "675cec30fbb589fec1dcb9ffee351d48a67b7b8cc71e8f0d9205b891c1dfbd14"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/top.png",
+      "sha256": "867ccb50a1a727106c14e95dd666b8b10ff476ef382eb3197ebba61f2ddd15d2"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/top.svg",
+      "sha256": "8f40bea09fe738e822f25cd4b81df96cd0833cb91c77eab9445f01139754eca0"
+    }
+  ],
+  "fabrication_ready": false,
+  "registry_published": false
+}

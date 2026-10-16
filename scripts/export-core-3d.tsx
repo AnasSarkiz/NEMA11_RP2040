@@ -4,8 +4,11 @@ import { createHash } from "node:crypto"
 import { convertCircuitJsonToGltf } from "circuit-json-to-gltf"
 
 const root = process.cwd()
-const path = "artifacts/rp2040-core/"
-const bytes = readFileSync(path + "core.circuit.json")
+const routed = process.argv.includes("--pcb")
+const path = routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
+const filename = routed ? "board.circuit.json" : "core.circuit.json"
+const output = routed ? "development-pcb.glb" : "development-core.glb"
+const bytes = readFileSync(path + filename)
 const records = JSON.parse(bytes.toString())
 const modelPaths = new Map<string, string>()
 for (const record of records) {
@@ -41,13 +44,13 @@ if (glb.toString("ascii", 0, 4) !== "glTF" || glb.readUInt32LE(4) !== 2 || glb.r
   throw new Error("Invalid GLB header")
 }
 if (!used.size) throw new Error("No original supplier model assets were loaded")
-writeFileSync(path + "development-core.glb", glb)
+writeFileSync(path + output, glb)
 writeFileSync(path + "3d-export-verification.json", JSON.stringify({
-  scope: "unrouted MCU subsystem development canvas; not completed motor assembly",
+  scope: `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   glb_sha256: createHash("sha256").update(glb).digest("hex"), bytes: glb.length,
   original_supplier_assets_loaded: [...used.values()],
   motor_model_included: false, final_NEMA11_layout: false, manufacturing_release: false,
 }, null, 2) + "\n")
-console.log(JSON.stringify({ exported: path + "development-core.glb", bytes: glb.length,
+console.log(JSON.stringify({ exported: path + output, bytes: glb.length,
   supplier_assets_loaded: used.size, manufacturing_release: false }))

@@ -1,0 +1,53 @@
+{
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "routes": [
+    {
+      "net": "XIN",
+      "total_copper_mm": 3.6430917544326546,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0
+    },
+    {
+      "net": "XOUT",
+      "total_copper_mm": 4.79511571247462,
+      "budget_mm": 6,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0
+    },
+    {
+      "net": "XTAL_OUT",
+      "total_copper_mm": 2.6752898789026105,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0
+    }
+  ],
+  "ground_returns": [
+    {
+      "pin": "Y_MCU.2",
+      "ground_return_vias_within_1_2mm": 1
+    },
+    {
+      "pin": "Y_MCU.4",
+      "ground_return_vias_within_1_2mm": 1
+    },
+    {
+      "pin": "C_XIN.2",
+      "ground_return_vias_within_1_2mm": 1
+    },
+    {
+      "pin": "C_XOUT.2",
+      "ground_return_vias_within_1_2mm": 1
+    }
+  ],
+  "errors": [],
+  "bench_startup_drive_load_frequency_verified": false,
+  "manufacturing_release": false
+}
