@@ -79,6 +79,8 @@ def validate(records):
     board = next((e for e in records if e['type'] == 'pcb_board'), {})
     require(board.get('min_via_hole_diameter', 0) >= .30, 'Via drill requirement was reduced')
     require(board.get('min_via_pad_diameter', 0) >= .45, 'Via pad requirement was reduced')
+    require(board.get('min_trace_to_pad_edge_clearance', 0) >= .15, 'Trace-to-pad clearance requirement was reduced')
+    require(board.get('min_pad_edge_to_pad_edge_clearance', 0) >= .15, 'Pad-to-pad clearance requirement was reduced')
     for e in records:
         if e['type'].endswith('_error'):
             errors.append(str(e))

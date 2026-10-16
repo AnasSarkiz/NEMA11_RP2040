@@ -10,18 +10,19 @@
     "src/core-supplier-parts.tsx": "6e00555d75e08ec6ca01dd5d2571012b2a2f9d87e7bf5b0664b8cb3a3624f31c",
     "src/core-placements.json": "b234fdc9fa2578eae87bce4e5cbdab8bb70635fb7e7c75df3be9ad9ee4dccf27",
     "scripts/build-core.tsx": "584356729d5b5660f410c312ef74b384e171f96aa34df295d651c13db1511510",
-    "scripts/verify_core.py": "71140d13af06bc0fac00278cf83dbe853008bf1b6540b7cd078537fe3b0166f2",
-    "examples/rp2040-core.circuit.tsx": "4242f536eb53938a8b89debc5ee90cee2978c05c4e85e668ac602a0c26eb99a6",
-    "artifacts/rp2040-core/core.circuit.json": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
-    "artifacts/rp2040-core/build-report.json": "857c68180a21af73007c51d0e3a1aece53b441e2576b455598153f39590da48c",
-    "artifacts/rp2040-core/schema-verification.json": "b9287fce31d26b007e1ebba801fd4fbbbfede550e1ce53e6da06e30647f5acc1",
-    "artifacts/rp2040-core/physical-pin-verification.json": "b930c6a76dc146883a3d8786e26e72a09c3e8de97b6959c19f4aa99babd8dc4c",
-    "artifacts/rp2040-core/core-schematic.circuit.json": "7cec51801d7b0b69975a524894ca6582c32292b8a92ceb4ec91fcdc2ca7e99e8",
-    "artifacts/rp2040-core/schematic-verification.json": "018eab67f5090d9097166d466577fcb32cf6ff014aad206d747f77ee6cfd0e61",
+    "scripts/verify_core.py": "5714e38f88b989adf825ab3f7716d2d7d3080c02256539586e00a47018581f6f",
+    "examples/rp2040-core.circuit.tsx": "9e764248b4c80daed58f4d2f1b7f6f1cfc7574f1569b1ba03384139ebd6b76e2",
+    "artifacts/rp2040-core/core.circuit.json": "e9d974d645e2eeaf0c5ef1668dc039b8fb795c7803f882523c58382b77b00621",
+    "artifacts/rp2040-core/build-report.json": "c401e6fce83691f32968302333fd9dbe039133a9aa9746289860a0aee037f0e3",
+    "artifacts/rp2040-core/schema-verification.json": "1edf5e138215a90fba17d600fe79ec2dbb39d3bd7e8f90e26b0f8dd19fe24364",
+    "artifacts/rp2040-core/physical-pin-verification.json": "5707a3ba7b344e21b32884d939057d8721722c25b2c6662ae31fc4bdd914738c",
+    "artifacts/rp2040-core/core-schematic.circuit.json": "5b3b341dcab9c950f990bf98bc236e49202e88e90042460cbd5dc0ae93a6d2f3",
+    "artifacts/rp2040-core/schematic-verification.json": "99be9b37e597cf7e258a115991947ffa77d4315171e3a515cfbd9c573ec0b648",
     "artifacts/rp2040-core/schematic-a4.pdf": "24c70939e92059cd8c312f7be42955e767497b3e20857e13e74312846d99ab22",
-    "artifacts/rp2040-core/pdf-verification.json": "a9dad75e17783e973fbb1e42b5fa632c166a40d73a84215b04803231fc1b11d8",
+    "artifacts/rp2040-core/pdf-verification.json": "ee1986a04a1f417feaccc86ef5287c1f824b7027b129399ebb93c65f035cbae9",
     "artifacts/rp2040-core/development-core.glb": "2f246930eb2571618cbfdfc4c34df2c43cf7f1d1260eccfdba4b5aa864ec8ba8",
-    "artifacts/rp2040-core/3d-export-verification.json": "5e1aa478e0c1c5a1e5d48f1945c75425d97a4491c82fde48caa575212a679580"
+    "artifacts/rp2040-core/3d-export-verification.json": "b7c17c42854d3e1acdc95cc71f07bfa21b844e7690b52b1882734191debf22ed",
+    "artifacts/rp2040-core/supplier-STEP-inspection.json": "08e121803e69507554b76d44966fcf774f06751f2fbfab2c60f8b3c9df9b59c6"
   },
   "requested_reference_v1_13_verified": false,
   "final_layout_ERC_DRC_CAM_assembly": "NOT_RUN; subsystem schematic connectivity/geometry and development 3D export are verified separately",
@@ -29,5 +30,12 @@
   "subsystem_schematic_geometry_passed": true,
   "native_schematic_placement_issues": 0,
   "A4_pdf_pages": 3,
-  "native_3D_original_supplier_asset_types_loaded": 9
+  "native_3D_original_supplier_asset_types_loaded": 9,
+  "declared_canvas_minimum_clearances_mm": {
+    "trace_to_pad": 0.15,
+    "pad_to_pad": 0.15,
+    "board_edge": 0.25,
+    "via_drill": 0.3,
+    "via_pad": 0.45
+  }
 }

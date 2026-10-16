@@ -4,7 +4,7 @@
   "errors": [],
   "physical_ports_checked": 119,
   "native_placement_issues": 0,
-  "schematic_sha256": "7cec51801d7b0b69975a524894ca6582c32292b8a92ceb4ec91fcdc2ca7e99e8",
-  "base_sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "schematic_sha256": "5b3b341dcab9c950f990bf98bc236e49202e88e90042460cbd5dc0ae93a6d2f3",
+  "base_sha256": "e9d974d645e2eeaf0c5ef1668dc039b8fb795c7803f882523c58382b77b00621",
   "manufacturing_release": false
 }

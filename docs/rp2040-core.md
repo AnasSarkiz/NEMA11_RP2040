@@ -79,6 +79,17 @@ connections and source-input hashes, and rejects changed committed JSON output.
 Its scope is source/subsystem checks. Workflow publication or execution does
 not certify a completed controller or fabrication release.
 
+`/workspace/.venvs/nema11-cad/bin/python scripts/inspect_core_models.py` checks
+the nine unchanged STEP inputs for valid solid geometry and records their raw
+bounds. Supplier models are nominal geometry, not manufacturer maximum-tolerance
+envelopes. For example, the crystal STEP is approximately 3.2 × 2.5 × 0.701 mm;
+the drawing describes a nominal 0.8 mm package height. Use drawing limits and
+assembly tolerances for final clearance checks, not only these model surfaces.
+
+The development canvas retains minimum 0.30 mm via drills, 0.45 mm via pads,
+0.15 mm trace-to-pad/pad-to-pad clearance and 0.25 mm board-edge clearance.
+There are no routed traces or vias to qualify in this subsystem canvas.
+
 This is source/subsystem verification. Full-controller ERC, routing, DRC,
 crystal/ground layout, thermal review, connectivity/shorts, CAM and completed
 motor assembly remain separate outstanding gates. No hardware or fabrication

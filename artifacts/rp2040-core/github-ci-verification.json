@@ -1,0 +1,10 @@
+{
+  "scope": "GitHub source/subsystem checks, not manufacturing qualification",
+  "run_url": "https://github.com/AnasSarkiz/NEMA11_RP2040/actions/runs/38973569426",
+  "job_url": "https://github.com/AnasSarkiz/NEMA11_RP2040/actions/runs/38973569426/job/117217479296",
+  "source_commit": "1282473bafe020b7b4a021ccb4fc8e042363b84a",
+  "observed_status": "Success",
+  "observed_via": "public GitHub run summary",
+  "observed_at_utc": "2026-10-16T22:09:19.315638+00:00",
+  "manufacturing_release": false
+}

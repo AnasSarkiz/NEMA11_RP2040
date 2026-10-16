@@ -4,7 +4,7 @@
 
 {
   "scope": "RP2040 subsystem source and supplier CAD only; not a controller PCB",
-  "sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "sha256": "e9d974d645e2eeaf0c5ef1668dc039b8fb795c7803f882523c58382b77b00621",
   "source_components": 31,
   "source_ports": 119,
   "routed_traces": 0,
