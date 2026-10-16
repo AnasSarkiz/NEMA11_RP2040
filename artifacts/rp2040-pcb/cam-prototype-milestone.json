@@ -1,0 +1,120 @@
+{
+  "scope": "Native MCU prototype and actual review CAM verification only",
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "independent_copper_drill_paste_roundtrip_pass": true,
+  "native_gerber_shorts_pass": true,
+  "four_original_copper_files_independently_rendered": true,
+  "separate_prototype_native_CLI_roundtrip_pass": true,
+  "files": [
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/B_Cu.gbr",
+      "sha256": "a5971e4d2e9e5fd84fe29c47a26bb4b35ce43dd98469fb351f651314795dc634"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/B_Mask.gbr",
+      "sha256": "2c3d2dec7cc1926b4f6a243593edc1f5a934827f47c03ae1ad430f6eed5f85ac"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/B_Paste.gbr",
+      "sha256": "ca7e371846eaf4281d1d1404dd6097db8de4d80f6823136421fef083b741d7dc"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/B_SilkScreen.gbr",
+      "sha256": "68ce951db66a204b26ba4466d4dfc6b06659002f87bde9ffa87e7e7ef2016dad"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/DO-NOT-FABRICATE.txt",
+      "sha256": "73446b604944b4a84d2eeb7e14a7483fec719ad93af1990acbde2f3d7b1b8709"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/Edge_Cuts.gbr",
+      "sha256": "de67673e666e0934fb7436f0b7df5a588dc6d91be77eae5096d9d65b594ec706"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/F_Cu.gbr",
+      "sha256": "709cfe1ab254228e8da4ddfffd4d8085173856e3ebf5337c73ede573cd6dc88b"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/F_Mask.gbr",
+      "sha256": "642fb2477a87582998d42e6b0ecc3645178674e59338d26cb34d3918b9557fef"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/F_Paste.gbr",
+      "sha256": "cf19f552d41494ced7dda40bc947988b0619a7bd7749829938c2a2aefed147b5"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/F_SilkScreen.gbr",
+      "sha256": "702fc709293ec4ca27671e167eb97cbf2ac096af08a806a3b9e08d3c80ca865d"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/In1_Cu.gbr",
+      "sha256": "bf5b6df153bfbf5b81ed9d7e16eadb938c52cdfb53dee3f3bcd2e76f11695fe6"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/In2_Cu.gbr",
+      "sha256": "51d3236c2c0682011d37e7cc2cbd377183aed53a67b4e0f9682222ade7df9435"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam/drill-L1-L4.drl",
+      "sha256": "3136630204e20ff34795ed06cb1aed3a572236cec7992b15155510871214b180"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/review-cam-export.json",
+      "sha256": "6fdbe3e591a2f49091fdc1f4c1b7ae29b843cb245d76206b03c94d82b05727ed"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-audit.json",
+      "sha256": "57c3ee056b4a734f8ab9251a68d2228dd296522e19aff5158af2532c1f0f8b7e"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/native-gerber-shorts.txt",
+      "sha256": "98ccc8689b6a81db2840368894d9370021add369e2d3f747e040164fff805b9a"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-render.json",
+      "sha256": "422824c103a99f485e499ff97cd26d4448ed8aac3cb99f3de39c9714e9709088"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-bottom.png",
+      "sha256": "414b9ba89f8ecca6845e43e1d1ffa0fa6affb84959f37c24a6eb5698b38b5b8c"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-inner1.png",
+      "sha256": "0fd91943a7ebbf47bf0de8c552bcc6935db58c48d1ad95771f72406b14712557"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-inner2.png",
+      "sha256": "f600ce6454cfcb8b53219cc1e5f9fe5e12ff7653fa47f6662f14bedf7c49a7eb"
+    },
+    {
+      "path": "artifacts/rp2040-pcb/independent-cam-top.png",
+      "sha256": "ec2e8c10050f036d0c989f8fa847c252781fe3fe6772cd721d97e6938edaf2e2"
+    },
+    {
+      "path": "prototypes/rp2040-core/README.md",
+      "sha256": "8667e5227fd1c0a8d4e03e8ca3b1807e1a57e0e2a0826d7873210607af8de532"
+    },
+    {
+      "path": "prototypes/rp2040-core/index.circuit.json",
+      "sha256": "617135ef3d43a8500557d4ed493ce4f5233b02388304ccf3300ce636fa71ca81"
+    },
+    {
+      "path": "prototypes/rp2040-core/native-cli-build.txt",
+      "sha256": "2ad2ce0443796464372d775be83907c0a82923bad9f033454ab7b0f6a46faa31"
+    },
+    {
+      "path": "prototypes/rp2040-core/package-verification.json",
+      "sha256": "35317397e3235270f82efd2396559e3ff95ba34bb2c7398a5739b0cd26749a76"
+    },
+    {
+      "path": "prototypes/rp2040-core/package.json",
+      "sha256": "91a45ff826e543a329f8f067cddfaa7e993f42a415bae81a0921281706ee8d70"
+    },
+    {
+      "path": "prototypes/rp2040-core/tscircuit.config.json",
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158"
+    }
+  ],
+  "registry_published": false,
+  "fabrication_ready": false
+}

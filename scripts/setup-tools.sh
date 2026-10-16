@@ -18,6 +18,11 @@ uv venv --python python3 --allow-existing /workspace/.venvs/nema11-cad
 uv pip install \
   --python /workspace/.venvs/nema11-cad/bin/python \
   -r "$project_root/tools/requirements-cad.lock"
+uv venv --python python3 --allow-existing /workspace/.venvs/nema11-cam
+uv pip install \
+  --python /workspace/.venvs/nema11-cam/bin/python \
+  -r "$project_root/tools/requirements-cam.lock"
 cd "$project_root"
 python3 -m unittest discover -s tests -v
+/workspace/.venvs/nema11-cad/bin/python -m unittest discover -s tests-pcb -v
 python3 scripts/current_budget.py --output artifacts/requirements/current-budget.json

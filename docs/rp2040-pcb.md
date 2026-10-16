@@ -97,3 +97,36 @@ copper; `npm run pcb:check` runs native and independent audits. `npm run pcb:3d`
 exports the native 3D assembly. `npm run pcb:dev` opens this exact saved Circuit
 JSON in tscircuit. Source, pad/model inputs and routing are retained in GitHub;
 this is not a KiCad replacement workflow.
+
+## Actual review CAM and separate prototype
+
+The native exporter also creates [review-only Gerbers and drills](../artifacts/rp2040-pcb/review-cam/),
+with a `DO-NOT-FABRICATE.txt` notice. These files are for checking the export
+pipeline, not an order. Gerbonara independently parses their original bytes,
+applying explicit right-angle aperture rotation compatibility. The audit
+compares all four copper layers against source geometry after drilling, matches
+all 95 plated through holes to actual coordinates/diameters, and checks both
+paste layers. Copper/paste boundary comparison allows only a 3 µm numerical
+boundary tolerance; parser/hash or geometry discrepancies fail the audit.
+
+[The CAM report](../artifacts/rp2040-pcb/independent-cam-audit.json) records zero
+copper/drill/paste roundtrip errors. Native `tsci check shorts --mode gerber
+--layer all --pixels-per-mm 100` reports no shorts. This raster check complements
+the independent vector copper audit; it does not replace clearance verification.
+PyGerber 2.4.3 separately renders the original, unmodified four copper files
+(including native aperture rotations) into `independent-cam-*.png`.
+The parsed front silkscreen overlaps approximately 0.944 mm² of mask openings,
+so silkscreen manufacturing approval explicitly remains open. Actual files,
+parser versions, file hashes, compatibility notices and full findings are kept.
+
+A [separate native subsystem prototype package](../prototypes/rp2040-core/)
+combines the exact routed board and all three native schematic sheets. Its
+`index.circuit.json` is independently built by the native CLI and compared
+record-for-record. TSX source, original supplier imports and all reproducible
+checks remain in this GitHub repository. This package is **prepared, not
+registry-published**: cloud policy still denies the registry authentication and
+upload endpoints, so no CLI authorization or registry release URL exists.
+
+Use `npm run pcb:cam-review`, `npm run pcb:shorts` and `npm run pcb:prototype`
+for these checks. The CAM parser dependencies are frozen separately in
+`tools/requirements-cam.lock` to avoid altering the CAD environment.

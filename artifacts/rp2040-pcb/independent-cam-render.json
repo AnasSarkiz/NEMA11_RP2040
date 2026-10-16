@@ -1,0 +1,37 @@
+{
+  "parser": "PyGerber 2.4.3",
+  "original_CAM_bytes_rendered": true,
+  "pixels_per_mm": 40,
+  "files": [
+    {
+      "layer": "top",
+      "source": "artifacts/rp2040-pcb/review-cam/F_Cu.gbr",
+      "source_sha256": "709cfe1ab254228e8da4ddfffd4d8085173856e3ebf5337c73ede573cd6dc88b",
+      "render": "artifacts/rp2040-pcb/independent-cam-top.png",
+      "render_sha256": "ec2e8c10050f036d0c989f8fa847c252781fe3fe6772cd721d97e6938edaf2e2"
+    },
+    {
+      "layer": "inner1",
+      "source": "artifacts/rp2040-pcb/review-cam/In1_Cu.gbr",
+      "source_sha256": "bf5b6df153bfbf5b81ed9d7e16eadb938c52cdfb53dee3f3bcd2e76f11695fe6",
+      "render": "artifacts/rp2040-pcb/independent-cam-inner1.png",
+      "render_sha256": "0fd91943a7ebbf47bf0de8c552bcc6935db58c48d1ad95771f72406b14712557"
+    },
+    {
+      "layer": "inner2",
+      "source": "artifacts/rp2040-pcb/review-cam/In2_Cu.gbr",
+      "source_sha256": "51d3236c2c0682011d37e7cc2cbd377183aed53a67b4e0f9682222ade7df9435",
+      "render": "artifacts/rp2040-pcb/independent-cam-inner2.png",
+      "render_sha256": "f600ce6454cfcb8b53219cc1e5f9fe5e12ff7653fa47f6662f14bedf7c49a7eb"
+    },
+    {
+      "layer": "bottom",
+      "source": "artifacts/rp2040-pcb/review-cam/B_Cu.gbr",
+      "source_sha256": "a5971e4d2e9e5fd84fe29c47a26bb4b35ce43dd98469fb351f651314795dc634",
+      "render": "artifacts/rp2040-pcb/independent-cam-bottom.png",
+      "render_sha256": "414b9ba89f8ecca6845e43e1d1ffa0fa6affb84959f37c24a6eb5698b38b5b8c"
+    }
+  ],
+  "render_scope": "Four individual copper layers before drill subtraction; not a complete assembly rendering",
+  "manufacturing_release": false
+}

@@ -1,0 +1,4 @@
+MCU SUBSYSTEM DEVELOPMENT CANVAS ONLY.
+Full motor controller, power inputs, mounting, motor/harness and manufacturing qualification are incomplete.
+These files exist for CAM toolchain review, not a PCB order.
+Do not assemble or connect a motor from this incomplete design.

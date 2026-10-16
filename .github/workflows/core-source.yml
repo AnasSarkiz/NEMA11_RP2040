@@ -51,6 +51,14 @@ jobs:
           python3 scripts/audit_core_clock.py
           python3 -m unittest discover -s tests-pcb -v
           git diff --exit-code -- artifacts/rp2040-pcb/board.circuit.json
+      - name: Independently parse committed review CAM and verify prototype
+        run: |
+          python3 -m pip install -r tools/requirements-cam.lock
+          python3 scripts/audit_core_cam.py
+          python3 scripts/prepare-core-prototype.py
+          (cd prototypes/rp2040-core && tsci build index.circuit.json)
+          python3 scripts/verify_core_prototype.py
+          git diff --exit-code -- prototypes/rp2040-core/index.circuit.json
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json

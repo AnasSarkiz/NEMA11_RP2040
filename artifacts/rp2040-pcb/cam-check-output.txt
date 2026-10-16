@@ -1,0 +1,1 @@
+{"copper_drill_paste_errors": 0, "drills": 95, "silk_opening_overlap_mm2": 0.9442013815306382, "manufacturing_release": false}

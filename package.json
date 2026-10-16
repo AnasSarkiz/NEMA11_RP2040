@@ -15,6 +15,12 @@
     "pcb:check": "bun scripts/check-render-pcb.tsx && /workspace/.venvs/nema11-cad/bin/python scripts/audit_core_pcb.py && /workspace/.venvs/nema11-cad/bin/python scripts/audit_core_clock.py",
     "pcb:3d": "bun scripts/export-core-3d.tsx --pcb",
     "pcb:dev": "tsci dev artifacts/rp2040-pcb/board.circuit.json",
-    "pcb:test": "/workspace/.venvs/nema11-cad/bin/python -m unittest discover -s tests-pcb -v"
-  }
+    "pcb:test": "/workspace/.venvs/nema11-cad/bin/python -m unittest discover -s tests-pcb -v",
+    "pcb:cam-review": "bun scripts/export-pcb-review-cam.tsx && /workspace/.venvs/nema11-cam/bin/python scripts/audit_core_cam.py",
+    "pcb:shorts": "tsci check shorts artifacts/rp2040-pcb/board.circuit.json --mode gerber --layer all --pixels-per-mm 100",
+    "pcb:prototype": "python3 scripts/prepare-core-prototype.py",
+    "prototype:dev": "tsci dev prototypes/rp2040-core/index.circuit.json",
+    "pcb:cam-render": "/workspace/.venvs/nema11-cam/bin/python scripts/render_core_cam.py"
+  },
+  "main": "prototypes/rp2040-core/index.circuit.json"
 }

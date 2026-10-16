@@ -1,0 +1,142 @@
+{
+  "scope": "Actual native MCU development CAM files only; not production order data",
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "export_manifest_sha256": "6fdbe3e591a2f49091fdc1f4c1b7ae29b843cb245d76206b03c94d82b05727ed",
+  "parser": "Gerbonara 1.5.0 with explicit right-angle LR compatibility",
+  "files": {
+    "F_Cu.gbr": {
+      "sha256": "709cfe1ab254228e8da4ddfffd4d8085173856e3ebf5337c73ede573cd6dc88b",
+      "objects": 865,
+      "area_mm2": 1081.276681478099,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_SilkScreen.gbr": {
+      "sha256": "702fc709293ec4ca27671e167eb97cbf2ac096af08a806a3b9e08d3c80ca865d",
+      "objects": 1583,
+      "area_mm2": 25.94404219295443,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_Mask.gbr": {
+      "sha256": "642fb2477a87582998d42e6b0ecc3645178674e59338d26cb34d3918b9557fef",
+      "objects": 119,
+      "area_mm2": 46.66723837038615,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_Paste.gbr": {
+      "sha256": "cf19f552d41494ced7dda40bc947988b0619a7bd7749829938c2a2aefed147b5",
+      "objects": 112,
+      "area_mm2": 19.607640530541026,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_Cu.gbr": {
+      "sha256": "a5971e4d2e9e5fd84fe29c47a26bb4b35ce43dd98469fb351f651314795dc634",
+      "objects": 846,
+      "area_mm2": 1088.3707805743893,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_SilkScreen.gbr": {
+      "sha256": "68ce951db66a204b26ba4466d4dfc6b06659002f87bde9ffa87e7e7ef2016dad",
+      "objects": 0,
+      "area_mm2": 0.0,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_Mask.gbr": {
+      "sha256": "2c3d2dec7cc1926b4f6a243593edc1f5a934827f47c03ae1ad430f6eed5f85ac",
+      "objects": 0,
+      "area_mm2": 0.0,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_Paste.gbr": {
+      "sha256": "ca7e371846eaf4281d1d1404dd6097db8de4d80f6823136421fef083b741d7dc",
+      "objects": 0,
+      "area_mm2": 0.0,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "Edge_Cuts.gbr": {
+      "sha256": "de67673e666e0934fb7436f0b7df5a588dc6d91be77eae5096d9d65b594ec706",
+      "objects": 4,
+      "area_mm2": 6.999463298281626,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "In1_Cu.gbr": {
+      "sha256": "bf5b6df153bfbf5b81ed9d7e16eadb938c52cdfb53dee3f3bcd2e76f11695fe6",
+      "objects": 291,
+      "area_mm2": 1132.1905819181843,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "In2_Cu.gbr": {
+      "sha256": "51d3236c2c0682011d37e7cc2cbd377183aed53a67b4e0f9682222ade7df9435",
+      "objects": 1091,
+      "area_mm2": 1098.8222175290898,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "drill-L1-L4.drl": {
+      "sha256": "3136630204e20ff34795ed06cb1aed3a572236cec7992b15155510871214b180",
+      "objects": 95,
+      "G85_joined": 0,
+      "parser_notices": [
+        "<unknown>:12 \"G90\": G90 header statement found after end of header"
+      ],
+      "tools_mm": {
+        "0.3": 95
+      }
+    }
+  },
+  "copper_comparison": [
+    {
+      "layer": "top",
+      "parsed_mm2": 1074.562201354228,
+      "source_mm2": 1074.55685080904,
+      "symmetric_difference_mm2": 0.005357747175468837,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "inner1",
+      "parsed_mm2": 1125.4761017943192,
+      "source_mm2": 1125.4721991573397,
+      "symmetric_difference_mm2": 0.0039026369829631776,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "inner2",
+      "parsed_mm2": 1092.1077374052234,
+      "source_mm2": 1092.1041746611575,
+      "symmetric_difference_mm2": 0.0035627440686762687,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "bottom",
+      "parsed_mm2": 1081.656300450523,
+      "source_mm2": 1081.652070445176,
+      "symmetric_difference_mm2": 0.004230005350462892,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    }
+  ],
+  "drill_count": 95,
+  "errors": [],
+  "copper_drill_paste_roundtrip_pass": true,
+  "front_silkscreen_mask_opening_overlap_mm2": 0.9442013815306382,
+  "manufacturing_findings": [
+    "Reference silkscreen is crowded; review overlap and board-edge clipping.",
+    "MCU exposed-pad via needs approved fill/cap and stencil process or redesign.",
+    "Minimum nominal radial via annulus is 0.075 mm; JLCPCB drill and registration capability is unverified.",
+    "Full motor controller, motor fit, harness and source parity remain incomplete."
+  ],
+  "whole_controller_CAM_pass": false,
+  "manufacturing_release": false
+}

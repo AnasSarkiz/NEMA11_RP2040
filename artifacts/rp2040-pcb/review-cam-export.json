@@ -1,0 +1,68 @@
+{
+  "scope": "native tscircuit CAM exporter review only",
+  "circuit_sha256": "28ae8915cb1edff725150eeaa288b4ee64fe43f1c9c769b91837f752c2b0aec5",
+  "files": [
+    {
+      "name": "F_Cu.gbr",
+      "bytes": 731443,
+      "sha256": "709cfe1ab254228e8da4ddfffd4d8085173856e3ebf5337c73ede573cd6dc88b"
+    },
+    {
+      "name": "F_SilkScreen.gbr",
+      "bytes": 77717,
+      "sha256": "702fc709293ec4ca27671e167eb97cbf2ac096af08a806a3b9e08d3c80ca865d"
+    },
+    {
+      "name": "F_Mask.gbr",
+      "bytes": 5906,
+      "sha256": "642fb2477a87582998d42e6b0ecc3645178674e59338d26cb34d3918b9557fef"
+    },
+    {
+      "name": "F_Paste.gbr",
+      "bytes": 5691,
+      "sha256": "cf19f552d41494ced7dda40bc947988b0619a7bd7749829938c2a2aefed147b5"
+    },
+    {
+      "name": "B_Cu.gbr",
+      "bytes": 717865,
+      "sha256": "a5971e4d2e9e5fd84fe29c47a26bb4b35ce43dd98469fb351f651314795dc634"
+    },
+    {
+      "name": "B_SilkScreen.gbr",
+      "bytes": 1734,
+      "sha256": "68ce951db66a204b26ba4466d4dfc6b06659002f87bde9ffa87e7e7ef2016dad"
+    },
+    {
+      "name": "B_Mask.gbr",
+      "bytes": 1738,
+      "sha256": "2c3d2dec7cc1926b4f6a243593edc1f5a934827f47c03ae1ad430f6eed5f85ac"
+    },
+    {
+      "name": "B_Paste.gbr",
+      "bytes": 1733,
+      "sha256": "ca7e371846eaf4281d1d1404dd6097db8de4d80f6823136421fef083b741d7dc"
+    },
+    {
+      "name": "Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "de67673e666e0934fb7436f0b7df5a588dc6d91be77eae5096d9d65b594ec706"
+    },
+    {
+      "name": "In1_Cu.gbr",
+      "bytes": 603636,
+      "sha256": "bf5b6df153bfbf5b81ed9d7e16eadb938c52cdfb53dee3f3bcd2e76f11695fe6"
+    },
+    {
+      "name": "In2_Cu.gbr",
+      "bytes": 774660,
+      "sha256": "51d3236c2c0682011d37e7cc2cbd377183aed53a67b4e0f9682222ade7df9435"
+    },
+    {
+      "name": "drill-L1-L4.drl",
+      "bytes": 1863,
+      "sha256": "3136630204e20ff34795ed06cb1aed3a572236cec7992b15155510871214b180"
+    }
+  ],
+  "production_BOM_CPL_included": false,
+  "manufacturing_release": false
+}

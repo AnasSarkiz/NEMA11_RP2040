@@ -1,0 +1,6 @@
+{
+  "includeBoardFiles": [
+    "prototypes/rp2040-core/index.circuit.json"
+  ],
+  "previewComponentPath": "prototypes/rp2040-core/index.circuit.json"
+}
