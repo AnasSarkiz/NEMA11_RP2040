@@ -11,7 +11,7 @@ values. A source import or a zero-test result does not validate a board.
 | Motor | Original PDF/STEP hashes, drawing review, measured STEP bounds and lead exit | Blocked by motor host network policy |
 | Feature parity | Reference-to-NEMA11 physical pins, nets, values and DNP matrix | Not run; exact baseline missing |
 | Electrical | Actual driver current bounds, shunt derating, hot losses, power/ADC/PG review | Preliminary conditional calculation only |
-| Source | Frozen dependency install, TypeScript, native source/netlist/pin checks | Tooling typecheck passed on v1.12.0 reference copy only |
+| Source | Frozen dependency install, TypeScript, native source/netlist/pin checks | v1.12.0 reference copy typecheck and unrouted source render passed; NEMA11 not run |
 | Schematic | Function groups, connected symbol pins, net labels, ERC and inspected A4 PDF | Not run; no NEMA11 schematic |
 | PCB | DRC, all intended physical nets, pad identity and no unintended copper | Not run; no NEMA11 PCB |
 | Layout | Short top-layer crystal signals, ground return/reference, decoupling, thermal and every-trace widths | Not run |

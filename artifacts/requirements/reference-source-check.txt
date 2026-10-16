@@ -1,0 +1,6 @@
+Rendering NEMA14 RP2040 with tscircuit local autorouter…
+{
+  "elements": 4030,
+  "traces": 0,
+  "errors": []
+}

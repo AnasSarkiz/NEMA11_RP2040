@@ -26,5 +26,15 @@
   },
   "pcb_package_lock_sha256": "e2ac3c37ff5f21745369ea93215889101ba0ba3d0fe2360df17f8c26ab1ba298",
   "nema11_board_checks_ran": false,
-  "motor_step_verified": false
+  "motor_step_verified": false,
+  "reference_unrouted_source_render": {
+    "reference_version": "1.12.0",
+    "command": "bun scripts/build.tsx --unrouted",
+    "exit_code": 0,
+    "records": 4030,
+    "routed_traces": 0,
+    "source_errors": [],
+    "generated_source_sha256": "4a8a982f3ac4fd6a778137cff7b92d015b10421e8feebdc653970aa83b7aac1a",
+    "log": "artifacts/requirements/reference-source-check.txt"
+  }
 }

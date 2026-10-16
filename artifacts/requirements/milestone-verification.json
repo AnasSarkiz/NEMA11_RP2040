@@ -20,6 +20,13 @@
       "name": "supplier_STEP_import_and_valid_solid",
       "exit_code": 0,
       "evidence": "artifacts/requirements/toolchain-verification.json"
+    },
+    {
+      "name": "reference_v1_12_unrouted_source_render",
+      "command": "bun scripts/build.tsx --unrouted",
+      "exit_code": 0,
+      "scope": "reference_v1_12_only_not_NEMA11",
+      "log": "artifacts/requirements/reference-source-check.txt"
     }
   ],
   "inputs_sha256": {
@@ -29,9 +36,11 @@
     "tools/pcb/package-lock.json": "e2ac3c37ff5f21745369ea93215889101ba0ba3d0fe2360df17f8c26ab1ba298",
     "tools/requirements-cad.lock": "f585ee3dec5bcf6ad064025a05e33227d5ead74ee09ccc5b18c5e671074b7842",
     "artifacts/requirements/current-budget.json": "8873cd178c9205534292287a135c2b4ef26fe42bc391b7d867018057e8753fac",
-    "artifacts/requirements/reference-1.12-inspection.json": "cdef4871813277a0d7b73014fdf7717a1a45c53dcc897e11e07e9bb3c184792c",
-    "artifacts/requirements/toolchain-verification.json": "5c6b4f416bed0f85e9a21235344d6c4598cd57f428b1788ec4ef7332c0255926",
-    "artifacts/requirements/setup-output.txt": "d6fcfa91448cebd5296c8cec65923c4364f57b6923b79cc4a46732ee10206c6f"
+    "artifacts/requirements/reference-1.12-inspection.json": "acf21c52cfd399d090f34eeed8f238171db68df537e0cc1a0e3a09d55757b2e7",
+    "artifacts/requirements/toolchain-verification.json": "0bd8734368b48267b307bf1c10093625908c86e4d9d6aa52e752bded96fd6e96",
+    "artifacts/requirements/setup-output.txt": "d6fcfa91448cebd5296c8cec65923c4364f57b6923b79cc4a46732ee10206c6f",
+    "artifacts/requirements/reference-source-check.txt": "e19f92e2abc7ee7f347e2063799a95f2df2a99cd60c2115f72217568a3acc6a1",
+    "scripts/inspect_reference.py": "5d746becf3fa949a6d1abb89c70ba974bf32f73884627d0a9aa587c748c6695d"
   },
   "reference_v1_13_verified": false,
   "motor_documents_verified": false,
