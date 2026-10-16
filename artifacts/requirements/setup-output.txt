@@ -1,0 +1,27 @@
+npm warn skipping integrity check for git dependency ssh://git@github.com/tscircuit/pcb-trace-linter.git
+
+added 279 packages in 8s
+node_modules/@tscircuit/pcb-trace-linter/lib/CircuitJsonPcbTraceLinter.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/OddAngleFinder.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/PcbTraceLinter.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/index.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/normalizeInput.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/segments.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/srj.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/types.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/validateSimpleRouteJson.ts: OK
+node_modules/@tscircuit/pcb-trace-linter/lib/visualizeIssues.ts: OK
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+Creating virtual environment at: /workspace/.venvs/nema11-cad
+Activate with: source /workspace/.venvs/nema11-cad/bin/activate
+Using Python 3.12.14 environment at: /workspace/.venvs/nema11-cad
+Checked 57 packages in 5ms
+test_candidate_covers_all_tolerance_corners (test_current_budget.CurrentBudgetTests.test_candidate_covers_all_tolerance_corners) ... ok
+test_copper_screen_is_conservative_with_thinner_internal_copper (test_current_budget.CurrentBudgetTests.test_copper_screen_is_conservative_with_thinner_internal_copper) ... ok
+test_exact_rated_vref_does_not_provide_tolerance_margin (test_current_budget.CurrentBudgetTests.test_exact_rated_vref_does_not_provide_tolerance_margin) ... ok
+test_unknown_thermal_values_are_not_invented (test_current_budget.CurrentBudgetTests.test_unknown_thermal_values_are_not_invented) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

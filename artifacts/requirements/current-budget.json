@@ -1,0 +1,53 @@
+{
+  "status": "pre_layout_conditional_calculation_only",
+  "driver_assumption": "A4988, as observed in GitHub v1.12.0; verify v1.13.0",
+  "motor_phase_current_ceiling_a": 0.67,
+  "assumptions": {
+    "logic_rail_v": 3.3,
+    "logic_rail_tolerance_fraction": 0.05,
+    "resistor_tolerance_fraction": 0.01,
+    "unqualified_driver_gain_allowance_fraction": 0.05,
+    "thermal_screen_rise_c": 30,
+    "external_copper_um": 35,
+    "internal_copper_um": 17.5
+  },
+  "reference_v1_12_trip_a": 0.350765306122449,
+  "vref_for_exact_nominal_rated_trip_v": 1.2864,
+  "screening_candidate_not_selected_parts": {
+    "divider_high_ohm": 19600,
+    "divider_low_ohm": 10000,
+    "each_phase_sense_ohm": 0.24,
+    "nominal_vref_v": 1.114864864864865,
+    "nominal_trip_a": 0.5806587837837839,
+    "corner_count": 32,
+    "minimum_screened_trip_a": 0.5120068696954219,
+    "maximum_screened_trip_a": 0.6552342478985902,
+    "below_motor_rating_under_assumed_budget": true,
+    "full_step_each_phase_a_at_70_71_percent": 0.41058776356904686,
+    "nominal_sense_loss_w_each_at_trip": 0.08091950956446313
+  },
+  "thermal_screen": {
+    "sense_loss_w_each_at_rated_current": 0.10773600000000001,
+    "sense_loss_w_both_if_both_at_rated_current": 0.21547200000000002,
+    "minimum_sense_nameplate_w_at_50_percent_loading": 0.21547200000000002,
+    "suggested_sense_rating_w_before_temperature_derating": 0.25,
+    "driver_conduction_w_per_ohm_of_bridge_path_two_phases": 0.8978000000000002,
+    "conduction_loss_multiplier_vs_v1_12_at_same_rds": 3.648516739173554,
+    "motor_copper_loss_w_per_ohm_per_phase_two_phases_at_rated_current": 0.8978000000000002,
+    "motor_copper_loss_w": null,
+    "junction_temperature_c": null
+  },
+  "isolated_trace_screen_minimum_width_mm_at_0_67a": {
+    "external_35um": 0.08876062930509401,
+    "internal_17_5um": 0.4618108747218833
+  },
+  "release_blockers": [
+    "Retrieve and hash published v1.13.0 and verify actual driver/sense topology.",
+    "Read original motor drawing, resistance, inductance, duty and temperature limits.",
+    "Select genuine supplier parts; verify tolerance, pulse power and hot derating.",
+    "Verify manufacturer current accuracy across microsteps and actual VDD limits.",
+    "Review Kelvin sense, shared returns, exposed pad, copper and via thermal paths.",
+    "Measure phase current, junction/case temperature and regenerative overshoot."
+  ],
+  "manufacturing_release": false
+}

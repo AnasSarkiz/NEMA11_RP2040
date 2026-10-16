@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@tscircuit/cli": "^0.1.2261",
+    "circuit-json-to-gerber": "0.0.112",
+    "circuit-json-to-kicad": "0.0.230",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-reconciler": "0.34.0",
+    "three": "0.186.1",
+    "tscircuit": "^0.0.2764",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "schematic-symbols": "0.0.248"
+  },
+  "devDependencies": {
+    "bun": "1.4.2"
+  },
+  "name": "nema11-pcb-toolchain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frozen PCB tooling from inspected NEMA14 GitHub v1.12.0; recheck against published v1.13.0"
+}

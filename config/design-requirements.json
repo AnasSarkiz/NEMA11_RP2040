@@ -1,0 +1,67 @@
+{
+  "project": "NEMA11_RP2040",
+  "destination": "AnasSarkiz/NEMA11_RP2040",
+  "reference": {
+    "repository": "AnasSarkiz/NEMA14_RP2040",
+    "published_version": "1.13.0",
+    "status": "awaiting_published_source",
+    "modify_reference": false
+  },
+  "motor": {
+    "manufacturer": "STEPPERONLINE",
+    "part_number": "11HS12-0674S",
+    "datasheet_url": "https://files.omc-stepperonline.com/11HS12-0674S_Full_Datasheet.pdf",
+    "step_url": "https://files.omc-stepperonline.com/11HS12-0674S.STEP",
+    "ratings_source": "user-specified current drawing; original documents not yet retrieved",
+    "phase_current_a": 0.67,
+    "maximum_frame_mm": 28.3,
+    "maximum_body_length_mm": 33,
+    "front_mounting_pitch_mm": 23,
+    "front_thread": "M2.5",
+    "rear_mounting_verified": false,
+    "rear_shaft_verified": false,
+    "phase_resistance_ohms": null,
+    "phase_inductance_h": null,
+    "lead_colors_verified": false,
+    "shaft_dimensions_verified": false,
+    "thread_depth_verified": false
+  },
+  "fabrication": {
+    "minimum_via_drill_mm": 0.30,
+    "minimum_via_pad_mm": 0.45,
+    "final_board_outline_verified": false,
+    "gerbers_released": false,
+    "jlcpcb_order_submitted": false
+  },
+  "required_features": [
+    "RP2040 and all supply rails/decoupling",
+    "QSPI flash, crystal, boot and SWD/debug",
+    "separate USB-C programming/data and 15 V PD inputs",
+    "CH224A with voltage ADC monitoring and MCU-readable POWER_GOOD",
+    "motor driver with both sense paths and microstepping",
+    "RGB LED, power indicator and buzzer",
+    "temperature sensor and test points",
+    "regulators, protection and JST motor connection",
+    "optional encoder circuit retaining documented DNP status"
+  ],
+  "required_checks": [
+    "published reference identity and feature parity",
+    "source and TypeScript",
+    "connected symbol pins and schematic/ERC",
+    "functional schematic grouping and A4 PDF visual review",
+    "native DRC, connectivity and shorts",
+    "crystal placement/routing and grounding",
+    "thermal/current-limit and every-trace width review",
+    "actual via drills/pads, clearances and board-edge review",
+    "independent Gerber/CAM versus source",
+    "exact JLCPCB BOM/CPL, DNP and paste policy",
+    "native tscircuit 3D assembly and supplier-model geometry",
+    "mating housing/contacts, coil order and wire termination",
+    "attachment, fasteners, lead route and insertion/tool clearance"
+  ],
+  "publication": {
+    "separate_package": "AnasSarkiz/NEMA11_RP2040",
+    "status": "not_published",
+    "only_validated_milestones": true
+  }
+}

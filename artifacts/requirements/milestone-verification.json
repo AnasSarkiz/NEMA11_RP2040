@@ -1,0 +1,41 @@
+{
+  "milestone": "requirements_and_tooling_only",
+  "verified_at_utc": "2026-10-16T21:24:22.958853+00:00",
+  "checks": [
+    {
+      "name": "setup_script_after_cache_correction",
+      "command": "bash scripts/setup-tools.sh",
+      "exit_code": 0,
+      "repeat_install_checked": true,
+      "log": "artifacts/requirements/setup-output.txt"
+    },
+    {
+      "name": "calculation_tests",
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 4,
+      "log": "artifacts/requirements/setup-output.txt"
+    },
+    {
+      "name": "supplier_STEP_import_and_valid_solid",
+      "exit_code": 0,
+      "evidence": "artifacts/requirements/toolchain-verification.json"
+    }
+  ],
+  "inputs_sha256": {
+    "config/design-requirements.json": "b483f152d2afe266169ba7278138c8762f5074d277033234a2db3aa4619e47b6",
+    "scripts/current_budget.py": "aa0e783b7f9095441a616bd36d65650c23a188285817fb4c0b386344c6e7a0fd",
+    "tests/test_current_budget.py": "77a75a2616e7d7ff3b20ff091aded8a5e72c14febc662e282298b2c51b1fcdc5",
+    "tools/pcb/package-lock.json": "e2ac3c37ff5f21745369ea93215889101ba0ba3d0fe2360df17f8c26ab1ba298",
+    "tools/requirements-cad.lock": "f585ee3dec5bcf6ad064025a05e33227d5ead74ee09ccc5b18c5e671074b7842",
+    "artifacts/requirements/current-budget.json": "8873cd178c9205534292287a135c2b4ef26fe42bc391b7d867018057e8753fac",
+    "artifacts/requirements/reference-1.12-inspection.json": "cdef4871813277a0d7b73014fdf7717a1a45c53dcc897e11e07e9bb3c184792c",
+    "artifacts/requirements/toolchain-verification.json": "5c6b4f416bed0f85e9a21235344d6c4598cd57f428b1788ec4ef7332c0255926",
+    "artifacts/requirements/setup-output.txt": "d6fcfa91448cebd5296c8cec65923c4364f57b6923b79cc4a46732ee10206c6f"
+  },
+  "reference_v1_13_verified": false,
+  "motor_documents_verified": false,
+  "NEMA11_source_ERC_DRC_CAM_assembly_checks": "NOT_RUN_NO_BOARD",
+  "manufacturing_artifacts_released": false,
+  "tscircuit_package_published": false
+}

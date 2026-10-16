@@ -1,0 +1,30 @@
+{
+  "scope": "toolchain_functional_check_on_reference_supplier_model_only",
+  "native_step_import": {
+    "input_model": "NEMA14 GitHub v1.12 supplier A4988SETTR_T.step",
+    "sha256": "578a8ff75c4016df2d5e6e332aba2899ef713bf2d1c439906bc57edf2a57e121",
+    "valid": true,
+    "volume_mm3": 15.060997944837027,
+    "bounds_mm": [
+      -2.5010000000000168,
+      -2.501,
+      -0.050000100000000026,
+      2.501000000000005,
+      2.501,
+      0.5810001
+    ]
+  },
+  "python_packages": {
+    "cadquery": "2.7.0",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "pypdf": "6.10.0",
+    "scipy": "1.17.0",
+    "shapely": "2.1.2",
+    "CairoSVG": "2.8.2",
+    "ortools": "9.15.6755"
+  },
+  "pcb_package_lock_sha256": "e2ac3c37ff5f21745369ea93215889101ba0ba3d0fe2360df17f8c26ab1ba298",
+  "nema11_board_checks_ran": false,
+  "motor_step_verified": false
+}
