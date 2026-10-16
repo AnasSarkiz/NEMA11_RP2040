@@ -58,6 +58,27 @@ The physical-pin checks cover all 119 source ports and exact support values.
 Fault-injection tests reject a 3.3 V core-rail error, swapped flash IO2/IO3,
 missing bypass, BOOT-to-ground short and paste on a debug pad.
 
+`npm run core:schematic` creates the three functional native schematic sheets
+and [A4 vector PDF](../artifacts/rp2040-core/schematic-a4.pdf). The generator
+preserves every electrical/PCB/CAD record, uses real supplier-symbol ports,
+and connects each used pin to its actual source net. Unused GPIO have NC
+crosses. The sheet groups cover MCU/controller interfaces, flash/clock/debug/
+USB termination, and the decoupling banks. Native schematic placement reports
+zero issues. Geometry checks cover all 119 pins, including wire-to-pin contact
+and correct label attachment. Four additional fault tests detect missing pins,
+gapped wires and wrong labels. All 14 current tests pass.
+
+`npm run core:3d` produces [development-core.glb](../artifacts/rp2040-core/development-core.glb)
+through the native Circuit JSON-to-GLTF converter. It loads the nine original
+supplier OBJ types from committed local assets, retains their native poses and
+model transforms, and records model hashes. This is an unrouted subsystem
+canvas, not the motor/fastener/harness assembly. No motor geometry is invented.
+
+The GitHub workflow rebuilds the subsystem and native schematic, checks pin
+connections and source-input hashes, and rejects changed committed JSON output.
+Its scope is source/subsystem checks. Workflow publication or execution does
+not certify a completed controller or fabrication release.
+
 This is source/subsystem verification. Full-controller ERC, routing, DRC,
 crystal/ground layout, thermal review, connectivity/shorts, CAM and completed
 motor assembly remain separate outstanding gates. No hardware or fabrication

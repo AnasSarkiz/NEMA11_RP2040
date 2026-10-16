@@ -1,0 +1,1 @@
+{"exported":"artifacts/rp2040-core/development-core.glb","bytes":2268492,"supplier_assets_loaded":9,"manufacturing_release":false}

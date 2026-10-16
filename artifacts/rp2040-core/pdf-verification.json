@@ -1,0 +1,21 @@
+{
+  "scope": "subsystem schematic review only",
+  "page_count": 3,
+  "page_sizes_mm": [
+    [
+      297.00000007777777,
+      210.0000001583333
+    ],
+    [
+      297.00000007777777,
+      210.0000001583333
+    ],
+    [
+      297.00000007777777,
+      210.0000001583333
+    ]
+  ],
+  "pdf_sha256": "24c70939e92059cd8c312f7be42955e767497b3e20857e13e74312846d99ab22",
+  "schematic_sha256": "7cec51801d7b0b69975a524894ca6582c32292b8a92ceb4ec91fcdc2ca7e99e8",
+  "manufacturing_release": false
+}

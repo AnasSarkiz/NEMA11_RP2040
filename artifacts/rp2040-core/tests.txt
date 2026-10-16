@@ -12,8 +12,12 @@ test_candidate_covers_all_tolerance_corners (test_current_budget.CurrentBudgetTe
 test_copper_screen_is_conservative_with_thinner_internal_copper (test_current_budget.CurrentBudgetTests.test_copper_screen_is_conservative_with_thinner_internal_copper) ... ok
 test_exact_rated_vref_does_not_provide_tolerance_margin (test_current_budget.CurrentBudgetTests.test_exact_rated_vref_does_not_provide_tolerance_margin) ... ok
 test_unknown_thermal_values_are_not_invented (test_current_budget.CurrentBudgetTests.test_unknown_thermal_values_are_not_invented) ... ok
+test_missing_symbol_pin_is_rejected (test_schematic_contract.SchematicContractTests.test_missing_symbol_pin_is_rejected) ... ok
+test_native_symbols_are_connected_to_real_nets (test_schematic_contract.SchematicContractTests.test_native_symbols_are_connected_to_real_nets) ... ok
+test_wire_gap_at_symbol_pin_is_rejected (test_schematic_contract.SchematicContractTests.test_wire_gap_at_symbol_pin_is_rejected) ... ok
+test_wrong_net_label_is_rejected (test_schematic_contract.SchematicContractTests.test_wrong_net_label_is_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.030s
+Ran 14 tests in 0.072s
 
 OK

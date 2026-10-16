@@ -7,6 +7,8 @@
   "scripts": {
     "core:build": "bun scripts/build-core.tsx",
     "core:check": "python3 scripts/verify_core.py",
+    "core:schematic": "python3 scripts/schematic_core.py && bun scripts/render-core.tsx && tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt && python3 scripts/verify_core_schematic.py && /workspace/.venvs/nema11-cad/bin/python scripts/export-core-pdf.py",
+    "core:3d": "bun scripts/export-core-3d.tsx",
     "typecheck": "tsc --noEmit",
     "test": "python3 -m unittest discover -s tests -v"
   }

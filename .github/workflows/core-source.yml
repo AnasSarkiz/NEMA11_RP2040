@@ -1,0 +1,55 @@
+name: MCU subsystem source checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: core-source-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: tools/pcb/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install frozen PCB tooling
+        run: |
+          git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
+          npm ci --prefix tools/pcb --legacy-peer-deps --no-audit --no-fund
+          (cd tools/pcb && sha256sum --check trace-linter.sha256)
+          ln -s tools/pcb/node_modules node_modules
+          echo "$GITHUB_WORKSPACE/tools/pcb/node_modules/.bin" >> "$GITHUB_PATH"
+      - name: Check source and native subsystem
+        run: |
+          npm run typecheck
+          npm run core:build
+          npm run core:check
+          python3 scripts/schematic_core.py
+          bun scripts/render-core.tsx
+          tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt
+          python3 scripts/verify_core_schematic.py
+          npm test
+      - name: Verify committed native source reproduces
+        run: |
+          git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          root = pathlib.Path('.')
+          manifest = json.loads((root / 'artifacts/rp2040-core/supplier-provenance.json').read_text())
+          for entry in manifest['files']:
+              assert hashlib.sha256((root / entry['path']).read_bytes()).hexdigest() == entry['sha256'] == entry['reference_sha256'], entry['path']
+          print('Original supplier and manufacturer inputs verified.')
+          PY

@@ -1,0 +1,10 @@
+{
+  "scope": "MCU subsystem symbol connectivity and schematic geometry; not full-controller ERC",
+  "passed": true,
+  "errors": [],
+  "physical_ports_checked": 119,
+  "native_placement_issues": 0,
+  "schematic_sha256": "7cec51801d7b0b69975a524894ca6582c32292b8a92ceb4ec91fcdc2ca7e99e8",
+  "base_sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "manufacturing_release": false
+}

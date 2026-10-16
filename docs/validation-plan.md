@@ -12,13 +12,13 @@ values. A source import or a zero-test result does not validate a board.
 | Feature parity | Reference-to-NEMA11 physical pins, nets, values and DNP matrix | Not run; exact baseline missing |
 | Electrical | Actual driver current bounds, shunt derating, hot losses, power/ADC/PG review | Preliminary conditional calculation only |
 | Source | Frozen dependency install, TypeScript, native source/netlist/pin checks | NEMA11 MCU subsystem render, strict schema, physical-pin contract and 10 tests pass; full controller pending |
-| Schematic | Function groups, connected symbol pins, net labels, ERC and inspected A4 PDF | Not run; no NEMA11 schematic |
+| Schematic | Function groups, connected symbol pins, net labels, ERC and inspected A4 PDF | MCU subsystem: 3 A4 sheets, 119-pin geometry checks and native placement pass; full-controller ERC pending |
 | PCB | DRC, all intended physical nets, pad identity and no unintended copper | Not run; no NEMA11 PCB |
 | Layout | Short top-layer crystal signals, ground return/reference, decoupling, thermal and every-trace widths | Not run |
 | Fabrication | Actual ≥0.30 mm via drills, ≥0.45 mm pads, copper/mask/drill/edge clearances | Not run |
 | CAM | Independent opens/shorts/islands, outline/drills, source-to-Gerber and layer order | Not run; no Gerbers |
 | PCBA | Exact MPN/JLC codes, fitted/DNP policy, BOM/CPL datum/polarity/rotation and stencil | Not run; no manufacturing BOM/CPL |
-| Mechanical | Native tscircuit assembly with genuine supplier models and original motor STEP | Not run |
+| Mechanical | Native tscircuit assembly with genuine supplier models and original motor STEP | Native subsystem 3D exports nine original supplier model types; motor assembly not run |
 | Harness | Mating part, contacts, wire/termination, coil order, JST-edge routing and strain relief | Not run |
 | Attachment | Real mounting method, fasteners/thread engagement, insertion/tool and dynamic clearances | Not run |
 | Publication | Separate prototype package, immutable source provenance and downloaded artifact verification | Blocked by registry access and missing tscircuit authentication |

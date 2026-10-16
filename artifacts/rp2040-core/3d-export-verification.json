@@ -1,0 +1,56 @@
+{
+  "scope": "unrouted MCU subsystem development canvas; not completed motor assembly",
+  "circuit_sha256": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
+  "glb_sha256": "2f246930eb2571618cbfdfc4c34df2c43cf7f1d1260eccfdba4b5aa864ec8ba8",
+  "bytes": 2268492,
+  "original_supplier_assets_loaded": [
+    {
+      "path": "imports/supplier/RP2040/RP2040.obj",
+      "sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e",
+      "bytes": 167735
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
+      "bytes": 86770
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.obj",
+      "sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7",
+      "bytes": 133015
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    }
+  ],
+  "motor_model_included": false,
+  "final_NEMA11_layout": false,
+  "manufacturing_release": false
+}

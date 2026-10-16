@@ -12,6 +12,7 @@ which is inspection evidence, not a replacement for the requested baseline.
 
 - [Design requirements](config/design-requirements.json)
 - [RP2040 subsystem source and verification](docs/rp2040-core.md)
+- [Subsystem A4 schematic PDF](artifacts/rp2040-core/schematic-a4.pdf)
 - [Engineering review and attachment constraints](docs/design-review.md)
 - [Validation and release plan](docs/validation-plan.md)
 - [Preliminary current/thermal calculation](artifacts/requirements/current-budget.json)

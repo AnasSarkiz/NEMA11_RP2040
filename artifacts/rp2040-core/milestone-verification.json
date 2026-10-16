@@ -3,7 +3,7 @@
   "source_and_render_passed": true,
   "strict_schema_passed": true,
   "physical_pin_contract_passed": true,
-  "tests_passed": 10,
+  "tests_passed": 14,
   "supplier_files_unchanged": 39,
   "files_sha256": {
     "src/rp2040-core.tsx": "c6c1ac6903453b956f03ac3dbd1ed4710969b437d7ed9718cb1fbc152576dc2b",
@@ -15,9 +15,19 @@
     "artifacts/rp2040-core/core.circuit.json": "2b6f451c9781e963276a55b9a6778ebfb7abe12e6cd2f610d5edab89ee9fe4a8",
     "artifacts/rp2040-core/build-report.json": "857c68180a21af73007c51d0e3a1aece53b441e2576b455598153f39590da48c",
     "artifacts/rp2040-core/schema-verification.json": "b9287fce31d26b007e1ebba801fd4fbbbfede550e1ce53e6da06e30647f5acc1",
-    "artifacts/rp2040-core/physical-pin-verification.json": "b930c6a76dc146883a3d8786e26e72a09c3e8de97b6959c19f4aa99babd8dc4c"
+    "artifacts/rp2040-core/physical-pin-verification.json": "b930c6a76dc146883a3d8786e26e72a09c3e8de97b6959c19f4aa99babd8dc4c",
+    "artifacts/rp2040-core/core-schematic.circuit.json": "7cec51801d7b0b69975a524894ca6582c32292b8a92ceb4ec91fcdc2ca7e99e8",
+    "artifacts/rp2040-core/schematic-verification.json": "018eab67f5090d9097166d466577fcb32cf6ff014aad206d747f77ee6cfd0e61",
+    "artifacts/rp2040-core/schematic-a4.pdf": "24c70939e92059cd8c312f7be42955e767497b3e20857e13e74312846d99ab22",
+    "artifacts/rp2040-core/pdf-verification.json": "a9dad75e17783e973fbb1e42b5fa632c166a40d73a84215b04803231fc1b11d8",
+    "artifacts/rp2040-core/development-core.glb": "2f246930eb2571618cbfdfc4c34df2c43cf7f1d1260eccfdba4b5aa864ec8ba8",
+    "artifacts/rp2040-core/3d-export-verification.json": "5e1aa478e0c1c5a1e5d48f1945c75425d97a4491c82fde48caa575212a679580"
   },
   "requested_reference_v1_13_verified": false,
-  "final_layout_ERC_DRC_CAM_assembly": "NOT_RUN",
-  "fabrication_ready": false
+  "final_layout_ERC_DRC_CAM_assembly": "NOT_RUN; subsystem schematic connectivity/geometry and development 3D export are verified separately",
+  "fabrication_ready": false,
+  "subsystem_schematic_geometry_passed": true,
+  "native_schematic_placement_issues": 0,
+  "A4_pdf_pages": 3,
+  "native_3D_original_supplier_asset_types_loaded": 9
 }
