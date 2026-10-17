@@ -1,0 +1,44 @@
+{
+  "jlcpcb_id": "C7434086",
+  "mpn": "HP05W3F240LT5E",
+  "manufacturer": "ROYALOHM / UNI-ROYAL",
+  "resistance_ohms": 0.24,
+  "tolerance_fraction": 0.01,
+  "rated_power_w_at_70c": 0.3333333333333333,
+  "maximum_ambient_c": 155,
+  "datasheet": {
+    "url": "https://datasheet.lcsc.com/datasheet/pdf/99349835c534e60988d63cf2504affd3.pdf?productCode=C7434086",
+    "sha256": "288ed1a86e18c7a49ab31b5a1f90a340ee4abf0dbb07374ac98864e60674e6b9",
+    "jlcpcb_id": "C7434086",
+    "mpn": "HP05W3F240LT5E",
+    "public_stock_snapshot": 1191,
+    "stock_not_reserved": true
+  },
+  "original_source_sha256": "63546e71899d44c8f8d4bc35703c89dc3f92e4a96dcc49b73d0c7c16c63a1b96",
+  "physical_copper_pads_identical_to_reference_shunt": true,
+  "working_source_changes": [
+    "React import",
+    "owned model URL transport"
+  ],
+  "native_import_command": "tsci import --jlcpcb --download --use-exact-footprint C7434086",
+  "files": [
+    {
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84"
+    },
+    {
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step",
+      "sha256": "fc4726ad0364128aa67ad16e76bace8fa7a85fb80514f68d5fbf53d114860b6f"
+    },
+    {
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.tsx",
+      "sha256": "4a5ed60835e8c37d00adeb3ae52fcd871f184b7bccfd3759594e769068be6d79"
+    },
+    {
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.tsx.original",
+      "sha256": "63546e71899d44c8f8d4bc35703c89dc3f92e4a96dcc49b73d0c7c16c63a1b96"
+    }
+  ],
+  "stock_not_reserved": true,
+  "manufacturing_release": false
+}
