@@ -1,0 +1,91 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.4.1",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "8c3e7476-b8d1-489d-8d4e-68186be5e791",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 1,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2209,
+      "sha256": "bc04ce04e2a2594b58d4b7dfb31a51a41c4137d412e0af65d3f66e50283b435b",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 10703938,
+      "sha256": "b5928badc2efd866636d64de8b6732ff6c73e6dc5d57041f874f31cdd58787c7",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 10703938,
+      "sha256": "b5928badc2efd866636d64de8b6732ff6c73e6dc5d57041f874f31cdd58787c7",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 822,
+      "sha256": "a330296f828a638215bf5eacbdaaaad1f5770a98e38097f0a95cee5cb37ef885",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 2355,
+      "sha256": "24fb49f0559a0e375b72e977b3517d69cea254c946c08e7c090e5205f57d8cca",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 389,
+      "sha256": "42b03cd7b560f522d5dfd783fcddf6a3c5b63a8c2dd96ffd048557e62ee16490",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "additional_registry_generated_files": [],
+  "source_milestone_commit": "399ffc34d70be4861b0224960d5a135c1c9d0d20",
+  "scope": "Validated 0.4 routed native PCB/3D with separate A4 four-mount documentation review; no copper or component changes",
+  "ready_to_build": true,
+  "physical_routing_complete": true,
+  "manufacturing_release": false,
+  "disconnected_controller_nets": 0,
+  "physical_shorts": 0,
+  "native_DRC_pass": true,
+  "PCB_mount_count": 4,
+  "PCB_mount_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "layers": 6,
+  "USB_pair_geometry_and_impedance_qualified": false,
+  "factory_process_acceptance_received": false,
+  "mounting_documentation_commit": "5625d8640a091ecd55b8e5c160540ff4137218e2",
+  "unchanged_native_records_from": "0.4.0",
+  "native_CLI_upload_diagnosis": {
+    "exit_code": 1,
+    "observed_initial_uploaded_small_files": 5,
+    "native_CLI_did_not_complete_two_large_JSON_uploads": true,
+    "authentication_succeeded": true,
+    "recovery_method": "Separate authenticated single-file gzip package_files/upload_archive requests",
+    "recovery_uploads": [
+      {
+        "file": "index.circuit.json",
+        "http_status": 200
+      },
+      {
+        "file": "dist/index/circuit.json",
+        "http_status": 200
+      }
+    ],
+    "all_7_remote_files_byte_verified_after_recovery": true,
+    "private_CLI_log_excluded_from_repository": true
+  }
+}

@@ -51,10 +51,12 @@ The nominal OEM STEP corner relief is not guaranteed by the drawing. Neither
 sampled CAD paths nor a final nonintersecting model proves a buildable product.
 
 The checked routed native snapshot is published separately as
-[NEMA11_RP2040_Compact_Prototype 0.4.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype).
+[NEMA11_RP2040_Compact_Prototype 0.4.1](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype).
+Version 0.4.1 adds this mounting review while preserving every native
+circuit/PCB/3D record from 0.4.0.
 All seven required remote files were independently downloaded and matched
-byte-for-byte; the [publication receipt](../artifacts/publication/compact-prototype-0.4.0.json)
-records the CLI size-limit failure and successful authenticated archive recovery.
+byte-for-byte; the [publication receipt](../artifacts/publication/compact-prototype-0.4.1.json)
+records the incomplete CLI upload and successful authenticated archive recovery.
 Version 0.3.0 remains the historical unrouted release. Neither is a fabrication
 release.
 

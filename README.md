@@ -82,15 +82,20 @@ The historical [28 mm compact placement milestone](docs/compact-controller.md) h
 [source](src/compact/board.tsx), [six A4 schematic sheets](artifacts/compact-controller/schematic-a4.pdf)
 and [genuine-model 3D PCB](artifacts/compact-controller/development-controller.glb).
 All 82 fitted parts are on top; nominal body fit and independent placement checks
-pass. **Compact copper routing is in progress; this is not fabrication-ready.**
+pass. That historical two-hole layout was not fully routed and is superseded by
+the routed four-hole controller above.
 
 Published native compact development package:
 [NEMA11_RP2040_Compact_Prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
-v0.4.0 — **fully routed six-layer compact review, four mounting holes, authorized
+v0.4.1 — **fully routed six-layer compact review, four mounting holes, authorized
 buzzer removal, six connected A4 sheets and 78 native 3D models**. Native DRC,
 physical connectivity, shorts and CAM comparison report zero errors. All seven
 required registry files were independently downloaded and byte-matched; large-file
 CLI upload failures and recovery are recorded honestly in the
-[publication evidence](artifacts/publication/compact-prototype-0.4.0.json).
+[publication evidence](artifacts/publication/compact-prototype-0.4.1.json).
+The [A4 mounting comparison](artifacts/requirements/mounting-review/four-mount-comparison.pdf)
+shows the PCB's four Ø1.8 mm holes at 25 mm pitch separately from the verified
+motor front threads. Version 0.4.1 preserves every native circuit/PCB/3D record
+from 0.4.0; it adds the mounting documentation.
 **Not fabrication-ready**; see the current qualification requirements above.
 The v0.1.0 / v0.2.0 two-hole and v0.3.0 four-hole snapshots are preserved.
