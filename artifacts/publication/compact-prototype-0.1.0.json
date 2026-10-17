@@ -1,0 +1,66 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.1.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "768f0a2a-39e9-41ab-9831-11187ddb3197",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 0,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2044,
+      "sha256": "4954571dd02f0ce8c85ad8d2bb1a6ae2f31904732b1a0f3ae7d10faf4ccfb632",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 1862173,
+      "sha256": "fc754b8cea21b93042634bd74d291d0830285c701f1f8012da85c58766d3bcbe",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 1395802,
+      "sha256": "30e4fa0f9e56f3d3a398942d01bad128a540d67e006009ac9c9d1fb854d1fea8",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 989,
+      "sha256": "db7dc4cb56985b13e2626fecd8090ca504f319be7c759a32324f763d97c54281",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 1150,
+      "sha256": "9c232366ab2a5d9f8c9e06baffb5c05b2275a411982e88a68989fbd5e5325c82",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 412,
+      "sha256": "0868333a6b14e5e4cfd7652a96c83c058928d925b3e415da03240b7e07024934",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "additional_registry_generated_files": [
+    "dist/index.html",
+    "dist/index/3d.png",
+    "dist/index/pcb.svg",
+    "dist/index/schematic.svg"
+  ],
+  "source_milestone_commit": "e23931572e1d7e6a1a83014138724059a690091a",
+  "scope": "Validated UNROUTED 28 mm all-top full-circuit placement, six A4 schematic sheets and native OEM motor/front-carrier proposal assembly",
+  "ready_to_build": true,
+  "physical_routing_complete": false,
+  "manufacturing_release": false
+}

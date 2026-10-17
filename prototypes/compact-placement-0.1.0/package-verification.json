@@ -1,0 +1,23 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.1.0",
+  "scope": "Validated native 28 mm full-controller placement and six-sheet schematic milestone; UNROUTED",
+  "source_milestone_commit": "e23931572e1d7e6a1a83014138724059a690091a",
+  "circuit_sha256": "30e4fa0f9e56f3d3a398942d01bad128a540d67e006009ac9c9d1fb854d1fea8",
+  "source_components": 94,
+  "electrical_components": 92,
+  "physical_ports": 340,
+  "native_models": 84,
+  "schematic_sheets": 6,
+  "placement_schematic_and_nominal_3D_verified": true,
+  "physical_routing_complete": false,
+  "registry_published": false,
+  "manufacturing_release": false,
+  "limitations": [
+    "Compact routing remains incomplete; construction file has opens",
+    "Nominal supplier models and 5 um minimum JLC spacing surplus are not tolerance-qualified",
+    "Original GCT STEP compound validity limitation retained",
+    "Carrier corner radii, narrow-rail strength, fasteners, harness and machine interface are unqualified",
+    "Buzzer waveform/current/reflow, motor current accuracy, thermal/regen behavior, JLC stackup/process/panel and stock remain unqualified"
+  ]
+}

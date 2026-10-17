@@ -69,3 +69,7 @@ The new [28 mm compact placement milestone](docs/compact-controller.md) has nati
 and [genuine-model 3D PCB](artifacts/compact-controller/development-controller.glb).
 All 82 fitted parts are on top; nominal body fit and independent placement checks
 pass. **Compact copper routing is in progress; this is not fabrication-ready.**
+
+Published native compact development package:
+[NEMA11_RP2040_Compact_Prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
+v0.1.0 — **unrouted placement/source/3D milestone, not manufacturing files**.

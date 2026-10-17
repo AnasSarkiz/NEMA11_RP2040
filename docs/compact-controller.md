@@ -116,3 +116,13 @@ proposal, explicitly not genuine supplier hardware or a released manufactured
 part. The original motor STEP includes wire lead-outs beyond the frame; the PCB
 body fit above does not claim that unbent motor wires or arbitrary cable plugs
 fit within that square. Full harness routing remains to be qualified.
+
+The complete native compact assembly GLB independently matches all 84 supplier,
+OEM motor and custom-carrier STEP bounds. It retains the original motor lead
+stubs toward +X and the top-entry PH edge. Full harness and genuine fasteners
+are still absent. The separate native package
+[`AnasSarkiz/NEMA11_RP2040_Compact_Prototype`](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
+version 0.1.0 freezes this **unrouted** placement/source/assembly milestone.
+The actual configured CLI authentication, native build roundtrip and compressed
+CLI push succeeded; the public registry files are independently checked against
+the local snapshot. No credential is included in that snapshot or the repository.
