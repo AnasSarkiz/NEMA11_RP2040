@@ -11,7 +11,7 @@ assert sum(e['type']=='source_component' for e in records)==94
 assert sum(e['type']=='source_port' for e in records)==340
 assert sum(e['type']=='source_net' for e in records)==64
 assert sum(e['type']=='schematic_sheet' for e in records)==6
-assert sum(e['type']=='cad_component' for e in records)==87 # 82 fitted + 3 encoder DNP + motor/carrier
+assert sum(e['type']=='cad_component' for e in records)==84 # 82 fitted + motor/carrier; DNP encoder models are omitted
 assert not any(e['type']=='pcb_trace' for e in records)
 assert not p['manufacturing_release'] and not p['physical_routing_complete']
 print('Immutable compact prototype: exact committed assembly and every native CLI roundtrip record verified')
