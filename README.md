@@ -9,7 +9,12 @@ must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
 The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
-**Current milestone: full native controller source, six A4 sheets, routed copper,
+The default native preview now opens the **28 × 28 mm compact assembly**.
+It has validated all-top placement, full source, six connected A4 sheets and 84
+native 3D models. Compact routing remains in progress; the older baseline’s
+zero-open routed results below apply to its larger outline.
+
+**Earlier 35 × 40 mm electrical baseline: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.
 Both manufacturer-required USB locating-hole corrections are complete. Native DRC reports zero errors with the documented exact-circle checker correction.
 All 304 required pins on 92 components are physically connected; 37 intentional

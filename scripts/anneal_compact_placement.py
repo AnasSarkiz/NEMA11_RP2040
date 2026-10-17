@@ -32,7 +32,7 @@ if args.mounts:
   preferred[name]=(xx,12.5)
 start_poses=json.loads(Path(args.start).read_text())['placements'] if args.start else {}
 indices={p['name']:i for i,p in enumerate(parts)};pins={p['name']:list(p['pin_centers_relative_mm']) for p in parts}
-lines=[f'{len(parts)} {len(constraints)} {args.seconds} {args.seed}'];random.seed(args.seed)
+lines=[f'{len(parts)} {len(constraints)} {args.seconds} {args.seed} {indices['Y_MCU']} {indices['U_MCU']}'];random.seed(args.seed)
 for p in parts:
  name=p['name'];xmin=xmax=ymin=ymax=None
  bounds=[-14.15,14.15,-14.15,14.15];mask=15

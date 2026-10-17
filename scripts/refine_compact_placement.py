@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 from scipy.optimize import linprog
 ROOT=Path(__file__).resolve().parents[1]
-a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--omit-critical',action='store_true');args=a.parse_args()
+a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--omit-critical',action='store_true');a.add_argument('--clock-corridor',action='store_true');a.add_argument('--output',default='refined-placement.json');args=a.parse_args()
 parts=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts']
 q=json.loads(Path(args.input).read_text())['placements'];cs=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
 names=[p['name'] for p in parts];idx={n:i for i,n in enumerate(names)};N=len(names);rows=[];limits=[];labels=[]
@@ -55,6 +55,9 @@ for (i,p),(j,r) in itertools.combinations(enumerate(parts),2):
   elif side==1:add([(2*j,1),(2*i,-1)],b[0]-c[2]-g,label)
   elif side==2:add([(2*i+1,1),(2*j+1,-1)],c[1]-b[3]-g,label)
   else:add([(2*j+1,1),(2*i+1,-1)],b[1]-c[3]-g,label)
+if args.clock_corridor:
+ i=idx['Y_MCU'];j=idx['U_MCU'];yy=bbox(parts[i],'copper_relative_to_pivot_mm')[3];mm=bbox(parts[j],'copper_relative_to_pivot_mm')[1]
+ add([(2*i+1,1),(2*j+1,-1)],mm-yy-.55,'Reserved top-layer crystal escape corridor')
 if not args.omit_critical:
  for an,ap,bn,bp,d in cs:
   i=idx[an];j=idx[bn];aa=point(parts[i],parts[i]['pin_centers_relative_mm'][ap]);bb=point(parts[j],parts[j]['pin_centers_relative_mm'][bp])
@@ -73,4 +76,4 @@ if not result.success:
   residual=np.dot(rows,relax.x[:-1])-limits
   report['minimum_common_constraint_relaxation_mm']=float(relax.x[-1])
   report['conflicting_constraints']=[{'constraint':labels[i],'violation_mm':float(residual[i])} for i in np.flatnonzero(residual>1e-5)]
-path=ROOT/'artifacts/compact-controller/refined-placement.json';path.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k not in ['placements','conflicting_constraints']}))
+path=ROOT/'artifacts/compact-controller'/args.output;path.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k not in ['placements','conflicting_constraints']}))

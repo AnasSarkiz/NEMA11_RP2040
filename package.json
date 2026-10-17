@@ -1,9 +1,9 @@
 {
   "name": "NEMA11_RP2040",
-  "version": "0.3.1-dev",
+  "version": "0.4.0-dev",
   "private": true,
   "type": "module",
-  "description": "NEMA11 controller development; subsystem milestones are not a fabrication release",
+  "description": "NEMA11 compact 28 mm all-top controller development; current placement/source/3D prototype is unrouted and not fabrication ready",
   "scripts": {
     "core:build": "bun scripts/build-core.tsx",
     "core:check": "python3 scripts/verify_core.py",
@@ -27,10 +27,16 @@
     "controller:schematic": "bun scripts/schematic-controller.tsx && python3 scripts/verify_controller_schematic.py",
     "controller:pcb": "/workspace/.venvs/nema11-cad/bin/python scripts/build_controller_pcb.py --check",
     "controller:assembly": "bun scripts/build-controller-assembly.tsx --pcb && bun scripts/export-core-3d.tsx --assembly && /workspace/.venvs/nema11-cad/bin/python scripts/verify_controller_3d.py",
-    "controller:dev": "tsci dev artifacts/controller/assembly.circuit.json",
+    "controller:dev": "tsci dev artifacts/compact-controller/assembly.circuit.json",
     "controller:drc": "python3 scripts/apply_native_keepout_fix.py --check && bun scripts/check-controller-pcb.tsx --checks-only",
     "controller:connectivity": "/workspace/.venvs/nema11-cad/bin/python scripts/audit_controller_connectivity.py",
-    "native:test": "bun test tests-native"
+    "native:test": "bun test tests-native",
+    "controller:baseline:dev": "tsci dev artifacts/controller/assembly.circuit.json",
+    "compact:build": "bun scripts/build-controller.tsx --compact",
+    "compact:check": "python3 scripts/verify_controller.py --compact && /workspace/.venvs/nema11-cad/bin/python scripts/audit_compact_placement.py && python3 scripts/verify_compact_milestone.py",
+    "compact:schematic": "bun scripts/schematic-controller.tsx --compact && /workspace/.venvs/nema11-cad/bin/python scripts/verify_controller_schematic.py --compact && /workspace/.venvs/nema11-cad/bin/python scripts/export-core-pdf.py --compact",
+    "compact:3d": "bun scripts/build-controller-assembly.tsx --compact && bun scripts/export-core-3d.tsx --compact --assembly && python3 scripts/verify_controller_3d.py --compact",
+    "compact:dev": "tsci dev artifacts/compact-controller/assembly.circuit.json"
   },
-  "main": "artifacts/controller/assembly.circuit.json"
+  "main": "artifacts/compact-controller/assembly.circuit.json"
 }

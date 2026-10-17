@@ -1,0 +1,332 @@
+{
+  "scope": "Constructed RP2040 top-to-through-via escapes; final copper and connectivity check mandatory",
+  "pins": [
+    {
+      "pin": 44,
+      "net": "V3V3",
+      "via_x": 3.5500000000000007,
+      "via_y": 2.9750000000000014,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 46,
+      "net": "MCU_DM",
+      "via_x": 2.75,
+      "via_y": 2.9750000000000014,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 48,
+      "net": "V3V3",
+      "via_x": 1.8000000000000007,
+      "via_y": 4.475000000000001,
+      "expanded": 16,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 50,
+      "net": "V1V1",
+      "via_x": 2.625,
+      "via_y": 2.3000000000000007,
+      "expanded": 70,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 52,
+      "net": "QSPI_SCLK",
+      "via_x": -1.75,
+      "via_y": 4.300000000000001,
+      "expanded": 201,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 54,
+      "net": "QSPI_SD2",
+      "via_x": -1.2249999999999996,
+      "via_y": 1.6000000000000014,
+      "expanded": 69,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 56,
+      "net": "QSPI_SS",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 43,
+      "net": "V3V3",
+      "via_x": 4.375,
+      "via_y": 3.400000000000002,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 45,
+      "net": "V1V1",
+      "via_x": 3.150000000000002,
+      "via_y": 4.5,
+      "expanded": 17,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 47,
+      "net": "MCU_DP",
+      "error": "No legal top fanout route",
+      "expanded": 339
+    },
+    {
+      "pin": 49,
+      "net": "V3V3",
+      "via_x": 1.8000000000000007,
+      "via_y": 4.475000000000001,
+      "expanded": 16,
+      "reused_same_net_barrel": true
+    },
+    {
+      "pin": 51,
+      "net": "QSPI_SD3",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 53,
+      "net": "QSPI_SD0",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 55,
+      "net": "QSPI_SD1",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 4,
+      "net": "LED_G",
+      "error": "No legal top fanout route",
+      "expanded": 138
+    },
+    {
+      "pin": 8,
+      "net": "STEP",
+      "via_x": -1.3249999999999993,
+      "via_y": 0.10000000000000142,
+      "expanded": 16,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 10,
+      "net": "V3V3",
+      "via_x": -2.8249999999999993,
+      "via_y": -0.6999999999999993,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 12,
+      "net": "SLEEP",
+      "via_x": -2.8249999999999993,
+      "via_y": -1.5,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 1,
+      "net": "V3V3",
+      "error": "No legal top fanout route",
+      "expanded": 3655
+    },
+    {
+      "pin": 5,
+      "net": "LED_B",
+      "error": "No legal top fanout route",
+      "expanded": 136
+    },
+    {
+      "pin": 9,
+      "net": "DIR",
+      "error": "No legal top fanout route",
+      "expanded": 143
+    },
+    {
+      "pin": 11,
+      "net": "ENABLE_N",
+      "via_x": -1.3249999999999993,
+      "via_y": -1.0999999999999996,
+      "expanded": 16,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 13,
+      "net": "PD_GOOD",
+      "via_x": -0.6749999999999989,
+      "via_y": -1.299999999999999,
+      "expanded": 158,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 22,
+      "net": "V3V3",
+      "via_x": 1.2750000000000004,
+      "via_y": -2.25,
+      "expanded": 21,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 24,
+      "net": "SWCLK",
+      "via_x": 2.625,
+      "via_y": -2.25,
+      "expanded": 21,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 26,
+      "net": "RUN",
+      "via_x": 3.3000000000000007,
+      "via_y": -2.299999999999999,
+      "expanded": 19,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 23,
+      "net": "V1V1",
+      "via_x": 3.0,
+      "via_y": -1.674999999999999,
+      "expanded": 223,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 25,
+      "net": "SWDIO",
+      "via_x": 4.425000000000001,
+      "via_y": -3.7749999999999986,
+      "expanded": 186,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 27,
+      "net": "BUZZER_PWM",
+      "error": "No legal top fanout route",
+      "expanded": 87
+    },
+    {
+      "pin": 38,
+      "net": "TEMP_SDA",
+      "via_x": 4.025000000000002,
+      "via_y": 1.3000000000000007,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 40,
+      "net": "VM_SENSE",
+      "via_x": 4.025000000000002,
+      "via_y": 2.1000000000000014,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 42,
+      "net": "V3V3",
+      "via_x": 5.25,
+      "via_y": 3.3249999999999993,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 33,
+      "net": "V3V3",
+      "via_x": 4.025000000000002,
+      "via_y": -0.6999999999999993,
+      "expanded": 14,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 37,
+      "net": "LED_R",
+      "via_x": 5.525000000000002,
+      "via_y": 0.9000000000000004,
+      "expanded": 16,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 39,
+      "net": "TEMP_SCL",
+      "via_x": 5.600000000000001,
+      "via_y": 1.575000000000001,
+      "expanded": 19,
+      "reused_same_net_barrel": false
+    },
+    {
+      "pin": 41,
+      "net": "DATA_PRESENT",
+      "error": "No legal top fanout route",
+      "expanded": 479
+    }
+  ],
+  "failed": [
+    {
+      "pin": 56,
+      "net": "QSPI_SS",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 47,
+      "net": "MCU_DP",
+      "error": "No legal top fanout route",
+      "expanded": 339
+    },
+    {
+      "pin": 51,
+      "net": "QSPI_SD3",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 53,
+      "net": "QSPI_SD0",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 55,
+      "net": "QSPI_SD1",
+      "error": "No legal fanout start/via sites"
+    },
+    {
+      "pin": 4,
+      "net": "LED_G",
+      "error": "No legal top fanout route",
+      "expanded": 138
+    },
+    {
+      "pin": 1,
+      "net": "V3V3",
+      "error": "No legal top fanout route",
+      "expanded": 3655
+    },
+    {
+      "pin": 5,
+      "net": "LED_B",
+      "error": "No legal top fanout route",
+      "expanded": 136
+    },
+    {
+      "pin": 9,
+      "net": "DIR",
+      "error": "No legal top fanout route",
+      "expanded": 143
+    },
+    {
+      "pin": 27,
+      "net": "BUZZER_PWM",
+      "error": "No legal top fanout route",
+      "expanded": 87
+    },
+    {
+      "pin": 41,
+      "net": "DATA_PRESENT",
+      "error": "No legal top fanout route",
+      "expanded": 479
+    }
+  ],
+  "manufacturing_release": false
+}

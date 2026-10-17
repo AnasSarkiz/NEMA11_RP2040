@@ -6,16 +6,21 @@ import { execFileSync } from "node:child_process"
 import * as schemas from "circuit-json"
 import BaselineExample from "../examples/full-controller.circuit"
 import CompactExample from "../examples/compact-controller.circuit"
+import Controller from "../src/controller/board"
+import { compactProfile } from "../src/compact/board"
 import compactAssets from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 import cadAssets from "../config/controller-cad-assets.json"
 
 const compact=process.argv.includes("--compact")
 const Example=compact ? CompactExample : BaselineExample
-const output=compact ? "artifacts/compact-controller" : "artifacts/controller"
+const option=(key:string)=>{const i=process.argv.indexOf(key);return i<0?undefined:process.argv[i+1]}
+const constructionPlacement=option("--placement")
+const output=option("--out") ?? (compact ? "artifacts/compact-controller" : "artifacts/controller")
+if(constructionPlacement && (!compact || output === "artifacts/compact-controller"))throw new Error("Routing placement experiments require --compact and a separate --out folder")
 const circuit = new Circuit()
 circuit.schematicDisabled = true
-circuit.add(<Example />)
+circuit.add(constructionPlacement ? <Controller routingDisabled profile={{...compactProfile,placementOverrides:JSON.parse(readFileSync(constructionPlacement,"utf8")).placements}} /> : <Example />)
 await circuit.renderUntilSettled()
 const raw = circuit.getCircuitJson() as any[]
 const source = new Map(raw.filter(e => e.type === "source_component").map(e => [e.source_component_id,e]))

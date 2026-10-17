@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Independent native pad/assembly-envelope audit; never a routing certificate."""
+import argparse
 import hashlib
 import itertools
 import json
@@ -8,8 +9,11 @@ from pathlib import Path
 from shapely.affinity import rotate,translate
 from shapely.geometry import Polygon,Point,box
 from pcb_geometry import Copper,pad_shape
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'artifacts/compact-controller'
-path=OUT/'unrouted.circuit.json';records=json.loads(path.read_text());base=json.loads((ROOT/'artifacts/controller/unrouted.circuit.json').read_text());samples=json.loads((OUT/'supplier-samples.circuit.json').read_text());envelopes=json.loads((OUT/'placement-envelopes.json').read_text())['parts'];poses=json.loads((ROOT/'src/compact/placement.json').read_text());oldposes=json.loads((ROOT/'src/controller/supplier-placement.json').read_text());errors=[]
+ROOT=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');args=parser.parse_args();OUT=ROOT/args.folder
+path=OUT/'unrouted.circuit.json';records=json.loads(path.read_text());base=json.loads((ROOT/'artifacts/controller/unrouted.circuit.json').read_text());samples=json.loads((ROOT/'artifacts/compact-controller/supplier-samples.circuit.json').read_text());envelopes=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts'];poses=json.loads((ROOT/'src/compact/placement.json').read_text());
+if args.placement:poses.update(json.loads(Path(args.placement).read_text())['placements'])
+oldposes=json.loads((ROOT/'src/controller/supplier-placement.json').read_text());errors=[]
 C=Copper(records);B=Copper(base);S=Copper(samples)
 def named_pads(c):
  result={}

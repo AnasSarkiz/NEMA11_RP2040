@@ -1,0 +1,1110 @@
+[
+  {
+    "net": "XOUT",
+    "trace_ids": [
+      "controller_connection_XOUT_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 59,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "XIN",
+    "trace_ids": [
+      "controller_connection_XIN_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 99,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "XIN",
+    "trace_ids": [
+      "controller_connection_XIN_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 15,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "XTAL_OUT",
+    "trace_ids": [
+      "controller_connection_XTAL_OUT_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 13,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "XTAL_OUT",
+    "trace_ids": [
+      "controller_connection_XTAL_OUT_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 16,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "SENSE2",
+    "trace_ids": [
+      "controller_connection_SENSE2_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 28,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "CP1",
+    "trace_ids": [
+      "controller_connection_CP1_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 568,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "CP2",
+    "trace_ids": [
+      "controller_connection_CP2_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 51387,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "VREG",
+    "trace_ids": [
+      "controller_connection_VREG_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 80,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "BUCK_BST",
+    "trace_ids": [
+      "controller_connection_BUCK_BST_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 11,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "BUCK_SW",
+    "trace_ids": [
+      "controller_connection_BUCK_SW_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 49,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "BUCK_SW",
+    "trace_ids": [
+      "controller_connection_BUCK_SW_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 152,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "A_MINUS",
+    "trace_ids": [
+      "controller_connection_A_MINUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 367,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "B_PLUS",
+    "trace_ids": [
+      "controller_connection_B_PLUS_0_section_0",
+      "controller_connection_B_PLUS_0_section_1",
+      "controller_connection_B_PLUS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 69459,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "B_MINUS",
+    "trace_ids": [
+      "controller_connection_B_MINUS_0_section_0",
+      "controller_connection_B_MINUS_0_section_1",
+      "controller_connection_B_MINUS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 38329,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "MCU_DP",
+    "trace_ids": [
+      "controller_connection_MCU_DP_0_section_0",
+      "controller_connection_MCU_DP_0_section_1",
+      "controller_connection_MCU_DP_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 89844,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "MCU_DM",
+    "trace_ids": [
+      "controller_connection_MCU_DM_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 183,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "USB_DP",
+    "trace_ids": [
+      "controller_connection_USB_DP_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 77,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "USB_DP",
+    "trace_ids": [
+      "controller_connection_USB_DP_1_section_0",
+      "controller_connection_USB_DP_1_section_1",
+      "controller_connection_USB_DP_1_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 52770,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "USB_DP",
+    "trace_ids": [
+      "controller_connection_USB_DP_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 53,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "USB_DP",
+    "trace_ids": [
+      "controller_connection_USB_DP_3_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 18256,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "USB_DM",
+    "trace_ids": [
+      "controller_connection_USB_DM_0_section_0",
+      "controller_connection_USB_DM_0_section_1",
+      "controller_connection_USB_DM_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 60768,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "USB_DM",
+    "trace_ids": [
+      "controller_connection_USB_DM_1_section_0",
+      "controller_connection_USB_DM_1_section_1",
+      "controller_connection_USB_DM_1_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 146729,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "USB_DM",
+    "trace_ids": [
+      "controller_connection_USB_DM_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 31,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "USB_DM",
+    "trace_ids": [
+      "controller_connection_USB_DM_3_section_0",
+      "controller_connection_USB_DM_3_section_1",
+      "controller_connection_USB_DM_3_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 56730,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 76,
+    "physical_islands_before": 14,
+    "physical_islands_after": 13
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 76,
+    "physical_islands_before": 13,
+    "physical_islands_after": 12
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 208,
+    "physical_islands_before": 12,
+    "physical_islands_after": 11
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_3_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 201,
+    "physical_islands_before": 11,
+    "physical_islands_after": 10
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_4_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 256,
+    "physical_islands_before": 10,
+    "physical_islands_after": 9
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_5_section_0",
+      "controller_connection_PD_VBUS_5_section_1",
+      "controller_connection_PD_VBUS_5_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 721753,
+    "physical_islands_before": 9,
+    "physical_islands_after": 8
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_6_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 66,
+    "physical_islands_before": 8,
+    "physical_islands_after": 7
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_7_section_0",
+      "controller_connection_PD_VBUS_7_section_1"
+    ],
+    "added_vias": 1,
+    "expanded": 117572,
+    "physical_islands_before": 7,
+    "physical_islands_after": 6
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_8_section_0",
+      "controller_connection_PD_VBUS_8_section_1",
+      "controller_connection_PD_VBUS_8_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 68321,
+    "physical_islands_before": 6,
+    "physical_islands_after": 5
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_9_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 558,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_10_section_0",
+      "controller_connection_PD_VBUS_10_section_1",
+      "controller_connection_PD_VBUS_10_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 884507,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "LOGIC_IN",
+    "trace_ids": [
+      "controller_connection_LOGIC_IN_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 11,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "LOGIC_IN",
+    "trace_ids": [
+      "controller_connection_LOGIC_IN_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 11,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "LOGIC_IN",
+    "trace_ids": [
+      "controller_connection_LOGIC_IN_2_section_0",
+      "controller_connection_LOGIC_IN_2_section_1",
+      "controller_connection_LOGIC_IN_2_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 77732,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "LOGIC_IN",
+    "trace_ids": [
+      "controller_connection_LOGIC_IN_3_section_0",
+      "controller_connection_LOGIC_IN_3_section_1",
+      "controller_connection_LOGIC_IN_3_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 110259,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_0_section_0",
+      "controller_connection_DATA_VBUS_0_section_1",
+      "controller_connection_DATA_VBUS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 1486129,
+    "physical_islands_before": 8,
+    "physical_islands_after": 7
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 76,
+    "physical_islands_before": 7,
+    "physical_islands_after": 6
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_2_section_0",
+      "controller_connection_DATA_VBUS_2_section_1",
+      "controller_connection_DATA_VBUS_2_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 39758,
+    "physical_islands_before": 6,
+    "physical_islands_after": 5
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_3_section_0",
+      "controller_connection_DATA_VBUS_3_section_1"
+    ],
+    "added_vias": 1,
+    "expanded": 4811,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_4_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 7,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_5_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 3983,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_6_section_0",
+      "controller_connection_DATA_VBUS_6_section_1",
+      "controller_connection_DATA_VBUS_6_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 28444,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "V1V1",
+    "trace_ids": [
+      "controller_connection_V1V1_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 35,
+    "physical_islands_before": 6,
+    "physical_islands_after": 5
+  },
+  {
+    "net": "V1V1",
+    "trace_ids": [
+      "controller_connection_V1V1_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 416,
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "V1V1",
+    "trace_ids": [
+      "controller_connection_V1V1_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 6453,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "BOOT_PAD",
+    "trace_ids": [
+      "controller_connection_BOOT_PAD_0_section_0",
+      "controller_connection_BOOT_PAD_0_section_1",
+      "controller_connection_BOOT_PAD_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 50646,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "BUZZER_GATE",
+    "trace_ids": [
+      "controller_connection_BUZZER_GATE_0_section_0",
+      "controller_connection_BUZZER_GATE_0_section_1",
+      "controller_connection_BUZZER_GATE_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 409514,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "BUZZER_SINK",
+    "trace_ids": [
+      "controller_connection_BUZZER_SINK_0_section_0",
+      "controller_connection_BUZZER_SINK_0_section_1",
+      "controller_connection_BUZZER_SINK_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 62051,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "BUZZER_SINK",
+    "trace_ids": [
+      "controller_connection_BUZZER_SINK_1_section_0",
+      "controller_connection_BUZZER_SINK_1_section_1",
+      "controller_connection_BUZZER_SINK_1_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 243319,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DATA_CC2",
+    "trace_ids": [
+      "controller_connection_DATA_CC2_0_section_0",
+      "controller_connection_DATA_CC2_0_section_1",
+      "controller_connection_DATA_CC2_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 261067,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DATA_PRESENT",
+    "trace_ids": [
+      "controller_connection_DATA_PRESENT_0_section_0",
+      "controller_connection_DATA_PRESENT_0_section_1",
+      "controller_connection_DATA_PRESENT_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 33977,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "DATA_PRESENT",
+    "trace_ids": [
+      "controller_connection_DATA_PRESENT_1_section_0",
+      "controller_connection_DATA_PRESENT_1_section_1",
+      "controller_connection_DATA_PRESENT_1_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 85545,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DIR",
+    "trace_ids": [
+      "controller_connection_DIR_0_section_0",
+      "controller_connection_DIR_0_section_1",
+      "controller_connection_DIR_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 286384,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "LED_R",
+    "trace_ids": [
+      "controller_connection_LED_R_0_section_0",
+      "controller_connection_LED_R_0_section_1",
+      "controller_connection_LED_R_0_section_2",
+      "controller_connection_LED_R_0_section_3"
+    ],
+    "added_vias": 3,
+    "expanded": 717462,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_CC2",
+    "trace_ids": [
+      "controller_connection_PD_CC2_0_section_0",
+      "controller_connection_PD_CC2_0_section_1",
+      "controller_connection_PD_CC2_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 426723,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_CFG",
+    "trace_ids": [
+      "controller_connection_PD_CFG_0_section_0",
+      "controller_connection_PD_CFG_0_section_1",
+      "controller_connection_PD_CFG_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 116152,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_GOOD",
+    "trace_ids": [
+      "controller_connection_PD_GOOD_0_section_0",
+      "controller_connection_PD_GOOD_0_section_1",
+      "controller_connection_PD_GOOD_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 100920,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "PD_GOOD",
+    "trace_ids": [
+      "controller_connection_PD_GOOD_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 25,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_VHV",
+    "trace_ids": [
+      "controller_connection_PD_VHV_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 13,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "PD_VHV",
+    "trace_ids": [
+      "controller_connection_PD_VHV_1_section_0",
+      "controller_connection_PD_VHV_1_section_1",
+      "controller_connection_PD_VHV_1_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 42600,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PWR_LED_A",
+    "trace_ids": [
+      "controller_connection_PWR_LED_A_0_section_0",
+      "controller_connection_PWR_LED_A_0_section_1",
+      "controller_connection_PWR_LED_A_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 117377,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "QSPI_SS",
+    "trace_ids": [
+      "controller_connection_QSPI_SS_0_section_0",
+      "controller_connection_QSPI_SS_0_section_1",
+      "controller_connection_QSPI_SS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 745038,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "SLEEP",
+    "trace_ids": [
+      "controller_connection_SLEEP_0_section_0",
+      "controller_connection_SLEEP_0_section_1",
+      "controller_connection_SLEEP_0_section_2",
+      "controller_connection_SLEEP_0_section_3"
+    ],
+    "added_vias": 3,
+    "expanded": 3539709,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "STATUS_B_C",
+    "trace_ids": [
+      "controller_connection_STATUS_B_C_0_section_0",
+      "controller_connection_STATUS_B_C_0_section_1",
+      "controller_connection_STATUS_B_C_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 658239,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "STATUS_B_K",
+    "trace_ids": [
+      "controller_connection_STATUS_B_K_0_section_0",
+      "controller_connection_STATUS_B_K_0_section_1",
+      "controller_connection_STATUS_B_K_0_section_2",
+      "controller_connection_STATUS_B_K_0_section_3"
+    ],
+    "added_vias": 3,
+    "expanded": 3775825,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "STATUS_G_C",
+    "trace_ids": [
+      "controller_connection_STATUS_G_C_0_section_0",
+      "controller_connection_STATUS_G_C_0_section_1",
+      "controller_connection_STATUS_G_C_0_section_2",
+      "controller_connection_STATUS_G_C_0_section_3",
+      "controller_connection_STATUS_G_C_0_section_4"
+    ],
+    "added_vias": 4,
+    "expanded": 886340,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "STATUS_G_K",
+    "trace_ids": [
+      "controller_connection_STATUS_G_K_0_section_0",
+      "controller_connection_STATUS_G_K_0_section_1",
+      "controller_connection_STATUS_G_K_0_section_2",
+      "controller_connection_STATUS_G_K_0_section_3",
+      "controller_connection_STATUS_G_K_0_section_4",
+      "controller_connection_STATUS_G_K_0_section_5",
+      "controller_connection_STATUS_G_K_0_section_6",
+      "controller_connection_STATUS_G_K_0_section_7"
+    ],
+    "added_vias": 7,
+    "expanded": 4218097,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "SWCLK",
+    "trace_ids": [
+      "controller_connection_SWCLK_0_section_0",
+      "controller_connection_SWCLK_0_section_1",
+      "controller_connection_SWCLK_0_section_2",
+      "controller_connection_SWCLK_0_section_3"
+    ],
+    "added_vias": 3,
+    "expanded": 2173583,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "TEMP_SCL",
+    "trace_ids": [
+      "controller_connection_TEMP_SCL_0_section_0",
+      "controller_connection_TEMP_SCL_0_section_1",
+      "controller_connection_TEMP_SCL_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 211797,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "TEMP_SCL",
+    "trace_ids": [
+      "controller_connection_TEMP_SCL_1_section_0",
+      "controller_connection_TEMP_SCL_1_section_1",
+      "controller_connection_TEMP_SCL_1_section_2",
+      "controller_connection_TEMP_SCL_1_section_3"
+    ],
+    "added_vias": 3,
+    "expanded": 896340,
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "TEMP_SDA",
+    "trace_ids": [
+      "controller_connection_TEMP_SDA_0_section_0",
+      "controller_connection_TEMP_SDA_0_section_1",
+      "controller_connection_TEMP_SDA_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 723696,
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 29,
+    "physical_islands_before": 48,
+    "physical_islands_after": 47
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 10,
+    "physical_islands_before": 47,
+    "physical_islands_after": 46
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 10,
+    "physical_islands_before": 46,
+    "physical_islands_after": 45
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_3_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 14,
+    "physical_islands_before": 45,
+    "physical_islands_after": 44
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_4_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 33,
+    "physical_islands_before": 44,
+    "physical_islands_after": 43
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_5_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 31,
+    "physical_islands_before": 43,
+    "physical_islands_after": 42
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_6_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 107,
+    "physical_islands_before": 42,
+    "physical_islands_after": 41
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_7_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 14,
+    "physical_islands_before": 41,
+    "physical_islands_after": 40
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_8_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 14,
+    "physical_islands_before": 40,
+    "physical_islands_after": 39
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_9_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 22,
+    "physical_islands_before": 39,
+    "physical_islands_after": 38
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_10_section_0",
+      "controller_connection_V3V3_10_section_1",
+      "controller_connection_V3V3_10_section_2"
+    ],
+    "added_vias": 3,
+    "expanded": 1120145,
+    "physical_islands_before": 38,
+    "physical_islands_after": 37
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_11_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 45,
+    "physical_islands_before": 37,
+    "physical_islands_after": 36
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_12_section_0",
+      "controller_connection_V3V3_12_section_1",
+      "controller_connection_V3V3_12_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 643332,
+    "physical_islands_before": 36,
+    "physical_islands_after": 35
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_13_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 12,
+    "physical_islands_before": 35,
+    "physical_islands_after": 34
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_14_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 20,
+    "physical_islands_before": 34,
+    "physical_islands_after": 33
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_15_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 11,
+    "physical_islands_before": 33,
+    "physical_islands_after": 32
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_16_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 11,
+    "physical_islands_before": 32,
+    "physical_islands_after": 31
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_17_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 19,
+    "physical_islands_before": 31,
+    "physical_islands_after": 30
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_18_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 62,
+    "physical_islands_before": 30,
+    "physical_islands_after": 29
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_19_section_0",
+      "controller_connection_V3V3_19_section_1",
+      "controller_connection_V3V3_19_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 205382,
+    "physical_islands_before": 29,
+    "physical_islands_after": 28
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_20_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 52,
+    "physical_islands_before": 28,
+    "physical_islands_after": 27
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_21_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 2827,
+    "physical_islands_before": 27,
+    "physical_islands_after": 26
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_22_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 30,
+    "physical_islands_before": 26,
+    "physical_islands_after": 25
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_23_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 1414,
+    "physical_islands_before": 25,
+    "physical_islands_after": 24
+  },
+  {
+    "net": "V3V3",
+    "trace_ids": [
+      "controller_connection_V3V3_24_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 1295,
+    "physical_islands_before": 24,
+    "physical_islands_after": 23
+  }
+]

@@ -1,0 +1,226 @@
+{
+  "scope": "Unrouted compact full-circuit placement, supplier copper and nominal envelopes only",
+  "circuit_sha256": "dd13c56231445941389045e1f64c7eaf8d5b409c491fa1eda1ccbfef5e9998a4",
+  "components": 92,
+  "fitted_parts": 82,
+  "all_fitted_on_top": true,
+  "original_supplier_pad_geometries_verified": 340,
+  "top_courtyards_checked": 89,
+  "foreign_pad_clearance_comparisons": 49851,
+  "minimum_foreign_pad_clearance_mm": 0.19961860000000003,
+  "minimum_copper_edge_clearance_mm": 0.254999999999999,
+  "nominal_component_spacing_pairs_checked": 2346,
+  "minimum_JLC_spacing_surplus_mm": 0.03999990000010456,
+  "critical_pin_construction_distances": [
+    {
+      "a": "C_IO1.1",
+      "b": "U_MCU.1",
+      "L1_mm": 2.0998540000000006,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_IO10.1",
+      "b": "U_MCU.10",
+      "L1_mm": 1.399924,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_IO22.1",
+      "b": "U_MCU.22",
+      "L1_mm": 2.40005,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_IO33.1",
+      "b": "U_MCU.33",
+      "L1_mm": 1.4499239999999998,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_IO42.1",
+      "b": "U_MCU.42",
+      "L1_mm": 1.440214,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_IO49.1",
+      "b": "U_MCU.49",
+      "L1_mm": 2.799824,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_DV23.1",
+      "b": "U_MCU.23",
+      "L1_mm": 2.8000000000000003,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_DV50.1",
+      "b": "U_MCU.50",
+      "L1_mm": 1.5997739999999998,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_USB.1",
+      "b": "U_MCU.48",
+      "L1_mm": 2.6999779999999998,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_ADC.1",
+      "b": "U_MCU.43",
+      "L1_mm": 2.7998700000000003,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_VREG_IN.1",
+      "b": "U_MCU.44",
+      "L1_mm": 2.5000319999999996,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_VREG_OUT.1",
+      "b": "U_MCU.45",
+      "L1_mm": 1.540314,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "Y_MCU.1",
+      "b": "U_MCU.20",
+      "L1_mm": 4.4298210000000005,
+      "maximum_construction_budget_mm": 4.5
+    },
+    {
+      "a": "R_XOUT.1",
+      "b": "U_MCU.21",
+      "L1_mm": 2.346864,
+      "maximum_construction_budget_mm": 3.2
+    },
+    {
+      "a": "R_XOUT.2",
+      "b": "Y_MCU.3",
+      "L1_mm": 2.1172470000000008,
+      "maximum_construction_budget_mm": 2.5
+    },
+    {
+      "a": "C_XIN.1",
+      "b": "Y_MCU.1",
+      "L1_mm": 1.1700310000000003,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_XOUT.1",
+      "b": "Y_MCU.3",
+      "L1_mm": 1.2298209999999985,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "U_FLASH.1",
+      "b": "U_MCU.56",
+      "L1_mm": 5.1967557499999995,
+      "maximum_construction_budget_mm": 6
+    },
+    {
+      "a": "C_FLASH.1",
+      "b": "U_FLASH.8",
+      "L1_mm": 1.4066537499999994,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "R_SA.1",
+      "b": "U_DRV.23",
+      "L1_mm": 2.5483925000000003,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "R_SB.1",
+      "b": "U_DRV.27",
+      "L1_mm": 1.9481344999999992,
+      "maximum_construction_budget_mm": 2.8
+    },
+    {
+      "a": "C_CP.1",
+      "b": "U_DRV.4",
+      "L1_mm": 2.669012499999999,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_CP.2",
+      "b": "U_DRV.5",
+      "L1_mm": 2.3291604999999986,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_VCP.1",
+      "b": "U_DRV.6",
+      "L1_mm": 2.1302374999999993,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_VREG.1",
+      "b": "U_DRV.8",
+      "L1_mm": 2.4996954999999974,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_DRV_LOGIC.1",
+      "b": "U_DRV.15",
+      "L1_mm": 1.6298575,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_VM.1",
+      "b": "U_DRV.28",
+      "L1_mm": 2.6295934999999995,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_BUCK_IN.1",
+      "b": "U_BUCK.3",
+      "L1_mm": 2.807484000000003,
+      "maximum_construction_budget_mm": 3
+    },
+    {
+      "a": "C_BOOTSTRAP.1",
+      "b": "U_BUCK.6",
+      "L1_mm": 1.0300279999999997,
+      "maximum_construction_budget_mm": 2.5
+    },
+    {
+      "a": "L_BUCK.1",
+      "b": "U_BUCK.5",
+      "L1_mm": 3.1498479999999995,
+      "maximum_construction_budget_mm": 3.5
+    },
+    {
+      "a": "C_BUCK_OUT1.1",
+      "b": "L_BUCK.2",
+      "L1_mm": 2.0999500000000015,
+      "maximum_construction_budget_mm": 4
+    },
+    {
+      "a": "C_BUCK_OUT2.1",
+      "b": "L_BUCK.2",
+      "L1_mm": 3.0000459999999998,
+      "maximum_construction_budget_mm": 4
+    },
+    {
+      "a": "C_PD.1",
+      "b": "U_PD.1",
+      "L1_mm": 1.4499069999999996,
+      "maximum_construction_budget_mm": 3
+    }
+  ],
+  "nominal_fitted_envelopes_within_28_3mm_frame": true,
+  "PCB_outline_mm": [
+    28,
+    28
+  ],
+  "shorted_pad_pairs": [],
+  "routing_traces": 0,
+  "physical_routing_complete": false,
+  "placement_pass": true,
+  "manufacturer_tolerances_verified": false,
+  "manufacturing_release": false,
+  "errors": []
+}

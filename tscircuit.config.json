@@ -1,6 +1,6 @@
 {
   "includeBoardFiles": [
-    "artifacts/controller/assembly.circuit.json"
+    "artifacts/compact-controller/assembly.circuit.json"
   ],
-  "previewComponentPath": "artifacts/controller/assembly.circuit.json"
+  "previewComponentPath": "artifacts/compact-controller/assembly.circuit.json"
 }

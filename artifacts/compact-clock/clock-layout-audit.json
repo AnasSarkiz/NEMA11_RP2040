@@ -1,0 +1,67 @@
+{
+  "scope": "Compact crystal signal and local ground-return construction ONLY; other controller nets remain unrouted",
+  "circuit_sha256": "898f0a1c229d1e87bd5396ea6a6ea8ed2b67f9fd6c81f61fafab73f6b7600d19",
+  "source_sha256": "dd13c56231445941389045e1f64c7eaf8d5b409c491fa1eda1ccbfef5e9998a4",
+  "routes": [
+    {
+      "net": "XIN",
+      "total_copper_mm": 2.8795244379109306,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    },
+    {
+      "net": "XOUT",
+      "total_copper_mm": 1.4798484605527298,
+      "budget_mm": 6,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    },
+    {
+      "net": "XTAL_OUT",
+      "total_copper_mm": 0.7474296359573844,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    }
+  ],
+  "ground_returns": [
+    {
+      "pin": "Y_MCU.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "Y_MCU.4",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "C_XIN.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "C_XOUT.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    }
+  ],
+  "top_and_inner1_guard_buffer_mm": 0.25,
+  "MCU_pin_exemption_radius_mm": 0.55,
+  "three_reviewed_exposed_pad_filled_capped_barrels": true,
+  "errors": [],
+  "clock_construction_pass": true,
+  "full_controller_routing_complete": false,
+  "bench_clock_startup_drive_load_frequency_verified": false,
+  "manufacturing_release": false
+}

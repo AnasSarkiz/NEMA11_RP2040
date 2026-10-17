@@ -126,3 +126,29 @@ version 0.1.0 freezes this **unrouted** placement/source/assembly milestone.
 The actual configured CLI authentication, native build roundtrip and compressed
 CLI push succeeded; the public registry files are independently checked against
 the local snapshot. No credential is included in that snapshot or the repository.
+
+## Clock routing construction
+
+A separate development placement moves the bypass capacitors that obstructed
+XOUT and reserves a 0.55 mm crystal escape corridor. Its source hash is
+`dd13c56231445941389045e1f64c7eaf8d5b409c491fa1eda1ccbfef5e9998a4`.
+All 340 supplier copper shapes, all 304 reference connected-pin assignments,
+all-top placement and the frame/pair-spacing construction checks still pass.
+The minimum nominal JLC spacing surplus improves to 0.040 mm.
+
+`artifacts/compact-clock` freezes only the clock and local ground construction.
+XIN/XOUT/XTAL_OUT have one physical copper island each, top traces only, no
+signal vias, and total wire lengths 2.880/1.480/0.747 mm. Four actual clock/load
+returns are within 1.2 mm and physically join the RP2040 exposed pad through the
+inner1 ground plane. The original 0.25 mm top/inner1 guard and 0.55 mm MCU-pin
+local exemption pass. Three exposed-pad barrels require filled/capped Type VII
+processing. Independent copper/drill/edge/keepout checks find only the expected
+61 disconnected nonclock nets in this limited construction; no shorts or
+clearance violations are hidden or waived. It is not a completed controller PCB.
+
+MCU through-via fanout and full routing continue separately in
+`artifacts/compact-routing`. A rotated optional DNP encoder footprint is being
+evaluated at the motor axis to free via space. Neither its DNP status nor its
+circuitry is dropped. Genuine PHR-4 and PHR-4-BK housings are catalogued, but native
+CLI imports of C111514 and C493120 found no EasyEDA model/footprint. No substitute
+housing CAD has been invented; mating/harness qualification remains open.

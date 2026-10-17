@@ -70,7 +70,7 @@ def check(records, reference, compact=False):
 def main():
     import sys
     compact='--compact' in sys.argv
-    folder='artifacts/compact-controller' if compact else 'artifacts/controller'
+    folder=sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if compact else 'artifacts/controller'
     path = ROOT / folder / 'unrouted.circuit.json'
     records = json.loads(path.read_text())
     reference = json.loads((ROOT / 'references/manifests/nema14-v1.13-electrical.json').read_text())

@@ -1,0 +1,41 @@
+{
+  "scope": "Constructed physical clock returns and three reviewed exposed-pad barrels; final copper/plane check required",
+  "results": [
+    {
+      "pin": "U_MCU.57",
+      "via": "compact_GND_U_MCU_EP",
+      "requires_Type_VII_filled_capped": true
+    },
+    {
+      "pin": "U_DRV.29",
+      "via": "compact_GND_U_DRV_EP",
+      "requires_Type_VII_filled_capped": true
+    },
+    {
+      "pin": "U_FLASH.9",
+      "via": "compact_GND_U_FLASH_EP",
+      "requires_Type_VII_filled_capped": true
+    },
+    {
+      "pin": "Y_MCU.2",
+      "via": "compact_GND_Y_MCU_2",
+      "ground_return_distance_mm": 0.9249890029600348
+    },
+    {
+      "pin": "Y_MCU.4",
+      "via": "compact_GND_Y_MCU_4",
+      "ground_return_distance_mm": 1.0000740000604953
+    },
+    {
+      "pin": "C_XIN.2",
+      "via": "compact_GND_C_XIN_2",
+      "ground_return_distance_mm": 0.5884432457391281
+    },
+    {
+      "pin": "C_XOUT.2",
+      "via": "compact_GND_C_XOUT_2",
+      "ground_return_distance_mm": 0.5954947971695472
+    }
+  ],
+  "manufacturing_release": false
+}
