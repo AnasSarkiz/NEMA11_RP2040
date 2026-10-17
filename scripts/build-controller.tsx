@@ -6,6 +6,7 @@ import { execFileSync } from "node:child_process"
 import * as schemas from "circuit-json"
 import Example from "../examples/full-controller.circuit"
 import catalog from "../src/controller/jlcpcb-catalog.json"
+import cadAssets from "../config/controller-cad-assets.json"
 
 const circuit = new Circuit()
 circuit.schematicDisabled = true
@@ -20,7 +21,9 @@ const unownedSilk = raw.filter(e => ["pcb_silkscreen_circle","pcb_silkscreen_tex
 // Keep supplier-owned silk intact; board annotations will be rebuilt during final silk layout.
 const records = raw.filter(e => !unownedSilk.includes(e) && !(e.type === "pcb_solder_paste" && (bare.has(e.pcb_component_id) || dnp.has(e.pcb_component_id))))
 const dirty = execFileSync("git",["status","--porcelain","--","imports/supplier"],{encoding:"utf8"}).trim()
-const assetRevision = dirty ? "main" : execFileSync("git",["log","-n","1","--format=%H","--","imports/supplier"],{encoding:"utf8"}).trim()
+// A shallow checkout treats its boundary commit as the origin of every file.
+// Asset identity must come from an explicit revision and verified file hashes.
+const assetRevision = cadAssets.git_revision
 const missingAssets: string[] = []
 const cadPoseCorrections: any[] = []
 for (const e of records) {
@@ -46,6 +49,9 @@ for (const e of records) {
   // Exact native CH224A import now has its own committed identical-package models.
   if (source.get(e.source_component_id)?.name === "U_PD") relative=relative.replaceAll("CH224K","CH224A")
   if (!existsSync(relative)) missingAssets.push(relative)
+  else if ((cadAssets.files as Record<string,string>)[relative] !== createHash("sha256").update(readFileSync(relative)).digest("hex")) {
+   throw new Error("Supplier CAD changed without a reviewed asset revision: "+relative)
+  }
   e[field]=`https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/${assetRevision}/${relative}`
  }
 }
@@ -65,6 +71,7 @@ const report={scope:"Full electrical source development candidate; copper, motor
  source_ports:records.filter(e=>e.type === "source_port").length,
  pcb_traces:records.filter(e=>e.type === "pcb_trace").length,
  source_asset_revision:assetRevision,source_assets_uncommitted:!!dirty,
+ cad_asset_hashes_verified:true,
  bare_or_DNP_paste_removed:raw.length-records.length-unownedSilk.length,
  unsupported_unowned_board_silk_excluded:unownedSilk.length,
  render_errors:renderErrors,schema_errors:schemaErrors,missing_supplier_models:missingAssets,

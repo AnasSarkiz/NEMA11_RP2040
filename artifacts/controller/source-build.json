@@ -6,6 +6,7 @@
   "pcb_traces": 0,
   "source_asset_revision": "786ee453b51e34168f96b20ea457ba48cf91c58e",
   "source_assets_uncommitted": false,
+  "cad_asset_hashes_verified": true,
   "bare_or_DNP_paste_removed": 11,
   "unsupported_unowned_board_silk_excluded": 8,
   "render_errors": [],
