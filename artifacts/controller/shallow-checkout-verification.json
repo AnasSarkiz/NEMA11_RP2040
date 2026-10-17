@@ -1,0 +1,9 @@
+{
+  "scope": "Fresh depth-one checkout reproduces exact full controller source JSON",
+  "commit": "291a1b4073141f1ae65bc52cfd2d7802c044f2ab",
+  "checkout_depth_one": true,
+  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
+  "byte_for_byte_match": true,
+  "explicit_supplier_asset_revision": "786ee453b51e34168f96b20ea457ba48cf91c58e",
+  "manufacturing_release": false
+}

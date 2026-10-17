@@ -1,0 +1,59 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+  "version": "0.1.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+  "package_release_id": "791c76be-3833-46a3-9860-d1b81c16f97a",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 0,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2065,
+      "sha256": "137764d508f2c83d2beaf4e6730fe4a64163b941bba21e8ea81254f427ebc486",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 1861893,
+      "sha256": "895ed93a84f42d02d43ca05a6dcb5e5db7188636c5fedc59e1fb5eef8e04655f",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 1395208,
+      "sha256": "98c236013655528450f589e6f96aab8a79b76f0681228b8a350a678ed18233d2",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 989,
+      "sha256": "db7dc4cb56985b13e2626fecd8090ca504f319be7c759a32324f763d97c54281",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 984,
+      "sha256": "b54e9888a6df9822d52f1cea19fe225046e0d46b0b5df968a603727952e6f283",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 386,
+      "sha256": "64c0c5709fe7990a0c2278abdd9f1e3a96dc1cd9006aa8730bde31c10c0352a3",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "source_milestone_commit": "5aeebd7761894fa5b79e5ecc77a2fc0a9c60b688",
+  "package_snapshot_commit": "e1c16a078dd10286f883a2b9c0775f5d13a366e7",
+  "scope": "Unrouted full controller electrical source and six functional A4 schematics",
+  "manufacturing_release": false
+}

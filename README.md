@@ -15,10 +15,16 @@ is published, and the exact NEMA14 v1.13.0 plus original motor drawing/STEP have
 been retrieved. [Current source/access findings](docs/access-restored.md) include
 verified motor ratings, source hashes and remaining integration requirements.
 
+The [full controller source prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype)
+is also published as version 0.1.0. All seven uploaded files were independently
+downloaded and matched byte-for-byte. This package contains the full electrical
+source and six schematics; its PCB is unrouted.
+
 - [Design requirements](config/design-requirements.json)
 - [Full controller source, parity and assembly findings](docs/full-controller.md)
 - [Full controller six-page A4 schematic PDF](artifacts/controller/schematic-a4.pdf)
 - [Full controller native PCB 3D review](artifacts/controller/development-controller.glb)
+- [Native PCB and OEM motor clearance arrangement](artifacts/controller/development-assembly.glb)
 - [RP2040 subsystem source and verification](docs/rp2040-core.md)
 - [Routed subsystem PCB, native 3D and checks](docs/rp2040-pcb.md)
 - [Separate native tscircuit subsystem prototype source](prototypes/rp2040-core/)

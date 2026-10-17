@@ -5,10 +5,11 @@ import { convertCircuitJsonToGltf } from "circuit-json-to-gltf"
 
 const root = process.cwd()
 const routed = process.argv.includes("--pcb")
-const controller = process.argv.includes("--controller")
+const assembly = process.argv.includes("--assembly")
+const controller = process.argv.includes("--controller") || assembly
 const path = controller ? "artifacts/controller/" : routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
-const filename = controller ? "unrouted.circuit.json" : routed ? "board.circuit.json" : "core.circuit.json"
-const output = controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
+const filename = assembly ? "assembly.circuit.json" : controller ? "unrouted.circuit.json" : routed ? "board.circuit.json" : "core.circuit.json"
+const output = assembly ? "development-assembly.glb" : controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
 const bytes = readFileSync(path + filename)
 const records = JSON.parse(bytes.toString())
 const modelPaths = new Map<string, string>()
@@ -17,11 +18,11 @@ for (const record of records) {
   for (const field of ["model_obj_url", "model_step_url"]) {
     const url = record[field]
     if (typeof url !== "string") continue
-    const marker = "/imports/supplier/"
+    const marker = "/imports/"
     const at = url.indexOf(marker)
     if (at < 0) throw new Error("Unexpected model source: " + url)
     const local = realpathSync(resolve(root, url.slice(at + 1)))
-    if (!local.startsWith(resolve(root, "imports/supplier") + sep)) throw new Error("Model path escapes supplier directory")
+    if (!local.startsWith(resolve(root, "imports") + sep)) throw new Error("Model path escapes supplier directory")
     modelPaths.set(url, local)
   }
 }
@@ -46,12 +47,12 @@ if (glb.toString("ascii", 0, 4) !== "glTF" || glb.readUInt32LE(4) !== 2 || glb.r
 }
 if (!used.size) throw new Error("No original supplier model assets were loaded")
 writeFileSync(path + output, glb)
-writeFileSync(path + "3d-export-verification.json", JSON.stringify({
-  scope: controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
+writeFileSync(path + (assembly ? "assembly-3d-export-verification.json" : "3d-export-verification.json"), JSON.stringify({
+  scope: assembly ? "Native PCB and OEM motor clearance arrangement; carrier and harness absent" : controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   glb_sha256: createHash("sha256").update(glb).digest("hex"), bytes: glb.length,
   original_supplier_assets_loaded: [...used.values()],
-  motor_model_included: false, final_NEMA11_layout: false, manufacturing_release: false,
+  motor_model_included: assembly, final_NEMA11_layout: false, manufacturing_release: false,
 }, null, 2) + "\n")
 console.log(JSON.stringify({ exported: path + output, bytes: glb.length,
   supplier_assets_loaded: used.size, manufacturing_release: false }))

@@ -66,3 +66,18 @@ transistor, RGB and buzzer symbols: these devices do not all have direct power
 or ground pins. These warnings remain visible in `native-pin-specification.txt`;
 they are not a full ERC waiver. This CLI version's netlist subcommand does not
 accept a Circuit JSON array; its TSX source check is recorded separately.
+
+## Native motor clearance arrangement
+
+`examples/controller-assembly.circuit.tsx` uses a native `assembly.part` with
+the OEM motor STEP and an OBJ tessellated from that unchanged STEP. It preserves
+the exact electrical, PCB, schematic and component CAD records. The front datum
+is Z = −42 mm and the motor rotates +90° about Z so its fixed leads exit positive
+X toward the JST side. No generic NEMA motor model is substituted.
+
+`development-assembly.glb` is a proposed clearance arrangement with no retention:
+the carrier, full harness and fasteners remain absent. The drawing's maximum
+33 mm body leaves 8.2 mm to the PCB bottom in this position. The native GLB is
+checked against all 82 supplier STEP bounds and the OEM motor bounds after the
+exporter's global coordinate transform. This is not a demonstration of usable
+rear mounting holes, an encoder magnet, qualified tolerances or thermal behavior.
