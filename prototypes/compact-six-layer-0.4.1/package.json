@@ -1,0 +1,12 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.4.1",
+  "description": "Validated 0.4 routed native PCB/3D plus A4 four-mount comparison; no copper changes. NOT FABRICATION READY",
+  "main": "index.circuit.json",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040.git"
+  }
+}
