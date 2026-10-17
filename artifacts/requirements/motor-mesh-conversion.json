@@ -1,0 +1,11 @@
+{
+  "source_step_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "derived_obj_sha256": "c39b0649babb9bdc0a37033344ef9249c53a7caf53b17f2adc587f39237c083b",
+  "vertices": 33402,
+  "triangles": 51540,
+  "linear_tolerance_mm": 0.08,
+  "angular_tolerance_rad": 0.15,
+  "source_STEP_unchanged": true,
+  "supplier_model_not_a_generic_NEMA_substitute": true,
+  "manufacturing_release": false
+}

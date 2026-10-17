@@ -1,0 +1,23 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype",
+  "version": "0.1.0",
+  "scope": "Unrouted full electrical source and functional schematic prototype",
+  "source_milestone_commit": "5aeebd7761894fa5b79e5ecc77a2fc0a9c60b688",
+  "source_repository": "https://github.com/AnasSarkiz/NEMA11_RP2040.git",
+  "circuit_sha256": "98c236013655528450f589e6f96aab8a79b76f0681228b8a350a678ed18233d2",
+  "source_components": 92,
+  "physical_ports": 341,
+  "schematic_sheets": 6,
+  "pin_value_parity_verified": true,
+  "visual_schematic_ERC_verified": true,
+  "registry_published": false,
+  "manufacturing_release": false,
+  "limitations": [
+    "No routed copper or complete motor/carrier/harness assembly",
+    "Nine native pin metadata warnings retained",
+    "Original USB STEP validity limitation retained",
+    "Current accuracy, thermal performance, JLC process and stock unqualified"
+  ],
+  "native_CLI_record_roundtrip_equal": true,
+  "unique_native_record_ids": true
+}
