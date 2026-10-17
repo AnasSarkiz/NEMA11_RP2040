@@ -4,10 +4,15 @@ import { createHash } from "node:crypto"
 import { mkdirSync, readFileSync, existsSync, writeFileSync } from "node:fs"
 import { execFileSync } from "node:child_process"
 import * as schemas from "circuit-json"
-import Example from "../examples/full-controller.circuit"
+import BaselineExample from "../examples/full-controller.circuit"
+import CompactExample from "../examples/compact-controller.circuit"
+import compactAssets from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 import cadAssets from "../config/controller-cad-assets.json"
 
+const compact=process.argv.includes("--compact")
+const Example=compact ? CompactExample : BaselineExample
+const output=compact ? "artifacts/compact-controller" : "artifacts/controller"
 const circuit = new Circuit()
 circuit.schematicDisabled = true
 circuit.add(<Example />)
@@ -52,7 +57,15 @@ for (const e of records) {
  for (const field of ["model_obj_url","model_step_url"]) {
   if (typeof e[field] !== "string") continue
   const at=e[field].indexOf("/imports/supplier/")
-  if (at < 0) {missingAssets.push(e[field]);continue}
+  if (at < 0) {
+   const candidateAt=e[field].indexOf("/imports/compact-candidates/")
+   if(!compact || candidateAt<0){missingAssets.push(e[field]);continue}
+   const relative=e[field].slice(candidateAt+1)
+   const asset=compactAssets.parts.flatMap(p=>p.files).find(p=>p.path===relative)
+   if(!asset || !existsSync(relative) || createHash("sha256").update(readFileSync(relative)).digest("hex")!==asset.sha256)throw new Error("Unverified compact supplier asset: "+relative)
+   // Original candidate CAD uses its own immutable reviewed import revision.
+   continue
+  }
   let relative=e[field].slice(at+1)
   // Exact native CH224A import now has its own committed identical-package models.
   if (source.get(e.source_component_id)?.name === "U_PD") relative=relative.replaceAll("CH224K","CH224A")
@@ -71,8 +84,8 @@ const schemaErrors=records.flatMap((r:any,index:number)=>{
 })
 const renderErrors=records.filter(e=>e.type.endsWith("_error"))
 const bytes=JSON.stringify(records,null,2)+"\n"
-mkdirSync("artifacts/controller",{recursive:true})
-writeFileSync("artifacts/controller/unrouted.circuit.json",bytes)
+mkdirSync(output,{recursive:true})
+writeFileSync(output+"/unrouted.circuit.json",bytes)
 const report={scope:"Full electrical source development candidate; copper, motor mounting and manufacturing not released",
  circuit_sha256:createHash("sha256").update(bytes).digest("hex"),
  source_components:records.filter(e=>e.type === "source_component").length,
@@ -86,6 +99,6 @@ const report={scope:"Full electrical source development candidate; copper, motor
  cad_pose_corrections:cadPoseCorrections,
  motor_connector:"C131334 B4B-PH-K-S(LF)(SN), through-hole/manual assembly candidate",
  current_divider_high_ohms:20000,manufacturing_release:false}
-writeFileSync("artifacts/controller/source-build.json",JSON.stringify(report,null,2)+"\n")
+writeFileSync(output+"/source-build.json",JSON.stringify(report,null,2)+"\n")
 console.log(JSON.stringify(report,null,2))
 if (renderErrors.length || schemaErrors.length || missingAssets.length) process.exitCode=1

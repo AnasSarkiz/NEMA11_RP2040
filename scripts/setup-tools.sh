@@ -23,6 +23,10 @@ uv venv --python python3 --allow-existing /workspace/.venvs/nema11-cam
 uv pip install \
   --python /workspace/.venvs/nema11-cam/bin/python \
   -r "$project_root/tools/requirements-cam.lock"
+uv venv --python python3 --allow-existing /workspace/.venvs/nema11-layout
+uv pip install \
+  --python /workspace/.venvs/nema11-layout/bin/python \
+  -r "$project_root/tools/requirements-layout.lock"
 cd "$project_root"
 "$project_root/tools/pcb/node_modules/.bin/bun" test tests-native
 python3 -m unittest discover -s tests -v

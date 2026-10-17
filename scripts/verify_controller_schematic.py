@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Independent wire geometry/ERC adapted from the exact v1.13 reference checker."""
-import collections, hashlib, json, pathlib, re
+import collections, hashlib, json, pathlib, re, sys
 from shapely.geometry import Point, LineString
 root=pathlib.Path(__file__).resolve().parents[1]
-board_path=root/'artifacts/controller/schematic.circuit.json'
+folder='artifacts/compact-controller' if '--compact' in sys.argv else 'artifacts/controller'
+board_path=root/folder/'schematic.circuit.json'
 j=json.loads(board_path.read_text())
-base_path=root/'artifacts/controller/unrouted.circuit.json'
+base_path=root/folder/'unrouted.circuit.json'
 base=json.loads(base_path.read_text())
 errors=[]
 if [e for e in j if not e['type'].startswith('schematic_')]!=base:
@@ -119,6 +120,6 @@ report={'scope':'Full controller schematic physical-pin coverage and independent
  'drawn_symbol_pins':len(ports),'safely_aggregated_USB_power_contacts':len(omitted),
  'connected_nets':len(roots),'explicit_NC_pins':nc_count,'wire_segments':len(edges),
  'marked_crossings':bridges,'errors':errors,'passed':not errors,'manufacturing_release':False}
-(root/'artifacts/controller/schematic-verification.json').write_text(json.dumps(report,indent=2)+'\n')
+(root/folder/'schematic-verification.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
 raise SystemExit(bool(errors))

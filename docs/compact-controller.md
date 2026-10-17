@@ -10,8 +10,9 @@ Its zero-error DRC/connectivity results remain a useful electrical baseline.
 All 82 fitted baseline components are on top. Seven bare test points are also
 on top; the three optional encoder footprints remain DNP. All-top placement and
 an SMT-only manufacturing process are distinct requirements: the existing PH
-header and USB shell stakes need through-hole soldering. Clarification of an
-SMT-only process is pending while the compact placement work continues.
+header and USB shell stakes need through-hole soldering. The user confirmed that all fitted parts must be on top; through-hole
+soldering is allowed. The compact candidate therefore retains the genuine
+through-hole PH header and upright USB connectors.
 
 The conservative top-side envelopes combine genuine copper, authored courtyards
 and original supplier STEP bounds. For 89 top-side components/test points they
@@ -56,3 +57,62 @@ No stock is reserved.
 imports. Native compact source, supplier-model envelope checks, mechanical
 attachment, routing and manufacturing checks must pass before replacing the
 validated electrical baseline or claiming compact fabrication readiness.
+
+The current construction search also checks JLCPCB's [minimum component spacing
+recommendations](https://jlcpcb.com/help/article/minimum-spacing-for-smd-components),
+updated 2026-09-09. Its measurement diagram includes protruding component leads;
+this is not merely a plastic-body or copper-pad spacing rule. QFN-to-chip spacing
+is 1.0 mm, for example. `compact-JLC-component-spacing.json` records the table and
+source hashes. A second search envelope uses the union of original copper and
+nominal supplier STEP bounds plus 0.10 mm per side, with the larger package-pair
+spacing rules enforced separately. This is construction geometry, not a silently
+approved supplier courtyard, tolerance qualification or a fabrication release.
+The unchanged original imports and their courtyards remain preserved.
+
+The full controller source now accepts an optional mechanical/placement profile.
+The existing default builds to the identical source circuit SHA256
+`4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144`.
+No compact routing or compact assembly validation is claimed by that refactor.
+
+## Validated placement milestone
+
+The native 28 × 28 mm development source contains 92 electrical components,
+340 physical terminals and all 64 functional nets. The selected MLT-5020 removes
+one unused dummy buzzer terminal; all 304 connected terminal assignments match
+the exact reference after the documented current-limit/PH/shunt changes.
+All 82 fitted parts are on top; the optional encoder and its capacitors remain
+DNP, and the seven bare test pads remain accessible on top.
+
+For source SHA256 `78a201d31baaf11b8896d285a3e697710d2eae2a403ab7bf5303028735e1ed62`:
+
+- Native rendering has no source/schema/placement errors.
+- All 340 supplier pad geometries are unchanged after rigid placement transforms.
+- Independent pad checks find no shorted pad pairs, minimum foreign-pad gap
+  0.199619 mm and minimum copper-to-edge distance 0.255 mm.
+- All 2,346 applicable component-pair spacing checks pass at nominal model size.
+  The smallest surplus over the JLC recommendation is 0.005 mm; this is **not**
+  a tolerance-qualified manufacturing margin.
+- All 82 original supplier solids fit the 28.3 mm frame; nominal assembled body
+  bounds are X −13.9571…13.8928 mm, Y −14.0400…14.0400 mm. No solid collisions
+  or connector lead/hole misalignment were found. The original GCT STEP compound
+  validity limitation remains reported, without healing or replacing its model.
+- Six A4 schematic sheets cover every physical terminal with connected symbol
+  pins or explicit NC marks. An independent drawing/ERC check passes.
+- The native controller GLB loads 45 distinct genuine model assets.
+
+This is an **unrouted placement milestone**. The routing construction file is a
+separate intermediate with opens and unqualified USB pair geometry, never a
+manufacturing board. The first routing pass exposed blocked MCU escape paths;
+placement/routing refinement is in progress. Supplier silk also needs final
+legibility and mask/edge processing after copper is settled.
+
+The custom compact carrier proposal fits within the frame at nominal geometry
+and has no volume intersection with the original OEM STEP. It uses front M2.5
+threads and two PCB M1.6 supports, with no invented rear motor holes. The motor
+STEP has R3 rounded corners, not straight chamfers. Corner dimensions are absent
+from the drawing; the very narrow carrier rails require OEM dimensional
+acceptance plus strength, vibration and thermal validation. It is a custom
+proposal, explicitly not genuine supplier hardware or a released manufactured
+part. The original motor STEP includes wire lead-outs beyond the frame; the PCB
+body fit above does not claim that unbent motor wires or arbitrary cable plugs
+fit within that square. Full harness routing remains to be qualified.

@@ -4,11 +4,14 @@ import hashlib
 import itertools
 import json
 import math
+import sys
 from pathlib import Path
 import cadquery as cq
 
 ROOT = Path(__file__).resolve().parents[1]
-path = ROOT / 'artifacts/controller/unrouted.circuit.json'
+compact='--compact' in sys.argv
+folder='artifacts/compact-controller' if compact else 'artifacts/controller'
+path = ROOT / folder / 'unrouted.circuit.json'
 records = json.loads(path.read_text())
 names = {e['source_component_id']: e['name'] for e in records if e['type'] == 'source_component'}
 pcb = {e['pcb_component_id']: e for e in records if e['type'] == 'pcb_component'}
@@ -19,7 +22,7 @@ for e in records:
     if pcb[e['pcb_component_id']].get('do_not_place'):
         continue
     name = names[e['source_component_id']]
-    local = ROOT / 'imports/supplier' / e['model_step_url'].split('/imports/supplier/')[1]
+    local = ROOT / 'imports' / e['model_step_url'].split('/imports/')[1]
     if local not in cache:
         cache[local] = cq.importers.importStep(str(local)).val()
     shape = cache[local]
@@ -106,6 +109,12 @@ report = {'scope': '82 fitted supplier STEP solids; nominal PCB assembly, exclud
           'nominal_solid_and_lead_fit_pass':not any('invalid_original_supplier_STEP' not in e for e in errors),
           'all_original_supplier_STEP_valid':not any('invalid_original_supplier_STEP' in e for e in errors),
           'physical_assembly_tested': False, 'manufacturing_release': False}
-(ROOT / 'artifacts/controller/nominal-assembly-audit.json').write_text(json.dumps(report, indent=2) + '\n')
+if compact:
+    report['fitted_part_frame_XY_mm']=[min(r['bounds_mm'][i] for r in rows) for i in [0,1]]+[max(r['bounds_mm'][i] for r in rows) for i in [3,4]]
+    report['all_fitted_on_top']=all(pcb[e['pcb_component_id']]['layer']=='top' for e in records if e['type']=='cad_component' and not pcb[e['pcb_component_id']].get('do_not_place'))
+    frame=report['fitted_part_frame_XY_mm']
+    report['whole_fitted_parts_within_28_3mm_frame']=frame[0]>=-14.15 and frame[1]>=-14.15 and frame[2]<=14.15 and frame[3]<=14.15
+    if not report['whole_fitted_parts_within_28_3mm_frame']:report['errors'].append({'frame_violation':frame})
+(ROOT / folder / 'nominal-assembly-audit.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({'supplier_solids': len(parts), 'connector_lead_rows_checked': 3, 'errors': errors}))
 raise SystemExit(bool(errors))

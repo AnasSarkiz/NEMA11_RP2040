@@ -3,7 +3,7 @@
 import { symbols } from 'schematic-symbols'
 type P={x:number,y:number}
 type Placement={name:string,x:number,y:number,section:string,symbol?:string,box?:[number,number],left?:string[],right?:string[],top?:string[],bottom?:string[],spacing?:number}
-export function prepareSchematic(json:any[]) {
+export function prepareSchematic(json:any[],compact=false) {
  const source=new Map<string,any>(json.filter(e=>e.type==='source_component').map(e=>[e.source_component_id,e]))
  const ports=json.filter(e=>e.type==='source_port');const byName=new Map<string,any>([...source.values()].map(e=>[e.name,e]))
  const oldComponents=new Map<string,any>(json.filter(e=>e.type==='schematic_component').map(e=>[source.get(e.source_component_id).name,e]))
@@ -103,7 +103,7 @@ export function prepareSchematic(json:any[]) {
  const start=(index:number,name:string,subtitle:string)=>{
   sheet=`schematic_sheet_${index-1}`;placed.clear();sections.clear();connected.clear();annotated.clear();netAnnotated.clear();localComplete.clear()
   out.push({type:'schematic_sheet',schematic_sheet_id:sheet,name:`${String(index).padStart(2,'0')} ${name}`,display_name:name,sheet_index:index,sheet_size:'a4',sheet_width:297,sheet_height:210,center:point(16,11)})
-  text('NEMA11 / '+project,1.2,21.1,.44);text(name,12.3,21.1,.40);text(subtitle,1.2,20.35,.24);line(point(.8,19.8),point(31.2,19.8));line(point(.8,1.7),point(31.2,1.7));text('AnasSarkiz  /  '+project+' motor controller',1.2,1.05,.23);text(`Sheet ${index} / 5   •   A4   •   Rev SC-01`,22,1.05,.23);text('35 × 40 mm  |  4-layer PCB  |  Hardware prototype — assembly/firmware/bench qualification pending',1.2,.65,.20)
+  text('NEMA11 / '+project,1.2,21.1,.44);text(name,12.3,21.1,.40);text(subtitle,1.2,20.35,.24);line(point(.8,19.8),point(31.2,19.8));line(point(.8,1.7),point(31.2,1.7));text('AnasSarkiz  /  '+project+' motor controller',1.2,1.05,.23);text(`Sheet ${index} / 5   •   A4   •   Rev SC-01`,22,1.05,.23);text((compact?'28 × 28 mm':'35 × 40 mm')+'  |  4-layer PCB  |  Hardware prototype — assembly/firmware/bench qualification pending',1.2,.65,.20)
  }
  // Route local signal networks orthogonally; shared power and ground use rail symbols.
  const finish=()=>{
@@ -202,11 +202,11 @@ export function prepareSchematic(json:any[]) {
   part({name:'R_STATUS_'+color,x,y:14.8,section:'rgb',symbol:'boxresistor_down'});part({name:'Q_STATUS_'+color,x:x-.3625,y:12.7,section:'rgb',symbol:'npn_bipolar_transistor_down'})
  }
  text('DTC114E: NPN with internal input/bias resistors.',16,9.8,.22)
- caption('PWM buzzer','120 mA magnetic load; MOSFET drive and flyback diode',.6,9.3)
- part({name:'BZ1',x:9.4,y:6.5,section:'buzzer',box:[2.5,2.3],left:['_POS','_NEG'],right:['NC1','NC2']});part({name:'Q_BUZZER',x:8.5,y:3.8,section:'buzzer',symbol:'n_channel_e_mosfet_transistor_gate_left_drain_top'});part({name:'R_BUZZER_GATE',x:3.8,y:4.6,section:'buzzer',symbol:'boxresistor_right'});part({name:'R_BUZZER_PD',x:5.8,y:3.6,section:'buzzer'});part({name:'D_BUZZER',x:14,y:6.5,section:'buzzer',symbol:'diode_up'});part({name:'C_BUZZER',x:17,y:6.5,section:'buzzer'})
+ caption('PWM buzzer',compact?'MLT-5020: 4 kHz, 50%; 100 mA max at 3 V test':'120 mA magnetic load; MOSFET drive and flyback diode',.6,9.3)
+ part({name:'BZ1',x:9.4,y:6.5,section:'buzzer',box:[2.5,2.3],left:['_POS','_NEG'],right:compact?['NC']:['NC1','NC2']});part({name:'Q_BUZZER',x:8.5,y:3.8,section:'buzzer',symbol:'n_channel_e_mosfet_transistor_gate_left_drain_top'});part({name:'R_BUZZER_GATE',x:3.8,y:4.6,section:'buzzer',symbol:'boxresistor_right'});part({name:'R_BUZZER_PD',x:5.8,y:3.6,section:'buzzer'});part({name:'D_BUZZER',x:14,y:6.5,section:'buzzer',symbol:'diode_up'});part({name:'C_BUZZER',x:17,y:6.5,section:'buzzer'})
  caption('Power indication','3.3 V rail present; RGB/buzzer require firmware',22,8.6);part({name:'R_PWR_LED',x:25,y:6.2,section:'power_led'});part({name:'D_PWR',x:25,y:3.8,section:'power_led',symbol:'led_down'});finish()
  start(6,'Optional encoder (DNP)','Bottom footprints only; AS5600 and both bypass capacitors omitted from factory assembly')
- caption('Future magnetic shaft position','Nominal sensor centre (0, 0); rear shaft/magnet geometry remains unverified',.6,19)
+ caption(compact?'Future noncontact angle feedback':'Future magnetic shaft position',compact?'DNP: no documented rear shaft; magnet and attachment undefined':'Nominal sensor centre (0, 0); rear shaft/magnet geometry remains unverified',.6,19)
  part({name:'U_ENCODER',x:9,y:13,section:'encoder',box:[4.5,2.2],left:['VDD5V','VDD3V3','SDA','SCL'],right:['OUT','PGO'],bottom:['GND','DIR']})
  capBank(['C_ENCODER','C_ENCODER_BULK'],19,13,'V3V3')
  text('U_ENCODER, C_ENCODER and C_ENCODER_BULK: bottom / DO NOT PLACE.',.6,7.2,.28)

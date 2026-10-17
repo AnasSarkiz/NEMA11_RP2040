@@ -1,0 +1,78 @@
+{
+  "scope": "JLCPCB recommended minimum physical component spacing, including protruding terminals; separate from copper clearance",
+  "source_url": "https://jlcpcb.com/help/article/minimum-spacing-for-smd-components",
+  "source_last_updated": "2026-09-09",
+  "measurement_image_url": "https://rs.jlcpcb.com/static/image/help/pcb-assembly/smd-component-spacing-measurement-method.png",
+  "source_evidence": [
+    {
+      "name": "nema11-jlc-min-component-spacing.html",
+      "sha256": "c70385eeddd40e968416ff8e7e68c569fecbdba99a956345d1ded595fbd6b463"
+    },
+    {
+      "name": "nema11-jlc-component-spacing.png",
+      "sha256": "ba3209ef25230f2944575e9a59faa0e1e624e4adbd7f17c0a5653247c42725e9"
+    }
+  ],
+  "chip_classes": [
+    "0201",
+    "0402",
+    "0603",
+    "0805",
+    "1206"
+  ],
+  "chip_spacing_mm": [
+    [
+      0.15,
+      0.15,
+      0.18,
+      0.18,
+      0.25
+    ],
+    [
+      0.15,
+      0.15,
+      0.18,
+      0.18,
+      0.25
+    ],
+    [
+      0.18,
+      0.18,
+      0.18,
+      0.18,
+      0.25
+    ],
+    [
+      0.18,
+      0.18,
+      0.18,
+      0.18,
+      0.25
+    ],
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.35
+    ]
+  ],
+  "chip_to_package_spacing_mm": {
+    "QFN": 1.0,
+    "QFP": 0.5,
+    "SOP": 0.4,
+    "SOT": 0.2,
+    "BGA": 1.0
+  },
+  "other_pairs_mm": {
+    "QFN,QFN": 1.0,
+    "QFN,SOP": 1.0,
+    "QFN,SOT": 1.0,
+    "SOP,SOP": 0.5,
+    "SOP,SOT": 0.4,
+    "SOT,SOT": 0.4
+  },
+  "component_tolerance_or_placement_process_acceptance_qualified": false,
+  "unlisted_package_pairs": "Retain conservative supplied envelope; no inferred JLC guarantee",
+  "manufacturing_release": false
+}

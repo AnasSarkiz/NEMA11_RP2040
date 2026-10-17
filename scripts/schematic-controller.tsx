@@ -2,13 +2,17 @@ import React from "react"
 import { Circuit } from "tscircuit"
 import { readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
-import { SupplierPart } from "../src/controller/supplier-parts"
+import { SupplierPart as BaselineSupplierPart } from "../src/controller/supplier-parts"
+import { CompactSupplierPart } from "../src/compact/supplier-parts"
 import { prepareSchematic } from "./prepare-controller-schematic"
 import { convertCircuitJsonToSchematicSvg } from "circuit-to-svg"
 import { Resvg } from "@resvg/resvg-js"
 import * as schemas from "circuit-json"
 
-const baseBytes = readFileSync("artifacts/controller/unrouted.circuit.json")
+const compact=process.argv.includes("--compact")
+const folder=compact?"artifacts/compact-controller":"artifacts/controller"
+const SupplierPart=compact?CompactSupplierPart:BaselineSupplierPart
+const baseBytes = readFileSync(folder+"/unrouted.circuit.json")
 const base = JSON.parse(baseBytes.toString()) as any[]
 const source=base.filter(e=>e.type === "source_component")
 const circuit = new Circuit()
@@ -58,7 +62,7 @@ for(const name of ["J_PD","J_DATA"]){
    pin_number:pin,true_ccw_index:pin-1,display_pin_label:p.name,is_connected:false})
  }
 }
-const output = prepareSchematic([...base, ...native])
+const output = prepareSchematic([...base, ...native],compact)
 const sheetRecords = output.filter((e:any)=>e.type.startsWith("schematic_"))
 if (JSON.stringify(output.filter((e:any)=>!e.type.startsWith("schematic_"))) !== JSON.stringify(base)) {
   throw new Error("Schematic preparation changed source/PCB/CAD records")
@@ -71,7 +75,7 @@ const schemaErrors=output.flatMap((r:any,index:number)=>{
  return result.success?[]:[{index,type:r.type,issues:result.error.issues}]
 })
 if(schemaErrors.length)throw new Error(JSON.stringify(schemaErrors))
-writeFileSync("artifacts/controller/schematic.circuit.json", JSON.stringify(output,null,2)+"\n")
+writeFileSync(folder+"/schematic.circuit.json", JSON.stringify(output,null,2)+"\n")
 for (let i=0;i<sheets.length;i++) {
  const sheet=sheets[i]
  const scope=output.filter((e:any)=>!e.type.startsWith("schematic_") || e.schematic_sheet_id===sheet.schematic_sheet_id)
@@ -79,11 +83,11 @@ for (let i=0;i<sheets.length;i++) {
    .replace("<svg ",'<svg viewBox="0 0 2970 2100" ')
    .replace(/width="2970"/,'width="297mm"').replace(/height="2100"/,'height="210mm"')
    .replace(/[ \t]+$/gm, "")
- const stem=`artifacts/controller/schematic-a4-${i+1}`
+ const stem=`${folder}/schematic-a4-${i+1}`
  writeFileSync(stem+".svg",svg)
  writeFileSync(stem+".png",new Resvg(svg,{fitTo:{mode:"width",value:1800}}).render().asPng())
 }
-writeFileSync("artifacts/controller/schematic-build.json",JSON.stringify({
+writeFileSync(folder+"/schematic-build.json",JSON.stringify({
  scope:"Six functional native A4 schematic sheets; independent checks recorded separately",
  source_sha256:createHash("sha256").update(baseBytes).digest("hex"),
  electrical_PCB_CAD_records_preserved:true,sheets:sheets.length,

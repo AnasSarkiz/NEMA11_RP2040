@@ -1,8 +1,7 @@
 import React from "react"
 import { pinProps } from "./pin-attributes"
-import { SupplierPart } from "./supplier-parts"
+import { SupplierPart as OriginalSupplierPart } from "./supplier-parts"
 import placements from "./supplier-placement.json"
-const place=(name:string)=>(placements as Record<string,{pcbX:number,pcbY:number,pcbRotation:number}>)[name]
 import { SchematicNotes } from "./schematic-notes"
 
 // 26 mm PCB hole pitch is an ADAPTER interface, not motor mounting geometry.
@@ -15,18 +14,27 @@ const mcuPins = {"pin1": "IOVDD1", "pin2": "GPIO0", "pin3": "GPIO1", "pin4": "GP
 const driverPins = {pin1:"OUT2B",pin2:"ENABLE_N",pin3:"GND",pin4:"CP1",pin5:"CP2",pin6:"VCP",pin7:"NC7",pin8:"VREG",pin9:"MS1",pin10:"MS2",pin11:"MS3",pin12:"RESET_N",pin13:"ROSC",pin14:"SLEEP",pin15:"VDD",pin16:"STEP",pin17:"REF",pin18:"GND18",pin19:"DIR",pin20:"NC20",pin21:"OUT1B",pin22:"VBB1",pin23:"SENSE1",pin24:"OUT1A",pin25:"NC25",pin26:"OUT2A",pin27:"SENSE2",pin28:"VBB2",pin29:"EP"} as const
 const pdPins = {pin1:"VHV",pin2:"CFG2",pin3:"CFG3",pin4:"DP",pin5:"DM",pin6:"CC2",pin7:"CC1",pin8:"VBUS",pin9:"CFG1",pin10:"PG",pin11:"GND"} as const
 const baseUsb = {GND1:n("GND"),GND2:n("GND"),GND3:n("GND"),GND4:n("GND"),EH1:n("GND"),EH2:n("GND"),EH3:n("GND"),EH4:n("GND")}
-const resistor = (name:string,value:string,a:string,b:string) => <SupplierPart key={name} name={name}  resistance={value} tolerance="1%" {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
+export type ControllerPlacement = {pcbX:number,pcbY:number,pcbRotation:number}
+export type ControllerProfile = {
+ width:number,height:number,outline:{x:number,y:number}[],
+ mounts:{x:number,y:number,diameter:number,radius:number}[],
+ placementOverrides?:Record<string,ControllerPlacement>,
+ Part?:React.ComponentType<any>,compactLabels?:boolean,
+}
+export default function Nema11Controller({ routingDisabled = false, schematicDisabled = false, profile }: { routingDisabled?: boolean, schematicDisabled?: boolean, profile?:ControllerProfile } = {}) {
+ const SupplierPart=profile?.Part ?? OriginalSupplierPart
+ const place=(name:string)=>profile?.placementOverrides?.[name] ?? (placements as Record<string,ControllerPlacement>)[name]
+ const mounts=profile?.mounts ?? [-mechanical.holePitch/2,mechanical.holePitch/2].flatMap(x=>[-mechanical.holePitch/2,mechanical.holePitch/2].map(y=>({x,y,diameter:mechanical.holeDiameter,radius:mechanical.headEnvelopeRadius})))
+ const resistor = (name:string,value:string,a:string,b:string) => <SupplierPart key={name} name={name}  resistance={value} tolerance="1%" {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
 const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={name} name={name}  capacitance={value} maxVoltageRating={['PD_VBUS','LOGIC_IN','BUCK_BST','CP1'].includes(a)||b==='PD_VBUS'?35:10} {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
-
-export default function Nema11Controller({ routingDisabled = false, schematicDisabled = false }: { routingDisabled?: boolean, schematicDisabled?: boolean } = {}) {
- return <board width={35} height={40} outline={[{x:-17.5,y:-17.5},{x:17.5,y:-17.5},{x:17.5,y:22.5},{x:-17.5,y:22.5}]} layers={4} thickness={1.6}
+ return <board width={profile?.width ?? 35} height={profile?.height ?? 40} outline={profile?.outline ?? [{x:-17.5,y:-17.5},{x:17.5,y:-17.5},{x:17.5,y:22.5},{x:-17.5,y:22.5}]} layers={4} thickness={1.6}
   routingDisabled={routingDisabled} schematicDisabled={schematicDisabled} minTraceWidth={0.16} minTraceToPadEdgeClearance={0.15} minPadEdgeToPadEdgeClearance={0.15}
   minViaHoleDiameter={0.3} minViaPadDiameter={0.45} minViaHoleEdgeToViaHoleEdgeClearance={0.2} minPlatedHoleDrillEdgeToDrillEdgeClearance={0.45} minBoardEdgeClearance={0.25}
   autorouter={{local:true, traceClearance:0.15}} autorouterEffortLevel="2x" schAutoLayoutEnabled={false}>
   <schematicsheet name="NEMA11_RP2040" sheetSize="A4">
   {['GND','PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','PD_CC1','PD_CC2','DATA_CC1','DATA_CC2','USB_DP','USB_DM','STEP','DIR','ENABLE_N','SLEEP','PD_GOOD','DATA_PRESENT','VM_SENSE','VREF','CP1','CP2','VCP','VREG','SENSE1','SENSE2','A_PLUS','A_MINUS','B_PLUS','B_MINUS','V1V1','QSPI_SS','QSPI_SCLK','QSPI_SD0','QSPI_SD1','QSPI_SD2','QSPI_SD3','MCU_DM','MCU_DP','XIN','XOUT','XTAL_OUT','RUN','SWCLK','SWDIO','BUCK_SW','BUCK_BST','BOOT_PAD','PWR_LED_A','TEMP_SDA','TEMP_SCL','BUZZER_PWM','BUZZER_GATE','BUZZER_SINK','LED_R','LED_G','LED_B','STATUS_R_K','STATUS_G_K','STATUS_B_K','STATUS_R_C','STATUS_G_C','STATUS_B_C','PD_CFG'].map(name=><React.Fragment key={name}><net name={name} isGroundNet={name==='GND'} isPowerNet={['PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','V1V1'].includes(name)} nominalTraceWidth={['PD_VBUS','A_PLUS','A_MINUS','B_PLUS','B_MINUS','SENSE1','SENSE2'].includes(name)?0.30:0.16} /></React.Fragment>)}
   {/* These keepouts constrain copper. Supplier courtyards remain intact; native STEP solids independently validate component/head clearance. */}
-  {[-mechanical.holePitch/2,mechanical.holePitch/2].flatMap(x=>[-mechanical.holePitch/2,mechanical.holePitch/2].map(y=><React.Fragment key={`${x},${y}`}><hole name={`M${x}_${y}`} pcbX={x} pcbY={y} diameter={mechanical.holeDiameter} /><keepout pcbX={x} pcbY={y} shape="circle" radius={mechanical.headEnvelopeRadius} allowPlacements={true} layers={['top','inner1','inner2','bottom']} /><silkscreencircle pcbX={x} pcbY={y} radius={mechanical.headEnvelopeRadius} strokeWidth={0.1} /></React.Fragment>))}
+  {mounts.map(({x,y,diameter,radius})=><React.Fragment key={`${x},${y}`}><hole name={`M${x}_${y}`} pcbX={x} pcbY={y} diameter={diameter} /><keepout pcbX={x} pcbY={y} shape="circle" radius={radius} allowPlacements={true} layers={['top','inner1','inner2','bottom']} /><silkscreencircle pcbX={x} pcbY={y} radius={radius} strokeWidth={0.1} /></React.Fragment>)}
   <SupplierPart name="J_PD" {...pinProps("J_PD")}    noConnect={['DP1','DP2','DM1','DM2','SBU1','SBU2']} {...place("J_PD")} connections={{...baseUsb,VBUS1:n('PD_VBUS'),VBUS2:n('PD_VBUS'),VBUS3:n('PD_VBUS'),VBUS4:n('PD_VBUS'),CC1:n('PD_CC1'),CC2:n('PD_CC2')}} />
   <SupplierPart name="J_DATA" {...pinProps("J_DATA")}    noConnect={['SBU1','SBU2']} {...place("J_DATA")} connections={{...baseUsb,VBUS1:n('DATA_VBUS'),VBUS2:n('DATA_VBUS'),VBUS3:n('DATA_VBUS'),VBUS4:n('DATA_VBUS'),CC1:n('DATA_CC1'),CC2:n('DATA_CC2'),DP1:n('USB_DP'),DP2:n('USB_DP'),DM1:n('USB_DM'),DM2:n('USB_DM')}} />
   <SupplierPart name="U_PD" {...pinProps("U_PD")}  pinLabels={pdPins} noConnect={['DP','DM','CFG2','CFG3']} {...place("U_PD")} connections={{VHV:n('PD_VHV'),CFG1:n('PD_CFG'),VBUS:n('PD_VBUS'),CC1:n('PD_CC1'),CC2:n('PD_CC2'),PG:n('PD_GOOD'),GND:n('GND')}} />
@@ -89,8 +97,8 @@ export default function Nema11Controller({ routingDisabled = false, schematicDis
   <SupplierPart name="J_MOTOR" {...pinProps("J_MOTOR")} {...place("J_MOTOR")} connections={{A_PLUS:n("A_PLUS"),A_MINUS:n("A_MINUS"),B_PLUS:n("B_PLUS"),B_MINUS:n("B_MINUS")}} />
   <SupplierPart name="U_ESD" {...pinProps("U_ESD")}  pinLabels={{pin1:"DP1",pin2:"GND",pin3:"DM1",pin4:"DM2",pin5:"VBUS",pin6:"DP2"}} {...place("U_ESD")} connections={{DP1:n("USB_DP"),DP2:n("USB_DP"),DM1:n("USB_DM"),DM2:n("USB_DM"),VBUS:n("DATA_VBUS"),GND:n("GND")}} />
   <SupplierPart name="D_TVS" {...place("D_TVS")} connections={{pin1:n("GND"),pin2:n("PD_VBUS")}} />
-  <silkscreentext text="NEMA11 RP2040" pcbX={0} pcbY={-16.9} fontSize={1} />
-  <silkscreentext text="A+ A- B+ B-" pcbX={-6.85} pcbY={9.0} fontSize={.65} />
+  {!profile?.compactLabels && <silkscreentext text="NEMA11 RP2040" pcbX={0} pcbY={-16.9} fontSize={1} />}
+  {!profile?.compactLabels && <silkscreentext text="A+ A- B+ B-" pcbX={-6.85} pcbY={9.0} fontSize={.65} />}
 
   {/* Reference feedback: TMP102 I2C address 0x48; alerts handled by application firmware. */}
   <SupplierPart name="U_TEMP" {...pinProps("U_TEMP")} {...place("U_TEMP")} noConnect={['ALERT']} connections={{SCL:n('TEMP_SCL'),GND:n('GND'),ADD0:n('GND'),V_POS:n('V3V3'),SDA:n('TEMP_SDA')}} />
@@ -118,8 +126,8 @@ export default function Nema11Controller({ routingDisabled = false, schematicDis
   <testpoint doNotPlace name="TP_RUN" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_RUN")} connections={{pin1:n("RUN")}} />
   <testpoint doNotPlace name="TP_BOOT" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_BOOT")} connections={{pin1:n("BOOT_PAD")}} />
   <testpoint doNotPlace name="TP_BOOT_GND" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_BOOT_GND")} connections={{pin1:n("GND")}} />
-  <silkscreentext text="PWR" pcbX={6.8} pcbY={16.3} fontSize={0.8} isKnockout={true} knockoutPadding={0.25} />
-  <silkscreentext text="DATA" pcbX={-15.5} pcbY={-16.6} fontSize={0.8} isKnockout={true} knockoutPadding={0.25} />
+  {!profile?.compactLabels && <silkscreentext text="PWR" pcbX={6.8} pcbY={16.3} fontSize={0.8} isKnockout={true} knockoutPadding={0.25} />}
+  {!profile?.compactLabels && <silkscreentext text="DATA" pcbX={-15.5} pcbY={-16.6} fontSize={0.8} isKnockout={true} knockoutPadding={0.25} />}
   {/* Optional AS5600 at nominal motor axis. No rear shaft/magnet fit is claimed. */}
   <SupplierPart name="U_ENCODER" layer="bottom" doNotPlace {...place("U_ENCODER")} noConnect={['OUT','PGO']} connections={{VDD5V:n('V3V3'),VDD3V3:n('V3V3'),GND:n('GND'),DIR:n('GND'),SDA:n('TEMP_SDA'),SCL:n('TEMP_SCL')}} />
   <SupplierPart name="C_ENCODER" layer="bottom" doNotPlace capacitance="100nF" maxVoltageRating={16} {...place("C_ENCODER")} connections={{pin1:n('V3V3'),pin2:n('GND')}} />

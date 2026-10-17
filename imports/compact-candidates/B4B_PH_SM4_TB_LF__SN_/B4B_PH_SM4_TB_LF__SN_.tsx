@@ -1,0 +1,51 @@
+import React from "react"
+const objPath = "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/da64928a7edb9bdcb030a6265241eaebb67334a0/imports/compact-candidates/B4B_PH_SM4_TB_LF__SN_/B4B_PH_SM4_TB_LF__SN_.obj"
+const stepPath = "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/da64928a7edb9bdcb030a6265241eaebb67334a0/imports/compact-candidates/B4B_PH_SM4_TB_LF__SN_/B4B_PH_SM4_TB_LF__SN_.step"
+import type { ChipProps } from "@tscircuit/props"
+
+const pinLabels = {
+  pin1: ["pin1"],
+  pin2: ["pin2"],
+  pin3: ["pin3"],
+  pin4: ["pin4"],
+  pin5: ["pin5"],
+  pin6: ["pin6"]
+} as const
+
+export const B4B_PH_SM4_TB_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {
+  return (
+    <chip
+      pinLabels={pinLabels}
+      supplierPartNumbers={{
+  "jlcpcb": [
+    "C160354"
+  ]
+}}
+      manufacturerPartNumber="B4B-PH-SM4-TB(LF)(SN)"
+      footprint={<footprint>
+        <smtpad portHints={["pin1"]} pcbX="2.996946mm" pcbY="0.5079873mm" width="0.999998mm" height="5.999988mm" shape="rect" />
+<smtpad portHints={["pin2"]} pcbX="0.99695mm" pcbY="0.5079873mm" width="0.999998mm" height="5.999988mm" shape="rect" />
+<smtpad portHints={["pin3"]} pcbX="-1.003046mm" pcbY="0.5079873mm" width="0.999998mm" height="5.999988mm" shape="rect" />
+<smtpad portHints={["pin5"]} pcbX="-5.348986mm" pcbY="-1.8079847mm" width="1.7999964mm" height="3.3999932mm" shape="rect" />
+<smtpad portHints={["pin6"]} pcbX="5.348986mm" pcbY="-1.8079847mm" width="1.7999964mm" height="3.3999932mm" shape="rect" />
+<smtpad portHints={["pin4"]} pcbX="-3.000502mm" pcbY="0.5079873mm" width="0.999998mm" height="5.999988mm" shape="rect" />
+<silkscreenpath route={[{"x":5.998971999999753,"y":-4.317834900000207},{"x":-6.001029400000334,"y":-4.317834900000207}]} />
+<silkscreenpath route={[{"x":3.999483999999825,"y":0.6820026999998845},{"x":6.000470599999744,"y":0.6819772999999714}]} />
+<silkscreenpath route={[{"x":-6.001029400000334,"y":0.6820026999998845},{"x":-3.9999920000002476,"y":0.6820026999998845}]} />
+<silkscreenpath route={[{"x":-6.001029400000334,"y":0.6820026999998845},{"x":-6.001029400000334,"y":0.12312649999978476}]} />
+<silkscreenpath route={[{"x":-6.001029400000334,"y":-4.317834900000207},{"x":-6.001029400000334,"y":-3.7391467000001057}]} />
+<silkscreenpath route={[{"x":6.000470599999744,"y":0.6819772999999714},{"x":6.000470599999744,"y":0.12312649999978476}]} />
+<silkscreenpath route={[{"x":6.000470599999744,"y":-3.7391467000001057},{"x":6.000470599999744,"y":-4.317834900000207}]} />
+<silkscreentext text="{NAME}" pcbX="-0.001016mm" pcbY="4.4962973mm" anchorAlignment="center" fontSize="1mm" />
+<courtyardoutline outline={[{"x":-6.498984200000109,"y":3.757981299999983},{"x":6.498984199999995,"y":3.757981299999983},{"x":6.498984199999995,"y":-4.588993100000039},{"x":-6.498984200000109,"y":-4.588993100000039},{"x":-6.498984200000109,"y":3.757981299999983}]} />
+      </footprint>}
+      cadModel={{
+        objUrl: objPath,
+        stepUrl: stepPath,
+        pcbRotationOffset: 180,
+        modelOriginPosition: { x: 0, y: -1.8390001000000211, z: 0 },
+      }}
+      {...props}
+    />
+  )
+}

@@ -8,9 +8,10 @@ from pathlib import Path
 import cairosvg
 from pypdf import PdfReader, PdfWriter
 
-controller = '--controller' in sys.argv
+compact='--compact' in sys.argv
+controller = '--controller' in sys.argv or compact
 count = 6 if controller else 3
-root = Path(__file__).resolve().parents[1] / ('artifacts/controller' if controller else 'artifacts/rp2040-core')
+root = Path(__file__).resolve().parents[1] / ('artifacts/compact-controller' if compact else 'artifacts/controller' if controller else 'artifacts/rp2040-core')
 writer = PdfWriter()
 sizes = []
 for n in range(1, count+1):

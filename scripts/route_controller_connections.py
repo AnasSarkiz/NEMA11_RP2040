@@ -142,7 +142,7 @@ def sample_members(members, root, roots, layers, ports):
     return points
 
 
-def connect(records, name, attempt):
+def connect(records, name, attempt, layer_override=None):
     copper=Copper(records)
     net=next(e for e in records if e['type']=='source_net' and e['name']==name)
     key=net['subcircuit_connectivity_map_key']
@@ -155,7 +155,7 @@ def connect(records, name, attempt):
         parts={copper.names[copper.source[copper.ports[e['pcb_port_id']]['source_port_id']]['source_component_id']] for e in islands[root]}
         return (0 if parts=={'J_MOTOR'} else 1,len(islands[root]),root)
     startroot=min(islands,key=choice)
-    layers=['top','bottom'] if name=='PD_VBUS' else ['top','bottom','inner2'] if name=='LOGIC_IN' else LAYOUT
+    layers=layer_override or (['top','bottom'] if name=='PD_VBUS' else ['top','bottom','inner2'] if name=='LOGIC_IN' else LAYOUT)
     w=widths(name)
     wire,vias=masks(records,copper,key,w,layers)
     def width_at(node):

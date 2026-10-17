@@ -63,3 +63,9 @@ The subsystem build/check commands are documented in its review above. The
 calculation tests validate design bounds, not operation of a physical motor.
 Pending external prerequisites are documented in the engineering review. No
 substitutions, fabricated rear holes or assumed rear shaft are authorized.
+
+The new [28 mm compact placement milestone](docs/compact-controller.md) has native
+[source](src/compact/board.tsx), [six A4 schematic sheets](artifacts/compact-controller/schematic-a4.pdf)
+and [genuine-model 3D PCB](artifacts/compact-controller/development-controller.glb).
+All 82 fitted parts are on top; nominal body fit and independent placement checks
+pass. **Compact copper routing is in progress; this is not fabrication-ready.**

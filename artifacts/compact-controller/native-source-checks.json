@@ -1,0 +1,30 @@
+[
+  {
+    "check": "source",
+    "input": "artifacts/compact-controller/schematic.circuit.json",
+    "input_sha256": "b6856b317c007fb32c62ede0faffc85ea03fd670b3816d881c3aa43356741c64",
+    "exit_code": 0,
+    "log": "artifacts/compact-controller/native-source.txt"
+  },
+  {
+    "check": "pin_specification",
+    "input": "artifacts/compact-controller/schematic.circuit.json",
+    "input_sha256": "b6856b317c007fb32c62ede0faffc85ea03fd670b3816d881c3aa43356741c64",
+    "exit_code": 0,
+    "log": "artifacts/compact-controller/native-pin_specification.txt"
+  },
+  {
+    "check": "netlist",
+    "input": "examples/compact-controller-netlist.circuit.tsx",
+    "input_sha256": "d2e134cf4eddeff2b66dc7f72fbb59e610da738c3f72357e0c4601c13a044b12",
+    "exit_code": 0,
+    "log": "artifacts/compact-controller/native-netlist.txt"
+  },
+  {
+    "check": "schematic-placement",
+    "input": "artifacts/compact-controller/schematic.circuit.json",
+    "input_sha256": "b6856b317c007fb32c62ede0faffc85ea03fd670b3816d881c3aa43356741c64",
+    "exit_code": 0,
+    "log": "artifacts/compact-controller/native-schematic-placement.txt"
+  }
+]

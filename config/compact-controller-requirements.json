@@ -12,7 +12,7 @@
   ],
   "entire_fitted_component_and_connector_bodies_within_frame": true,
   "all_fitted_parts_on_top": true,
-  "SMT_only_process_requirement_clarification_pending": true,
+  "SMT_only_process_requirement_clarification_pending": false,
   "same_functional_features_required": true,
   "minimum_via_drill_pad_mm": [
     0.3,
@@ -23,5 +23,7 @@
     40
   ],
   "compact_layout_validated": false,
-  "manufacturing_release": false
+  "manufacturing_release": false,
+  "through_hole_soldering_allowed": true,
+  "user_single_side_definition": "All fitted components on top; through-hole joints may be soldered underneath"
 }

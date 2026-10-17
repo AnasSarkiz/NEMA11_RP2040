@@ -1,0 +1,26 @@
+{
+  "scope": "Validated native 28 mm full-controller placement and six-sheet schematic milestone; UNROUTED",
+  "source_sha256": "78a201d31baaf11b8896d285a3e697710d2eae2a403ab7bf5303028735e1ed62",
+  "schematic_sha256": "b6856b317c007fb32c62ede0faffc85ea03fd670b3816d881c3aa43356741c64",
+  "checked_artifacts": {
+    "source-build.json": "701b76104c79e25c8378fc6b38b7a8c23e35140025578574955c33d7fd2bdc17",
+    "electrical-parity.json": "117e67fede206071f4cf82ec8131f14a0ee11b7dc888b970c9dbc6658a4441ed",
+    "placement-verification.json": "f99a3ed722c388e81fc58adbf939f2c24fbaa76a5a93a573bed10e7fbb66a961",
+    "nominal-assembly-audit.json": "21a1961e938544ddeaaee48fb50e150d05494bf09eec810652d63a0a8585af19",
+    "3d-export-verification.json": "cfd913ce2c3158471dd7cde8cb018e61ce985f811c8e78854e1b086ac595e20d",
+    "schematic-verification.json": "1798d166d19d7db8f212707d6bf2af796f88bc4ee935e20ca86f6427558dfbe2",
+    "pdf-verification.json": "f3926ee991716159a6682d4e566a8e60c1b076b5c1cd98b324e37348173dc31f",
+    "native-source-checks.json": "a9aba38614f36607f2c0e9d79918002d5ec878143d755cd60052427c4c902331"
+  },
+  "placement_and_schematic_pass": true,
+  "physical_routing_complete": false,
+  "zero_opens_or_full_routed_DRC_claimed": false,
+  "manufacturing_release": false,
+  "limitations": [
+    "Compact routing remains incomplete; construction file has opens",
+    "Nominal supplier models and 5 um minimum JLC spacing surplus are not tolerance-qualified",
+    "Original GCT STEP compound validity limitation retained",
+    "Carrier corner radii, narrow-rail strength, fasteners, harness and machine interface are unqualified",
+    "Buzzer waveform/current/reflow, motor current accuracy, thermal/regen behavior, JLC stackup/process/panel and stock remain unqualified"
+  ]
+}

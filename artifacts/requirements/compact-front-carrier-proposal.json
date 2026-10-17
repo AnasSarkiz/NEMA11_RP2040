@@ -1,0 +1,58 @@
+{
+  "scope": "Custom 28 mm front-anchored carrier proposal, nominal OEM STEP collision check only",
+  "bounds_mm": [
+    -14.001033782647877,
+    -14.000000100000006,
+    -43.00818185397574,
+    14.001038553659003,
+    14.001038553659003,
+    -0.7989614463409968
+  ],
+  "valid_single_solid": true,
+  "nominal_motor_intersection_mm3": 0,
+  "nominal_motor_surface_distance_mm": 0.0,
+  "within_28_3mm_frame_XY": true,
+  "front_mount_pitch_mm": 23,
+  "front_hole_diameter_mm": 2.9,
+  "front_plate_thickness_mm": 1,
+  "pilot_clearance_diameter_mm": 23.4,
+  "PCB_mount_centres_mm": [
+    [
+      -12.5,
+      12.5
+    ],
+    [
+      12.5,
+      12.5
+    ]
+  ],
+  "PCB_thread": "M1.6x0.35; tap-drill representation only",
+  "PCB_hole_candidate_diameter_mm": 1.8,
+  "motor_rear_holes_or_shaft_assumed": false,
+  "all_fitted_electrical_parts_top": true,
+  "required_motor_corner_channel": {
+    "inner_diagonal_absX_plus_Y_mm": 26.85,
+    "nominal_OEM_STEP_corner_radius_mm": 3.0,
+    "corner_radius_guaranteed_by_OEM_drawing": false
+  },
+  "unresolved_requirements": [
+    "OEM minimum corner chamfer/fillet dimensions along complete body; nominal STEP is not a tolerance guarantee",
+    "Machining/flatness/chamfer/thread tolerances and 6061-T6 material approval",
+    "Two narrow rearward rails need strength, vibration and hot-motor validation",
+    "Genuine M2.5x4 front and M1.6x4 PCB fastener drawings, head/tool envelopes and tolerance-qualified engagement",
+    "Machine-side mounting interface and front pilot/shaft reach after the plate",
+    "Full harness bend radius, retention and wire-exit clearance",
+    "Finished PCB thickness maximum and mount positions require acceptance"
+  ],
+  "files": [
+    {
+      "path": "imports/mechanical/nema11-compact-front-carrier.step",
+      "sha256": "a5efd0f6d8057647ff048d99241ad5ed82f042eb7d6686ccbc442a0a7a0a4d57"
+    },
+    {
+      "path": "imports/mechanical/nema11-compact-front-carrier.obj",
+      "sha256": "1f8d6e0d718b5c4b592bc24dbd0f8bc5dc3359096a9777896c862624183e1893"
+    }
+  ],
+  "manufacturing_release": false
+}
