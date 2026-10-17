@@ -21,6 +21,9 @@ def check(records, reference):
                               supplier_part_numbers={'jlcpcb': ['C4184']})
     expected['J_MOTOR'].update(manufacturer_part_number='B4B-PH-K-S(LF)(SN)',
                               supplier_part_numbers={'jlcpcb': ['C131334']})
+    for name in ['R_SA','R_SB']:
+        expected[name].update(manufacturer_part_number='HP05W3F240LT5E',
+                              supplier_part_numbers={'jlcpcb':['C7434086']})
     if names.keys() != expected.keys():
         errors.append({'component_set_difference': sorted(names.keys() ^ expected.keys())})
     for name, fields in expected.items():
@@ -61,7 +64,8 @@ def main():
               'reference_board_sha256': reference['reference_board_sha256'],
               'components_compared': 92, 'physical_pins_compared': 341,
               'intentional_changes': ['R_REF_H: 39k/C23153 to 20k/C4184',
-                                      'J_MOTOR: SH/C160390 to PH/C131334; two unused hold-down terminals removed'],
+                                      'J_MOTOR: SH/C160390 to PH/C131334; two unused hold-down terminals removed',
+                                      'R_SA/R_SB: 125mW C2930216 to 1/3W C7434086; same 0.24 ohm value and identical copper pads'],
               'metadata_correction': '12MHz four-pad crystal uses SI load_capacitance=1e-11 F; reference stored 10 without SI conversion',
               'assembly_metadata': 'Seven bare PCB test pads are doNotPlace; PH mates from above; encoder and both capacitors remain DNP',
               'errors': errors, 'manufacturing_release': False}

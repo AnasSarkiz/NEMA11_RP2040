@@ -1,8 +1,8 @@
 {
   "scope": "Full controller native development PCB; motor carrier and harness not included",
-  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
-  "glb_sha256": "4810cfd1ef8eda2fd82ad57c4fdaf14249eee8590c8f99d756db6bbcce8def36",
-  "bytes": 13473868,
+  "circuit_sha256": "70bbc04ca291347b6789b5823050f1749838e55a43d25300b708ac6b8011ffe3",
+  "glb_sha256": "2c0e9bfd27e0cf0e66ff286a8e919b2a008e33cbf98c2ee5876616e25841bfb1",
+  "bytes": 13474952,
   "original_supplier_assets_loaded": [
     {
       "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
@@ -135,7 +135,7 @@
       "bytes": 171757
     },
     {
-      "path": "imports/supplier/FRL0805FR240TS/FRL0805FR240TS.obj",
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj",
       "sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
       "bytes": 18763
     },

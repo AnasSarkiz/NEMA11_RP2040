@@ -1,3 +1,4 @@
+import { HP05W3F240LT5E } from "../../imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E"
 import { A_0603WAF2002T5E } from "../../imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E"
 import { AS5600_ASOM } from "../../imports/supplier/AS5600_ASOM/AS5600_ASOM"
 import { StandardUsbConnector, SmtMotorConnector, ThroughHoleMotorConnector, SupplierCrystal } from "./reference-connectors"
@@ -54,6 +55,7 @@ import { CH224A } from "../../imports/supplier/CH224A/CH224A"
 import { A_0603WAF0000T5E } from "../../imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E"
 import { A_0402WGF5602TCE } from "../../imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE"
 const parts: Record<string, React.ComponentType<any>> = {
+ "C7434086": HP05W3F240LT5E,
  "C4184": A_0603WAF2002T5E,
  "C79815": AS5600_ASOM,
  "C5815189": StandardUsbConnector,

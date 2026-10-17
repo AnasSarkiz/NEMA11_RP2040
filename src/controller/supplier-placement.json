@@ -281,7 +281,7 @@
   },
   "J_PD": {
     "pcbX": 0.4475048,
-    "pcbY": 19.15,
+    "pcbY": 20.15,
     "pcbRotation": 0
   },
   "J_DATA": {
@@ -306,7 +306,7 @@
   },
   "J_MOTOR": {
     "pcbX": 11.5,
-    "pcbY": 18.5,
+    "pcbY": 19.1,
     "pcbRotation": 0
   },
   "D_PWR": {
@@ -350,8 +350,8 @@
     "pcbRotation": 90
   },
   "R_STATUS_B": {
-    "pcbX": -8,
-    "pcbY": 19.3,
+    "pcbX": 15.8,
+    "pcbY": 15.85,
     "pcbRotation": 0
   },
   "U_TEMP": {

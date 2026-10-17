@@ -1,6 +1,6 @@
 {
   "scope": "Actual native GLB bounds versus 82 fitted supplier STEP poses plus genuine OEM motor",
-  "GLB_sha256": "373f3c04c92a1edc5be55e4cc790507bd194bfb8ee1c632a3a0732e812ca9eda",
+  "GLB_sha256": "7c2299b78d2926c203abb88dbfe47b6562270ee2053c96bac52f99dc2acfdb3d",
   "native_models_checked": 83,
   "scene_to_board_coordinates": {
     "X": "-glTF.X",
@@ -12,10 +12,10 @@
       "part": "J_PD",
       "native_GLB_board_coordinates_bbox_mm": [
         -3.872490799999954,
-        17.30512750000002,
+        18.30512750000002,
         0.04998879999999972,
         5.072516200000045,
-        20.99512650000002,
+        21.99512650000002,
         8.2099918
       ],
       "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
@@ -720,10 +720,10 @@
       "part": "J_MOTOR",
       "native_GLB_board_coordinates_bbox_mm": [
         6.54998729999993,
-        16.249962999999994,
+        16.849962999999995,
         -2.1999940000000002,
         16.44998729999993,
-        20.949962999999997,
+        21.549962999999998,
         6.800006
       ],
       "maximum_STEP_bbox_deviation_mm": 0.0010000999999979499
@@ -887,14 +887,14 @@
     {
       "part": "R_STATUS_B",
       "native_GLB_board_coordinates_bbox_mm": [
-        -8.5,
-        19.05001270000007,
+        15.3,
+        15.60001270000007,
         0.8,
-        -7.5,
-        19.55001270000007,
+        16.3,
+        16.10001270000007,
         1.1600000000000001
       ],
-      "maximum_STEP_bbox_deviation_mm": 0.0010001000000023907
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
     },
     {
       "part": "Q_STATUS_B",

@@ -1,0 +1,27 @@
+{
+  "source_url": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "retrieved_UTC_date": "2026-10-17",
+  "HTML_sha256": "a718648be0403e9e00aca1bec58f2cbee1330f3af156d4b476f58b7165eb1b78",
+  "verbatim_relevant_rows": [
+    "Finished Inner Layer Copper 0.5 oz / 1 oz / 2 oz Finished copper weight of inner layer is 0.5oz by default.",
+    "Hole size Tolerance Through-holes: +0.13 / -0.08 mm Press-fit holes\uff1a\u00b10.05 mm (Finished hole size: 0.55-2.0mm. Multilayer ENIG boards and circular holes only. Mention the specific holes in PCB Remark) e.g. for the 0.6mm hole size, the finished hole size between 0.52mm to 0.73mm is acceptable. To avoid soldermask or tin stuck in the hole, recommended PTH size\u22650.5mm.",
+    "Min. Via hole size/diameter 0.15/0.25mm (0.1mm/0.2mm only available for board thickness \u22641mm; ENIG/OSP surface finish required) 1-layer (NPTH only): 0.3 mm hole size / 0.5 mm via diameter 2-layer: 0.15mm hole size / 0.25mm via diameter (0.1mm hole size / 0.2mm via diameter only available for board thickness \u22641mm; ENIG/OSP surface finish required) Multilayer: 0.15 mm hole size / 0.25 mm via diameter (0.1mm hole size / 0.2mm via diameter only available for board thickness \u22641mm; ENIG/OSP surface finish required) \u2460 Via diameter should be 0.1mm(0.15mm preferred) larger than Via hole size. \u2461 Preferred Min. Via hole size: 0.2mm \u2462 0.1mm or 0.15mm hole size with any size via diameter, and 0.2mm or 0.25mm hole size with via diameter less than 0.45mm, will cost more. Please select corresponding via size option when placing order.",
+    "Slot Hole size Tolerance Plated: +0.13 / -0.08 mm Non-plated: \u00b10.2mm Plated slot is made by drill tools. Non-plated slot is made by CNC.",
+    "Via Hole-to-Hole Spacing 0.2mm",
+    "PTH annular ring \u22670.20mm 2-layer: 1 oz: Recommended 0.25 mm or above; absolute minimum 0.18 mm 2 oz: 0.254 mm or above Multilayer: 1 oz: Recommended 0.20 mm or above; absolute minimum 0.15 mm 2 oz: 0.254 mm or above",
+    "Inner layer via hole to copper clearance 0.2mm",
+    "Inner layer PTH pad hole to copper clearance 0.3mm",
+    "Via hole to Track 0.2mm",
+    "JLCPCB Via-in-Pad Process Epoxy Filled & Capped Copper paste Filled&Capped Vias are filled with epoxy resin or copper paste and then plated over to achieve an opaque and smooth finish. Click for detailed explanation \u2460 Vias are filled and plated over. Choose copper paste filling for applications requiring high thermal conductivity. \u2461 This process is the default for 6-layer and above multilayer boards. \u2462 Compatible with via diameters from 0.15 to 0.55 mm."
+  ],
+  "selected_inner_copper_oz": 1,
+  "published_default_inner_copper_oz": 0.5,
+  "explicit_order_selection_required": true,
+  "manufacturer_CAM_acceptance_received": false,
+  "selected_via_drill_pad_mm": [
+    0.3,
+    0.45
+  ],
+  "nominal_via_diameter_difference_mm": 0.15,
+  "published_via_diameter_difference_rule_met": true
+}

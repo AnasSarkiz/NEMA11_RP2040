@@ -1,8 +1,8 @@
 {
   "scope": "Native PCB and OEM motor clearance arrangement; carrier and harness absent",
-  "circuit_sha256": "cac4084a828d252fda2a51fbdb6aaf783226b9787692cda9804514e91d7f663d",
-  "glb_sha256": "373f3c04c92a1edc5be55e4cc790507bd194bfb8ee1c632a3a0732e812ca9eda",
-  "bytes": 19041276,
+  "circuit_sha256": "84643d9b8e52b909ae83e02347d0968f11a07d6814d907061d46ec4cc1dba226",
+  "glb_sha256": "7c2299b78d2926c203abb88dbfe47b6562270ee2053c96bac52f99dc2acfdb3d",
+  "bytes": 19042360,
   "original_supplier_assets_loaded": [
     {
       "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
@@ -135,7 +135,7 @@
       "bytes": 171757
     },
     {
-      "path": "imports/supplier/FRL0805FR240TS/FRL0805FR240TS.obj",
+      "path": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj",
       "sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
       "bytes": 18763
     },

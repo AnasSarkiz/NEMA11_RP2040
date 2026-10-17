@@ -5304,10 +5304,10 @@
     "source_component_id": "source_component_52",
     "ftype": "simple_resistor",
     "name": "R_SA",
-    "manufacturer_part_number": "FRL0805FR240TS",
+    "manufacturer_part_number": "HP05W3F240LT5E",
     "supplier_part_numbers": {
       "jlcpcb": [
-        "C2930216"
+        "C7434086"
       ]
     },
     "resistance": 0.24,
@@ -5352,10 +5352,10 @@
     "source_component_id": "source_component_53",
     "ftype": "simple_resistor",
     "name": "R_SB",
-    "manufacturer_part_number": "FRL0805FR240TS",
+    "manufacturer_part_number": "HP05W3F240LT5E",
     "supplier_part_numbers": {
       "jlcpcb": [
-        "C2930216"
+        "C7434086"
       ]
     },
     "resistance": 0.24,
@@ -11493,7 +11493,7 @@
     "pcb_component_id": "pcb_component_0",
     "center": {
       "x": 0.6000000000000001,
-      "y": 19.15
+      "y": 20.15
     },
     "width": 9.5999808,
     "height": 4.1098724,
@@ -11507,12 +11507,12 @@
     "is_allowed_to_be_off_board": false,
     "cable_insertion_center": {
       "x": 0.5999999999999996,
-      "y": 19.15
+      "y": 20.15
     },
     "position_mode": "relative_to_group_anchor",
     "positioned_relative_to_pcb_board_id": "pcb_board_0",
     "display_offset_x": "0.4475048",
-    "display_offset_y": "19.15",
+    "display_offset_y": "20.15",
     "pin1_location": "topside_left"
   },
   {
@@ -12801,7 +12801,7 @@
     "pcb_component_id": "pcb_component_59",
     "center": {
       "x": 11.5,
-      "y": 17.949963
+      "y": 18.549963
     },
     "width": 7.599984800000001,
     "height": 1.5999967999999996,
@@ -12815,12 +12815,12 @@
     "is_allowed_to_be_off_board": false,
     "cable_insertion_center": {
       "x": 11.5,
-      "y": 17.949963
+      "y": 18.549963
     },
     "position_mode": "relative_to_group_anchor",
     "positioned_relative_to_pcb_board_id": "pcb_board_0",
     "display_offset_x": "11.5",
-    "display_offset_y": "18.5",
+    "display_offset_y": "19.1",
     "pin1_location": "bottomside_right"
   },
   {
@@ -13112,11 +13112,11 @@
     "type": "pcb_component",
     "pcb_component_id": "pcb_component_73",
     "center": {
-      "x": -8,
-      "y": 19.3
+      "x": 15.8,
+      "y": 15.85
     },
-    "width": 1.4312900000000006,
-    "height": 0.5400040000000033,
+    "width": 1.4312899999999988,
+    "height": 0.5400039999999997,
     "layer": "top",
     "rotation": 0,
     "source_component_id": "source_component_73",
@@ -13126,8 +13126,8 @@
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
     "positioned_relative_to_pcb_board_id": "pcb_board_0",
-    "display_offset_x": "-8",
-    "display_offset_y": "19.3",
+    "display_offset_x": "15.8",
+    "display_offset_y": "15.85",
     "pin1_location": "topside_left"
   },
   {
@@ -13528,7 +13528,7 @@
     "thickness": 1.6,
     "num_layers": 4,
     "width": 35,
-    "height": 39,
+    "height": 40,
     "outline": [
       {
         "x": -17.5,
@@ -13540,11 +13540,11 @@
       },
       {
         "x": 17.5,
-        "y": 21.5
+        "y": 22.5
       },
       {
         "x": -17.5,
-        "y": 21.5
+        "y": 22.5
       }
     ],
     "material": "fr4",
@@ -13677,7 +13677,7 @@
     "hole_shape": "circle",
     "hole_diameter": 0.7099808,
     "x": -3.399992,
-    "y": 19.150126999999998,
+    "y": 20.150126999999998,
     "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -13696,7 +13696,7 @@
       "pin17"
     ],
     "x": -3.399992,
-    "y": 20.579893,
+    "y": 21.579893,
     "layers": [
       "top",
       "bottom",
@@ -13717,7 +13717,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": -3.399992,
-    "y": 20.579893,
+    "y": 21.579893,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13730,7 +13730,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": -3.399992,
-    "y": 20.579893,
+    "y": 21.579893,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13748,7 +13748,7 @@
       "pin18"
     ],
     "x": -3.399992,
-    "y": 17.720107,
+    "y": 18.720107,
     "layers": [
       "top",
       "bottom",
@@ -13769,7 +13769,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": -3.399992,
-    "y": 17.720107,
+    "y": 18.720107,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13782,7 +13782,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": -3.399992,
-    "y": 17.720107,
+    "y": 18.720107,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13800,7 +13800,7 @@
       "pin19"
     ],
     "x": 4.599992,
-    "y": 17.720107,
+    "y": 18.720107,
     "layers": [
       "top",
       "bottom",
@@ -13821,7 +13821,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": 4.599992,
-    "y": 17.720107,
+    "y": 18.720107,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13834,7 +13834,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": 4.599992,
-    "y": 17.720107,
+    "y": 18.720107,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13852,7 +13852,7 @@
       "pin20"
     ],
     "x": 4.599992,
-    "y": 20.579893,
+    "y": 21.579893,
     "layers": [
       "top",
       "bottom",
@@ -13873,7 +13873,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": 4.599992,
-    "y": 20.579893,
+    "y": 21.579893,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13886,7 +13886,7 @@
     "width": 1.0999978,
     "height": 1.5999968,
     "x": 4.599992,
-    "y": 20.579893,
+    "y": 21.579893,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13903,7 +13903,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -2.150058,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13914,7 +13914,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -2.150058,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_0",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -13933,7 +13933,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 0.350064,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13944,7 +13944,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 0.350064,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_1",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -13963,7 +13963,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -0.649934,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -13974,7 +13974,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -0.649934,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_2",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -13993,7 +13993,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -0.15006199999999997,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14004,7 +14004,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -0.15006199999999997,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_3",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14023,7 +14023,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 3.3500579999999998,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14034,7 +14034,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 3.3500579999999998,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_4",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14053,7 +14053,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 0.849936,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14064,7 +14064,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 0.849936,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_5",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14083,7 +14083,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 1.3500619999999999,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14094,7 +14094,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 1.3500619999999999,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_6",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14113,7 +14113,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 1.849934,
-    "y": 20.629931,
+    "y": 21.629931,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14124,7 +14124,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 1.849934,
-    "y": 20.629931,
+    "y": 21.629931,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_7",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14143,7 +14143,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -2.149804,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14154,7 +14154,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -2.149804,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_8",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14173,7 +14173,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 0.350064,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14184,7 +14184,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 0.350064,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_9",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14203,7 +14203,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -0.649934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14214,7 +14214,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -0.649934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_10",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14233,7 +14233,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": -0.15006199999999997,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14244,7 +14244,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": -0.15006199999999997,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_11",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14263,7 +14263,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 3.3500579999999998,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14274,7 +14274,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 3.3500579999999998,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_12",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14293,7 +14293,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 0.849936,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14304,7 +14304,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 0.849936,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_13",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14323,7 +14323,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 1.3500619999999999,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14334,7 +14334,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 1.3500619999999999,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_14",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14353,7 +14353,7 @@
     ],
     "is_covered_with_solder_mask": false,
     "x": 1.849934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -14364,7 +14364,7 @@
     "width": 0.20999958000000002,
     "height": 0.80500728,
     "x": 1.849934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "pcb_component_id": "pcb_component_0",
     "pcb_smtpad_id": "pcb_smtpad_15",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -14377,11 +14377,11 @@
     "route": [
       {
         "x": -3.869993599999977,
-        "y": 19.879589599999825
+        "y": 20.879589599999825
       },
       {
         "x": -3.869993599999977,
-        "y": 18.420664399999872
+        "y": 19.420664399999872
       }
     ],
     "stroke_width": 0.1,
@@ -14395,11 +14395,11 @@
     "route": [
       {
         "x": 2.2310864000001613,
-        "y": 17.570119999999882
+        "y": 18.570119999999882
       },
       {
         "x": 2.968931000000178,
-        "y": 17.570119999999882
+        "y": 18.570119999999882
       }
     ],
     "stroke_width": 0.1,
@@ -14413,11 +14413,11 @@
     "route": [
       {
         "x": -1.768651599999818,
-        "y": 17.570119999999882
+        "y": 18.570119999999882
       },
       {
         "x": -1.0310609999999558,
-        "y": 17.570119999999882
+        "y": 18.570119999999882
       }
     ],
     "stroke_width": 0.1,
@@ -14431,11 +14431,11 @@
     "route": [
       {
         "x": 5.080001200000036,
-        "y": 19.884618799999906
+        "y": 20.884618799999906
       },
       {
         "x": 5.080001200000036,
-        "y": 18.415635199999905
+        "y": 19.415635199999905
       }
     ],
     "stroke_width": 0.1,
@@ -14449,11 +14449,11 @@
     "route": [
       {
         "x": 2.2310864000001613,
-        "y": 20.73013399999993
+        "y": 21.73013399999993
       },
       {
         "x": 2.968931000000178,
-        "y": 20.73013399999993
+        "y": 21.73013399999993
       }
     ],
     "stroke_width": 0.1,
@@ -14467,11 +14467,11 @@
     "route": [
       {
         "x": -1.7689055999999725,
-        "y": 20.73013399999993
+        "y": 21.73013399999993
       },
       {
         "x": -1.0310609999999558,
-        "y": 20.73013399999993
+        "y": 21.73013399999993
       }
     ],
     "stroke_width": 0.1,
@@ -14483,7 +14483,7 @@
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 0.6713739999999999,
-      "y": 22.196351
+      "y": 23.196351
     },
     "font": "tscircuit2024",
     "font_size": 1,
@@ -14501,23 +14501,23 @@
     "outline": [
       {
         "x": -4.44999039999998,
-        "y": 21.454936199999814
+        "y": 22.454936199999814
       },
       {
         "x": 5.649990400000045,
-        "y": 21.454936199999814
+        "y": 22.454936199999814
       },
       {
         "x": 5.649990400000045,
-        "y": 16.84506380000007
+        "y": 17.84506380000007
       },
       {
         "x": -4.44999039999998,
-        "y": 16.84506380000007
+        "y": 17.84506380000007
       },
       {
         "x": -4.44999039999998,
-        "y": 21.454936199999814
+        "y": 22.454936199999814
       }
     ],
     "subcircuit_id": "subcircuit_source_group_0"
@@ -32255,7 +32255,7 @@
       "pin2"
     ],
     "x": 12.499998,
-    "y": 17.949963,
+    "y": 18.549963,
     "layers": [
       "top",
       "bottom",
@@ -32272,7 +32272,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 12.499998,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32282,7 +32282,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 12.499998,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32298,7 +32298,7 @@
       "pin1"
     ],
     "x": 14.499994000000001,
-    "y": 17.949963,
+    "y": 18.549963,
     "layers": [
       "top",
       "bottom",
@@ -32315,7 +32315,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 14.499994000000001,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32325,7 +32325,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 14.499994000000001,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32341,7 +32341,7 @@
       "pin3"
     ],
     "x": 10.500002,
-    "y": 17.949963,
+    "y": 18.549963,
     "layers": [
       "top",
       "bottom",
@@ -32358,7 +32358,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 10.500002,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32368,7 +32368,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 10.500002,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32384,7 +32384,7 @@
       "pin4"
     ],
     "x": 8.500005999999999,
-    "y": 17.949963,
+    "y": 18.549963,
     "layers": [
       "top",
       "bottom",
@@ -32401,7 +32401,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 8.500005999999999,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32411,7 +32411,7 @@
     "shape": "circle",
     "radius": 0.7999984,
     "x": 8.500005999999999,
-    "y": 17.949963,
+    "y": 18.549963,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -32421,7 +32421,7 @@
     "layer": "top",
     "center": {
       "x": 15.785996,
-      "y": 16.933963
+      "y": 17.533963
     },
     "radius": 0.359156,
     "subcircuit_id": "subcircuit_source_group_0",
@@ -32434,7 +32434,7 @@
     "layer": "top",
     "center": {
       "x": 11.5,
-      "y": 18.5
+      "y": 19.1
     },
     "width": 9.99998,
     "height": 4.500118,
@@ -32448,7 +32448,7 @@
     "anchor_alignment": "center",
     "anchor_position": {
       "x": 11.509398,
-      "y": 21.743963
+      "y": 22.343963000000002
     },
     "font": "tscircuit2024",
     "font_size": 1,
@@ -32466,23 +32466,23 @@
     "outline": [
       {
         "x": 6.299997200000007,
-        "y": 21.199956999999927
+        "y": 21.799956999999928
       },
       {
         "x": 16.699977399999966,
-        "y": 21.199956999999927
+        "y": 21.799956999999928
       },
       {
         "x": 16.699977399999966,
-        "y": 15.999966400000062
+        "y": 16.599966400000064
       },
       {
         "x": 6.299997200000007,
-        "y": 15.999966400000062
+        "y": 16.599966400000064
       },
       {
         "x": 6.299997200000007,
-        "y": 21.199956999999927
+        "y": 21.799956999999928
       }
     ],
     "subcircuit_id": "subcircuit_source_group_0"
@@ -39282,8 +39282,8 @@
       "pin2"
     ],
     "is_covered_with_solder_mask": false,
-    "x": -7.567184,
-    "y": 19.3,
+    "x": 16.232816,
+    "y": 15.85,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -39293,8 +39293,8 @@
     "shape": "rect",
     "width": 0.3959606,
     "height": 0.3780028,
-    "x": -7.567184,
-    "y": 19.3,
+    "x": 16.232816,
+    "y": 15.85,
     "pcb_component_id": "pcb_component_73",
     "pcb_smtpad_id": "pcb_smtpad_288",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -39312,8 +39312,8 @@
       "pin1"
     ],
     "is_covered_with_solder_mask": false,
-    "x": -8.432816,
-    "y": 19.3,
+    "x": 15.367184,
+    "y": 15.85,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -39323,8 +39323,8 @@
     "shape": "rect",
     "width": 0.3959606,
     "height": 0.3780028,
-    "x": -8.432816,
-    "y": 19.3,
+    "x": 15.367184,
+    "y": 15.85,
     "pcb_component_id": "pcb_component_73",
     "pcb_smtpad_id": "pcb_smtpad_289",
     "subcircuit_id": "subcircuit_source_group_0"
@@ -39336,20 +39336,20 @@
     "layer": "top",
     "route": [
       {
-        "x": -8.226212400000122,
-        "y": 18.801397999999995
+        "x": 15.573787599999878,
+        "y": 15.351397999999994
       },
       {
-        "x": -8.944245000000137,
-        "y": 18.801397999999995
+        "x": 14.855754999999863,
+        "y": 15.351397999999994
       },
       {
-        "x": -8.944245000000137,
-        "y": 19.79860200000012
+        "x": 14.855754999999863,
+        "y": 16.34860200000012
       },
       {
-        "x": -8.226212400000122,
-        "y": 19.79860200000012
+        "x": 15.573787599999878,
+        "y": 16.34860200000012
       }
     ],
     "stroke_width": 0.1,
@@ -39362,20 +39362,20 @@
     "layer": "top",
     "route": [
       {
-        "x": -7.7737875999999915,
-        "y": 18.801397999999995
+        "x": 16.02621240000001,
+        "y": 15.351397999999994
       },
       {
-        "x": -7.05575500000009,
-        "y": 18.801397999999995
+        "x": 16.74424499999991,
+        "y": 15.351397999999994
       },
       {
-        "x": -7.05575500000009,
-        "y": 19.79860200000012
+        "x": 16.74424499999991,
+        "y": 16.34860200000012
       },
       {
-        "x": -7.7737875999999915,
-        "y": 19.79860200000012
+        "x": 16.02621240000001,
+        "y": 16.34860200000012
       }
     ],
     "stroke_width": 0.1,
@@ -39386,8 +39386,8 @@
     "pcb_silkscreen_text_id": "pcb_silkscreen_text_75",
     "anchor_alignment": "center",
     "anchor_position": {
-      "x": -8,
-      "y": 20.808
+      "x": 15.8,
+      "y": 14.341999999999999
     },
     "font": "tscircuit2024",
     "font_size": 1,
@@ -39404,24 +39404,24 @@
     "layer": "top",
     "outline": [
       {
-        "x": -8.965645000000109,
-        "y": 19.820001999999977
+        "x": 14.834354999999892,
+        "y": 16.370001999999978
       },
       {
-        "x": -7.034355000000005,
-        "y": 19.820001999999977
+        "x": 16.765644999999996,
+        "y": 16.370001999999978
       },
       {
-        "x": -7.034355000000005,
-        "y": 18.779998000000024
+        "x": 16.765644999999996,
+        "y": 15.329998000000023
       },
       {
-        "x": -8.965645000000109,
-        "y": 18.779998000000024
+        "x": 14.834354999999892,
+        "y": 15.329998000000023
       },
       {
-        "x": -8.965645000000109,
-        "y": 19.820001999999977
+        "x": 14.834354999999892,
+        "y": 16.370001999999978
       }
     ],
     "subcircuit_id": "subcircuit_source_group_0"
@@ -42672,7 +42672,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -2.150058,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_0"
   },
   {
@@ -42684,7 +42684,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 0.350064,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_1"
   },
   {
@@ -42696,7 +42696,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -0.649934,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_2"
   },
   {
@@ -42708,7 +42708,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -0.15006199999999997,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_3"
   },
   {
@@ -42720,7 +42720,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 3.3500579999999998,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_4"
   },
   {
@@ -42732,7 +42732,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 0.849936,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_5"
   },
   {
@@ -42744,7 +42744,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 1.3500619999999999,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_6"
   },
   {
@@ -42756,7 +42756,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 1.849934,
-    "y": 20.629931,
+    "y": 21.629931,
     "source_port_id": "source_port_7"
   },
   {
@@ -42768,7 +42768,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -2.149804,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_8"
   },
   {
@@ -42780,7 +42780,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 0.350064,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_9"
   },
   {
@@ -42792,7 +42792,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -0.649934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_10"
   },
   {
@@ -42804,7 +42804,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -0.15006199999999997,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_11"
   },
   {
@@ -42816,7 +42816,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 3.3500579999999998,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_12"
   },
   {
@@ -42828,7 +42828,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 0.849936,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_13"
   },
   {
@@ -42840,7 +42840,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 1.3500619999999999,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_14"
   },
   {
@@ -42852,7 +42852,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 1.849934,
-    "y": 17.670068999999998,
+    "y": 18.670068999999998,
     "source_port_id": "source_port_15"
   },
   {
@@ -42867,7 +42867,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -3.399992,
-    "y": 20.579893,
+    "y": 21.579893,
     "source_port_id": "source_port_16"
   },
   {
@@ -42882,7 +42882,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": -3.399992,
-    "y": 17.720107,
+    "y": 18.720107,
     "source_port_id": "source_port_17"
   },
   {
@@ -42897,7 +42897,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 4.599992,
-    "y": 17.720107,
+    "y": 18.720107,
     "source_port_id": "source_port_18"
   },
   {
@@ -42912,7 +42912,7 @@
     ],
     "subcircuit_id": "subcircuit_source_group_0",
     "x": 4.599992,
-    "y": 20.579893,
+    "y": 21.579893,
     "source_port_id": "source_port_19"
   },
   {
@@ -45796,7 +45796,7 @@
     "subcircuit_id": "subcircuit_source_group_0",
     "is_board_pinout": true,
     "x": 14.499994000000001,
-    "y": 17.949963,
+    "y": 18.549963,
     "source_port_id": "source_port_258"
   },
   {
@@ -45812,7 +45812,7 @@
     "subcircuit_id": "subcircuit_source_group_0",
     "is_board_pinout": true,
     "x": 12.499998,
-    "y": 17.949963,
+    "y": 18.549963,
     "source_port_id": "source_port_259"
   },
   {
@@ -45828,7 +45828,7 @@
     "subcircuit_id": "subcircuit_source_group_0",
     "is_board_pinout": true,
     "x": 10.500002,
-    "y": 17.949963,
+    "y": 18.549963,
     "source_port_id": "source_port_260"
   },
   {
@@ -45844,7 +45844,7 @@
     "subcircuit_id": "subcircuit_source_group_0",
     "is_board_pinout": true,
     "x": 8.500005999999999,
-    "y": 17.949963,
+    "y": 18.549963,
     "source_port_id": "source_port_261"
   },
   {
@@ -46311,8 +46311,8 @@
       "top"
     ],
     "subcircuit_id": "subcircuit_source_group_0",
-    "x": -8.432816,
-    "y": 19.3,
+    "x": 15.367184,
+    "y": 15.85,
     "source_port_id": "source_port_300"
   },
   {
@@ -46323,8 +46323,8 @@
       "top"
     ],
     "subcircuit_id": "subcircuit_source_group_0",
-    "x": -7.567184,
-    "y": 19.3,
+    "x": 16.232816,
+    "y": 15.85,
     "source_port_id": "source_port_301"
   },
   {
@@ -46934,7 +46934,7 @@
     "cad_component_id": "cad_component_0",
     "position": {
       "x": 0.6000000000000001,
-      "y": 19.15,
+      "y": 20.15,
       "z": 0.8
     },
     "rotation": {
@@ -46944,8 +46944,8 @@
     },
     "pcb_component_id": "pcb_component_0",
     "source_component_id": "source_component_0",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -46969,8 +46969,8 @@
     },
     "pcb_component_id": "pcb_component_1",
     "source_component_id": "source_component_1",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -46994,8 +46994,8 @@
     },
     "pcb_component_id": "pcb_component_2",
     "source_component_id": "source_component_2",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CH224A/CH224A.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CH224A/CH224A.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CH224A/CH224A.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CH224A/CH224A.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47019,8 +47019,8 @@
     },
     "pcb_component_id": "pcb_component_3",
     "source_component_id": "source_component_3",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47044,8 +47044,8 @@
     },
     "pcb_component_id": "pcb_component_4",
     "source_component_id": "source_component_4",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47069,8 +47069,8 @@
     },
     "pcb_component_id": "pcb_component_5",
     "source_component_id": "source_component_5",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47094,8 +47094,8 @@
     },
     "pcb_component_id": "pcb_component_6",
     "source_component_id": "source_component_6",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/RP2040/RP2040.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/RP2040/RP2040.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/RP2040/RP2040.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/RP2040/RP2040.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47119,8 +47119,8 @@
     },
     "pcb_component_id": "pcb_component_7",
     "source_component_id": "source_component_7",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47144,8 +47144,8 @@
     },
     "pcb_component_id": "pcb_component_8",
     "source_component_id": "source_component_8",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47169,8 +47169,8 @@
     },
     "pcb_component_id": "pcb_component_9",
     "source_component_id": "source_component_9",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47194,8 +47194,8 @@
     },
     "pcb_component_id": "pcb_component_10",
     "source_component_id": "source_component_10",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47219,8 +47219,8 @@
     },
     "pcb_component_id": "pcb_component_11",
     "source_component_id": "source_component_11",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47244,8 +47244,8 @@
     },
     "pcb_component_id": "pcb_component_12",
     "source_component_id": "source_component_12",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47269,8 +47269,8 @@
     },
     "pcb_component_id": "pcb_component_13",
     "source_component_id": "source_component_13",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47294,8 +47294,8 @@
     },
     "pcb_component_id": "pcb_component_14",
     "source_component_id": "source_component_14",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47319,8 +47319,8 @@
     },
     "pcb_component_id": "pcb_component_15",
     "source_component_id": "source_component_15",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47344,8 +47344,8 @@
     },
     "pcb_component_id": "pcb_component_16",
     "source_component_id": "source_component_16",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47369,8 +47369,8 @@
     },
     "pcb_component_id": "pcb_component_17",
     "source_component_id": "source_component_17",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47394,8 +47394,8 @@
     },
     "pcb_component_id": "pcb_component_18",
     "source_component_id": "source_component_18",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47419,8 +47419,8 @@
     },
     "pcb_component_id": "pcb_component_19",
     "source_component_id": "source_component_19",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47444,8 +47444,8 @@
     },
     "pcb_component_id": "pcb_component_20",
     "source_component_id": "source_component_20",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47469,8 +47469,8 @@
     },
     "pcb_component_id": "pcb_component_21",
     "source_component_id": "source_component_21",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47494,8 +47494,8 @@
     },
     "pcb_component_id": "pcb_component_22",
     "source_component_id": "source_component_22",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47519,8 +47519,8 @@
     },
     "pcb_component_id": "pcb_component_23",
     "source_component_id": "source_component_23",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/ABM8_272_T3/ABM8_272_T3.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/ABM8_272_T3/ABM8_272_T3.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/ABM8_272_T3/ABM8_272_T3.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/ABM8_272_T3/ABM8_272_T3.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47544,8 +47544,8 @@
     },
     "pcb_component_id": "pcb_component_24",
     "source_component_id": "source_component_24",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47569,8 +47569,8 @@
     },
     "pcb_component_id": "pcb_component_25",
     "source_component_id": "source_component_25",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47594,8 +47594,8 @@
     },
     "pcb_component_id": "pcb_component_26",
     "source_component_id": "source_component_26",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47619,8 +47619,8 @@
     },
     "pcb_component_id": "pcb_component_27",
     "source_component_id": "source_component_27",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47644,8 +47644,8 @@
     },
     "pcb_component_id": "pcb_component_28",
     "source_component_id": "source_component_28",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47669,8 +47669,8 @@
     },
     "pcb_component_id": "pcb_component_29",
     "source_component_id": "source_component_29",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47694,8 +47694,8 @@
     },
     "pcb_component_id": "pcb_component_30",
     "source_component_id": "source_component_30",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47719,8 +47719,8 @@
     },
     "pcb_component_id": "pcb_component_31",
     "source_component_id": "source_component_31",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47744,8 +47744,8 @@
     },
     "pcb_component_id": "pcb_component_32",
     "source_component_id": "source_component_32",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47769,8 +47769,8 @@
     },
     "pcb_component_id": "pcb_component_33",
     "source_component_id": "source_component_33",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47794,8 +47794,8 @@
     },
     "pcb_component_id": "pcb_component_34",
     "source_component_id": "source_component_34",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47819,8 +47819,8 @@
     },
     "pcb_component_id": "pcb_component_35",
     "source_component_id": "source_component_35",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47844,8 +47844,8 @@
     },
     "pcb_component_id": "pcb_component_36",
     "source_component_id": "source_component_36",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47869,8 +47869,8 @@
     },
     "pcb_component_id": "pcb_component_37",
     "source_component_id": "source_component_37",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/AP63203WU_7/AP63203WU_7.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/AP63203WU_7/AP63203WU_7.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/AP63203WU_7/AP63203WU_7.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/AP63203WU_7/AP63203WU_7.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47894,8 +47894,8 @@
     },
     "pcb_component_id": "pcb_component_38",
     "source_component_id": "source_component_38",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/SRN4018_4R7M/SRN4018_4R7M.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/SRN4018_4R7M/SRN4018_4R7M.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/SRN4018_4R7M/SRN4018_4R7M.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/SRN4018_4R7M/SRN4018_4R7M.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47919,8 +47919,8 @@
     },
     "pcb_component_id": "pcb_component_39",
     "source_component_id": "source_component_39",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47944,8 +47944,8 @@
     },
     "pcb_component_id": "pcb_component_40",
     "source_component_id": "source_component_40",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47969,8 +47969,8 @@
     },
     "pcb_component_id": "pcb_component_41",
     "source_component_id": "source_component_41",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -47994,8 +47994,8 @@
     },
     "pcb_component_id": "pcb_component_42",
     "source_component_id": "source_component_42",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48019,8 +48019,8 @@
     },
     "pcb_component_id": "pcb_component_43",
     "source_component_id": "source_component_43",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B5819W_SL/B5819W_SL.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B5819W_SL/B5819W_SL.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B5819W_SL/B5819W_SL.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B5819W_SL/B5819W_SL.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48044,8 +48044,8 @@
     },
     "pcb_component_id": "pcb_component_44",
     "source_component_id": "source_component_44",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B5819W_SL/B5819W_SL.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B5819W_SL/B5819W_SL.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B5819W_SL/B5819W_SL.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B5819W_SL/B5819W_SL.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48069,8 +48069,8 @@
     },
     "pcb_component_id": "pcb_component_45",
     "source_component_id": "source_component_45",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A4988SETTR_T/A4988SETTR_T.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A4988SETTR_T/A4988SETTR_T.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A4988SETTR_T/A4988SETTR_T.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A4988SETTR_T/A4988SETTR_T.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48094,8 +48094,8 @@
     },
     "pcb_component_id": "pcb_component_46",
     "source_component_id": "source_component_46",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48119,8 +48119,8 @@
     },
     "pcb_component_id": "pcb_component_47",
     "source_component_id": "source_component_47",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48144,8 +48144,8 @@
     },
     "pcb_component_id": "pcb_component_48",
     "source_component_id": "source_component_48",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48169,8 +48169,8 @@
     },
     "pcb_component_id": "pcb_component_49",
     "source_component_id": "source_component_49",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48194,8 +48194,8 @@
     },
     "pcb_component_id": "pcb_component_50",
     "source_component_id": "source_component_50",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48219,8 +48219,8 @@
     },
     "pcb_component_id": "pcb_component_51",
     "source_component_id": "source_component_51",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/RVT1V470M0605/RVT1V470M0605.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/RVT1V470M0605/RVT1V470M0605.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/RVT1V470M0605/RVT1V470M0605.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/RVT1V470M0605/RVT1V470M0605.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48244,8 +48244,8 @@
     },
     "pcb_component_id": "pcb_component_52",
     "source_component_id": "source_component_52",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/FRL0805FR240TS/FRL0805FR240TS.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/FRL0805FR240TS/FRL0805FR240TS.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48269,8 +48269,8 @@
     },
     "pcb_component_id": "pcb_component_53",
     "source_component_id": "source_component_53",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/FRL0805FR240TS/FRL0805FR240TS.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/FRL0805FR240TS/FRL0805FR240TS.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48294,8 +48294,8 @@
     },
     "pcb_component_id": "pcb_component_54",
     "source_component_id": "source_component_54",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48319,8 +48319,8 @@
     },
     "pcb_component_id": "pcb_component_55",
     "source_component_id": "source_component_55",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48344,8 +48344,8 @@
     },
     "pcb_component_id": "pcb_component_56",
     "source_component_id": "source_component_56",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48369,8 +48369,8 @@
     },
     "pcb_component_id": "pcb_component_57",
     "source_component_id": "source_component_57",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48394,8 +48394,8 @@
     },
     "pcb_component_id": "pcb_component_58",
     "source_component_id": "source_component_58",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48409,7 +48409,7 @@
     "cad_component_id": "cad_component_59",
     "position": {
       "x": 11.5,
-      "y": 18.5000013,
+      "y": 19.100001300000002,
       "z": 0.8
     },
     "rotation": {
@@ -48419,8 +48419,8 @@
     },
     "pcb_component_id": "pcb_component_59",
     "source_component_id": "source_component_59",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48444,8 +48444,8 @@
     },
     "pcb_component_id": "pcb_component_60",
     "source_component_id": "source_component_60",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USBLC6_2SC6/USBLC6_2SC6.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/USBLC6_2SC6/USBLC6_2SC6.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USBLC6_2SC6/USBLC6_2SC6.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/USBLC6_2SC6/USBLC6_2SC6.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48469,8 +48469,8 @@
     },
     "pcb_component_id": "pcb_component_61",
     "source_component_id": "source_component_61",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/SMF18A/SMF18A.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/SMF18A/SMF18A.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/SMF18A/SMF18A.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/SMF18A/SMF18A.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48494,8 +48494,8 @@
     },
     "pcb_component_id": "pcb_component_62",
     "source_component_id": "source_component_62",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/TMP102AIDRLR/TMP102AIDRLR.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/TMP102AIDRLR/TMP102AIDRLR.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/TMP102AIDRLR/TMP102AIDRLR.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/TMP102AIDRLR/TMP102AIDRLR.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48519,8 +48519,8 @@
     },
     "pcb_component_id": "pcb_component_63",
     "source_component_id": "source_component_63",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48544,8 +48544,8 @@
     },
     "pcb_component_id": "pcb_component_64",
     "source_component_id": "source_component_64",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48569,8 +48569,8 @@
     },
     "pcb_component_id": "pcb_component_65",
     "source_component_id": "source_component_65",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48594,8 +48594,8 @@
     },
     "pcb_component_id": "pcb_component_66",
     "source_component_id": "source_component_66",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/XL_1608SURC_06/XL_1608SURC_06.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/XL_1608SURC_06/XL_1608SURC_06.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/XL_1608SURC_06/XL_1608SURC_06.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/XL_1608SURC_06/XL_1608SURC_06.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48619,8 +48619,8 @@
     },
     "pcb_component_id": "pcb_component_67",
     "source_component_id": "source_component_67",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48644,8 +48644,8 @@
     },
     "pcb_component_id": "pcb_component_68",
     "source_component_id": "source_component_68",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48669,8 +48669,8 @@
     },
     "pcb_component_id": "pcb_component_69",
     "source_component_id": "source_component_69",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48694,8 +48694,8 @@
     },
     "pcb_component_id": "pcb_component_70",
     "source_component_id": "source_component_70",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48719,8 +48719,8 @@
     },
     "pcb_component_id": "pcb_component_71",
     "source_component_id": "source_component_71",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48744,8 +48744,8 @@
     },
     "pcb_component_id": "pcb_component_72",
     "source_component_id": "source_component_72",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48758,8 +48758,8 @@
     "type": "cad_component",
     "cad_component_id": "cad_component_73",
     "position": {
-      "x": -8,
-      "y": 19.3,
+      "x": 15.8,
+      "y": 15.85,
       "z": 0.8
     },
     "rotation": {
@@ -48769,8 +48769,8 @@
     },
     "pcb_component_id": "pcb_component_73",
     "source_component_id": "source_component_73",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48794,8 +48794,8 @@
     },
     "pcb_component_id": "pcb_component_74",
     "source_component_id": "source_component_74",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48819,8 +48819,8 @@
     },
     "pcb_component_id": "pcb_component_75",
     "source_component_id": "source_component_75",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/HYG_8503A/HYG_8503A.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/HYG_8503A/HYG_8503A.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HYG_8503A/HYG_8503A.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/HYG_8503A/HYG_8503A.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48844,8 +48844,8 @@
     },
     "pcb_component_id": "pcb_component_76",
     "source_component_id": "source_component_76",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/AO3400A/AO3400A.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/AO3400A/AO3400A.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/AO3400A/AO3400A.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/AO3400A/AO3400A.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48869,8 +48869,8 @@
     },
     "pcb_component_id": "pcb_component_77",
     "source_component_id": "source_component_77",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/PMEG6020ELRX/PMEG6020ELRX.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/PMEG6020ELRX/PMEG6020ELRX.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/PMEG6020ELRX/PMEG6020ELRX.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/PMEG6020ELRX/PMEG6020ELRX.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48894,8 +48894,8 @@
     },
     "pcb_component_id": "pcb_component_78",
     "source_component_id": "source_component_78",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48919,8 +48919,8 @@
     },
     "pcb_component_id": "pcb_component_79",
     "source_component_id": "source_component_79",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48944,8 +48944,8 @@
     },
     "pcb_component_id": "pcb_component_80",
     "source_component_id": "source_component_80",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {
@@ -48969,8 +48969,8 @@
     },
     "pcb_component_id": "pcb_component_91",
     "source_component_id": "source_component_91",
-    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
-    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/786ee453b51e34168f96b20ea457ba48cf91c58e/imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.step",
+    "model_obj_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
+    "model_step_url": "https://raw.githubusercontent.com/AnasSarkiz/NEMA11_RP2040/71bbac39241c04b405f359193c37c9add1af1e99/imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.step",
     "model_origin_alignment": "center_of_component_on_board_surface",
     "anchor_alignment": "center_of_component_on_board_surface",
     "model_origin_position": {

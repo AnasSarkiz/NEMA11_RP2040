@@ -14,16 +14,17 @@ pads are explicitly doNotPlace so they cannot become purchased BOM items.
 The vertical PH footprint declares insertion from above the board.
 No NEMA14 repository files were changed remotely.
 
-Two electrical part changes are explicit: the 39 kΩ VREF divider resistor becomes
-20 kΩ C4184, and the motor header becomes JST B4B-PH-K-S(LF)(SN), C131334.
+The explicit part changes are: the 39 kΩ VREF divider resistor becomes
+20 kΩ C4184; both 0.24 Ω shunts become genuine 1/3 W HP05W3F240LT5E
+C7434086 with unchanged supplier copper pads; and the motor header becomes JST B4B-PH-K-S(LF)(SN), C131334.
 The latter is a through-hole part requiring a separate hand-assembly operation
 unless a supplier explicitly quotes that process. Supplier land patterns and
 original OBJ/STEP models are preserved. Source originals and input hashes are
 retained; React imports and model URL transport are the working-source changes.
 
 The PH header needs more area than the reference SH header. The candidate board
-extends the power-input edge by 4 mm to 35 × 39 mm, with outline coordinates
-X = −17.5…17.5 and Y = −17.5…21.5 mm. J_PD moves 4 mm toward that edge;
+extends the power-input edge by 5 mm to 35 × 40 mm, with outline coordinates
+X = −17.5…17.5 and Y = −17.5…22.5 mm. J_PD moves 5 mm toward that edge;
 J_MOTOR, D_DATA and R_STATUS_B move to avoid native courtyard conflicts. All
 other component poses remain inherited. Existing routing cannot be assumed
 valid after these changes. PCB holes at 26 mm pitch are an adapter interface;
@@ -42,16 +43,21 @@ OCCT flags the original GCT USB STEP compound as invalid for both USB parts;
 that supplier input limitation is retained in the audit, not silently healed.
 
 The motor's AWG26 UL1569 leads do not fit the reference SH contact's AWG32–28
-range. PH is a candidate pending the exact manufacturer's contact, insulation
-diameter, strip-length, tooling and mating-housing drawings. Do not trim strands
+range. The manufacturer PH catalog identifies PHR-4 and SPH-002T-P0.5S for
+AWG30–24, but requires 0.9–1.5 mm insulation diameter. Measure the actual
+OEM lead insulation and obtain strip-length, crimp-height and tooling instructions
+before approving termination. Do not trim strands
 to fit a contact. OEM pin order is 1 A+ black, 2 A− green, 3 B+ red, 4 B− blue;
 verify the mating-face view before termination. No rear holes or shaft are assumed.
 
 The current candidate is 0.572917 A peak, about 0.405113 A per phase in full-step.
 The conditional 64-corner screen reaches 0.657640 A, including ±3 µA VREF input
 current. The assumed ±5% driver allowance is not a manufacturer guarantee at
-VREF = 1.1 V. The source retains both original 0.24 Ω shunts, whose genuine
-power rating and hot derating must still be qualified. See `design-review.md`
+VREF = 1.1 V. Both original 125 mW shunts have been replaced with 1/3 W parts: each
+dissipates 107.736 mW at 0.67 A, or 32.3% of its 70 °C ambient rating.
+The manufacturer curve derates linearly to zero at 155 °C; this is an ambient
+curve, not a predicted resistor body temperature. Pulse and post-reflow behavior
+remain unqualified. See `design-review.md`
 and `artifacts/requirements/current-budget.json` for thermal scope and limits.
 
 The source build has no routed copper. Six functional A4 sheets and independent visual ERC are provided. Final
@@ -81,3 +87,18 @@ the carrier, full harness and fasteners remain absent. The drawing's maximum
 checked against all 82 supplier STEP bounds and the OEM motor bounds after the
 exporter's global coordinate transform. This is not a demonstration of usable
 rear mounting holes, an encoder magnet, qualified tolerances or thermal behavior.
+
+## Copper and fabrication development
+
+The working full-board routing is under independent and native checks in
+`artifacts/controller-pcb/`; it is not a release. The order must specify **1 oz
+(35 µm) finished copper on all four layers**, 1.6 mm thickness, green mask and
+ENIG. JLCPCB defaults to 0.5 oz inner copper, which does not meet the selected
+0.67 A / 30 °C legacy internal-trace screen for a 0.30 mm path.
+
+The selected via process is IPC-4761 Type VII epoxy fill and copper cap on
+0.30 mm vias only. Leave component holes and mounting holes open. JLCPCB
+publishes this process for four-layer boards, subject to quote/CAM acceptance.
+Its published preferred via pad diameter is drill + 0.15 mm, compatible with
+the retained 0.45/0.30 mm geometry. This nominal capability is not vendor
+acceptance of this board. See the dated published-capability evidence.

@@ -25,6 +25,8 @@ if published.exists():
         assert (OUT / 'index.circuit.json').read_bytes() == serialized
         print('Published controller snapshot unchanged; package metadata preserved.')
         raise SystemExit(0)
+    if receipt['registry_published']:
+        raise SystemExit('Version 0.1.0 is immutable. Stage the new milestone in a separate version directory.')
 (OUT / 'index.circuit.json').write_bytes(serialized)
 package = {'name': '@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype', 'version': '0.1.0',
            'description': 'Unrouted NEMA11 controller source, six A4 schematics and genuine supplier CAD; NOT fabrication ready',

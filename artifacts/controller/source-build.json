@@ -1,10 +1,10 @@
 {
   "scope": "Full electrical source development candidate; copper, motor mounting and manufacturing not released",
-  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
+  "circuit_sha256": "70bbc04ca291347b6789b5823050f1749838e55a43d25300b708ac6b8011ffe3",
   "source_components": 92,
   "source_ports": 341,
   "pcb_traces": 0,
-  "source_asset_revision": "786ee453b51e34168f96b20ea457ba48cf91c58e",
+  "source_asset_revision": "71bbac39241c04b405f359193c37c9add1af1e99",
   "source_assets_uncommitted": false,
   "cad_asset_hashes_verified": true,
   "bare_or_DNP_paste_removed": 11,

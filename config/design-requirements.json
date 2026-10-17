@@ -62,14 +62,24 @@
       50
     ],
     "temperature_rise_max_c": 80,
-    "insulation_class": "B 130 C"
+    "insulation_class": "B 130 C",
+    "rotor_inertia_g_cm2": 9.0
   },
   "fabrication": {
     "minimum_via_drill_mm": 0.3,
     "minimum_via_pad_mm": 0.45,
     "final_board_outline_verified": false,
     "gerbers_released": false,
-    "jlcpcb_order_submitted": false
+    "jlcpcb_order_submitted": false,
+    "layer_count": 4,
+    "board_thickness_nominal_mm": 1.6,
+    "outer_copper_um": 35,
+    "inner_copper_um": 35,
+    "inner_copper_weight_oz": 1,
+    "solder_mask_color": "green",
+    "surface_finish": "ENIG",
+    "via_process": "IPC-4761 Type VII epoxy filled and copper capped; apply only to 0.30 mm via drills, not component holes",
+    "inner_copper_selection_required": true
   },
   "required_features": [
     "RP2040 and all supply rails/decoupling",
@@ -101,6 +111,9 @@
     "separate_package": "AnasSarkiz/NEMA11_RP2040_MCU_Prototype",
     "status": "MCU_subsystem_0.1.0_registry_files_verified",
     "only_validated_milestones": true,
-    "full_controller_published": false
+    "full_controller_published": false,
+    "controller_source_package": "AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+    "controller_source_version": "0.1.0",
+    "controller_source_registry_files_verified": true
   }
 }

@@ -1,5 +1,5 @@
 {
-  "git_revision": "786ee453b51e34168f96b20ea457ba48cf91c58e",
+  "git_revision": "71bbac39241c04b405f359193c37c9add1af1e99",
   "files": {
     "imports/supplier/A4988SETTR_T/A4988SETTR_T.obj": "01eb47f12909a50a9f70825ab23b31c6be4b33ffe26bd7c8697f94077b87ebd9",
     "imports/supplier/A4988SETTR_T/A4988SETTR_T.step": "578a8ff75c4016df2d5e6e332aba2899ef713bf2d1c439906bc57edf2a57e121",
@@ -89,6 +89,8 @@
     "imports/supplier/FRL0805FR240TS/FRL0805FR240TS.step": "fc4726ad0364128aa67ad16e76bace8fa7a85fb80514f68d5fbf53d114860b6f",
     "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.obj": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
     "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.step": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20",
+    "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.obj": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
+    "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step": "fc4726ad0364128aa67ad16e76bace8fa7a85fb80514f68d5fbf53d114860b6f",
     "imports/supplier/HYG_8503A/HYG_8503A.obj": "1afedd9eaef3560a200031e65019e9170f989eeabb73348ab574457b3dfa3bc9",
     "imports/supplier/HYG_8503A/HYG_8503A.step": "81a27fbddd8542bc2416e6e89e649b873d2e609685470b69b577d834fc35a3c0",
     "imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.obj": "91d2ed9dbc575337fd7846c7fffc5d6380171764896dfc49ed433cf571c81d1b",
