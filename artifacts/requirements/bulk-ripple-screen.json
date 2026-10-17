@@ -1,0 +1,226 @@
+{
+  "scope": "Candidate bulk-capacitor ripple selection screen, not complete board qualification",
+  "motor_peak_current_limit_A": 0.67,
+  "ROSC_configuration": "Grounded, as retained in the source",
+  "A4988_fixed_off_time_range_us": [
+    20,
+    40
+  ],
+  "mixed_decay_fast_off_fraction": 0.3125,
+  "source_cable_ripple_sharing_credited": false,
+  "ideal_current_vector_assumed": true,
+  "additional_logic_converter_frequency_equivalent_ripple_budget_A": 0.1,
+  "bands": [
+    {
+      "frequency_band_Hz": [
+        100,
+        200
+      ],
+      "Panasonic_frequency_factor": 0.15,
+      "duty_interval": [
+        0.992,
+        0.998
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.12405543115881654,
+      "frequency_weighted_RMS_gain": 0.8270362077254436
+    },
+    {
+      "frequency_band_Hz": [
+        200,
+        300
+      ],
+      "Panasonic_frequency_factor": 0.2,
+      "duty_interval": [
+        0.988,
+        0.996
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.1516638964948478,
+      "frequency_weighted_RMS_gain": 0.758319482474239
+    },
+    {
+      "frequency_band_Hz": [
+        300,
+        500
+      ],
+      "Panasonic_frequency_factor": 0.25,
+      "duty_interval": [
+        0.98,
+        0.994
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.19509212567400092,
+      "frequency_weighted_RMS_gain": 0.7803685026960037
+    },
+    {
+      "frequency_band_Hz": [
+        500,
+        1000
+      ],
+      "Panasonic_frequency_factor": 0.3,
+      "duty_interval": [
+        0.96,
+        0.99
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.27339303209847887,
+      "frequency_weighted_RMS_gain": 0.9113101069949296
+    },
+    {
+      "frequency_band_Hz": [
+        1000,
+        2000
+      ],
+      "Panasonic_frequency_factor": 0.4,
+      "duty_interval": [
+        0.92,
+        0.98
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.37944037739808356,
+      "frequency_weighted_RMS_gain": 0.9486009434952088
+    },
+    {
+      "frequency_band_Hz": [
+        2000,
+        3000
+      ],
+      "Panasonic_frequency_factor": 0.45,
+      "duty_interval": [
+        0.88,
+        0.96
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.4557342975901637,
+      "frequency_weighted_RMS_gain": 1.0127428835336971
+    },
+    {
+      "frequency_band_Hz": [
+        3000,
+        5000
+      ],
+      "Panasonic_frequency_factor": 0.55,
+      "duty_interval": [
+        0.8,
+        0.94
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.5644410952437818,
+      "frequency_weighted_RMS_gain": 1.026256536806876
+    },
+    {
+      "frequency_band_Hz": [
+        5000,
+        10000
+      ],
+      "Panasonic_frequency_factor": 0.6,
+      "duty_interval": [
+        0.6,
+        0.9
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.7066647012551285,
+      "frequency_weighted_RMS_gain": 1.1777745020918808
+    },
+    {
+      "frequency_band_Hz": [
+        10000,
+        15000
+      ],
+      "Panasonic_frequency_factor": 0.7,
+      "duty_interval": [
+        0.3999999999999999,
+        0.8
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.738095238095238,
+      "frequency_weighted_RMS_gain": 1.054421768707483
+    },
+    {
+      "frequency_band_Hz": [
+        15000,
+        20000
+      ],
+      "Panasonic_frequency_factor": 0.75,
+      "duty_interval": [
+        0.19999999999999996,
+        0.7
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.738095238095238,
+      "frequency_weighted_RMS_gain": 0.9841269841269841
+    },
+    {
+      "frequency_band_Hz": [
+        20000,
+        30000
+      ],
+      "Panasonic_frequency_factor": 0.8,
+      "duty_interval": [
+        0,
+        0.6
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.738095238095238,
+      "frequency_weighted_RMS_gain": 0.9226190476190474
+    },
+    {
+      "frequency_band_Hz": [
+        30000,
+        40000
+      ],
+      "Panasonic_frequency_factor": 0.8,
+      "duty_interval": [
+        0,
+        0.3999999999999999
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.7364399160827717,
+      "frequency_weighted_RMS_gain": 0.9205498951034646
+    },
+    {
+      "frequency_band_Hz": [
+        40000,
+        50000
+      ],
+      "Panasonic_frequency_factor": 0.85,
+      "duty_interval": [
+        0,
+        0.19999999999999996
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.6689544080129826,
+      "frequency_weighted_RMS_gain": 0.7870051858976266
+    },
+    {
+      "frequency_band_Hz": [
+        50000,
+        100000
+      ],
+      "Panasonic_frequency_factor": 0.9,
+      "duty_interval": [
+        0,
+        0.0
+      ],
+      "maximum_AC_RMS_per_phase_amp": 0.46351240544347894,
+      "frequency_weighted_RMS_gain": 0.5150137838260876
+    }
+  ],
+  "motor_frequency_equivalent_RMS_bound_A": 1.1159685317646233,
+  "candidates": [
+    {
+      "part": "EEHZC1V470P",
+      "capacitance_uF": 47,
+      "rated_RMS_A_at_100kHz_125C": 0.9,
+      "conservative_frequency_weighted_current_A": 1.2159685317646234,
+      "normalized_ripple_loading": 1.351076146405137,
+      "within_published_frequency_adjusted_rating_under_assumptions": false
+    },
+    {
+      "part": "EEHZC1V680XP",
+      "capacitance_uF": 68,
+      "rated_RMS_A_at_100kHz_125C": 1.4,
+      "conservative_frequency_weighted_current_A": 1.2159685317646234,
+      "normalized_ripple_loading": 0.8685489512604453,
+      "within_published_frequency_adjusted_rating_under_assumptions": true
+    }
+  ],
+  "proposed_next_iteration_part": "EEHZC1V680XP / C178649",
+  "proposed_part_selected_in_published_0_4_0": false,
+  "unresolved": [
+    "Verify actual peak/overshoot, waveform spectrum, temperature and capacitor RMS current",
+    "DC-bias/ripple/regen waveform and source cable behavior",
+    "USB-PD attachment/inrush and negotiation with the changed capacitance",
+    "Manufacturer maximum body dimensions, placement and mechanical tolerances",
+    "Actual JLC assembly stock/allocation, vendor process approval and hardware tests"
+  ],
+  "manufacturing_release": false
+}

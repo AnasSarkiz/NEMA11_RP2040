@@ -1,0 +1,91 @@
+{
+  "scope": "Genuine JLC native import and exact official manufacturer CAD candidate; not yet selected in a routed PCB",
+  "part": "Panasonic EEHZC1V680XP",
+  "LCSC": "C178649",
+  "native_import_command": "tsci import C178649 --jlcpcb --download --use-exact-footprint --exclude-pin-attributes",
+  "native_import_exit_code": 0,
+  "official_CAD_URL": "https://industrial.panasonic.com/ww/system/files/data/download/cad/DS_Alumi_D8.zip",
+  "official_datasheet_URL": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDD0000/ABA0000C1234.pdf",
+  "official_STEP_valid": true,
+  "official_STEP_solids": 4,
+  "official_STEP_raw_bounds_mm": [
+    -3.65,
+    -6.772360450213455e-15,
+    -3.300000000000001,
+    3.6500000000000012,
+    7.701000000000002,
+    3.2999999999999994
+  ],
+  "official_raw_height_axis": "+Y; PCB pose needs +90 degrees X rotation",
+  "mesh_vertices": 15518,
+  "mesh_triangles": 24904,
+  "mesh_linear_tolerance_mm": 0.02,
+  "mesh_angular_tolerance_rad": 0.1,
+  "all_official_solids_retained": true,
+  "manufacturer_geometry_not_rescaled_or_cropped": true,
+  "original_supplier_pad_definitions": {
+    "2": [
+      2.669921,
+      0.0,
+      3.499993,
+      1.1999976
+    ],
+    "1": [
+      -2.669921,
+      0.0,
+      3.499993,
+      1.1999976
+    ]
+  },
+  "maximum_pad_parameter_difference_from_RVT_mm": 0.00012699999999998823,
+  "native_3D_pose_polarity_and_board_fit_verified": false,
+  "stock_observation": {
+    "scope": "Public distributor snapshot; not JLC assembly allocation or a stock reservation",
+    "observed_at_UTC": "2026-10-17T20:23:52.478552+00:00",
+    "part": "EEHZC1V680XP",
+    "LCSC": "C178649",
+    "source_URL": "https://www.lcsc.com/product-detail/C178649.html",
+    "quantity_displayed": 1218,
+    "availability_displayed": "InStock",
+    "JLC_machine_stock_confirmed": false,
+    "stock_reserved": false
+  },
+  "files": [
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.imported.obj",
+      "bytes": 110448,
+      "sha256": "9087e9f284ac77e128aaeb3ae0352a3e8fc47ccbf82bf58283c7a3c2655683b9"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.imported.step",
+      "bytes": 1118054,
+      "sha256": "2fe3a3d3cae3a65195f82879437e7448cff7aff0f92d99463fa232d86a7eca88"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.official.obj",
+      "bytes": 1002052,
+      "sha256": "6840e95b921ae724a5abd0023076664aadebc68e4ae87037ee823d4830333780"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.official.step",
+      "bytes": 167829,
+      "sha256": "11ef79100e9136395b4e75671b671c7ddae862731834bd6b9ccbdc6a91052714"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.tsx.original",
+      "bytes": 2809,
+      "sha256": "347302d51fc2b52a33b95c2f12593db33c585f271dbef2a10d6536251e7130cd"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/Panasonic-EEH-ZC-datasheet.pdf",
+      "bytes": 826281,
+      "sha256": "04b589c22c4ca1dcfd06d405e1c1646243990d560cf32500f4402bfd43b796ad"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/original-ROQANG-RVT-datasheet.pdf",
+      "bytes": 619859,
+      "sha256": "f1d2436b835db1d66a9009a93d3f0a4479807aa9824bf054a8e18d7e858e8fdb"
+    }
+  ],
+  "manufacturing_release": false
+}

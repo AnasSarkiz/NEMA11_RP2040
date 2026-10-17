@@ -1,0 +1,11 @@
+{
+  "scope": "Public distributor snapshot; not JLC assembly allocation or a stock reservation",
+  "observed_at_UTC": "2026-10-17T20:23:52.478552+00:00",
+  "part": "EEHZC1V680XP",
+  "LCSC": "C178649",
+  "source_URL": "https://www.lcsc.com/product-detail/C178649.html",
+  "quantity_displayed": 1218,
+  "availability_displayed": "InStock",
+  "JLC_machine_stock_confirmed": false,
+  "stock_reserved": false
+}
