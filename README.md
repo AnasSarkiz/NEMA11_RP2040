@@ -4,22 +4,32 @@ Hardware development for the STEPPERONLINE **11HS12-0674S**, to preserve the
 published `AnasSarkiz/NEMA14_RP2040@1.13.0` feature set in a separate project.
 The NEMA14 repository is a read-only reference.
 
+**Current mounting requirement: use the motor's four existing case-bolt axes
+directly, with no custom carrier, case clamp or enclosure.** The unchanged OEM
+STEP shows those rear axes on a nominal **23 mm square**. Rear bolt thread,
+length and engagement are not specified in the front-thread drawing and remain
+unverified. The old 25 mm carrier PCB does not align with these axes and must be
+reworked. [Direct-mount evidence and remaining requirements](docs/direct-motor-bolts.md).
+
 **Active redesign target: the entire PCB and fitted connector/component bodies
 must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
 The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
-**The active four-hole controller is now fully routed in native tscircuit.**
+**The retained electrical baseline is fully routed in native tscircuit.**
 Its 28 × 28 mm six-layer PCB has four Ø1.8 mm corner holes at 25 mm pitch,
 76 fitted parts on top, six connected A4 sheets and 78 native 3D models.
 Native DRC, independent copper, every-pin connectivity, Gerber raster shorts
 and six-layer CAM comparison report **zero errors / opens / shorts**.
 The buzzer circuit is omitted with the user's authorization.
+Its 25 mm mounting pattern is historical and fails the current direct motor-bolt
+alignment check. Default preview shows the standalone electrical PCB; the
+superseded motor/carrier assembly is not the current mounting design.
 
 [Current routed design, exact BOM/CPL/Gerbers and unresolved requirements](docs/compact-six-layer.md).
 [Native GLB](artifacts/compact-six-layer/development-assembly.glb).
-This is a checked engineering prototype, **not fabrication-ready**: USB pair/
-stackup, carrier/hardware, maximum tolerances, harness, stock/factory acceptance
+This is a checked engineering prototype, **not fabrication-ready**: direct
+motor-bolt layout/hardware, USB pair/stackup, maximum tolerances, harness, stock/factory acceptance
 and physical electrical/thermal qualification remain open. Historical four-hole
 0.3.0 and two-hole snapshots remain unchanged.
 
@@ -87,7 +97,7 @@ the routed four-hole controller above.
 
 Published native compact development package:
 [NEMA11_RP2040_Compact_Prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
-v0.4.1 — **fully routed six-layer compact review, four mounting holes, authorized
+v0.4.1 — **historical carrier-based six-layer compact review, four mounting holes, authorized
 buzzer removal, six connected A4 sheets and 78 native 3D models**. Native DRC,
 physical connectivity, shorts and CAM comparison report zero errors. All seven
 required registry files were independently downloaded and byte-matched; large-file
@@ -98,4 +108,6 @@ shows the PCB's four Ø1.8 mm holes at 25 mm pitch separately from the verified
 motor front threads. Version 0.4.1 preserves every native circuit/PCB/3D record
 from 0.4.0; it adds the mounting documentation.
 **Not fabrication-ready**; see the current qualification requirements above.
+Its carrier assembly is superseded by the direct motor-bolt requirement; this
+published snapshot is retained as historical electrical/3D evidence only.
 The v0.1.0 / v0.2.0 two-hole and v0.3.0 four-hole snapshots are preserved.

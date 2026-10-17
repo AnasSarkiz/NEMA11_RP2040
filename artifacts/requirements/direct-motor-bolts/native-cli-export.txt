@@ -1,0 +1,1 @@
+Exported to dist/examples/motor-bolt-study/OEM-motor-native.glb!

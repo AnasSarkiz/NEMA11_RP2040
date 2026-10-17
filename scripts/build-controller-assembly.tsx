@@ -7,6 +7,11 @@ import BaselinePreview from "../examples/controller-assembly.circuit"
 import CompactPreview from "../examples/compact-assembly.circuit"
 import FourMountPreview from "../examples/four-mount-assembly.circuit"
 
+// Carrier files are retained solely to reproduce frozen historical checkpoints.
+// The active user requirement is direct mounting on the OEM motor case bolts.
+if(!process.argv.includes("--historical-carrier"))throw new Error(
+ "Carrier assembly is superseded by direct motor-bolt mounting. Rear bolt thread/length and the matching PCB are pending verification. Use --historical-carrier only to reproduce an archived carrier checkpoint.")
+
 const compact=process.argv.includes("--compact")
 const folderArg=process.argv.indexOf("--folder")
 const folder=folderArg>=0?process.argv[folderArg+1]:compact?"artifacts/compact-controller":"artifacts/controller"

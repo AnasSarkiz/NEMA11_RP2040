@@ -1,0 +1,39 @@
+{
+  "scope": "Current mounting requirement: PCB retained directly by the existing motor case-bolt locations",
+  "motor": "STEPPERONLINE 11HS12-0674S",
+  "custom_carrier_allowed": false,
+  "case_clamp_or_enclosure_mount_allowed": false,
+  "invented_rear_motor_threads_or_shaft_allowed": false,
+  "PCB_mount_count": 4,
+  "interface": "Existing rear case-bolt axes; original or correctly specified longer OEM-compatible bolts",
+  "nominal_STEP_axes_mm": [[-11.5, -11.5], [-11.5, 11.5], [11.5, -11.5], [11.5, 11.5]],
+  "nominal_STEP_pitch_mm": 23,
+  "nominal_STEP_head_diameter_mm": 4,
+  "rear_bolt_pattern_manufacturer_tolerance_verified": false,
+  "rear_bolt_thread": null,
+  "rear_bolt_under_head_length_mm": null,
+  "rear_bolt_head_maximum_diameter_mm": null,
+  "rear_bolt_engagement_and_torque_verified": false,
+  "PCB_hole_diameter_mm": null,
+  "PCB_head_and_tool_exclusion_radius_mm": null,
+  "PCB_to_motor_insulation_and_standoff_verified": false,
+  "front_thread_drawing": {
+    "thread": "M2.5",
+    "pitch_mm": 23,
+    "pitch_tolerance_mm": 0.15,
+    "minimum_thread_depth_mm": 3.5,
+    "does_not_specify_rear_case_bolt_thread_or_length": true
+  },
+  "historical_carrier_PCB_pattern": {
+    "pitch_mm": 25,
+    "hole_diameter_mm": 1.8,
+    "status": "Rejected for the current direct-motor-bolt requirement; keep frozen electrical/reference artifacts only"
+  },
+  "required_before_direct_mount_release": [
+    "Confirm rear case-bolt thread, under-head length, head and seating dimensions, and actual centre/position tolerances",
+    "Specify any longer bolts and standard insulating spacers with verified thread engagement, motor case clamping, seating and tightening torque",
+    "Check PCB support, electrical insulation, screw/washer/tool clearance, assembly access and maximum 28.3 mm frame fit",
+    "Rework component placement and routing around the four actual axes, then rerun native DRC, connectivity, shorts, CAM and native assembly checks"
+  ],
+  "manufacturing_release": false
+}

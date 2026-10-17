@@ -1,6 +1,12 @@
 # Four mounting holes within the motor frame
 
-The current [routed six-layer checkpoint](compact-six-layer.md) retains all four
+> Superseded mounting proposal. The active requirement is
+> [direct mounting using the motor bolts](direct-motor-bolts.md), whose nominal
+> STEP axes are on a 23 mm square. This page describes the historical 25 mm
+> carrier interface, which does not meet that requirement. No carrier or case
+> is allowed in the current design.
+
+The historical [routed six-layer checkpoint](compact-six-layer.md) retains all four
 holes. Native DRC, independent copper, every-pin connectivity, Gerber raster
 shorts and six-layer CAM checks report zero errors, opens and shorts. The
 [A4 mounting comparison](../artifacts/requirements/mounting-review/four-mount-comparison.pdf)
@@ -10,7 +16,7 @@ reference dimensions cannot be copied directly. Its
 is bound to the actual routed native PCB. These are nominal geometry checks;
 carrier, hardware and maximum-tolerance qualification remain open.
 
-The current candidate uses four PCB holes, adapting the reference's four-corner
+The historical candidate uses four PCB holes, adapting the reference's four-corner
 arrangement to the 28.3 mm maximum assembly frame. The reference's exact 26 mm
 pitch, Ø3.2 mm holes and Ø6.4 mm head envelope exceed the available outline.
 The candidate uses **25 mm pitch, Ø1.8 mm holes and Ø3.2 mm head exclusions** for

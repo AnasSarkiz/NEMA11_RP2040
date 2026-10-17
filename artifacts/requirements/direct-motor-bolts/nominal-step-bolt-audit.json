@@ -1,0 +1,113 @@
+{
+  "scope": "Original OEM STEP nominal rear bolt-head inspection and PCB-axis comparison only",
+  "motor": "STEPPERONLINE 11HS12-0674S",
+  "STEP_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "original_model_unchanged": true,
+  "original_valid_solids": 5,
+  "nominal_rear_head_axes_verified": true,
+  "nominal_rear_heads": [
+    {
+      "axis_XY_mm": [
+        -11.5,
+        -11.5
+      ],
+      "head_diameter_mm": 4.0,
+      "convex_cylindrical_surface_Z_mm": [
+        29.0,
+        30.0
+      ]
+    },
+    {
+      "axis_XY_mm": [
+        -11.5,
+        11.5
+      ],
+      "head_diameter_mm": 4.0,
+      "convex_cylindrical_surface_Z_mm": [
+        29.0,
+        30.0
+      ]
+    },
+    {
+      "axis_XY_mm": [
+        11.5,
+        -11.5
+      ],
+      "head_diameter_mm": 4.0,
+      "convex_cylindrical_surface_Z_mm": [
+        29.0,
+        30.0
+      ]
+    },
+    {
+      "axis_XY_mm": [
+        11.5,
+        11.5
+      ],
+      "head_diameter_mm": 4.0,
+      "convex_cylindrical_surface_Z_mm": [
+        29.0,
+        30.0
+      ]
+    }
+  ],
+  "nominal_rear_bolt_pitch_mm": 23,
+  "nominal_motor_body_rear_max_Z_mm": 31.5,
+  "rear_bolt_thread_or_shank_diameter_inferred": false,
+  "rear_bolt_length_or_engagement_inferred": false,
+  "front_M2_5_threads_do_not_establish_rear_bolt_thread": true,
+  "PCB_file": "artifacts/compact-six-layer/board.circuit.json",
+  "PCB_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "PCB_hole_axis_comparisons": [
+    {
+      "PCB_hole_XY_mm": [
+        -12.5,
+        -12.5
+      ],
+      "motor_axis_XY_mm": [
+        -11.5,
+        -11.5
+      ],
+      "axis_error_mm": 1.414213562
+    },
+    {
+      "PCB_hole_XY_mm": [
+        -12.5,
+        12.5
+      ],
+      "motor_axis_XY_mm": [
+        -11.5,
+        11.5
+      ],
+      "axis_error_mm": 1.414213562
+    },
+    {
+      "PCB_hole_XY_mm": [
+        12.5,
+        -12.5
+      ],
+      "motor_axis_XY_mm": [
+        11.5,
+        -11.5
+      ],
+      "axis_error_mm": 1.414213562
+    },
+    {
+      "PCB_hole_XY_mm": [
+        12.5,
+        12.5
+      ],
+      "motor_axis_XY_mm": [
+        11.5,
+        11.5
+      ],
+      "axis_error_mm": 1.414213562
+    }
+  ],
+  "PCB_motor_bolt_axis_alignment_pass": false,
+  "PCB_hole_diameter_hardware_and_tolerance_qualified": false,
+  "custom_carrier_allowed": false,
+  "new_rear_motor_threads_or_shaft_assumed": false,
+  "inspection_pass": true,
+  "manufacturing_release": false
+}

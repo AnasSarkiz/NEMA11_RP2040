@@ -121,5 +121,14 @@
     "controller_routed_registry_files_verified": true,
     "controller_routed_release_id": "045331f4-83f3-432d-b8c2-1d13ed8f349f",
     "controller_registry_preview_status": "pending"
+  },
+  "mechanical_mounting": {
+    "mode": "direct_OEM_rear_case_bolts",
+    "contract": "config/direct-motor-bolt-mounting.json",
+    "custom_carrier_allowed": false,
+    "nominal_existing_bolt_axes_STEP_verified": true,
+    "nominal_bolt_pitch_mm": 23,
+    "rear_bolt_thread_and_length_verified": false,
+    "historical_25_mm_carrier_PCB_meets_current_mounting_requirement": false
   }
 }

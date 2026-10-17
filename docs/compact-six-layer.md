@@ -1,6 +1,12 @@
 # Routed four-hole compact review
 
-The native tscircuit controller now has **zero native DRC errors, zero physical
+> Historical electrical checkpoint. The current user requirement is
+> [direct mounting on the motor's existing case bolts](direct-motor-bolts.md),
+> without a carrier. This checkpoint's 25 mm hole pitch does not match the
+> nominal 23 mm motor bolt axes. Its carrier is superseded; its copper checks
+> do not establish direct-mount compatibility.
+
+The retained native tscircuit controller has **zero native DRC errors, zero physical
 opens, zero physical shorts and zero independent copper/clearance errors**.
 Its 28 × 28 mm PCB has six copper layers and four Ø1.8 mm mounting holes at
 25 mm pitch. All 76 fitted components are on top. The buzzer and its complete
