@@ -1,0 +1,12 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.3.0",
+  "description": "UNROUTED four-hole 28 mm all-top controller: buzzer omitted with user authorization; 6 connected A4 sheets and native motor/carrier 3D; NOT FABRICATION READY",
+  "main": "index.circuit.json",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040.git"
+  }
+}

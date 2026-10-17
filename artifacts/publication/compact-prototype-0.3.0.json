@@ -1,0 +1,71 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.3.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "63fcc2a1-7751-4f56-8a54-da7aa2ec4d83",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 0,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2595,
+      "sha256": "2c67f6a266310c3b793691e91ca215ba81215579e1899577db580e8c292d7246",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 1771785,
+      "sha256": "52217bb725292e8ec2a677300b741974673ca751402ae761e2c60452865bc555",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 1328070,
+      "sha256": "1a3e063fc17b07718e5e3dceaedf4f258e235042ded81b72ece339bb468724a0",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 822,
+      "sha256": "a330296f828a638215bf5eacbdaaaad1f5770a98e38097f0a95cee5cb37ef885",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 824,
+      "sha256": "76cb7ebaffc12f8ecec5c7950fc5a7c4a7cec4428eeda527fa7fea87c509d609",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 440,
+      "sha256": "7d0af36111992d4b61c5952ffa6a6a14e3f8ddb065661208aec5c3d8fc02b491",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "additional_registry_generated_files": [],
+  "source_milestone_commit": "bc81dab273b086d3cbee93f20f7a3c5af7809c0a",
+  "scope": "Validated UNROUTED four-hole compact source, placement, connected A4 sheets and native motor/carrier proposal 3D",
+  "ready_to_build": true,
+  "physical_routing_complete": false,
+  "manufacturing_release": false,
+  "disconnected_controller_nets": 61,
+  "native_DRC_pass": false,
+  "PCB_mount_count": 4,
+  "PCB_mount_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "buzzer_circuit_omitted_with_user_authorization": true,
+  "native_CLI_upload_diagnosis": {
+    "exit_code": 0,
+    "authenticated_upload_completed": true
+  }
+}

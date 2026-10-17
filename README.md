@@ -87,8 +87,8 @@ pass. **Compact copper routing is in progress; this is not fabrication-ready.**
 
 Published native compact development package:
 [NEMA11_RP2040_Compact_Prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
-v0.2.0 — **checked crystal/short USB escapes and native 3D; 58 nets still open,
-not manufacturing files**. All seven registry files match the local package
-byte-for-byte. The CLI archive request timed out after storage; fallback writes
-reported duplicate keys. [Independent publication evidence](artifacts/publication/compact-prototype-0.2.0.json)
-records the nonzero CLI exit honestly. The v0.1.0 placement snapshot is preserved.
+v0.3.0 — **four mounting holes, authorized buzzer removal, six connected A4
+sheets and 78 native 3D models; UNROUTED, not manufacturing files**. The native
+CLI upload succeeded and all seven registry files match locally byte-for-byte.
+[Publication evidence](artifacts/publication/compact-prototype-0.3.0.json).
+The v0.1.0 and v0.2.0 two-hole snapshots are preserved historical candidates.

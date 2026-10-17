@@ -32,3 +32,9 @@ The four-piece carrier proposal permits each quarter to approach the motor
 radially before PCB installation. Its narrow rails are not strength qualified.
 The nominal OEM STEP corner relief is not guaranteed by the drawing. Neither
 sampled CAD paths nor a final nonintersecting model proves a buildable product.
+
+The checked native snapshot is published separately as
+[NEMA11_RP2040_Compact_Prototype 0.3.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype).
+The actual CLI upload exited successfully; all seven remote files were downloaded
+and matched byte-for-byte. This publication is explicitly unrouted and does not
+contain manufacturing-ready Gerbers/BOM/CPL.

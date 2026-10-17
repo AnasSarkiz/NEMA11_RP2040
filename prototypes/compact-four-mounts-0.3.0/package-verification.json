@@ -1,0 +1,22 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.3.0",
+  "scope": "Validated UNROUTED four-hole compact source, placement, connected A4 sheets and native motor/carrier proposal 3D",
+  "source_milestone_commit": "bc81dab273b086d3cbee93f20f7a3c5af7809c0a",
+  "circuit_sha256": "1a3e063fc17b07718e5e3dceaedf4f258e235042ded81b72ece339bb468724a0",
+  "source_components": 88,
+  "electrical_components": 86,
+  "physical_ports": 326,
+  "PCB_mount_count": 4,
+  "PCB_mount_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "fitted_components_top": 76,
+  "native_models": 78,
+  "schematic_sheets": 6,
+  "controller_nets": 61,
+  "disconnected_controller_nets": 61,
+  "native_DRC_pass": false,
+  "full_controller_routing_complete": false,
+  "registry_published": false,
+  "manufacturing_release": false
+}
