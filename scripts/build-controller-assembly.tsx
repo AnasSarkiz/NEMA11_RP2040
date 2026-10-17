@@ -5,11 +5,12 @@ import { createHash } from "node:crypto"
 import * as schemas from "circuit-json"
 import BaselinePreview from "../examples/controller-assembly.circuit"
 import CompactPreview from "../examples/compact-assembly.circuit"
+import FourMountPreview from "../examples/four-mount-assembly.circuit"
 
 const compact=process.argv.includes("--compact")
 const folderArg=process.argv.indexOf("--folder")
 const folder=folderArg>=0?process.argv[folderArg+1]:compact?"artifacts/compact-controller":"artifacts/controller"
-const Preview=compact?CompactPreview:BaselinePreview
+const Preview=process.argv.includes("--four-mounts")?FourMountPreview:compact?CompactPreview:BaselinePreview
 const circuit=new Circuit()
 circuit.schematicDisabled=true
 circuit.add(<Preview />)

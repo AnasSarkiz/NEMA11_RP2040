@@ -1,6 +1,6 @@
 {
   "includeBoardFiles": [
-    "artifacts/compact-escape/assembly.circuit.json"
+    "artifacts/compact-four-mounts/assembly.circuit.json"
   ],
-  "previewComponentPath": "artifacts/compact-escape/assembly.circuit.json"
+  "previewComponentPath": "artifacts/compact-four-mounts/assembly.circuit.json"
 }

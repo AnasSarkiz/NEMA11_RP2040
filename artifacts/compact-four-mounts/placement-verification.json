@@ -7,6 +7,7 @@
       ],
       "hole_diameter_mm": 1.8,
       "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.4776284049845889,
       "hole_edge_to_PCB_edge_mm": 0.6,
       "head_within_28_3mm_frame": true
     },
@@ -17,6 +18,7 @@
       ],
       "hole_diameter_mm": 1.8,
       "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.20233720179757986,
       "hole_edge_to_PCB_edge_mm": 0.6,
       "head_within_28_3mm_frame": true
     },
@@ -27,6 +29,7 @@
       ],
       "hole_diameter_mm": 1.8,
       "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.44814538393880804,
       "hole_edge_to_PCB_edge_mm": 0.6,
       "head_within_28_3mm_frame": true
     },
@@ -37,6 +40,7 @@
       ],
       "hole_diameter_mm": 1.8,
       "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.6221652113905366,
       "hole_edge_to_PCB_edge_mm": 0.6,
       "head_within_28_3mm_frame": true
     }

@@ -92,7 +92,7 @@ jobs:
           bun scripts/schematic-controller.tsx --compact --folder artifacts/compact-four-mounts
           python3 scripts/verify_controller_schematic.py --compact --folder artifacts/compact-four-mounts
           python3 scripts/check_compact_source.py --folder artifacts/compact-four-mounts --netlist examples/four-mount-controller.circuit.tsx
-          python3 scripts/verify_four_mounts.py
+          python3 scripts/verify_four_mounts.py --assembly
           git diff --exit-code -- artifacts/compact-four-mounts/unrouted.circuit.json artifacts/compact-four-mounts/schematic.circuit.json
       - name: Independently parse committed review CAM and verify prototype
         run: |

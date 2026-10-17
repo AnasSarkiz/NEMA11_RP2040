@@ -25,6 +25,10 @@ component spacing, pin parity and schematic/ERC checks pass. Original GCT USB
 STEP compound validity errors remain explicitly reported; nominal solid/lead
 fit checks pass. Manufacturer dimensional tolerances are not qualified.
 
+The native `assembly.circuit.json` and `development-assembly.glb` include 78
+checked models: 76 supplier parts, the genuine OEM motor and the four-piece
+carrier proposal. Exported bounds match original CAD within 0.05 mm.
+
 The custom four-piece front carrier proposal is a mechanical review artifact.
 It has four PCB support locations and four separate radial assembly paths;
 48 sampled positions have no nominal motor/quarter collisions. Extremely narrow

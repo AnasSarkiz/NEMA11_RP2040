@@ -16,12 +16,13 @@ top; source, nominal placement and six connected A4 sheets pass.
 Routing and carrier qualification remain incomplete. Earlier two-hole compact
 prototypes below are preserved historical checkpoints.
 
-The default native preview now opens the **28 × 28 mm compact assembly**.
-The [latest checked checkpoint](artifacts/compact-escape/README.md) includes
-all-top placement, full source, six connected A4 sheets, 84 native 3D models,
-connected crystal nets and short MCU USB escapes. It still has **58 disconnected
-controller nets**; compact routing remains in progress; the older baseline’s
-zero-open routed results below apply to its larger outline.
+The default native preview opens the **four-hole 28 × 28 mm compact assembly**:
+76 fitted parts on top, six connected A4 sheets and 78 checked native 3D models
+including the OEM motor and proposed four-piece carrier. [Native GLB](artifacts/compact-four-mounts/development-assembly.glb).
+This source/placement checkpoint is **unrouted**; full copper routing and carrier
+qualification are in progress. The earlier two-hole compact escape prototype
+has 58 disconnected nets, and the older zero-open routed baseline below uses a
+larger outline. Those results do not qualify this four-hole candidate.
 
 **Earlier 35 × 40 mm electrical baseline: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.

@@ -23,7 +23,9 @@ on top. Supplier copper pads and models are unchanged.
 [six-page A4 PDF](../artifacts/compact-four-mounts/schematic-a4.pdf),
 [mount requirements](../config/compact-four-mounts.json) and
 [carrier proposal evidence](../artifacts/requirements/four-mount-carrier-proposal.json)
-are retained for review. Routing, tolerance and physical qualification are
+and [native assembly GLB](../artifacts/compact-four-mounts/development-assembly.glb)
+are retained for review. The actual native GLB has 78 models; all supplier/motor/
+carrier bounds match their original CAD within 0.05 mm. Routing, tolerance and physical qualification are
 separate release requirements; this milestone is not fabrication-ready.
 
 The four-piece carrier proposal permits each quarter to approach the motor

@@ -1,0 +1,957 @@
+{
+  "scope": "Actual native GLB bounds versus 76 supplier STEP poses, genuine OEM motor and original carrier proposal",
+  "GLB_sha256": "7e213e3fc75c7ade3d4f81daf0ff15893626f0dc342b077ae7ae5a4ab315dcbc",
+  "native_models_checked": 78,
+  "scene_to_board_coordinates": {
+    "X": "-glTF.X",
+    "Y": "glTF.Z",
+    "Z": "glTF.Y"
+  },
+  "parts": [
+    {
+      "part": "J_PD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -10.519995599999955,
+        6.555127500000021,
+        0.09998879999999977,
+        -1.5749885999999549,
+        10.245126500000021,
+        8.2599918
+      ],
+      "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
+    },
+    {
+      "part": "J_DATA",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.380004400000046,
+        6.455127500000021,
+        0.09998879999999977,
+        13.325011400000045,
+        10.145126500000021,
+        8.2599918
+      ],
+      "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
+    },
+    {
+      "part": "U_PD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -11.2,
+        1.0000635000001235,
+        0.8,
+        -5.199999999999999,
+        5.900063500000124,
+        2.34
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_PD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -10.705,
+        11.69,
+        0.8,
+        -9.895000000000001,
+        13.31,
+        1.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_PD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.200000000000001,
+        6.3050635999999995,
+        0.8,
+        -11.6,
+        7.1050636,
+        1.6
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.00000003833145e-07
+    },
+    {
+      "part": "R_PG",
+      "native_GLB_board_coordinates_bbox_mm": [
+        11.69,
+        -10.455,
+        0.8,
+        13.31,
+        -9.645000000000001,
+        1.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "U_MCU",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -3.2100126999999565,
+        -2.747659200000093,
+        0.8,
+        3.809987300000043,
+        4.272340799999906,
+        1.67
+      ],
+      "maximum_STEP_bbox_deviation_mm": 3.552713678800501e-14
+    },
+    {
+      "part": "C_IO1",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -3.2,
+        5.277340900000071,
+        0.8,
+        -2.2,
+        5.777340900000071,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_IO10",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -5.25,
+        -0.5500127000000703,
+        0.8,
+        -4.25,
+        -0.05001270000007019,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_IO22",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.15,
+        -4.39998729999993,
+        0.8,
+        2.15,
+        -3.89998729999993,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000205678816e-07
+    },
+    {
+      "part": "C_IO33",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.85,
+        -0.5499872999999298,
+        0.8,
+        5.85,
+        -0.049987299999929735,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_IO42",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.85,
+        2.80001270000007,
+        0.8,
+        5.85,
+        3.30001270000007,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000205678816e-07
+    },
+    {
+      "part": "C_IO49",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -0.7500127000000703,
+        5.2773408,
+        0.8,
+        -0.25001270000007025,
+        6.2773408,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_DV23",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.20001270000007018,
+        -4.85,
+        0.8,
+        0.7000127000000704,
+        -3.8499999999999996,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000227883277e-07
+    },
+    {
+      "part": "C_DV50",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.04998729999992968,
+        5.2773408,
+        0.8,
+        0.5499872999999298,
+        6.2773408,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_USB",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.8,
+        6.814587000000071,
+        0.8,
+        1.8,
+        7.314587000000071,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_ADC",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.89998729999993,
+        4.55,
+        0.8,
+        5.39998729999993,
+        5.55,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_VREG_IN",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.85,
+        3.600012700000071,
+        0.8,
+        5.85,
+        4.100012700000071,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_VREG_OUT",
+      "native_GLB_board_coordinates_bbox_mm": [
+        3.0499872999999296,
+        5.2773408,
+        0.8,
+        3.5499872999999296,
+        6.2773408,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "U_FLASH",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -0.7141321500000002,
+        8.3195872,
+        0.8,
+        1.2958678499999996,
+        11.3195872,
+        1.27
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000005838672e-07
+    },
+    {
+      "part": "C_FLASH",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -0.6000127000000703,
+        12.3245873,
+        0.8,
+        -0.1000127000000702,
+        13.3245873,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000227883277e-07
+    },
+    {
+      "part": "R_FLASH_CS",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.8,
+        -9.60001270000007,
+        0.8,
+        1.8,
+        -9.10001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_BOOT",
+      "native_GLB_board_coordinates_bbox_mm": [
+        7.25,
+        0.29998729999992974,
+        0.8,
+        8.25,
+        0.7999872999999298,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "Y_MCU",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -2.94998729999993,
+        -7.037927300000001,
+        0.8,
+        -0.4499872999999295,
+        -3.8379272999999996,
+        1.501
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "R_XOUT",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.05001270000007016,
+        -6.55,
+        0.8,
+        0.5500127000000703,
+        -5.55,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "C_XIN",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -3.94998729999993,
+        -5.3,
+        0.8,
+        -3.44998729999993,
+        -4.3,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "C_XOUT",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -0.6999872999999298,
+        -8.75,
+        0.8,
+        -0.19998729999992965,
+        -7.75,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000233434392e-07
+    },
+    {
+      "part": "R_RUN",
+      "native_GLB_board_coordinates_bbox_mm": [
+        7.35,
+        1.4499872999999297,
+        0.8,
+        8.35,
+        1.9499872999999297,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_DM",
+      "native_GLB_board_coordinates_bbox_mm": [
+        2.2499872999999297,
+        5.3779273,
+        0.8,
+        2.7499872999999297,
+        6.3779273,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_DP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.3499872999999298,
+        5.3779273,
+        0.8,
+        1.8499872999999298,
+        6.3779273,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_CC1",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -1.4000127000000702,
+        12.35,
+        0.8,
+        -0.9000127000000702,
+        13.35,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_CC2",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -7.75,
+        10.90001270000007,
+        0.8,
+        -6.75,
+        11.40001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_USB_SENSE_H",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -11.9,
+        -9.85001270000007,
+        0.8,
+        -10.9,
+        -9.35001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_USB_SENSE_L",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -12.7,
+        9.300012700000071,
+        0.8,
+        -11.7,
+        9.800012700000071,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_VM_H",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.29998729999992974,
+        12.3245873,
+        0.8,
+        0.7999872999999298,
+        13.3245873,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000038
+    },
+    {
+      "part": "R_VM_L",
+      "native_GLB_board_coordinates_bbox_mm": [
+        5.39998729999993,
+        11.2,
+        0.8,
+        5.89998729999993,
+        12.2,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000006144
+    },
+    {
+      "part": "C_VM_SENSE",
+      "native_GLB_board_coordinates_bbox_mm": [
+        3.7500127000000703,
+        12.2,
+        0.8,
+        4.25001270000007,
+        13.2,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "U_BUCK",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.74998729999993,
+        -5.300000000000001,
+        0.8,
+        -10.849987299999931,
+        -2.5,
+        1.69
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "L_BUCK",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -10.45,
+        -7.125,
+        0.8,
+        -6.449999999999999,
+        -3.0749999999999997,
+        2.63
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "C_BOOTSTRAP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -11.59998729999993,
+        -7.05,
+        0.8,
+        -11.09998729999993,
+        -6.05,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_BUCK_IN",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.0,
+        -1.85,
+        0.8,
+        -9.8,
+        -0.25,
+        2.1
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "C_BUCK_OUT1",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -7.70001270000007,
+        -2.05,
+        0.8,
+        -6.40001270000007,
+        -0.050000000000000044,
+        2.1
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000649768026e-07
+    },
+    {
+      "part": "C_BUCK_OUT2",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -6.050012700000071,
+        -5.1,
+        0.8,
+        -4.75001270000007,
+        -3.0999999999999996,
+        2.1
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000649768026e-07
+    },
+    {
+      "part": "D_PD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.950012699999998,
+        1.425,
+        0.8,
+        -12.2500127,
+        5.275,
+        2.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "D_DATA",
+      "native_GLB_board_coordinates_bbox_mm": [
+        9.375,
+        -8.950012699999998,
+        0.8,
+        13.225000000000001,
+        -7.250012699999999,
+        2.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000205678816e-07
+    },
+    {
+      "part": "U_DRV",
+      "native_GLB_board_coordinates_bbox_mm": [
+        3.199,
+        -9.9000059,
+        0.8,
+        8.201,
+        -4.8980058999999985,
+        1.4300000000000002
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999999483
+    },
+    {
+      "part": "C_CP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.6000127000000703,
+        -7.75,
+        0.8,
+        2.1000127000000703,
+        -6.75,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "C_VCP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.15,
+        -8.70001270000007,
+        0.8,
+        2.15,
+        -8.20001270000007,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_VREG",
+      "native_GLB_board_coordinates_bbox_mm": [
+        3.7990417999999995,
+        -12.55,
+        0.8,
+        4.5990418,
+        -10.95,
+        1.6
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.00000003833145e-07
+    },
+    {
+      "part": "C_DRV_LOGIC",
+      "native_GLB_board_coordinates_bbox_mm": [
+        9.25,
+        -9.74998729999993,
+        0.8,
+        10.25,
+        -9.24998729999993,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_VM",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.15,
+        -5.20001270000007,
+        0.8,
+        2.15,
+        -4.70001270000007,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_BULK",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -9.3,
+        -14.038999900000071,
+        0.8,
+        -1.5000000000000004,
+        -7.438999900000071,
+        8.55
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_SA",
+      "native_GLB_board_coordinates_bbox_mm": [
+        6.500012699999843,
+        -3.65,
+        0.8,
+        7.800012699999844,
+        -1.65,
+        1.4100000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_SB",
+      "native_GLB_board_coordinates_bbox_mm": [
+        4.900012699999842,
+        -3.65,
+        0.8,
+        6.200012699999843,
+        -1.65,
+        1.4100000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_REF_H",
+      "native_GLB_board_coordinates_bbox_mm": [
+        2.64,
+        10.945,
+        0.8,
+        4.26,
+        11.754999999999999,
+        1.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_REF_L",
+      "native_GLB_board_coordinates_bbox_mm": [
+        6.65,
+        2.80001270000007,
+        0.8,
+        7.65,
+        3.30001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "C_REF",
+      "native_GLB_board_coordinates_bbox_mm": [
+        1.55,
+        12.45,
+        0.8,
+        3.1500000000000004,
+        13.25,
+        1.6
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "R_ENABLE",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.05,
+        0.09506349999992969,
+        0.8,
+        -12.05,
+        0.5950634999999298,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "R_SLEEP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        7.289999999999999,
+        4.495,
+        0.8,
+        8.91,
+        5.305000000000001,
+        1.25
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "J_MOTOR",
+      "native_GLB_board_coordinates_bbox_mm": [
+        9.050037000000003,
+        -6.75001270000007,
+        -2.1999940000000002,
+        13.750037000000006,
+        3.149987299999931,
+        6.800006
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999979499
+    },
+    {
+      "part": "U_ESD",
+      "native_GLB_board_coordinates_bbox_mm": [
+        6.64362829999993,
+        10.800012700000071,
+        0.8,
+        9.45634629999993,
+        13.70001270000007,
+        2.448939
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "D_TVS",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -8.200101600000108,
+        11.9,
+        0.8,
+        -4.600101600000108,
+        13.700000000000001,
+        1.81
+      ],
+      "maximum_STEP_bbox_deviation_mm": 9.99999993922529e-08
+    },
+    {
+      "part": "U_TEMP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.050050799999998,
+        7.4299212000000034,
+        0.8,
+        -11.450050799999996,
+        9.029921200000004,
+        1.4100000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999999483
+    },
+    {
+      "part": "C_TEMP",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -5.25,
+        11.09998729999993,
+        0.8,
+        -4.25,
+        11.59998729999993,
+        1.3
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_TEMP_SDA",
+      "native_GLB_board_coordinates_bbox_mm": [
+        9.1,
+        -13.40001270000007,
+        0.8,
+        10.1,
+        -12.90001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_TEMP_SCL",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -12.55,
+        10.10001270000007,
+        0.8,
+        -11.55,
+        10.60001270000007,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "D_PWR",
+      "native_GLB_board_coordinates_bbox_mm": [
+        2.3499492000000597,
+        7.133553999999929,
+        0.8,
+        3.1499492000000604,
+        8.75355399999993,
+        1.4100000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.010000099999999623
+    },
+    {
+      "part": "R_PWR_LED",
+      "native_GLB_board_coordinates_bbox_mm": [
+        7.35,
+        -0.5999872999999297,
+        0.8,
+        8.35,
+        -0.09998729999992972,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "D_STATUS",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -13.5,
+        -8.35,
+        0.8,
+        -11.899999999999999,
+        -6.749999999999999,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.009024679404747715
+    },
+    {
+      "part": "R_STATUS_R",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -10.59998729999993,
+        -11.4,
+        0.8,
+        -10.09998729999993,
+        -10.4,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "Q_STATUS_R",
+      "native_GLB_board_coordinates_bbox_mm": [
+        10.099987300000043,
+        3.6500000000000004,
+        0.8,
+        12.199987300000044,
+        5.65,
+        1.8
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000050247593e-07
+    },
+    {
+      "part": "R_STATUS_G",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -0.4499872999999298,
+        -12.8,
+        0.8,
+        0.050012700000070354,
+        -11.8,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000107
+    },
+    {
+      "part": "Q_STATUS_G",
+      "native_GLB_board_coordinates_bbox_mm": [
+        5.199987300000044,
+        -13.1,
+        0.8,
+        7.299987300000043,
+        -11.1,
+        1.8
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_STATUS_B",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -10.1,
+        -2.7500127000000703,
+        0.8,
+        -9.1,
+        -2.2500127000000703,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "Q_STATUS_B",
+      "native_GLB_board_coordinates_bbox_mm": [
+        0.7500000000000002,
+        -13.149987300000044,
+        0.8,
+        2.75,
+        -11.049987300000042,
+        1.8
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000000050247593e-07
+    },
+    {
+      "part": "R_PD_CFG",
+      "native_GLB_board_coordinates_bbox_mm": [
+        13.20001270000007,
+        4.3,
+        0.8,
+        13.70001270000007,
+        5.3,
+        1.1600000000000001
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "OEM_11HS12_0674S",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -14.1,
+        -14.1,
+        -62,
+        34.1,
+        14.1,
+        -10.5
+      ],
+      "maximum_STEP_bbox_deviation_mm": 1.0000001182675078e-07
+    },
+    {
+      "part": "FRONT_CARRIER_PROPOSAL",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -14,
+        -14,
+        -43,
+        14,
+        14,
+        -0.8
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.008004766901173355
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "nominal_motor_to_PCB_bottom_gap_mm": 9.7,
+  "nominal_motor_to_lowest_fitted_component_vertical_gap_mm": 8.300006,
+  "drawing_maximum_body_to_PCB_bottom_gap_mm": 8.2,
+  "motor_lead_stubs_point_toward_JST_side": true,
+  "front_carrier_proposal_included": true,
+  "carrier_harness_hardware_included": false,
+  "manufacturing_release": false
+}

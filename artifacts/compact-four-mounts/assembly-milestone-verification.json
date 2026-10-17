@@ -1,0 +1,21 @@
+{
+  "scope": "Four-corner native compact source, supplier-pad placement and connected A4 schematic checkpoint only",
+  "source_sha256": "0d9f048f9ab05828a9fa6921667e6002284e45a871649c3d0c2e9d07b377ddd7",
+  "schematic_sha256": "aead6b4df1645014b29e39805f4904b62efcbe7133184e39576e6774e744acd2",
+  "PCB_mount_count": 4,
+  "PCB_mount_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "source_components": 86,
+  "physical_pins": 326,
+  "fitted_components_top": 76,
+  "buzzer_circuit_omitted_with_user_authorization": true,
+  "source_placement_schematic_pass": true,
+  "full_routing_complete": false,
+  "native_PCB_DRC_pass": false,
+  "carrier_and_fasteners_qualified": false,
+  "manufacturing_release": false,
+  "native_assembly_geometry_pass": true,
+  "native_models": 78,
+  "assembly_sha256": "da100210b9cd2cf68beee202b59e2e785027f2c672cd5f5e79b863f1a72f3dab",
+  "GLB_sha256": "7e213e3fc75c7ade3d4f81daf0ff15893626f0dc342b077ae7ae5a4ab315dcbc"
+}

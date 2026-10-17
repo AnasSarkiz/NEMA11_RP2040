@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Verify the new four-hole source milestone; never a routing/fabrication gate."""
-import hashlib,json
+import hashlib,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'artifacts/compact-four-mounts'
@@ -39,5 +39,19 @@ def main():
  for c in read('native-source-checks.json'):
   assert c['exit_code']==0 and c['input_sha256']==hashlib.sha256((ROOT/c['input']).read_bytes()).hexdigest()
  report=dict(scope='Four-corner native compact source, supplier-pad placement and connected A4 schematic checkpoint only',source_sha256=source,schematic_sha256=sha('schematic.circuit.json'),PCB_mount_count=4,PCB_mount_pitch_mm=25,PCB_hole_diameter_mm=1.8,source_components=86,physical_pins=326,fitted_components_top=76,buzzer_circuit_omitted_with_user_authorization=True,source_placement_schematic_pass=True,full_routing_complete=False,native_PCB_DRC_pass=False,carrier_and_fasteners_qualified=False,manufacturing_release=False)
- (OUT/'source-milestone-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
+ if '--assembly' in sys.argv:
+  audit=read('nominal-assembly-audit.json')
+  assert audit['circuit_sha256']==source and len(audit['parts'])==76
+  assert audit['nominal_solid_and_lead_fit_pass'] and audit['all_fitted_on_top'] and audit['whole_fitted_parts_within_28_3mm_frame']
+  assert len(audit['errors'])==2 and all(e.get('part') in ['J_PD','J_DATA'] and 'invalid_original_supplier_STEP' in e for e in audit['errors'])
+  geometry=read('assembly-geometry-verification.json');assert geometry['passed'] and geometry['native_models_checked']==78 and geometry['GLB_sha256']==sha('development-assembly.glb')
+  export=read('assembly-3d-export-verification.json');assert export['circuit_sha256']==sha('assembly.circuit.json') and export['glb_sha256']==geometry['GLB_sha256']
+  assert read('assembly-build.json')['source_sha256']==sha('schematic.circuit.json')
+  carrier=json.loads((ROOT/'artifacts/requirements/four-mount-carrier-proposal.json').read_text())
+  assert carrier['valid_solids']==4 and carrier['within_28_3mm_frame_XY'] and not carrier['motor_rear_holes_or_shaft_assumed']
+  assert sorted(carrier['PCB_mount_centres_mm'])==sorted([[m['x'],m['y']] for m in config['mounts']])
+  assert len(carrier['sampled_radial_installation_checks'])==48 and all(max(c['motor_intersection_mm3'],c['other_quarters_intersection_mm3'])<1e-5 for c in carrier['sampled_radial_installation_checks'])
+  for f in carrier['files']:assert hashlib.sha256((ROOT/f['path']).read_bytes()).hexdigest()==f['sha256']
+  report.update(native_assembly_geometry_pass=True,native_models=78,assembly_sha256=sha('assembly.circuit.json'),GLB_sha256=sha('development-assembly.glb'))
+ (OUT/('assembly-milestone-verification.json' if '--assembly' in sys.argv else 'source-milestone-verification.json')).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 if __name__=='__main__':main()
