@@ -5,10 +5,12 @@ import itertools
 import json
 import math
 import struct
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-folder = ROOT / 'artifacts/controller'
+compact='--compact' in sys.argv
+folder = ROOT / ('artifacts/compact-controller' if compact else 'artifacts/controller')
 path = folder / 'development-assembly.glb'
 data = path.read_bytes()
 assert data[:4] == b'glTF' and struct.unpack_from('<I', data, 8)[0] == len(data)
@@ -22,7 +24,7 @@ assert hashlib.sha256((ROOT / 'imports/motor/11HS12-0674S.step').read_bytes()).h
 b = original['bounds_mm']
 corners = [(-y, x, z-42) for x,y,z in itertools.product([b[0],b[3]], [b[1],b[4]], [b[2],b[5]])]
 expected['OEM_11HS12_0674S'] = [min(p[i] for p in corners) for i in range(3)] + [max(p[i] for p in corners) for i in range(3)]
-carrier=json.loads((ROOT / 'artifacts/requirements/front-carrier-proposal.json').read_text())
+carrier=json.loads((ROOT / ('artifacts/requirements/compact-front-carrier-proposal.json' if compact else 'artifacts/requirements/front-carrier-proposal.json')).read_text())
 expected['FRONT_CARRIER_PROPOSAL']=carrier['bounds_mm']
 checked, errors = [], []
 for node in gltf['nodes']:

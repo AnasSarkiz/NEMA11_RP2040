@@ -25,5 +25,9 @@ for name in ['schematic-verification.json','pdf-verification.json','native-sourc
 models=read('3d-export-verification.json');assert models['glb_sha256']==sha('development-controller.glb')
 for a in models['original_supplier_assets_loaded']:assert hashlib.sha256((ROOT/a['path']).read_bytes()).hexdigest()==a['sha256']
 carrier=json.loads((ROOT/'artifacts/requirements/compact-front-carrier-proposal.json').read_text());assert carrier['within_28_3mm_frame_XY'] and carrier['nominal_motor_intersection_mm3']<1e-5 and not carrier['motor_rear_holes_or_shaft_assumed']
+assembly=read('assembly-geometry-verification.json');assert assembly['passed'] and assembly['native_models_checked']==84
+assert assembly['GLB_sha256']==sha('development-assembly.glb')
+assert read('assembly-build.json')['source_sha256']==sha('schematic.circuit.json')
+checks['assembly-geometry-verification.json']=sha('assembly-geometry-verification.json')
 report={'scope':'Validated native 28 mm full-controller placement and six-sheet schematic milestone; UNROUTED','source_sha256':source,'schematic_sha256':schematic['schematic_sha256'],'checked_artifacts':checks,'placement_and_schematic_pass':True,'physical_routing_complete':False,'zero_opens_or_full_routed_DRC_claimed':False,'manufacturing_release':False,'limitations':['Compact routing remains incomplete; construction file has opens','Nominal supplier models and 5 um minimum JLC spacing surplus are not tolerance-qualified','Original GCT STEP compound validity limitation retained','Carrier corner radii, narrow-rail strength, fasteners, harness and machine interface are unqualified','Buzzer waveform/current/reflow, motor current accuracy, thermal/regen behavior, JLC stackup/process/panel and stock remain unqualified']}
 (OUT/'milestone-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k not in ['checked_artifacts','limitations']}))

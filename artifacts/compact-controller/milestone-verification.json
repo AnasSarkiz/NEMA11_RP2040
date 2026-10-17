@@ -10,7 +10,8 @@
     "3d-export-verification.json": "cfd913ce2c3158471dd7cde8cb018e61ce985f811c8e78854e1b086ac595e20d",
     "schematic-verification.json": "1798d166d19d7db8f212707d6bf2af796f88bc4ee935e20ca86f6427558dfbe2",
     "pdf-verification.json": "f3926ee991716159a6682d4e566a8e60c1b076b5c1cd98b324e37348173dc31f",
-    "native-source-checks.json": "a9aba38614f36607f2c0e9d79918002d5ec878143d755cd60052427c4c902331"
+    "native-source-checks.json": "a9aba38614f36607f2c0e9d79918002d5ec878143d755cd60052427c4c902331",
+    "assembly-geometry-verification.json": "fbdabf37452de0ed46d3d84a9d7453ff4762cdd60146a02e48b5446943f8d00b"
   },
   "placement_and_schematic_pass": true,
   "physical_routing_complete": false,

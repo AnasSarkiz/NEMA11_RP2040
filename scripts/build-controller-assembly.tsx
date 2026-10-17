@@ -3,15 +3,19 @@ import { Circuit } from "tscircuit"
 import { readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import * as schemas from "circuit-json"
-import Preview from "../examples/controller-assembly.circuit"
+import BaselinePreview from "../examples/controller-assembly.circuit"
+import CompactPreview from "../examples/compact-assembly.circuit"
 
+const compact=process.argv.includes("--compact")
+const folder=compact?"artifacts/compact-controller":"artifacts/controller"
+const Preview=compact?CompactPreview:BaselinePreview
 const circuit=new Circuit()
 circuit.schematicDisabled=true
 circuit.add(<Preview />)
 await circuit.renderUntilSettled()
 const fresh=circuit.getCircuitJson() as any[]
 const routed=process.argv.includes("--pcb")
-const basePath=routed?"artifacts/controller-pcb/board.circuit.json":"artifacts/controller/schematic.circuit.json"
+const basePath=compact?folder+"/schematic.circuit.json":routed?"artifacts/controller-pcb/board.circuit.json":"artifacts/controller/schematic.circuit.json"
 const baseBytes=readFileSync(basePath)
 const base=JSON.parse(baseBytes.toString()) as any[]
 if(routed)base.push(...JSON.parse(readFileSync("artifacts/controller/schematic.circuit.json","utf8")).filter((e:any)=>e.type.startsWith("schematic_")))
@@ -37,8 +41,8 @@ const schemaErrors=output.flatMap((r:any,index:number)=>{
  return result.success?[]:[{index,type:r.type,issues:result.error.issues}]
 })
 if(schemaErrors.length)throw new Error(JSON.stringify(schemaErrors))
-writeFileSync("artifacts/controller/assembly.circuit.json",JSON.stringify(output,null,2)+"\n")
-writeFileSync("artifacts/controller/assembly-build.json",JSON.stringify({
+writeFileSync(folder+"/assembly.circuit.json",JSON.stringify(output,null,2)+"\n")
+writeFileSync(folder+"/assembly-build.json",JSON.stringify({
  scope:"Native PCB, exact OEM motor and original front carrier proposal; hardware and full harness absent",
  PCB_source_file:basePath,PCB_routed:routed,
  source_sha256:createHash("sha256").update(baseBytes).digest("hex"),
