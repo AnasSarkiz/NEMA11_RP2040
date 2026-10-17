@@ -1,0 +1,12 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.2.0",
+  "description": "PARTIALLY ROUTED 28 mm all-top controller: checked crystal/short USB escapes, six A4 schematics and native motor/carrier 3D; 58 nets remain open; DO NOT FABRICATE",
+  "main": "index.circuit.json",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040.git"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.2.0",
+  "scope": "Validated 28 mm all-top placement, schematic, native 3D, crystal and short MCU USB escapes ONLY",
+  "source_milestone_commit": "71901115cc1fbc4a95f30f2313225f9cb1812449",
+  "circuit_sha256": "e3264c00bf739782a6bc7dadceb5b9a8d69e69bd731c4a3d24d979bb447ba49c",
+  "source_components": 94,
+  "electrical_components": 92,
+  "physical_ports": 340,
+  "native_models": 84,
+  "schematic_sheets": 6,
+  "disconnected_controller_nets": 58,
+  "native_port_connectivity_findings": 270,
+  "native_DRC_pass": false,
+  "full_controller_routing_complete": false,
+  "registry_published": false,
+  "manufacturing_release": false
+}

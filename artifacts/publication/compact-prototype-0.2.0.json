@@ -1,0 +1,74 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.2.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "b6347fc7-d50b-4280-b616-9f14c7143d4c",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 1,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2876,
+      "sha256": "fbbd0e36c70824ca4c00e79ad5daf7f84211c06b6dab0cc6ec594a5e731f06ad",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 4176739,
+      "sha256": "c5eb3093646da0d3300874142029384947106cd5cc4726bc242685670c49efcd",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 2197585,
+      "sha256": "e3264c00bf739782a6bc7dadceb5b9a8d69e69bd731c4a3d24d979bb447ba49c",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 989,
+      "sha256": "db7dc4cb56985b13e2626fecd8090ca504f319be7c759a32324f763d97c54281",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 712,
+      "sha256": "f0a3cff98704d2e0bf4792b8df9815282293c9c7c010a9dc63cc1c5719a58e99",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 445,
+      "sha256": "b2a6b0fd9f7ac938c86119da3e797d87d86d8a2365857a30b7597c26c7372a72",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "additional_registry_generated_files": [
+    "dist/index.html",
+    "dist/index/3d.png",
+    "dist/index/pcb.svg",
+    "dist/index/schematic.svg"
+  ],
+  "source_milestone_commit": "71901115cc1fbc4a95f30f2313225f9cb1812449",
+  "scope": "Validated 28 mm all-top placement, schematic, native 3D, crystal and short MCU USB escapes ONLY",
+  "ready_to_build": true,
+  "physical_routing_complete": false,
+  "manufacturing_release": false,
+  "disconnected_controller_nets": 58,
+  "native_DRC_pass": false,
+  "native_CLI_upload_diagnosis": {
+    "archive_request_timed_out": true,
+    "CLI_fallback_duplicate_key_errors": true,
+    "all_seven_uploaded_files_independently_downloaded_and_identical": true,
+    "authentication_failure_observed": false
+  }
+}
