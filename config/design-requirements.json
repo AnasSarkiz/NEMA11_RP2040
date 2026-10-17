@@ -79,7 +79,9 @@
     "solder_mask_color": "green",
     "surface_finish": "ENIG",
     "via_process": "IPC-4761 Type VII epoxy filled and copper capped; apply only to 0.30 mm via drills, not component holes",
-    "inner_copper_selection_required": true
+    "inner_copper_selection_required": true,
+    "native_outline_geometry_verified": true,
+    "factory_stackup_process_approved": false
   },
   "required_features": [
     "RP2040 and all supply rails/decoupling",
@@ -111,9 +113,9 @@
     "separate_package": "AnasSarkiz/NEMA11_RP2040_MCU_Prototype",
     "status": "MCU_subsystem_0.1.0_registry_files_verified",
     "only_validated_milestones": true,
-    "full_controller_published": false,
+    "full_controller_published": true,
     "controller_source_package": "AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
-    "controller_source_version": "0.1.0",
+    "controller_source_version": "0.2.0",
     "controller_source_registry_files_verified": true
   }
 }

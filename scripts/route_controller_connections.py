@@ -97,6 +97,14 @@ def masks(records, copper, key, widths_by_layer, layers):
         bottom=math.ceil(margin/STEP);top=math.floor((40-margin)/STEP)
         d.rectangle([0,0,left,N-1],fill=1);d.rectangle([right,0,N-1,N-1],fill=1)
         d.rectangle([0,0,N-1,bottom],fill=1);d.rectangle([0,top,N-1,N-1],fill=1)
+    if copper.nets[key] in PHASE and 'inner1' in layers:
+        # The corrected USB locator blocks inherited phase copper. Permit a
+        # bounded repair on inner1 only in the driver area, far from the MCU
+        # USB/clock reference. Final plane coverage is checked independently.
+        d=wire_draws[layers.index('inner1')]
+        left,bottom=xy(-4,-17.1);right,top=xy(9,-8.5)
+        d.rectangle([0,0,left,N-1],fill=1);d.rectangle([right,0,N-1,N-1],fill=1)
+        d.rectangle([0,0,N-1,bottom],fill=1);d.rectangle([0,top,N-1,N-1],fill=1)
     for d in via_draws:
         margin=.25+.25+.018
         left=math.ceil(margin/STEP);right=math.floor((35-margin)/STEP)
@@ -147,7 +155,7 @@ def connect(records, name, attempt):
         parts={copper.names[copper.source[copper.ports[e['pcb_port_id']]['source_port_id']]['source_component_id']] for e in islands[root]}
         return (0 if parts=={'J_MOTOR'} else 1,len(islands[root]),root)
     startroot=min(islands,key=choice)
-    layers=['top','bottom'] if name=='PD_VBUS' else ['top','bottom','inner2'] if name=='LOGIC_IN' or name in PHASE else LAYOUT
+    layers=['top','bottom'] if name=='PD_VBUS' else ['top','bottom','inner2'] if name=='LOGIC_IN' else LAYOUT
     w=widths(name)
     wire,vias=masks(records,copper,key,w,layers)
     def width_at(node):
@@ -230,7 +238,7 @@ if __name__=='__main__':
     records=[e for e in json.loads(source.read_text()) if e['type']!='pcb_copper_pour']
     history_path=OUT/'connection-construction.json'
     history=[] if args.restart or not history_path.exists() else json.loads(history_path.read_text())
-    order=['STATUS_B_C','STATUS_B_K','A_PLUS','B_PLUS','A_MINUS','B_MINUS','PD_VBUS','LOGIC_IN','DATA_VBUS','PD_CC1','PD_CC2']
+    order=['STATUS_B_C','STATUS_B_K','A_PLUS','B_PLUS','A_MINUS','B_MINUS','DIR','STEP','PD_VBUS','LOGIC_IN','DATA_VBUS','PD_CC1','PD_CC2']
     for name in order:
         if args.net and name!=args.net:continue
         for attempt in range(40):

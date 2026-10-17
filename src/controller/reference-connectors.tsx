@@ -9,11 +9,19 @@ import { BM04B_SRSS_TB_LF__SN_ } from "../../imports/supplier/BM04B_SRSS_TB_LF__
 function footprint(element: any, commonPin: string, firstPin: number) {
   let terminal = firstPin
   const fp = element.props.footprint as ReactElement<any>
-  return cloneElement(fp, { insertionDirection: "from_above" }, Children.map(fp.props.children, child => {
+  const children=Children.toArray(Children.map(fp.props.children, child => {
     const pad = child as ReactElement<any>
     if (!pad.props.portHints?.includes(commonPin)) return pad
     return cloneElement(pad, { portHints: [`pin${terminal++}`] })
   }))
+  if(commonPin === "pin17") {
+    // GCT USB4145 A2 sheet 2 requires two 0.71 mm locating holes on an
+    // 8.00 mm pattern. The original supplier import omitted the right hole.
+    // Preserve every imported pad/model and add that verified missing NPTH.
+    children.push(cloneElement(<hole pcbX="4.1524872mm"
+      pcbY="0.000127mm" diameter="0.7099808mm" />, {key:"manufacturer_right_locator"}))
+  }
+  return cloneElement(fp, { insertionDirection: "from_above" }, children)
 }
 
 const usb = USB4145_03_0070_C({ name: "USB" })

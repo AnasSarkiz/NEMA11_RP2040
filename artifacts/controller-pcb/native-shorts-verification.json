@@ -1,0 +1,10 @@
+{
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "tool": "Native tsci check shorts",
+  "mode": "gerber",
+  "layer": "all",
+  "pixels_per_mm": 100,
+  "exit_code": 0,
+  "passed": true,
+  "manufacturing_release": false
+}

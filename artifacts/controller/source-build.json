@@ -1,6 +1,6 @@
 {
   "scope": "Full electrical source development candidate; copper, motor mounting and manufacturing not released",
-  "circuit_sha256": "70bbc04ca291347b6789b5823050f1749838e55a43d25300b708ac6b8011ffe3",
+  "circuit_sha256": "4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144",
   "source_components": 92,
   "source_ports": 341,
   "pcb_traces": 0,
@@ -13,6 +13,16 @@
   "schema_errors": [],
   "missing_supplier_models": [],
   "cad_pose_corrections": [
+    {
+      "component": "J_PD",
+      "global_z_mm": 0.05,
+      "reason": "GCT SMT contact datum and nominal 7.46 mm body height"
+    },
+    {
+      "component": "J_DATA",
+      "global_z_mm": 0.05,
+      "reason": "GCT SMT contact datum and nominal 7.46 mm body height"
+    },
     {
       "component": "J_MOTOR",
       "local_y_mm": 0.5500383,

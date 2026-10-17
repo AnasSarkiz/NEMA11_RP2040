@@ -52,26 +52,59 @@ for a, b in itertools.combinations(parts, 2):
             errors.append({'a': a, 'b': b, 'solid_collision_mm3': volume})
 
 alignments = []
-slab = cq.Workplane('XY').box(100, 100, .2).val()
 for name in ['J_MOTOR', 'J_PD', 'J_DATA']:
     cad = next(e for e in records if e['type'] == 'cad_component' and names[e['source_component_id']] == name)
     holes = [e for e in records if e['type'] == 'pcb_plated_hole' and e['pcb_component_id'] == cad['pcb_component_id']]
+    z=.4 if name in ['J_PD','J_DATA'] else 0
+    slab=cq.Workplane('XY').box(100,100,.2).translate((0,0,z)).val()
+    if name in ['J_PD','J_DATA']:
+        holes += [e for e in records if e['type']=='pcb_hole' and e.get('pcb_component_id')==cad['pcb_component_id']]
     leads = [s.Center().toTuple()[:2] for s in parts[name].intersect(slab).Solids()]
-    assert len(leads) == len(holes) == 4, (name, leads)
+    assert len(leads) == len(holes) == (6 if name in ['J_PD','J_DATA'] else 4), (name, leads)
     assignments = []
     for xy in leads:
         hole = min(holes, key=lambda h: math.dist(xy, (h['x'], h['y'])))
         error = math.dist(xy, (hole['x'], hole['y']))
-        assignments.append({'hole': hole['pcb_plated_hole_id'], 'lead_xy_mm': xy, 'centre_error_mm': error})
+        assignments.append({'hole': hole[hole['type']+'_id'], 'lead_xy_mm': xy, 'centre_error_mm': error})
         if error > .05:
             errors.append({'part': name, 'lead_to_hole_error_mm': error})
-    assert len({e['hole'] for e in assignments}) == 4
-    alignments.append({'part': name, 'section_z_mm': [-.1, .1], 'leads': assignments})
+    assert len({e['hole'] for e in assignments}) == len(holes)
+    alignments.append({'part': name, 'section_z_mm': [z-.1,z+.1], 'leads_and_locating_pegs': assignments})
+
+# Include the actual PCB material, not just component-to-component collisions.
+# The original GCT import omitted a locating hole and would otherwise appear
+# collision-free despite its plastic peg intersecting the laminate.
+board = next(e for e in records if e['type']=='pcb_board')
+outline = [(p['x'],p['y']) for p in board['outline']]
+laminate = cq.Workplane('XY').polyline(outline).close().extrude(1.56).translate((0,0,-.78)).val()
+for e in records:
+    if e['type'] not in ['pcb_hole','pcb_plated_hole']:
+        continue
+    diameter=e.get('hole_diameter')
+    if diameter:
+        tool=cq.Solid.makeCylinder(diameter/2,3,cq.Vector(e['x'],e['y'],-1.5))
+    else:
+        w,h=e['hole_width'],e['hole_height']
+        angle=(90 if h>w else 0)+e.get('ccw_rotation',0)
+        tool=cq.Workplane('XY').slot2D(max(w,h),min(w,h),angle).extrude(3).translate((e['x'],e['y'],-1.5)).val()
+    laminate=laminate.cut(tool)
+PCB_intersections=[]
+for name,shape in parts.items():
+    if bounds[name][2] >= .78:
+        continue
+    volume=max(0,shape.intersect(laminate).Volume())
+    PCB_intersections.append({'part':name,'laminate_interference_mm3':volume})
+    if volume>1e-5:
+        errors.append({'part':name,'PCB_laminate_interference_mm3':volume})
 
 report = {'scope': '82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware',
           'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
           'parts': rows, 'nearby_pairs': pairs, 'connector_lead_sections': alignments,
+          'PCB_material_intersections':PCB_intersections,
+          'PCB_surface_CAD_allowance_mm':.02,
           'errors': errors, 'manufacturer_tolerances_verified': False,
+          'nominal_solid_and_lead_fit_pass':not any('invalid_original_supplier_STEP' not in e for e in errors),
+          'all_original_supplier_STEP_valid':not any('invalid_original_supplier_STEP' in e for e in errors),
           'physical_assembly_tested': False, 'manufacturing_release': False}
 (ROOT / 'artifacts/controller/nominal-assembly-audit.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({'supplier_solids': len(parts), 'connector_lead_rows_checked': 3, 'errors': errors}))

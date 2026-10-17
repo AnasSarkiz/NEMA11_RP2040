@@ -1,6 +1,6 @@
 {
   "name": "NEMA11_RP2040",
-  "version": "0.1.0-dev",
+  "version": "0.3.0-dev",
   "private": true,
   "type": "module",
   "description": "NEMA11 controller development; subsystem milestones are not a fabrication release",
@@ -24,7 +24,10 @@
     "controller:build": "bun scripts/build-controller.tsx",
     "controller:check": "python3 scripts/verify_controller.py",
     "controller:3d": "bun scripts/export-core-3d.tsx --controller",
-    "controller:schematic": "bun scripts/schematic-controller.tsx && python3 scripts/verify_controller_schematic.py"
+    "controller:schematic": "bun scripts/schematic-controller.tsx && python3 scripts/verify_controller_schematic.py",
+    "controller:pcb": "/workspace/.venvs/nema11-cad/bin/python scripts/build_controller_pcb.py --check",
+    "controller:assembly": "bun scripts/build-controller-assembly.tsx --pcb && bun scripts/export-core-3d.tsx --assembly && /workspace/.venvs/nema11-cad/bin/python scripts/verify_controller_3d.py",
+    "controller:dev": "tsci dev artifacts/controller/assembly.circuit.json"
   },
-  "main": "prototypes/rp2040-core/index.circuit.json"
+  "main": "artifacts/controller/assembly.circuit.json"
 }

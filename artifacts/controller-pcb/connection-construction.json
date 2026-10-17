@@ -162,5 +162,63 @@
     "expanded": 45886,
     "physical_islands_before": 2,
     "physical_islands_after": 1
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_0_next_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 2904,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DIR",
+    "trace_ids": [
+      "controller_connection_DIR_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 218645,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "A_MINUS",
+    "trace_ids": [
+      "controller_connection_A_MINUS_0_next_section_0",
+      "controller_connection_A_MINUS_0_next_section_1"
+    ],
+    "added_vias": 1,
+    "expanded": 3556344,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "B_MINUS",
+    "trace_ids": [
+      "controller_connection_B_MINUS_0_next_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 1354,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DIR",
+    "trace_ids": [
+      "controller_connection_DIR_0_section_0",
+      "controller_connection_DIR_0_section_1",
+      "controller_connection_DIR_0_section_2",
+      "controller_connection_DIR_0_section_3",
+      "controller_connection_DIR_0_section_4",
+      "controller_connection_DIR_0_section_5",
+      "controller_connection_DIR_0_section_6",
+      "controller_connection_DIR_0_section_7"
+    ],
+    "added_vias": 7,
+    "expanded": 4480155,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
   }
 ]

@@ -6,8 +6,10 @@ The NEMA14 repository is a read-only reference.
 
 **Current milestone: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.
-A manufacturer drawing exposed missing USB locating holes; that correction and
-renewed validation are in progress. This is not a fabrication release.**
+Both manufacturer-required USB locating-hole corrections are complete. Independent
+copper/connectivity, clock, USB ground-reference, shorts and CAM checks pass.
+This is not a fabrication release; [remaining requirements](docs/manufacturing-requirements.md)
+include factory process/stackup acceptance, harness termination and physical qualification.**
 
 Native CLI authentication now succeeds. The [separate MCU prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_MCU_Prototype)
 is published, and the exact NEMA14 v1.13.0 plus original motor drawing/STEP have
@@ -21,9 +23,11 @@ source, higher-power sense resistors and six schematics; its PCB is unrouted.
 
 - [Design requirements](config/design-requirements.json)
 - [Full controller PCB development and manufacturing blockers](docs/full-controller-pcb.md)
+- [Factory process, harness and first-article requirements](docs/manufacturing-requirements.md)
 - [Full controller source, parity and assembly findings](docs/full-controller.md)
+- [Exact Gerber/BOM/CPL development review archive](artifacts/controller-pcb/manufacturing-review.zip)
 - [Full controller six-page A4 schematic PDF](artifacts/controller/schematic-a4.pdf)
-- [Full controller native PCB 3D review](artifacts/controller/development-controller.glb)
+- [Full controller native PCB 3D review](artifacts/controller-pcb/development-pcb.glb)
 - [Native PCB and OEM motor clearance arrangement](artifacts/controller/development-assembly.glb)
 - [RP2040 subsystem source and verification](docs/rp2040-core.md)
 - [Routed subsystem PCB, native 3D and checks](docs/rp2040-pcb.md)
@@ -31,7 +35,8 @@ source, higher-power sense resistors and six schematics; its PCB is unrouted.
 - [Subsystem A4 schematic PDF](artifacts/rp2040-core/schematic-a4.pdf)
 - [Engineering review and attachment constraints](docs/design-review.md)
 - [Validation and release plan](docs/validation-plan.md)
-- [Preliminary current/thermal calculation](artifacts/requirements/current-budget.json)
+- [Current-limit corner calculation](artifacts/requirements/current-budget.json)
+- [Routed sense resistance, thermal and regeneration estimates](artifacts/requirements/routed-electrical-budget.json)
 - [Observed v1.12.0 component/pin inventory](artifacts/requirements/reference-1.12-inspection.json)
 
 Run the current milestone checks with:

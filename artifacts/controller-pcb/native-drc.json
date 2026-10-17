@@ -1,7 +1,7 @@
 {
   "scope": "Full 92-component controller native DRC",
   "tool": "@tscircuit/checks",
-  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
   "strict_schema_pass": true,
   "reviewed_thermal_vias": [
     "controller_thermal_via_U_MCU",

@@ -6,30 +6,30 @@
     {
       "layer": "top",
       "source": "artifacts/controller-pcb/review-cam/F_Cu.gbr",
-      "source_sha256": "a70c287b184dd0a3f25b61daa961ec940e2b671e66fb2a0d2b958354fa8bc357",
+      "source_sha256": "2d7fd9ceac6279328c7018aebb42d0b3fe6f4405166127bee2cd9dcc8d21de30",
       "render": "artifacts/controller-pcb/independent-cam-top.png",
-      "render_sha256": "7ff5d866bab8611af6fa323fe19ce59dd73b04c2036383f126ccb4d07fe31daa"
+      "render_sha256": "8f28475f78829a09c2b159a69885743d9ac00af416d1d1a65d751b42087b858c"
     },
     {
       "layer": "inner1",
       "source": "artifacts/controller-pcb/review-cam/In1_Cu.gbr",
-      "source_sha256": "e5b73f481461e477e2abac4bbc23d7da6d7633ad3c512e55beef01ee78c7ffe6",
+      "source_sha256": "7e4f14864e9f564f92c58f06e14e2399b7edf668b76ebaf1e0cfccfc678c47ae",
       "render": "artifacts/controller-pcb/independent-cam-inner1.png",
-      "render_sha256": "88692788d88d42d2e1fe670c8622354862846530e44a0642b78e6243fbc6c42e"
+      "render_sha256": "62201be71418ee78ab55679bc7bc339814ee695d54ac14a1f4861061cda811cd"
     },
     {
       "layer": "inner2",
       "source": "artifacts/controller-pcb/review-cam/In2_Cu.gbr",
-      "source_sha256": "fab8ace3ba6666359a8b2adea89b4f2203e69b5c6eb9731a7ad8d9d710cdff90",
+      "source_sha256": "03366632116037dddaa1b9389d125d9152bdde6ec1d051854bed3f0e8d9a3188",
       "render": "artifacts/controller-pcb/independent-cam-inner2.png",
-      "render_sha256": "cb48d756b5371f10042ee4ba8005750df538ac54af7d8abc971690c2218d20aa"
+      "render_sha256": "3e808c7f981ebdb5d2db07fe6e90124d4a69fef2503dfb6778d1d71b50b2b5e6"
     },
     {
       "layer": "bottom",
       "source": "artifacts/controller-pcb/review-cam/B_Cu.gbr",
-      "source_sha256": "7e986d0f6c72bea060e9f3c1b3450aeb9db8bbd2c29f27af4366df2849927ca8",
+      "source_sha256": "12f772719a4f4d73ac65946fda7ab6938b676d375bfe0a0eac64a1f4a8b26fea",
       "render": "artifacts/controller-pcb/independent-cam-bottom.png",
-      "render_sha256": "25db0e485ed73eb1654719702ecfd38526b01869932a031d71c2b02a53eb65b8"
+      "render_sha256": "1e04a4ad9f9f3228724dbbec82bc8747b8235d00db872bee8bb55fd3b84474df"
     }
   ],
   "render_scope": "Four individual copper layers before drill subtraction; not a complete assembly rendering",

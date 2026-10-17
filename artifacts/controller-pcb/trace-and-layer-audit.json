@@ -1,0 +1,5555 @@
+{
+  "scope": "All native trace segments and bounded layer policy; 1 oz copper required on every layer",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "traces_checked": 554,
+  "total_inner1_phase_length_mm": 10.53829695312159,
+  "largest_inner1_ground_region_mm2": 856.6069028670646,
+  "logic_and_DATA_VBUS_continuous_input_budget_A": 0.5,
+  "PD_shared_design_budget_A": 1.1,
+  "PD_aux_neck_thermal_assumptions": "4.60 mm total, 0.20 x 0.035 mm copper, 400 W/mK; 1.1 A end-cooled 1-D screen gives approximately 2.8 C above the two boundary temperatures, excluding via/end heating. Boundary temperatures require hardware qualification.",
+  "traces": [
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_148_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8517000000000001
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_175_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9767000000000001
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_180_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.711084
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_196_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.5017
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_200_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9767000000000001
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_363_run_0_run_0_via_clearance_run_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8517000000000001
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_367_run_0_run_0_via_clearance_run_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9500000000000002
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_431_run_0_run_0_via_clearance_run_0",
+      "net": "STATUS_G_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 5.983499999999999
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_feedback_fanout_pcb_port_128_run_0_run_0_via_clearance_run_0",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3474215070974853
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_feedback_fanout_pcb_port_288_run_0_run_0_via_clearance_run_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.1497998759545074
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_16_V3V3_0_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.25
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_20_V3V3_4_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3621320343559633
+      }
+    },
+    {
+      "trace": "controller_review_baseline_feedback_ground_escape_pcb_port_111_run_0_via_clearance_run_0",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.22988399999999842
+      }
+    },
+    {
+      "trace": "controller_review_baseline_same_side_repair_1_LED_R_0_layer_section_0_run_0_via_clearance_run_0",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.5081547084174725
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_51_V3V3_16",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.5271935414059334
+      }
+    },
+    {
+      "trace": "controller_oscillator_XIN",
+      "net": "XIN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.237065601900277
+      }
+    },
+    {
+      "trace": "controller_oscillator_load_XIN",
+      "net": "XIN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4060261525323776
+      }
+    },
+    {
+      "trace": "controller_oscillator_XOUT",
+      "net": "XOUT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.79511571247462
+      }
+    },
+    {
+      "trace": "controller_oscillator_XTAL_OUT",
+      "net": "XTAL_OUT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4653446143092077
+      }
+    },
+    {
+      "trace": "controller_oscillator_load_XOUT",
+      "net": "XTAL_OUT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.209945264593403
+      }
+    },
+    {
+      "trace": "controller_oscillator_ground_Y_MCU_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0200740000000001
+      }
+    },
+    {
+      "trace": "controller_oscillator_ground_Y_MCU_pin4",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0000740000000006
+      }
+    },
+    {
+      "trace": "controller_oscillator_ground_C_XIN_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.779884
+      }
+    },
+    {
+      "trace": "controller_oscillator_ground_C_XOUT_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7298839999999993
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_11_V3V3_4",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.29999999999999805
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_freerouted_trace_352_run_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5017000000000005
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_freerouted_trace_355_run_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8517000000000001
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_feedback_fanout_pcb_port_181_run_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7610517461099471
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_feedback_fanout_pcb_port_186_run_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.1305902411417672
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_feedback_fanout_pcb_port_182_run_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2034621153725618
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_7_PD_VBUS_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.6389087296526013
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_REF",
+      "net": "VREF",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6249050997023469
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_VREG",
+      "net": "VREG",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9334524380904672
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_SENSE2",
+      "net": "SENSE2",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.7001054423399367
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_OUT2A",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.787237241362822
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_MS1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3907365235874856
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_DIR",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.624905132539332
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_14_VCP_0_layer_section_0",
+      "net": "VCP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8253048327204935
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_SENSE1",
+      "net": "SENSE1",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.6251054297588523
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_VDD",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3238870139323289
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_A_PLUS_0",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 1.10606601717798
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO27",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.1699091096448548
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO25",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7250640038789676
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_STATUS_B_NEG",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.44991449714918064
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_IO22_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.4298839999999995
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_DV23_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.4501085351956794
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_DV50_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.4259415235170198
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_GND",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3351005692349137
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_PWR_cathode",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5863708085917522
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_driver_mode_MS1_MS2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5003799999999998
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_driver_mode_MS2_MS3",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5003800000000003
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_driver_mode_MS3_RESET_N",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5003800000000003
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_TESTEN_ground_tie",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.9551931000000002
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_11_VREF_0",
+      "net": "VREF",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.6960155108391484
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_12_VREF_1",
+      "net": "VREF",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8285533905932727
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_14_VCP_0",
+      "net": "VCP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3267766952966365
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_15_VREG_0",
+      "net": "VREG",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6750000000000007
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_PD_VBUS_0_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.32500000000000107
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_PD_VBUS_0_layer_section_2",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.6724873734152903
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_6_PD_VBUS_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "High-impedance VM monitor and TVS pulse branch; transient screen is separate",
+      "lengths_mm": {
+        "top": 8.67205627484771
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_7_PD_VBUS_2",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 1.0499999999999998
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_PD_VBUS_3_layer_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.3207106781186563
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_9_V3V3_0_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.28535533905932864
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_9_V3V3_0_layer_section_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.385355339059327
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_11_LOGIC_IN_0_layer_section_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3250000000000006
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_15_DATA_VBUS_1_layer_section_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.01066017177982
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_15_DATA_VBUS_1_layer_section_2",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8210155108391475
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_21_PD_VDD_2_layer_section_2",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.31213203435596565
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_31_A_MINUS_0_layer_section_0",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.3353553390593261
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_34_BUZZER_GATE_0",
+      "net": "BUZZER_GATE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.18535533905933
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_36_BUZZER_SINK_0",
+      "net": "BUZZER_SINK",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3035533905932746
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_CP1",
+      "net": "CP1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.677496311010006
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_CP2",
+      "net": "CP2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.490341999999999
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_USB_SENSE_L_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5300044998450478
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_VM_H_pin1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.5351387201987876
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_VBB1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.3988870138197051
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_VM_pin1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.6232096042388131
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_BULK_pin1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.8600586970108488
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_ADC_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5048839999999997
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_BUCK_OUT1_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9350000000021405
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_REF_H_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6466360000000009
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_ENABLE_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.515144105912123
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_TEMP_V_POS",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5500142146623473
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_TEMP_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.2200107985768196
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_TEMP_SDA_pin2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5150046309073343
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_TEMP_SCL_pin2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.53000748094343
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_BUZZER_cathode",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.44501597448751595
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_BUZZER_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6450535176060956
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_J_DATA_CC2",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.361737936589414
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_ENABLE_N",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.586503166172863
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_SLEEP",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.39888701131273036
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_VM_H_pin2",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5350074110290401
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_VM_L_pin1",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5322074875985824
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_SA_pin1",
+      "net": "SENSE1",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.8260076851966942
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_RUN_pin2",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5150046309073352
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_TP_RUN_pin1",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5196953551523487
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_TP_SWCLK_pin1",
+      "net": "SWCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5199819100529437
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_RUN_1_layer_section_0",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 11.542945519839783
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_6_SWCLK_0_layer_section_2",
+      "net": "SWCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.4455844122715726
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_20_PD_VBUS_2_layer_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.32500000000000107
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_22_PD_VBUS_4",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 8.791904755831206
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_23_V3V3_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7553300858899104
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_26_LOGIC_IN_0_layer_section_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.848528137423854
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_26_LOGIC_IN_0_layer_section_4",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.118807716974938
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_35_BUZZER_SINK_0_layer_section_0",
+      "net": "BUZZER_SINK",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.6967514421272218
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_35_BUZZER_SINK_0_layer_section_2",
+      "net": "BUZZER_SINK",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.32500000000000107
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_IO42_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.192332180423382
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_SB_pin1",
+      "net": "SENSE2",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.9315359267623552
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_OUT2B",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.1100048311083335
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_DV23_pin1",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.4998839999999989
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_STATUS_R_NEG",
+      "net": "STATUS_R_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5099522309172522
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_DRV_LOGIC_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9963437660168384
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_DRV_STEP",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.0708237186829628
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.45784271247462
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_V3V3_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.38535533905932573
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_V3V3_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5949747468305843
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_V3V3_3",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.6553300858899076
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_4_V3V3_4",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3853553390593279
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_6_V3V3_6",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5853553390593278
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_V3V3_8",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0553593239036099
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_10_V3V3_10",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.350304832720496
+      }
+    },
+    {
+      "trace": "controller_usb_cc_escape_J_DATA_CC2",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2519285132546139
+      }
+    },
+    {
+      "trace": "controller_usb_power_escape_J_PD_VBUS4",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 1.7906378418540523
+      }
+    },
+    {
+      "trace": "controller_usb_power_escape_J_DATA_VBUS1",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.7558934770701877
+      }
+    },
+    {
+      "trace": "controller_usb_power_escape_J_DATA_VBUS2",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.7558934770701884
+      }
+    },
+    {
+      "trace": "controller_usb_power_escape_J_DATA_VBUS3",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8265617511446146
+      }
+    },
+    {
+      "trace": "controller_usb_power_escape_J_DATA_VBUS4",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.840637841854055
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LOGIC_IN_0_layer_section_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.151040764008566
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.32499999999999973
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_J_MOTOR_B_MINUS",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.7450048000016267
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_TEMP_ADD0",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.400001000252049
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO10",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.53897273007255
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_series_to_MCU_MCU_DP",
+      "net": "MCU_DP",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.065493781459976
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_series_to_MCU_MCU_DM",
+      "net": "MCU_DM",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.1309677497738737
+      }
+    },
+    {
+      "trace": "controller_usb_fan_ESD_IO_link_USB_DP",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.2981920000000002
+      }
+    },
+    {
+      "trace": "controller_usb_fan_ESD_IO_link_USB_DM",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.2981920000000002
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_input_USB_DP",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7212251156406313
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_input_USB_DM",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7000267124746193
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_output_MCU_DP",
+      "net": "MCU_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.44457918223494663
+      }
+    },
+    {
+      "trace": "controller_usb_fan_MCU_MCU_DP",
+      "net": "MCU_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6199969535201623
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_output_MCU_DM",
+      "net": "MCU_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.455024076973772
+      }
+    },
+    {
+      "trace": "controller_usb_fan_MCU_MCU_DM",
+      "net": "MCU_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6200429661795026
+      }
+    },
+    {
+      "trace": "controller_usb_escape_VREG_OUT",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8250630000000001
+      }
+    },
+    {
+      "trace": "controller_usb_lower_DP1",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0961790104222002
+      }
+    },
+    {
+      "trace": "controller_usb_lower_DM1",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0961790104222002
+      }
+    },
+    {
+      "trace": "controller_usb_lower_mirrored_DM2",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.120020134521786
+      }
+    },
+    {
+      "trace": "controller_usb_lower_mirrored_DP2",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8299949999999985
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_IOVDD49",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7993271033773655
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_VREG_IN",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.0999621672673543
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_IOVDD22",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2621950393099548
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_IOVDD10",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.0242000845624317
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_ENCODER_VDD3V3",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.5765026168520351
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_PD_pin2",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6534405225389682
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_J_DATA_CC1",
+      "net": "DATA_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.070687241070531
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_CC2_pin1",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.617132354859538
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_ENABLE_pin2",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5150076988317753
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_USB_SENSE_L_pin1",
+      "net": "DATA_PRESENT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5322074875985855
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO28",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 6.989582395894446
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_FLASH_CS_pin1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5421839999999998
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO7",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.1579067139745662
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_DV50_pin1",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4671060161895357
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SCLK",
+      "net": "QSPI_SCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7456476781216201
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_CLK",
+      "net": "QSPI_SCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.1384814805896506
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_IO3",
+      "net": "QSPI_SD3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8831525257708446
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_BOOT_pin2",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.2528290000000002
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_TP_BOOT_pin1",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7934523153818043
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_PWR_LED_pin2",
+      "net": "PWR_LED_A",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5150076988317736
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO26",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7811300287509604
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_TEMP_SDA",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.11999970008506569
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_TEMP_SDA_pin1",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.5321799937894949
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_TEMP_SCL_pin1",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.530140028535858
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_ENCODER_SCL",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.7265958730061388
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_BUZZER_GATE_pin2",
+      "net": "BUZZER_GATE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5200045863797738
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_Q_STATUS_R_pin2",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.42004336627161654
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_Q_STATUS_G_pin2",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6000140013333012
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_STATUS_G_NEG",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.2658572846402262
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SD3",
+      "net": "QSPI_SD3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0173587731822997
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_DVDD50",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.161440592373209
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_ENCODER_VDD5V",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.3149
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_DVDD23",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.6407851968915703
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_SWCLK",
+      "net": "SWCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0407498391645684
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_RUN",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0183713793053526
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_20_LED_R_0_layer_section_1",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3517766952966399
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_30_V3V3_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.3103553390593303
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_31_V3V3_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.6907494299917687
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_32_V3V3_3",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9224873734152891
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_34_V3V3_5_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.9134776310850237
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_34_V3V3_5_layer_section_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.32500000000000107
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_37_V3V3_8",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 5.557106781186546
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_39_V3V3_10",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.7750000000000001
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_40_V3V3_11",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.335355339059327
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_42_V3V3_13",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.159679791074125
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_44_V3V3_15",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4095554244143853
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_67_BUZZER_GATE_0_layer_section_1",
+      "net": "BUZZER_GATE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.31035533905932644
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO8",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.3807197591141827
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO9",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.37574942517964
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_5",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 0.34571067811865364
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_14_STATUS_R_C_0_layer_section_0",
+      "net": "STATUS_R_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.1199747468305823
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_IO1_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5250227170856536
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_IO42_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.7268283696696491
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_BUCK_IN_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2100637406351773
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_BUZZER_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8074737448659994
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_driver_logic_ground_to_reference_capacitor",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3340975129397388
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 5.498832970144352
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO16",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.875297129667977
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_V3V3_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.710355339059328
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_V3V3_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.7828427124746213
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_VREG_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.819344117090007
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SD0",
+      "net": "QSPI_SD0",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.247846063957769
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_rerouted",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.19142135623731033
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_V3V3_1_rerouted",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.7417261889578035
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_217_run_0_run_0_via_clearance_run_0",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.25090000000000057
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_222_run_0_run_0_via_clearance_run_0",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.2507999999999999
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SS",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3950055014112673
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_CS",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3151907575644646
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SS_0_rerouted_layer_section_1",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.5563708498984794
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_FLASH_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9407649154067945
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_STATUS_G_pin1",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5769801901161661
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_STATUS_G_pin2",
+      "net": "STATUS_G_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5354164251838145
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUCK_SW_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.33705533905932655
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.46035533905932896
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_IO1",
+      "net": "QSPI_SD1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.759889275537956
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SD1",
+      "net": "QSPI_SD1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.1859481460529153
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_VM_SENSE_0",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.7406854249492356
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_TP_SWDIO_pin1",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7300171230868492
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_SWDIO",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8815202835751585
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_IOVDD1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9914521617995495
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_ENCODER_SDA",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.1807752507712825
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO6",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.036041223408062
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_GPIO3",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8983437126277064
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_C_IO10_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5048840000000014
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_K_0_rerouted_rerouted",
+      "net": "STATUS_R_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 6.3717514421272226
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_IO2",
+      "net": "QSPI_SD2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7938066565582396
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_top_capacitor_power_bus_C_IO1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.004884
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_top_capacitor_power_bus_C_IO49",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7548840000000006
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_MCU_QSPI_SD2",
+      "net": "QSPI_SD2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9055330525458911
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_VBUS_0_layer_section_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7749999999999995
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_GOOD_0_rerouted_layer_section_0",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.7588834764831813
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_IO0",
+      "net": "QSPI_SD0",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6992029004809968
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_C_0_layer_section_2",
+      "net": "STATUS_B_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7103553390593311
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_FLASH_EP",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.4569076440349447
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC1_0_layer_section_3",
+      "net": "DATA_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.7652543263816605
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_D_PWR_anode",
+      "net": "PWR_LED_A",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7258113478578443
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_layer_section_5",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.3103553390593271
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_PRESENT_0_rerouted_rerouted",
+      "net": "DATA_PRESENT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.254594154601839
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_USB_SENSE_H_pin1",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.7810927296526016
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_VBUS_0_rerouted_rerouted_layer_section_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 11.920857247327945
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_VBUS_0_layer_section_2",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.2,
+      "load_role": "Short external PD auxiliary neck; bounded end-cooled thermal screen",
+      "lengths_mm": {
+        "top": 1.548528137423859
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC1_0_layer_section_4",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.1510407640085647
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_SLEEP_pin1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4496609554430302
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_rerouted_layer_section_2",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8656854249492376
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_U_PD_CC2",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.030209398273964
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SCL_0_layer_section_0",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.31642135623730794
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_GOOD_0",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 6.246320343559643
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_C_0_rerouted_layer_section_1",
+      "net": "STATUS_R_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.997056274847714
+      }
+    },
+    {
+      "trace": "controller_reviewed_native_ADC_AVDD_pad_contact",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.09999999999999964
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_R_BUZZER_PD_pin2",
+      "net": "GND",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5250581775917774
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_0",
+      "net": "STATUS_B_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.9742640687119275
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_PRESENT_0_layer_section_0",
+      "net": "DATA_PRESENT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.4974873734152891
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_0",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.43535533905932716
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_C_0_rerouted_layer_section_0",
+      "net": "STATUS_R_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 7.349873734152914
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_111_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.4745
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_181_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.5878512960013307
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_5_V3V3_3_layer_section_2_run_0_run_0_via_clearance_run_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.49115925372595287
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_7_PD_VBUS_3_run_0_run_0_via_clearance_run_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 7.766292805208681
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_6_LOGIC_IN_0_layer_section_0_run_0_run_0_via_clearance_run_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.095164608793163
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_same_side_repair_6_LOGIC_IN_0_layer_section_1_run_0_run_0_via_clearance_run_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.9616212195774025
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_83_STATUS_G_C_1_layer_section_1",
+      "net": "STATUS_G_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9250429355744781
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_freerouted_trace_349_run_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.5745923373939968
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_freerouted_trace_356_run_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6134444876303172
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_same_side_repair_14_BUCK_BST_0_layer_section_1_run_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.10084379832295898
+      }
+    },
+    {
+      "trace": "controller_reviewed_local_critical_review_baseline_same_side_repair_25_BUCK_SW_0_run_0",
+      "net": "BUCK_SW",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.912310601229373
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_BUCK_BST_0_layer_section_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 1.5817411427955435
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_BUCK_BST_0_layer_section_1",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.0797093879727533
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_VCP_0",
+      "net": "VCP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.281675682618971
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_V3V3_5",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.0316756826189692
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_BUCK_BST_0",
+      "net": "BUCK_BST",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.936396103067893
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_PD_VBUS_0_layer_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.5,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "inner2": 3.606980515339464
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_PD_VBUS_3_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 0.995710935153551
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_15_DATA_VBUS_1_layer_section_1",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 3.2207106781186554
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_21_PD_VDD_2_layer_section_1",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.162957249080741
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_22_PD_VDD_3_layer_section_0",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.2593574170229256
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_RUN_1_layer_section_2",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 1.1622229946567617
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_6_SWCLK_0_layer_section_1",
+      "net": "SWCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 7.7790367901871775
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_17_VM_SENSE_1",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.178122292025699
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_18_PD_VBUS_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 3.0634776310850236
+      }
+    },
+    {
+      "trace": "controller_USB_locator_PD_VBUS_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 3.7506207711083857
+      }
+    },
+    {
+      "trace": "controller_USB_locator_PD_VBUS_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 2.545646662648879
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_26_LOGIC_IN_0_layer_section_1",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.524137802864853
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_28_DATA_VBUS_1",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.435668063181382
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_35_BUZZER_SINK_0_layer_section_1",
+      "net": "BUZZER_SINK",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 12.38847763108503
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.012436867076456
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_12_V3V3_12",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.044543648263007
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_13_V3V3_13",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 1.9174621202458755
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_PD_VBUS_1_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 15.14461725559954
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_PD_VBUS_1_layer_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.5,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "inner2": 8.626955262170046
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_V1V1_1",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.243646348781141
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_VREF_0_layer_section_0",
+      "net": "VREF",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.4270815280171307
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_VREF_0_layer_section_1",
+      "net": "VREF",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.9920310216782973
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SENSE1_0",
+      "net": "SENSE1",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 7.024873734152918
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LOGIC_IN_0_layer_section_1",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.5159902576697326
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_V3V3_3_rerouted",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6272536619631937
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_4_V3V3_4_rerouted",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.4117009357883843
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SENSE2_0",
+      "net": "SENSE2",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 8.038782463805518
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_connector_to_ESD_USB_DP",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 30.37907609293687
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_connector_to_ESD_USB_DM",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 30.42013164990958
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_ESD_to_series_USB_DP",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.512524000429748
+      }
+    },
+    {
+      "trace": "controller_usb_coupled_ESD_to_series_USB_DM",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.25,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.580818071301596
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_input_USB_DP_bottom",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.13890845425449988
+      }
+    },
+    {
+      "trace": "controller_usb_fan_series_input_USB_DM_bottom",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.1698653468498172
+      }
+    },
+    {
+      "trace": "controller_usb_lower_DP1_bottom",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.20862646045025315
+      }
+    },
+    {
+      "trace": "controller_usb_lower_DM1_bottom",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.2086264604502506
+      }
+    },
+    {
+      "trace": "controller_usb_lower_DP2_bottom",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 1.331024967590666
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_USB_DP_0",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.2573204563691953
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_USB_DM_0",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.20732045681675
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_USB_DM_1",
+      "net": "USB_DM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.257292180959176
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_8_QSPI_SD3_0_layer_section_1",
+      "net": "QSPI_SD3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.5809397513309
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_9_RUN_0_layer_section_0",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 6.51153859967318
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_11_SWCLK_0",
+      "net": "SWCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.003122292025696
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_16_TEMP_SCL_0_layer_section_0",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2499999999999987
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_18_TEMP_SCL_2_layer_section_0",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.2072853480599575
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_18_TEMP_SCL_2_layer_section_1",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6846194077712552
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_19_BUZZER_PWM_0_layer_section_0",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.1332483241414995
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_25_VM_SENSE_0_layer_section_0",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.7503048327204924
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_25_VM_SENSE_0_layer_section_1",
+      "net": "VM_SENSE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.0991378028648437
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_28_PD_VBUS_1_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.5,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "inner2": 9.091473657263638
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_29_V3V3_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3270815280171309
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_34_V3V3_5_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 1.6500000000000004
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_36_V3V3_7_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.9499999999999993
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_38_V3V3_9",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.6256096654409893
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_41_V3V3_12",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0829194077712583
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_45_V3V3_16_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.8510407640085647
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_46_V3V3_17_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.3856601717798216
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_46_V3V3_17_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.493807716974933
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_46_V3V3_17_layer_section_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.2674621202458747
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_46_V3V3_17_layer_section_3",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.685660171779823
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_47_V3V3_18",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 10.575178566873412
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_48_V3V3_19",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.519112549695428
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_49_V3V3_20",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.77665042944956
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_50_V3V3_21_layer_section_0",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.956244584051393
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_53_DATA_VBUS_1_layer_section_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 3.617031021678296
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_55_PD_VDD_0",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.5767766952966369
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_57_DATA_CC2_0_layer_section_3",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 7.736700935788386
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_61_ENABLE_N_1_layer_section_0",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.012362902255703
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_62_V1V1_0",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8181980515339454
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_64_V1V1_2",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.5000254625011955
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_65_V1V1_3",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 6.4124209131963035
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_67_BUZZER_GATE_0_layer_section_0",
+      "net": "BUZZER_GATE",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.2006096654409895
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SCLK_0_layer_section_0",
+      "net": "QSPI_SCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.476219330881976
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SCLK_0_layer_section_1",
+      "net": "QSPI_SCLK",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 12.736322138247136
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_A_PLUS_0_layer_section_0",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 12.607032816365788
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_A_PLUS_0_layer_section_1",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 3.6662950903902236
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_A_PLUS_0_layer_section_2",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 12.020153313703988
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_A_PLUS_0_layer_section_3",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 5.992147594233765
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_B_PLUS_0_layer_section_0",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 13.547413408594533
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_B_PLUS_0_layer_section_1",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 20.614256170107808
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_0",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 9.171067811865472
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_1_USB_peg_clearance_0",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 1.976407847106366
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_1_USB_peg_clearance_1",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 2.045464643233653
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_2",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 16.813403666264268
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_3",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 1.7750000000000004
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_B_MINUS_0_layer_section_4",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 23.217692988145618
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_5_LOGIC_IN_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.6370057685088835
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC2_0_layer_section_3",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.847792206135785
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD3_0",
+      "net": "QSPI_SD3",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 12.957463914933369
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_RUN_0_layer_section_1",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 39.21683079101045
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_RUN_1",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 10.570355326306347
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.2270815280171314
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_3_V3V3_2",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.6017766952966364
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_9_V3V3_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 1.3606673350021803
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_63_V1V1_1",
+      "net": "V1V1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 8.31393846380553
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_layer_section_0",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.5010407640085632
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_layer_section_1",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.355330085889911
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_layer_section_2",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 9.058935777509511
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_layer_section_3",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.30949314192417
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_ENABLE_N_0",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 12.01396103067893
+      }
+    },
+    {
+      "trace": "controller_review_baseline_review_baseline_freerouted_trace_223_run_0_run_0_via_clearance_run_0",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.9056130301252412
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SS_0_layer_section_0",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.144543648263001
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SS_0_layer_section_1",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.526040764008565
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_QSPI_SS_1_layer_section_0",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 1.9562396844214003
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_QSPI_SS_1_layer_section_1",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.7338834764831836
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_QSPI_SS_1_layer_section_2",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.8260407640085665
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_QSPI_SS_1_layer_section_3",
+      "net": "QSPI_SS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 20.915440327678358
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_ENABLE_N_0_rerouted_layer_section_0",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.608147545195111
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_ENABLE_N_0_rerouted_layer_section_1",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.5250000000000004
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_K_0_layer_section_1",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.9538582233137665
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_C_0",
+      "net": "STATUS_G_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.163046532517448
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_V3V3_0_rerouted_layer_section_1",
+      "net": "V3V3",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.0849242404917514
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_K_0_rerouted_layer_section_0",
+      "net": "STATUS_R_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.6213203435596424
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_0",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.423706704297269
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_1",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.386269837220809
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_2",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.989392129246507
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_3",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 21.78705806953523
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_4",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.47101551083915
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_5",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.193502884254441
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_6",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.938046532517448
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SWDIO_0_layer_section_7",
+      "net": "SWDIO",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 6.002081528017131
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SCL_0_rerouted_layer_section_0",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.325410235753086
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD1_0",
+      "net": "QSPI_SD1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 13.248759005323597
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 8.263961030678937
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_45_V3V3_16_layer_section_0_retained_feed",
+      "net": "V3V3",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.0242640687119309
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_K_0_rerouted",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 13.468555185280767
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD2_0_layer_section_1",
+      "net": "QSPI_SD2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.14944263558534
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD2_0_layer_section_2",
+      "net": "QSPI_SD2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 6.822665940288702
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_layer_section_2",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2906673350021851
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_layer_section_3",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.707411613907043
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 8.675124767893074
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_0",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.2420310216782955
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.297234841721126
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_2",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 6.02916305603426
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_3",
+      "net": "LED_R",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.955939751330902
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_0",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 9.28779400082328
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_2",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 6.397665940288704
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_3",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner1": 3.8435028842544385
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_4",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 6.999137802864848
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_5",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 3.699568901432423
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_6",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 29.335028842544396
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_GOOD_0_rerouted_layer_section_1",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 8.47456890143243
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_C_0",
+      "net": "STATUS_R_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 26.506906550518707
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD0_0_rerouted_layer_section_0",
+      "net": "QSPI_SD0",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 21.923327906756032
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_QSPI_SD0_0_rerouted_layer_section_1",
+      "net": "QSPI_SD0",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.8331475451951125
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_layer_section_0",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 1.9142135623730916
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_layer_section_1",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 7.037005768508882
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_layer_section_2",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.039213562373092
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_TEMP_SDA_1_layer_section_4",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.281370849898475
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_2_TEMP_SDA_2",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 14.080687219636735
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_0",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6828427124746174
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_1",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.375052301026328
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_2",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 7.603427124746191
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_3_USB_peg_clearance_0",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.788526420505156
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_3_USB_peg_clearance_1",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.0185862503682035
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STEP_0_layer_section_4",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 7.033757210636097
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 7.207285348059958
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_0",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.5316756826189715
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_1",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 7.3084523779156045
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_2",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 3.2392135623730955
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_3",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.7812846301849605
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PWR_LED_A_0_layer_section_0",
+      "net": "PWR_LED_A",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 17.57540943477315
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PWR_LED_A_0_layer_section_1",
+      "net": "PWR_LED_A",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.449137802864846
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PWR_LED_A_0_layer_section_2",
+      "net": "PWR_LED_A",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.543807716974932
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_DATA_VBUS_1_rerouted",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 8.361748761693603
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_layer_section_0",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.701345596729058
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_layer_section_1",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 12.174442635585336
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_layer_section_3",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 13.111574886990827
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_layer_section_4",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 16.425230867899746
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_layer_section_0",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 0.7699566568835278
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_layer_section_1",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.5485281374238564
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LOGIC_IN_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.358452377915607
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_VBUS_0_rerouted",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.962741699796953
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_VBUS_0_rerouted_rerouted_layer_section_1",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 20.474368670764573
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_20_PD_VBUS_2_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 8.583630944789022
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_VBUS_0_layer_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.55,
+      "required_width_mm": 0.5,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "inner2": 12.926093065034898
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_VBUS_0_layer_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.2,
+      "required_width_mm": 0.2,
+      "load_role": "Short external PD auxiliary neck; bounded end-cooled thermal screen",
+      "lengths_mm": {
+        "bottom": 3.0463203435596413
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_rerouted_layer_section_0",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.2224873734152915
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_rerouted_layer_section_1",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 6.322665940288703
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_rerouted_layer_section_2",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3278174593052028
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_R_K_0",
+      "net": "STATUS_R_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 6.736879502661796
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC1_0_layer_section_1",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.388046532517446
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC1_0_layer_section_3",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.444417382415925
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_0",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.5613961030678922
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.8652543263816592
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_2",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.761700935788388
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_4",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 12.652691193458123
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_5",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.8745689014324243
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_6",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.499779850707618
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_0",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.1519552621700475
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_1",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 6.40373195746668
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_2",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.6988329701443514
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_3",
+      "net": "BOOT_PAD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 7.1806349186104
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_rerouted_layer_section_0",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 5.257106781186547
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_BUZZER_PWM_0_rerouted_layer_section_1",
+      "net": "BUZZER_PWM",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 8.96708332270462
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC1_0_rerouted_rerouted_layer_section_0",
+      "net": "DATA_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.49511502591709716
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC1_0_rerouted_rerouted_layer_section_1",
+      "net": "DATA_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.306549416771886
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC1_0_rerouted_rerouted_layer_section_2",
+      "net": "DATA_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.8273863607376235
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC2_0_layer_section_0",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.5624368670764563
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC2_0_layer_section_1",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.538782463805517
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC2_0_layer_section_2",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 7.2033008588991105
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_rerouted_layer_section_0",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.3066756826189705
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 10.605939751330897
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_rerouted_layer_section_2",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 3.251345596729061
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_SLEEP_1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 1.1130034714794914
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SCL_0_layer_section_1",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 8.54736110756821
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_TEMP_SCL_1_layer_section_0",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 3.518807716974934
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_TEMP_SCL_1_layer_section_1",
+      "net": "TEMP_SCL",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.48535533905932843
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_rerouted_rerouted_layer_section_0",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.4624368670764576
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_B_0_rerouted_rerouted_layer_section_1",
+      "net": "LED_B",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 9.892514421272201
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CC1_0_rerouted",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.739213575186425
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_ENABLE_N_0_rerouted_rerouted",
+      "net": "ENABLE_N",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 11.762615433949868
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 4.5589385643718305
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_PD_GOOD_1_layer_section_0",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 6.806980515339465
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_PD_GOOD_1_layer_section_1",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 7.882285348059958
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_PD_GOOD_1_layer_section_2",
+      "net": "PD_GOOD",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.8245689014324222
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_TEMP_SDA_0_rerouted_rerouted",
+      "net": "TEMP_SDA",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.915559159102155
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_RUN_0_rerouted_layer_section_0",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 9.37652416360247
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_RUN_0_rerouted_layer_section_1",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.854898987322327
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_RUN_0_rerouted_layer_section_2",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.6167261889578053
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_RUN_1_rerouted_layer_section_0",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 8.461753236814712
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_1_RUN_1_rerouted_layer_section_1",
+      "net": "RUN",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 12.561056961730634
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_0",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 7.8880465325174445
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "DATA_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 19.59698231002696
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_1",
+      "net": "STATUS_B_C",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.968807716974934
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_0",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 19.674011537017776
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_1",
+      "net": "SLEEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 6.809797974644671
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_USB_DP_0_rerouted",
+      "net": "USB_DP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 9.155776057439553
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_K_0_rerouted_rerouted_layer_section_0",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.590990257669732
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_K_0_rerouted_rerouted_layer_section_1",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.9667261889578063
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_STATUS_G_K_0_rerouted_rerouted_layer_section_2",
+      "net": "STATUS_G_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 2.0199747468305804
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_PRESENT_0_layer_section_1",
+      "net": "DATA_PRESENT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 6.512005768508881
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_DATA_PRESENT_0_layer_section_2",
+      "net": "DATA_PRESENT",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 14.76383476483185
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_1",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 8.814087296526013
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_2",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.6044678887547565
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_3",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 10.552743494484442
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_4",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 21.774621202458732
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_5",
+      "net": "LED_G",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 4.755939751330898
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_VHV_0",
+      "net": "PD_VHV",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 2.359388702058238
+      }
+    },
+    {
+      "trace": "controller_same_side_repair_0_PD_CFG_0",
+      "net": "PD_CFG",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 8.779898987322325
+      }
+    },
+    {
+      "trace": "controller_connection_A_PLUS_0_section_0",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 8.537551577875634
+      }
+    },
+    {
+      "trace": "controller_connection_A_PLUS_0_section_1",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 3.6399494936611685
+      }
+    },
+    {
+      "trace": "controller_connection_A_PLUS_0_section_2",
+      "net": "A_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 1.291234562978968
+      }
+    },
+    {
+      "trace": "controller_connection_B_PLUS_0_section_0",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 6.784739775512291
+      }
+    },
+    {
+      "trace": "controller_connection_B_PLUS_0_section_1",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 1.534924240491749
+      }
+    },
+    {
+      "trace": "controller_connection_B_PLUS_0_section_2",
+      "net": "B_PLUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 0.4419417382415922
+      }
+    },
+    {
+      "trace": "controller_connection_A_MINUS_0_section_0",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 20.485417138927005
+      }
+    },
+    {
+      "trace": "controller_connection_B_MINUS_0_section_0",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "top": 15.91836984902198
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_0_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 1.909862000000011
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_1_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 1.909862000000011
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_2_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 3.047530908038697
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_3_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.4028171632412887
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_3_section_1",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 3.458452377915607
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_3_section_2",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 2.3624368670764517
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_4_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "top": 0.59684580382193
+      }
+    },
+    {
+      "trace": "controller_connection_LOGIC_IN_0_section_0",
+      "net": "LOGIC_IN",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8617712958975332
+      }
+    },
+    {
+      "trace": "controller_connection_DATA_VBUS_0_section_0",
+      "net": "DATA_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.8100051977272597
+      }
+    },
+    {
+      "trace": "controller_connection_PD_CC1_0_section_0",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 1.3849346043451018
+      }
+    },
+    {
+      "trace": "controller_connection_PD_CC1_0_section_1",
+      "net": "PD_CC1",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.37285539031263
+      }
+    },
+    {
+      "trace": "controller_connection_PD_CC2_0_section_0",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.43532357648792497
+      }
+    },
+    {
+      "trace": "controller_connection_PD_CC2_0_section_1",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 2.6717514421272224
+      }
+    },
+    {
+      "trace": "controller_connection_PD_CC2_0_section_2",
+      "net": "PD_CC2",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 4.265317459305203
+      }
+    },
+    {
+      "trace": "controller_connection_STATUS_B_K_0_section_0",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 0.5346194077712532
+      }
+    },
+    {
+      "trace": "controller_connection_STATUS_B_K_0_section_1",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 5.753858223313769
+      }
+    },
+    {
+      "trace": "controller_connection_STATUS_B_K_0_section_2",
+      "net": "STATUS_B_K",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 0.6150941196508172
+      }
+    },
+    {
+      "trace": "controller_connection_PD_VBUS_0_next_section_0",
+      "net": "PD_VBUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "Shared PD power; 1.1 A design budget, 1 oz copper",
+      "lengths_mm": {
+        "bottom": 3.47391628034239
+      }
+    },
+    {
+      "trace": "controller_connection_STEP_USB_locator_analytic_bottom",
+      "net": "STEP",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 1.3671742637206439
+      }
+    },
+    {
+      "trace": "controller_connection_A_MINUS_0_next_section_0",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "bottom": 2.4083979657992516
+      }
+    },
+    {
+      "trace": "controller_connection_A_MINUS_0_next_section_1",
+      "net": "A_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner1": 6.694794068867151
+      }
+    },
+    {
+      "trace": "controller_connection_B_MINUS_0_next_section_0",
+      "net": "B_MINUS",
+      "minimum_width_mm": 0.3,
+      "required_width_mm": 0.3,
+      "load_role": "0.67 A phase/sense",
+      "lengths_mm": {
+        "inner2": 3.1716338106342046
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_0",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner2": 3.3120185194015734
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_1",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 4.1316756826189724
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_2",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 19.05304832720494
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_3",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.3802038200428264
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_4",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 2.200000000000001
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_5",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "bottom": 3.2249999999999996
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_6",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "top": 7.285229073212244
+      }
+    },
+    {
+      "trace": "controller_connection_DIR_0_section_7",
+      "net": "DIR",
+      "minimum_width_mm": 0.16,
+      "required_width_mm": 0.16,
+      "load_role": "Logic/control; minimum 0.16 mm",
+      "lengths_mm": {
+        "inner1": 5.921500820497119
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "manufacturing_release": false
+}

@@ -21,12 +21,13 @@ mm, the PCB bottom. The motor front face remains Z=-42 mm.
 The nominal solid audit checks the carrier against the unchanged OEM motor,
 PCB and all supplier parts whose bounds can reach it. No solid interference was
 found. This does not establish tolerance fit, vibration strength, thermal behavior
-or fastener/tool access.
+or physical fastener/tool access. Separate conditional envelope checks pass
+under the purchasing limits below.
 
 The candidate screw lengths are four M2.5×4 at the motor front and four M2.5×5
 at the PCB. Procurement requires actual supplier drawings and tolerances. With
-a 1.0±0.1 mm front plate and 4.0±0.1 mm screw length, front engagement would be
-2.8–3.2 mm, below the motor's 3.5 mm minimum tapped depth; these are proposed
+a 1.0±0.1 mm front plate and 3.7–4.1 mm screw length, front engagement would be
+2.6–3.2 mm, below the motor's 3.5 mm minimum tapped depth; these are proposed
 procurement limits, not verified purchased screw specifications. At nominal PCB
 thickness, a 5 mm PCB screw engages 3.4 mm. Verify maximum head diameter, height,
 hex access, length tolerance, thread runout, tightening torque and retention

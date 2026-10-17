@@ -8,6 +8,7 @@ from route_controller_pcb import build
 from refine_controller_routing import refine
 from fill_controller_ground import fill
 from annotate_controller_pcb import annotate
+from prepare_controller_stencil import prepare
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -20,6 +21,7 @@ records, _ = build(json.loads(source.read_text()), json.loads((ROOT / 'src/contr
 refine(records)
 records.extend(connections['records'])
 refine(records)
+prepare(records)
 fill(records)
 annotate(records)
 output = (json.dumps(records,indent=2)+'\n').encode()
@@ -28,4 +30,15 @@ if args.check:
     assert path.read_bytes() == output, 'Native routing source does not reproduce the checked board'
 else:
     path.write_bytes(output)
+inputs=['artifacts/controller/unrouted.circuit.json','src/controller/reference-routing-seed.json',
+        'src/controller/constructed-connections.json','src/controller/USB-locator-route-replacement.json',
+        'src/controller/remove-obsolete-stubs.json','src/controller/trimmed-route-leaves.json',
+        'src/controller/remove-orphan-copper.json','config/controller-silkscreen-font.json',
+        'scripts/route_controller_pcb.py','scripts/refine_controller_routing.py',
+        'scripts/fill_controller_ground.py','scripts/annotate_controller_pcb.py','scripts/prepare_controller_stencil.py']
+manifest={'scope':'Native controller PCB reproduced from checked TSX output, exact reference copper and fixed native routing',
+          'circuit_sha256':hashlib.sha256(output).hexdigest(),
+          'inputs':[{'path':p,'sha256':hashlib.sha256((ROOT/p).read_bytes()).hexdigest()} for p in inputs],
+          'manufacturing_release':False}
+(path.parent/'PCB-build.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps({'native_PCB_reproduces':True,'circuit_sha256':hashlib.sha256(output).hexdigest()}))

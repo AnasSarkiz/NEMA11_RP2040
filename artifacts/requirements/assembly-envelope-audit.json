@@ -1,0 +1,97 @@
+{
+  "scope": "Required maximum hardware/plug envelopes; these are not purchased-part supplier CAD",
+  "source_sha256": "4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144",
+  "PCB_head_maximum_diameter_height_mm": [
+    4.5,
+    2.5
+  ],
+  "hex_key_shaft_clearance_diameter_mm": 3,
+  "hex_key_size_across_flats_mm": 2,
+  "USB_cable_overmold_maximum_width_depth_mm": [
+    10,
+    8
+  ],
+  "PH_mated_housing_screen_mm": [
+    9.8,
+    5,
+    8
+  ],
+  "nominal_head_tool_and_plug_envelope_checks": [],
+  "errors": [],
+  "envelope_check_pass": true,
+  "supplier_bounds_screens": [
+    {
+      "envelope": "PCB head -13,-13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 0.9412358896684716
+    },
+    {
+      "envelope": "2 mm hex-key approach -13,-13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 2.4275097641910506
+    },
+    {
+      "envelope": "PCB head -13,13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 0.9500127000000695
+    },
+    {
+      "envelope": "2 mm hex-key approach -13,13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 2.101570279153137
+    },
+    {
+      "envelope": "PCB head 13,-13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 1.2499998999999988
+    },
+    {
+      "envelope": "2 mm hex-key approach 13,-13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 2.644314516089191
+    },
+    {
+      "envelope": "PCB head 13,13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 0.35356596295647436
+    },
+    {
+      "envelope": "2 mm hex-key approach 13,13",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 1.647837215310978
+    },
+    {
+      "envelope": "J_PD maximum USB overmold",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 7.87246629485594e-06
+    },
+    {
+      "envelope": "J_DATA maximum USB overmold",
+      "supplier_parts_screened": 82,
+      "minimum_AABB_separation_mm": 7.87246629485594e-06
+    }
+  ],
+  "candidate_front_screw": "M2.5 x 4",
+  "candidate_PCB_screw": "M2.5 x 5",
+  "required_front_screw_length_range_mm": [
+    3.7,
+    4.1
+  ],
+  "required_front_plate_thickness_range_mm": [
+    0.9,
+    1.1
+  ],
+  "front_thread_engagement_range_mm": [
+    2.6,
+    3.2
+  ],
+  "motor_minimum_tapped_depth_mm": 3.5,
+  "PCB_thread_engagement_range_mm_for_4_7_to_5_1mm_screw_and_1_44_to_1_60mm_PCB": [
+    3.1,
+    3.66
+  ],
+  "carrier_threaded_depth_mm": 5,
+  "actual_supplier_fasteners_USB_cables_and_PH_plug_models_verified": false,
+  "physical_insertion_torque_crimp_and_retention_verified": false,
+  "manufacturing_release": false
+}

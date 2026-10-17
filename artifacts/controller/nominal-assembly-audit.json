@@ -1,6 +1,6 @@
 {
   "scope": "82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware",
-  "circuit_sha256": "70bbc04ca291347b6789b5823050f1749838e55a43d25300b708ac6b8011ffe3",
+  "circuit_sha256": "4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144",
   "parts": [
     {
       "part": "J_PD",
@@ -8,10 +8,10 @@
       "bounds_mm": [
         -3.8724902358089492,
         18.305127456838466,
-        0.04998814360971743,
+        0.09998814360971747,
         5.072516299985047,
         21.99512652237567,
-        8.209992127533706
+        8.259992127533705
       ]
     },
     {
@@ -20,10 +20,10 @@
       "bounds_mm": [
         -9.07249023580895,
         -16.99487254316153,
-        0.04998814360971743,
+        0.09998814360971747,
         -0.12748370001495296,
         -13.304873477624326,
-        8.209992127533706
+        8.259992127533705
       ]
     },
     {
@@ -995,7 +995,7 @@
         -0.1,
         0.1
       ],
-      "leads": [
+      "leads_and_locating_pegs": [
         {
           "hole": "pcb_plated_hole_10",
           "lead_xy_mm": [
@@ -1033,86 +1033,133 @@
     {
       "part": "J_PD",
       "section_z_mm": [
-        -0.1,
-        0.1
+        0.30000000000000004,
+        0.5
       ],
-      "leads": [
+      "leads_and_locating_pegs": [
         {
           "hole": "pcb_plated_hole_2",
           "lead_xy_mm": [
-            4.6025161999534845,
-            18.720130134044716
+            4.6025161999850575,
+            18.720126807259
           ],
-          "centre_error_mm": 0.0025243059618823035
+          "centre_error_mm": 0.002524277697099045
         },
         {
           "hole": "pcb_plated_hole_1",
           "lead_xy_mm": [
-            -3.397483799314165,
-            18.72013013404884
+            -3.3974838000149523,
+            18.720126807259053
           ],
-          "centre_error_mm": 0.0025083073704472857
+          "centre_error_mm": 0.002508278192805789
         },
         {
           "hole": "pcb_plated_hole_3",
           "lead_xy_mm": [
-            4.602516199984336,
-            21.580126514980854
+            4.602516199985058,
+            21.58012680726063
           ],
-          "centre_error_mm": 0.002534978265627881
+          "centre_error_mm": 0.002535005207034289
         },
         {
           "hole": "pcb_plated_hole_0",
           "lead_xy_mm": [
-            -3.397483799280621,
-            21.580126514983775
+            -3.397483800014952,
+            21.580126807260623
           ],
-          "centre_error_mm": 0.0025190474581360516
+          "centre_error_mm": 0.0025190738377659136
+        },
+        {
+          "hole": "pcb_hole_4",
+          "lead_xy_mm": [
+            -3.4024898000089663,
+            20.150126785978703
+          ],
+          "centre_error_mm": 0.0024978000181352473
+        },
+        {
+          "hole": "pcb_hole_5",
+          "lead_xy_mm": [
+            4.597510199991041,
+            20.150126785967704
+          ],
+          "centre_error_mm": 0.002481800018188187
         }
       ]
     },
     {
       "part": "J_DATA",
       "section_z_mm": [
-        -0.1,
-        0.1
+        0.30000000000000004,
+        0.5
       ],
-      "leads": [
+      "leads_and_locating_pegs": [
         {
           "hole": "pcb_plated_hole_6",
           "lead_xy_mm": [
-            -0.5974838000242929,
-            -16.579870681041925
+            -0.5974838000149426,
+            -16.579873192740997
           ],
-          "centre_error_mm": 0.0025242986458120786
+          "centre_error_mm": 0.0025242776970991836
         },
         {
           "hole": "pcb_plated_hole_5",
           "lead_xy_mm": [
-            -8.597483799295961,
-            -16.579871107537453
+            -8.597483800014952,
+            -16.57987319274094
           ],
-          "centre_error_mm": 0.0025082962447959905
+          "centre_error_mm": 0.002508278192805845
         },
         {
           "hole": "pcb_plated_hole_7",
           "lead_xy_mm": [
-            -0.5974838000886754,
-            -13.719863768166867
+            -0.5974838000149422,
+            -13.719873192739367
           ],
-          "centre_error_mm": 0.0025358917399959818
+          "centre_error_mm": 0.002535005207034121
         },
         {
           "hole": "pcb_plated_hole_4",
           "lead_xy_mm": [
-            -8.597483799280615,
-            -13.719873485016224
+            -8.59748380001495,
+            -13.719873192739366
           ],
-          "centre_error_mm": 0.0025190474581418
+          "centre_error_mm": 0.0025190738377682295
+        },
+        {
+          "hole": "pcb_hole_6",
+          "lead_xy_mm": [
+            -8.602489800008966,
+            -15.149873214021296
+          ],
+          "centre_error_mm": 0.0024978000181348032
+        },
+        {
+          "hole": "pcb_hole_7",
+          "lead_xy_mm": [
+            -0.6024898000089598,
+            -15.149873214032297
+          ],
+          "centre_error_mm": 0.0024818000181890754
         }
       ]
     }
   ],
+  "PCB_material_intersections": [
+    {
+      "part": "J_PD",
+      "laminate_interference_mm3": 0
+    },
+    {
+      "part": "J_DATA",
+      "laminate_interference_mm3": 0
+    },
+    {
+      "part": "J_MOTOR",
+      "laminate_interference_mm3": 0
+    }
+  ],
+  "PCB_surface_CAD_allowance_mm": 0.02,
   "errors": [
     {
       "part": "J_PD",
@@ -1124,6 +1171,8 @@
     }
   ],
   "manufacturer_tolerances_verified": false,
+  "nominal_solid_and_lead_fit_pass": true,
+  "all_original_supplier_STEP_valid": false,
   "physical_assembly_tested": false,
   "manufacturing_release": false
 }

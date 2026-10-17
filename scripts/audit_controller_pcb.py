@@ -18,6 +18,12 @@ def inspect(records):
     copper = Copper(records)
     elements = copper.elements()
     errors = report['errors']
+    for key,name in copper.nets.items():
+        members,roots=copper.groups(key,elements)
+        anchored={root for (e,_,_),root in zip(members,roots) if e['type'] in ['pcb_smtpad','pcb_plated_hole']}
+        unanchored={e[e['type']+'_id'] for (e,_,_),root in zip(members,roots) if root not in anchored}
+        if unanchored:
+            errors.append({'type':'unanchored_copper','net':name,'ids':sorted(unanchored)})
     for e in records:
         if e['type'] != 'pcb_keepout':
             continue

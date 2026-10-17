@@ -1,0 +1,107 @@
+{
+  "scope": "Conditional engineering screens from current native copper and original motor drawing",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "source_candidate_nominal_peak_A": 0.5729166666666667,
+  "source_candidate_64_corner_upper_A": 0.657640050167224,
+  "current_accuracy_at_1_1V_VREF_manufacturer_guaranteed": false,
+  "sense_path_assumptions": {
+    "copper_thickness_mm_all_layers": 0.035,
+    "uniform_via_wall_mm": 0.02,
+    "board_thickness_mm": 1.6
+  },
+  "sense_paths": [
+    {
+      "net": "SENSE1",
+      "trace_lengths_mm": {
+        "top": 1.4511131149555465,
+        "inner2": 7.024873734152918
+      },
+      "via_count": 2,
+      "trace_R_20c_ohm": 0.013916763169393324,
+      "assumed_via_R_20c_ohm": 0.002743831218904278,
+      "series_R_20c_ohm": 0.016660594388297603,
+      "series_R_85c_ohm": 0.020916543224788225,
+      "nominal_trip_with_series_R_20c_a": 0.5357269600645377,
+      "scope": "Series-path screen; ground offset, switching inductance, shunt temperature and actual plating excluded"
+    },
+    {
+      "net": "SENSE2",
+      "trace_lengths_mm": {
+        "top": 1.631641369102292,
+        "inner2": 8.038782463805518
+      },
+      "via_count": 2,
+      "trace_R_20c_ohm": 0.015877914940888627,
+      "assumed_via_R_20c_ohm": 0.002743831218904278,
+      "series_R_20c_ohm": 0.018621746159792906,
+      "series_R_85c_ohm": 0.023378671216312003,
+      "nominal_trip_with_series_R_20c_a": 0.5316644947368185,
+      "scope": "Series-path screen; ground offset, switching inductance, shunt temperature and actual plating excluded"
+    }
+  ],
+  "driver_conduction_only": {
+    "maximum_25c_MOS_R_on_ohm_each": 0.43,
+    "ideal_sine_vector_loss_at_nominal_trip_W": 0.28228081597222227,
+    "two_phases_at_rated_DC_loss_W": 0.7721080000000001,
+    "excludes": "Hot RDS(on), switching/recirculation losses and actual board thermal resistance",
+    "predicted_junction_temperature_C": null
+  },
+  "motor_copper_loss": {
+    "both_phases_at_rated_DC_25c_W": 5.02768,
+    "both_phases_at_rated_DC_130c_and_plus_10_percent_R_W": 7.812587367200001,
+    "ideal_sine_vector_at_nominal_trip_25c_W": 1.8381076388888893,
+    "rated_0_07Nm_holding_torque_delivered_by_this_current_setting_verified": false
+  },
+  "shunts": {
+    "manufacturer": "UNI-ROYAL / ROYALOHM",
+    "part": "HP05W3F240LT5E",
+    "jlcpcb": "C7434086",
+    "resistance_ohm": 0.24,
+    "initial_tolerance_fraction": 0.01,
+    "TCR_ppm_per_K": 100,
+    "rating_w_at_ambient_70c": 0.3333333333333333,
+    "linear_derated_rating_w": {
+      "85": 0.2745098039215686,
+      "100": 0.2156862745098039
+    },
+    "rated_current_loading_fraction_at_70c": 0.32320800000000005,
+    "reference_125mW_loading_fraction_before_derating": 0.8618880000000001,
+    "qualification": "Initial tolerance and nominal ambient derating only; post-reflow resistance, pulse behavior and hot current need verification."
+  },
+  "regeneration": {
+    "bulk_capacitance_minimum_assumed_F": 3.76e-05,
+    "initial_bus_V": 15.75,
+    "motor_only_inertia_kg_m2": 9e-07,
+    "coil_energy_at_0_67A_vector_and_L_plus20percent_J": 0.00107736,
+    "examples_without_protection_or_loss": [
+      {
+        "rpm": 1000,
+        "rotor_kinetic_energy_J": 0.0049348022005446775,
+        "hypothetical_bus_V_without_TVS_or_loss": 23.829778885484856
+      },
+      {
+        "rpm": 3000,
+        "rotor_kinetic_energy_J": 0.044413219804902114,
+        "hypothetical_bus_V_without_TVS_or_loss": 51.6505004017397
+      }
+    ],
+    "TVS_part": "SMF18A / C19077512",
+    "rated_standoff_V": 18,
+    "breakdown_range_V": [
+      20,
+      22.1
+    ],
+    "specified_clamp_V_at_6_8A_and_25c": 29.2,
+    "rated_peak_power_W": 200,
+    "rated_pulse_waveform": "10/1000 us; non-repetitive, derated above 25 C; not a general joule rating",
+    "actual_regenerative_load_qualified": false
+  },
+  "bringup_acceptance_requirements": [
+    "Measure both actual phase currents across microstep positions; peak must not exceed the selected motor limit",
+    "Run locked-rotor and motion thermal tests at the drawing 50 C maximum ambient, with the intended hot motor/carrier and enclosure",
+    "Confirm every component stays within its data-sheet limits; correlate TMP102 board temperature with the hottest driver region before choosing firmware shutdown thresholds",
+    "Measure bus overshoot for the actual external inertia, stop profile and repetition rate; verify TVS current/pulse derating and component voltage limits",
+    "Confirm current-sense offsets/noise, actual via plating and finished stackup; do not assume rated holding torque at the conservative current setting"
+  ],
+  "manufacturing_release": false
+}

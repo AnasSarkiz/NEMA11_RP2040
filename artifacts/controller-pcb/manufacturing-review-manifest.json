@@ -1,0 +1,116 @@
+{
+  "scope": "Exact development review Gerbers, BOM/CPL, six-page schematic and process requirements; DO NOT FABRICATE",
+  "manufacturing_release": false,
+  "files": [
+    {
+      "path": "artifacts/controller/schematic-a4.pdf",
+      "bytes": 229596,
+      "sha256": "94bf4da5f9d3303216002ad325b1820e22bd47ad4006a721ec553d1b1c643bb9"
+    },
+    {
+      "path": "artifacts/controller-pcb/assembly-data/JLC_SMT_BOM.csv",
+      "bytes": 2626,
+      "sha256": "122301feff945f94c87dd5c29dd85cbb38779b924c110ad6a26b60659dd3840f"
+    },
+    {
+      "path": "artifacts/controller-pcb/assembly-data/JLC_SMT_CPL.csv",
+      "bytes": 3472,
+      "sha256": "743cb27a50624b62f295a65a3bcbe1386d94008b667033c830f7d28bfa641b2a"
+    },
+    {
+      "path": "artifacts/controller-pcb/assembly-data/manual-assembly.csv",
+      "bytes": 152,
+      "sha256": "8361b9725c9d9dd55a6ff8ab3fc01de0eafeb25999c266f96e321d8d7d79e592"
+    },
+    {
+      "path": "artifacts/controller-pcb/milestone-verification.json",
+      "bytes": 3038,
+      "sha256": "9038ce62c84e830960ffddb0d0240013c1c95788aaaf7ab10a9300bb336566f8"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/B_Cu.gbr",
+      "bytes": 1976418,
+      "sha256": "12f772719a4f4d73ac65946fda7ab6938b676d375bfe0a0eac64a1f4a8b26fea"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/B_Mask.gbr",
+      "bytes": 4093,
+      "sha256": "0cab7ded71e77f71957a09567a32b5b1107a2f79d60de863028e995dd75a1464"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/B_Paste.gbr",
+      "bytes": 1871,
+      "sha256": "a1223a732616485b42542156e70cb348d3a09f5a903cf87870a5d185e2f65ff1"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/B_SilkScreen.gbr",
+      "bytes": 33882,
+      "sha256": "c03e6ae514309d235d68174717f65ec78889a30829f98fbbc3c1e107843b11df"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/DO-NOT-FABRICATE.txt",
+      "bytes": 210,
+      "sha256": "3db919b63c87851884ee52f0b89753b4773ed487cd32fe76a336b873ad311685"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "3018188579096242251a06eacbc19ed48eb8bad7e13f7d780fddd7feb8d9538d"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/F_Cu.gbr",
+      "bytes": 1787948,
+      "sha256": "2d7fd9ceac6279328c7018aebb42d0b3fe6f4405166127bee2cd9dcc8d21de30"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/F_Fab.gbr",
+      "bytes": 21042,
+      "sha256": "31507edf58e124e5208c6ff3457091bb58a7d8c65270ad0e9b35ee369e5808a3"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/F_Mask.gbr",
+      "bytes": 17225,
+      "sha256": "c2437619ddafc73dfd414695ba823836d4819359f8c41ad45d8238e28e52f407"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/F_Paste.gbr",
+      "bytes": 14071,
+      "sha256": "f472e4b39a24954b67e8da7c5d3ce44377fdd12f8a46450512084838ad168333"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/F_SilkScreen.gbr",
+      "bytes": 6749,
+      "sha256": "6a8a19cab3130de3c1b541d70785fefc49c9e441bafd2913b472cff2089fd75a"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/In1_Cu.gbr",
+      "bytes": 1990407,
+      "sha256": "7e4f14864e9f564f92c58f06e14e2399b7edf668b76ebaf1e0cfccfc678c47ae"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/In2_Cu.gbr",
+      "bytes": 2129248,
+      "sha256": "03366632116037dddaa1b9389d125d9152bdde6ec1d051854bed3f0e8d9a3188"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/drill-L1-L4.drl",
+      "bytes": 6307,
+      "sha256": "a29631e00282ada938d684842b4409ce743f2f30b9fdd3eeb740ca6622d7285d"
+    },
+    {
+      "path": "artifacts/controller-pcb/review-cam/drill_npth.drl",
+      "bytes": 535,
+      "sha256": "3b4fd2e0af2fada601d93bc8f77d8802ce6c971a9a037b266a26da7bfebfd355"
+    },
+    {
+      "path": "docs/full-controller-pcb.md",
+      "bytes": 6252,
+      "sha256": "8dd1b45f0e06f76ca898894dd18b0807c95dda068e4f8d854534c1cbfd5b7cf2"
+    },
+    {
+      "path": "docs/manufacturing-requirements.md",
+      "bytes": 6804,
+      "sha256": "de1dfbf01884474c73dbc1d459d1f81408f78179f518840267430b9ce1129516"
+    }
+  ]
+}

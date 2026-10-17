@@ -48,6 +48,14 @@ def check(records, reference):
     for name in ['R_SA', 'R_SB']:
         if names.get(name, {}).get('resistance') != .24:
             errors.append({'sense_resistance_changed': name})
+    for name in ['J_PD','J_DATA']:
+        component=pcb[names[name]['source_component_id']]
+        holes=[e for e in records if e['type']=='pcb_hole' and e.get('pcb_component_id')==component['pcb_component_id']]
+        positions=sorted((e['x'],e['y']) for e in holes)
+        if len(holes)!=2 or abs(positions[1][0]-positions[0][0]-8)>.001 or abs(positions[1][1]-positions[0][1])>.001:
+            errors.append({'manufacturer_USB_locator_pattern':name,'actual':positions,'expected':'Two NPTH holes, 8 mm X pitch'})
+        if any(abs(e['hole_diameter']-.71)>.001 for e in holes):
+            errors.append({'manufacturer_USB_locator_diameter':name})
     for e in records:
         if e['type'] == 'pcb_trace':
             errors.append({'unexpected_copper_in_source_candidate': e['pcb_trace_id']})
@@ -68,6 +76,7 @@ def main():
                                       'R_SA/R_SB: 125mW C2930216 to 1/3W C7434086; same 0.24 ohm value and identical copper pads'],
               'metadata_correction': '12MHz four-pad crystal uses SI load_capacitance=1e-11 F; reference stored 10 without SI conversion',
               'assembly_metadata': 'Seven bare PCB test pads are doNotPlace; PH mates from above; encoder and both capacitors remain DNP',
+              'manufacturer_footprint_correction':'Two GCT-required 0.71 mm NPTH locating holes per USB, 8.00 mm pitch; original supplier import omitted the right hole',
               'errors': errors, 'manufacturing_release': False}
     (ROOT / 'artifacts/controller/electrical-parity.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report))

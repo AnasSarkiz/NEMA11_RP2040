@@ -1,6 +1,6 @@
 {
   "scope": "Actual native GLB bounds versus 82 supplier STEP poses, genuine OEM motor and original carrier proposal",
-  "GLB_sha256": "c5194b84cb1e124b6427617533f62b5adfc72023a2e7c64125e44eef28647bef",
+  "GLB_sha256": "5c5736087dedb4d713726c3a642bed8ea36f493621e53495ff2699e224810673",
   "native_models_checked": 84,
   "scene_to_board_coordinates": {
     "X": "-glTF.X",
@@ -13,10 +13,10 @@
       "native_GLB_board_coordinates_bbox_mm": [
         -3.872490799999954,
         18.30512750000002,
-        0.04998879999999972,
+        0.09998879999999977,
         5.072516200000045,
         21.99512650000002,
-        8.2099918
+        8.2599918
       ],
       "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
     },
@@ -25,10 +25,10 @@
       "native_GLB_board_coordinates_bbox_mm": [
         -9.072490799999954,
         -16.99487249999998,
-        0.04998879999999972,
+        0.09998879999999977,
         -0.12748379999995407,
         -13.304873499999978,
-        8.2099918
+        8.2599918
       ],
       "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
     },

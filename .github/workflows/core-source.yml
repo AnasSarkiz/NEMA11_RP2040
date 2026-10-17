@@ -1,4 +1,4 @@
-name: MCU subsystem source and PCB checks
+name: Controller source, schematics, PCB and CAM checks
 
 on:
   push:
@@ -65,11 +65,14 @@ jobs:
           bun scripts/check-controller-pcb.tsx --checks-only --report-only
           python3 scripts/audit_controller_pcb.py
           python3 scripts/audit_core_clock.py --controller
+          python3 scripts/audit_controller_routing.py
+          python3 scripts/audit_controller_usb.py
           python3 scripts/review_controller_native_drc.py
       - name: Independently parse committed review CAM and verify prototype
         run: |
           python3 -m pip install -r tools/requirements-cam.lock
           python3 scripts/audit_core_cam.py
+          python3 scripts/audit_controller_cam.py
           python3 scripts/prepare-core-prototype.py
           (cd prototypes/rp2040-core && tsci build index.circuit.json)
           python3 scripts/verify_core_prototype.py

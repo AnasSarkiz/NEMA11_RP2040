@@ -1,76 +1,76 @@
 {
   "scope": "Full controller native CAM development review",
-  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
   "files": [
     {
       "name": "F_Cu.gbr",
-      "bytes": 1779197,
-      "sha256": "a70c287b184dd0a3f25b61daa961ec940e2b671e66fb2a0d2b958354fa8bc357"
+      "bytes": 1787948,
+      "sha256": "2d7fd9ceac6279328c7018aebb42d0b3fe6f4405166127bee2cd9dcc8d21de30"
     },
     {
       "name": "F_SilkScreen.gbr",
-      "bytes": 10424,
-      "sha256": "abf3d3750f8a72bc73dcdf2a460367d0818ac546a233e448d383f9d36c311e99"
+      "bytes": 6749,
+      "sha256": "6a8a19cab3130de3c1b541d70785fefc49c9e441bafd2913b472cff2089fd75a"
     },
     {
       "name": "F_Mask.gbr",
-      "bytes": 17010,
-      "sha256": "a4da8a6208ad176e1c9d71ab1a75938e73e6c365bacce09d9c192549274153ee"
+      "bytes": 17225,
+      "sha256": "c2437619ddafc73dfd414695ba823836d4819359f8c41ad45d8238e28e52f407"
     },
     {
       "name": "F_Paste.gbr",
-      "bytes": 12718,
-      "sha256": "3fb39ab4a9842ae143122b76bff383d2b75433781f3eb48ed7bcb52a7f9b5380"
+      "bytes": 14071,
+      "sha256": "f472e4b39a24954b67e8da7c5d3ce44377fdd12f8a46450512084838ad168333"
     },
     {
       "name": "B_Cu.gbr",
-      "bytes": 2033276,
-      "sha256": "7e986d0f6c72bea060e9f3c1b3450aeb9db8bbd2c29f27af4366df2849927ca8"
+      "bytes": 1976418,
+      "sha256": "12f772719a4f4d73ac65946fda7ab6938b676d375bfe0a0eac64a1f4a8b26fea"
     },
     {
       "name": "B_SilkScreen.gbr",
-      "bytes": 28909,
-      "sha256": "68668f1ce20af184adba4ff5bff64711f6560672da5b21bf6d85556da93444d2"
+      "bytes": 33882,
+      "sha256": "c03e6ae514309d235d68174717f65ec78889a30829f98fbbc3c1e107843b11df"
     },
     {
       "name": "B_Mask.gbr",
-      "bytes": 4090,
-      "sha256": "ea16baa0238299749f6db2eedf871c00d9db7b3e8388381287992f9c57e9d914"
+      "bytes": 4093,
+      "sha256": "0cab7ded71e77f71957a09567a32b5b1107a2f79d60de863028e995dd75a1464"
     },
     {
       "name": "B_Paste.gbr",
-      "bytes": 2408,
-      "sha256": "3cb7ade99af62575c622ab1859c5ca61a1b24902e011149432f3825505f3149b"
+      "bytes": 1871,
+      "sha256": "a1223a732616485b42542156e70cb348d3a09f5a903cf87870a5d185e2f65ff1"
     },
     {
       "name": "Edge_Cuts.gbr",
       "bytes": 493,
-      "sha256": "782a432b8c999513e0a84279f27047d9e36b19aa35a43b67414ac5a15a7b1183"
+      "sha256": "3018188579096242251a06eacbc19ed48eb8bad7e13f7d780fddd7feb8d9538d"
     },
     {
       "name": "In1_Cu.gbr",
-      "bytes": 2015171,
-      "sha256": "e5b73f481461e477e2abac4bbc23d7da6d7633ad3c512e55beef01ee78c7ffe6"
+      "bytes": 1990407,
+      "sha256": "7e4f14864e9f564f92c58f06e14e2399b7edf668b76ebaf1e0cfccfc678c47ae"
     },
     {
       "name": "In2_Cu.gbr",
-      "bytes": 1991097,
-      "sha256": "fab8ace3ba6666359a8b2adea89b4f2203e69b5c6eb9731a7ad8d9d710cdff90"
+      "bytes": 2129248,
+      "sha256": "03366632116037dddaa1b9389d125d9152bdde6ec1d051854bed3f0e8d9a3188"
     },
     {
       "name": "F_Fab.gbr",
       "bytes": 21042,
-      "sha256": "0249529676aa47ffbd5bfe791804f3b8866dcb38024456d572f9d7d13f930266"
+      "sha256": "31507edf58e124e5208c6ff3457091bb58a7d8c65270ad0e9b35ee369e5808a3"
     },
     {
       "name": "drill-L1-L4.drl",
-      "bytes": 6390,
-      "sha256": "f6fac265e18ad743cf2674343240b59a03e2e0f351464502274f5e7ccf0f228b"
+      "bytes": 6307,
+      "sha256": "a29631e00282ada938d684842b4409ce743f2f30b9fdd3eeb740ca6622d7285d"
     },
     {
       "name": "drill_npth.drl",
-      "bytes": 501,
-      "sha256": "dac1b5e230dac862106a2771e29381254afdd95864c9a6b21abcb741c18dc896"
+      "bytes": 535,
+      "sha256": "3b4fd2e0af2fada601d93bc8f77d8802ce6c971a9a037b266a26da7bfebfd355"
     }
   ],
   "manufacturing_release": false

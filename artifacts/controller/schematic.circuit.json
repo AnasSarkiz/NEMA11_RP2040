@@ -30,7 +30,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": true,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": true,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net1"
@@ -306,7 +306,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net53"
@@ -318,7 +318,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net54"
@@ -330,7 +330,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net44"
@@ -342,7 +342,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net45"
@@ -354,7 +354,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net46"
@@ -366,7 +366,7 @@
     "member_source_group_ids": [],
     "is_ground": false,
     "is_power": false,
-    "trace_width": 0.45,
+    "trace_width": 0.3,
     "is_positive_voltage_source": false,
     "subcircuit_id": "subcircuit_source_group_0",
     "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net47"
@@ -14525,6 +14525,17 @@
   {
     "type": "pcb_hole",
     "pcb_hole_id": "pcb_hole_5",
+    "pcb_component_id": "pcb_component_0",
+    "hole_shape": "circle",
+    "hole_diameter": 0.7099808,
+    "x": 4.599992,
+    "y": 20.150126999999998,
+    "is_covered_with_solder_mask": false,
+    "subcircuit_id": "subcircuit_source_group_0"
+  },
+  {
+    "type": "pcb_hole",
+    "pcb_hole_id": "pcb_hole_6",
     "pcb_component_id": "pcb_component_1",
     "hole_shape": "circle",
     "hole_diameter": 0.7099808,
@@ -15372,6 +15383,17 @@
         "y": -12.845063800000185
       }
     ],
+    "subcircuit_id": "subcircuit_source_group_0"
+  },
+  {
+    "type": "pcb_hole",
+    "pcb_hole_id": "pcb_hole_7",
+    "pcb_component_id": "pcb_component_1",
+    "hole_shape": "circle",
+    "hole_diameter": 0.7099808,
+    "x": -0.6000079999999999,
+    "y": -15.149873,
+    "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
   {
@@ -46935,7 +46957,7 @@
     "position": {
       "x": 0.6000000000000001,
       "y": 20.15,
-      "z": 0.8
+      "z": 0.8500000000000001
     },
     "rotation": {
       "x": 0,
@@ -46960,7 +46982,7 @@
     "position": {
       "x": -4.6,
       "y": -15.149999999999999,
-      "z": 0.8
+      "z": 0.8500000000000001
     },
     "rotation": {
       "x": 0,

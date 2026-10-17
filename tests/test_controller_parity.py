@@ -32,6 +32,12 @@ class ControllerParityTests(unittest.TestCase):
         pin['subcircuit_connectivity_map_key'] = net['subcircuit_connectivity_map_key']
         self.assertTrue(check(records, self.reference))
 
+    def test_missing_USB_locating_hole_is_detected(self):
+        records=copy.deepcopy(self.records)
+        hole=next(e for e in records if e['type']=='pcb_hole' and e.get('pcb_component_id')=='pcb_component_0')
+        records.remove(hole)
+        self.assertTrue(check(records,self.reference))
+
 
 if __name__ == '__main__':
     unittest.main()

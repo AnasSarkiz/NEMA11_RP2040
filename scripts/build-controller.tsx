@@ -30,6 +30,14 @@ for (const e of records) {
  if (e.pcb_component_id === null) delete e.pcb_component_id
  if (e.type === "pcb_component") for (const field of ["display_offset_x","display_offset_y"]) if (typeof e[field] === "number") e[field]=String(e[field])
  if (e.type !== "cad_component") continue
+ if (["J_PD","J_DATA"].includes(source.get(e.source_component_id)?.name)) {
+  // The unchanged GCT STEP's 16 SMT contacts sit 0.05 mm below the imported
+  // datum. Raising the CAD pose aligns them with the PCB surface and gives
+  // the manufacturer's nominal 7.46 mm height; no supplier geometry is edited.
+  e.position.z += .05
+  cadPoseCorrections.push({component:source.get(e.source_component_id).name,
+   global_z_mm:.05,reason:"GCT SMT contact datum and nominal 7.46 mm body height"})
+ }
  if (source.get(e.source_component_id)?.name === "J_MOTOR") {
   // The genuine STEP lead section is 0.5500383 mm below the native holes.
   // Correct the assembly pose, preserving the supplier model and land pattern.

@@ -1,0 +1,83 @@
+{
+  "scope": "Exact routed PCB, six-sheet schematic, BOM/CPL and nominal native assembly milestone",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "assembly_sha256": "480ed53a799be407541bf98071bcc761333cf9b68458cbe3db8c3790cf57aa11",
+  "source_sha256": "4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144",
+  "checks": {
+    "independent-copper-audit.json": {
+      "sha256": "41c52e6b68e70355c6d94268850fe2b85ab881edc28c8b2f5e8933de2bb281b0",
+      "same_PCB_bytes": true
+    },
+    "native-drc-review.json": {
+      "sha256": "79325300502c458ca2495a139e2923f053e0f10139e643f82fb2761d7a51bd1c",
+      "same_PCB_bytes": true
+    },
+    "native-shorts-verification.json": {
+      "sha256": "c1760b61e10b611a043e12904056bc68199aedd103410eb6ce00b6f24ad058af",
+      "same_PCB_bytes": true
+    },
+    "independent-cam-audit.json": {
+      "sha256": "41b4ab6d5925aaa5147f4f864a4c12f77fa3e8079ebc7f446ec292d346cdc944",
+      "same_PCB_bytes": true
+    },
+    "clock-layout-audit.json": {
+      "sha256": "be929e2f96262e5489fbc262498bc206e9ba22f38ca81daa7a32575306c4df37",
+      "same_PCB_bytes": true
+    },
+    "trace-and-layer-audit.json": {
+      "sha256": "7589c65ac1740961266d951649c345d29b2e3520f06857500d3b76d264e8189f",
+      "same_PCB_bytes": true
+    },
+    "USB-reference-audit.json": {
+      "sha256": "8f58e572150d3a4ac9818c904bf66639648adf5b340d8b90c7db83ff70e66fe9",
+      "same_PCB_bytes": true
+    },
+    "assembly-data/export-verification.json": {
+      "sha256": "ccb0f7529b161fee78d1ede272102ca4380083c8ebfac42acd85609c8aba9b12",
+      "same_PCB_bytes": true
+    },
+    "PCB-build.json": {
+      "sha256": "3b8f26874d9952500b4f46d688bec0f1b7ef9eb089f580962b27d0225d631459",
+      "same_PCB_bytes": true
+    },
+    "3d-export-verification.json": {
+      "sha256": "baeb1275c83a0e07f7041c472eea0610667840ecc19329c2b4cac015691c3fb0",
+      "same_PCB_bytes": true
+    }
+  },
+  "counts": {
+    "source_project_metadata": 1,
+    "source_group": 1,
+    "source_net": 64,
+    "source_port": 341,
+    "source_component": 92,
+    "source_board": 1,
+    "source_refdes_convention_warning": 4,
+    "source_trace": 368,
+    "source_no_power_pin_defined_warning": 5,
+    "source_no_ground_pin_defined_warning": 3,
+    "source_component_pins_underspecified_warning": 1,
+    "pcb_component": 92,
+    "pcb_board": 1,
+    "pcb_hole": 8,
+    "pcb_keepout": 4,
+    "pcb_plated_hole": 12,
+    "pcb_smtpad": 329,
+    "pcb_courtyard_outline": 92,
+    "pcb_fabrication_note_path": 151,
+    "pcb_port": 341,
+    "cad_component": 82,
+    "pcb_via": 334,
+    "pcb_trace": 554,
+    "pcb_solder_paste": 319,
+    "pcb_copper_pour": 46,
+    "pcb_silkscreen_path": 631
+  },
+  "raw_native_DRC_errors": 36,
+  "all_native_errors_individually_reviewed_as_circular_keepout_approximation": true,
+  "source_and_physical_validation_tests": 29,
+  "nominal_assembly_models": 84,
+  "milestone_passed": true,
+  "manufacturing_release": false,
+  "remaining_requirements": "docs/manufacturing-requirements.md"
+}

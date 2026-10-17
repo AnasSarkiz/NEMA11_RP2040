@@ -1457,5 +1457,461 @@
       1,
       1
     ]
+  },
+  {
+    "id": "controller_USB_locator_PD_VBUS_0",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -0.875,
+        "y": -9.85,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -0.9499999999999993,
+        "y": -9.85,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.0249999999999986,
+        "y": -9.925,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.0999999999999979,
+        "y": -9.925,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.6499999999999986,
+        "y": -10.475,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.6499999999999986,
+        "y": -10.5,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.674999999999999,
+        "y": -10.524999999999999,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.674999999999999,
+        "y": -10.55,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.7249999999999996,
+        "y": -10.6,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.7249999999999996,
+        "y": -10.649999999999999,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.75,
+        "y": -10.675,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.75,
+        "y": -10.975,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.7249999999999996,
+        "y": -11.0,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.7249999999999996,
+        "y": -13.139960599328564,
+        "width": 0.3,
+        "layer": "bottom"
+      }
+    ],
+    "physical_pad_islands_before_after": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "controller_USB_locator_PD_VBUS_1",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": 1.1416821712938785,
+        "y": -14.058317828706121,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.1750000000000007,
+        "y": -14.025,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.1750000000000007,
+        "y": -14.0,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.1999999999999993,
+        "y": -13.975,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.1999999999999993,
+        "y": -13.95,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.3000000000000007,
+        "y": -13.85,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.3249999999999993,
+        "y": -13.85,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.3500000000000014,
+        "y": -13.825,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.375,
+        "y": -13.825,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.4250000000000007,
+        "y": -13.775,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.4750000000000014,
+        "y": -13.775,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 1.5,
+        "y": -13.75,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.1000000000000014,
+        "y": -13.75,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.125,
+        "y": -13.725,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.200000000000003,
+        "y": -13.725,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.2250000000000014,
+        "y": -13.7,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.275000000000002,
+        "y": -13.7,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.3000000000000007,
+        "y": -13.675,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.3500000000000014,
+        "y": -13.675,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.375,
+        "y": -13.65,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.450000000000003,
+        "y": -13.65,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.4750000000000014,
+        "y": -13.625,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.525000000000002,
+        "y": -13.625,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.5500000000000007,
+        "y": -13.6,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.625,
+        "y": -13.6,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.650000000000002,
+        "y": -13.575,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.700000000000003,
+        "y": -13.575,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.7250000000000014,
+        "y": -13.55,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.8000000000000007,
+        "y": -13.55,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.825000000000003,
+        "y": -13.525,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.875,
+        "y": -13.525,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.900000000000002,
+        "y": -13.5,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 2.9750000000000014,
+        "y": -13.5,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.0,
+        "y": -13.475,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.0500000000000007,
+        "y": -13.475,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.075000000000003,
+        "y": -13.45,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.150000000000002,
+        "y": -13.45,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.1750000000000007,
+        "y": -13.425,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.2250000000000014,
+        "y": -13.425,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.25,
+        "y": -13.399999999999999,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.325000000000003,
+        "y": -13.399999999999999,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.3500000000000014,
+        "y": -13.375,
+        "width": 0.3,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": 3.375,
+        "y": -13.375,
+        "width": 0.3,
+        "layer": "bottom"
+      }
+    ],
+    "physical_pad_islands_before_after": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_1_USB_peg_clearance_0",
+    "route": null,
+    "physical_pad_islands_before_after": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_1_USB_peg_clearance_1",
+    "route": null,
+    "physical_pad_islands_before_after": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "controller_same_side_repair_3_B_MINUS_0_layer_section_1_USB_peg_clearance_0",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -3.6499999999999986,
+        "y": -12.625,
+        "width": 0.3,
+        "layer": "inner2"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.6735921528936326,
+        "y": -12.625,
+        "width": 0.3,
+        "layer": "inner2"
+      }
+    ],
+    "physical_pad_islands_before_after": [
+      1,
+      1
+    ]
   }
 ]

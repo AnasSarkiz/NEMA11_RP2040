@@ -1,0 +1,9 @@
+{
+  "scope": "Analytical native local route; final independent audit remains required",
+  "width_mm": 0.16,
+  "bottom_y_mm": -15.795,
+  "nominal_minimum_foreign_copper_clearance_mm": 0.1548941,
+  "nominal_NPTH_clearance_mm": 0.2101366,
+  "grid_raster_margin_unchanged": true,
+  "manufacturing_release": false
+}

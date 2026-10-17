@@ -1,0 +1,59 @@
+{
+  "scope": "Native controller PCB reproduced from checked TSX output, exact reference copper and fixed native routing",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "inputs": [
+    {
+      "path": "artifacts/controller/unrouted.circuit.json",
+      "sha256": "4a84dcb42e7f4ee19bf6bdd294a5291d00bd7963d07783f2328cbc1cfe5b8144"
+    },
+    {
+      "path": "src/controller/reference-routing-seed.json",
+      "sha256": "dd743284c8e50bbaabec1cb7361b681249c06270af2976d34a0ba55be4b444fe"
+    },
+    {
+      "path": "src/controller/constructed-connections.json",
+      "sha256": "0b9127bb506448fb0e28c293d2c87077a26cf46cc06d1c2e2295d26acde1325a"
+    },
+    {
+      "path": "src/controller/USB-locator-route-replacement.json",
+      "sha256": "271d62b4d188bb5a5f415a35da1359eb0e57e6fd0f41d765880b7fe561ca49e5"
+    },
+    {
+      "path": "src/controller/remove-obsolete-stubs.json",
+      "sha256": "93817997fd289edec7325ebb00eb7bd0c1b2ebdfb32926745199e8db315c4f44"
+    },
+    {
+      "path": "src/controller/trimmed-route-leaves.json",
+      "sha256": "0ab1b2a6272b746aebadc5b824de1a65d0ce970e27b9149f1682e7aff0961415"
+    },
+    {
+      "path": "src/controller/remove-orphan-copper.json",
+      "sha256": "8908e186369545ec611f5d80a46d3074bcea4a32b1196d8239b7e385e4ba1fad"
+    },
+    {
+      "path": "config/controller-silkscreen-font.json",
+      "sha256": "1d5bccd9c327c58ab7e7d205df2b069c3b7b1a7ddf685ba60a0a4ef2743bffdc"
+    },
+    {
+      "path": "scripts/route_controller_pcb.py",
+      "sha256": "fb9121d4ba4094ef793ad94036713e677f9479cba183db1081e56340143fa3ad"
+    },
+    {
+      "path": "scripts/refine_controller_routing.py",
+      "sha256": "0310b8a9a6920cd1a267da4c11297a7597ee913054aafe7540bceeb5fe626ab9"
+    },
+    {
+      "path": "scripts/fill_controller_ground.py",
+      "sha256": "ea6b1e31b0c6b1e2d1cda007c1c878d085e3245bc97c72ce49ce0c38191a65b3"
+    },
+    {
+      "path": "scripts/annotate_controller_pcb.py",
+      "sha256": "20ab9778f71e1671dc8385413a7ed17ebc5b67653e2b73e75e14738f51beded1"
+    },
+    {
+      "path": "scripts/prepare_controller_stencil.py",
+      "sha256": "53f3e3f7e170830a20c98b2adfc054aa7ceb5cb50228a21923a9b5b7a95cada0"
+    }
+  ],
+  "manufacturing_release": false
+}

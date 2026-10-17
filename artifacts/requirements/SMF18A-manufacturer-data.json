@@ -1,0 +1,14 @@
+{
+  "url": "https://datasheet.lcsc.com/datasheet/pdf/fa41ee376507916bceb7512729759974.pdf?productCode=C19077512",
+  "sha256": "c8f137df222c1c36b0356096e10d601434b420c2f65407c222229dbd725df74a",
+  "document": "SMF series, LCSC C19077512; 200 W 10/1000 us TVS data sheet",
+  "part": "SMF18A",
+  "standoff_V": 18,
+  "breakdown_min_max_V": [
+    20,
+    22.1
+  ],
+  "clamp_V_at_6_8A": 29.2,
+  "manufacturer_test_temperature_C": 25,
+  "energy_J_guaranteed": false
+}

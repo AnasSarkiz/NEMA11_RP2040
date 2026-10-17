@@ -6,10 +6,11 @@ import { convertCircuitJsonToGltf } from "circuit-json-to-gltf"
 const root = process.cwd()
 const routed = process.argv.includes("--pcb")
 const assembly = process.argv.includes("--assembly")
-const controller = process.argv.includes("--controller") || assembly
-const path = controller ? "artifacts/controller/" : routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
-const filename = assembly ? "assembly.circuit.json" : controller ? "unrouted.circuit.json" : routed ? "board.circuit.json" : "core.circuit.json"
-const output = assembly ? "development-assembly.glb" : controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
+const fullPcb = process.argv.includes("--controller-pcb")
+const controller = process.argv.includes("--controller") || assembly || fullPcb
+const path = fullPcb ? "artifacts/controller-pcb/" : controller ? "artifacts/controller/" : routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
+const filename = assembly ? "assembly.circuit.json" : fullPcb ? "board.circuit.json" : controller ? "unrouted.circuit.json" : routed ? "board.circuit.json" : "core.circuit.json"
+const output = assembly ? "development-assembly.glb" : fullPcb ? "development-pcb.glb" : controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
 const bytes = readFileSync(path + filename)
 const records = JSON.parse(bytes.toString())
 const modelPaths = new Map<string, string>()

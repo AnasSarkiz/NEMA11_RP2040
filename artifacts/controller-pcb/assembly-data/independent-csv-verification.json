@@ -1,5 +1,6 @@
 {
   "scope": "Independent CSV membership, exclusions and board-origin bounds",
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
   "SMT_BOM_CPL_designators": 81,
   "BOM_groups": 44,
   "unique_designators": true,
@@ -7,16 +8,16 @@
   "encoder_and_bare_test_points_excluded": true,
   "files": [
     {
-      "path": "artifacts/controller-pcb/assembly-data/manual-assembly.csv",
-      "sha256": "8361b9725c9d9dd55a6ff8ab3fc01de0eafeb25999c266f96e321d8d7d79e592"
-    },
-    {
       "path": "artifacts/controller-pcb/assembly-data/JLC_SMT_BOM.csv",
       "sha256": "122301feff945f94c87dd5c29dd85cbb38779b924c110ad6a26b60659dd3840f"
     },
     {
       "path": "artifacts/controller-pcb/assembly-data/JLC_SMT_CPL.csv",
       "sha256": "743cb27a50624b62f295a65a3bcbe1386d94008b667033c830f7d28bfa641b2a"
+    },
+    {
+      "path": "artifacts/controller-pcb/assembly-data/manual-assembly.csv",
+      "sha256": "8361b9725c9d9dd55a6ff8ab3fc01de0eafeb25999c266f96e321d8d7d79e592"
     }
   ],
   "passed": true,

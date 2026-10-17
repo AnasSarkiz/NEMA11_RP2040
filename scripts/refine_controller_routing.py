@@ -16,6 +16,19 @@ def refine(records):
     records[:] = [e for e in records if e.get('pcb_via_id') != identifier
                   and e.get('pcb_trace_id') not in obsolete
                   and not e.get('pcb_trace_id', '').startswith('controller_RGB_via_relocation_')]
+    correction = ROOT / 'src/controller/USB-locator-route-replacement.json'
+    if correction.exists():
+        data=json.loads(correction.read_text())
+        for edit in data.get('edits',[data]):
+            index=next((i for i,e in enumerate(records) if e.get('pcb_trace_id')==edit['removed_trace_id']),None)
+            if index is not None:
+                records[index:index+1]=edit['replacement_records']
+        if 'DIR_reference_copper_retained' in data:
+            key=next(e['subcircuit_connectivity_map_key'] for e in records if e['type']=='source_net' and e['name']=='DIR')
+            records[:]=[e for e in records if not(e['type'] in ['pcb_trace','pcb_via']
+                and e.get('subcircuit_connectivity_map_key')==key
+                and not e[e['type']+'_id'].startswith('controller_connection_')
+                and e[e['type']+'_id'] not in data['DIR_reference_copper_retained'])]
     trace = next(e for e in records if e.get('pcb_trace_id') == 'controller_same_side_repair_15_DATA_VBUS_1_layer_section_0')
     # The new diode branch joins this run at Y=14.3; remove only the old
     # connector-side leaf beyond that junction, retaining positive overlap.
@@ -34,6 +47,10 @@ def refine(records):
                     records.remove(route)
                 else:
                     route['route'] = edit['route']
+    orphan_path=ROOT/'src/controller/remove-orphan-copper.json'
+    if orphan_path.exists():
+        orphan=set(json.loads(orphan_path.read_text()))
+        records[:]=[e for e in records if e.get(e['type']+'_id') not in orphan]
     # Match each return run to an actual retained pad in its copper group.
     # Original pin-to-net source traces still describe every ground connection.
     copper = Copper(records)
