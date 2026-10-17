@@ -1,0 +1,12 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype",
+  "version": "0.3.0",
+  "description": "Routed NEMA11 controller, six schematics and OEM motor/front-carrier native assembly; development prototype, NOT fabrication released",
+  "main": "index.circuit.json",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040.git"
+  }
+}

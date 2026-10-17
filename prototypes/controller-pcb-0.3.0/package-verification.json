@@ -1,0 +1,29 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype",
+  "version": "0.3.0",
+  "source_milestone_commit": "08add8752686782b01d2d2d2278f6366bd82e4f5",
+  "source_repository": "https://github.com/AnasSarkiz/NEMA11_RP2040.git",
+  "source_path": "artifacts/controller/assembly.circuit.json",
+  "scope": "Routed full electrical PCB and six-sheet schematic, unchanged OEM motor and original front carrier proposal",
+  "circuit_sha256": "339d31a4b9896f2acf8c55122bb8d2bffd49f9c715889fe3445579a942e4570f",
+  "source_PCB_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "source_components": 94,
+  "PCB_components": 92,
+  "physical_ports": 341,
+  "schematic_sheets": 6,
+  "fitted_CAD_models": 84,
+  "independent_copper_connectivity_clock_USB_ground_reference_shorts_CAM_verified": true,
+  "raw_native_DRC_errors": 36,
+  "native_errors_review": "Individually checked circular-keepout bounding-rectangle approximations",
+  "registry_published": false,
+  "manufacturing_release": false,
+  "limitations": [
+    "Actual harness, mating plug/contacts and purchased fasteners absent",
+    "Motor AWG26 insulation OD and PH crimp qualification unresolved",
+    "Original GCT USB STEP compound validity limitation retained",
+    "Factory stackup/impedance, thickness, via-fill, stencil/panel and assembly process acceptance pending",
+    "Current accuracy, heat, regeneration and physical operation unqualified; stock unreserved"
+  ],
+  "native_CLI_record_roundtrip_equal": true,
+  "unique_native_record_ids": true
+}
