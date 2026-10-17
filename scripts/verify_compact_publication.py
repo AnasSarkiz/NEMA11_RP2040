@@ -16,5 +16,8 @@ receipt=dict(package=name,version='0.1.0',url=url,package_release_id=release['pa
 receipt['version']=args.version
 receipt['native_CLI_exit_code']=args.native_cli_exit_code
 if args.version!='0.1.0':
- proof=json.loads((folder/'package-verification.json').read_text());receipt['scope']=proof['scope'];receipt['disconnected_controller_nets']=proof['disconnected_controller_nets'];receipt['native_DRC_pass']=False
+ proof=json.loads((folder/'package-verification.json').read_text());receipt['scope']=proof['scope']
+ if proof.get('native_copper_review_pass'):
+  receipt.update(disconnected_controller_nets=proof['physical_opens'],physical_shorts=proof['physical_shorts'],native_DRC_pass=proof['native_DRC_errors']==0,physical_routing_complete=True,PCB_mount_count=proof['PCB_mount_count'],PCB_mount_pitch_mm=proof['PCB_hole_pitch_mm'],PCB_hole_diameter_mm=proof['PCB_hole_diameter_mm'],layers=proof['layers'],USB_pair_geometry_and_impedance_qualified=False,factory_process_acceptance_received=False)
+ else:receipt.update(disconnected_controller_nets=proof['disconnected_controller_nets'],native_DRC_pass=False)
 (ROOT/('artifacts/publication/compact-prototype-'+args.version+'.json')).write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps({k:v for k,v in receipt.items() if k not in ['verified_files','additional_registry_generated_files']}))

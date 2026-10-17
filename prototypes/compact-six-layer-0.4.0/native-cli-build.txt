@@ -1,0 +1,21 @@
+Building 1 file(s)...
+Building index.circuit.json...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+D_TVS has no pin with requires_power=true
+D_TVS has no pin with requires_ground=true
+All pins on D_TVS are underspecified (no pinAttributes set)
+D_STATUS has no pin with requires_ground=true
+Q_STATUS_R has no pin with requires_power=true
+Q_STATUS_G has no pin with requires_power=true
+Q_STATUS_B has no pin with requires_power=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

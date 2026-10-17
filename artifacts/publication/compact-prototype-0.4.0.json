@@ -1,0 +1,82 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.4.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "2bf66bd4-4e0a-4837-b567-a83dfe9bd20b",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 1,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 1099,
+      "sha256": "e0f5e8fa67f881ed9b82e105e1b816ea19906ab169813f058c24a3b17fba671b",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 10703938,
+      "sha256": "b5928badc2efd866636d64de8b6732ff6c73e6dc5d57041f874f31cdd58787c7",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 10703938,
+      "sha256": "b5928badc2efd866636d64de8b6732ff6c73e6dc5d57041f874f31cdd58787c7",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 822,
+      "sha256": "a330296f828a638215bf5eacbdaaaad1f5770a98e38097f0a95cee5cb37ef885",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 2115,
+      "sha256": "49e7a0172c903a0b0c6b905852476732b4384ae52d70bcf04a83b5b27f86a9c6",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 477,
+      "sha256": "4a681e08ffa651be6e08ae7fc15926459e8ce4bf259557277e79bf00319dca1c",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "additional_registry_generated_files": [
+    "dist/index/pcb.svg"
+  ],
+  "source_milestone_commit": "399ffc34d70be4861b0224960d5a135c1c9d0d20",
+  "scope": "Routed six-layer compact review checkpoint; factory, USB and physical qualification incomplete",
+  "ready_to_build": true,
+  "physical_routing_complete": true,
+  "manufacturing_release": false,
+  "disconnected_controller_nets": 0,
+  "physical_shorts": 0,
+  "native_DRC_pass": true,
+  "PCB_mount_count": 4,
+  "PCB_mount_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "layers": 6,
+  "USB_pair_geometry_and_impedance_qualified": false,
+  "factory_process_acceptance_received": false,
+  "native_CLI_upload_diagnosis": {
+    "exit_code": 1,
+    "authenticated_upload_completed_partially": true,
+    "initial_archive_HTTP_status": 502,
+    "individual_large_file_HTTP_status": 413,
+    "recovery": "Authenticated single-file gzip archives; native CLI dist JSON whitespace compacted without changing any circuit records",
+    "large_archive_requests_timed_out_but_remote_files_verified": true,
+    "all_required_remote_files_verified_byte_for_byte": true,
+    "authentication_failure": false
+  }
+}

@@ -134,6 +134,9 @@ jobs:
           python3 scripts/verify_compact_six_layer.py
           python3 scripts/package_compact_review.py --check
           git diff --exit-code -- artifacts/compact-six-layer/board.circuit.json
+          (cd prototypes/compact-six-layer-0.4.0 && tsci build index.circuit.json)
+          python3 scripts/compact_six_layer_prototype_dist.py
+          python3 scripts/verify_six_layer_prototype.py
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json
