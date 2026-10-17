@@ -1,0 +1,8 @@
+{
+  "scope": "Actual native CLI Gerber raster short check, requested all layers at 100 pixels/mm; independent exact copper graph separately checks all six layers",
+  "command": "tsci check shorts artifacts/compact-six-layer/board.circuit.json --mode gerber --layer all --pixels-per-mm 100",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "exit_code": 0,
+  "log_sha256": "98ccc8689b6a81db2840368894d9370021add369e2d3f747e040164fff805b9a",
+  "manufacturing_release": false
+}

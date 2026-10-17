@@ -1,0 +1,638 @@
+{
+  "scope": "Exact candidate JLC SMT BOM/CPL generated from native source and genuine supplier R0 footprints; order acceptance not obtained",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "native_converter": "circuit-json-to-pnp-csv; requireSupplierRotation=true",
+  "supplier_orientation_source": "Native R0 render of the committed exact JLC supplier imports, with original copper preserved",
+  "LED_orientation_metadata_review": {
+    "part": "C965799",
+    "pin1": "cathode, R0 left",
+    "pad_Y_skew_mm": 0.006857999999999809,
+    "canonical_frame": "topside_left",
+    "copper_changed": false
+  },
+  "supplier_rotation_warnings": 0,
+  "fitted_purchased_parts": 76,
+  "SMT_BOM_CPL_parts": 75,
+  "manual_through_hole_parts": 1,
+  "bare_test_pads_excluded": 7,
+  "optional_encoder_DNP_parts_excluded": 3,
+  "CPL_origin": "Board lower-left, mm; +14 X and +14 Y from board coordinates",
+  "orientation_metadata": [
+    {
+      "designator": "J_PD",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "J_DATA",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "U_PD",
+      "authored_rotation": 270,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "R_PD",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_PD",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_PG",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "U_MCU",
+      "authored_rotation": 0,
+      "pin1_location": "leftside_top",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "leftside_top"
+      }
+    },
+    {
+      "designator": "C_IO1",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_IO10",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_IO22",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_IO33",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_IO42",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_IO49",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_DV23",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_DV50",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_USB",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_ADC",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VREG_IN",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VREG_OUT",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "U_FLASH",
+      "authored_rotation": 0,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "C_FLASH",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_FLASH_CS",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_BOOT",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "Y_MCU",
+      "authored_rotation": 270,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "R_XOUT",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_XIN",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_XOUT",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_RUN",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_DM",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_DP",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_CC1",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_CC2",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_USB_SENSE_H",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_USB_SENSE_L",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_VM_H",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_VM_L",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VM_SENSE",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "U_BUCK",
+      "authored_rotation": 180,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "L_BUCK",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_BOOTSTRAP",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_BUCK_IN",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_BUCK_OUT1",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_BUCK_OUT2",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "D_PD",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "D_DATA",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "U_DRV",
+      "authored_rotation": 270,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "C_CP",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VCP",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VREG",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_DRV_LOGIC",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_VM",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_BULK",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_SA",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_SB",
+      "authored_rotation": 90,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_REF_H",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_REF_L",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "C_REF",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_ENABLE",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_SLEEP",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "J_MOTOR",
+      "authored_rotation": 90,
+      "pin1_location": "bottomside_right",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_right"
+      }
+    },
+    {
+      "designator": "U_ESD",
+      "authored_rotation": 90,
+      "pin1_location": "bottomside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left"
+      }
+    },
+    {
+      "designator": "D_TVS",
+      "authored_rotation": 0,
+      "pin1_location": "bottomside_right",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_right"
+      }
+    },
+    {
+      "designator": "U_TEMP",
+      "authored_rotation": 0,
+      "pin1_location": "rightside_bottom",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "rightside_bottom"
+      }
+    },
+    {
+      "designator": "C_TEMP",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_TEMP_SDA",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_TEMP_SCL",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "D_PWR",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_PWR_LED",
+      "authored_rotation": 0,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "D_STATUS",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "R_STATUS_R",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "Q_STATUS_R",
+      "authored_rotation": 180,
+      "pin1_location": "rightside_top",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "rightside_top"
+      }
+    },
+    {
+      "designator": "R_STATUS_G",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "Q_STATUS_G",
+      "authored_rotation": 180,
+      "pin1_location": "rightside_top",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "rightside_top"
+      }
+    },
+    {
+      "designator": "R_STATUS_B",
+      "authored_rotation": 180,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    },
+    {
+      "designator": "Q_STATUS_B",
+      "authored_rotation": 90,
+      "pin1_location": "rightside_top",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "rightside_top"
+      }
+    },
+    {
+      "designator": "R_PD_CFG",
+      "authored_rotation": 270,
+      "pin1_location": "topside_left",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "topside_left"
+      }
+    }
+  ],
+  "remaining_requirements": [
+    "JLC stock/reservation and assembly process acceptance",
+    "JLC machine origin, polarized-part preview and first article confirmation",
+    "USB signal reflow and PTH shell soldering process",
+    "Stencil/filled-and-capped via acceptance",
+    "Mating harness and mechanical tolerances"
+  ],
+  "manufacturing_release": false
+}

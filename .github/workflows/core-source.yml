@@ -116,6 +116,24 @@ jobs:
           python3 scripts/verify_compact_escape.py
           (cd prototypes/compact-escape-0.2.0 && tsci build index.circuit.json)
           python3 scripts/verify_escape_prototype.py
+      - name: Reproduce routed six-layer four-hole compact checkpoint
+        run: |
+          bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --layers 6 --placement config/compact-routing-placement.json --out /tmp/nema11-six-source
+          cmp /tmp/nema11-six-source/unrouted.circuit.json artifacts/compact-six-layer/unrouted.circuit.json
+          python3 scripts/verify_controller.py --compact --no-buzzer --folder artifacts/compact-six-layer
+          python3 scripts/audit_compact_placement.py --folder artifacts/compact-six-layer --placement config/compact-routing-placement.json --USB-escape --extra-constraints config/compact-four-mount-routing-constraints.json
+          python3 scripts/build_compact_six_layer.py --check
+          python3 scripts/verify_controller_schematic.py --compact --folder artifacts/compact-six-layer
+          python3 scripts/check_compact_source.py --folder artifacts/compact-six-layer --netlist examples/six-layer-controller.circuit.tsx
+          bun scripts/check-controller-pcb.tsx --checks-only --compact --folder artifacts/compact-six-layer --filled-capped-policy artifacts/compact-six-layer/filled-capped-via-policy.json
+          python3 scripts/audit_controller_pcb.py --input artifacts/compact-six-layer/board.circuit.json
+          python3 scripts/audit_controller_connectivity.py --compact-four-mounts --input artifacts/compact-six-layer/board.circuit.json
+          python3 scripts/verify_compact_clock.py --verify-existing --folder artifacts/compact-six-layer --source-folder artifacts/compact-six-layer
+          python3 scripts/audit_compact_electrical.py
+          python3 scripts/audit_controller_cam.py --folder artifacts/compact-six-layer
+          python3 scripts/verify_compact_six_layer.py
+          python3 scripts/package_compact_review.py --check
+          git diff --exit-code -- artifacts/compact-six-layer/board.circuit.json
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json

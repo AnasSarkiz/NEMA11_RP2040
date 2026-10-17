@@ -1,0 +1,40 @@
+{
+  "scope": "Full electrical source development candidate; copper, motor mounting and manufacturing not released",
+  "circuit_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "source_components": 86,
+  "source_ports": 326,
+  "pcb_traces": 0,
+  "source_asset_revision": "71bbac39241c04b405f359193c37c9add1af1e99",
+  "source_assets_uncommitted": false,
+  "cad_asset_hashes_verified": true,
+  "bare_or_DNP_paste_removed": 11,
+  "unsupported_unowned_board_silk_excluded": 4,
+  "render_errors": [],
+  "schema_errors": [],
+  "missing_supplier_models": [],
+  "cad_pose_corrections": [
+    {
+      "component": "J_PD",
+      "global_z_mm": 0.05,
+      "reason": "GCT SMT contact datum and nominal 7.46 mm body height"
+    },
+    {
+      "component": "J_DATA",
+      "global_z_mm": 0.05,
+      "reason": "GCT SMT contact datum and nominal 7.46 mm body height"
+    },
+    {
+      "component": "J_MOTOR",
+      "local_y_mm": 0.5500383,
+      "global_delta_mm": {
+        "x": -0.5500383,
+        "y": 3.368013217517258e-17,
+        "z": 0
+      },
+      "reason": "Independent STEP lead sections versus native plated-hole centres"
+    }
+  ],
+  "motor_connector": "C131334 B4B-PH-K-S(LF)(SN), through-hole/manual assembly candidate",
+  "current_divider_high_ohms": 20000,
+  "manufacturing_release": false
+}

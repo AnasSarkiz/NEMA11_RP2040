@@ -2,7 +2,8 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import { convertCircuitJsonToGerberFiles } from "circuit-json-to-gerber"
 
-const path = "artifacts/controller-pcb/"
+const folderArg=process.argv.indexOf("--folder")
+const path = folderArg>=0?process.argv[folderArg+1].replace(/\/$/,"")+"/":"artifacts/controller-pcb/"
 const bytes = readFileSync(path + "board.circuit.json")
 const sha = createHash("sha256").update(bytes).digest("hex")
 const audit = JSON.parse(readFileSync(path + "independent-copper-audit.json", "utf8"))

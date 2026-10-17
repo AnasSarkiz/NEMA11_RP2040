@@ -1,0 +1,326 @@
+{
+  "PCB_mounts": [
+    {
+      "centre_mm": [
+        -12.5,
+        -12.5
+      ],
+      "hole_diameter_mm": 1.8,
+      "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.4776284049845889,
+      "hole_edge_to_PCB_edge_mm": 0.6,
+      "head_within_28_3mm_frame": true
+    },
+    {
+      "centre_mm": [
+        -12.5,
+        12.5
+      ],
+      "hole_diameter_mm": 1.8,
+      "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.20233720179757986,
+      "hole_edge_to_PCB_edge_mm": 0.6,
+      "head_within_28_3mm_frame": true
+    },
+    {
+      "centre_mm": [
+        12.5,
+        -12.5
+      ],
+      "hole_diameter_mm": 1.8,
+      "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.15534149452921703,
+      "hole_edge_to_PCB_edge_mm": 0.6,
+      "head_within_28_3mm_frame": true
+    },
+    {
+      "centre_mm": [
+        12.5,
+        12.5
+      ],
+      "hole_diameter_mm": 1.8,
+      "head_keepout_radius_mm": 1.6,
+      "minimum_copper_to_head_keepout_mm": 0.6221652113905366,
+      "hole_edge_to_PCB_edge_mm": 0.6,
+      "head_within_28_3mm_frame": true
+    }
+  ],
+  "scope": "Unrouted compact full-circuit placement, supplier copper and nominal envelopes only",
+  "circuit_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "components": 86,
+  "fitted_parts": 76,
+  "all_fitted_on_top": true,
+  "original_supplier_pad_geometries_verified": 326,
+  "top_courtyards_checked": 83,
+  "foreign_pad_clearance_comparisons": 45795,
+  "minimum_foreign_pad_clearance_mm": 0.15979200000000038,
+  "minimum_copper_edge_clearance_mm": 0.254999999999999,
+  "nominal_component_spacing_pairs_checked": 2080,
+  "minimum_JLC_spacing_surplus_mm": 0.0049999999998209255,
+  "critical_pin_construction_distances": [
+    {
+      "a": "C_IO1.1",
+      "b": "U_MCU.1",
+      "L1_mm": 2.1698634000000006,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_IO10.1",
+      "b": "U_MCU.10",
+      "L1_mm": 1.2672907999999996,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_IO22.1",
+      "b": "U_MCU.22",
+      "L1_mm": 2.069808799999999,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_IO33.1",
+      "b": "U_MCU.33",
+      "L1_mm": 1.2672907999999996,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_IO42.1",
+      "b": "U_MCU.42",
+      "L1_mm": 1.5172327999999995,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_IO49.1",
+      "b": "U_MCU.49",
+      "L1_mm": 2.1698459999999997,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_DV23.1",
+      "b": "U_MCU.23",
+      "L1_mm": 2.1607627999999997,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_DV50.1",
+      "b": "U_MCU.50",
+      "L1_mm": 1.3700999999999999,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_USB.1",
+      "b": "U_MCU.48",
+      "L1_mm": 2.302354,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "points verified at least 0.049 mm inside unchanged native copper"
+    },
+    {
+      "a": "C_ADC.1",
+      "b": "U_MCU.43",
+      "L1_mm": 2.6926631999999997,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_VREG_IN.1",
+      "b": "U_MCU.44",
+      "L1_mm": 2.7672668,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_VREG_OUT.1",
+      "b": "U_MCU.45",
+      "L1_mm": 2.370104,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "Y_MCU.1",
+      "b": "U_MCU.20",
+      "L1_mm": 3.9250670999999993,
+      "maximum_construction_budget_mm": 4.5,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_XOUT.1",
+      "b": "U_MCU.21",
+      "L1_mm": 3.1544868,
+      "maximum_construction_budget_mm": 3.2,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_XOUT.2",
+      "b": "Y_MCU.3",
+      "L1_mm": 1.2051743000000008,
+      "maximum_construction_budget_mm": 2.5,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_XIN.1",
+      "b": "Y_MCU.1",
+      "L1_mm": 1.1920197000000003,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_XOUT.1",
+      "b": "Y_MCU.3",
+      "L1_mm": 1.6918716999999996,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "U_FLASH.1",
+      "b": "U_MCU.56",
+      "L1_mm": 5.999999950000002,
+      "maximum_construction_budget_mm": 6,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_FLASH.1",
+      "b": "U_FLASH.8",
+      "L1_mm": 1.2207385499999979,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_SA.1",
+      "b": "U_DRV.23",
+      "L1_mm": 1.6666337000000002,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_SB.1",
+      "b": "U_DRV.27",
+      "L1_mm": 2.0681536999999994,
+      "maximum_construction_budget_mm": 2.8,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_CP.1",
+      "b": "U_DRV.4",
+      "L1_mm": 1.6332859999999996,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_CP.2",
+      "b": "U_DRV.5",
+      "L1_mm": 1.4065760000000007,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_VCP.1",
+      "b": "U_DRV.6",
+      "L1_mm": 1.465964000000001,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_VREG.1",
+      "b": "U_DRV.8",
+      "L1_mm": 1.4369978000000012,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_DRV_LOGIC.1",
+      "b": "U_DRV.15",
+      "L1_mm": 2.8751108,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_VM.1",
+      "b": "U_DRV.28",
+      "L1_mm": 3.0000000000000004,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_BUCK_IN.1",
+      "b": "U_BUCK.3",
+      "L1_mm": 1.9074840000000013,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_BOOTSTRAP.1",
+      "b": "U_BUCK.6",
+      "L1_mm": 1.0300280000000006,
+      "maximum_construction_budget_mm": 2.5,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "L_BUCK.1",
+      "b": "U_BUCK.5",
+      "L1_mm": 1.5750516000000019,
+      "maximum_construction_budget_mm": 3.5,
+      "measurement": "points verified at least 0.049 mm inside unchanged native copper"
+    },
+    {
+      "a": "C_BUCK_OUT1.1",
+      "b": "L_BUCK.2",
+      "L1_mm": 0.3450517999999998,
+      "maximum_construction_budget_mm": 4,
+      "measurement": "points verified at least 0.049 mm inside unchanged native copper"
+    },
+    {
+      "a": "C_BUCK_OUT2.1",
+      "b": "L_BUCK.2",
+      "L1_mm": 0.37495039999999946,
+      "maximum_construction_budget_mm": 4,
+      "measurement": "points verified at least 0.049 mm inside unchanged native copper"
+    },
+    {
+      "a": "C_PD.1",
+      "b": "U_PD.1",
+      "L1_mm": 1.754922600000003,
+      "maximum_construction_budget_mm": 3,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "C_REF.1",
+      "b": "U_DRV.17",
+      "L1_mm": 1.7495316999999995,
+      "maximum_construction_budget_mm": 3.0,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_DM.1",
+      "b": "U_MCU.46",
+      "L1_mm": 2.0577864999999997,
+      "maximum_construction_budget_mm": 3.0,
+      "measurement": "pin centres"
+    },
+    {
+      "a": "R_DP.1",
+      "b": "U_MCU.47",
+      "L1_mm": 1.5578364999999994,
+      "maximum_construction_budget_mm": 3.0,
+      "measurement": "pin centres"
+    }
+  ],
+  "nominal_fitted_envelopes_within_28_3mm_frame": true,
+  "PCB_outline_mm": [
+    28,
+    28
+  ],
+  "shorted_pad_pairs": [],
+  "routing_traces": 0,
+  "physical_routing_complete": false,
+  "placement_pass": true,
+  "manufacturer_tolerances_verified": false,
+  "manufacturing_release": false,
+  "errors": []
+}

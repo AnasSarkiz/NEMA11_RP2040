@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Independently parse native full-controller CAM, including component slots/NPTH."""
 import hashlib
+import argparse
 import json
 from pathlib import Path
 from shapely.ops import unary_union, polygonize
@@ -12,10 +13,15 @@ from pcb_geometry import Copper, LAYERS, pad_shape
 from cam_geometry import gerber, drill
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'artifacts/controller-pcb'
+parser=argparse.ArgumentParser();parser.add_argument('--folder',type=Path,default=ROOT/'artifacts/controller-pcb');args=parser.parse_args()
+OUT = args.folder
 CAM = OUT / 'review-cam'
 path = OUT / 'board.circuit.json'
 records = json.loads(path.read_text())
+LAYERS=Copper(records).layers
+board=next(e for e in records if e['type']=='pcb_board')
+board_shape=Polygon([(p['x'],p['y']) for p in board['outline']])
+layer_count=len(LAYERS)
 receipt = json.loads((OUT / 'review-cam-export.json').read_text())
 sha = hashlib.sha256(path.read_bytes()).hexdigest()
 assert receipt['circuit_sha256'] == sha
@@ -45,16 +51,16 @@ for entry in receipt['files']:
                 unmatched.pop(matches[0])
         if unmatched:
             errors.append({'extra_drills':source.name,'count':len(unmatched)})
-        if plated and 'TF.FileFunction,Plated,1,4,PTH' not in source.read_text():
+        if plated and f'TF.FileFunction,Plated,1,{layer_count},PTH' not in source.read_text():
             errors.append({'missing_plated_drill_attribute':source.name})
-        if not plated and 'TF.FileFunction,NonPlated,1,4,NPTH' not in source.read_text():
+        if not plated and f'TF.FileFunction,NonPlated,1,{layer_count},NPTH' not in source.read_text():
             errors.append({'missing_NPTH_drill_attribute':source.name})
     else:
         raise ValueError(source.name)
 holes = unary_union(drill_shapes)
 elements = Copper(records).elements()
 comparisons = []
-for layer, name in zip(LAYERS,['F_Cu','In1_Cu','In2_Cu','B_Cu']):
+for layer, name in zip(LAYERS,['F_Cu']+[f'In{i}_Cu' for i in range(1,layer_count-1)]+['B_Cu']):
     expected = unary_union([s[layer] for _,_,s in elements if layer in s]).difference(holes)
     actual = geometry[name].difference(holes)
     extra = actual.difference(expected.buffer(.003)).area
@@ -77,7 +83,7 @@ for side,area in silk.items():
     metal=geometry[side+'_SilkScreen'];mask=geometry[side+'_Mask']
     silk_clearances[side]={'minimum_mask_opening_gap_mm':metal.distance(mask),
         'inside_0_15mm_mask_guard_mm2':metal.intersection(mask.buffer(.1499)).area,
-        'outside_0_20mm_board_inset_mm2':metal.difference(box(-17.3,-17.3,17.3,22.3)).area}
+        'outside_0_20mm_board_inset_mm2':metal.difference(board_shape.buffer(-.2,join_style=2)).area}
     if silk_clearances[side]['inside_0_15mm_mask_guard_mm2']>1e-5 or silk_clearances[side]['outside_0_20mm_board_inset_mm2']>1e-5:
         errors.append({'silkscreen_clearance':side,**silk_clearances[side]})
 mask_webs={}
@@ -117,7 +123,7 @@ for obj in GerberFile.open(CAM/'Edge_Cuts.gbr').objects:
         assert type(edge).__name__=='Line'
         edges.append(LineString([(edge.x1,edge.y1),(edge.x2,edge.y2)]))
 outlines=list(polygonize(edges))
-if len(outlines)!=1 or abs(outlines[0].area-1400)>1e-6 or outlines[0].bounds!=(-17.5,-17.5,17.5,22.5):
+if len(outlines)!=1 or outlines[0].symmetric_difference(board_shape).area>1e-6 or outlines[0].bounds!=board_shape.bounds:
     errors.append({'outline':{'contours':len(outlines),'areas_mm2':[p.area for p in outlines]}})
 report = {'scope':'Actual native full-controller review CAM; manufacturing qualification remains separate',
           'circuit_sha256':sha,'parser':'Gerbonara 1.5 with explicit LR/G85 compatibility',

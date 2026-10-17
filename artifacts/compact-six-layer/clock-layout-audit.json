@@ -1,0 +1,67 @@
+{
+  "scope": "Clock signal/return/guard review on the existing routed board",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "source_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "routes": [
+    {
+      "net": "XIN",
+      "total_copper_mm": 2.3988487972692027,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    },
+    {
+      "net": "XOUT",
+      "total_copper_mm": 2.2998772948877098,
+      "budget_mm": 6,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    },
+    {
+      "net": "XTAL_OUT",
+      "total_copper_mm": 0.770137928701406,
+      "budget_mm": 5,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pin_islands": 1
+    }
+  ],
+  "ground_returns": [
+    {
+      "pin": "Y_MCU.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "Y_MCU.4",
+      "nearby_ground_vias": 2,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "C_XIN.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    },
+    {
+      "pin": "C_XOUT.2",
+      "nearby_ground_vias": 1,
+      "physically_connected_to_MCU_EP": true
+    }
+  ],
+  "top_and_inner1_guard_buffer_mm": 0.25,
+  "MCU_pin_exemption_radius_mm": 0.55,
+  "three_reviewed_exposed_pad_filled_capped_barrels": true,
+  "errors": [],
+  "clock_construction_pass": true,
+  "full_controller_routing_complete": true,
+  "bench_clock_startup_drive_load_frequency_verified": false,
+  "manufacturing_release": false
+}

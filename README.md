@@ -9,20 +9,19 @@ must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
 The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
-**The active four-hole candidate** has four corner mounting holes and removes
-the buzzer circuit with the user's authorization. All 76 fitted parts are on
-top; source, nominal placement and six connected A4 sheets pass.
-[Four-hole geometry, evidence and remaining requirements](docs/four-mount-compact.md).
-Routing and carrier qualification remain incomplete. Earlier two-hole compact
-prototypes below are preserved historical checkpoints.
+**The active four-hole controller is now fully routed in native tscircuit.**
+Its 28 × 28 mm six-layer PCB has four Ø1.8 mm corner holes at 25 mm pitch,
+76 fitted parts on top, six connected A4 sheets and 78 native 3D models.
+Native DRC, independent copper, every-pin connectivity, Gerber raster shorts
+and six-layer CAM comparison report **zero errors / opens / shorts**.
+The buzzer circuit is omitted with the user's authorization.
 
-The default native preview opens the **four-hole 28 × 28 mm compact assembly**:
-76 fitted parts on top, six connected A4 sheets and 78 checked native 3D models
-including the OEM motor and proposed four-piece carrier. [Native GLB](artifacts/compact-four-mounts/development-assembly.glb).
-This source/placement checkpoint is **unrouted**; full copper routing and carrier
-qualification are in progress. The earlier two-hole compact escape prototype
-has 58 disconnected nets, and the older zero-open routed baseline below uses a
-larger outline. Those results do not qualify this four-hole candidate.
+[Current routed design, exact BOM/CPL/Gerbers and unresolved requirements](docs/compact-six-layer.md).
+[Native GLB](artifacts/compact-six-layer/development-assembly.glb).
+This is a checked engineering prototype, **not fabrication-ready**: USB pair/
+stackup, carrier/hardware, maximum tolerances, harness, stock/factory acceptance
+and physical electrical/thermal qualification remain open. Historical four-hole
+0.3.0 and two-hole snapshots remain unchanged.
 
 **Earlier 35 × 40 mm electrical baseline: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.

@@ -94,4 +94,4 @@ writeFileSync(folder+"/schematic-build.json",JSON.stringify({
  electrical_PCB_CAD_records_preserved:true,sheets:sheets.length,
  schematic_components:sheetRecords.filter((e:any)=>e.type === "schematic_component").length,
  manufacturing_release:false},null,2)+"\n")
-console.log(JSON.stringify({sheets:sheets.length,components:92,electrical_records_preserved:true}))
+console.log(JSON.stringify({sheets:sheets.length,components:source.length,electrical_records_preserved:true}))

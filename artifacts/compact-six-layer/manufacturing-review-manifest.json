@@ -1,0 +1,142 @@
+{
+  "scope": "Exact routed compact Gerber/BOM/CPL review archive; DO NOT FABRICATE",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "files": [
+    {
+      "path": "artifacts/compact-six-layer/README.md",
+      "bytes": 897,
+      "sha256": "5f98f62ae82d3b16d829ffbd5c90585d6dc7dd957b17d12644574ba91c1e983a"
+    },
+    {
+      "path": "artifacts/compact-six-layer/assembly-data/JLC_SMT_BOM.csv",
+      "bytes": 2365,
+      "sha256": "cb28e083c20081a9a8e24d378df150259af5d8394272498f32d39b3ad9a6a6bf"
+    },
+    {
+      "path": "artifacts/compact-six-layer/assembly-data/JLC_SMT_CPL.csv",
+      "bytes": 3213,
+      "sha256": "6e45e842917293070f53d788b642568581c333be98940e5d5c9cee2ac493bbe0"
+    },
+    {
+      "path": "artifacts/compact-six-layer/assembly-data/export-verification.json",
+      "bytes": 16053,
+      "sha256": "66eab39686f3bec45c6d730a2ddf83efcca06d4658cbe93c28a2b56232e78b06"
+    },
+    {
+      "path": "artifacts/compact-six-layer/assembly-data/manual-assembly.csv",
+      "bytes": 152,
+      "sha256": "8361b9725c9d9dd55a6ff8ab3fc01de0eafeb25999c266f96e321d8d7d79e592"
+    },
+    {
+      "path": "artifacts/compact-six-layer/electrical-thermal-screen.json",
+      "bytes": 461269,
+      "sha256": "b4effe28d3db4a3c07cd76b86693809e2922bd2cac59ea779f56754c7a508c43"
+    },
+    {
+      "path": "artifacts/compact-six-layer/filled-capped-via-policy.json",
+      "bytes": 53155,
+      "sha256": "8143aca803df197e9ba04e2267b07e682ee9f9f6157b4deb347840cb71e79cd9"
+    },
+    {
+      "path": "artifacts/compact-six-layer/milestone-verification.json",
+      "bytes": 1408,
+      "sha256": "5a9336d64e63228e2742654504ab7f0aa36eb36875b4dbf6427fa04784daf190"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/B_Cu.gbr",
+      "bytes": 1711324,
+      "sha256": "72733489d70739486e634fa95e9de71d45e6794099da77aee65e9f8834864adb"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/B_Mask.gbr",
+      "bytes": 4055,
+      "sha256": "c903a82939661b32e70b03afbba0fb6c14d616151db6ccbd99a48185d359427c"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/B_Paste.gbr",
+      "bytes": 1833,
+      "sha256": "e053422970f111d9bc33ed7729c5367b2884d40c307021b2caccbc4345c83f6e"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/B_SilkScreen.gbr",
+      "bytes": 30984,
+      "sha256": "d70a9697f2bcbbc495068c76bf4fad5aeb76b4ad119327024758e0dde55904c1"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/DO-NOT-FABRICATE.txt",
+      "bytes": 210,
+      "sha256": "3db919b63c87851884ee52f0b89753b4773ed487cd32fe76a336b873ad311685"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "284e16e8fbfd37dc7c6f528714041f23d633d6ecbf9622e24dc5703386ee8704"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/F_Cu.gbr",
+      "bytes": 1013701,
+      "sha256": "40079eaf03b03c280ea7f26ffaf3edf88873982aa6023f86a97eb2bde64f06b7"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/F_Fab.gbr",
+      "bytes": 20205,
+      "sha256": "c52a4fd4323c7142c590d16a060ad410fb4796ead0b47d4e02b51f036bf50f8a"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/F_Mask.gbr",
+      "bytes": 16606,
+      "sha256": "778d56267fbf8ce004d40c602e12ebd6c5fdc2f4599593e342606eb25d4aa554"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/F_Paste.gbr",
+      "bytes": 13426,
+      "sha256": "0b728fc4e6874411ec26eae2db159f11a5342e4ccec5ac06737b58550664c770"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/F_SilkScreen.gbr",
+      "bytes": 3795,
+      "sha256": "3c6f8ac0a3baf71f50697edb6c003a485d0f2c8d7aaa366460cc1495e2fdbb49"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/In1_Cu.gbr",
+      "bytes": 1510994,
+      "sha256": "81245f34988619d2f1cc02942ec4264a95c8bb868a7f57d22675c3b7ac9ab571"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/In2_Cu.gbr",
+      "bytes": 1624764,
+      "sha256": "3408da9f97701898259fd5d05d229e0ac5c876ce29d58b17b987b709f769e32c"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/In3_Cu.gbr",
+      "bytes": 1674362,
+      "sha256": "9be5ca537d671fb544114ea02e9a07ea13174b8b67ac5049bd9df73b505ed017"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/In4_Cu.gbr",
+      "bytes": 1657227,
+      "sha256": "eabd619c2852affa01fa6d34f7bfd81305d6eb3bbf42d79424f225e877c2daba"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/drill-L1-L6.drl",
+      "bytes": 5027,
+      "sha256": "4fea201d370905993cd19520e038766f81d371b1daea63c69714b38654274271"
+    },
+    {
+      "path": "artifacts/compact-six-layer/review-cam/drill_npth.drl",
+      "bytes": 530,
+      "sha256": "694ad4a5233377ecd53fce9752a8ad0361f8cf0124cd4d902bb3311ee5cf05fb"
+    },
+    {
+      "path": "artifacts/compact-six-layer/schematic-a4.pdf",
+      "bytes": 220198,
+      "sha256": "e4263fb4415944b37fba15cb069cdd9e5e003167cb2bfe2c13bbfd01d25f2777"
+    },
+    {
+      "path": "docs/compact-six-layer.md",
+      "bytes": 6366,
+      "sha256": "ab187f4e74346d82d3108c7c0c2c4e5476ace03d0f4a66a9afd5307aa6cf0fee"
+    }
+  ],
+  "manufacturing_release": false
+}

@@ -1,0 +1,9 @@
+Errors: 0
+Warnings: 7
+- source_component_pins_underspecified_warning: All pins on D_TVS are underspecified (no pinAttributes set)
+- source_no_power_pin_defined_warning: D_TVS has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_R has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_G has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_B has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: D_TVS has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D_STATUS has no pin with requires_ground=true

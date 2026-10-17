@@ -1,0 +1,8 @@
+{
+  "scope": "Six functional native A4 schematic sheets; independent checks recorded separately",
+  "source_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "electrical_PCB_CAD_records_preserved": true,
+  "sheets": 6,
+  "schematic_components": 86,
+  "manufacturing_release": false
+}

@@ -1,6 +1,6 @@
 {
   "includeBoardFiles": [
-    "artifacts/compact-four-mounts/assembly.circuit.json"
+    "artifacts/compact-six-layer/assembly.circuit.json"
   ],
-  "previewComponentPath": "artifacts/compact-four-mounts/assembly.circuit.json"
+  "previewComponentPath": "artifacts/compact-six-layer/assembly.circuit.json"
 }

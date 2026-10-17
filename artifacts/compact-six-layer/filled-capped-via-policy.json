@@ -1,0 +1,1710 @@
+{
+  "scope": "Explicit filled/capped land-via process selection; all clearance, drill, short and connection checks remain mandatory",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped on all 0.30 mm vias only",
+  "reviewed_vias": [
+    {
+      "via_id": "compact_GND_U_MCU_EP",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.6,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_49"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_GND_U_DRV_EP",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.6,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_195"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_GND_U_FLASH_EP",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.5,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_138"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_15",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_209"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_22",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_202"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_24",
+      "source_net_id": "source_net_26",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_200"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_26",
+      "source_net_id": "source_net_28",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_198"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_1",
+      "source_net_id": "source_net_29",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_223"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_2",
+      "source_net_id": "source_net_14",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_222"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_4",
+      "source_net_id": "source_net_20",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_220"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_5",
+      "source_net_id": "source_net_21",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_219"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_6",
+      "source_net_id": "source_net_22",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_218"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_8",
+      "source_net_id": "source_net_23",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_216"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_9",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_215"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_10",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_214"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_11",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_213"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_12",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_212"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_14",
+      "source_net_id": "source_net_15",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_210"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_16",
+      "source_net_id": "source_net_12",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_208"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_17",
+      "source_net_id": "source_net_19",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_207"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_19",
+      "source_net_id": "source_net_13",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_205"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_21",
+      "source_net_id": "source_net_27",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_203"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_23",
+      "source_net_id": "source_net_24",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_201",
+        "pcb_smtpad_237"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_27",
+      "source_net_id": "source_net_25",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_197",
+        "pcb_smtpad_239"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_DRV_28",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_196"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_FLASH_1",
+      "source_net_id": "source_net_31",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_130"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_FLASH_3",
+      "source_net_id": "source_net_35",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_132"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_FLASH_5",
+      "source_net_id": "source_net_33",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_134"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_FLASH_7",
+      "source_net_id": "source_net_36",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_136"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_1",
+      "source_net_id": "source_net_5",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_41"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_6",
+      "source_net_id": "source_net_7",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_36"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_7",
+      "source_net_id": "source_net_6",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_35"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_8",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_34"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_9",
+      "source_net_id": "source_net_60",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_33"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_10",
+      "source_net_id": "source_net_16",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_32"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_PD_11",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_42"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_PD_1",
+      "source_net_id": "source_net_5",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_46"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_PD_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_45"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_PG_2",
+      "source_net_id": "source_net_16",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_47"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO1_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_107"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO1_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_106"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO10_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_109"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO10_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_108"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO22_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_111"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO33_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_113"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO33_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_112"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO42_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_115"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO42_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_114"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO49_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_117"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO49_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_116"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DV50_1",
+      "source_net_id": "source_net_30",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_121"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DV50_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_120"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_USB_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_123"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_USB_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_122"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_ADC_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_125"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_ADC_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_124"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_IN_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_127"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_IN_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_126"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_OUT_1",
+      "source_net_id": "source_net_30",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_129"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_OUT_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_128"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_FLASH_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_140"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_FLASH_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_139"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_FLASH_CS_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_142"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_DM_2",
+      "source_net_id": "source_net_11",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_157"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_DP_2",
+      "source_net_id": "source_net_10",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_159"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_CC1_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_161"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_CC2_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_163"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_USB_SENSE_L_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_167"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_VM_H_2",
+      "source_net_id": "source_net_18",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_169"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_VM_L_1",
+      "source_net_id": "source_net_18",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_172"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_VM_L_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_171"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VM_SENSE_1",
+      "source_net_id": "source_net_18",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_174"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VM_SENSE_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_173"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_180"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_2",
+      "source_net_id": "source_net_3",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_179"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_3",
+      "source_net_id": "source_net_3",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_178"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_4",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_177"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_5",
+      "source_net_id": "source_net_45",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_176"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_BUCK_6",
+      "source_net_id": "source_net_46",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_175"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BOOTSTRAP_1",
+      "source_net_id": "source_net_46",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_184"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BOOTSTRAP_2",
+      "source_net_id": "source_net_45",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_183"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_IN_1",
+      "source_net_id": "source_net_3",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_186"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_IN_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_185"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_OUT1_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_188"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_OUT1_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_187"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_OUT2_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_190"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BUCK_OUT2_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_189"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_CP_1",
+      "source_net_id": "source_net_20",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_225"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_CP_2",
+      "source_net_id": "source_net_21",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_224"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VCP_1",
+      "source_net_id": "source_net_22",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_227"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VCP_2",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_226"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_1",
+      "source_net_id": "source_net_23",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_229"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VREG_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_228"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DRV_LOGIC_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_231"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DRV_LOGIC_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_230"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VM_1",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_233"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_VM_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_232"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BULK_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_235"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_BULK_1",
+      "source_net_id": "source_net_1",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_234"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_SA_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_236"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_SB_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_238"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_REF_H_2",
+      "source_net_id": "source_net_19",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_240"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_REF_L_1",
+      "source_net_id": "source_net_19",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_243"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_REF_L_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_242"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_ENABLE_2",
+      "source_net_id": "source_net_14",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_246"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_SLEEP_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_248"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_1",
+      "source_net_id": "source_net_10",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_250"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_251"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_3",
+      "source_net_id": "source_net_11",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_252"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_4",
+      "source_net_id": "source_net_11",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_253"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_5",
+      "source_net_id": "source_net_4",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_254"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ESD_6",
+      "source_net_id": "source_net_10",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_255"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_TVS_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_257"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_TEMP_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_265"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_TEMP_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_264"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_PWR_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_270"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_PWR_2",
+      "source_net_id": "source_net_48",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_271"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_PWR_LED_2",
+      "source_net_id": "source_net_48",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_272"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_STATUS_1",
+      "source_net_id": "source_net_54",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_277"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_STATUS_R_1",
+      "source_net_id": "source_net_54",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_279"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_Q_STATUS_G_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_286"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_Q_STATUS_B_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_291"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_TP_GND_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_294"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_TP_SWDIO_1",
+      "source_net_id": "source_net_44",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_296"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_TP_BOOT_GND_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_299"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ENCODER_2",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_301",
+        "pcb_smtpad_309"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ENCODER_6",
+      "source_net_id": "source_net_49",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_306"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_ENCODER_8",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_304",
+        "pcb_smtpad_49"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_PD_CFG_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_312"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DV23_1",
+      "source_net_id": "source_net_30",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_119"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_DV23_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_118"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_TEMP_1",
+      "source_net_id": "source_net_50",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_261"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_TEMP_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_259"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_TEMP_4",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_262"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_TEMP_5",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_258"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_U_TEMP_6",
+      "source_net_id": "source_net_49",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_263"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_ENCODER_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_148",
+        "pcb_smtpad_308"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_IO22_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_110"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_ENCODER_BULK_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_311"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_ENCODER_BULK_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_310"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_REF_1",
+      "source_net_id": "source_net_19",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_245"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_C_REF_2",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_244"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_Q_STATUS_R_3",
+      "source_net_id": "source_net_57",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_280"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_Q_STATUS_R_1",
+      "source_net_id": "source_net_0",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_281"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_Q_STATUS_R_2",
+      "source_net_id": "source_net_51",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_282"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_TEMP_SCL_2",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_268"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_STATUS_3",
+      "source_net_id": "source_net_56",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_275"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_PD_CFG_1",
+      "source_net_id": "source_net_60",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_313"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_J_PD_4",
+      "source_net_id": "source_net_6",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_3"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_PWR_LED_1",
+      "source_net_id": "source_net_2",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_273"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_STATUS_B_1",
+      "source_net_id": "source_net_56",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_289"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_D_DATA_1",
+      "source_net_id": "source_net_3",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_194"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_TP_BOOT_1",
+      "source_net_id": "source_net_47",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_298"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    },
+    {
+      "via_id": "compact_terminal_R_BOOT_2",
+      "source_net_id": "source_net_47",
+      "pad_diameter_mm": 0.45,
+      "drill_diameter_mm": 0.3,
+      "owner_pad_ids": [
+        "pcb_smtpad_143"
+      ],
+      "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped",
+      "factory_acceptance_received": false
+    }
+  ],
+  "ordinary_vias_in_pads_permitted": false,
+  "original_supplier_lands_mask_and_paste_preserved": true,
+  "factory_acceptance_received": false,
+  "manufacturing_release": false
+}

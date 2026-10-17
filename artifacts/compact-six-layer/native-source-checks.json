@@ -1,0 +1,30 @@
+[
+  {
+    "check": "source",
+    "input": "artifacts/compact-six-layer/schematic.circuit.json",
+    "input_sha256": "3598fb8e812b8795debbafed4bbb03c2bac4cd36906d03a21b178110469a8119",
+    "exit_code": 0,
+    "log": "artifacts/compact-six-layer/native-source.txt"
+  },
+  {
+    "check": "pin_specification",
+    "input": "artifacts/compact-six-layer/schematic.circuit.json",
+    "input_sha256": "3598fb8e812b8795debbafed4bbb03c2bac4cd36906d03a21b178110469a8119",
+    "exit_code": 0,
+    "log": "artifacts/compact-six-layer/native-pin_specification.txt"
+  },
+  {
+    "check": "netlist",
+    "input": "examples/six-layer-controller.circuit.tsx",
+    "input_sha256": "c57c95ff3814154d168af1c8075c48cb2155ad0c48d41590a7b03bb1c988560a",
+    "exit_code": 0,
+    "log": "artifacts/compact-six-layer/native-netlist.txt"
+  },
+  {
+    "check": "schematic-placement",
+    "input": "artifacts/compact-six-layer/schematic.circuit.json",
+    "input_sha256": "3598fb8e812b8795debbafed4bbb03c2bac4cd36906d03a21b178110469a8119",
+    "exit_code": 0,
+    "log": "artifacts/compact-six-layer/native-schematic-placement.txt"
+  }
+]

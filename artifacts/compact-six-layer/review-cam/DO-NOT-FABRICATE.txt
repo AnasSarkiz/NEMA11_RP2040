@@ -1,0 +1,3 @@
+Full controller CAM development review only.
+Independent CAM comparison, native DRC review, assembly/harness, stencil and supplier process acceptance remain required.
+These files are not a fabrication release.

@@ -6,7 +6,9 @@ import { populatePartOrientationMetadata, convertCircuitJsonToPickAndPlaceRows }
 import { SupplierPart } from "../src/controller/supplier-parts"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 
-const path="artifacts/controller-pcb/"
+const compact=process.argv.includes("--compact-four-mounts")
+const folderArg=process.argv.indexOf("--folder")
+const path=folderArg>=0?process.argv[folderArg+1].replace(/\/$/,"")+"/":"artifacts/controller-pcb/"
 const output=path+"assembly-data/"
 mkdirSync(output,{recursive:true})
 const bytes=readFileSync(path+"board.circuit.json")
@@ -41,10 +43,13 @@ ledComponent.pin1_location="topside_left"
 ledComponent.supplier_pin1_location_map={jlcpcb:"topside_left"}
 const prepared=await populatePartOrientationMetadata(records, {supplier:"jlcpcb",partsEngine:{fetchPartCircuitJson:async({supplierPartNumber})=>isolated.get(supplierPartNumber!)}})
 const allRows=convertCircuitJsonToPickAndPlaceRows(prepared,{supplier:"jlcpcb",requireSupplierRotation:true})
-if(allRows.length!==82)throw new Error(`Expected 82 fitted purchased parts, found ${allRows.length}`)
+const expectedParts=compact?76:82
+if(allRows.length!==expectedParts)throw new Error(`Expected ${expectedParts} fitted purchased parts, found ${allRows.length}`)
 const rows=allRows.filter(r=>r.designator!=="J_MOTOR")
 const csv=(r:(string|number)[][])=>r.map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n')+'\n'
-const cpl=[['Designator','Mid X','Mid Y','Layer','Rotation'],...rows.map(r=>[r.designator,(r.mid_x+17.5).toFixed(3)+'mm',(r.mid_y+17.5).toFixed(3)+'mm',r.layer,r.rotation])]
+const board=records.find(r=>r.type==="pcb_board")
+const originX=Math.min(...board.outline.map((p:any)=>p.x)),originY=Math.min(...board.outline.map((p:any)=>p.y))
+const cpl=[['Designator','Mid X','Mid Y','Layer','Rotation'],...rows.map(r=>[r.designator,(r.mid_x-originX).toFixed(3)+'mm',(r.mid_y-originY).toFixed(3)+'mm',r.layer,r.rotation])]
 writeFileSync(output+"JLC_SMT_CPL.csv",csv(cpl))
 const groups=new Map<string,any[]>()
 for(const row of rows){const s=sources.find(r=>r.name===row.designator);const code=s.supplier_part_numbers?.jlcpcb?.[0];if(!code)throw new Error("Missing supplier number: "+row.designator);groups.set(code,[...(groups.get(code)??[]),s])}
@@ -58,9 +63,9 @@ writeFileSync(output+"export-verification.json",JSON.stringify({
  native_converter:"circuit-json-to-pnp-csv; requireSupplierRotation=true",
  supplier_orientation_source:"Native R0 render of the committed exact JLC supplier imports, with original copper preserved",
  LED_orientation_metadata_review:{part:"C965799",pin1:"cathode, R0 left",pad_Y_skew_mm:Math.abs(led1.y-led2.y),canonical_frame:"topside_left",copper_changed:false},
- supplier_rotation_warnings:0,fitted_purchased_parts:82,SMT_BOM_CPL_parts:81,manual_through_hole_parts:1,
+ supplier_rotation_warnings:0,fitted_purchased_parts:expectedParts,SMT_BOM_CPL_parts:rows.length,manual_through_hole_parts:1,
  bare_test_pads_excluded:7,optional_encoder_DNP_parts_excluded:3,
- CPL_origin:"Board lower-left, mm; +17.5 X and +17.5 Y from board coordinates",
+ CPL_origin:`Board lower-left, mm; +${-originX} X and +${-originY} Y from board coordinates`,
  orientation_metadata:orientation,
  remaining_requirements:["JLC stock/reservation and assembly process acceptance","JLC machine origin, polarized-part preview and first article confirmation","USB signal reflow and PTH shell soldering process","Stencil/filled-and-capped via acceptance","Mating harness and mechanical tolerances"],
  manufacturing_release:false},null,2)+"\n")

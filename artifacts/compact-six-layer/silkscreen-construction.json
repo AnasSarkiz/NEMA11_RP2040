@@ -1,0 +1,89 @@
+{
+  "scope": "Functional bottom legends; component designators remain in separate assembly drawings",
+  "labels": [
+    {
+      "text": "NEMA11 RP2040",
+      "layer": "bottom",
+      "centre_mm": [
+        -0.5,
+        5.75
+      ],
+      "character_height_mm": 0.9,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "PROTOTYPE 0.4",
+      "layer": "bottom",
+      "centre_mm": [
+        0.0,
+        4.75
+      ],
+      "character_height_mm": 0.8,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "PD 15V",
+      "layer": "bottom",
+      "centre_mm": [
+        -7.300000000000001,
+        8.75
+      ],
+      "character_height_mm": 0.85,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "USB DATA",
+      "layer": "bottom",
+      "centre_mm": [
+        8.55,
+        9.5
+      ],
+      "character_height_mm": 0.85,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "1 A+ BLACK",
+      "layer": "bottom",
+      "centre_mm": [
+        0.0,
+        -6.5
+      ],
+      "character_height_mm": 0.8,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "2 A- GREEN",
+      "layer": "bottom",
+      "centre_mm": [
+        0.0,
+        -8.0
+      ],
+      "character_height_mm": 0.8,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "3 B+ RED",
+      "layer": "bottom",
+      "centre_mm": [
+        0.0,
+        -9.5
+      ],
+      "character_height_mm": 0.8,
+      "stroke_width_mm": 0.15
+    },
+    {
+      "text": "4 B- BLUE",
+      "layer": "bottom",
+      "centre_mm": [
+        0.0,
+        -11.0
+      ],
+      "character_height_mm": 0.8,
+      "stroke_width_mm": 0.15
+    }
+  ],
+  "minimum_mask_clearance_mm": 0.15,
+  "minimum_board_edge_clearance_mm": 0.2,
+  "top_function_labels_verified": false,
+  "manufacturing_release": false
+}

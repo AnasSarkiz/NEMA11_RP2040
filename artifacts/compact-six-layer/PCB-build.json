@@ -1,0 +1,43 @@
+{
+  "scope": "Native tscircuit six-layer copper checkpoint; USB, hardware and manufacturing qualification remain separate",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "inputs": [
+    {
+      "path": "artifacts/compact-six-layer/unrouted.circuit.json",
+      "sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33"
+    },
+    {
+      "path": "src/compact/six-layer-routing.json",
+      "sha256": "668363931d1bbe07ddc2f813b054e9f51f4d20aeb0ff93b471f7dc4a3df3785a"
+    },
+    {
+      "path": "config/compact-routing-placement.json",
+      "sha256": "ebd0020c09868f193fe86416c8c3f786984dc8cda6ebec48e7e310629f0fc230"
+    },
+    {
+      "path": "config/compact-four-mount-routing-constraints.json",
+      "sha256": "2d7a67b761608f4e599a8a3ae4a6886eba472c3152d38c3f548a52d740439a41"
+    },
+    {
+      "path": "config/controller-silkscreen-font.json",
+      "sha256": "1d5bccd9c327c58ab7e7d205df2b069c3b7b1a7ddf685ba60a0a4ef2743bffdc"
+    },
+    {
+      "path": "scripts/build_compact_six_layer.py",
+      "sha256": "d8a1569034a97156242ea44ff4b4e310707f4e541ea3870e46fdf68fa2d1fc40"
+    },
+    {
+      "path": "scripts/fill_controller_ground.py",
+      "sha256": "1242df890ab323a14c20457b9dde7d556d084639211e1cb7bcd4aab12bab198f"
+    },
+    {
+      "path": "scripts/prepare_controller_stencil.py",
+      "sha256": "53f3e3f7e170830a20c98b2adfc054aa7ceb5cb50228a21923a9b5b7a95cada0"
+    },
+    {
+      "path": "scripts/annotate_compact_pcb.py",
+      "sha256": "5c10ace729caab6d2e9dad70fe831dfa9808296f960ea4e71d45413aacaf3364"
+    }
+  ],
+  "manufacturing_release": false
+}
