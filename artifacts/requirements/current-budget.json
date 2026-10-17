@@ -7,24 +7,31 @@
     "logic_rail_tolerance_fraction": 0.05,
     "resistor_tolerance_fraction": 0.01,
     "unqualified_driver_gain_allowance_fraction": 0.05,
+    "reference_input_current_allowance_a": 3e-06,
+    "accuracy_limitation": "A4988 5% accuracy specification is at VREF=2V and 100%/70.71% DAC; this 1.1V candidate is not covered by that test condition. 38.27% DAC specifies 15% at 2V.",
     "thermal_screen_rise_c": 30,
     "external_copper_um": 35,
     "internal_copper_um": 17.5
   },
   "reference_v1_12_trip_a": 0.350765306122449,
+  "selected_source_candidate": {
+    "divider_high_jlcpcb": "C4184",
+    "divider_low_ohm": 10000,
+    "divider_high_ohm": 20000
+  },
   "vref_for_exact_nominal_rated_trip_v": 1.2864,
-  "screening_candidate_not_selected_parts": {
-    "divider_high_ohm": 19600,
+  "source_candidate_screening": {
+    "divider_high_ohm": 20000,
     "divider_low_ohm": 10000,
     "each_phase_sense_ohm": 0.24,
-    "nominal_vref_v": 1.114864864864865,
-    "nominal_trip_a": 0.5806587837837839,
-    "corner_count": 32,
-    "minimum_screened_trip_a": 0.5120068696954219,
-    "maximum_screened_trip_a": 0.6552342478985902,
+    "nominal_vref_v": 1.1,
+    "nominal_trip_a": 0.5729166666666667,
+    "corner_count": 64,
+    "minimum_screened_trip_a": 0.49537042367027395,
+    "maximum_screened_trip_a": 0.657640050167224,
     "below_motor_rating_under_assumed_budget": true,
-    "full_step_each_phase_a_at_70_71_percent": 0.41058776356904686,
-    "nominal_sense_loss_w_each_at_trip": 0.08091950956446313
+    "full_step_each_phase_a_at_70_71_percent": 0.40511326005479287,
+    "nominal_sense_loss_w_each_at_trip": 0.07877604166666669
   },
   "thermal_screen": {
     "sense_loss_w_each_at_rated_current": 0.10773600000000001,
@@ -36,7 +43,7 @@
     "motor_copper_loss_w_per_ohm_per_phase_two_phases_at_rated_current": 0.8978000000000002,
     "motor_copper_loss_w": 5.02768,
     "motor_two_phase_DC_loss_at_25c_max_resistance_w": 5.530448000000001,
-    "ideal_sine_microstep_total_loss_at_nominal_trip_and_25c_w": 1.8881218898374732,
+    "ideal_sine_microstep_total_loss_at_nominal_trip_and_25c_w": 1.8381076388888893,
     "motor_loss_scope": "Two phases at rated DC current versus ideal sine current regulation; excludes winding heating, drive losses and mechanical losses",
     "junction_temperature_c": null
   },

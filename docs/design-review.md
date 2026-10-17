@@ -52,18 +52,19 @@ encoder magnet position, rear shaft, air gap or usable encoder assembly.
 
 ## Conditional A4988 electrical screening
 
-These calculations apply only if the published baseline retains A4988 and its
-two 0.24 Ω shunts. Verify that premise before circuit implementation.
-
+The exact published baseline retains A4988 and two 0.24 Ω shunts.
 `Itrip = Vref / (8 × Rsense)` gives 1.2864 V for exactly 0.67 A nominal.
-Setting the nominal limit precisely at the motor rating leaves no tolerance
-margin. The preliminary candidate 19.6 kΩ/10 kΩ divider on 3.3 V gives
-1.114865 V and 0.580659 A. Exhaustive 32-corner screening with ±5% rail,
-±1% resistors and a provisional ±5% driver gain allowance yields
-0.512007–0.655234 A. **This is an assumed design budget, not a guaranteed
-manufacturer bound or a final BOM.** Do not increase the peak trip by √2 just
-because an A4988 full-step holds approximately 70.71% in each phase; confirm
-the motor current convention, microstep operation and actual measured currents.
+The full-controller source candidate uses genuine C4184 20 kΩ and the original
+10 kΩ low-side resistor: 1.1 V VREF and 0.572917 A nominal peak trip.
+Exhaustive 64-corner screening with ±5% rail, ±1% resistors, ±3 µA reference
+input current and an assumed ±5% driver gain allowance gives
+0.495370–0.657640 A. **This is an assumed design budget, not a guaranteed
+manufacturer bound.** The A4988 accuracy table specifies ±5% at VREF=2 V
+and 100%/70.71% DAC; this 1.1 V circuit is outside that stated test condition.
+The 38.27% DAC condition specifies ±15% at 2 V. Measure the full current
+waveform and revise the limit if needed. Do not increase peak trip by √2 to
+compensate for the 70.71% full-step phase current. Reduced trip can reduce
+holding torque; the motor's rated 0.07 N·m is not demonstrated by this setting.
 
 At a conservative 0.67 A per-phase sizing load, each 0.24 Ω shunt dissipates
 107.736 mW. A 125 mW part is already at 86.2% of nameplate before ambient
@@ -80,8 +81,10 @@ switching, control and charge-pump losses. Normal sine microstepping has a
 different sum of squared phase currents; the conservative bound does not assert
 that both phases normally remain at Itrip. Junction temperature cannot be
 calculated honestly without hot RDS(on), board-specific thermal resistance,
-ambient/motor heating and duty. Motor winding loss likewise requires the
-actual phase resistance. No temperature prediction is released.
+ambient/motor heating and duty. The OEM 5.6 Ω winding gives 5.02768 W for two rated DC phases at 25 °C,
+or 5.530448 W at the +10% resistance corner. Ideal sine regulation at the
+0.572917 A candidate gives 1.8381 W total winding copper loss at nominal
+25 °C resistance, before heating. No junction-temperature prediction is released.
 
 The legacy IPC-2221 isolated-track screen at 0.67 A and 30 °C rise gives
 0.0888 mm for 35 µm outer copper and 0.4618 mm for 17.5 µm inner copper.

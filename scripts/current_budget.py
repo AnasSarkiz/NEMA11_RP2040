@@ -11,18 +11,19 @@ import math
 from pathlib import Path
 
 
-def trip_current(vdd, high, low, sense, gain_error=0.0):
-    return vdd * low / (high + low) / (8 * sense) * (1 + gain_error)
+def trip_current(vdd, high, low, sense, gain_error=0.0, reference_input_a=0.0):
+    vref = vdd * low / (high + low) - reference_input_a * high * low / (high + low)
+    return vref / (8 * sense) * (1 + gain_error)
 
 
 def corner_currents(high, low, sense, rail_tolerance=.05,
-                    resistor_tolerance=.01, driver_allowance=.05):
+                    resistor_tolerance=.01, driver_allowance=.05, reference_input_allowance_a=3e-6):
     return [trip_current(3.3 * (1 + a * rail_tolerance),
                          high * (1 + b * resistor_tolerance),
                          low * (1 + c * resistor_tolerance),
                          sense * (1 + d * resistor_tolerance),
-                         e * driver_allowance)
-            for a, b, c, d, e in itertools.product((-1, 1), repeat=5)]
+                         e * driver_allowance, f * reference_input_allowance_a)
+            for a, b, c, d, e, f in itertools.product((-1, 1), repeat=6)]
 
 
 def ipc2221_width_mm(current, copper_um, rise_c, internal=False):
@@ -37,7 +38,7 @@ def report():
                       'config/design-requirements.json').read_text())
     rated = req['motor']['phase_current_a']
     rs = .24
-    proposed_high, proposed_low = 19600, 10000
+    proposed_high, proposed_low = 20000, 10000
     nominal = trip_current(3.3, proposed_high, proposed_low, rs)
     corners = corner_currents(proposed_high, proposed_low, rs)
     reference = trip_current(3.3, 39000, 10000, rs)
@@ -51,12 +52,15 @@ def report():
             'logic_rail_v': 3.3, 'logic_rail_tolerance_fraction': .05,
             'resistor_tolerance_fraction': .01,
             'unqualified_driver_gain_allowance_fraction': .05,
+            'reference_input_current_allowance_a': 3e-6,
+            'accuracy_limitation': 'A4988 5% accuracy specification is at VREF=2V and 100%/70.71% DAC; this 1.1V candidate is not covered by that test condition. 38.27% DAC specifies 15% at 2V.',
             'thermal_screen_rise_c': 30,
             'external_copper_um': 35, 'internal_copper_um': 17.5
         },
         'reference_v1_12_trip_a': reference,
+        'selected_source_candidate': {'divider_high_jlcpcb': 'C4184', 'divider_low_ohm': 10000, 'divider_high_ohm': 20000},
         'vref_for_exact_nominal_rated_trip_v': rated * 8 * rs,
-        'screening_candidate_not_selected_parts': {
+        'source_candidate_screening': {
             'divider_high_ohm': proposed_high, 'divider_low_ohm': proposed_low,
             'each_phase_sense_ohm': rs,
             'nominal_vref_v': 3.3 * proposed_low / (proposed_high + proposed_low),

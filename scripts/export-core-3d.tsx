@@ -5,9 +5,10 @@ import { convertCircuitJsonToGltf } from "circuit-json-to-gltf"
 
 const root = process.cwd()
 const routed = process.argv.includes("--pcb")
-const path = routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
-const filename = routed ? "board.circuit.json" : "core.circuit.json"
-const output = routed ? "development-pcb.glb" : "development-core.glb"
+const controller = process.argv.includes("--controller")
+const path = controller ? "artifacts/controller/" : routed ? "artifacts/rp2040-pcb/" : "artifacts/rp2040-core/"
+const filename = controller ? "unrouted.circuit.json" : routed ? "board.circuit.json" : "core.circuit.json"
+const output = controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
 const bytes = readFileSync(path + filename)
 const records = JSON.parse(bytes.toString())
 const modelPaths = new Map<string, string>()
@@ -46,7 +47,7 @@ if (glb.toString("ascii", 0, 4) !== "glTF" || glb.readUInt32LE(4) !== 2 || glb.r
 if (!used.size) throw new Error("No original supplier model assets were loaded")
 writeFileSync(path + output, glb)
 writeFileSync(path + "3d-export-verification.json", JSON.stringify({
-  scope: `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
+  scope: controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   glb_sha256: createHash("sha256").update(glb).digest("hex"), bytes: glb.length,
   original_supplier_assets_loaded: [...used.values()],

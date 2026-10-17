@@ -20,7 +20,11 @@
     "pcb:shorts": "tsci check shorts artifacts/rp2040-pcb/board.circuit.json --mode gerber --layer all --pixels-per-mm 100",
     "pcb:prototype": "python3 scripts/prepare-core-prototype.py",
     "prototype:dev": "tsci dev prototypes/rp2040-core/index.circuit.json",
-    "pcb:cam-render": "/workspace/.venvs/nema11-cam/bin/python scripts/render_core_cam.py"
+    "pcb:cam-render": "/workspace/.venvs/nema11-cam/bin/python scripts/render_core_cam.py",
+    "controller:build": "bun scripts/build-controller.tsx",
+    "controller:check": "python3 scripts/verify_controller.py",
+    "controller:3d": "bun scripts/export-core-3d.tsx --controller",
+    "controller:schematic": "bun scripts/schematic-controller.tsx && python3 scripts/verify_controller_schematic.py"
   },
   "main": "prototypes/rp2040-core/index.circuit.json"
 }

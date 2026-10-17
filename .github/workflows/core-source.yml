@@ -37,6 +37,8 @@ jobs:
           npm run typecheck
           npm run core:build
           npm run core:check
+          npm run controller:build
+          npm run controller:check
           python3 scripts/schematic_core.py
           bun scripts/render-core.tsx
           tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt
@@ -45,6 +47,10 @@ jobs:
       - name: Check native PCB and independent copper geometry
         run: |
           python3 -m pip install numpy==2.3.5 shapely==2.1.2
+          bun scripts/schematic-controller.tsx
+          python3 scripts/verify_controller_schematic.py
+          tsci check schematic-placement artifacts/controller/schematic.circuit.json > artifacts/controller/native-schematic-placement.txt
+          git diff --exit-code -- artifacts/controller/schematic.circuit.json
           python3 scripts/route_core_pcb.py
           bun scripts/check-render-pcb.tsx
           python3 scripts/audit_core_pcb.py
@@ -62,6 +68,7 @@ jobs:
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json
+          git diff --exit-code -- artifacts/controller/unrouted.circuit.json
           python3 - <<'PY'
           import hashlib, json, pathlib
           root = pathlib.Path('.')

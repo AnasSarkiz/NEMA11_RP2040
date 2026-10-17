@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""Independent genuine STEP solids at native CAD poses; nominal geometry only."""
+import hashlib
+import itertools
+import json
+import math
+from pathlib import Path
+import cadquery as cq
+
+ROOT = Path(__file__).resolve().parents[1]
+path = ROOT / 'artifacts/controller/unrouted.circuit.json'
+records = json.loads(path.read_text())
+names = {e['source_component_id']: e['name'] for e in records if e['type'] == 'source_component'}
+pcb = {e['pcb_component_id']: e for e in records if e['type'] == 'pcb_component'}
+cache, parts, rows, errors = {}, {}, [], []
+for e in records:
+    if e['type'] != 'cad_component' or not e.get('model_step_url'):
+        continue
+    if pcb[e['pcb_component_id']].get('do_not_place'):
+        continue
+    name = names[e['source_component_id']]
+    local = ROOT / 'imports/supplier' / e['model_step_url'].split('/imports/supplier/')[1]
+    if local not in cache:
+        cache[local] = cq.importers.importStep(str(local)).val()
+    shape = cache[local]
+    if not shape.isValid():
+        errors.append({'part': name, 'invalid_original_supplier_STEP': str(local.relative_to(ROOT))})
+    assert shape.Volume() > 0, name
+    origin = e.get('model_origin_position', dict(x=0, y=0, z=0))
+    shape = shape.translate(tuple(-origin[k] for k in 'xyz'))
+    for axis, vector in [('x', (1,0,0)), ('y', (0,1,0)), ('z', (0,0,1))]:
+        if e['rotation'][axis]:
+            shape = shape.rotate((0,0,0), vector, e['rotation'][axis])
+    shape = shape.translate(tuple(e['position'][k] for k in 'xyz'))
+    b = shape.BoundingBox()
+    rows.append({'part': name, 'model': str(local.relative_to(ROOT)),
+                 'bounds_mm': [b.xmin,b.ymin,b.zmin,b.xmax,b.ymax,b.zmax]})
+    parts[name] = shape
+assert len(parts) == 82, len(parts)
+bounds = {e['part']: e['bounds_mm'] for e in rows}
+pairs = []
+for a, b in itertools.combinations(parts, 2):
+    aa, bb = bounds[a], bounds[b]
+    lower = math.sqrt(sum(max(aa[i]-bb[i+3], bb[i]-aa[i+3], 0)**2 for i in range(3)))
+    if lower > .5:
+        continue
+    distance = parts[a].distance(parts[b])
+    pairs.append({'a': a, 'b': b, 'nominal_surface_gap_mm': distance})
+    if lower < 1e-8:
+        volume = max(0, parts[a].intersect(parts[b]).Volume())
+        if volume > 1e-5:
+            errors.append({'a': a, 'b': b, 'solid_collision_mm3': volume})
+
+alignments = []
+slab = cq.Workplane('XY').box(100, 100, .2).val()
+for name in ['J_MOTOR', 'J_PD', 'J_DATA']:
+    cad = next(e for e in records if e['type'] == 'cad_component' and names[e['source_component_id']] == name)
+    holes = [e for e in records if e['type'] == 'pcb_plated_hole' and e['pcb_component_id'] == cad['pcb_component_id']]
+    leads = [s.Center().toTuple()[:2] for s in parts[name].intersect(slab).Solids()]
+    assert len(leads) == len(holes) == 4, (name, leads)
+    assignments = []
+    for xy in leads:
+        hole = min(holes, key=lambda h: math.dist(xy, (h['x'], h['y'])))
+        error = math.dist(xy, (hole['x'], hole['y']))
+        assignments.append({'hole': hole['pcb_plated_hole_id'], 'lead_xy_mm': xy, 'centre_error_mm': error})
+        if error > .05:
+            errors.append({'part': name, 'lead_to_hole_error_mm': error})
+    assert len({e['hole'] for e in assignments}) == 4
+    alignments.append({'part': name, 'section_z_mm': [-.1, .1], 'leads': assignments})
+
+report = {'scope': '82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware',
+          'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+          'parts': rows, 'nearby_pairs': pairs, 'connector_lead_sections': alignments,
+          'errors': errors, 'manufacturer_tolerances_verified': False,
+          'physical_assembly_tested': False, 'manufacturing_release': False}
+(ROOT / 'artifacts/controller/nominal-assembly-audit.json').write_text(json.dumps(report, indent=2) + '\n')
+print(json.dumps({'supplier_solids': len(parts), 'connector_lead_rows_checked': 3, 'errors': errors}))
+raise SystemExit(bool(errors))

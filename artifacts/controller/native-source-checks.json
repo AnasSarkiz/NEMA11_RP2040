@@ -1,0 +1,33 @@
+[
+  {
+    "check": "source",
+    "exit_code": 0,
+    "log": "artifacts/controller/native-source.txt",
+    "log_bytes": 22
+  },
+  {
+    "check": "pin_specification",
+    "exit_code": 0,
+    "log": "artifacts/controller/native-pin-specification.txt",
+    "log_bytes": 803
+  },
+  {
+    "check": "netlist",
+    "exit_code": 1,
+    "log": "artifacts/controller/native-netlist.txt",
+    "log_bytes": 2623
+  },
+  {
+    "check": "schematic-placement",
+    "exit_code": 0,
+    "log": "artifacts/controller/native-schematic-placement.txt",
+    "log_bytes": 1
+  },
+  {
+    "check": "netlist",
+    "input": "examples/full-controller-netlist.circuit.tsx",
+    "exit_code": 0,
+    "log": "artifacts/controller/native-netlist-tsx.txt",
+    "note": "Schematic autorouting disabled for this electrical check."
+  }
+]
