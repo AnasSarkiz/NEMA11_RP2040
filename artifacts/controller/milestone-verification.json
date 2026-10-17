@@ -1,6 +1,6 @@
 {
   "scope": "Full controller native electrical source, functional A4 drawings and nominal PCB 3D review",
-  "source_sha256": "81902e5289a5c0776d375d3d97d864c39ae943028993d099b98228affbe2a680",
+  "source_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
   "components": 92,
   "physical_pins": 341,
   "source_schema_errors": 0,
@@ -17,5 +17,8 @@
   "full_controller_copper_routed": false,
   "motor_carrier_harness_hardware_included": false,
   "stock_verified": false,
-  "manufacturing_release": false
+  "manufacturing_release": false,
+  "bare_test_pads_excluded_from_purchased_assembly": 7,
+  "PH_mating_direction": "from_above",
+  "native_source_netlist_pin_and_schematic_checks_exit_zero": true
 }

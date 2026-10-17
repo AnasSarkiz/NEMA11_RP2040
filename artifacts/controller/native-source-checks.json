@@ -1,33 +1,30 @@
 [
   {
     "check": "source",
+    "input": "artifacts/controller/schematic.circuit.json",
+    "input_sha256": "c4727c1e8d45ff8f24eee79f43f89b390c7eae6bd0171889e11339c5141c73e9",
     "exit_code": 0,
-    "log": "artifacts/controller/native-source.txt",
-    "log_bytes": 22
+    "log": "artifacts/controller/native-source.txt"
   },
   {
     "check": "pin_specification",
+    "input": "artifacts/controller/schematic.circuit.json",
+    "input_sha256": "c4727c1e8d45ff8f24eee79f43f89b390c7eae6bd0171889e11339c5141c73e9",
     "exit_code": 0,
-    "log": "artifacts/controller/native-pin-specification.txt",
-    "log_bytes": 803
-  },
-  {
-    "check": "netlist",
-    "exit_code": 1,
-    "log": "artifacts/controller/native-netlist.txt",
-    "log_bytes": 2623
-  },
-  {
-    "check": "schematic-placement",
-    "exit_code": 0,
-    "log": "artifacts/controller/native-schematic-placement.txt",
-    "log_bytes": 1
+    "log": "artifacts/controller/native-pin-specification.txt"
   },
   {
     "check": "netlist",
     "input": "examples/full-controller-netlist.circuit.tsx",
+    "input_sha256": "ffb821c617a13d08b0af598b1516c706bd4ff98430ac3083591aa88e60cbf1e2",
     "exit_code": 0,
-    "log": "artifacts/controller/native-netlist-tsx.txt",
-    "note": "Schematic autorouting disabled for this electrical check."
+    "log": "artifacts/controller/native-netlist-tsx.txt"
+  },
+  {
+    "check": "schematic-placement",
+    "input": "artifacts/controller/schematic.circuit.json",
+    "input_sha256": "c4727c1e8d45ff8f24eee79f43f89b390c7eae6bd0171889e11339c5141c73e9",
+    "exit_code": 0,
+    "log": "artifacts/controller/native-schematic-placement.txt"
   }
 ]

@@ -12807,13 +12807,14 @@
     "height": 1.5999967999999996,
     "layer": "top",
     "rotation": 0,
+    "insertion_direction": "from_above",
     "source_component_id": "source_component_59",
     "subcircuit_id": "subcircuit_source_group_0",
     "do_not_place": false,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "cable_insertion_center": {
-      "x": 7.300007599999999,
+      "x": 11.5,
       "y": 17.949963
     },
     "position_mode": "relative_to_group_anchor",
@@ -13296,7 +13297,7 @@
     "rotation": 0,
     "source_component_id": "source_component_81",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13317,7 +13318,7 @@
     "rotation": 0,
     "source_component_id": "source_component_82",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13338,7 +13339,7 @@
     "rotation": 0,
     "source_component_id": "source_component_83",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13359,7 +13360,7 @@
     "rotation": 0,
     "source_component_id": "source_component_84",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13380,7 +13381,7 @@
     "rotation": 0,
     "source_component_id": "source_component_85",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13401,7 +13402,7 @@
     "rotation": 0,
     "source_component_id": "source_component_86",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -13422,7 +13423,7 @@
     "rotation": 0,
     "source_component_id": "source_component_87",
     "subcircuit_id": "subcircuit_source_group_0",
-    "do_not_place": false,
+    "do_not_place": true,
     "obstructs_within_bounds": true,
     "is_allowed_to_be_off_board": false,
     "position_mode": "relative_to_group_anchor",
@@ -48957,139 +48958,6 @@
     "type": "cad_component",
     "cad_component_id": "cad_component_81",
     "position": {
-      "x": 15.46,
-      "y": -16.69,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_81",
-    "source_component_id": "source_component_81",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_82",
-    "position": {
-      "x": -10,
-      "y": 1.5,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_82",
-    "source_component_id": "source_component_82",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_83",
-    "position": {
-      "x": -3,
-      "y": -6.6,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_83",
-    "source_component_id": "source_component_83",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_84",
-    "position": {
-      "x": -3.77,
-      "y": 6.48,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_84",
-    "source_component_id": "source_component_84",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_85",
-    "position": {
-      "x": -16.69,
-      "y": 15.4,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_85",
-    "source_component_id": "source_component_85",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_86",
-    "position": {
-      "x": -10.26,
-      "y": 16.35,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_86",
-    "source_component_id": "source_component_86",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_87",
-    "position": {
-      "x": 6.43,
-      "y": 8.81,
-      "z": 0.8
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "pcb_component_id": "pcb_component_87",
-    "source_component_id": "source_component_87",
-    "model_origin_alignment": "center_of_component_on_board_surface",
-    "anchor_alignment": "center_of_component_on_board_surface",
-    "show_as_bounding_box": true
-  },
-  {
-    "type": "cad_component",
-    "cad_component_id": "cad_component_88",
-    "position": {
       "x": -16.45,
       "y": 11,
       "z": 0.8
@@ -49110,74 +48978,6 @@
       "y": -0.000012700000070253736,
       "z": 0
     }
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_0",
-    "source_component_id": "source_component_81",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#461(.NEMA11_RP2040>.TP_3V3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_1",
-    "source_component_id": "source_component_82",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#463(.NEMA11_RP2040>.TP_GND) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_2",
-    "source_component_id": "source_component_83",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#465(.NEMA11_RP2040>.TP_SWCLK) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_3",
-    "source_component_id": "source_component_84",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#467(.NEMA11_RP2040>.TP_SWDIO) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_4",
-    "source_component_id": "source_component_85",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#469(.NEMA11_RP2040>.TP_RUN) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_5",
-    "source_component_id": "source_component_86",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#471(.NEMA11_RP2040>.TP_BOOT) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "source_missing_manufacturer_part_number_warning",
-    "source_missing_manufacturer_part_number_warning_id": "source_missing_manufacturer_part_number_warning_6",
-    "source_component_id": "source_component_87",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "warning_type": "source_missing_manufacturer_part_number_warning",
-    "message": "<testpoint#473(.NEMA11_RP2040>.TP_BOOT_GND) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace."
-  },
-  {
-    "type": "pcb_connector_not_in_accessible_orientation_warning",
-    "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_0",
-    "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
-    "message": "J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
-    "pcb_component_id": "pcb_component_59",
-    "source_component_id": "source_component_59",
-    "pcb_board_id": "pcb_board_0",
-    "facing_direction": "x-",
-    "recommended_facing_direction": "y+",
-    "subcircuit_id": "subcircuit_source_group_0"
   },
   {
     "type": "schematic_sheet",

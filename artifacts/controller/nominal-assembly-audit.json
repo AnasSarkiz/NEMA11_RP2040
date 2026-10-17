@@ -1,6 +1,6 @@
 {
   "scope": "82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware",
-  "circuit_sha256": "81902e5289a5c0776d375d3d97d864c39ae943028993d099b98228affbe2a680",
+  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
   "parts": [
     {
       "part": "J_PD",

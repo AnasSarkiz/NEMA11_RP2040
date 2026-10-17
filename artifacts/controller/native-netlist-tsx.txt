@@ -1055,4 +1055,3 @@ R_PD_CFG (56kΩ undefined)
 - pin1(anode, pos, left): NETS(PD_CFG)
 - pin2(cathode, neg, right): NETS(GND)
 
-Warning: 1 chip overlaps detected in final layout: R_USB_SENSE_L overlaps D_PWR (area: 0.2402)

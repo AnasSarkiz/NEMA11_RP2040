@@ -1,6 +1,6 @@
 {
   "scope": "Full electrical source development candidate; copper, motor mounting and manufacturing not released",
-  "circuit_sha256": "81902e5289a5c0776d375d3d97d864c39ae943028993d099b98228affbe2a680",
+  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
   "source_components": 92,
   "source_ports": 341,
   "pcb_traces": 0,

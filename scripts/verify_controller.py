@@ -39,7 +39,8 @@ def check(records, reference):
         errors.append({'physical_pin_count': len(pins), 'expected': 341})
     pcb = {e['source_component_id']: e for e in records if e['type'] == 'pcb_component'}
     dnp = sorted(components[k]['name'] for k, e in pcb.items() if e.get('do_not_place'))
-    if dnp != ['C_ENCODER', 'C_ENCODER_BULK', 'U_ENCODER']:
+    expected_dnp = ['C_ENCODER', 'C_ENCODER_BULK', 'U_ENCODER'] + [n for n in names if n.startswith('TP_')]
+    if dnp != sorted(expected_dnp):
         errors.append({'unexpected_DNP_set': dnp})
     for name in ['R_SA', 'R_SB']:
         if names.get(name, {}).get('resistance') != .24:
@@ -62,6 +63,7 @@ def main():
               'intentional_changes': ['R_REF_H: 39k/C23153 to 20k/C4184',
                                       'J_MOTOR: SH/C160390 to PH/C131334; two unused hold-down terminals removed'],
               'metadata_correction': '12MHz four-pad crystal uses SI load_capacitance=1e-11 F; reference stored 10 without SI conversion',
+              'assembly_metadata': 'Seven bare PCB test pads are doNotPlace; PH mates from above; encoder and both capacitors remain DNP',
               'errors': errors, 'manufacturing_release': False}
     (ROOT / 'artifacts/controller/electrical-parity.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report))

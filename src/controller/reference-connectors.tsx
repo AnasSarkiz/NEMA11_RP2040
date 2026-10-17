@@ -36,6 +36,7 @@ export const SmtMotorConnector = (props: any) => (
 export const ThroughHoleMotorConnector = (props:any) => {
  const raw = B4B_PH_K_S_LF__SN_(props)
  return <connector {...raw.props} {...props} standard="jst_ph" pinCount={4}
+  footprint={cloneElement(raw.props.footprint as ReactElement<any>,{insertionDirection:"from_above"})}
   pinLabels={{pin1:["A_PLUS"],pin2:["A_MINUS"],pin3:["B_PLUS"],pin4:["B_MINUS"]}} />
 }
 

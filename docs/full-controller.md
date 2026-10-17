@@ -9,7 +9,9 @@ All 92 source components from the exact published NEMA14 v1.13.0 are present.
 The immutable reference manifest and `scripts/verify_controller.py` compare all
 341 remaining physical terminals, including intentionally unconnected pins.
 The reference's two unused SH hold-down terminals are absent from the genuine
-PH connector footprint. The optional AS5600 and its two capacitors remain DNP.
+PH connector footprint. The optional AS5600 and its two capacitors remain DNP. Seven bare PCB test
+pads are explicitly doNotPlace so they cannot become purchased BOM items.
+The vertical PH footprint declares insertion from above the board.
 No NEMA14 repository files were changed remotely.
 
 Two electrical part changes are explicit: the 39 kΩ VREF divider resistor becomes

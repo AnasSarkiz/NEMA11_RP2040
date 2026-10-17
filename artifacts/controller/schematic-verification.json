@@ -1,7 +1,7 @@
 {
   "scope": "Full controller schematic physical-pin coverage and independent visual ERC",
-  "schematic_sha256": "029bcf38625a4d370d3f7674ba3b324f3ad64e419dba246e56969874529a827f",
-  "source_sha256": "81902e5289a5c0776d375d3d97d864c39ae943028993d099b98228affbe2a680",
+  "schematic_sha256": "c4727c1e8d45ff8f24eee79f43f89b390c7eae6bd0171889e11339c5141c73e9",
+  "source_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
   "sheet_count": 6,
   "components": 92,
   "physical_pins": 341,

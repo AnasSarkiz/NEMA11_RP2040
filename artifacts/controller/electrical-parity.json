@@ -1,6 +1,6 @@
 {
   "scope": "All physical controller pins and component values; no copper qualification",
-  "circuit_sha256": "81902e5289a5c0776d375d3d97d864c39ae943028993d099b98228affbe2a680",
+  "circuit_sha256": "1a814bfd4e8c486c810932376f96bfc12c101e22ec60e5cc46d120ed7159a221",
   "reference_board_sha256": "16a605a565a272ce12a5194f28e1d9d8359c183d6110d117a4771d2b8ec91d2d",
   "components_compared": 92,
   "physical_pins_compared": 341,
@@ -9,6 +9,7 @@
     "J_MOTOR: SH/C160390 to PH/C131334; two unused hold-down terminals removed"
   ],
   "metadata_correction": "12MHz four-pad crystal uses SI load_capacitance=1e-11 F; reference stored 10 without SI conversion",
+  "assembly_metadata": "Seven bare PCB test pads are doNotPlace; PH mates from above; encoder and both capacitors remain DNP",
   "errors": [],
   "manufacturing_release": false
 }
