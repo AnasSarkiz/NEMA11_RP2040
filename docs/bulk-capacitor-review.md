@@ -27,6 +27,9 @@ The [original native import and official Panasonic STEP/mesh](../imports/compact
 are retained. The official STEP has four valid solids, all retained in its
 derived OBJ, with no resizing or cropping. Its raw height axis is +Y; its native
 PCB pose, polarity and maximum-tolerance assembly checks remain to be completed.
+An additional PCB-frame STEP/OBJ uses only rigid X+90° and Z+180° rotations:
+the lead plane becomes Z=0 and native pin 1 stays on the left. All four solids
+and their exact volume are retained; the original STEP remains unchanged.
 The imported 68 µF lands retain a 0.000127 mm coordinate difference from the
 old footprint; they are not falsely described as byte-identical. The imported
 generic supplier CAD is also preserved separately from the official CAD.
