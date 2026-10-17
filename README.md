@@ -4,6 +4,11 @@ Hardware development for the STEPPERONLINE **11HS12-0674S**, to preserve the
 published `AnasSarkiz/NEMA14_RP2040@1.13.0` feature set in a separate project.
 The NEMA14 repository is a read-only reference.
 
+**Active redesign target: the entire PCB and fitted connector/component bodies
+must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
+The existing routed 35 ×40 mm milestone below does not meet that new envelope.
+[Compact redesign requirements and part candidates](docs/compact-controller.md).**
+
 **Current milestone: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.
 Both manufacturer-required USB locating-hole corrections are complete. Native DRC reports zero errors with the documented exact-circle checker correction.

@@ -1,0 +1,93 @@
+{
+  "scope": "Genuine native JLC candidates for compact layout; not yet approved substitutions",
+  "parts": [
+    {
+      "LCSC": "C94598",
+      "symbol": "MLT_5020",
+      "native_import_flags": [
+        "--jlcpcb",
+        "--download",
+        "--use-exact-footprint"
+      ],
+      "supplier_geometry_unmodified": true,
+      "validated_electrical_substitution": false,
+      "files": [
+        {
+          "path": "imports/compact-candidates/MLT_5020/MLT_5020.obj",
+          "sha256": "bb843b8f6a60474d75146187d2a08d8d5c8e1ac4b9e2ff4331cc13beef10191a",
+          "bytes": 35677
+        },
+        {
+          "path": "imports/compact-candidates/MLT_5020/MLT_5020.step",
+          "sha256": "867309604960a2d7b111a32890275508b957a192f906f17a71728fc991489fac",
+          "bytes": 1435098
+        },
+        {
+          "path": "imports/compact-candidates/MLT_5020/MLT_5020.tsx.original",
+          "sha256": "f74b608a7e7de32403b990b723e97f8b5dc13f573e27e36544a338559e20789c",
+          "bytes": 4794
+        }
+      ],
+      "manufacturer_document": {
+        "url": "https://datasheet.lcsc.com/datasheet/pdf/23f5c6599ed9cb614c21ac31ad2b1106.pdf?productCode=C94598",
+        "sha256": "db73c860afd42abdf9a2e69c4a34ac915d68e07108a2188d6ee0a9c02f723be9",
+        "date": "2021-05-27",
+        "rated_voltage_V": 3,
+        "operating_voltage_V": [
+          2,
+          4
+        ],
+        "rated_waveform_Hz": 4000,
+        "rated_duty_fraction": 0.5,
+        "maximum_current_A_at_rated_test": 0.1,
+        "coil_resistance_ohm": [
+          9,
+          15
+        ],
+        "minimum_SPL_dB_at_0_1m": 75,
+        "table_size_mm": [
+          5.2,
+          5.2,
+          2
+        ],
+        "drawing_square_mm": [
+          4.7,
+          5.3
+        ],
+        "drawing_height_mm": [
+          1.8,
+          2.2
+        ],
+        "dimensional_discrepancy_requires_conservative_envelope": true
+      }
+    },
+    {
+      "LCSC": "C160354",
+      "symbol": "B4B_PH_SM4_TB_LF__SN_",
+      "native_import_flags": [
+        "--jlcpcb",
+        "--download",
+        "--use-exact-footprint"
+      ],
+      "supplier_geometry_unmodified": true,
+      "validated_electrical_substitution": false,
+      "files": [
+        {
+          "path": "imports/compact-candidates/B4B_PH_SM4_TB_LF__SN_/B4B_PH_SM4_TB_LF__SN_.obj",
+          "sha256": "fe9c4ca1a494700aa7b635e6d38ec06c02c658992081715d13ed5933b7d34d80",
+          "bytes": 231363
+        },
+        {
+          "path": "imports/compact-candidates/B4B_PH_SM4_TB_LF__SN_/B4B_PH_SM4_TB_LF__SN_.step",
+          "sha256": "70d9d65895b57ef664b62b78713b04701d2066e2daa63ac225953e2d82b90959",
+          "bytes": 2110577
+        },
+        {
+          "path": "imports/compact-candidates/B4B_PH_SM4_TB_LF__SN_/B4B_PH_SM4_TB_LF__SN_.tsx.original",
+          "sha256": "16f18b79018cfc7ecc02f0cf5c9803d288971c1ff504b254b53c6df359b4ed73",
+          "bytes": 2789
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "User-confirmed new mechanical target; current 35x40 baseline does not meet this target",
+  "motor_maximum_frame_mm": [
+    28.3,
+    28.3
+  ],
+  "motor_nominal_frame_dimension_stated_by_drawing": false,
+  "OEM_drawing_sha256": "5d63ad723e27c5db55ea3a042a06f0c6444b7560028b08bbde09103389644205",
+  "PCB_nominal_target_mm": [
+    28,
+    28
+  ],
+  "entire_fitted_component_and_connector_bodies_within_frame": true,
+  "all_fitted_parts_on_top": true,
+  "SMT_only_process_requirement_clarification_pending": true,
+  "same_functional_features_required": true,
+  "minimum_via_drill_pad_mm": [
+    0.3,
+    0.45
+  ],
+  "current_baseline_outline_mm": [
+    35,
+    40
+  ],
+  "compact_layout_validated": false,
+  "manufacturing_release": false
+}
