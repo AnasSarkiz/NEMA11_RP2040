@@ -64,15 +64,18 @@ for p in [e for e in records if e['type']=='pcb_component' and e['layer']=='top'
         elif mpn.startswith('CL10'):package='0603'
         elif mpn.startswith('CL21'):package='0805'
         elif mpn.startswith('CL31'):package='1206'
-    ports={}
+    ports={};pin_bounds={}
     for port in source_records:
         if port['type']!='pcb_port' or port['pcb_component_id']!=source_p['pcb_component_id']:continue
         source_port=next(e for e in source_records if e['type']=='source_port' and e['source_port_id']==port['source_port_id'])
         ports[str(source_port['pin_number'])]=[port['x']-pivot['pcbX'],port['y']-pivot['pcbY']]
+        pads=[pad_shape(e).bounds for e in source_records if e['type'] in ['pcb_smtpad','pcb_plated_hole'] and e.get('pcb_port_id')==port['pcb_port_id']]
+        if pads:pin_bounds[str(source_port['pin_number'])]=merge(pads)
     parts.append({'name':name,'original_rotation':pivot['pcbRotation'],'envelope_relative_to_pivot_mm':b,
                   'copper_relative_to_pivot_mm':merge(cu),'bbox_area_mm2':(b[2]-b[0])*(b[3]-b[1]),
                   'nominal_component_including_leads_relative_mm':merge(body) if body else None,
                   'construction_envelope_relative_mm':construction,'pin_centers_relative_mm':ports,
+                  'pin_copper_bounds_relative_mm':pin_bounds,
                   'assembly_spacing_class':package,
                   'candidate_substitution':sample_name is not None})
 report={'scope':'Conservative top-side rectangular envelopes for placement construction; not a routed or tolerance-qualified assembly',

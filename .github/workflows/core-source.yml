@@ -96,6 +96,11 @@ jobs:
           (cd prototypes/rp2040-core && tsci build index.circuit.json)
           python3 scripts/verify_core_prototype.py
           git diff --exit-code -- prototypes/rp2040-core/index.circuit.json
+      - name: Check explicitly limited compact clock and USB milestone
+        run: |
+          bun scripts/build-controller.tsx --compact --placement artifacts/compact-escape/placement-source.json --out /tmp/nema11-escape-source
+          cmp /tmp/nema11-escape-source/unrouted.circuit.json artifacts/compact-escape/unrouted.circuit.json
+          python3 scripts/verify_compact_escape.py
       - name: Verify committed native source reproduces
         run: |
           git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json

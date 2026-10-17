@@ -3,7 +3,7 @@
 import collections, hashlib, json, pathlib, re, sys
 from shapely.geometry import Point, LineString
 root=pathlib.Path(__file__).resolve().parents[1]
-folder='artifacts/compact-controller' if '--compact' in sys.argv else 'artifacts/controller'
+folder=sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if '--compact' in sys.argv else 'artifacts/controller'
 board_path=root/folder/'schematic.circuit.json'
 j=json.loads(board_path.read_text())
 base_path=root/folder/'unrouted.circuit.json'

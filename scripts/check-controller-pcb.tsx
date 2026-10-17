@@ -5,7 +5,8 @@ import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
 import { Resvg } from "@resvg/resvg-js"
 import * as schemas from "circuit-json"
 
-const path = "artifacts/controller-pcb/"
+const folderArg=process.argv.indexOf("--folder")
+const path = folderArg>=0?process.argv[folderArg+1].replace(/\/$/,"")+"/":"artifacts/controller-pcb/"
 const patchPath = "tools/pcb/patches/circle-keepout-clearance.json"
 const patchBytes = readFileSync(patchPath)
 const patch = JSON.parse(patchBytes.toString())
@@ -23,7 +24,7 @@ const schemaErrors = records.flatMap((r, index) => {
 })
 if (schemaErrors.length) throw new Error(JSON.stringify(schemaErrors))
 const ground = records.find(r => r.type === "source_net" && r.name === "GND")
-const offsets = JSON.parse(readFileSync("src/controller/thermal-via-offsets.json", "utf8"))
+const offsets = process.argv.includes("--compact")?Object.fromEntries(["U_MCU","U_DRV","U_FLASH"].map(name=>[name,{x:0,y:0}])):JSON.parse(readFileSync("src/controller/thermal-via-offsets.json", "utf8"))
 const thermal = Object.entries(offsets).map(([name, raw]) => {
   const offset = raw as { x: number; y: number }
   const source = records.find(r => r.type === "source_component" && r.name === name)

@@ -70,7 +70,7 @@ def masks(records,copper,key,widths_by_layer,layers):
  return [np.asarray(i,dtype=np.bool_) for i in wi],[np.asarray(i,dtype=np.bool_) for i in vi]
 router.masks=masks
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--restart',action='store_true');p.add_argument('--net');p.add_argument('--all',action='store_true');p.add_argument('--folder',default='artifacts/compact-controller');args=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--restart',action='store_true');p.add_argument('--net');p.add_argument('--all',action='store_true');p.add_argument('--folder',default='artifacts/compact-controller');p.add_argument('--top-only',action='store_true');args=p.parse_args()
  OUT=ROOT/args.folder
  target=OUT/'routing-construction.circuit.json';source=OUT/'unrouted.circuit.json';history_path=OUT/'routing-construction.json'
  records=json.loads((source if args.restart or not target.exists() else target).read_text())
@@ -90,7 +90,7 @@ if __name__=='__main__':
    proof=None;failures=[]
    for rank in range(min(island_count,16)):
     try:
-     proof=router.connect(records,name,attempt,['top'] if name in ['XIN','XOUT','XTAL_OUT'] else None,start_rank=rank)
+     proof=router.connect(records,name,attempt,['top'] if args.top_only or name in ['XIN','XOUT','XTAL_OUT'] else None,start_rank=rank)
      break
     except RuntimeError as err:failures.append({'start_rank':rank,'error':str(err)})
    if failures and proof is None:

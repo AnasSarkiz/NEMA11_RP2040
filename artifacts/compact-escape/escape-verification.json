@@ -1,0 +1,38 @@
+{
+  "scope": "Validated 28 mm all-top placement, schematic, native 3D, crystal and short MCU USB escapes ONLY",
+  "source_sha256": "5f44d87fb461b0affc9123edc9ba7546a2b06fb352e4c4becb322379045e2a45",
+  "board_sha256": "587f4443c7853bf2f0bcb04bf0f5dc894af56161479453b13987f5153aa76716",
+  "assembly_sha256": "8c00debb8cdbb4fabaa6b73ed5599f621279a2f39d0840c3846a4869474ed5e0",
+  "native_assembly_GLB_sha256": "8180b6ff7319e9c8cac2f198ffb6b1e4ad519ba6703c7330346e739604d8831d",
+  "usb_escape_connections": [
+    {
+      "net": "MCU_DP",
+      "MCU_pin": 47,
+      "total_trace_mm": 0.7960962022793232,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pad_islands": 1
+    },
+    {
+      "net": "MCU_DM",
+      "MCU_pin": 46,
+      "total_trace_mm": 0.9968088462366809,
+      "layers": [
+        "top"
+      ],
+      "signal_vias": 0,
+      "physical_pad_islands": 1
+    }
+  ],
+  "USB_pair_impedance_and_complete_data_path_qualified": false,
+  "independent_copper_short_clearance_drill_edge_defects": 0,
+  "disconnected_controller_nets": 58,
+  "native_DRC_pass": false,
+  "native_port_connectivity_findings": 270,
+  "all_fitted_components_on_top": true,
+  "nominal_fitted_models_within_28_3mm_frame": true,
+  "full_controller_routing_complete": false,
+  "manufacturing_release": false
+}

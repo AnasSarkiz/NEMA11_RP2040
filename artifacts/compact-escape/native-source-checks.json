@@ -1,0 +1,30 @@
+[
+  {
+    "check": "source",
+    "input": "artifacts/compact-escape/schematic.circuit.json",
+    "input_sha256": "80c491637a1c2750b0e688e89397ca45f848f4f209b0607cc31afe32c429948a",
+    "exit_code": 0,
+    "log": "artifacts/compact-escape/native-source.txt"
+  },
+  {
+    "check": "pin_specification",
+    "input": "artifacts/compact-escape/schematic.circuit.json",
+    "input_sha256": "80c491637a1c2750b0e688e89397ca45f848f4f209b0607cc31afe32c429948a",
+    "exit_code": 0,
+    "log": "artifacts/compact-escape/native-pin_specification.txt"
+  },
+  {
+    "check": "netlist",
+    "input": "examples/compact-controller-netlist.circuit.tsx",
+    "input_sha256": "d2e134cf4eddeff2b66dc7f72fbb59e610da738c3f72357e0c4601c13a044b12",
+    "exit_code": 0,
+    "log": "artifacts/compact-escape/native-netlist.txt"
+  },
+  {
+    "check": "schematic-placement",
+    "input": "artifacts/compact-escape/schematic.circuit.json",
+    "input_sha256": "80c491637a1c2750b0e688e89397ca45f848f4f209b0607cc31afe32c429948a",
+    "exit_code": 0,
+    "log": "artifacts/compact-escape/native-schematic-placement.txt"
+  }
+]

@@ -7,7 +7,8 @@ import BaselinePreview from "../examples/controller-assembly.circuit"
 import CompactPreview from "../examples/compact-assembly.circuit"
 
 const compact=process.argv.includes("--compact")
-const folder=compact?"artifacts/compact-controller":"artifacts/controller"
+const folderArg=process.argv.indexOf("--folder")
+const folder=folderArg>=0?process.argv[folderArg+1]:compact?"artifacts/compact-controller":"artifacts/controller"
 const Preview=compact?CompactPreview:BaselinePreview
 const circuit=new Circuit()
 circuit.schematicDisabled=true
@@ -15,10 +16,10 @@ circuit.add(<Preview />)
 await circuit.renderUntilSettled()
 const fresh=circuit.getCircuitJson() as any[]
 const routed=process.argv.includes("--pcb")
-const basePath=compact?folder+"/schematic.circuit.json":routed?"artifacts/controller-pcb/board.circuit.json":"artifacts/controller/schematic.circuit.json"
+const basePath=compact?folder+(routed?"/board.circuit.json":"/schematic.circuit.json"):routed?"artifacts/controller-pcb/board.circuit.json":"artifacts/controller/schematic.circuit.json"
 const baseBytes=readFileSync(basePath)
 const base=JSON.parse(baseBytes.toString()) as any[]
-if(routed)base.push(...JSON.parse(readFileSync("artifacts/controller/schematic.circuit.json","utf8")).filter((e:any)=>e.type.startsWith("schematic_")))
+if(routed)base.push(...JSON.parse(readFileSync(folder+"/schematic.circuit.json","utf8")).filter((e:any)=>e.type.startsWith("schematic_")))
 const motor=fresh.find(e=>e.type === "source_component" && e.name === "OEM_11HS12_0674S")
 if(!motor)throw new Error("Native assembly omitted the OEM motor")
 const cad=fresh.find(e=>e.type === "cad_component" && e.source_component_id === motor.source_component_id)

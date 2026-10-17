@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 compact='--compact' in sys.argv
-folder = ROOT / ('artifacts/compact-controller' if compact else 'artifacts/controller')
+folder = ROOT / (sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if compact else 'artifacts/controller')
 path = folder / 'development-assembly.glb'
 data = path.read_bytes()
 assert data[:4] == b'glTF' and struct.unpack_from('<I', data, 8)[0] == len(data)

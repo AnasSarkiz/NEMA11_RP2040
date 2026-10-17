@@ -10,9 +10,10 @@ from shapely.affinity import rotate,translate
 from shapely.geometry import Polygon,Point,box
 from pcb_geometry import Copper,pad_shape
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');args=parser.parse_args();OUT=ROOT/args.folder
+parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');parser.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=parser.parse_args();OUT=ROOT/args.folder
 path=OUT/'unrouted.circuit.json';records=json.loads(path.read_text());base=json.loads((ROOT/'artifacts/controller/unrouted.circuit.json').read_text());samples=json.loads((ROOT/'artifacts/compact-controller/supplier-samples.circuit.json').read_text());envelopes=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts'];poses=json.loads((ROOT/'src/compact/placement.json').read_text());
-if args.placement:poses.update(json.loads(Path(args.placement).read_text())['placements'])
+placement_report=json.loads(Path(args.placement).read_text()) if args.placement else {}
+if args.placement:poses.update(placement_report['placements'])
 oldposes=json.loads((ROOT/'src/controller/supplier-placement.json').read_text());errors=[]
 C=Copper(records);B=Copper(base);S=Copper(samples)
 def named_pads(c):
@@ -67,8 +68,22 @@ for name,shape in body_bounds.items():
 parts={p['name']:p for p in envelopes}
 def pin(name,number):
  p=parts[name];x,y=p['pin_centers_relative_mm'][number];q=poses[name];a=math.radians(q['pcbRotation']-p['original_rotation']);c=round(math.cos(a));s=round(math.sin(a));return [c*x-s*y+q['pcbX'],s*x+c*y+q['pcbY']]
-for an,ap,bn,bp,maximum in json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']:
- aa=pin(an,ap);bb=pin(bn,bp);d=sum(abs(x-y) for x,y in zip(aa,bb));constraints.append({'a':an+'.'+ap,'b':bn+'.'+bp,'L1_mm':d,'maximum_construction_budget_mm':maximum})
+critical=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
+if args.usb_escape:critical += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
+anchors={(v['a'],v['b']):v for v in placement_report.get('power_copper_connection_anchors',[])} if args.usb_escape else {}
+allowed_anchors={('L_BUCK.1','U_BUCK.5'),('C_BUCK_OUT1.1','L_BUCK.2'),('C_BUCK_OUT2.1','L_BUCK.2'),('C_USB.1','U_MCU.48')}
+if not set(anchors)<=allowed_anchors:errors.append({'unexpected_power_anchor_links':sorted(set(anchors)-allowed_anchors)})
+for an,ap,bn,bp,maximum in critical:
+ aa=pin(an,ap);bb=pin(bn,bp);measurement='pin centres'
+ if (an+'.'+ap,bn+'.'+bp) in anchors:
+  anchor=anchors[(an+'.'+ap,bn+'.'+bp)];positions=[]
+  for name,number,which in [(an,ap,'a'),(bn,bp,'b')]:
+   offset=anchor[which+'_relative_mm'];position=[poses[name]['pcbX']+offset[0],poses[name]['pcbY']+offset[1]]
+   shape=pad_shape(pads[(name,int(number))])
+   if not shape.buffer(-.049).covers(Point(*position)):errors.append({'power_anchor_outside_original_copper':[name,number],'position_mm':position})
+   positions.append(position)
+  aa,bb=positions;measurement='points verified at least 0.049 mm inside unchanged native copper'
+ d=sum(abs(x-y) for x,y in zip(aa,bb));constraints.append({'a':an+'.'+ap,'b':bn+'.'+bp,'L1_mm':d,'maximum_construction_budget_mm':maximum,'measurement':measurement})
  if d>maximum+1e-6:errors.append({'critical_pin_budget':[an,bn],'actual_mm':d,'maximum_mm':maximum})
 components=[e for e in records if e['type']=='pcb_component'];fitted=[e for e in components if not e.get('do_not_place')]
 if any(e['layer']!='top' for e in fitted):errors.append({'fitted_component_on_bottom':True})

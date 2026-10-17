@@ -10,7 +10,7 @@ import cadquery as cq
 
 ROOT = Path(__file__).resolve().parents[1]
 compact='--compact' in sys.argv
-folder='artifacts/compact-controller' if compact else 'artifacts/controller'
+folder=sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if compact else 'artifacts/controller'
 path = ROOT / folder / 'unrouted.circuit.json'
 records = json.loads(path.read_text())
 names = {e['source_component_id']: e['name'] for e in records if e['type'] == 'source_component'}

@@ -1,0 +1,1427 @@
+{
+  "scope": "82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware",
+  "circuit_sha256": "5f44d87fb461b0affc9123edc9ba7546a2b06fb352e4c4becb322379045e2a45",
+  "parts": [
+    {
+      "part": "J_PD",
+      "model": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
+      "bounds_mm": [
+        -10.31999503580895,
+        6.547214256838467,
+        0.09998814360971747,
+        -1.3749885000149527,
+        10.23721332237567,
+        8.259992127533705
+      ]
+    },
+    {
+      "part": "J_DATA",
+      "model": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
+      "bounds_mm": [
+        4.430004964191051,
+        6.655127456838468,
+        0.09998814360971747,
+        13.375011499985048,
+        10.345126522375672,
+        8.259992127533705
+      ]
+    },
+    {
+      "part": "U_PD",
+      "model": "imports/supplier/CH224A/CH224A.step",
+      "bounds_mm": [
+        -12.95,
+        0.9000635000001223,
+        0.7999999999999998,
+        -6.949999999999999,
+        5.800063500000125,
+        2.3410001
+      ]
+    },
+    {
+      "part": "R_PD",
+      "model": "imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.step",
+      "bounds_mm": [
+        -5.41,
+        2.5981186,
+        0.8,
+        -3.789999999999999,
+        3.4081187,
+        1.25
+      ]
+    },
+    {
+      "part": "C_PD",
+      "model": "imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "bounds_mm": [
+        -13.05,
+        6.299999899999999,
+        0.7999999000000001,
+        -11.45,
+        7.100000100000004,
+        1.6000001000000004
+      ]
+    },
+    {
+      "part": "R_PG",
+      "model": "imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
+      "bounds_mm": [
+        7.394999899999999,
+        -11.21,
+        0.8,
+        8.205,
+        -9.59,
+        1.25
+      ]
+    },
+    {
+      "part": "U_MCU",
+      "model": "imports/supplier/RP2040/RP2040.step",
+      "bounds_mm": [
+        -2.506787699999965,
+        -3.3477690000001057,
+        0.8,
+        4.513212300000071,
+        3.6722309999999414,
+        1.67
+      ]
+    },
+    {
+      "part": "C_IO1",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -4.0999873999999314,
+        1.1999999999999997,
+        0.7999999000000001,
+        -3.5999871999999273,
+        2.1999999999999997,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_IO10",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -4.050012800000073,
+        -0.9500000000000001,
+        0.7999999000000001,
+        -3.5500126000000694,
+        0.05000000000000003,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_IO22",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        1.1500126000000692,
+        -5.7,
+        0.7999999000000001,
+        1.6500128000000727,
+        -4.7,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_IO33",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        5.550012600000069,
+        -1.8000000000000003,
+        0.7999999000000001,
+        6.050012800000073,
+        -0.7999999999999999,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_IO42",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        5.55,
+        2.5000126000000695,
+        0.7999999000000001,
+        6.55,
+        3.0000128000000723,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_IO49",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        0.5499871999999274,
+        5.0,
+        0.7999999000000001,
+        1.0499873999999307,
+        6.0,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_DV23",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        2.0000126000000695,
+        -5.7,
+        0.7999999000000001,
+        2.5000128000000728,
+        -4.7,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_DV50",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -0.2500128000000727,
+        5.0,
+        0.7999999000000001,
+        0.24998739999993055,
+        6.0,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_USB",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        1.5,
+        6.336659600000069,
+        0.7999999000000001,
+        2.5,
+        6.836659800000073,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_ADC",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        4.549987199999927,
+        4.7,
+        0.7999999000000001,
+        5.049987399999931,
+        5.7,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_VREG_IN",
+      "model": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+      "bounds_mm": [
+        5.55,
+        3.3500126000000696,
+        0.7999999000000001,
+        6.55,
+        3.8500128000000724,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_VREG_OUT",
+      "model": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+      "bounds_mm": [
+        3.7499871999999272,
+        4.7,
+        0.7999999000000001,
+        4.249987399999931,
+        5.7,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "U_FLASH",
+      "model": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "bounds_mm": [
+        -0.605107950000001,
+        7.8416598,
+        0.8,
+        1.4048921499999991,
+        10.84166,
+        1.2700001
+      ]
+    },
+    {
+      "part": "C_FLASH",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -0.6000128000000726,
+        11.84666,
+        0.7999999000000001,
+        -0.10001260000006942,
+        12.84666,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "R_FLASH_CS",
+      "model": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "bounds_mm": [
+        -12.45,
+        10.25001270000007,
+        0.7999999999999999,
+        -11.45,
+        10.751012800000069,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_BOOT",
+      "model": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "bounds_mm": [
+        6.698987199999929,
+        4.55,
+        0.7999999999999999,
+        7.19998729999993,
+        5.55,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "Y_MCU",
+      "model": "imports/supplier/ABM8_272_T3/ABM8_272_T3.step",
+      "bounds_mm": [
+        -2.5499873999999303,
+        -7.800000100000002,
+        0.7999999,
+        -0.0499871999999296,
+        -4.599999900000001,
+        1.5010001000000002
+      ]
+    },
+    {
+      "part": "R_XOUT",
+      "model": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "bounds_mm": [
+        0.40900870000007017,
+        -6.8,
+        0.7999999999999999,
+        0.9100088000000703,
+        -5.8,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "C_XIN",
+      "model": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "bounds_mm": [
+        -4.2,
+        -6.9000128000000736,
+        0.7999999000000001,
+        -3.2,
+        -6.400012600000069,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_XOUT",
+      "model": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "bounds_mm": [
+        -1.35,
+        -9.600012800000071,
+        0.7999999000000001,
+        -0.35,
+        -9.100012600000069,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "R_RUN",
+      "model": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "bounds_mm": [
+        2.04898719999993,
+        11.85,
+        0.7999999999999999,
+        2.5499872999999296,
+        12.85,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_DM",
+      "model": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "bounds_mm": [
+        2.94898719999993,
+        4.9,
+        0.7999999999999999,
+        3.44998729999993,
+        5.9,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_DP",
+      "model": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "bounds_mm": [
+        2.04898719999993,
+        4.9,
+        0.7999999999999999,
+        2.5499872999999296,
+        5.9,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_CC1",
+      "model": "imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+      "bounds_mm": [
+        -4.35,
+        -7.99998729999993,
+        0.7999999999999999,
+        -3.3499999999999996,
+        -7.498987199999929,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_CC2",
+      "model": "imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+      "bounds_mm": [
+        -1.4,
+        -8.79998729999993,
+        0.7999999999999999,
+        -0.3999999999999999,
+        -8.298987199999932,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_USB_SENSE_H",
+      "model": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "bounds_mm": [
+        5.7333559,
+        1.6500127000000702,
+        0.7999999999999999,
+        6.7333559,
+        2.15101280000007,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_USB_SENSE_L",
+      "model": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "bounds_mm": [
+        -5.54998729999993,
+        1.15,
+        0.7999999999999999,
+        -5.048987199999929,
+        2.15,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_VM_H",
+      "model": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "bounds_mm": [
+        2.99898719999993,
+        8.35,
+        0.7999999999999999,
+        3.4999872999999297,
+        9.35,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_VM_L",
+      "model": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "bounds_mm": [
+        8.95,
+        3.1759059999999297,
+        0.7999999999999999,
+        9.95,
+        3.67690609999993,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "C_VM_SENSE",
+      "model": "imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.step",
+      "bounds_mm": [
+        -8.299999999999999,
+        10.85001260000007,
+        0.7999999000000001,
+        -7.299999999999999,
+        11.350012800000071,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "U_BUCK",
+      "model": "imports/supplier/AP63203WU_7/AP63203WU_7.step",
+      "bounds_mm": [
+        -12.65,
+        -2.75001280000007,
+        0.8,
+        -9.85,
+        0.14998739999992966,
+        1.6910001000000001
+      ]
+    },
+    {
+      "part": "L_BUCK",
+      "model": "imports/supplier/SRN4018_4R7M/SRN4018_4R7M.step",
+      "bounds_mm": [
+        -13.0500001,
+        -7.076008700000002,
+        0.8,
+        -9.049999900000001,
+        -3.0260085000000005,
+        2.6300000999999997
+      ]
+    },
+    {
+      "part": "C_BOOTSTRAP",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -13.720909700000071,
+        -2.35,
+        0.7999999000000001,
+        -13.22090950000007,
+        -1.35,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_BUCK_IN",
+      "model": "imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "bounds_mm": [
+        -8.550000000000002,
+        -1.1500001000000004,
+        0.7999998999999999,
+        -5.3500000000000005,
+        0.45000010000000024,
+        2.1000001000000004
+      ]
+    },
+    {
+      "part": "C_BUCK_OUT1",
+      "model": "imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "bounds_mm": [
+        -7.950000000000001,
+        -3.7999873999999316,
+        0.7999999,
+        -5.950000000000001,
+        -2.4999871999999237,
+        2.1000001000000004
+      ]
+    },
+    {
+      "part": "C_BUCK_OUT2",
+      "model": "imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "bounds_mm": [
+        -7.950000000000001,
+        -5.399987399999932,
+        0.7999999,
+        -5.950000000000001,
+        -4.099987199999923,
+        2.1000001000000004
+      ]
+    },
+    {
+      "part": "D_PD",
+      "model": "imports/supplier/B5819W_SL/B5819W_SL.step",
+      "bounds_mm": [
+        -4.750941700000001,
+        -5.725,
+        0.7999999999999999,
+        -3.050941499999999,
+        -1.8749999999999996,
+        2.25
+      ]
+    },
+    {
+      "part": "D_DATA",
+      "model": "imports/supplier/B5819W_SL/B5819W_SL.step",
+      "bounds_mm": [
+        6.999042799999998,
+        -3.175,
+        0.7999999999999999,
+        8.699043,
+        0.6750000000000002,
+        2.25
+      ]
+    },
+    {
+      "part": "U_DRV",
+      "model": "imports/supplier/A4988SETTR_T/A4988SETTR_T.step",
+      "bounds_mm": [
+        1.0989999999999998,
+        -13.006987400000007,
+        0.7999999000000001,
+        6.101000000000001,
+        -8.004987399999983,
+        1.4310001
+      ]
+    },
+    {
+      "part": "C_CP",
+      "model": "imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+      "bounds_mm": [
+        -0.9500000000000002,
+        -10.750012800000071,
+        0.7999999000000001,
+        0.05000000000000008,
+        -10.250012600000069,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_VCP",
+      "model": "imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+      "bounds_mm": [
+        -0.9500000000000002,
+        -11.550012800000072,
+        0.7999999000000001,
+        0.05000000000000008,
+        -11.05001260000007,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_VREG",
+      "model": "imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.step",
+      "bounds_mm": [
+        -1.55,
+        -13.450000100000004,
+        0.7999999000000001,
+        0.05000000000000014,
+        -12.6499999,
+        1.6000001000000004
+      ]
+    },
+    {
+      "part": "C_DRV_LOGIC",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        7.150012600000069,
+        -13.0,
+        0.7999999000000001,
+        7.6500128000000736,
+        -12.0,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_VM",
+      "model": "imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+      "bounds_mm": [
+        1.5623692,
+        -6.999987399999931,
+        0.7999999000000001,
+        2.5623692,
+        -6.499987199999927,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "C_BULK",
+      "model": "imports/supplier/RVT1V470M0605/RVT1V470M0605.step",
+      "bounds_mm": [
+        -13.149999999999999,
+        -14.03999999999993,
+        0.8,
+        -5.35,
+        -7.438999899999929,
+        8.55
+      ]
+    },
+    {
+      "part": "R_SA",
+      "model": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step",
+      "bounds_mm": [
+        4.549012599999843,
+        -6.65,
+        0.7999999999999999,
+        5.850012699999843,
+        -4.65,
+        1.4100000000000001
+      ]
+    },
+    {
+      "part": "R_SB",
+      "model": "imports/supplier/HP05W3F240LT5E/HP05W3F240LT5E.step",
+      "bounds_mm": [
+        2.971002399999843,
+        -6.65,
+        0.7999999999999999,
+        4.272002499999844,
+        -4.65,
+        1.4100000000000001
+      ]
+    },
+    {
+      "part": "R_REF_H",
+      "model": "imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
+      "bounds_mm": [
+        -5.11,
+        10.844999999999999,
+        0.8,
+        -3.4899999999999993,
+        11.6550001,
+        1.25
+      ]
+    },
+    {
+      "part": "R_REF_L",
+      "model": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "bounds_mm": [
+        -6.9,
+        -2.10101280000007,
+        0.7999999999999999,
+        -5.9,
+        -1.6000127000000701,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "C_REF",
+      "model": "imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.step",
+      "bounds_mm": [
+        -3.4500001000000036,
+        -10.25,
+        0.7999999000000001,
+        -2.6499998999999983,
+        -8.649999999999999,
+        1.6000001000000004
+      ]
+    },
+    {
+      "part": "R_ENABLE",
+      "model": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "bounds_mm": [
+        -4.95,
+        3.65613660000007,
+        0.7999999999999999,
+        -3.95,
+        4.157136700000071,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_SLEEP",
+      "model": "imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
+      "bounds_mm": [
+        -3.3050001,
+        -13.06,
+        0.8,
+        -2.4949999999999997,
+        -11.44,
+        1.25
+      ]
+    },
+    {
+      "part": "J_MOTOR",
+      "model": "imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.step",
+      "bounds_mm": [
+        9.05003699999996,
+        -7.095073400000069,
+        -2.1999940000000002,
+        13.750037100000005,
+        2.805926699999931,
+        6.800006000000001
+      ]
+    },
+    {
+      "part": "U_ESD",
+      "model": "imports/supplier/USBLC6_2SC6/USBLC6_2SC6.step",
+      "bounds_mm": [
+        6.643603745533827,
+        10.950012600000072,
+        0.8000004016670529,
+        9.456370854466034,
+        13.850012800000071,
+        2.4499391
+      ]
+    },
+    {
+      "part": "D_TVS",
+      "model": "imports/supplier/SMF18A/SMF18A.step",
+      "bounds_mm": [
+        -9.950101600000108,
+        11.7499999,
+        0.8,
+        -6.350101600000108,
+        13.5500001,
+        1.81
+      ]
+    },
+    {
+      "part": "U_TEMP",
+      "model": "imports/supplier/TMP102AIDRLR/TMP102AIDRLR.step",
+      "bounds_mm": [
+        -12.950050799999998,
+        7.529921100000005,
+        0.8,
+        -11.350050799999996,
+        9.129921300000005,
+        1.4110001
+      ]
+    },
+    {
+      "part": "C_TEMP",
+      "model": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "bounds_mm": [
+        -1.7000000000000002,
+        -12.350012800000071,
+        0.7999999000000001,
+        -0.6999999999999998,
+        -11.850012600000069,
+        1.3000001000000003
+      ]
+    },
+    {
+      "part": "R_TEMP_SDA",
+      "model": "imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "bounds_mm": [
+        2.9500127000000704,
+        11.95,
+        0.7999999999999999,
+        3.4510128000000706,
+        12.95,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_TEMP_SCL",
+      "model": "imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "bounds_mm": [
+        -8.05,
+        -6.19998729999993,
+        0.7999999999999999,
+        -7.05,
+        -5.698987199999929,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "D_PWR",
+      "model": "imports/supplier/XL_1608SURC_06/XL_1608SURC_06.step",
+      "bounds_mm": [
+        -4.550050899999941,
+        -10.31001270000007,
+        0.8,
+        -3.7400506999999403,
+        -8.69001270000007,
+        1.4100000000000001
+      ]
+    },
+    {
+      "part": "R_PWR_LED",
+      "model": "imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.step",
+      "bounds_mm": [
+        -12.4,
+        9.398987199999931,
+        0.7999999999999999,
+        -11.4,
+        9.89998729999993,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "D_STATUS",
+      "model": "imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.step",
+      "bounds_mm": [
+        -3.9070037,
+        4.377125920595251,
+        0.8,
+        -2.3070036,
+        5.986150600000001,
+        1.1600001000000002
+      ]
+    },
+    {
+      "part": "R_STATUS_R",
+      "model": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "bounds_mm": [
+        5.548987199999929,
+        4.8,
+        0.7999999999999999,
+        6.04998729999993,
+        5.8,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "Q_STATUS_R",
+      "model": "imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+      "bounds_mm": [
+        7.850012699999956,
+        3.9999999,
+        0.7999999999999999,
+        9.950012699999958,
+        6.000000100000001,
+        1.8000001000000005
+      ]
+    },
+    {
+      "part": "R_STATUS_G",
+      "model": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "bounds_mm": [
+        9.998987199999931,
+        11.45,
+        0.7999999999999999,
+        10.49998729999993,
+        12.45,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "Q_STATUS_G",
+      "model": "imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+      "bounds_mm": [
+        6.3999999,
+        -6.700012699999958,
+        0.7999999999999999,
+        8.400000100000002,
+        -4.600012699999956,
+        1.8000001000000005
+      ]
+    },
+    {
+      "part": "R_STATUS_B",
+      "model": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "bounds_mm": [
+        3.04898719999993,
+        10.05,
+        0.7999999999999999,
+        3.5499872999999296,
+        11.05,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "Q_STATUS_B",
+      "model": "imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+      "bounds_mm": [
+        3.8499998999999994,
+        11.295053599999957,
+        0.7999999999999999,
+        5.8500001,
+        13.395053599999958,
+        1.8000001000000005
+      ]
+    },
+    {
+      "part": "BZ1",
+      "model": "imports/compact-candidates/MLT_5020/MLT_5020.step",
+      "bounds_mm": [
+        8.517010338041917,
+        -13.195057376454855,
+        0.7999999999999998,
+        13.79283726195815,
+        -7.995057176454856,
+        2.8100000000000005
+      ]
+    },
+    {
+      "part": "Q_BUZZER",
+      "model": "imports/supplier/AO3400A/AO3400A.step",
+      "bounds_mm": [
+        10.847198081552904,
+        3.1569168000000443,
+        0.8000000027270486,
+        13.352827318447236,
+        6.056917000000044,
+        1.8502051000000002
+      ]
+    },
+    {
+      "part": "D_BUZZER",
+      "model": "imports/supplier/PMEG6020ELRX/PMEG6020ELRX.step",
+      "bounds_mm": [
+        -5.239999999999999,
+        12.35,
+        0.8,
+        -1.5599999999999994,
+        13.950000000000001,
+        2.0200000000000005
+      ]
+    },
+    {
+      "part": "R_BUZZER_GATE",
+      "model": "imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "bounds_mm": [
+        -8.25,
+        -7.001012800000071,
+        0.7999999999999999,
+        -7.25,
+        -6.50001270000007,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "R_BUZZER_PD",
+      "model": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "bounds_mm": [
+        -10.05,
+        10.898987199999931,
+        0.7999999999999999,
+        -9.05,
+        11.39998729999993,
+        1.1600000000000001
+      ]
+    },
+    {
+      "part": "C_BUZZER",
+      "model": "imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.step",
+      "bounds_mm": [
+        7.1999998999999955,
+        1.8,
+        0.7999999000000001,
+        8.000000100000001,
+        3.4000000000000004,
+        1.6000001000000004
+      ]
+    },
+    {
+      "part": "R_PD_CFG",
+      "model": "imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.step",
+      "bounds_mm": [
+        -4.551012800000071,
+        -12.95,
+        0.7999999999999999,
+        -4.05001270000007,
+        -11.95,
+        1.1600000000000001
+      ]
+    }
+  ],
+  "nearby_pairs": [
+    {
+      "a": "U_PD",
+      "b": "C_PD",
+      "nominal_surface_gap_mm": 0.4999364999998761
+    },
+    {
+      "a": "U_PD",
+      "b": "C_BUCK_IN",
+      "nominal_surface_gap_mm": 0.45006350000012224
+    },
+    {
+      "a": "R_PD",
+      "b": "C_IO1",
+      "nominal_surface_gap_mm": 0.4081186999999997
+    },
+    {
+      "a": "R_PD",
+      "b": "R_USB_SENSE_L",
+      "nominal_surface_gap_mm": 0.44811869999999976
+    },
+    {
+      "a": "R_PD",
+      "b": "R_ENABLE",
+      "nominal_surface_gap_mm": 0.2480179000000704
+    },
+    {
+      "a": "C_PD",
+      "b": "U_TEMP",
+      "nominal_surface_gap_mm": 0.42992120000000433
+    },
+    {
+      "a": "R_PG",
+      "b": "BZ1",
+      "nominal_surface_gap_mm": 0.3120104380419164
+    },
+    {
+      "a": "C_IO22",
+      "b": "C_DV23",
+      "nominal_surface_gap_mm": 0.34999999999999765
+    },
+    {
+      "a": "C_IO22",
+      "b": "R_XOUT",
+      "nominal_surface_gap_mm": 0.26726832059243844
+    },
+    {
+      "a": "C_IO42",
+      "b": "C_VREG_IN",
+      "nominal_surface_gap_mm": 0.34999999999999787
+    },
+    {
+      "a": "C_IO42",
+      "b": "R_USB_SENSE_H",
+      "nominal_surface_gap_mm": 0.34899999999999975
+    },
+    {
+      "a": "C_IO49",
+      "b": "C_DV50",
+      "nominal_surface_gap_mm": 0.2999999999999977
+    },
+    {
+      "a": "C_DV23",
+      "b": "R_SB",
+      "nominal_surface_gap_mm": 0.47098979999977164
+    },
+    {
+      "a": "C_USB",
+      "b": "R_DP",
+      "nominal_surface_gap_mm": 0.43665970000006915
+    },
+    {
+      "a": "C_ADC",
+      "b": "C_VREG_OUT",
+      "nominal_surface_gap_mm": 0.29999999999999716
+    },
+    {
+      "a": "C_ADC",
+      "b": "R_STATUS_R",
+      "nominal_surface_gap_mm": 0.49899999999999967
+    },
+    {
+      "a": "C_VREG_OUT",
+      "b": "R_DM",
+      "nominal_surface_gap_mm": 0.29999999999999893
+    },
+    {
+      "a": "R_FLASH_CS",
+      "b": "R_PWR_LED",
+      "nominal_surface_gap_mm": 0.35002540000014015
+    },
+    {
+      "a": "Y_MCU",
+      "b": "R_XOUT",
+      "nominal_surface_gap_mm": 0.45899600000000024
+    },
+    {
+      "a": "Y_MCU",
+      "b": "R_CC2",
+      "nominal_surface_gap_mm": 0.4989872999999294
+    },
+    {
+      "a": "C_XOUT",
+      "b": "R_CC2",
+      "nominal_surface_gap_mm": 0.30002540000013944
+    },
+    {
+      "a": "R_RUN",
+      "b": "R_TEMP_SDA",
+      "nominal_surface_gap_mm": 0.40002540000014086
+    },
+    {
+      "a": "R_DM",
+      "b": "R_DP",
+      "nominal_surface_gap_mm": 0.39900000000000047
+    },
+    {
+      "a": "R_USB_SENSE_H",
+      "b": "C_BUZZER",
+      "nominal_surface_gap_mm": 0.466644099999999
+    },
+    {
+      "a": "R_VM_L",
+      "b": "J_MOTOR",
+      "nominal_surface_gap_mm": 0.3699793999999992
+    },
+    {
+      "a": "R_VM_L",
+      "b": "Q_STATUS_R",
+      "nominal_surface_gap_mm": 0.3510437735086749
+    },
+    {
+      "a": "C_VM_SENSE",
+      "b": "D_TVS",
+      "nominal_surface_gap_mm": 0.3999872999999301
+    },
+    {
+      "a": "U_BUCK",
+      "b": "L_BUCK",
+      "nominal_surface_gap_mm": 0.33347096145434296
+    },
+    {
+      "a": "L_BUCK",
+      "b": "C_BULK",
+      "nominal_surface_gap_mm": 0.3639913999999278
+    },
+    {
+      "a": "C_BUCK_IN",
+      "b": "R_REF_L",
+      "nominal_surface_gap_mm": 0.4554485536325782
+    },
+    {
+      "a": "C_BUCK_OUT1",
+      "b": "C_BUCK_OUT2",
+      "nominal_surface_gap_mm": 0.2999999999999945
+    },
+    {
+      "a": "C_BUCK_OUT1",
+      "b": "R_REF_L",
+      "nominal_surface_gap_mm": 0.3989745999998595
+    },
+    {
+      "a": "C_BUCK_OUT2",
+      "b": "R_TEMP_SCL",
+      "nominal_surface_gap_mm": 0.2989999999999977
+    },
+    {
+      "a": "D_DATA",
+      "b": "J_MOTOR",
+      "nominal_surface_gap_mm": 0.35099410000000475
+    },
+    {
+      "a": "C_CP",
+      "b": "C_VCP",
+      "nominal_surface_gap_mm": 0.29999999999999893
+    },
+    {
+      "a": "C_VCP",
+      "b": "C_TEMP",
+      "nominal_surface_gap_mm": 0.29999999999999716
+    },
+    {
+      "a": "C_VREG",
+      "b": "C_TEMP",
+      "nominal_surface_gap_mm": 0.2999872999999287
+    },
+    {
+      "a": "C_VM",
+      "b": "R_SB",
+      "nominal_surface_gap_mm": 0.40963329999984266
+    },
+    {
+      "a": "C_BULK",
+      "b": "R_BUZZER_GATE",
+      "nominal_surface_gap_mm": 0.43898729999985875
+    },
+    {
+      "a": "R_SA",
+      "b": "R_SB",
+      "nominal_surface_gap_mm": 0.2770102000000003
+    },
+    {
+      "a": "C_REF",
+      "b": "D_PWR",
+      "nominal_surface_gap_mm": 0.29005079999994043
+    },
+    {
+      "a": "R_ENABLE",
+      "b": "D_STATUS",
+      "nominal_surface_gap_mm": 0.2339981423193953
+    },
+    {
+      "a": "J_MOTOR",
+      "b": "Q_BUZZER",
+      "nominal_surface_gap_mm": 0.35099020000011416
+    },
+    {
+      "a": "D_TVS",
+      "b": "R_BUZZER_PD",
+      "nominal_surface_gap_mm": 0.3500127000000699
+    },
+    {
+      "a": "U_TEMP",
+      "b": "R_PWR_LED",
+      "nominal_surface_gap_mm": 0.26906609999992526
+    },
+    {
+      "a": "R_TEMP_SDA",
+      "b": "Q_STATUS_B",
+      "nominal_surface_gap_mm": 0.42667156511556054
+    },
+    {
+      "a": "R_TEMP_SCL",
+      "b": "R_BUZZER_GATE",
+      "nominal_surface_gap_mm": 0.30002540000014033
+    },
+    {
+      "a": "R_STATUS_B",
+      "b": "Q_STATUS_B",
+      "nominal_surface_gap_mm": 0.7847291140461582
+    }
+  ],
+  "connector_lead_sections": [
+    {
+      "part": "J_MOTOR",
+      "section_z_mm": [
+        -0.1,
+        0.1
+      ],
+      "leads_and_locating_pegs": [
+        {
+          "hole": "pcb_plated_hole_10",
+          "lead_xy_mm": [
+            12.050037000000003,
+            -3.1440733000000693
+          ],
+          "centre_error_mm": 1.4700000069201025e-05
+        },
+        {
+          "hole": "pcb_plated_hole_8",
+          "lead_xy_mm": [
+            12.050037000000001,
+            -1.1440733000000705
+          ],
+          "centre_error_mm": 1.0700000070640314e-05
+        },
+        {
+          "hole": "pcb_plated_hole_9",
+          "lead_xy_mm": [
+            12.050037000000005,
+            0.8559266999999299
+          ],
+          "centre_error_mm": 6.700000070192225e-06
+        },
+        {
+          "hole": "pcb_plated_hole_11",
+          "lead_xy_mm": [
+            12.050037000000001,
+            -5.14407330000007
+          ],
+          "centre_error_mm": 1.8700000069316047e-05
+        }
+      ]
+    },
+    {
+      "part": "J_PD",
+      "section_z_mm": [
+        0.30000000000000004,
+        0.5
+      ],
+      "leads_and_locating_pegs": [
+        {
+          "hole": "pcb_plated_hole_2",
+          "lead_xy_mm": [
+            -1.8449886000149436,
+            6.962213607259
+          ],
+          "centre_error_mm": 0.0025242776970979277
+        },
+        {
+          "hole": "pcb_plated_hole_1",
+          "lead_xy_mm": [
+            -9.844988600014952,
+            6.962213607259055
+          ],
+          "centre_error_mm": 0.002508278192805796
+        },
+        {
+          "hole": "pcb_plated_hole_3",
+          "lead_xy_mm": [
+            -1.8449886000149436,
+            9.822213607260629
+          ],
+          "centre_error_mm": 0.0025350052070321353
+        },
+        {
+          "hole": "pcb_plated_hole_0",
+          "lead_xy_mm": [
+            -9.84498860001495,
+            9.822213607260629
+          ],
+          "centre_error_mm": 0.0025190738377677347
+        },
+        {
+          "hole": "pcb_hole_2",
+          "lead_xy_mm": [
+            -9.849994600008968,
+            8.392213585978704
+          ],
+          "centre_error_mm": 0.0024978000181365796
+        },
+        {
+          "hole": "pcb_hole_3",
+          "lead_xy_mm": [
+            -1.8499946000089573,
+            8.392213585967705
+          ],
+          "centre_error_mm": 0.002481800018186855
+        }
+      ]
+    },
+    {
+      "part": "J_DATA",
+      "section_z_mm": [
+        0.30000000000000004,
+        0.5
+      ],
+      "leads_and_locating_pegs": [
+        {
+          "hole": "pcb_plated_hole_6",
+          "lead_xy_mm": [
+            12.905011399985062,
+            7.070126807259002
+          ],
+          "centre_error_mm": 0.0025242776971043804
+        },
+        {
+          "hole": "pcb_plated_hole_5",
+          "lead_xy_mm": [
+            4.905011399985049,
+            7.070126807259056
+          ],
+          "centre_error_mm": 0.0025082781928066913
+        },
+        {
+          "hole": "pcb_plated_hole_7",
+          "lead_xy_mm": [
+            12.905011399985057,
+            9.930126807260633
+          ],
+          "centre_error_mm": 0.0025350052070335686
+        },
+        {
+          "hole": "pcb_plated_hole_4",
+          "lead_xy_mm": [
+            4.905011399985049,
+            9.930126807260631
+          ],
+          "centre_error_mm": 0.002519073837767015
+        },
+        {
+          "hole": "pcb_hole_4",
+          "lead_xy_mm": [
+            4.900005399991034,
+            8.500126785978702
+          ],
+          "centre_error_mm": 0.0024978000181348037
+        },
+        {
+          "hole": "pcb_hole_5",
+          "lead_xy_mm": [
+            12.900005399991045,
+            8.500126785967703
+          ],
+          "centre_error_mm": 0.0024818000181837463
+        }
+      ]
+    }
+  ],
+  "PCB_material_intersections": [
+    {
+      "part": "J_PD",
+      "laminate_interference_mm3": 0
+    },
+    {
+      "part": "J_DATA",
+      "laminate_interference_mm3": 0
+    },
+    {
+      "part": "J_MOTOR",
+      "laminate_interference_mm3": 0
+    }
+  ],
+  "PCB_surface_CAD_allowance_mm": 0.02,
+  "errors": [
+    {
+      "part": "J_PD",
+      "invalid_original_supplier_STEP": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step"
+    },
+    {
+      "part": "J_DATA",
+      "invalid_original_supplier_STEP": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step"
+    }
+  ],
+  "manufacturer_tolerances_verified": false,
+  "nominal_solid_and_lead_fit_pass": true,
+  "all_original_supplier_STEP_valid": false,
+  "physical_assembly_tested": false,
+  "manufacturing_release": false,
+  "fitted_part_frame_XY_mm": [
+    -13.720909700000071,
+    -14.03999999999993,
+    13.79283726195815,
+    13.950000000000001
+  ],
+  "all_fitted_on_top": true,
+  "whole_fitted_parts_within_28_3mm_frame": true
+}

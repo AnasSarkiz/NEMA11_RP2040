@@ -8,10 +8,11 @@ import random
 import subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-a=argparse.ArgumentParser();a.add_argument('--seconds',type=float,default=120);a.add_argument('--seed',type=int,default=11);a.add_argument('--mounts',type=int,choices=[0,2],default=2);a.add_argument('--start');args=a.parse_args()
+a=argparse.ArgumentParser();a.add_argument('--seconds',type=float,default=120);a.add_argument('--seed',type=int,default=11);a.add_argument('--mounts',type=int,choices=[0,2],default=2);a.add_argument('--start');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=a.parse_args()
 data=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())
 parts=data['parts'][:];poses=json.loads((ROOT/'src/controller/supplier-placement.json').read_text())
 constraints=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
+if args.usb_escape:constraints += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
 preferred={'U_MCU':(-.5,.5),'U_DRV':(2,-8),'U_PD':(-9,5),'J_PD':(-5.5,10),'J_DATA':(5.5,10),'J_MOTOR':(10.9,1),'C_BULK':(-8,-9),'BZ1':(10,-10),'L_BUCK':(-10,-2.8),'U_BUCK':(-11,1)}
 def rotate(v,r):
  c=round(math.cos(math.radians(r*90)));s=round(math.sin(math.radians(r*90)));return [c*v[0]-s*v[1],s*v[0]+c*v[1]]
@@ -32,7 +33,7 @@ if args.mounts:
   preferred[name]=(xx,12.5)
 start_poses=json.loads(Path(args.start).read_text())['placements'] if args.start else {}
 indices={p['name']:i for i,p in enumerate(parts)};pins={p['name']:list(p['pin_centers_relative_mm']) for p in parts}
-lines=[f'{len(parts)} {len(constraints)} {args.seconds} {args.seed} {indices['Y_MCU']} {indices['U_MCU']}'];random.seed(args.seed)
+lines=[f'{len(parts)} {len(constraints)} {args.seconds} {args.seed} {indices['Y_MCU']} {indices['U_MCU']} {indices['R_DP'] if args.usb_escape else -1} {indices['R_DM'] if args.usb_escape else -1}'];random.seed(args.seed)
 for p in parts:
  name=p['name'];xmin=xmax=ymin=ymax=None
  bounds=[-14.15,14.15,-14.15,14.15];mask=15
@@ -51,6 +52,15 @@ for p in parts:
  rr=1 if name=='J_MOTOR' else 0
  if name in start_poses:
   h=start_poses[name];xx=h['pcbX'];yy=h['pcbY'];rr=((h['pcbRotation']-p['original_rotation'])%360)//90
+ if args.usb_escape:
+  if name in ['J_PD','J_DATA']:bounds[3]=8.55
+  rotations={'R_DP':90,'R_DM':90,'C_IO49':90,'C_DV50':90,'C_USB':0,'C_ADC':90,'C_VREG_OUT':90,'U_ESD':90}
+  limits={'R_DP':[.8,3.2,4.9,6.0],'R_DM':[.8,3.5,4.9,6.0],'C_IO49':[-.6,1.6,5.5,6.6],'C_DV50':[-.6,1.6,5.5,6.6],'C_USB':[1.2,3,6,7],'C_ADC':[3.8,5.2,5.0,6.5],'C_VREG_OUT':[3,4,5.0,6.3],'U_ESD':[7,9.5,11.7,12.4]}
+  rotations.update({'D_TVS':0,'U_FLASH':0,'C_FLASH':90,'U_TEMP':0})
+  limits.update({'D_TVS':[-9,-6,11.5,12.8],'U_FLASH':[.3,1.4,8.8,9.6],'C_FLASH':[-.8,.2,12.0,13.0],'U_TEMP':[-12.3,-11.6,7.7,8.5]})
+  if name=='J_MOTOR':bounds=[9.75,11.5,-3,-1.25]
+  if name in rotations:
+   rr=((rotations[name]-p['original_rotation'])%360)//90;mask=1<<rr;bounds=limits[name]
  lines.append(' '.join(map(str,[mask,*bounds,round(xx*20)/20,round(yy*20)/20,rr,len(pins[name])])))
  for r in range(4):
   values=[]

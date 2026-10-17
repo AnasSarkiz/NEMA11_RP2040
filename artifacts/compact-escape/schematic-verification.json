@@ -1,0 +1,17 @@
+{
+  "scope": "Full controller schematic physical-pin coverage and independent visual ERC",
+  "schematic_sha256": "80c491637a1c2750b0e688e89397ca45f848f4f209b0607cc31afe32c429948a",
+  "source_sha256": "5f44d87fb461b0affc9123edc9ba7546a2b06fb352e4c4becb322379045e2a45",
+  "sheet_count": 6,
+  "components": 92,
+  "physical_pins": 340,
+  "drawn_symbol_pins": 332,
+  "safely_aggregated_USB_power_contacts": 8,
+  "connected_nets": 64,
+  "explicit_NC_pins": 36,
+  "wire_segments": 504,
+  "marked_crossings": 20,
+  "errors": [],
+  "passed": true,
+  "manufacturing_release": false
+}

@@ -1,0 +1,16 @@
+{
+  "scope": "Native PCB, exact OEM motor and original front carrier proposal; hardware and full harness absent",
+  "PCB_source_file": "artifacts/compact-escape/board.circuit.json",
+  "PCB_routed": true,
+  "source_sha256": "587f4443c7853bf2f0bcb04bf0f5dc894af56161479453b13987f5153aa76716",
+  "original_PCB_electrical_schematic_CAD_records_preserved": true,
+  "motor_raw_front_datum_z_mm": -42,
+  "motor_rotation_z_degrees": 90,
+  "motor_max_body_rear_z_mm": -9,
+  "PCB_bottom_z_mm": -0.8,
+  "drawing_maximum_body_to_PCB_gap_mm": 8.2,
+  "motor_rear_mounting_holes_or_rear_shaft_assumed": false,
+  "front_carrier_proposal_included": true,
+  "carrier_harness_fasteners_included": false,
+  "manufacturing_release": false
+}

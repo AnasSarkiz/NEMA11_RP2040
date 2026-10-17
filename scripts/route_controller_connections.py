@@ -142,7 +142,7 @@ def sample_members(members, root, roots, layers, ports):
     return points
 
 
-def connect(records, name, attempt, layer_override=None, start_rank=0):
+def connect(records, name, attempt, layer_override=None, start_rank=0, endpoints=None):
     copper=Copper(records)
     net=next(e for e in records if e['type']=='source_net' and e['name']==name)
     key=net['subcircuit_connectivity_map_key']
@@ -155,6 +155,14 @@ def connect(records, name, attempt, layer_override=None, start_rank=0):
         parts={copper.names[copper.source[copper.ports[e['pcb_port_id']]['source_port_id']]['source_component_id']] for e in islands[root]}
         return (0 if parts=={'J_MOTOR'} else 1,len(islands[root]),root)
     startroot=sorted(islands,key=choice)[start_rank % len(islands)]
+    targetroot=None
+    if endpoints:
+        selected=[]
+        for part,pin in endpoints:
+            port=next(p for p in copper.ports.values() if copper.names[copper.source[p['source_port_id']]['source_component_id']]==part and str(copper.source[p['source_port_id']]['pin_number'])==str(pin))
+            selected.append(next(r for (e,_,_),r in zip(members,roots) if e.get('pcb_port_id')==port['pcb_port_id']))
+        startroot,targetroot=selected
+        if startroot==targetroot:return None
     layers=layer_override or (['top','bottom'] if name=='PD_VBUS' else ['top','bottom','inner2'] if name=='LOGIC_IN' else LAYOUT)
     w=widths(name)
     wire,vias=masks(records,copper,key,w,layers)
@@ -163,7 +171,7 @@ def connect(records, name, attempt, layer_override=None, start_rank=0):
     starts=sample_members(members,startroot,roots,layers,copper.ports)
     goals={}
     for root in islands:
-        if root!=startroot:goals.update(sample_members(members,root,roots,layers,copper.ports))
+        if root!=startroot and (targetroot is None or root==targetroot):goals.update(sample_members(members,root,roots,layers,copper.ports))
     legal=lambda q:0<=q[0]<N and 0<=q[1]<N and not wire[q[2]][q[1],q[0]]
     starts={q:p for q,p in starts.items() if legal(q)}
     goals={q:p for q,p in goals.items() if legal(q)}

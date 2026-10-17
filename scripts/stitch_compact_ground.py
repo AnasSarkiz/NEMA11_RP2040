@@ -55,5 +55,8 @@ for name,pin in [('Y_MCU',2),('Y_MCU',4),('C_XIN',2),('C_XOUT',2)]:
   found=(x,y,distance);break
  if not found:results.append(dict(pin=name+'.'+str(pin),error='No legal direct local ground stitch'));continue
  x,y,d=found;via=barrel(x,y,label)
- records.append(dict(type='pcb_trace',pcb_trace_id='compact_GND_trace_'+label,pcb_port_ids=[port['pcb_port_id']],route=[dict(route_type='wire',x=port['x'],y=port['y'],width=.16,layer='top',start_pcb_port_id=port['pcb_port_id']),dict(route_type='wire',x=x,y=y,width=.16,layer='top')],**common));results.append(dict(pin=name+'.'+str(pin),via=via,ground_return_distance_mm=d))
+ # Retain the real native pin-to-ground branch identity, as in the checked
+ # larger baseline. Geometry/plane continuity is independently verified.
+ branch=next(e for e in records if e['type']=='source_trace' and e.get('connected_source_port_ids')==[port['source_port_id']])
+ records.append(dict(type='pcb_trace',pcb_trace_id='compact_GND_trace_'+label,pcb_port_ids=[port['pcb_port_id']],route=[dict(route_type='wire',x=port['x'],y=port['y'],width=.16,layer='top',start_pcb_port_id=port['pcb_port_id']),dict(route_type='wire',x=x,y=y,width=.16,layer='top')],**{**common,'source_trace_id':branch['source_trace_id']}));results.append(dict(pin=name+'.'+str(pin),via=via,ground_return_distance_mm=d))
 path.write_text(json.dumps(records,indent=2)+'\n');(folder/'clock-ground-construction.json').write_text(json.dumps(dict(scope='Constructed physical clock returns and three reviewed exposed-pad barrels; final copper/plane check required',results=results,manufacturing_release=False),indent=2)+'\n');print(json.dumps(results));raise SystemExit(any('error' in r for r in results))

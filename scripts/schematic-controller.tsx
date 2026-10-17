@@ -10,7 +10,8 @@ import { Resvg } from "@resvg/resvg-js"
 import * as schemas from "circuit-json"
 
 const compact=process.argv.includes("--compact")
-const folder=compact?"artifacts/compact-controller":"artifacts/controller"
+const folderArg=process.argv.indexOf("--folder")
+const folder=folderArg>=0?process.argv[folderArg+1]:compact?"artifacts/compact-controller":"artifacts/controller"
 const SupplierPart=compact?CompactSupplierPart:BaselineSupplierPart
 const baseBytes = readFileSync(folder+"/unrouted.circuit.json")
 const base = JSON.parse(baseBytes.toString()) as any[]

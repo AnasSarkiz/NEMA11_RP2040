@@ -10,8 +10,10 @@ The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
 The default native preview now opens the **28 × 28 mm compact assembly**.
-It has validated all-top placement, full source, six connected A4 sheets and 84
-native 3D models. Compact routing remains in progress; the older baseline’s
+The [latest checked checkpoint](artifacts/compact-escape/README.md) includes
+all-top placement, full source, six connected A4 sheets, 84 native 3D models,
+connected crystal nets and short MCU USB escapes. It still has **58 disconnected
+controller nets**; compact routing remains in progress; the older baseline’s
 zero-open routed results below apply to its larger outline.
 
 **Earlier 35 × 40 mm electrical baseline: full native controller source, six A4 sheets, routed copper,

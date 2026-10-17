@@ -4,7 +4,7 @@
 Uses top traces and 0.50/0.30 mm through vias, including legal non-pad spaces
 under the package. No blind/micro vias or ordinary via-in-pad are permitted.
 """
-import argparse,json,math
+import argparse,json,math,random
 from pathlib import Path
 import numpy as np
 from scipy.ndimage import distance_transform_edt
@@ -13,10 +13,10 @@ from fast_grid_router import route as fast_route
 import route_compact_controller # Configures the compact grid and physical masks.
 import route_controller_connections as router
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--folder',default='artifacts/compact-routing');p.add_argument('--restart',action='store_true');args=p.parse_args();folder=ROOT/args.folder;path=folder/'routing-construction.circuit.json';records=json.loads(path.read_text())
+p=argparse.ArgumentParser();p.add_argument('--folder',default='artifacts/compact-routing');p.add_argument('--restart',action='store_true');p.add_argument('--seed',type=int,default=0);p.add_argument('--preserve-nets',default='');p.add_argument('--radius',type=float,default=2.3);p.add_argument('--pins-first',default='');p.add_argument('--via-plan');args=p.parse_args();folder=ROOT/args.folder;path=folder/'routing-construction.circuit.json';records=json.loads(path.read_text());preserve=set(filter(None,args.preserve_nets.split(',')));radius_cells=round(args.radius/router.STEP);via_plan=json.loads(Path(args.via_plan).read_text()) if args.via_plan else {}
 if args.restart:
  c=Copper(records)
- records=[e for e in records if e['type'] not in ['pcb_trace','pcb_via','pcb_copper_pour'] or (e['type'] in ['pcb_trace','pcb_via'] and (c.nets.get(c.key(e)) in ['XIN','XOUT','XTAL_OUT'] or e.get('pcb_trace_id','').startswith('compact_GND_') or e.get('pcb_via_id','').startswith('compact_GND_')))]
+ records=[e for e in records if e['type'] not in ['pcb_trace','pcb_via','pcb_copper_pour'] or (e['type'] in ['pcb_trace','pcb_via'] and (c.nets.get(c.key(e)) in {'XIN','XOUT','XTAL_OUT'}|preserve or e.get('pcb_trace_id','').startswith('compact_GND_') or e.get('pcb_via_id','').startswith('compact_GND_')))]
  c=Copper(records)
  ports=[v for v in c.ports.values() if c.names[c.source[v['source_port_id']]['source_component_id']]=='U_MCU' and c.nets.get(c.source[v['source_port_id']].get('subcircuit_connectivity_map_key')) not in [None,'GND','XIN','XOUT','XTAL_OUT']]
  pc=next(e for e in records if e['type']=='pcb_component' and c.names[e['source_component_id']]=='U_MCU')
@@ -25,20 +25,29 @@ if args.restart:
   edge=0 if dy>3 else 1 if dx<-3 else 2 if dy<-3 else 3
   return edge,pin%2,pin
  ports.sort(key=priority)
+ if args.seed:random.Random(args.seed).shuffle(ports)
+ first=[int(v) for v in args.pins_first.split(',') if v]
+ if first:ports.sort(key=lambda v:first.index(c.source[v['source_port_id']]['pin_number']) if c.source[v['source_port_id']]['pin_number'] in first else len(first))
  report=[];N=router.N
  for pp in ports:
   c=Copper(records);sp=c.source[pp['source_port_id']];pin=sp['pin_number'];key=sp['subcircuit_connectivity_map_key'];net=next(e for e in records if e['type']=='source_net' and e['subcircuit_connectivity_map_key']==key);name=net['name'];identifier='compact_MCU_fanout_'+str(pin)
+  if name in preserve:
+   members,roots=c.groups(key);physical={r for (e,_,_),r in zip(members,roots) if e['type'] in ['pcb_smtpad','pcb_plated_hole']}
+   if len(physical)==1:report.append(dict(pin=pin,net=name,already_fully_connected=True));continue
   if any(e.get('pcb_trace_id')==identifier for e in records):continue
   layers=['top'];wire,vias=router.masks(records,c,key,{'top':.16},layers)
   # The via barrel crosses every copper layer; all masks must be clear.
   allowed=np.logical_not(np.logical_or.reduce(vias)) & np.logical_not(wire[0])
   gx,gy=router.xy(pp['x'],pp['y']);goals=[]
-  for y in range(max(0,gy-92),min(N,gy+93)):
-   for x in range(max(0,gx-92),min(N,gx+93)):
-    if (x-gx)**2+(y-gy)**2<=92**2 and allowed[y,x]:goals.append((x,y,0))
+  for y in range(max(0,gy-radius_cells),min(N,gy+radius_cells+1)):
+   for x in range(max(0,gx-radius_cells),min(N,gx+radius_cells+1)):
+    if (x-gx)**2+(y-gy)**2<=radius_cells**2 and allowed[y,x]:goals.append((x,y,0))
   existing={router.xy(e['x'],e['y']):e for e in records if e['type']=='pcb_via' and c.key(e)==key}
   for (x,y),via in existing.items():
-   if (x-gx)**2+(y-gy)**2<=92**2 and not wire[0][y,x]:goals.append((x,y,0))
+   if (x-gx)**2+(y-gy)**2<=radius_cells**2 and not wire[0][y,x]:goals.append((x,y,0))
+  if str(pin) in via_plan:
+   chosen=(*router.xy(*via_plan[str(pin)]),0)
+   goals=[chosen] if chosen in goals else []
   members,roots=c.groups(key);root=next(r for (e,_,_),r in zip(members,roots) if e.get('pcb_port_id')==pp['pcb_port_id'])
   if any(e['type']=='pcb_via' and r==root for (e,_,_),r in zip(members,roots)):
    report.append(dict(pin=pin,net=name,already_connected_to_same_net_via=True));continue

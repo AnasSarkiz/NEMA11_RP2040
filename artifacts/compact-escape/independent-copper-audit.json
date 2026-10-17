@@ -1,0 +1,1003 @@
+{
+  "scope": "Full controller physical copper; no symbolic net IDs substitute for contact",
+  "method": "Shapely per-layer pad/trace/annulus/pour geometry; plated barrels join layers",
+  "clearance_mm": 0.15,
+  "board_edge_mm": 0.25,
+  "via_drill_pad_mm": [
+    0.3,
+    0.45
+  ],
+  "error_counts": {
+    "disconnected_net": 58
+  },
+  "errors": [
+    {
+      "type": "disconnected_net",
+      "net": "PD_VBUS",
+      "islands": [
+        [
+          "J_PD.3"
+        ],
+        [
+          "J_PD.8"
+        ],
+        [
+          "J_PD.11"
+        ],
+        [
+          "J_PD.16"
+        ],
+        [
+          "U_PD.8"
+        ],
+        [
+          "R_PD.1"
+        ],
+        [
+          "R_VM_H.1"
+        ],
+        [
+          "D_PD.2"
+        ],
+        [
+          "U_DRV.28"
+        ],
+        [
+          "U_DRV.22"
+        ],
+        [
+          "C_VCP.2"
+        ],
+        [
+          "C_VM.1"
+        ],
+        [
+          "C_BULK.1"
+        ],
+        [
+          "D_TVS.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "V3V3",
+      "islands": [
+        [
+          "R_PG.1"
+        ],
+        [
+          "U_MCU.49"
+        ],
+        [
+          "U_MCU.48"
+        ],
+        [
+          "U_MCU.44"
+        ],
+        [
+          "U_MCU.43"
+        ],
+        [
+          "U_MCU.42"
+        ],
+        [
+          "U_MCU.33"
+        ],
+        [
+          "U_MCU.22"
+        ],
+        [
+          "U_MCU.10"
+        ],
+        [
+          "U_MCU.1"
+        ],
+        [
+          "C_IO1.1"
+        ],
+        [
+          "C_IO10.1"
+        ],
+        [
+          "C_IO22.1"
+        ],
+        [
+          "C_IO33.1"
+        ],
+        [
+          "C_IO42.1"
+        ],
+        [
+          "C_IO49.1"
+        ],
+        [
+          "C_USB.1"
+        ],
+        [
+          "C_ADC.1"
+        ],
+        [
+          "C_VREG_IN.1"
+        ],
+        [
+          "U_FLASH.8"
+        ],
+        [
+          "C_FLASH.1"
+        ],
+        [
+          "R_FLASH_CS.1"
+        ],
+        [
+          "R_RUN.1"
+        ],
+        [
+          "U_BUCK.1"
+        ],
+        [
+          "L_BUCK.2"
+        ],
+        [
+          "C_BUCK_OUT1.1"
+        ],
+        [
+          "C_BUCK_OUT2.1"
+        ],
+        [
+          "U_DRV.15"
+        ],
+        [
+          "U_DRV.12"
+        ],
+        [
+          "U_DRV.11"
+        ],
+        [
+          "U_DRV.10"
+        ],
+        [
+          "U_DRV.9"
+        ],
+        [
+          "C_DRV_LOGIC.1"
+        ],
+        [
+          "R_REF_H.1"
+        ],
+        [
+          "R_ENABLE.1"
+        ],
+        [
+          "U_TEMP.5"
+        ],
+        [
+          "C_TEMP.1"
+        ],
+        [
+          "R_TEMP_SDA.2"
+        ],
+        [
+          "R_TEMP_SCL.2"
+        ],
+        [
+          "R_PWR_LED.1"
+        ],
+        [
+          "BZ1.1"
+        ],
+        [
+          "D_BUZZER.1"
+        ],
+        [
+          "C_BUZZER.1"
+        ],
+        [
+          "TP_3V3.1"
+        ],
+        [
+          "U_ENCODER.1"
+        ],
+        [
+          "U_ENCODER.2"
+        ],
+        [
+          "C_ENCODER.1"
+        ],
+        [
+          "C_ENCODER_BULK.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "LOGIC_IN",
+      "islands": [
+        [
+          "U_BUCK.3"
+        ],
+        [
+          "U_BUCK.2"
+        ],
+        [
+          "C_BUCK_IN.1"
+        ],
+        [
+          "D_PD.1"
+        ],
+        [
+          "D_DATA.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "DATA_VBUS",
+      "islands": [
+        [
+          "J_DATA.3"
+        ],
+        [
+          "J_DATA.8"
+        ],
+        [
+          "J_DATA.11"
+        ],
+        [
+          "J_DATA.16"
+        ],
+        [
+          "R_USB_SENSE_H.1"
+        ],
+        [
+          "D_DATA.2"
+        ],
+        [
+          "U_ESD.5"
+        ],
+        [
+          "D_STATUS.4"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PD_VHV",
+      "islands": [
+        [
+          "U_PD.1"
+        ],
+        [
+          "R_PD.2"
+        ],
+        [
+          "C_PD.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PD_CC1",
+      "islands": [
+        [
+          "J_PD.4"
+        ],
+        [
+          "U_PD.7"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PD_CC2",
+      "islands": [
+        [
+          "J_PD.15"
+        ],
+        [
+          "U_PD.6"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "DATA_CC1",
+      "islands": [
+        [
+          "J_DATA.4"
+        ],
+        [
+          "R_CC1.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "DATA_CC2",
+      "islands": [
+        [
+          "J_DATA.15"
+        ],
+        [
+          "R_CC2.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "USB_DP",
+      "islands": [
+        [
+          "J_DATA.2"
+        ],
+        [
+          "J_DATA.14"
+        ],
+        [
+          "R_DP.2"
+        ],
+        [
+          "U_ESD.1"
+        ],
+        [
+          "U_ESD.6"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "USB_DM",
+      "islands": [
+        [
+          "J_DATA.6"
+        ],
+        [
+          "J_DATA.10"
+        ],
+        [
+          "R_DM.2"
+        ],
+        [
+          "U_ESD.3"
+        ],
+        [
+          "U_ESD.4"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STEP",
+      "islands": [
+        [
+          "U_MCU.8"
+        ],
+        [
+          "U_DRV.16"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "DIR",
+      "islands": [
+        [
+          "U_MCU.9"
+        ],
+        [
+          "U_DRV.19"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "ENABLE_N",
+      "islands": [
+        [
+          "U_MCU.11"
+        ],
+        [
+          "U_DRV.2"
+        ],
+        [
+          "R_ENABLE.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "SLEEP",
+      "islands": [
+        [
+          "U_MCU.12"
+        ],
+        [
+          "U_DRV.14"
+        ],
+        [
+          "R_SLEEP.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PD_GOOD",
+      "islands": [
+        [
+          "U_PD.10"
+        ],
+        [
+          "R_PG.2"
+        ],
+        [
+          "U_MCU.13"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "DATA_PRESENT",
+      "islands": [
+        [
+          "U_MCU.41"
+        ],
+        [
+          "R_USB_SENSE_H.2"
+        ],
+        [
+          "R_USB_SENSE_L.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "VM_SENSE",
+      "islands": [
+        [
+          "U_MCU.40"
+        ],
+        [
+          "R_VM_H.2"
+        ],
+        [
+          "R_VM_L.1"
+        ],
+        [
+          "C_VM_SENSE.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "VREF",
+      "islands": [
+        [
+          "U_DRV.17"
+        ],
+        [
+          "R_REF_H.2"
+        ],
+        [
+          "R_REF_L.1"
+        ],
+        [
+          "C_REF.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "CP1",
+      "islands": [
+        [
+          "U_DRV.4"
+        ],
+        [
+          "C_CP.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "CP2",
+      "islands": [
+        [
+          "U_DRV.5"
+        ],
+        [
+          "C_CP.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "VCP",
+      "islands": [
+        [
+          "U_DRV.6"
+        ],
+        [
+          "C_VCP.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "VREG",
+      "islands": [
+        [
+          "U_DRV.8"
+        ],
+        [
+          "C_VREG.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "SENSE1",
+      "islands": [
+        [
+          "U_DRV.23"
+        ],
+        [
+          "R_SA.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "SENSE2",
+      "islands": [
+        [
+          "U_DRV.27"
+        ],
+        [
+          "R_SB.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "A_PLUS",
+      "islands": [
+        [
+          "U_DRV.24"
+        ],
+        [
+          "J_MOTOR.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "A_MINUS",
+      "islands": [
+        [
+          "U_DRV.21"
+        ],
+        [
+          "J_MOTOR.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "B_PLUS",
+      "islands": [
+        [
+          "U_DRV.26"
+        ],
+        [
+          "J_MOTOR.3"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "B_MINUS",
+      "islands": [
+        [
+          "U_DRV.1"
+        ],
+        [
+          "J_MOTOR.4"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "V1V1",
+      "islands": [
+        [
+          "U_MCU.50"
+        ],
+        [
+          "U_MCU.45"
+        ],
+        [
+          "U_MCU.23"
+        ],
+        [
+          "C_DV23.1"
+        ],
+        [
+          "C_DV50.1"
+        ],
+        [
+          "C_VREG_OUT.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SS",
+      "islands": [
+        [
+          "U_MCU.56"
+        ],
+        [
+          "U_FLASH.1"
+        ],
+        [
+          "R_FLASH_CS.2"
+        ],
+        [
+          "R_BOOT.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SCLK",
+      "islands": [
+        [
+          "U_MCU.52"
+        ],
+        [
+          "U_FLASH.6"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SD0",
+      "islands": [
+        [
+          "U_MCU.53"
+        ],
+        [
+          "U_FLASH.5"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SD1",
+      "islands": [
+        [
+          "U_MCU.55"
+        ],
+        [
+          "U_FLASH.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SD2",
+      "islands": [
+        [
+          "U_MCU.54"
+        ],
+        [
+          "U_FLASH.3"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "QSPI_SD3",
+      "islands": [
+        [
+          "U_MCU.51"
+        ],
+        [
+          "U_FLASH.7"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "RUN",
+      "islands": [
+        [
+          "U_MCU.26"
+        ],
+        [
+          "R_RUN.2"
+        ],
+        [
+          "TP_RUN.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "SWCLK",
+      "islands": [
+        [
+          "U_MCU.24"
+        ],
+        [
+          "TP_SWCLK.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "SWDIO",
+      "islands": [
+        [
+          "U_MCU.25"
+        ],
+        [
+          "TP_SWDIO.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BUCK_SW",
+      "islands": [
+        [
+          "U_BUCK.5"
+        ],
+        [
+          "L_BUCK.1"
+        ],
+        [
+          "C_BOOTSTRAP.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BUCK_BST",
+      "islands": [
+        [
+          "U_BUCK.6"
+        ],
+        [
+          "C_BOOTSTRAP.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BOOT_PAD",
+      "islands": [
+        [
+          "R_BOOT.2"
+        ],
+        [
+          "TP_BOOT.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PWR_LED_A",
+      "islands": [
+        [
+          "D_PWR.2"
+        ],
+        [
+          "R_PWR_LED.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "TEMP_SDA",
+      "islands": [
+        [
+          "U_MCU.38"
+        ],
+        [
+          "U_TEMP.6"
+        ],
+        [
+          "R_TEMP_SDA.1"
+        ],
+        [
+          "U_ENCODER.6"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "TEMP_SCL",
+      "islands": [
+        [
+          "U_MCU.39"
+        ],
+        [
+          "U_TEMP.1"
+        ],
+        [
+          "R_TEMP_SCL.1"
+        ],
+        [
+          "U_ENCODER.7"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BUZZER_PWM",
+      "islands": [
+        [
+          "U_MCU.27"
+        ],
+        [
+          "R_BUZZER_GATE.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BUZZER_GATE",
+      "islands": [
+        [
+          "Q_BUZZER.1"
+        ],
+        [
+          "R_BUZZER_GATE.2"
+        ],
+        [
+          "R_BUZZER_PD.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "BUZZER_SINK",
+      "islands": [
+        [
+          "BZ1.2"
+        ],
+        [
+          "Q_BUZZER.3"
+        ],
+        [
+          "D_BUZZER.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "LED_R",
+      "islands": [
+        [
+          "U_MCU.37"
+        ],
+        [
+          "Q_STATUS_R.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "LED_G",
+      "islands": [
+        [
+          "U_MCU.4"
+        ],
+        [
+          "Q_STATUS_G.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "LED_B",
+      "islands": [
+        [
+          "U_MCU.5"
+        ],
+        [
+          "Q_STATUS_B.2"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_R_K",
+      "islands": [
+        [
+          "D_STATUS.1"
+        ],
+        [
+          "R_STATUS_R.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_G_K",
+      "islands": [
+        [
+          "D_STATUS.2"
+        ],
+        [
+          "R_STATUS_G.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_B_K",
+      "islands": [
+        [
+          "D_STATUS.3"
+        ],
+        [
+          "R_STATUS_B.1"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_R_C",
+      "islands": [
+        [
+          "R_STATUS_R.2"
+        ],
+        [
+          "Q_STATUS_R.3"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_G_C",
+      "islands": [
+        [
+          "R_STATUS_G.2"
+        ],
+        [
+          "Q_STATUS_G.3"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "STATUS_B_C",
+      "islands": [
+        [
+          "R_STATUS_B.2"
+        ],
+        [
+          "Q_STATUS_B.3"
+        ]
+      ]
+    },
+    {
+      "type": "disconnected_net",
+      "net": "PD_CFG",
+      "islands": [
+        [
+          "U_PD.9"
+        ],
+        [
+          "R_PD_CFG.1"
+        ]
+      ]
+    }
+  ],
+  "manufacturing_release": false,
+  "actual_drilled_objects_checked": 25,
+  "minimum_declared_drill_pair_gap_mm": 0.774776199999998,
+  "circuit_sha256": "587f4443c7853bf2f0bcb04bf0f5dc894af56161479453b13987f5153aa76716"
+}
