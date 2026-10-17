@@ -6,8 +6,10 @@ The NEMA14 repository is a read-only reference.
 
 **Current milestone: full native controller source, six A4 sheets, routed copper,
 review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.
-Both manufacturer-required USB locating-hole corrections are complete. Independent
-copper/connectivity, clock, USB ground-reference, shorts and CAM checks pass.
+Both manufacturer-required USB locating-hole corrections are complete. Native DRC reports zero errors with the documented exact-circle checker correction.
+All 304 required pins on 92 components are physically connected; 37 intentional
+NCs remain isolated. Independent copper, clock, USB ground-reference, shorts and
+CAM checks pass.
 This is not a fabrication release; [remaining requirements](docs/manufacturing-requirements.md)
 include factory process/stackup acceptance, harness termination and physical qualification.**
 
@@ -26,6 +28,7 @@ request-size limit; two separate unchanged-file archive uploads completed the
 same release. [Publication evidence](artifacts/publication/controller-prototype-0.3.0.json)
 records that recovery honestly.
 
+- [Zero-error native DRC and every-pin connectivity](docs/native-drc-and-connectivity.md)
 - [Design requirements](config/design-requirements.json)
 - [Full controller PCB development and manufacturing blockers](docs/full-controller-pcb.md)
 - [Factory process, harness and first-article requirements](docs/manufacturing-requirements.md)

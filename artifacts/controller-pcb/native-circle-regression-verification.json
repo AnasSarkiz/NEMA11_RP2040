@@ -1,0 +1,18 @@
+{
+  "scope": "Native exact-circle regression checks with deliberate real violations retained",
+  "test_source": "tests-native/circle-keepout.test.ts",
+  "test_source_sha256": "c02dbd00284ac23642702e1aaf70dd8928c4f8bd0c03a9dc3f5b7971f7fa8080",
+  "patch_sha256": "3bdf7e94df7e3954c0a65d618e165772806bb410dfe8d8d5e1ff8b58423488ab",
+  "stock_results": {
+    "passed": 7,
+    "failed": 3,
+    "failures": "Expected false failures for circle versus bounding-rectangle and finite-segment cases"
+  },
+  "corrected_results": {
+    "passed": 10,
+    "failed": 0
+  },
+  "real_overlap_clearance_rectangle_and_layer_cases_preserved": true,
+  "no_findings_filtered_or_waived": true,
+  "manufacturing_release": false
+}

@@ -9,7 +9,15 @@
       "same_PCB_bytes": true
     },
     "native-drc-review.json": {
-      "sha256": "79325300502c458ca2495a139e2923f053e0f10139e643f82fb2761d7a51bd1c",
+      "sha256": "81fa0244bc04f69be12fd83fde5f2b41f61d47238d1e574461fce3df1d377c2c",
+      "same_PCB_bytes": true
+    },
+    "native-drc.json": {
+      "sha256": "b9d782a8fefe202a630ead3e36a03a209db5e2ecb4614da818ec8cfbe676397c",
+      "same_PCB_bytes": true
+    },
+    "all-pin-connectivity.json": {
+      "sha256": "49674381035299c07a4f7d7b8c3d9ab5533fe1b78eebdcfcdb85d4b0bce9ed25",
       "same_PCB_bytes": true
     },
     "native-shorts-verification.json": {
@@ -73,9 +81,10 @@
     "pcb_copper_pour": 46,
     "pcb_silkscreen_path": 631
   },
-  "raw_native_DRC_errors": 36,
-  "all_native_errors_individually_reviewed_as_circular_keepout_approximation": true,
-  "source_and_physical_validation_tests": 29,
+  "raw_native_DRC_errors": 0,
+  "native_DRC_findings_filtered_or_waived": false,
+  "source_and_physical_validation_tests": 35,
+  "native_geometry_regression_tests": 10,
   "nominal_assembly_models": 84,
   "milestone_passed": true,
   "manufacturing_release": false,

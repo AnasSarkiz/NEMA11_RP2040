@@ -1,0 +1,57 @@
+bun test v1.4.2 (744846f84)
+
+tests-native/circle-keepout.test.ts:
+18 |   return checkEachPcbTraceNonOverlapping(records)
+19 | }
+20 | 
+21 | describe("native trace versus true circular keepout", () => {
+22 |   test("clears a circle while inside its bounding rectangle", () => {
+23 |     expect(inspect()).toHaveLength(0)
+                           ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/NEMA11_RP2040/tests-native/circle-keepout.test.ts:23:23)
+(fail) native trace versus true circular keepout > clears a circle while inside its bounding rectangle [4.14ms]
+21 | describe("native trace versus true circular keepout", () => {
+22 |   test("clears a circle while inside its bounding rectangle", () => {
+23 |     expect(inspect()).toHaveLength(0)
+24 |   })
+25 |   test("uses translated center and radius", () => {
+26 |     expect(inspect({ start: [15.5, -10.5], end: [16, -10.5], center: [13, -13], radius: 3.2 })).toHaveLength(0)
+                                                                                                     ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/NEMA11_RP2040/tests-native/circle-keepout.test.ts:26:97)
+(fail) native trace versus true circular keepout > uses translated center and radius [0.48ms]
+24 |   })
+25 |   test("uses translated center and radius", () => {
+26 |     expect(inspect({ start: [15.5, -10.5], end: [16, -10.5], center: [13, -13], radius: 3.2 })).toHaveLength(0)
+27 |   })
+28 |   test("finite segment uses its closest endpoint, not the infinite line", () => {
+29 |     expect(inspect({ start: [1.05, 1.05], end: [2, 2] })).toHaveLength(0)
+                                                               ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/NEMA11_RP2040/tests-native/circle-keepout.test.ts:29:59)
+(fail) native trace versus true circular keepout > finite segment uses its closest endpoint, not the infinite line [0.70ms]
+(pass) native trace versus true circular keepout > detects a center-crossing trace [0.29ms]
+(pass) native trace versus true circular keepout > detects a trace inside the circle [0.25ms]
+(pass) native trace versus true circular keepout > enforces the 0.15 mm edge clearance [0.25ms]
+(pass) native trace versus true circular keepout > includes half the full trace width [0.25ms]
+(pass) native trace versus true circular keepout > a rectangle still blocks its corner [0.18ms]
+(pass) native trace versus true circular keepout > respects the keepout layer [0.10ms]
+(pass) native trace versus true circular keepout > advisory violations remain visible warnings [0.47ms]
+
+ 7 pass
+ 3 fail
+ 10 expect() calls
+Ran 10 tests across 1 file. [143.00ms]

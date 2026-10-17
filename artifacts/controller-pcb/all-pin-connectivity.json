@@ -1,0 +1,6908 @@
+{
+  "method": "Global physical copper graph; foreign net labels and NC never imply or prevent a metal contact",
+  "components_checked": 92,
+  "physical_pins_checked": 341,
+  "required_connected_pins": 304,
+  "intentional_NC_pins": 37,
+  "nets_checked": 64,
+  "opens": 0,
+  "shorts": 0,
+  "components": [
+    {
+      "designator": "J_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 20,
+      "required_connections": 14,
+      "intentional_NC": 6
+    },
+    {
+      "designator": "J_DATA",
+      "assembly": "fitted_SMT",
+      "physical_pins": 20,
+      "required_connections": 18,
+      "intentional_NC": 2
+    },
+    {
+      "designator": "U_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 11,
+      "required_connections": 7,
+      "intentional_NC": 4
+    },
+    {
+      "designator": "R_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_PG",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_MCU",
+      "assembly": "fitted_SMT",
+      "physical_pins": 57,
+      "required_connections": 40,
+      "intentional_NC": 17
+    },
+    {
+      "designator": "C_IO1",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_IO10",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_IO22",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_IO33",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_IO42",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_IO49",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_DV23",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_DV50",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_USB",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_ADC",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VREG_IN",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VREG_OUT",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_FLASH",
+      "assembly": "fitted_SMT",
+      "physical_pins": 9,
+      "required_connections": 9,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_FLASH",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_FLASH_CS",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_BOOT",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "Y_MCU",
+      "assembly": "fitted_SMT",
+      "physical_pins": 4,
+      "required_connections": 4,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_XOUT",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_XIN",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_XOUT",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_RUN",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_DM",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_DP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_CC1",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_CC2",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_USB_SENSE_H",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_USB_SENSE_L",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_VM_H",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_VM_L",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VM_SENSE",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_BUCK",
+      "assembly": "fitted_SMT",
+      "physical_pins": 6,
+      "required_connections": 6,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "L_BUCK",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BOOTSTRAP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BUCK_IN",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BUCK_OUT1",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BUCK_OUT2",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_DATA",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_DRV",
+      "assembly": "fitted_SMT",
+      "physical_pins": 29,
+      "required_connections": 26,
+      "intentional_NC": 3
+    },
+    {
+      "designator": "C_CP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VCP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VREG",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_DRV_LOGIC",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_VM",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BULK",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_SA",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_SB",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_REF_H",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_REF_L",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_REF",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_ENABLE",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_SLEEP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "J_MOTOR",
+      "assembly": "manual_PH_header",
+      "physical_pins": 4,
+      "required_connections": 4,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_ESD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 6,
+      "required_connections": 6,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_TVS",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_TEMP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 6,
+      "required_connections": 5,
+      "intentional_NC": 1
+    },
+    {
+      "designator": "C_TEMP",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_TEMP_SDA",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_TEMP_SCL",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_PWR",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_PWR_LED",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_STATUS",
+      "assembly": "fitted_SMT",
+      "physical_pins": 4,
+      "required_connections": 4,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_STATUS_R",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "Q_STATUS_R",
+      "assembly": "fitted_SMT",
+      "physical_pins": 3,
+      "required_connections": 3,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_STATUS_G",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "Q_STATUS_G",
+      "assembly": "fitted_SMT",
+      "physical_pins": 3,
+      "required_connections": 3,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_STATUS_B",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "Q_STATUS_B",
+      "assembly": "fitted_SMT",
+      "physical_pins": 3,
+      "required_connections": 3,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "BZ1",
+      "assembly": "fitted_SMT",
+      "physical_pins": 4,
+      "required_connections": 2,
+      "intentional_NC": 2
+    },
+    {
+      "designator": "Q_BUZZER",
+      "assembly": "fitted_SMT",
+      "physical_pins": 3,
+      "required_connections": 3,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "D_BUZZER",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_BUZZER_GATE",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_BUZZER_PD",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_BUZZER",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_3V3",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_GND",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_SWCLK",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_SWDIO",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_RUN",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_BOOT",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "TP_BOOT_GND",
+      "assembly": "bare_PCB_test_point",
+      "physical_pins": 1,
+      "required_connections": 1,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "U_ENCODER",
+      "assembly": "optional_encoder_DNP",
+      "physical_pins": 8,
+      "required_connections": 6,
+      "intentional_NC": 2
+    },
+    {
+      "designator": "C_ENCODER",
+      "assembly": "optional_encoder_DNP",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "C_ENCODER_BULK",
+      "assembly": "optional_encoder_DNP",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    },
+    {
+      "designator": "R_PD_CFG",
+      "assembly": "fitted_SMT",
+      "physical_pins": 2,
+      "required_connections": 2,
+      "intentional_NC": 0
+    }
+  ],
+  "nets": [
+    {
+      "name": "GND",
+      "physical_islands": 1,
+      "physical_terminal_count": 80,
+      "pins": [
+        "C_ADC.2",
+        "C_BUCK_IN.2",
+        "C_BUCK_OUT1.2",
+        "C_BUCK_OUT2.2",
+        "C_BULK.2",
+        "C_BUZZER.2",
+        "C_DRV_LOGIC.2",
+        "C_DV23.2",
+        "C_DV50.2",
+        "C_ENCODER.2",
+        "C_ENCODER_BULK.2",
+        "C_FLASH.2",
+        "C_IO1.2",
+        "C_IO10.2",
+        "C_IO22.2",
+        "C_IO33.2",
+        "C_IO42.2",
+        "C_IO49.2",
+        "C_PD.2",
+        "C_REF.2",
+        "C_TEMP.2",
+        "C_USB.2",
+        "C_VM.2",
+        "C_VM_SENSE.2",
+        "C_VREG.2",
+        "C_VREG_IN.2",
+        "C_VREG_OUT.2",
+        "C_XIN.2",
+        "C_XOUT.2",
+        "D_PWR.1",
+        "D_TVS.1",
+        "J_DATA.1",
+        "J_DATA.13",
+        "J_DATA.17",
+        "J_DATA.18",
+        "J_DATA.19",
+        "J_DATA.20",
+        "J_DATA.5",
+        "J_DATA.9",
+        "J_PD.1",
+        "J_PD.13",
+        "J_PD.17",
+        "J_PD.18",
+        "J_PD.19",
+        "J_PD.20",
+        "J_PD.5",
+        "J_PD.9",
+        "Q_BUZZER.2",
+        "Q_STATUS_B.1",
+        "Q_STATUS_G.1",
+        "Q_STATUS_R.1",
+        "R_BUZZER_PD.2",
+        "R_CC1.2",
+        "R_CC2.2",
+        "R_PD_CFG.2",
+        "R_REF_L.2",
+        "R_SA.2",
+        "R_SB.2",
+        "R_SLEEP.2",
+        "R_USB_SENSE_L.2",
+        "R_VM_L.2",
+        "TP_BOOT_GND.1",
+        "TP_GND.1",
+        "U_BUCK.4",
+        "U_DRV.13",
+        "U_DRV.18",
+        "U_DRV.29",
+        "U_DRV.3",
+        "U_ENCODER.4",
+        "U_ENCODER.8",
+        "U_ESD.2",
+        "U_FLASH.4",
+        "U_FLASH.9",
+        "U_MCU.19",
+        "U_MCU.57",
+        "U_PD.11",
+        "U_TEMP.2",
+        "U_TEMP.4",
+        "Y_MCU.2",
+        "Y_MCU.4"
+      ]
+    },
+    {
+      "name": "PD_VBUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 14,
+      "pins": [
+        "C_BULK.1",
+        "C_VCP.2",
+        "C_VM.1",
+        "D_PD.2",
+        "D_TVS.2",
+        "J_PD.11",
+        "J_PD.16",
+        "J_PD.3",
+        "J_PD.8",
+        "R_PD.1",
+        "R_VM_H.1",
+        "U_DRV.22",
+        "U_DRV.28",
+        "U_PD.8"
+      ]
+    },
+    {
+      "name": "V3V3",
+      "physical_islands": 1,
+      "physical_terminal_count": 48,
+      "pins": [
+        "BZ1.1",
+        "C_ADC.1",
+        "C_BUCK_OUT1.1",
+        "C_BUCK_OUT2.1",
+        "C_BUZZER.1",
+        "C_DRV_LOGIC.1",
+        "C_ENCODER.1",
+        "C_ENCODER_BULK.1",
+        "C_FLASH.1",
+        "C_IO1.1",
+        "C_IO10.1",
+        "C_IO22.1",
+        "C_IO33.1",
+        "C_IO42.1",
+        "C_IO49.1",
+        "C_TEMP.1",
+        "C_USB.1",
+        "C_VREG_IN.1",
+        "D_BUZZER.1",
+        "L_BUCK.2",
+        "R_ENABLE.1",
+        "R_FLASH_CS.1",
+        "R_PG.1",
+        "R_PWR_LED.1",
+        "R_REF_H.1",
+        "R_RUN.1",
+        "R_TEMP_SCL.2",
+        "R_TEMP_SDA.2",
+        "TP_3V3.1",
+        "U_BUCK.1",
+        "U_DRV.10",
+        "U_DRV.11",
+        "U_DRV.12",
+        "U_DRV.15",
+        "U_DRV.9",
+        "U_ENCODER.1",
+        "U_ENCODER.2",
+        "U_FLASH.8",
+        "U_MCU.1",
+        "U_MCU.10",
+        "U_MCU.22",
+        "U_MCU.33",
+        "U_MCU.42",
+        "U_MCU.43",
+        "U_MCU.44",
+        "U_MCU.48",
+        "U_MCU.49",
+        "U_TEMP.5"
+      ]
+    },
+    {
+      "name": "LOGIC_IN",
+      "physical_islands": 1,
+      "physical_terminal_count": 5,
+      "pins": [
+        "C_BUCK_IN.1",
+        "D_DATA.1",
+        "D_PD.1",
+        "U_BUCK.2",
+        "U_BUCK.3"
+      ]
+    },
+    {
+      "name": "DATA_VBUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 8,
+      "pins": [
+        "D_DATA.2",
+        "D_STATUS.4",
+        "J_DATA.11",
+        "J_DATA.16",
+        "J_DATA.3",
+        "J_DATA.8",
+        "R_USB_SENSE_H.1",
+        "U_ESD.5"
+      ]
+    },
+    {
+      "name": "PD_VHV",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "C_PD.1",
+        "R_PD.2",
+        "U_PD.1"
+      ]
+    },
+    {
+      "name": "PD_CC1",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_PD.4",
+        "U_PD.7"
+      ]
+    },
+    {
+      "name": "PD_CC2",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_PD.15",
+        "U_PD.6"
+      ]
+    },
+    {
+      "name": "DATA_CC1",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_DATA.4",
+        "R_CC1.1"
+      ]
+    },
+    {
+      "name": "DATA_CC2",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_DATA.15",
+        "R_CC2.1"
+      ]
+    },
+    {
+      "name": "USB_DP",
+      "physical_islands": 1,
+      "physical_terminal_count": 5,
+      "pins": [
+        "J_DATA.14",
+        "J_DATA.2",
+        "R_DP.2",
+        "U_ESD.1",
+        "U_ESD.6"
+      ]
+    },
+    {
+      "name": "USB_DM",
+      "physical_islands": 1,
+      "physical_terminal_count": 5,
+      "pins": [
+        "J_DATA.10",
+        "J_DATA.6",
+        "R_DM.2",
+        "U_ESD.3",
+        "U_ESD.4"
+      ]
+    },
+    {
+      "name": "STEP",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_DRV.16",
+        "U_MCU.8"
+      ]
+    },
+    {
+      "name": "DIR",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_DRV.19",
+        "U_MCU.9"
+      ]
+    },
+    {
+      "name": "ENABLE_N",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "R_ENABLE.2",
+        "U_DRV.2",
+        "U_MCU.11"
+      ]
+    },
+    {
+      "name": "SLEEP",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "R_SLEEP.1",
+        "U_DRV.14",
+        "U_MCU.12"
+      ]
+    },
+    {
+      "name": "PD_GOOD",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "R_PG.2",
+        "U_MCU.13",
+        "U_PD.10"
+      ]
+    },
+    {
+      "name": "DATA_PRESENT",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "R_USB_SENSE_H.2",
+        "R_USB_SENSE_L.1",
+        "U_MCU.41"
+      ]
+    },
+    {
+      "name": "VM_SENSE",
+      "physical_islands": 1,
+      "physical_terminal_count": 4,
+      "pins": [
+        "C_VM_SENSE.1",
+        "R_VM_H.2",
+        "R_VM_L.1",
+        "U_MCU.40"
+      ]
+    },
+    {
+      "name": "VREF",
+      "physical_islands": 1,
+      "physical_terminal_count": 4,
+      "pins": [
+        "C_REF.1",
+        "R_REF_H.2",
+        "R_REF_L.1",
+        "U_DRV.17"
+      ]
+    },
+    {
+      "name": "CP1",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "C_CP.1",
+        "U_DRV.4"
+      ]
+    },
+    {
+      "name": "CP2",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "C_CP.2",
+        "U_DRV.5"
+      ]
+    },
+    {
+      "name": "VCP",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "C_VCP.1",
+        "U_DRV.6"
+      ]
+    },
+    {
+      "name": "VREG",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "C_VREG.1",
+        "U_DRV.8"
+      ]
+    },
+    {
+      "name": "SENSE1",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_SA.1",
+        "U_DRV.23"
+      ]
+    },
+    {
+      "name": "SENSE2",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_SB.1",
+        "U_DRV.27"
+      ]
+    },
+    {
+      "name": "A_PLUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_MOTOR.1",
+        "U_DRV.24"
+      ]
+    },
+    {
+      "name": "A_MINUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_MOTOR.2",
+        "U_DRV.21"
+      ]
+    },
+    {
+      "name": "B_PLUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_MOTOR.3",
+        "U_DRV.26"
+      ]
+    },
+    {
+      "name": "B_MINUS",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "J_MOTOR.4",
+        "U_DRV.1"
+      ]
+    },
+    {
+      "name": "V1V1",
+      "physical_islands": 1,
+      "physical_terminal_count": 6,
+      "pins": [
+        "C_DV23.1",
+        "C_DV50.1",
+        "C_VREG_OUT.1",
+        "U_MCU.23",
+        "U_MCU.45",
+        "U_MCU.50"
+      ]
+    },
+    {
+      "name": "QSPI_SS",
+      "physical_islands": 1,
+      "physical_terminal_count": 4,
+      "pins": [
+        "R_BOOT.1",
+        "R_FLASH_CS.2",
+        "U_FLASH.1",
+        "U_MCU.56"
+      ]
+    },
+    {
+      "name": "QSPI_SCLK",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_FLASH.6",
+        "U_MCU.52"
+      ]
+    },
+    {
+      "name": "QSPI_SD0",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_FLASH.5",
+        "U_MCU.53"
+      ]
+    },
+    {
+      "name": "QSPI_SD1",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_FLASH.2",
+        "U_MCU.55"
+      ]
+    },
+    {
+      "name": "QSPI_SD2",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_FLASH.3",
+        "U_MCU.54"
+      ]
+    },
+    {
+      "name": "QSPI_SD3",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "U_FLASH.7",
+        "U_MCU.51"
+      ]
+    },
+    {
+      "name": "MCU_DM",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_DM.1",
+        "U_MCU.46"
+      ]
+    },
+    {
+      "name": "MCU_DP",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_DP.1",
+        "U_MCU.47"
+      ]
+    },
+    {
+      "name": "XIN",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "C_XIN.1",
+        "U_MCU.20",
+        "Y_MCU.1"
+      ]
+    },
+    {
+      "name": "XOUT",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_XOUT.1",
+        "U_MCU.21"
+      ]
+    },
+    {
+      "name": "XTAL_OUT",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "C_XOUT.1",
+        "R_XOUT.2",
+        "Y_MCU.3"
+      ]
+    },
+    {
+      "name": "RUN",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "R_RUN.2",
+        "TP_RUN.1",
+        "U_MCU.26"
+      ]
+    },
+    {
+      "name": "SWCLK",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "TP_SWCLK.1",
+        "U_MCU.24"
+      ]
+    },
+    {
+      "name": "SWDIO",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "TP_SWDIO.1",
+        "U_MCU.25"
+      ]
+    },
+    {
+      "name": "BUCK_SW",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "C_BOOTSTRAP.2",
+        "L_BUCK.1",
+        "U_BUCK.5"
+      ]
+    },
+    {
+      "name": "BUCK_BST",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "C_BOOTSTRAP.1",
+        "U_BUCK.6"
+      ]
+    },
+    {
+      "name": "BOOT_PAD",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_BOOT.2",
+        "TP_BOOT.1"
+      ]
+    },
+    {
+      "name": "PWR_LED_A",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "D_PWR.2",
+        "R_PWR_LED.2"
+      ]
+    },
+    {
+      "name": "TEMP_SDA",
+      "physical_islands": 1,
+      "physical_terminal_count": 4,
+      "pins": [
+        "R_TEMP_SDA.1",
+        "U_ENCODER.6",
+        "U_MCU.38",
+        "U_TEMP.6"
+      ]
+    },
+    {
+      "name": "TEMP_SCL",
+      "physical_islands": 1,
+      "physical_terminal_count": 4,
+      "pins": [
+        "R_TEMP_SCL.1",
+        "U_ENCODER.7",
+        "U_MCU.39",
+        "U_TEMP.1"
+      ]
+    },
+    {
+      "name": "BUZZER_PWM",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_BUZZER_GATE.1",
+        "U_MCU.27"
+      ]
+    },
+    {
+      "name": "BUZZER_GATE",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "Q_BUZZER.1",
+        "R_BUZZER_GATE.2",
+        "R_BUZZER_PD.1"
+      ]
+    },
+    {
+      "name": "BUZZER_SINK",
+      "physical_islands": 1,
+      "physical_terminal_count": 3,
+      "pins": [
+        "BZ1.2",
+        "D_BUZZER.2",
+        "Q_BUZZER.3"
+      ]
+    },
+    {
+      "name": "LED_R",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_R.2",
+        "U_MCU.37"
+      ]
+    },
+    {
+      "name": "LED_G",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_G.2",
+        "U_MCU.4"
+      ]
+    },
+    {
+      "name": "LED_B",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_B.2",
+        "U_MCU.5"
+      ]
+    },
+    {
+      "name": "STATUS_R_K",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "D_STATUS.1",
+        "R_STATUS_R.1"
+      ]
+    },
+    {
+      "name": "STATUS_G_K",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "D_STATUS.2",
+        "R_STATUS_G.1"
+      ]
+    },
+    {
+      "name": "STATUS_B_K",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "D_STATUS.3",
+        "R_STATUS_B.1"
+      ]
+    },
+    {
+      "name": "STATUS_R_C",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_R.3",
+        "R_STATUS_R.2"
+      ]
+    },
+    {
+      "name": "STATUS_G_C",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_G.3",
+        "R_STATUS_G.2"
+      ]
+    },
+    {
+      "name": "STATUS_B_C",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "Q_STATUS_B.3",
+        "R_STATUS_B.2"
+      ]
+    },
+    {
+      "name": "PD_CFG",
+      "physical_islands": 1,
+      "physical_terminal_count": 2,
+      "pins": [
+        "R_PD_CFG.1",
+        "U_PD.9"
+      ]
+    }
+  ],
+  "pins": [
+    {
+      "designator": "J_PD",
+      "pin": 1,
+      "pin_name": "GND1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_0",
+      "pcb_port_id": "pcb_port_0",
+      "pad_id": "pcb_smtpad_0",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 2,
+      "pin_name": "DP1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_1",
+      "pcb_port_id": "pcb_port_1",
+      "pad_id": "pcb_smtpad_1",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_38",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 3,
+      "pin_name": "VBUS1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_2",
+      "pcb_port_id": "pcb_port_2",
+      "pad_id": "pcb_smtpad_2",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "J_PD",
+      "pin": 4,
+      "pin_name": "CC1",
+      "net": "PD_CC1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_3",
+      "pcb_port_id": "pcb_port_3",
+      "pad_id": "pcb_smtpad_3",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_39",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_PD",
+      "pin": 5,
+      "pin_name": "GND2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_4",
+      "pcb_port_id": "pcb_port_4",
+      "pad_id": "pcb_smtpad_4",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 6,
+      "pin_name": "DM1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_5",
+      "pcb_port_id": "pcb_port_5",
+      "pad_id": "pcb_smtpad_5",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_40",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 7,
+      "pin_name": "SBU1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_6",
+      "pcb_port_id": "pcb_port_6",
+      "pad_id": "pcb_smtpad_6",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_41",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 8,
+      "pin_name": "VBUS2",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_7",
+      "pcb_port_id": "pcb_port_7",
+      "pad_id": "pcb_smtpad_7",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "J_PD",
+      "pin": 9,
+      "pin_name": "GND3",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_8",
+      "pcb_port_id": "pcb_port_8",
+      "pad_id": "pcb_smtpad_8",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 10,
+      "pin_name": "DM2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_9",
+      "pcb_port_id": "pcb_port_9",
+      "pad_id": "pcb_smtpad_9",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_34",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 11,
+      "pin_name": "VBUS3",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_10",
+      "pcb_port_id": "pcb_port_10",
+      "pad_id": "pcb_smtpad_10",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "J_PD",
+      "pin": 12,
+      "pin_name": "SBU2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_11",
+      "pcb_port_id": "pcb_port_11",
+      "pad_id": "pcb_smtpad_11",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_35",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 13,
+      "pin_name": "GND4",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_12",
+      "pcb_port_id": "pcb_port_12",
+      "pad_id": "pcb_smtpad_12",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 14,
+      "pin_name": "DP2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_13",
+      "pcb_port_id": "pcb_port_13",
+      "pad_id": "pcb_smtpad_13",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_36",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_PD",
+      "pin": 15,
+      "pin_name": "CC2",
+      "net": "PD_CC2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_14",
+      "pcb_port_id": "pcb_port_14",
+      "pad_id": "pcb_smtpad_14",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_37",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_PD",
+      "pin": 16,
+      "pin_name": "VBUS4",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_15",
+      "pcb_port_id": "pcb_port_15",
+      "pad_id": "pcb_smtpad_15",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "J_PD",
+      "pin": 17,
+      "pin_name": "EH1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_16",
+      "pcb_port_id": "pcb_port_16",
+      "pad_id": "pcb_plated_hole_0",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 18,
+      "pin_name": "EH2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_17",
+      "pcb_port_id": "pcb_port_17",
+      "pad_id": "pcb_plated_hole_1",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 19,
+      "pin_name": "EH3",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_18",
+      "pcb_port_id": "pcb_port_18",
+      "pad_id": "pcb_plated_hole_2",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_PD",
+      "pin": 20,
+      "pin_name": "EH4",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_19",
+      "pcb_port_id": "pcb_port_19",
+      "pad_id": "pcb_plated_hole_3",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 1,
+      "pin_name": "GND1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_20",
+      "pcb_port_id": "pcb_port_20",
+      "pad_id": "pcb_smtpad_16",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 2,
+      "pin_name": "DP1",
+      "net": "USB_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_21",
+      "pcb_port_id": "pcb_port_21",
+      "pad_id": "pcb_smtpad_17",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 3,
+      "pin_name": "VBUS1",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_22",
+      "pcb_port_id": "pcb_port_22",
+      "pad_id": "pcb_smtpad_18",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 4,
+      "pin_name": "CC1",
+      "net": "DATA_CC1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_23",
+      "pcb_port_id": "pcb_port_23",
+      "pad_id": "pcb_smtpad_19",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_28",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 5,
+      "pin_name": "GND2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_24",
+      "pcb_port_id": "pcb_port_24",
+      "pad_id": "pcb_smtpad_20",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 6,
+      "pin_name": "DM1",
+      "net": "USB_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_25",
+      "pcb_port_id": "pcb_port_25",
+      "pad_id": "pcb_smtpad_21",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_24",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 7,
+      "pin_name": "SBU1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_26",
+      "pcb_port_id": "pcb_port_26",
+      "pad_id": "pcb_smtpad_22",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_29",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 8,
+      "pin_name": "VBUS2",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_27",
+      "pcb_port_id": "pcb_port_27",
+      "pad_id": "pcb_smtpad_23",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 9,
+      "pin_name": "GND3",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_28",
+      "pcb_port_id": "pcb_port_28",
+      "pad_id": "pcb_smtpad_24",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 10,
+      "pin_name": "DM2",
+      "net": "USB_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_29",
+      "pcb_port_id": "pcb_port_29",
+      "pad_id": "pcb_smtpad_25",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_24",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 11,
+      "pin_name": "VBUS3",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_30",
+      "pcb_port_id": "pcb_port_30",
+      "pad_id": "pcb_smtpad_26",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 12,
+      "pin_name": "SBU2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_31",
+      "pcb_port_id": "pcb_port_31",
+      "pad_id": "pcb_smtpad_27",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_25",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 13,
+      "pin_name": "GND4",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_32",
+      "pcb_port_id": "pcb_port_32",
+      "pad_id": "pcb_smtpad_28",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 14,
+      "pin_name": "DP2",
+      "net": "USB_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_33",
+      "pcb_port_id": "pcb_port_33",
+      "pad_id": "pcb_smtpad_29",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 15,
+      "pin_name": "CC2",
+      "net": "DATA_CC2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_34",
+      "pcb_port_id": "pcb_port_34",
+      "pad_id": "pcb_smtpad_30",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_27",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 16,
+      "pin_name": "VBUS4",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_35",
+      "pcb_port_id": "pcb_port_35",
+      "pad_id": "pcb_smtpad_31",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 17,
+      "pin_name": "EH1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_36",
+      "pcb_port_id": "pcb_port_36",
+      "pad_id": "pcb_plated_hole_4",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 18,
+      "pin_name": "EH2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_37",
+      "pcb_port_id": "pcb_port_37",
+      "pad_id": "pcb_plated_hole_5",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 19,
+      "pin_name": "EH3",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_38",
+      "pcb_port_id": "pcb_port_38",
+      "pad_id": "pcb_plated_hole_6",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_DATA",
+      "pin": 20,
+      "pin_name": "EH4",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_39",
+      "pcb_port_id": "pcb_port_39",
+      "pad_id": "pcb_plated_hole_7",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_PD",
+      "pin": 1,
+      "pin_name": "VHV",
+      "net": "PD_VHV",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_40",
+      "pcb_port_id": "pcb_port_40",
+      "pad_id": "pcb_smtpad_41",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_12",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_PD",
+      "pin": 2,
+      "pin_name": "CFG2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_41",
+      "pcb_port_id": "pcb_port_41",
+      "pad_id": "pcb_smtpad_40",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_96",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_PD",
+      "pin": 3,
+      "pin_name": "CFG3",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_42",
+      "pcb_port_id": "pcb_port_42",
+      "pad_id": "pcb_smtpad_39",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_97",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_PD",
+      "pin": 4,
+      "pin_name": "DP",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_43",
+      "pcb_port_id": "pcb_port_43",
+      "pad_id": "pcb_smtpad_38",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_98",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_PD",
+      "pin": 5,
+      "pin_name": "DM",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_44",
+      "pcb_port_id": "pcb_port_44",
+      "pad_id": "pcb_smtpad_37",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_99",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_PD",
+      "pin": 6,
+      "pin_name": "CC2",
+      "net": "PD_CC2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_45",
+      "pcb_port_id": "pcb_port_45",
+      "pad_id": "pcb_smtpad_36",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_37",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_PD",
+      "pin": 7,
+      "pin_name": "CC1",
+      "net": "PD_CC1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_46",
+      "pcb_port_id": "pcb_port_46",
+      "pad_id": "pcb_smtpad_35",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_39",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_PD",
+      "pin": 8,
+      "pin_name": "VBUS",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_47",
+      "pcb_port_id": "pcb_port_47",
+      "pad_id": "pcb_smtpad_34",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "U_PD",
+      "pin": 9,
+      "pin_name": "CFG1",
+      "net": "PD_CFG",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_48",
+      "pcb_port_id": "pcb_port_48",
+      "pad_id": "pcb_smtpad_33",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_55",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_PD",
+      "pin": 10,
+      "pin_name": "PG",
+      "net": "PD_GOOD",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_49",
+      "pcb_port_id": "pcb_port_49",
+      "pad_id": "pcb_smtpad_32",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_56",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_PD",
+      "pin": 11,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_50",
+      "pcb_port_id": "pcb_port_50",
+      "pad_id": "pcb_smtpad_42",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_PD",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_51",
+      "pcb_port_id": "pcb_port_51",
+      "pad_id": "pcb_smtpad_44",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "R_PD",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "PD_VHV",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_52",
+      "pcb_port_id": "pcb_port_52",
+      "pad_id": "pcb_smtpad_43",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_12",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_PD",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_VHV",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_53",
+      "pcb_port_id": "pcb_port_53",
+      "pad_id": "pcb_smtpad_46",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_12",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_PD",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_54",
+      "pcb_port_id": "pcb_port_54",
+      "pad_id": "pcb_smtpad_45",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_PG",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_55",
+      "pcb_port_id": "pcb_port_55",
+      "pad_id": "pcb_smtpad_48",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_PG",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "PD_GOOD",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_56",
+      "pcb_port_id": "pcb_port_56",
+      "pad_id": "pcb_smtpad_47",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_56",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 1,
+      "pin_name": "IOVDD1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_57",
+      "pcb_port_id": "pcb_port_57",
+      "pad_id": "pcb_smtpad_105",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 2,
+      "pin_name": "GPIO0",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_58",
+      "pcb_port_id": "pcb_port_58",
+      "pad_id": "pcb_smtpad_104",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_84",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 3,
+      "pin_name": "GPIO1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_59",
+      "pcb_port_id": "pcb_port_59",
+      "pad_id": "pcb_smtpad_103",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_87",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 4,
+      "pin_name": "GPIO2",
+      "net": "LED_G",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_60",
+      "pcb_port_id": "pcb_port_60",
+      "pad_id": "pcb_smtpad_102",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_45",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 5,
+      "pin_name": "GPIO3",
+      "net": "LED_B",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_61",
+      "pcb_port_id": "pcb_port_61",
+      "pad_id": "pcb_smtpad_101",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_43",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 6,
+      "pin_name": "GPIO4",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_62",
+      "pcb_port_id": "pcb_port_62",
+      "pad_id": "pcb_smtpad_100",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_94",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 7,
+      "pin_name": "GPIO5",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_63",
+      "pcb_port_id": "pcb_port_63",
+      "pad_id": "pcb_smtpad_99",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_95",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 8,
+      "pin_name": "GPIO6",
+      "net": "STEP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_64",
+      "pcb_port_id": "pcb_port_64",
+      "pad_id": "pcb_smtpad_98",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_67",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 9,
+      "pin_name": "GPIO7",
+      "net": "DIR",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_65",
+      "pcb_port_id": "pcb_port_65",
+      "pad_id": "pcb_smtpad_97",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_68",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 10,
+      "pin_name": "IOVDD10",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_66",
+      "pcb_port_id": "pcb_port_66",
+      "pad_id": "pcb_smtpad_96",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 11,
+      "pin_name": "GPIO8",
+      "net": "ENABLE_N",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_67",
+      "pcb_port_id": "pcb_port_67",
+      "pad_id": "pcb_smtpad_95",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_54",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 12,
+      "pin_name": "GPIO9",
+      "net": "SLEEP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_68",
+      "pcb_port_id": "pcb_port_68",
+      "pad_id": "pcb_smtpad_94",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_60",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 13,
+      "pin_name": "GPIO10",
+      "net": "PD_GOOD",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_69",
+      "pcb_port_id": "pcb_port_69",
+      "pad_id": "pcb_smtpad_93",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_56",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 14,
+      "pin_name": "GPIO11",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_70",
+      "pcb_port_id": "pcb_port_70",
+      "pad_id": "pcb_smtpad_92",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_79",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 15,
+      "pin_name": "GPIO12",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_71",
+      "pcb_port_id": "pcb_port_71",
+      "pad_id": "pcb_smtpad_91",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_80",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 16,
+      "pin_name": "GPIO13",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_72",
+      "pcb_port_id": "pcb_port_72",
+      "pad_id": "pcb_smtpad_90",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_81",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 17,
+      "pin_name": "GPIO14",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_73",
+      "pcb_port_id": "pcb_port_73",
+      "pad_id": "pcb_smtpad_89",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_82",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 18,
+      "pin_name": "GPIO15",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_74",
+      "pcb_port_id": "pcb_port_74",
+      "pad_id": "pcb_smtpad_88",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_83",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 19,
+      "pin_name": "TESTEN",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_75",
+      "pcb_port_id": "pcb_port_75",
+      "pad_id": "pcb_smtpad_87",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 20,
+      "pin_name": "XIN",
+      "net": "XIN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_76",
+      "pcb_port_id": "pcb_port_76",
+      "pad_id": "pcb_smtpad_86",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_17",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 21,
+      "pin_name": "XOUT",
+      "net": "XOUT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_77",
+      "pcb_port_id": "pcb_port_77",
+      "pad_id": "pcb_smtpad_85",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_64",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 22,
+      "pin_name": "IOVDD22",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_78",
+      "pcb_port_id": "pcb_port_78",
+      "pad_id": "pcb_smtpad_84",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 23,
+      "pin_name": "DVDD23",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_79",
+      "pcb_port_id": "pcb_port_79",
+      "pad_id": "pcb_smtpad_83",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 24,
+      "pin_name": "SWCLK",
+      "net": "SWCLK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_80",
+      "pcb_port_id": "pcb_port_80",
+      "pad_id": "pcb_smtpad_82",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_65",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 25,
+      "pin_name": "SWDIO",
+      "net": "SWDIO",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_81",
+      "pcb_port_id": "pcb_port_81",
+      "pad_id": "pcb_smtpad_81",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_66",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 26,
+      "pin_name": "RUN",
+      "net": "RUN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_82",
+      "pcb_port_id": "pcb_port_82",
+      "pad_id": "pcb_smtpad_80",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_57",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 27,
+      "pin_name": "GPIO16",
+      "net": "BUZZER_PWM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_83",
+      "pcb_port_id": "pcb_port_83",
+      "pad_id": "pcb_smtpad_79",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_51",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 28,
+      "pin_name": "GPIO17",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_84",
+      "pcb_port_id": "pcb_port_84",
+      "pad_id": "pcb_smtpad_78",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_85",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 29,
+      "pin_name": "GPIO18",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_85",
+      "pcb_port_id": "pcb_port_85",
+      "pad_id": "pcb_smtpad_77",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_86",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 30,
+      "pin_name": "GPIO19",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_86",
+      "pcb_port_id": "pcb_port_86",
+      "pad_id": "pcb_smtpad_76",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_88",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 31,
+      "pin_name": "GPIO20",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_87",
+      "pcb_port_id": "pcb_port_87",
+      "pad_id": "pcb_smtpad_75",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_89",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 32,
+      "pin_name": "GPIO21",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_88",
+      "pcb_port_id": "pcb_port_88",
+      "pad_id": "pcb_smtpad_74",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_90",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 33,
+      "pin_name": "IOVDD33",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_89",
+      "pcb_port_id": "pcb_port_89",
+      "pad_id": "pcb_smtpad_73",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 34,
+      "pin_name": "GPIO22",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_90",
+      "pcb_port_id": "pcb_port_90",
+      "pad_id": "pcb_smtpad_72",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_91",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 35,
+      "pin_name": "GPIO23",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_91",
+      "pcb_port_id": "pcb_port_91",
+      "pad_id": "pcb_smtpad_71",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_92",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 36,
+      "pin_name": "GPIO24",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_92",
+      "pcb_port_id": "pcb_port_92",
+      "pad_id": "pcb_smtpad_70",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_93",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 37,
+      "pin_name": "GPIO25",
+      "net": "LED_R",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_93",
+      "pcb_port_id": "pcb_port_93",
+      "pad_id": "pcb_smtpad_69",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_47",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 38,
+      "pin_name": "GPIO26",
+      "net": "TEMP_SDA",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_94",
+      "pcb_port_id": "pcb_port_94",
+      "pad_id": "pcb_smtpad_68",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_62",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 39,
+      "pin_name": "GPIO27",
+      "net": "TEMP_SCL",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_95",
+      "pcb_port_id": "pcb_port_95",
+      "pad_id": "pcb_smtpad_67",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_61",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 40,
+      "pin_name": "GPIO28",
+      "net": "VM_SENSE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_96",
+      "pcb_port_id": "pcb_port_96",
+      "pad_id": "pcb_smtpad_66",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_15",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 41,
+      "pin_name": "GPIO29",
+      "net": "DATA_PRESENT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_97",
+      "pcb_port_id": "pcb_port_97",
+      "pad_id": "pcb_smtpad_65",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_63",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 42,
+      "pin_name": "IOVDD42",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_98",
+      "pcb_port_id": "pcb_port_98",
+      "pad_id": "pcb_smtpad_64",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 43,
+      "pin_name": "ADC_AVDD",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_99",
+      "pcb_port_id": "pcb_port_99",
+      "pad_id": "pcb_smtpad_63",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 44,
+      "pin_name": "VREG_IN",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_100",
+      "pcb_port_id": "pcb_port_100",
+      "pad_id": "pcb_smtpad_62",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 45,
+      "pin_name": "VREG_OUT",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_101",
+      "pcb_port_id": "pcb_port_101",
+      "pad_id": "pcb_smtpad_61",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 46,
+      "pin_name": "USB_DM",
+      "net": "MCU_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_102",
+      "pcb_port_id": "pcb_port_102",
+      "pad_id": "pcb_smtpad_60",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_52",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 47,
+      "pin_name": "USB_DP",
+      "net": "MCU_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_103",
+      "pcb_port_id": "pcb_port_103",
+      "pad_id": "pcb_smtpad_59",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_53",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 48,
+      "pin_name": "USB_VDD",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_104",
+      "pcb_port_id": "pcb_port_104",
+      "pad_id": "pcb_smtpad_58",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 49,
+      "pin_name": "IOVDD49",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_105",
+      "pcb_port_id": "pcb_port_105",
+      "pad_id": "pcb_smtpad_57",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 50,
+      "pin_name": "DVDD50",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_106",
+      "pcb_port_id": "pcb_port_106",
+      "pad_id": "pcb_smtpad_56",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 51,
+      "pin_name": "QSPI_SD3",
+      "net": "QSPI_SD3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_107",
+      "pcb_port_id": "pcb_port_107",
+      "pad_id": "pcb_smtpad_55",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_78",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 52,
+      "pin_name": "QSPI_SCLK",
+      "net": "QSPI_SCLK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_108",
+      "pcb_port_id": "pcb_port_108",
+      "pad_id": "pcb_smtpad_54",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_77",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 53,
+      "pin_name": "QSPI_SD0",
+      "net": "QSPI_SD0",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_109",
+      "pcb_port_id": "pcb_port_109",
+      "pad_id": "pcb_smtpad_53",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_76",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 54,
+      "pin_name": "QSPI_SD2",
+      "net": "QSPI_SD2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_110",
+      "pcb_port_id": "pcb_port_110",
+      "pad_id": "pcb_smtpad_52",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_75",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 55,
+      "pin_name": "QSPI_SD1",
+      "net": "QSPI_SD1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_111",
+      "pcb_port_id": "pcb_port_111",
+      "pad_id": "pcb_smtpad_51",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_74",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 56,
+      "pin_name": "QSPI_SS",
+      "net": "QSPI_SS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_112",
+      "pcb_port_id": "pcb_port_112",
+      "pad_id": "pcb_smtpad_50",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_49",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_MCU",
+      "pin": 57,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_113",
+      "pcb_port_id": "pcb_port_113",
+      "pad_id": "pcb_smtpad_49",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO1",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_114",
+      "pcb_port_id": "pcb_port_114",
+      "pad_id": "pcb_smtpad_107",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO1",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_115",
+      "pcb_port_id": "pcb_port_115",
+      "pad_id": "pcb_smtpad_106",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO10",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_116",
+      "pcb_port_id": "pcb_port_116",
+      "pad_id": "pcb_smtpad_109",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO10",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_117",
+      "pcb_port_id": "pcb_port_117",
+      "pad_id": "pcb_smtpad_108",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO22",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_118",
+      "pcb_port_id": "pcb_port_118",
+      "pad_id": "pcb_smtpad_111",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO22",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_119",
+      "pcb_port_id": "pcb_port_119",
+      "pad_id": "pcb_smtpad_110",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO33",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_120",
+      "pcb_port_id": "pcb_port_120",
+      "pad_id": "pcb_smtpad_113",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO33",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_121",
+      "pcb_port_id": "pcb_port_121",
+      "pad_id": "pcb_smtpad_112",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO42",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_122",
+      "pcb_port_id": "pcb_port_122",
+      "pad_id": "pcb_smtpad_115",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO42",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_123",
+      "pcb_port_id": "pcb_port_123",
+      "pad_id": "pcb_smtpad_114",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_IO49",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_124",
+      "pcb_port_id": "pcb_port_124",
+      "pad_id": "pcb_smtpad_117",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_IO49",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_125",
+      "pcb_port_id": "pcb_port_125",
+      "pad_id": "pcb_smtpad_116",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_DV23",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_126",
+      "pcb_port_id": "pcb_port_126",
+      "pad_id": "pcb_smtpad_119",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "C_DV23",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_127",
+      "pcb_port_id": "pcb_port_127",
+      "pad_id": "pcb_smtpad_118",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_DV50",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_128",
+      "pcb_port_id": "pcb_port_128",
+      "pad_id": "pcb_smtpad_121",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "C_DV50",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_129",
+      "pcb_port_id": "pcb_port_129",
+      "pad_id": "pcb_smtpad_120",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_USB",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_130",
+      "pcb_port_id": "pcb_port_130",
+      "pad_id": "pcb_smtpad_123",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_USB",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_131",
+      "pcb_port_id": "pcb_port_131",
+      "pad_id": "pcb_smtpad_122",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_ADC",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_132",
+      "pcb_port_id": "pcb_port_132",
+      "pad_id": "pcb_smtpad_125",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_ADC",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_133",
+      "pcb_port_id": "pcb_port_133",
+      "pad_id": "pcb_smtpad_124",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_VREG_IN",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_134",
+      "pcb_port_id": "pcb_port_134",
+      "pad_id": "pcb_smtpad_127",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_VREG_IN",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_135",
+      "pcb_port_id": "pcb_port_135",
+      "pad_id": "pcb_smtpad_126",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_VREG_OUT",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V1V1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_136",
+      "pcb_port_id": "pcb_port_136",
+      "pad_id": "pcb_smtpad_129",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_11",
+      "island_terminal_count": 6
+    },
+    {
+      "designator": "C_VREG_OUT",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_137",
+      "pcb_port_id": "pcb_port_137",
+      "pad_id": "pcb_smtpad_128",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 1,
+      "pin_name": "CS",
+      "net": "QSPI_SS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_138",
+      "pcb_port_id": "pcb_port_138",
+      "pad_id": "pcb_smtpad_130",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_49",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 2,
+      "pin_name": "IO1",
+      "net": "QSPI_SD1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_139",
+      "pcb_port_id": "pcb_port_139",
+      "pad_id": "pcb_smtpad_131",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_74",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 3,
+      "pin_name": "IO2",
+      "net": "QSPI_SD2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_140",
+      "pcb_port_id": "pcb_port_140",
+      "pad_id": "pcb_smtpad_132",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_75",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 4,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_141",
+      "pcb_port_id": "pcb_port_141",
+      "pad_id": "pcb_smtpad_133",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 5,
+      "pin_name": "IO0",
+      "net": "QSPI_SD0",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_142",
+      "pcb_port_id": "pcb_port_142",
+      "pad_id": "pcb_smtpad_134",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_76",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 6,
+      "pin_name": "CLK",
+      "net": "QSPI_SCLK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_143",
+      "pcb_port_id": "pcb_port_143",
+      "pad_id": "pcb_smtpad_135",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_77",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 7,
+      "pin_name": "IO3",
+      "net": "QSPI_SD3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_144",
+      "pcb_port_id": "pcb_port_144",
+      "pad_id": "pcb_smtpad_136",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_78",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 8,
+      "pin_name": "VCC",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_145",
+      "pcb_port_id": "pcb_port_145",
+      "pad_id": "pcb_smtpad_137",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_FLASH",
+      "pin": 9,
+      "pin_name": "EP",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_146",
+      "pcb_port_id": "pcb_port_146",
+      "pad_id": "pcb_smtpad_138",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_FLASH",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_147",
+      "pcb_port_id": "pcb_port_147",
+      "pad_id": "pcb_smtpad_140",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_FLASH",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_148",
+      "pcb_port_id": "pcb_port_148",
+      "pad_id": "pcb_smtpad_139",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_FLASH_CS",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_149",
+      "pcb_port_id": "pcb_port_149",
+      "pad_id": "pcb_smtpad_142",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_FLASH_CS",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "QSPI_SS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_150",
+      "pcb_port_id": "pcb_port_150",
+      "pad_id": "pcb_smtpad_141",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_49",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_BOOT",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "QSPI_SS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_151",
+      "pcb_port_id": "pcb_port_151",
+      "pad_id": "pcb_smtpad_144",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_49",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_BOOT",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "BOOT_PAD",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_152",
+      "pcb_port_id": "pcb_port_152",
+      "pad_id": "pcb_smtpad_143",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_50",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Y_MCU",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "XIN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_153",
+      "pcb_port_id": "pcb_port_153",
+      "pad_id": "pcb_smtpad_145",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_17",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "Y_MCU",
+      "pin": 3,
+      "pin_name": "pin3",
+      "net": "XTAL_OUT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_154",
+      "pcb_port_id": "pcb_port_154",
+      "pad_id": "pcb_smtpad_147",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_18",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "Y_MCU",
+      "pin": 4,
+      "pin_name": "pin4",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_155",
+      "pcb_port_id": "pcb_port_155",
+      "pad_id": "pcb_smtpad_148",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "Y_MCU",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_156",
+      "pcb_port_id": "pcb_port_156",
+      "pad_id": "pcb_smtpad_146",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_XOUT",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "XOUT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_157",
+      "pcb_port_id": "pcb_port_157",
+      "pad_id": "pcb_smtpad_150",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_64",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_XOUT",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "XTAL_OUT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_158",
+      "pcb_port_id": "pcb_port_158",
+      "pad_id": "pcb_smtpad_149",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_18",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_XIN",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "XIN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_159",
+      "pcb_port_id": "pcb_port_159",
+      "pad_id": "pcb_smtpad_152",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_17",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_XIN",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_160",
+      "pcb_port_id": "pcb_port_160",
+      "pad_id": "pcb_smtpad_151",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_XOUT",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "XTAL_OUT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_161",
+      "pcb_port_id": "pcb_port_161",
+      "pad_id": "pcb_smtpad_154",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_18",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_XOUT",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_162",
+      "pcb_port_id": "pcb_port_162",
+      "pad_id": "pcb_smtpad_153",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_RUN",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_163",
+      "pcb_port_id": "pcb_port_163",
+      "pad_id": "pcb_smtpad_156",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_RUN",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "RUN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_164",
+      "pcb_port_id": "pcb_port_164",
+      "pad_id": "pcb_smtpad_155",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_57",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_DM",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "MCU_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_165",
+      "pcb_port_id": "pcb_port_165",
+      "pad_id": "pcb_smtpad_158",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_52",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_DM",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "USB_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_166",
+      "pcb_port_id": "pcb_port_166",
+      "pad_id": "pcb_smtpad_157",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_24",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "R_DP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "MCU_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_167",
+      "pcb_port_id": "pcb_port_167",
+      "pad_id": "pcb_smtpad_160",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_53",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_DP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "USB_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_168",
+      "pcb_port_id": "pcb_port_168",
+      "pad_id": "pcb_smtpad_159",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "R_CC1",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "DATA_CC1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_169",
+      "pcb_port_id": "pcb_port_169",
+      "pad_id": "pcb_smtpad_162",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_28",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_CC1",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_170",
+      "pcb_port_id": "pcb_port_170",
+      "pad_id": "pcb_smtpad_161",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_CC2",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "DATA_CC2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_171",
+      "pcb_port_id": "pcb_port_171",
+      "pad_id": "pcb_smtpad_164",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_27",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_CC2",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_172",
+      "pcb_port_id": "pcb_port_172",
+      "pad_id": "pcb_smtpad_163",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_USB_SENSE_H",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_173",
+      "pcb_port_id": "pcb_port_173",
+      "pad_id": "pcb_smtpad_166",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "R_USB_SENSE_H",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "DATA_PRESENT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_174",
+      "pcb_port_id": "pcb_port_174",
+      "pad_id": "pcb_smtpad_165",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_63",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_USB_SENSE_L",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "DATA_PRESENT",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_175",
+      "pcb_port_id": "pcb_port_175",
+      "pad_id": "pcb_smtpad_168",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_63",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_USB_SENSE_L",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_176",
+      "pcb_port_id": "pcb_port_176",
+      "pad_id": "pcb_smtpad_167",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_VM_H",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_177",
+      "pcb_port_id": "pcb_port_177",
+      "pad_id": "pcb_smtpad_170",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "R_VM_H",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "VM_SENSE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_178",
+      "pcb_port_id": "pcb_port_178",
+      "pad_id": "pcb_smtpad_169",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_15",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_VM_L",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VM_SENSE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_179",
+      "pcb_port_id": "pcb_port_179",
+      "pad_id": "pcb_smtpad_172",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_15",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_VM_L",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_180",
+      "pcb_port_id": "pcb_port_180",
+      "pad_id": "pcb_smtpad_171",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_VM_SENSE",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VM_SENSE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_181",
+      "pcb_port_id": "pcb_port_181",
+      "pad_id": "pcb_smtpad_174",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_15",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "C_VM_SENSE",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_182",
+      "pcb_port_id": "pcb_port_182",
+      "pad_id": "pcb_smtpad_173",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 1,
+      "pin_name": "FB",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_183",
+      "pcb_port_id": "pcb_port_183",
+      "pad_id": "pcb_smtpad_180",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 2,
+      "pin_name": "EN",
+      "net": "LOGIC_IN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_184",
+      "pcb_port_id": "pcb_port_184",
+      "pad_id": "pcb_smtpad_179",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_7",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 3,
+      "pin_name": "VIN",
+      "net": "LOGIC_IN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_185",
+      "pcb_port_id": "pcb_port_185",
+      "pad_id": "pcb_smtpad_178",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_7",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 4,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_186",
+      "pcb_port_id": "pcb_port_186",
+      "pad_id": "pcb_smtpad_177",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 5,
+      "pin_name": "SW",
+      "net": "BUCK_SW",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_187",
+      "pcb_port_id": "pcb_port_187",
+      "pad_id": "pcb_smtpad_176",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_6",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_BUCK",
+      "pin": 6,
+      "pin_name": "BST",
+      "net": "BUCK_BST",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_188",
+      "pcb_port_id": "pcb_port_188",
+      "pad_id": "pcb_smtpad_175",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_5",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "L_BUCK",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BUCK_SW",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_189",
+      "pcb_port_id": "pcb_port_189",
+      "pad_id": "pcb_smtpad_181",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_6",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "L_BUCK",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_190",
+      "pcb_port_id": "pcb_port_190",
+      "pad_id": "pcb_smtpad_182",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_BOOTSTRAP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BUCK_BST",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_191",
+      "pcb_port_id": "pcb_port_191",
+      "pad_id": "pcb_smtpad_184",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_5",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "C_BOOTSTRAP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "BUCK_SW",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_192",
+      "pcb_port_id": "pcb_port_192",
+      "pad_id": "pcb_smtpad_183",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_6",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "C_BUCK_IN",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "LOGIC_IN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_193",
+      "pcb_port_id": "pcb_port_193",
+      "pad_id": "pcb_smtpad_186",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_7",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "C_BUCK_IN",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_194",
+      "pcb_port_id": "pcb_port_194",
+      "pad_id": "pcb_smtpad_185",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_BUCK_OUT1",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_195",
+      "pcb_port_id": "pcb_port_195",
+      "pad_id": "pcb_smtpad_188",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_BUCK_OUT1",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_196",
+      "pcb_port_id": "pcb_port_196",
+      "pad_id": "pcb_smtpad_187",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_BUCK_OUT2",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_197",
+      "pcb_port_id": "pcb_port_197",
+      "pad_id": "pcb_smtpad_190",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_BUCK_OUT2",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_198",
+      "pcb_port_id": "pcb_port_198",
+      "pad_id": "pcb_smtpad_189",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "D_PD",
+      "pin": 1,
+      "pin_name": "cathode",
+      "net": "LOGIC_IN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_199",
+      "pcb_port_id": "pcb_port_199",
+      "pad_id": "pcb_smtpad_192",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_7",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "D_PD",
+      "pin": 2,
+      "pin_name": "anode",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_200",
+      "pcb_port_id": "pcb_port_200",
+      "pad_id": "pcb_smtpad_191",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "D_DATA",
+      "pin": 1,
+      "pin_name": "cathode",
+      "net": "LOGIC_IN",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_201",
+      "pcb_port_id": "pcb_port_201",
+      "pad_id": "pcb_smtpad_194",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_7",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "D_DATA",
+      "pin": 2,
+      "pin_name": "anode",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_202",
+      "pcb_port_id": "pcb_port_202",
+      "pad_id": "pcb_smtpad_193",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 1,
+      "pin_name": "OUT2B",
+      "net": "B_MINUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_203",
+      "pcb_port_id": "pcb_port_203",
+      "pad_id": "pcb_smtpad_223",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_33",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 2,
+      "pin_name": "ENABLE_N",
+      "net": "ENABLE_N",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_204",
+      "pcb_port_id": "pcb_port_204",
+      "pad_id": "pcb_smtpad_222",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_54",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 3,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_205",
+      "pcb_port_id": "pcb_port_205",
+      "pad_id": "pcb_smtpad_221",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 4,
+      "pin_name": "CP1",
+      "net": "CP1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_206",
+      "pcb_port_id": "pcb_port_206",
+      "pad_id": "pcb_smtpad_220",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_9",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 5,
+      "pin_name": "CP2",
+      "net": "CP2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_207",
+      "pcb_port_id": "pcb_port_207",
+      "pad_id": "pcb_smtpad_219",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_10",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 6,
+      "pin_name": "VCP",
+      "net": "VCP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_208",
+      "pcb_port_id": "pcb_port_208",
+      "pad_id": "pcb_smtpad_218",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_14",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 7,
+      "pin_name": "NC7",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_209",
+      "pcb_port_id": "pcb_port_209",
+      "pad_id": "pcb_smtpad_217",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_71",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 8,
+      "pin_name": "VREG",
+      "net": "VREG",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_210",
+      "pcb_port_id": "pcb_port_210",
+      "pad_id": "pcb_smtpad_216",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_16",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 9,
+      "pin_name": "MS1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_211",
+      "pcb_port_id": "pcb_port_211",
+      "pad_id": "pcb_smtpad_215",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 10,
+      "pin_name": "MS2",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_212",
+      "pcb_port_id": "pcb_port_212",
+      "pad_id": "pcb_smtpad_214",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 11,
+      "pin_name": "MS3",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_213",
+      "pcb_port_id": "pcb_port_213",
+      "pad_id": "pcb_smtpad_213",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 12,
+      "pin_name": "RESET_N",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_214",
+      "pcb_port_id": "pcb_port_214",
+      "pad_id": "pcb_smtpad_212",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 13,
+      "pin_name": "ROSC",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_215",
+      "pcb_port_id": "pcb_port_215",
+      "pad_id": "pcb_smtpad_211",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 14,
+      "pin_name": "SLEEP",
+      "net": "SLEEP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_216",
+      "pcb_port_id": "pcb_port_216",
+      "pad_id": "pcb_smtpad_210",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_60",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 15,
+      "pin_name": "VDD",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_217",
+      "pcb_port_id": "pcb_port_217",
+      "pad_id": "pcb_smtpad_209",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 16,
+      "pin_name": "STEP",
+      "net": "STEP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_218",
+      "pcb_port_id": "pcb_port_218",
+      "pad_id": "pcb_smtpad_208",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_67",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 17,
+      "pin_name": "REF",
+      "net": "VREF",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_219",
+      "pcb_port_id": "pcb_port_219",
+      "pad_id": "pcb_smtpad_207",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_13",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 18,
+      "pin_name": "GND18",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_220",
+      "pcb_port_id": "pcb_port_220",
+      "pad_id": "pcb_smtpad_206",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 19,
+      "pin_name": "DIR",
+      "net": "DIR",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_221",
+      "pcb_port_id": "pcb_port_221",
+      "pad_id": "pcb_smtpad_205",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_68",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 20,
+      "pin_name": "NC20",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_222",
+      "pcb_port_id": "pcb_port_222",
+      "pad_id": "pcb_smtpad_204",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_69",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 21,
+      "pin_name": "OUT1B",
+      "net": "A_MINUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_223",
+      "pcb_port_id": "pcb_port_223",
+      "pad_id": "pcb_smtpad_203",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_31",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 22,
+      "pin_name": "VBB1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_224",
+      "pcb_port_id": "pcb_port_224",
+      "pad_id": "pcb_smtpad_202",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 23,
+      "pin_name": "SENSE1",
+      "net": "SENSE1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_225",
+      "pcb_port_id": "pcb_port_225",
+      "pad_id": "pcb_smtpad_201",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_58",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 24,
+      "pin_name": "OUT1A",
+      "net": "A_PLUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_226",
+      "pcb_port_id": "pcb_port_226",
+      "pad_id": "pcb_smtpad_200",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_30",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 25,
+      "pin_name": "NC25",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_227",
+      "pcb_port_id": "pcb_port_227",
+      "pad_id": "pcb_smtpad_199",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_70",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 26,
+      "pin_name": "OUT2A",
+      "net": "B_PLUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_228",
+      "pcb_port_id": "pcb_port_228",
+      "pad_id": "pcb_smtpad_198",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_32",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 27,
+      "pin_name": "SENSE2",
+      "net": "SENSE2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_229",
+      "pcb_port_id": "pcb_port_229",
+      "pad_id": "pcb_smtpad_197",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_59",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 28,
+      "pin_name": "VBB2",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_230",
+      "pcb_port_id": "pcb_port_230",
+      "pad_id": "pcb_smtpad_196",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "U_DRV",
+      "pin": 29,
+      "pin_name": "EP",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_231",
+      "pcb_port_id": "pcb_port_231",
+      "pad_id": "pcb_smtpad_195",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_CP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "CP1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_232",
+      "pcb_port_id": "pcb_port_232",
+      "pad_id": "pcb_smtpad_225",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_9",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "C_CP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "CP2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_233",
+      "pcb_port_id": "pcb_port_233",
+      "pad_id": "pcb_smtpad_224",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_10",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "C_VCP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VCP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_234",
+      "pcb_port_id": "pcb_port_234",
+      "pad_id": "pcb_smtpad_227",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_14",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "C_VCP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_235",
+      "pcb_port_id": "pcb_port_235",
+      "pad_id": "pcb_smtpad_226",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "C_VREG",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VREG",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_236",
+      "pcb_port_id": "pcb_port_236",
+      "pad_id": "pcb_smtpad_229",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_16",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "C_VREG",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_237",
+      "pcb_port_id": "pcb_port_237",
+      "pad_id": "pcb_smtpad_228",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_DRV_LOGIC",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_238",
+      "pcb_port_id": "pcb_port_238",
+      "pad_id": "pcb_smtpad_231",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_DRV_LOGIC",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_239",
+      "pcb_port_id": "pcb_port_239",
+      "pad_id": "pcb_smtpad_230",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_VM",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_240",
+      "pcb_port_id": "pcb_port_240",
+      "pad_id": "pcb_smtpad_233",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "C_VM",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_241",
+      "pcb_port_id": "pcb_port_241",
+      "pad_id": "pcb_smtpad_232",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_BULK",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_242",
+      "pcb_port_id": "pcb_port_242",
+      "pad_id": "pcb_smtpad_235",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_BULK",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_243",
+      "pcb_port_id": "pcb_port_243",
+      "pad_id": "pcb_smtpad_234",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "R_SA",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "SENSE1",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_244",
+      "pcb_port_id": "pcb_port_244",
+      "pad_id": "pcb_smtpad_237",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_58",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_SA",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_245",
+      "pcb_port_id": "pcb_port_245",
+      "pad_id": "pcb_smtpad_236",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_SB",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "SENSE2",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_246",
+      "pcb_port_id": "pcb_port_246",
+      "pad_id": "pcb_smtpad_239",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_59",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_SB",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_247",
+      "pcb_port_id": "pcb_port_247",
+      "pad_id": "pcb_smtpad_238",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_REF_H",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_248",
+      "pcb_port_id": "pcb_port_248",
+      "pad_id": "pcb_smtpad_241",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_REF_H",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "VREF",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_249",
+      "pcb_port_id": "pcb_port_249",
+      "pad_id": "pcb_smtpad_240",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_13",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_REF_L",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VREF",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_250",
+      "pcb_port_id": "pcb_port_250",
+      "pad_id": "pcb_smtpad_243",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_13",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_REF_L",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_251",
+      "pcb_port_id": "pcb_port_251",
+      "pad_id": "pcb_smtpad_242",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_REF",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "VREF",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_252",
+      "pcb_port_id": "pcb_port_252",
+      "pad_id": "pcb_smtpad_245",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_13",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "C_REF",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_253",
+      "pcb_port_id": "pcb_port_253",
+      "pad_id": "pcb_smtpad_244",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_ENABLE",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_254",
+      "pcb_port_id": "pcb_port_254",
+      "pad_id": "pcb_smtpad_247",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_ENABLE",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "ENABLE_N",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_255",
+      "pcb_port_id": "pcb_port_255",
+      "pad_id": "pcb_smtpad_246",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_54",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_SLEEP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "SLEEP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_256",
+      "pcb_port_id": "pcb_port_256",
+      "pad_id": "pcb_smtpad_249",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_60",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_SLEEP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_257",
+      "pcb_port_id": "pcb_port_257",
+      "pad_id": "pcb_smtpad_248",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "J_MOTOR",
+      "pin": 1,
+      "pin_name": "A_PLUS",
+      "net": "A_PLUS",
+      "assembly": "manual_PH_header",
+      "state": "required_connection",
+      "source_port_id": "source_port_258",
+      "pcb_port_id": "pcb_port_258",
+      "pad_id": "pcb_plated_hole_9",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_30",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_MOTOR",
+      "pin": 2,
+      "pin_name": "A_MINUS",
+      "net": "A_MINUS",
+      "assembly": "manual_PH_header",
+      "state": "required_connection",
+      "source_port_id": "source_port_259",
+      "pcb_port_id": "pcb_port_259",
+      "pad_id": "pcb_plated_hole_8",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_31",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_MOTOR",
+      "pin": 3,
+      "pin_name": "B_PLUS",
+      "net": "B_PLUS",
+      "assembly": "manual_PH_header",
+      "state": "required_connection",
+      "source_port_id": "source_port_260",
+      "pcb_port_id": "pcb_port_260",
+      "pad_id": "pcb_plated_hole_10",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_32",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "J_MOTOR",
+      "pin": 4,
+      "pin_name": "B_MINUS",
+      "net": "B_MINUS",
+      "assembly": "manual_PH_header",
+      "state": "required_connection",
+      "source_port_id": "source_port_261",
+      "pcb_port_id": "pcb_port_261",
+      "pad_id": "pcb_plated_hole_11",
+      "layers": [
+        "bottom",
+        "inner1",
+        "inner2",
+        "top"
+      ],
+      "copper_island": "physical_island_33",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 1,
+      "pin_name": "DP1",
+      "net": "USB_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_262",
+      "pcb_port_id": "pcb_port_262",
+      "pad_id": "pcb_smtpad_250",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 2,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_263",
+      "pcb_port_id": "pcb_port_263",
+      "pad_id": "pcb_smtpad_251",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 3,
+      "pin_name": "DM1",
+      "net": "USB_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_264",
+      "pcb_port_id": "pcb_port_264",
+      "pad_id": "pcb_smtpad_252",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_24",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 4,
+      "pin_name": "DM2",
+      "net": "USB_DM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_265",
+      "pcb_port_id": "pcb_port_265",
+      "pad_id": "pcb_smtpad_253",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_24",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 5,
+      "pin_name": "VBUS",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_266",
+      "pcb_port_id": "pcb_port_266",
+      "pad_id": "pcb_smtpad_254",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "U_ESD",
+      "pin": 6,
+      "pin_name": "DP2",
+      "net": "USB_DP",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_267",
+      "pcb_port_id": "pcb_port_267",
+      "pad_id": "pcb_smtpad_255",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 5
+    },
+    {
+      "designator": "D_TVS",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "PD_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_268",
+      "pcb_port_id": "pcb_port_268",
+      "pad_id": "pcb_smtpad_256",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_8",
+      "island_terminal_count": 14
+    },
+    {
+      "designator": "D_TVS",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_269",
+      "pcb_port_id": "pcb_port_269",
+      "pad_id": "pcb_smtpad_257",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 1,
+      "pin_name": "SCL",
+      "net": "TEMP_SCL",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_270",
+      "pcb_port_id": "pcb_port_270",
+      "pad_id": "pcb_smtpad_261",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_61",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 2,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_271",
+      "pcb_port_id": "pcb_port_271",
+      "pad_id": "pcb_smtpad_259",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 3,
+      "pin_name": "ALERT",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_272",
+      "pcb_port_id": "pcb_port_272",
+      "pad_id": "pcb_smtpad_260",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_100",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 4,
+      "pin_name": "ADD0",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_273",
+      "pcb_port_id": "pcb_port_273",
+      "pad_id": "pcb_smtpad_262",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 5,
+      "pin_name": "V_POS",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_274",
+      "pcb_port_id": "pcb_port_274",
+      "pad_id": "pcb_smtpad_258",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_TEMP",
+      "pin": 6,
+      "pin_name": "SDA",
+      "net": "TEMP_SDA",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_275",
+      "pcb_port_id": "pcb_port_275",
+      "pad_id": "pcb_smtpad_263",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_62",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "C_TEMP",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_276",
+      "pcb_port_id": "pcb_port_276",
+      "pad_id": "pcb_smtpad_265",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_TEMP",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_277",
+      "pcb_port_id": "pcb_port_277",
+      "pad_id": "pcb_smtpad_264",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_TEMP_SDA",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "TEMP_SDA",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_278",
+      "pcb_port_id": "pcb_port_278",
+      "pad_id": "pcb_smtpad_267",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_62",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_TEMP_SDA",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_279",
+      "pcb_port_id": "pcb_port_279",
+      "pad_id": "pcb_smtpad_266",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_TEMP_SCL",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "TEMP_SCL",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_280",
+      "pcb_port_id": "pcb_port_280",
+      "pad_id": "pcb_smtpad_269",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_61",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "R_TEMP_SCL",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_281",
+      "pcb_port_id": "pcb_port_281",
+      "pad_id": "pcb_smtpad_268",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "D_PWR",
+      "pin": 1,
+      "pin_name": "cathode",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_282",
+      "pcb_port_id": "pcb_port_282",
+      "pad_id": "pcb_smtpad_270",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "D_PWR",
+      "pin": 2,
+      "pin_name": "anode",
+      "net": "PWR_LED_A",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_283",
+      "pcb_port_id": "pcb_port_283",
+      "pad_id": "pcb_smtpad_271",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_20",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_PWR_LED",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_284",
+      "pcb_port_id": "pcb_port_284",
+      "pad_id": "pcb_smtpad_273",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "R_PWR_LED",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "PWR_LED_A",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_285",
+      "pcb_port_id": "pcb_port_285",
+      "pad_id": "pcb_smtpad_272",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_20",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "D_STATUS",
+      "pin": 1,
+      "pin_name": "R_NEG",
+      "net": "STATUS_R_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_286",
+      "pcb_port_id": "pcb_port_286",
+      "pad_id": "pcb_smtpad_277",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_21",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "D_STATUS",
+      "pin": 2,
+      "pin_name": "G_NEG",
+      "net": "STATUS_G_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_287",
+      "pcb_port_id": "pcb_port_287",
+      "pad_id": "pcb_smtpad_276",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_22",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "D_STATUS",
+      "pin": 3,
+      "pin_name": "B_NEG",
+      "net": "STATUS_B_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_288",
+      "pcb_port_id": "pcb_port_288",
+      "pad_id": "pcb_smtpad_275",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_23",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "D_STATUS",
+      "pin": 4,
+      "pin_name": "_POS",
+      "net": "DATA_VBUS",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_289",
+      "pcb_port_id": "pcb_port_289",
+      "pad_id": "pcb_smtpad_274",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_19",
+      "island_terminal_count": 8
+    },
+    {
+      "designator": "R_STATUS_R",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "STATUS_R_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_290",
+      "pcb_port_id": "pcb_port_290",
+      "pad_id": "pcb_smtpad_279",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_21",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_STATUS_R",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "STATUS_R_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_291",
+      "pcb_port_id": "pcb_port_291",
+      "pad_id": "pcb_smtpad_278",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_48",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_R",
+      "pin": 3,
+      "pin_name": "pin3",
+      "net": "STATUS_R_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_292",
+      "pcb_port_id": "pcb_port_292",
+      "pad_id": "pcb_smtpad_280",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_48",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_R",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_293",
+      "pcb_port_id": "pcb_port_293",
+      "pad_id": "pcb_smtpad_281",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "Q_STATUS_R",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "LED_R",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_294",
+      "pcb_port_id": "pcb_port_294",
+      "pad_id": "pcb_smtpad_282",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_47",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_STATUS_G",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "STATUS_G_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_295",
+      "pcb_port_id": "pcb_port_295",
+      "pad_id": "pcb_smtpad_284",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_22",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_STATUS_G",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "STATUS_G_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_296",
+      "pcb_port_id": "pcb_port_296",
+      "pad_id": "pcb_smtpad_283",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_46",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_G",
+      "pin": 3,
+      "pin_name": "pin3",
+      "net": "STATUS_G_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_297",
+      "pcb_port_id": "pcb_port_297",
+      "pad_id": "pcb_smtpad_285",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_46",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_G",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_298",
+      "pcb_port_id": "pcb_port_298",
+      "pad_id": "pcb_smtpad_286",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "Q_STATUS_G",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "LED_G",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_299",
+      "pcb_port_id": "pcb_port_299",
+      "pad_id": "pcb_smtpad_287",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_45",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_STATUS_B",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "STATUS_B_K",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_300",
+      "pcb_port_id": "pcb_port_300",
+      "pad_id": "pcb_smtpad_289",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_23",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_STATUS_B",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "STATUS_B_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_301",
+      "pcb_port_id": "pcb_port_301",
+      "pad_id": "pcb_smtpad_288",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_44",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_B",
+      "pin": 3,
+      "pin_name": "pin3",
+      "net": "STATUS_B_C",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_302",
+      "pcb_port_id": "pcb_port_302",
+      "pad_id": "pcb_smtpad_290",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_44",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "Q_STATUS_B",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_303",
+      "pcb_port_id": "pcb_port_303",
+      "pad_id": "pcb_smtpad_291",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "Q_STATUS_B",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "LED_B",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_304",
+      "pcb_port_id": "pcb_port_304",
+      "pad_id": "pcb_smtpad_292",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_43",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "BZ1",
+      "pin": 1,
+      "pin_name": "_POS",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_305",
+      "pcb_port_id": "pcb_port_305",
+      "pad_id": "pcb_smtpad_293",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "BZ1",
+      "pin": 2,
+      "pin_name": "_NEG",
+      "net": "BUZZER_SINK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_306",
+      "pcb_port_id": "pcb_port_306",
+      "pad_id": "pcb_smtpad_294",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_1",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "BZ1",
+      "pin": 3,
+      "pin_name": "NC1",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_307",
+      "pcb_port_id": "pcb_port_307",
+      "pad_id": "pcb_smtpad_295",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_2",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "BZ1",
+      "pin": 4,
+      "pin_name": "NC2",
+      "net": null,
+      "assembly": "fitted_SMT",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_308",
+      "pcb_port_id": "pcb_port_308",
+      "pad_id": "pcb_smtpad_296",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_3",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "Q_BUZZER",
+      "pin": 3,
+      "pin_name": "pin3",
+      "net": "BUZZER_SINK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_309",
+      "pcb_port_id": "pcb_port_309",
+      "pad_id": "pcb_smtpad_299",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_1",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "Q_BUZZER",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BUZZER_GATE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_310",
+      "pcb_port_id": "pcb_port_310",
+      "pad_id": "pcb_smtpad_297",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_42",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "Q_BUZZER",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_311",
+      "pcb_port_id": "pcb_port_311",
+      "pad_id": "pcb_smtpad_298",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "D_BUZZER",
+      "pin": 1,
+      "pin_name": "cathode",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_312",
+      "pcb_port_id": "pcb_port_312",
+      "pad_id": "pcb_smtpad_301",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "D_BUZZER",
+      "pin": 2,
+      "pin_name": "anode",
+      "net": "BUZZER_SINK",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_313",
+      "pcb_port_id": "pcb_port_313",
+      "pad_id": "pcb_smtpad_300",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_1",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_BUZZER_GATE",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BUZZER_PWM",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_314",
+      "pcb_port_id": "pcb_port_314",
+      "pad_id": "pcb_smtpad_303",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_51",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_BUZZER_GATE",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "BUZZER_GATE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_315",
+      "pcb_port_id": "pcb_port_315",
+      "pad_id": "pcb_smtpad_302",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_42",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_BUZZER_PD",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BUZZER_GATE",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_316",
+      "pcb_port_id": "pcb_port_316",
+      "pad_id": "pcb_smtpad_305",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_42",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "R_BUZZER_PD",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_317",
+      "pcb_port_id": "pcb_port_317",
+      "pad_id": "pcb_smtpad_304",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_BUZZER",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_318",
+      "pcb_port_id": "pcb_port_318",
+      "pad_id": "pcb_smtpad_307",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_BUZZER",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_319",
+      "pcb_port_id": "pcb_port_319",
+      "pad_id": "pcb_smtpad_306",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "TP_3V3",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_320",
+      "pcb_port_id": "pcb_port_320",
+      "pad_id": "pcb_smtpad_308",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "TP_GND",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_321",
+      "pcb_port_id": "pcb_port_321",
+      "pad_id": "pcb_smtpad_309",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "TP_SWCLK",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "SWCLK",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_322",
+      "pcb_port_id": "pcb_port_322",
+      "pad_id": "pcb_smtpad_310",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_65",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "TP_SWDIO",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "SWDIO",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_323",
+      "pcb_port_id": "pcb_port_323",
+      "pad_id": "pcb_smtpad_311",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_66",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "TP_RUN",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "RUN",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_324",
+      "pcb_port_id": "pcb_port_324",
+      "pad_id": "pcb_smtpad_312",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_57",
+      "island_terminal_count": 3
+    },
+    {
+      "designator": "TP_BOOT",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "BOOT_PAD",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_325",
+      "pcb_port_id": "pcb_port_325",
+      "pad_id": "pcb_smtpad_313",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_50",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "TP_BOOT_GND",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "GND",
+      "assembly": "bare_PCB_test_point",
+      "state": "required_connection",
+      "source_port_id": "source_port_326",
+      "pcb_port_id": "pcb_port_326",
+      "pad_id": "pcb_smtpad_314",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 1,
+      "pin_name": "VDD5V",
+      "net": "V3V3",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_327",
+      "pcb_port_id": "pcb_port_327",
+      "pad_id": "pcb_smtpad_315",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 2,
+      "pin_name": "VDD3V3",
+      "net": "V3V3",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_328",
+      "pcb_port_id": "pcb_port_328",
+      "pad_id": "pcb_smtpad_316",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 3,
+      "pin_name": "OUT",
+      "net": null,
+      "assembly": "optional_encoder_DNP",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_329",
+      "pcb_port_id": "pcb_port_329",
+      "pad_id": "pcb_smtpad_317",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_72",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 4,
+      "pin_name": "GND",
+      "net": "GND",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_330",
+      "pcb_port_id": "pcb_port_330",
+      "pad_id": "pcb_smtpad_318",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 5,
+      "pin_name": "PGO",
+      "net": null,
+      "assembly": "optional_encoder_DNP",
+      "state": "intentional_NC",
+      "source_port_id": "source_port_331",
+      "pcb_port_id": "pcb_port_331",
+      "pad_id": "pcb_smtpad_322",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_73",
+      "island_terminal_count": 1
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 6,
+      "pin_name": "SDA",
+      "net": "TEMP_SDA",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_332",
+      "pcb_port_id": "pcb_port_332",
+      "pad_id": "pcb_smtpad_321",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_62",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 7,
+      "pin_name": "SCL",
+      "net": "TEMP_SCL",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_333",
+      "pcb_port_id": "pcb_port_333",
+      "pad_id": "pcb_smtpad_320",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_61",
+      "island_terminal_count": 4
+    },
+    {
+      "designator": "U_ENCODER",
+      "pin": 8,
+      "pin_name": "DIR",
+      "net": "GND",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_334",
+      "pcb_port_id": "pcb_port_334",
+      "pad_id": "pcb_smtpad_319",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_ENCODER",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_335",
+      "pcb_port_id": "pcb_port_335",
+      "pad_id": "pcb_smtpad_324",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_ENCODER",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_336",
+      "pcb_port_id": "pcb_port_336",
+      "pad_id": "pcb_smtpad_323",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "C_ENCODER_BULK",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "V3V3",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_337",
+      "pcb_port_id": "pcb_port_337",
+      "pad_id": "pcb_smtpad_326",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_0",
+      "island_terminal_count": 48
+    },
+    {
+      "designator": "C_ENCODER_BULK",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "optional_encoder_DNP",
+      "state": "required_connection",
+      "source_port_id": "source_port_338",
+      "pcb_port_id": "pcb_port_338",
+      "pad_id": "pcb_smtpad_325",
+      "layers": [
+        "bottom"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    },
+    {
+      "designator": "R_PD_CFG",
+      "pin": 1,
+      "pin_name": "pin1",
+      "net": "PD_CFG",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_339",
+      "pcb_port_id": "pcb_port_339",
+      "pad_id": "pcb_smtpad_328",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_55",
+      "island_terminal_count": 2
+    },
+    {
+      "designator": "R_PD_CFG",
+      "pin": 2,
+      "pin_name": "pin2",
+      "net": "GND",
+      "assembly": "fitted_SMT",
+      "state": "required_connection",
+      "source_port_id": "source_port_340",
+      "pcb_port_id": "pcb_port_340",
+      "pad_id": "pcb_smtpad_327",
+      "layers": [
+        "top"
+      ],
+      "copper_island": "physical_island_4",
+      "island_terminal_count": 80
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "manufacturing_release": false,
+  "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6"
+}

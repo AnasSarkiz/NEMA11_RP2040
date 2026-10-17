@@ -1,0 +1,23 @@
+{
+  "scope": "Finite segment/circle distance correction; no DRC filtering or rule changes",
+  "packages": {
+    "@tscircuit/checks": "0.0.242",
+    "@tscircuit/cli": "0.1.2261"
+  },
+  "files": [
+    {
+      "path": "node_modules/@tscircuit/checks/dist/index.js",
+      "pristine_sha256": "a03227341a887713bb0fdd6b39f7a948fe4fd8d40c54d63d92c47c9276cbeaf6",
+      "corrected_sha256": "d52b4489135cf35845c8e3fb48fe4bace97e708b1e97c47ba1ddd1daa962b51d",
+      "before": "const gap = segmentToBoundsMinDistance(\n        { x: segmentA.x1, y: segmentA.y1 },\n        { x: segmentA.x2, y: segmentA.y2 },\n        getCollidableBounds(obj)\n      ) - segmentA.thickness / 2;",
+      "after": "// NEMA11 toolchain correction: exact finite-segment/circle clearance.\n      // Keep the original clearance threshold and every diagnostic in force.\n      const gap = obj.type === \"pcb_keepout\" && obj.shape === \"circle\"\n        ? (() => {\n            const dx = segmentA.x2 - segmentA.x1;\n            const dy = segmentA.y2 - segmentA.y1;\n            const lengthSquared = dx * dx + dy * dy;\n            const t = lengthSquared === 0 ? 0 : Math.max(0, Math.min(1,\n              ((obj.center.x - segmentA.x1) * dx + (obj.center.y - segmentA.y1) * dy) / lengthSquared));\n            return Math.hypot(obj.center.x - segmentA.x1 - t * dx,\n              obj.center.y - segmentA.y1 - t * dy) - obj.radius - segmentA.thickness / 2;\n          })()\n        : segmentToBoundsMinDistance(\n        { x: segmentA.x1, y: segmentA.y1 },\n        { x: segmentA.x2, y: segmentA.y2 },\n        getCollidableBounds(obj)\n      ) - segmentA.thickness / 2;"
+    },
+    {
+      "path": "node_modules/@tscircuit/cli/dist/cli/main.js",
+      "pristine_sha256": "c66fce05448938d447659dac1292cc2d5957fa5e2e3824ec4f477950b784cd12",
+      "corrected_sha256": "871ccfd0998e98b9d0c4e3eedf1717246bda46ccc3d96bd2dbde9f36340a6631",
+      "before": "const gap = segmentToBoundsMinDistance({ x: segmentA.x1, y: segmentA.y1 }, { x: segmentA.x2, y: segmentA.y2 }, getCollidableBounds(obj)) - segmentA.thickness / 2;",
+      "after": "// NEMA11 toolchain correction: exact finite-segment/circle clearance.\n      // Keep the original clearance threshold and every diagnostic in force.\n      const gap = obj.type === \"pcb_keepout\" && obj.shape === \"circle\"\n        ? (() => {\n            const dx = segmentA.x2 - segmentA.x1;\n            const dy = segmentA.y2 - segmentA.y1;\n            const lengthSquared = dx * dx + dy * dy;\n            const t = lengthSquared === 0 ? 0 : Math.max(0, Math.min(1,\n              ((obj.center.x - segmentA.x1) * dx + (obj.center.y - segmentA.y1) * dy) / lengthSquared));\n            return Math.hypot(obj.center.x - segmentA.x1 - t * dx,\n              obj.center.y - segmentA.y1 - t * dy) - obj.radius - segmentA.thickness / 2;\n          })()\n        : segmentToBoundsMinDistance({ x: segmentA.x1, y: segmentA.y1 }, { x: segmentA.x2, y: segmentA.y2 }, getCollidableBounds(obj)) - segmentA.thickness / 2;"
+    }
+  ]
+}

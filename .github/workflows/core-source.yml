@@ -32,6 +32,7 @@ jobs:
           git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
           npm ci --prefix tools/pcb --legacy-peer-deps --no-audit --no-fund
           (cd tools/pcb && sha256sum --check trace-linter.sha256)
+          python3 scripts/apply_native_keepout_fix.py
           ln -s tools/pcb/node_modules node_modules
           echo "$GITHUB_WORKSPACE/tools/pcb/node_modules/.bin" >> "$GITHUB_PATH"
       - name: Check source and native subsystem
@@ -46,6 +47,7 @@ jobs:
           tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt
           python3 scripts/verify_core_schematic.py
           npm test
+          bun test tests-native
       - name: Check native PCB and independent copper geometry
         run: |
           python3 -m pip install numpy==2.3.5 shapely==2.1.2
@@ -62,8 +64,9 @@ jobs:
       - name: Reproduce and independently check full controller PCB
         run: |
           python3 scripts/build_controller_pcb.py --check
-          bun scripts/check-controller-pcb.tsx --checks-only --report-only
+          bun scripts/check-controller-pcb.tsx --checks-only
           python3 scripts/audit_controller_pcb.py
+          python3 scripts/audit_controller_connectivity.py
           python3 scripts/audit_core_clock.py --controller
           python3 scripts/audit_controller_routing.py
           python3 scripts/audit_controller_usb.py

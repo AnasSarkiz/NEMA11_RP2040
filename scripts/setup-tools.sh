@@ -10,6 +10,7 @@ cd "$project_root/tools/pcb"
 npm ci --legacy-peer-deps --cache /workspace/.cache/npm --no-audit --no-fund
 # npm omits its registry integrity check for this locked Git dependency.
 sha256sum --check trace-linter.sha256
+python3 "$project_root/scripts/apply_native_keepout_fix.py"
 if [ ! -e "$project_root/node_modules" ] && [ ! -L "$project_root/node_modules" ]; then
   ln -s tools/pcb/node_modules "$project_root/node_modules"
 fi
@@ -23,6 +24,7 @@ uv pip install \
   --python /workspace/.venvs/nema11-cam/bin/python \
   -r "$project_root/tools/requirements-cam.lock"
 cd "$project_root"
+"$project_root/tools/pcb/node_modules/.bin/bun" test tests-native
 python3 -m unittest discover -s tests -v
 /workspace/.venvs/nema11-cad/bin/python -m unittest discover -s tests-pcb -v
 python3 scripts/current_budget.py --output artifacts/requirements/current-budget.json

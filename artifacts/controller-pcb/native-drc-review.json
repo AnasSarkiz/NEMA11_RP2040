@@ -1,8 +1,10 @@
 {
-  "scope": "Native DRC retained verbatim, with independently verified circular-keepout geometry review",
+  "scope": "Zero native DRC errors required; exact circle-distance tool correction and historical stock comparison retained",
   "circuit_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
-  "raw_native_error_count": 36,
-  "reviewed_circular_keepout_false_positives": [
+  "raw_native_error_count": 0,
+  "waived_or_filtered_errors": [],
+  "historical_stock_error_count": 36,
+  "historical_stock_circular_keepout_false_positives": [
     {
       "native_error_id": "overlap_controller_same_side_repair_6_PD_VBUS_1_pcb_keepout_3",
       "copper": "controller_same_side_repair_6_PD_VBUS_1",

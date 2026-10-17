@@ -18,12 +18,18 @@ mounting-keepout errors. Minimum via drill/pad remain 0.30/0.45 mm. Three explic
 reviewed ground vias sit in QFN exposed pads; they require the specified filled
 and copper-capped process. All other via-in-pad findings are checked normally.
 
-The native checker retains 36 errors caused by its rectangular approximation of
-circular keepouts. The separate review matches every reported copper/keepout ID
-and verifies clearance to its actual circle. Raw output is retained; the native
-checker is not described as error-free. Nine supplier pin-metadata warnings also
-remain visible. Independent connectivity does not rely on symbolic net membership
-alone. Native Gerber shorts checks pass on all layers at 100 pixels/mm.
+The corrected native checker reports **zero DRC errors**, and every native error
+is fatal in CI. The original 36 stock-checker errors came from measuring a circle
+against its bounding rectangle. A checksum-guarded exact-distance correction in
+the frozen library and CLI preserves all rules and detects genuine violations in
+regression tests. The original output is retained for comparison. Nine supplier
+pin-metadata warnings remain visible. See [the correction and complete pin audit](native-drc-and-connectivity.md).
+
+The global physical graph accounts for all 341 pins: 304 required connections
+across 64 nets and 37 explicit isolated NCs. All 92 components, including DNP
+footprints and bare test points, are checked. Opens and shorts are zero.
+Independent connectivity does not rely on symbolic net membership. Native Gerber
+shorts checks pass on all layers at 100 pixels/mm.
 
 Every routed segment is checked against its electrical role and layer policy.
 The four phase and two sense paths retain at least 0.30 mm copper. The A-minus
@@ -94,7 +100,9 @@ Use the frozen Node toolchain and documented CAD/CAM Python environments:
 npm run controller:build
 npm run controller:check
 python scripts/build_controller_pcb.py --check
-bun scripts/check-controller-pcb.tsx --report-only
+python3 scripts/apply_native_keepout_fix.py --check
+bun scripts/check-controller-pcb.tsx --checks-only
+python scripts/audit_controller_connectivity.py
 python scripts/audit_controller_pcb.py
 python scripts/audit_core_clock.py --controller
 python scripts/audit_controller_routing.py

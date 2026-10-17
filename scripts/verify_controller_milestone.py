@@ -21,6 +21,7 @@ assert counts['pcb_trace']==554 and counts['pcb_via']==334
 assert counts['pcb_plated_hole']==12 and counts['pcb_hole']==8
 checks={}
 for name,flag in [('independent-copper-audit.json',None),('native-drc-review.json','reviewed_DRC_pass'),
+                  ('native-drc.json','native_drc_pass'),('all-pin-connectivity.json','passed'),
                   ('native-shorts-verification.json','passed'),('independent-cam-audit.json','CAM_roundtrip_pass'),
                   ('clock-layout-audit.json',None),('trace-and-layer-audit.json','passed'),
                   ('USB-reference-audit.json','passed'),('assembly-data/export-verification.json',None),
@@ -32,6 +33,16 @@ for name,flag in [('independent-copper-audit.json',None),('native-drc-review.jso
     checks[name]={'sha256':sha(pcb+name),'same_PCB_bytes':True}
 for f in read(pcb+'review-cam-export.json')['files']:
     assert sha(pcb+'review-cam/'+f['name'])==f['sha256']
+native=read(pcb+'native-drc.json')
+assert native['no_findings_filtered_or_waived']
+assert native['toolchain_correction_sha256']==sha(native['toolchain_correction'])
+for entry in read(native['toolchain_correction'])['files']:
+    assert sha('tools/pcb/'+entry['path'])==entry['corrected_sha256']
+connectivity=read(pcb+'all-pin-connectivity.json')
+assert connectivity['opens']==connectivity['shorts']==0
+assert connectivity['components_checked']==92 and connectivity['physical_pins_checked']==341
+assert connectivity['required_connected_pins']==304 and connectivity['intentional_NC_pins']==37
+assert connectivity['nets_checked']==64
 
 source_hash=sha('artifacts/controller/unrouted.circuit.json')
 schematic=read('artifacts/controller/schematic-verification.json')
@@ -61,8 +72,10 @@ with (a/'JLC_SMT_CPL.csv').open() as f:cpl=list(csv.DictReader(f))
 bom_names=[n.strip() for row in bom for n in row['Designator'].split(',')]
 assert len(bom_names)==len(set(bom_names))==81 and len(bom)==44
 assert set(bom_names)=={row['Designator'] for row in cpl} and len(cpl)==81
-source={e['name']:e for e in records if e['type']=='source_component'}
-excluded={n for n,e in source.items() if e.get('do_not_place')}
+source={e['source_component_id']:e for e in records if e['type']=='source_component'}
+excluded={source[e['source_component_id']]['name'] for e in records if e['type']=='pcb_component' and e.get('do_not_place')}
+expected_smt={source[e['source_component_id']]['name'] for e in records if e['type']=='pcb_component' and not e.get('do_not_place')} - {'J_MOTOR'}
+assert set(bom_names)==expected_smt
 assert not set(bom_names)&excluded and 'J_MOTOR' not in bom_names
 for row in cpl:
     assert 0<float(row['Mid X'].removesuffix('mm'))<35
@@ -77,8 +90,8 @@ csv_proof={'scope':'Independent CSV membership, exclusions and board-origin boun
 proof={'scope':'Exact routed PCB, six-sheet schematic, BOM/CPL and nominal native assembly milestone',
        'circuit_sha256':board_hash,'assembly_sha256':sha('artifacts/controller/assembly.circuit.json'),
        'source_sha256':source_hash,'checks':checks,'counts':dict(counts),
-       'raw_native_DRC_errors':36,'all_native_errors_individually_reviewed_as_circular_keepout_approximation':True,
-       'source_and_physical_validation_tests':29,'nominal_assembly_models':84,
+       'raw_native_DRC_errors':0,'native_DRC_findings_filtered_or_waived':False,
+       'source_and_physical_validation_tests':35,'native_geometry_regression_tests':10,'nominal_assembly_models':84,
        'milestone_passed':True,'manufacturing_release':False,
        'remaining_requirements':'docs/manufacturing-requirements.md'}
 (ROOT/pcb/'milestone-verification.json').write_text(json.dumps(proof,indent=2)+'\n')

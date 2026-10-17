@@ -24,8 +24,8 @@
     },
     {
       "path": "artifacts/controller-pcb/milestone-verification.json",
-      "bytes": 3038,
-      "sha256": "9038ce62c84e830960ffddb0d0240013c1c95788aaaf7ab10a9300bb336566f8"
+      "bytes": 3345,
+      "sha256": "b8e61d9297a3235b1757608dfe33af2d6d174bfb350ce4b58a81d7f11cc93240"
     },
     {
       "path": "artifacts/controller-pcb/review-cam/B_Cu.gbr",
@@ -104,8 +104,8 @@
     },
     {
       "path": "docs/full-controller-pcb.md",
-      "bytes": 6492,
-      "sha256": "6d415993993549170a8db6b7fa1c8cd4f54f50eee139a29e1cd91a3496bf08be"
+      "bytes": 6998,
+      "sha256": "80d007c8d9b851c654e6c45e221d24618f1ae6db4d0d5dc333bf32699032eb79"
     },
     {
       "path": "docs/manufacturing-requirements.md",

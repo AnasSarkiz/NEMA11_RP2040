@@ -6,6 +6,13 @@ import { Resvg } from "@resvg/resvg-js"
 import * as schemas from "circuit-json"
 
 const path = "artifacts/controller-pcb/"
+const patchPath = "tools/pcb/patches/circle-keepout-clearance.json"
+const patchBytes = readFileSync(patchPath)
+const patch = JSON.parse(patchBytes.toString())
+for (const file of patch.files) {
+  const actual = createHash("sha256").update(readFileSync("tools/pcb/" + file.path)).digest("hex")
+  if (actual !== file.corrected_sha256) throw new Error("Native DRC toolchain hash mismatch: " + file.path)
+}
 const bytes = readFileSync(path + "board.circuit.json")
 const records = JSON.parse(bytes.toString()) as any[]
 const registry = schemas as any
@@ -38,7 +45,11 @@ const errors = [...records, ...checks].filter(r => r.type.endsWith("_error"))
 const unique = [...new Map(errors.map(r => [JSON.stringify(r), r])).values()]
 const warnings = checks.filter(r => r.type.endsWith("_warning"))
 writeFileSync(path + "native-drc.json", JSON.stringify({ scope: "Full 92-component controller native DRC",
-  tool: "@tscircuit/checks", circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
+  tool: "@tscircuit/checks@0.0.242 with checksum-verified exact circular-keepout distance correction",
+  toolchain_correction: patchPath,
+  toolchain_correction_sha256: createHash("sha256").update(patchBytes).digest("hex"),
+  no_findings_filtered_or_waived: true,
+  circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   strict_schema_pass: true, reviewed_thermal_vias: thermal.map(r => r.pcb_via_id),
   errors: unique, warnings, native_drc_pass: unique.length === 0, manufacturing_release: false }, null, 2) + "\n")
 if (!process.argv.includes("--checks-only")) {
@@ -51,6 +62,5 @@ if (!process.argv.includes("--checks-only")) {
   }
 }
 console.log(JSON.stringify({ schema_errors: 0, native_drc_errors: unique.length, warnings: warnings.length }))
-// CI runs the independent geometric review next; report-only does not change
-// the retained raw result or claim a native pass.
-if (unique.length && !process.argv.includes("--report-only")) process.exitCode = 1
+// Every native error is fatal. There is no report-only success or DRC waiver.
+if (unique.length) process.exitCode = 1
