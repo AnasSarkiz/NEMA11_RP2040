@@ -1,0 +1,58 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+  "version": "0.2.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+  "package_release_id": "2bd3e603-00e4-4ba1-8444-6f6af69dad5c",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 0,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2308,
+      "sha256": "2525fd67de807c4b4280c1e00de1d4dc9ae1dbf0ec94c6330725cb7cea15abd7",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 1395250,
+      "sha256": "685de092e54388e1706a58beb04f0c5994334f6c3ac79074b9e21e4401ab8d42",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 989,
+      "sha256": "db7dc4cb56985b13e2626fecd8090ca504f319be7c759a32324f763d97c54281",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 984,
+      "sha256": "dc6432c516a0d4ac77084ccc6556866fd33e4470c1e6c755ebedd7864ae06c17",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 386,
+      "sha256": "47c6a1723990a6c67e75a3717b1ae9fb51ce94bbba642fd5ade6f807347c7a49",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 1861935,
+      "sha256": "5e8d68df8a04eb68e81734832f5ca99c08f9fc9ba71c7a2af8d27936a080f4e0",
+      "local_match": true
+    }
+  ],
+  "source_milestone_commit": "5b8d355ab71e65272592a91ff25bc31e1a48abfa",
+  "scope": "Unrouted full electrical source with higher-power shunts and six functional A4 sheets",
+  "manufacturing_release": false
+}

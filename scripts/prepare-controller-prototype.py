@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """Stage the committed electrical/schematic milestone as a separate native package."""
 import hashlib
+import argparse
 import json
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'prototypes/full-controller'
+parser = argparse.ArgumentParser()
+parser.add_argument('--version', choices=['0.1.0', '0.2.0'], default='0.1.0')
+version = parser.parse_args().version
+OUT = ROOT / ('prototypes/full-controller' if version == '0.1.0' else 'prototypes/full-controller-' + version)
 path = ROOT / 'artifacts/controller/schematic.circuit.json'
 records = json.loads(path.read_text())
 proof = json.loads((path.parent / 'schematic-verification.json').read_text())
@@ -17,7 +21,7 @@ revision = subprocess.check_output(['git', 'log', '-n', '1', '--format=%H', '--'
 assert subprocess.check_output(['git', 'show', revision + ':' + str(path.relative_to(ROOT))], cwd=ROOT) == path.read_bytes()
 OUT.mkdir(parents=True, exist_ok=True)
 serialized = (json.dumps(records, separators=(',', ':')) + '\n').encode()
-published = ROOT / 'artifacts/publication/controller-prototype-0.1.0.json'
+published = ROOT / ('artifacts/publication/controller-prototype-' + version + '.json')
 if published.exists():
     receipt = json.loads(published.read_text())
     remote = next(e for e in receipt['verified_files'] if e['path'] == 'index.circuit.json')
@@ -26,9 +30,9 @@ if published.exists():
         print('Published controller snapshot unchanged; package metadata preserved.')
         raise SystemExit(0)
     if receipt['registry_published']:
-        raise SystemExit('Version 0.1.0 is immutable. Stage the new milestone in a separate version directory.')
+        raise SystemExit('Published versions are immutable. Stage the new milestone in a separate version directory.')
 (OUT / 'index.circuit.json').write_bytes(serialized)
-package = {'name': '@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype', 'version': '0.1.0',
+package = {'name': '@tsci/AnasSarkiz.NEMA11_RP2040_Controller_Prototype', 'version': version,
            'description': 'Unrouted NEMA11 controller source, six A4 schematics and genuine supplier CAD; NOT fabrication ready',
            'main': 'index.circuit.json', 'type': 'module', 'private': False,
            'repository': {'type': 'git', 'url': 'https://github.com/AnasSarkiz/NEMA11_RP2040.git'}}

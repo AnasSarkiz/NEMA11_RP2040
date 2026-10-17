@@ -16,9 +16,9 @@ been retrieved. [Current source/access findings](docs/access-restored.md) includ
 verified motor ratings, source hashes and remaining integration requirements.
 
 The [full controller source prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype)
-is also published as version 0.1.0. All seven uploaded files were independently
+is also published as version 0.2.0 (the original 0.1.0 snapshot is preserved). All seven uploaded files were independently
 downloaded and matched byte-for-byte. This package contains the full electrical
-source and six schematics; its PCB is unrouted.
+source, higher-power sense resistors and six schematics; its PCB is unrouted.
 
 - [Design requirements](config/design-requirements.json)
 - [Full controller source, parity and assembly findings](docs/full-controller.md)

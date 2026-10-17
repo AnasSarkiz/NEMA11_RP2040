@@ -3,10 +3,13 @@
 import hashlib
 import json
 import subprocess
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-package = ROOT / 'prototypes/full-controller'
+parser = argparse.ArgumentParser()
+parser.add_argument('--package', default='prototypes/full-controller')
+package = ROOT / parser.parse_args().package
 source = package / 'index.circuit.json'
 records = json.loads(source.read_text())
 assert json.loads((package / 'dist/index/circuit.json').read_text()) == records
