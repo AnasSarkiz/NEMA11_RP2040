@@ -16,10 +16,15 @@ is published, and the exact NEMA14 v1.13.0 plus original motor drawing/STEP have
 been retrieved. [Current source/access findings](docs/access-restored.md) include
 verified motor ratings, source hashes and remaining integration requirements.
 
-The [full controller source prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype)
-is also published as version 0.2.0 (the original 0.1.0 snapshot is preserved). All seven uploaded files were independently
-downloaded and matched byte-for-byte. This package contains the full electrical
-source, higher-power sense resistors and six schematics; its PCB is unrouted.
+The [full controller prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Controller_Prototype)
+is published as **0.3.0**, containing the routed PCB, six schematics, genuine OEM
+motor and proposed front carrier. All seven required files were independently
+downloaded and matched byte-for-byte. The registry preview build is pending;
+the checked native GLBs below are available now. Immutable 0.1.0 and 0.2.0
+source-only snapshots remain preserved. The native CLI upload encountered a
+request-size limit; two separate unchanged-file archive uploads completed the
+same release. [Publication evidence](artifacts/publication/controller-prototype-0.3.0.json)
+records that recovery honestly.
 
 - [Design requirements](config/design-requirements.json)
 - [Full controller PCB development and manufacturing blockers](docs/full-controller-pcb.md)

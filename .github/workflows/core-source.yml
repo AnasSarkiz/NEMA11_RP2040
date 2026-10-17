@@ -73,6 +73,10 @@ jobs:
           python3 -m pip install -r tools/requirements-cam.lock
           python3 scripts/audit_core_cam.py
           python3 scripts/audit_controller_cam.py
+          (cd prototypes/controller-pcb-0.3.0 && tsci build index.circuit.json)
+          python3 scripts/verify_controller_pcb_prototype.py
+          python3 scripts/verify_controller_milestone.py
+          python3 scripts/package_controller_review.py --check
           python3 scripts/prepare-core-prototype.py
           (cd prototypes/rp2040-core && tsci build index.circuit.json)
           python3 scripts/verify_core_prototype.py

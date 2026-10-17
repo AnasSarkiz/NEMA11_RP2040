@@ -1,0 +1,9 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Controller_Prototype",
+  "version": "0.3.0",
+  "native_push_exit_code": 1,
+  "http_status_errors": [
+    413
+  ],
+  "independent_registry_verification_required": true
+}

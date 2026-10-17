@@ -1,0 +1,20 @@
+{
+  "version": "0.3.0",
+  "method": "Same native upload_archive API, one unchanged file per gzip archive to stay below request limit",
+  "uploads": [
+    {
+      "file": "index.circuit.json",
+      "request_bytes": 2500175,
+      "HTTP_status": 200,
+      "ok": true
+    },
+    {
+      "file": "dist/index/circuit.json",
+      "request_bytes": 2724095,
+      "HTTP_status": 200,
+      "ok": true
+    }
+  ],
+  "all_missing_files_uploaded": true,
+  "manufacturing_release": false
+}

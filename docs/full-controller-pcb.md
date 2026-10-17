@@ -5,6 +5,9 @@ on a 35 × 40 mm, four-layer board. The active PCB and OEM motor/front-carrier
 assembly are genuine tscircuit Circuit JSON. The default project opens the routed
 assembly. This is a validated development milestone, **not a fabrication release**.
 The immutable published 0.1.0 and 0.2.0 snapshots remain separate source milestones.
+The separate controller prototype 0.3.0 contains this routed native assembly; all
+seven required registry files match the local snapshot byte-for-byte. Registry
+preview generation remains pending; the GitHub GLBs are checked independently.
 
 ## Electrical and physical checks
 
