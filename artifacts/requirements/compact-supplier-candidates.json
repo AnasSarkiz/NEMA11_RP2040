@@ -88,6 +88,73 @@
           "bytes": 2789
         }
       ]
+    },
+    {
+      "LCSC": "C178649",
+      "symbol": "EEHZC1V680XP",
+      "native_import_flags": [
+        "--jlcpcb",
+        "--download",
+        "--use-exact-footprint",
+        "--exclude-pin-attributes"
+      ],
+      "supplier_geometry_unmodified": true,
+      "validated_electrical_substitution": false,
+      "asset_revision": "007e0f41fcd5a649d8b2f1a12c8c5f2f16f67c10",
+      "files": [
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.board-frame.obj",
+          "bytes": 1002039,
+          "sha256": "b72e5e83b89bb25aeb7b60150c2ce7688964dda233bf690160c5018b36969761"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.board-frame.step",
+          "bytes": 309215,
+          "sha256": "d352259fea05240a3a5af0e08ced8a1ff1f0b14a4eab296659b4ccb39c68f053"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.imported.obj",
+          "bytes": 110448,
+          "sha256": "9087e9f284ac77e128aaeb3ae0352a3e8fc47ccbf82bf58283c7a3c2655683b9"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.imported.step",
+          "bytes": 1118054,
+          "sha256": "2fe3a3d3cae3a65195f82879437e7448cff7aff0f92d99463fa232d86a7eca88"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.official.obj",
+          "bytes": 1002052,
+          "sha256": "6840e95b921ae724a5abd0023076664aadebc68e4ae87037ee823d4830333780"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.official.step",
+          "bytes": 167829,
+          "sha256": "11ef79100e9136395b4e75671b671c7ddae862731834bd6b9ccbdc6a91052714"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.tsx.original",
+          "bytes": 2809,
+          "sha256": "347302d51fc2b52a33b95c2f12593db33c585f271dbef2a10d6536251e7130cd"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/Panasonic-EEH-ZC-datasheet.pdf",
+          "bytes": 826281,
+          "sha256": "04b589c22c4ca1dcfd06d405e1c1646243990d560cf32500f4402bfd43b796ad"
+        },
+        {
+          "path": "imports/compact-candidates/EEHZC1V680XP/original-ROQANG-RVT-datasheet.pdf",
+          "bytes": 619859,
+          "sha256": "f1d2436b835db1d66a9009a93d3f0a4479807aa9824bf054a8e18d7e858e8fdb"
+        }
+      ],
+      "manufacturer_document": {
+        "URL": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDD0000/ABA0000C1234.pdf",
+        "capacitance_uF": 68,
+        "rated_voltage_V": 35,
+        "ripple_A_at_100kHz_125C": 1.4,
+        "ESR_max_ohm_at_100kHz_20C": 0.035
+      }
     }
   ]
 }

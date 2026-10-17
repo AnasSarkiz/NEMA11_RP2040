@@ -43,3 +43,28 @@ BOM/CPL and 3D checks must pass before a new version is published. Changing bulk
 capacitance also requires USB-PD attachment/inrush review. Actual peak current,
 PWM spectrum/overshoot, capacitor temperature and regenerative stops still need
 hardware validation.
+
+The [separate integration validation](../artifacts/requirements/hybrid-bulk-source-validation.json)
+now records zero native DRC, independent copper, opens and shorts with the 68 µF
+part. All 76 fitted native GLB model bounds match their STEP poses within
+0.011 mm. The corrected PCB-frame model is upright in the actual native exporter.
+The new connected A4 sheets and 75-placement SMT BOM/CPL also pass locally.
+This remains a development candidate; it has not replaced the public 0.4.0 package.
+
+```sh
+bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --layers 6 \
+  --hybrid-bulk --placement config/compact-hybrid-placement.json --out /tmp/nema11-hybrid
+python scripts/build_hybrid_candidate.py --folder /tmp/nema11-hybrid
+```
+
+Use the CAD Python environment for the construction and geometry checks. The
+explicit source profile enables the selected native filled/capped via feature;
+the strict process-policy check still rejects ordinary vias in component lands.
+The old 0.4.0 source reproduces byte-for-byte after these optional changes.
+
+Maximum frame tolerance is a known open layout issue. The Panasonic drawing
+specifies 6.6 ±0.2 mm base dimensions and a 6.3 ±0.5 mm can. At the present Y
+position, a 6.8 mm maximum part and an assumed ±0.05 mm placement error can
+extend 0.039 mm beyond the 28.3 mm frame. Nominal CAD fit is therefore not a
+maximum-tolerance pass. USB routing, that placement budget, carrier/hardware,
+the new CAM release and factory/physical qualification remain separate gates.

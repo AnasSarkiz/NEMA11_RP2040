@@ -5,12 +5,13 @@ import hashlib
 import itertools
 import json
 import math
+import re
 from pathlib import Path
 from shapely.affinity import rotate,translate
 from shapely.geometry import Polygon,Point,box
 from pcb_geometry import Copper,pad_shape
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');parser.add_argument('--extra-constraints');parser.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=parser.parse_args();OUT=ROOT/args.folder
+parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');parser.add_argument('--extra-constraints');parser.add_argument('--hybrid-bulk',action='store_true');parser.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=parser.parse_args();OUT=ROOT/args.folder
 path=OUT/'unrouted.circuit.json';records=json.loads(path.read_text());base=json.loads((ROOT/'artifacts/controller/unrouted.circuit.json').read_text());samples=json.loads((ROOT/'artifacts/compact-controller/supplier-samples.circuit.json').read_text());envelopes=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts'];poses=json.loads((ROOT/'src/compact/placement.json').read_text());
 placement_report=json.loads(Path(args.placement).read_text()) if args.placement else {}
 if args.placement:poses.update(placement_report['placements'])
@@ -25,6 +26,11 @@ def named_pads(c):
 pads=named_pads(C);oldpads=named_pads(B);samplepads=named_pads(S)
 for (name,pin),pad in pads.items():
  if name=='BZ1':original=samplepads[('BZ_COMPACT',pin)];old=dict(pcbX=-10,pcbY=0,pcbRotation=0)
+ elif name=='C_BULK' and args.hybrid_bulk:
+  raw=(ROOT/'imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.tsx.original').read_text()
+  entries=re.findall(r'<smtpad portHints=\{\["pin([12])"\]\} pcbX="([\-\d.]+)mm" pcbY="([\-\d.]+)mm" width="([\d.]+)mm" height="([\d.]+)mm" shape="rect"',raw)
+  fields=next(row for row in entries if int(row[0])==pin)
+  original=dict(shape='rect',x=float(fields[1]),y=float(fields[2]),width=float(fields[3]),height=float(fields[4]));old=dict(pcbX=0,pcbY=0,pcbRotation=0)
  else:original=oldpads[(name,pin)];old=oldposes[name]
  new=poses[name];expected=translate(rotate(pad_shape(original),new['pcbRotation']-old['pcbRotation'],origin=(old['pcbX'],old['pcbY'])),new['pcbX']-old['pcbX'],new['pcbY']-old['pcbY'])
  difference=expected.hausdorff_distance(pad_shape(pad))

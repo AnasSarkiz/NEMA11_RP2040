@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def check(records, reference, compact=False, no_buzzer=False):
+def check(records, reference, compact=False, no_buzzer=False, hybrid_bulk=False):
     errors = []
     components = {e['source_component_id']: e for e in records if e['type'] == 'source_component'}
     names = {e['name']: e for e in components.values()}
@@ -24,6 +24,9 @@ def check(records, reference, compact=False, no_buzzer=False):
     for name in ['R_SA','R_SB']:
         expected[name].update(manufacturer_part_number='HP05W3F240LT5E',
                               supplier_part_numbers={'jlcpcb':['C7434086']})
+    if hybrid_bulk:
+        expected['C_BULK'].update(manufacturer_part_number='EEHZC1V680XP',capacitance=68e-6,
+                                 supplier_part_numbers={'jlcpcb':['C178649']})
     if compact:
         expected['BZ1'].update(manufacturer_part_number='MLT-5020',supplier_part_numbers={'jlcpcb':['C94598']})
     omitted = json.loads((ROOT/'config/compact-four-mounts.json').read_text())['omitted_components'] if no_buzzer else []
@@ -79,12 +82,14 @@ def main():
     import sys
     compact='--compact' in sys.argv
     no_buzzer='--no-buzzer' in sys.argv
+    hybrid_bulk='--hybrid-bulk' in sys.argv
+    if hybrid_bulk and not (compact and no_buzzer):raise ValueError('Hybrid bulk is only selected in the separate compact four-hole iteration')
     if no_buzzer and not compact: raise ValueError('Buzzer omission is only authorized for compact four-hole development')
     folder=sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if compact else 'artifacts/controller'
     path = ROOT / folder / 'unrouted.circuit.json'
     records = json.loads(path.read_text())
     reference = json.loads((ROOT / 'references/manifests/nema14-v1.13-electrical.json').read_text())
-    errors = check(records, reference, compact=compact, no_buzzer=no_buzzer)
+    errors = check(records, reference, compact=compact, no_buzzer=no_buzzer, hybrid_bulk=hybrid_bulk)
     report = {'scope': 'All physical controller pins and component values; no copper qualification',
               'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
               'reference_board_sha256': reference['reference_board_sha256'],
@@ -98,6 +103,7 @@ def main():
               'errors': errors, 'manufacturing_release': False}
     if no_buzzer:report['intentional_changes'].append('User-authorized complete buzzer circuit removal: '+', '.join(json.loads((ROOT/'config/compact-four-mounts.json').read_text())['omitted_components'])+'; MCU GPIO16 explicitly NC')
     elif compact:report['intentional_changes'].append('BZ1: HYG-8503A/C7544813 to MLT-5020/C94598; three rather than four terminals, one dummy NC removed')
+    if hybrid_bulk:report['intentional_changes'].append('C_BULK: RVT1V470M0605/C72522, 47uF to Panasonic EEHZC1V680XP/C178649, 68uF/35V; genuine imported lands and official manufacturer CAD; ripple screen documented separately')
     (ROOT / folder / 'electrical-parity.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report))
     raise SystemExit(bool(errors))

@@ -3,10 +3,14 @@ import { Circuit } from "tscircuit"
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import { populatePartOrientationMetadata, convertCircuitJsonToPickAndPlaceRows } from "circuit-json-to-pnp-csv"
-import { SupplierPart } from "../src/controller/supplier-parts"
+import { SupplierPart as BaselineSupplierPart } from "../src/controller/supplier-parts"
+import { HybridBulkSupplierPart } from "../src/compact/hybrid-bulk-parts"
+import candidates from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 
 const compact=process.argv.includes("--compact-four-mounts")
+const hybrid=process.argv.includes("--hybrid-bulk")
+const SupplierPart=hybrid?HybridBulkSupplierPart:BaselineSupplierPart
 const folderArg=process.argv.indexOf("--folder")
 const path=folderArg>=0?process.argv[folderArg+1].replace(/\/$/,"")+"/":"artifacts/controller-pcb/"
 const output=path+"assembly-data/"
@@ -14,10 +18,11 @@ mkdirSync(output,{recursive:true})
 const bytes=readFileSync(path+"board.circuit.json")
 const records=JSON.parse(bytes.toString()) as any[]
 const sources=records.filter(r=>r.type==="source_component")
+if((sources.find(r=>r.name==="C_BULK")?.manufacturer_part_number==="EEHZC1V680XP")!==hybrid)throw new Error("Select the exact bulk-capacitor variant for genuine supplier R0 orientation")
 const fitted=records.filter(r=>r.type==="pcb_component" && !r.do_not_place)
 const names=new Map(sources.map(r=>[r.source_component_id,r.name]))
 const unique=new Map<string,string>()
-for(const p of fitted){const name=names.get(p.source_component_id)!;const code=(catalog.components as Record<string,string>)[name];if(code)unique.set(code,name)}
+for(const p of fitted){const name=names.get(p.source_component_id)!;const code=sources.find(s=>s.name===name)?.supplier_part_numbers?.jlcpcb?.[0];if(code)unique.set(code,name)}
 const native=new Circuit()
 native.schematicDisabled=true
 native.add(<board width={250} height={150} routingDisabled>
@@ -53,7 +58,11 @@ const cpl=[['Designator','Mid X','Mid Y','Layer','Rotation'],...rows.map(r=>[r.d
 writeFileSync(output+"JLC_SMT_CPL.csv",csv(cpl))
 const groups=new Map<string,any[]>()
 for(const row of rows){const s=sources.find(r=>r.name===row.designator);const code=s.supplier_part_numbers?.jlcpcb?.[0];if(!code)throw new Error("Missing supplier number: "+row.designator);groups.set(code,[...(groups.get(code)??[]),s])}
-const bom=[['Comment','Designator','Footprint','LCSC Part #'],...[...groups].sort().map(([code,parts])=>[parts[0].manufacturer_part_number,parts.map(p=>p.name).sort().join(','),(catalog.parts as any)[code].symbol,code])]
+const bom=[['Comment','Designator','Footprint','LCSC Part #'],...[...groups].sort().map(([code,parts])=>{
+ const symbol=(catalog.parts as any)[code]?.symbol??candidates.parts.find(p=>p.LCSC===code)?.symbol
+ if(!symbol)throw new Error("Missing exact native supplier symbol: "+code)
+ return [parts[0].manufacturer_part_number,parts.map(p=>p.name).sort().join(','),symbol,code]
+})]
 writeFileSync(output+"JLC_SMT_BOM.csv",csv(bom))
 writeFileSync(output+"manual-assembly.csv",csv([['Designator','Manufacturer part','LCSC','Process'],['J_MOTOR','B4B-PH-K-S(LF)(SN)','C131334','Through-hole hand solder; verify pin order and mating side']]))
 const orientation=(prepared as any[]).filter(r=>r.type==="pcb_component" && !r.do_not_place).map(p=>({designator:names.get(p.source_component_id),authored_rotation:p.rotation,pin1_location:p.pin1_location,supplier_pin1_location_map:p.supplier_pin1_location_map}))

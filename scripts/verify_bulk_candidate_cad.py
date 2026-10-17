@@ -23,7 +23,9 @@ with (F/'EEHZC1V680XP.board-frame.obj').open('w') as f:
     f.write('# Official Panasonic DS_Alumi_D8 geometry; mm; rigid X+90 then Z+180 datum conversion; all four solids.\n')
     for v in aligned_vertices:f.write(f'v {v.x:.8f} {v.y:.8f} {v.z:.8f}\n')
     for a,b,c in aligned_faces:f.write(f'f {a+1} {b+1} {c+1}\n')
-converted=aligned.BoundingBox();converted_bounds=[converted.xmin,converted.ymin,converted.zmin,converted.xmax,converted.ymax,converted.zmax]
+# OCCT enlarges a tessellated shape's bounding box by its mesh deflection.
+# Read the exported exact BRep afresh, independently of that display mesh.
+converted=cq.importers.importStep(str(aligned_step)).val().BoundingBox();converted_bounds=[converted.xmin,converted.ymin,converted.zmin,converted.xmax,converted.ymax,converted.zmax]
 assert abs(converted.zmin)<1e-5 and abs(converted.zmax-7.701)<.01
 def pads(text):
     return {int(pin):[float(v) for v in [x,y,w,h]] for pin,x,y,w,h in re.findall(r'<smtpad portHints=\{\["pin([12])"\]\} pcbX="([\-\d.]+)mm" pcbY="([\-\d.]+)mm" width="([\d.]+)mm" height="([\d.]+)mm"',text)}

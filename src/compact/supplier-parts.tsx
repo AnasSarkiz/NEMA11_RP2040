@@ -11,6 +11,10 @@ export function CompactSupplierPart(props:any) {
  let element:ReactElement<any> = props.name === "BZ1"
   ? MLT_5020({...props,noConnect:["NC"],pinAttributes:{...props.pinAttributes,pin3:{doNotConnect:true}}})
   : SupplierPart(props)
+ return applyCompactCourtyard(props,element)
+}
+
+export function applyCompactCourtyard(props:any,element:ReactElement<any>) {
  while(typeof element.type === "function") element=(element.type as any)(element.props)
  const b=(courtyards as Record<string,number[]>)[props.name]
  if(!b) return element // The three documented bottom-side DNP encoder parts.

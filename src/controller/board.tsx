@@ -20,6 +20,7 @@ export type ControllerProfile = {
  mounts:{x:number,y:number,diameter:number,radius:number}[],
  placementOverrides?:Record<string,ControllerPlacement>,
  Part?:React.ComponentType<any>,compactLabels?:boolean,buzzerEnabled?:boolean,layers?:4|6,
+ bulkCapacitance?:string,filledCappedVias?:boolean,
 }
 export default function Nema11Controller({ routingDisabled = false, schematicDisabled = false, profile }: { routingDisabled?: boolean, schematicDisabled?: boolean, profile?:ControllerProfile } = {}) {
  const SupplierPart=profile?.Part ?? OriginalSupplierPart
@@ -29,6 +30,7 @@ export default function Nema11Controller({ routingDisabled = false, schematicDis
  const resistor = (name:string,value:string,a:string,b:string) => <SupplierPart key={name} name={name}  resistance={value} tolerance="1%" {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
 const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={name} name={name}  capacitance={value} maxVoltageRating={['PD_VBUS','LOGIC_IN','BUCK_BST','CP1'].includes(a)||b==='PD_VBUS'?35:10} {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
  return <board width={profile?.width ?? 35} height={profile?.height ?? 40} outline={profile?.outline ?? [{x:-17.5,y:-17.5},{x:17.5,y:-17.5},{x:17.5,y:22.5},{x:-17.5,y:22.5}]} layers={profile?.layers ?? 4} thickness={1.6}
+  {...(profile?.filledCappedVias?{isViaInPadAllowed:true}:{})}
   routingDisabled={routingDisabled} schematicDisabled={schematicDisabled} minTraceWidth={0.16} minTraceToPadEdgeClearance={0.15} minPadEdgeToPadEdgeClearance={0.15}
   minViaHoleDiameter={0.3} minViaPadDiameter={0.45} minViaHoleEdgeToViaHoleEdgeClearance={0.2} minPlatedHoleDrillEdgeToDrillEdgeClearance={0.45} minBoardEdgeClearance={0.25}
   autorouter={{local:true, traceClearance:0.15}} autorouterEffortLevel="2x" schAutoLayoutEnabled={false}>
@@ -87,7 +89,7 @@ const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={na
   {cap('C_VREG','220nF','VREG','GND')}
   {cap('C_DRV_LOGIC','100nF','V3V3')}
   {cap('C_VM','100nF','PD_VBUS','GND')}
-  <SupplierPart name="C_BULK" capacitance="47uF" maxVoltageRating={35} {...place("C_BULK")} connections={{pin1:n("PD_VBUS"),pin2:n("GND")}} />
+  <SupplierPart name="C_BULK" capacitance={profile?.bulkCapacitance??"47uF"} maxVoltageRating={35} {...place("C_BULK")} connections={{pin1:n("PD_VBUS"),pin2:n("GND")}} />
   {resistor('R_SA','0.24','SENSE1','GND')}
   {resistor('R_SB','0.24','SENSE2','GND')}
   {resistor('R_REF_H','20k','V3V3','VREF')}

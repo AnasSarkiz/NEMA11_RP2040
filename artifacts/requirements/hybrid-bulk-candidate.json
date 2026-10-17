@@ -52,6 +52,16 @@
   },
   "files": [
     {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.board-frame.obj",
+      "bytes": 1002039,
+      "sha256": "b72e5e83b89bb25aeb7b60150c2ce7688964dda233bf690160c5018b36969761"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.board-frame.step",
+      "bytes": 309215,
+      "sha256": "d352259fea05240a3a5af0e08ced8a1ff1f0b14a4eab296659b4ccb39c68f053"
+    },
+    {
       "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.imported.obj",
       "bytes": 110448,
       "sha256": "9087e9f284ac77e128aaeb3ae0352a3e8fc47ccbf82bf58283c7a3c2655683b9"
@@ -87,5 +97,35 @@
       "sha256": "f1d2436b835db1d66a9009a93d3f0a4479807aa9824bf054a8e18d7e858e8fdb"
     }
   ],
-  "manufacturing_release": false
+  "manufacturing_release": false,
+  "board_frame_conversion": {
+    "rigid_rotations_degrees": [
+      {
+        "axis": "X",
+        "angle": 90
+      },
+      {
+        "axis": "Z",
+        "angle": 180
+      }
+    ],
+    "valid_solids": 4,
+    "source_and_converted_volume_mm3": [
+      248.87631313934574,
+      248.87631313934574
+    ],
+    "source_STEP_preserved": true,
+    "body_and_leads_not_rescaled_or_cropped": true,
+    "board_R0_bounds_mm": [
+      -3.6500000000000004,
+      -3.3000000000000007,
+      -6.827871601444713e-15,
+      3.6500000000000004,
+      3.3000000000000007,
+      7.7010000000000005
+    ],
+    "PCB_contact_plane_z_mm": 0,
+    "positive_terminal_axis": "Negative X after conversion; matches native pin1 left footprint",
+    "native_board_pose_verified": false
+  }
 }

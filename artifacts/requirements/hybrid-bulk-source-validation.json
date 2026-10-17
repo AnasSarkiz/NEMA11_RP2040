@@ -1,0 +1,80 @@
+{
+  "scope": "Reproducible 68uF source/PCB/3D integration validation; NOT a new fabrication or registry release",
+  "source_sha256": "26b0b8ecbaec3518ff982ec72fc6ce35d2395b5e7b2465719aa4fafeb6511536",
+  "routed_candidate_sha256": "52866174c47515b08717864d74116d514730f8d14d38d4debac814f410741665",
+  "constructor": "bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --layers 6 --hybrid-bulk --placement config/compact-hybrid-placement.json --out /tmp/nema11-hybrid; python scripts/build_hybrid_candidate.py --folder /tmp/nema11-hybrid",
+  "selected_variant_part": "EEHZC1V680XP / C178649, 68uF/35V",
+  "native_DRC_errors": 0,
+  "physical_copper_errors": 0,
+  "physical_opens": 0,
+  "physical_shorts": 0,
+  "required_connected_pins": 290,
+  "intentional_NC_pins": 36,
+  "connected_nets": 61,
+  "native_source_warnings": 7,
+  "nominal_supplier_solid_and_lead_fit_pass": true,
+  "unchanged_original_USB_STEP_validity_findings": 2,
+  "native_controller_models_compared": 76,
+  "maximum_native_GLB_STEP_bbox_deviation_mm": 0.010000099999999623,
+  "connected_A4_sheets": 6,
+  "SMT_BOM_CPL_parts": 75,
+  "manual_PH_headers": 1,
+  "old_0_4_0_source_byte_reproduces": true,
+  "old_published_0_4_0_package_unchanged": true,
+  "nominal_component_frame_fit_pass": true,
+  "maximum_tolerance_frame_qualified": false,
+  "bulk_frame_budget": {
+    "manufacturer_maximum_can_and_base_width_depth_mm": 6.8,
+    "assumed_placement_error_mm": 0.05,
+    "current_native_centre_Y_mm": -10.7389872,
+    "worst_case_minimum_Y_mm": -14.1889872,
+    "permitted_minimum_Y_mm": -14.15,
+    "requires_placement_or_mechanical_tolerance_revision": true
+  },
+  "USB_pair_and_stackup_qualified": false,
+  "carrier_fasteners_and_harness_qualified": false,
+  "new_variant_CAM_and_registry_publication_complete": false,
+  "inputs": [
+    {
+      "path": "src/controller/board.tsx",
+      "sha256": "a6c1209a1b2381d81d0280bb69ff67a8ce27ebc3a2b606cf7563932032c2161d"
+    },
+    {
+      "path": "src/compact/supplier-parts.tsx",
+      "sha256": "7e9f4b23268a7b1fc92182c5c14330dbd0072be2e0ea901f07c14963e85c2d72"
+    },
+    {
+      "path": "src/compact/hybrid-bulk-parts.tsx",
+      "sha256": "432801773686d32ca3e22c8bb1f9af30fa63db5e44fff04c4de67748d38ea430"
+    },
+    {
+      "path": "config/compact-hybrid-placement.json",
+      "sha256": "b5377e22823775ae155c82f82b5eaabc15d819488943b87778f299dc64e9693c"
+    },
+    {
+      "path": "imports/compact-candidates/EEHZC1V680XP/EEHZC1V680XP.tsx",
+      "sha256": "b62da2febb2590f67fb667df60940d2f670d82234737733f7626cad02fe61c09"
+    },
+    {
+      "path": "scripts/build-controller.tsx",
+      "sha256": "374f770579e26c7696a9286f3e04388fefbed24a3b6dbef81e51f3fc4479b31a"
+    },
+    {
+      "path": "scripts/build_hybrid_candidate.py",
+      "sha256": "58cee746f769d78ec383824209dbc7fa30cb575cb36ce36af04675b9c2f5e985"
+    },
+    {
+      "path": "scripts/verify_controller.py",
+      "sha256": "43239da6144959263f9d12721e154765f676ebd9a5e2dd7b986f69091fae6174"
+    },
+    {
+      "path": "scripts/audit_compact_placement.py",
+      "sha256": "de95637413d404a9c86b9d096f8a51e046ba9dd4f91c31f483380590d4f1ddf4"
+    },
+    {
+      "path": "scripts/verify_native_controller_models.py",
+      "sha256": "9f7f27cceecf9dbf73b755cff8dc454feb20ba8966d42dd624923c4cfc09c4ba"
+    }
+  ],
+  "manufacturing_release": false
+}
