@@ -1,0 +1,52 @@
+{
+  "scope": "Original front-anchored carrier CAD proposal, excluding fasteners/harness qualification",
+  "material_requirement": "6061-T6 aluminum; surface finish and strength validation pending",
+  "bounds_mm": [
+    -19.50000010000001,
+    -19.50000010000001,
+    -43.00818185397574,
+    19.50000010000001,
+    19.50000010000001,
+    -0.7982516619709941
+  ],
+  "valid_single_solid": true,
+  "body_side_clearance_to_max_28_3mm_motor_mm": 1.3499999999999996,
+  "front_plate_thickness_mm": 1,
+  "front_pilot_clearance_hole_mm": 23.4,
+  "pilot_opening_is_precision_locator": false,
+  "motor_front_mount_holes": {
+    "pitch_mm": 23,
+    "clearance_diameter_mm": 3.4,
+    "count": 4
+  },
+  "PCB_mount_threads": {
+    "pitch_mm": 26,
+    "thread": "M2.5x0.45 THRU",
+    "tap_drill_model_mm": 2.05,
+    "count": 4
+  },
+  "fastener_requirements": [
+    "Four M2.5x4 front screws; actual length tolerance and head dimensions need a supplier drawing",
+    "Four M2.5x5 PCB screws; actual tolerance/head/tool envelope and thread engagement need supplier verification"
+  ],
+  "motor_rear_holes_or_shaft_assumed": false,
+  "wire_exit_positive_X_open": true,
+  "files": [
+    {
+      "path": "imports/mechanical/nema11-front-carrier.step",
+      "sha256": "49d27ec77672f44f12ea0bd44e5ce7e2cac8512be81cb77292a646685dd37066"
+    },
+    {
+      "path": "imports/mechanical/nema11-front-carrier.obj",
+      "sha256": "f0fab050846e3b2edcaacbc764385605b68d96e81f6717633299e59ef6030a94"
+    }
+  ],
+  "release_requirements": [
+    "Machining tolerances, deburring and M2.5 thread acceptance",
+    "Motor front screw engagement must remain below 3.5 mm minimum tapped depth",
+    "Retain usable pilot projection and shaft clearance at worst-case tolerances",
+    "Assembly and tool clearance, vibration/strength and hot motor validation",
+    "Machine-side attachment interface is unspecified"
+  ],
+  "manufacturing_release": false
+}

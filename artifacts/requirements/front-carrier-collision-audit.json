@@ -1,0 +1,27 @@
+{
+  "scope": "Nominal front carrier proposal versus actual OEM motor, PCB and underside supplier solids",
+  "carrier_STEP_sha256": "49d27ec77672f44f12ea0bd44e5ce7e2cac8512be81cb77292a646685dd37066",
+  "tests": [
+    {
+      "part": "OEM motor with actual lead stubs",
+      "interference_mm3": 0,
+      "surface_gap_mm": 0.0
+    },
+    {
+      "part": "PCB",
+      "interference_mm3": 0,
+      "surface_gap_mm": 0.0
+    },
+    {
+      "part": "J_MOTOR",
+      "interference_mm3": 0,
+      "surface_gap_mm": 1.6000059999999996
+    }
+  ],
+  "errors": [],
+  "nominal_collision_check_pass": true,
+  "rear_motor_attachment_assumed": false,
+  "fasteners_or_full_harness_verified": false,
+  "tolerances_strength_and_physical_assembly_verified": false,
+  "manufacturing_release": false
+}
