@@ -4,15 +4,18 @@
   "reference": {
     "repository": "AnasSarkiz/NEMA14_RP2040",
     "published_version": "1.13.0",
-    "status": "awaiting_published_source",
-    "modify_reference": false
+    "status": "exact_published_release_downloaded",
+    "modify_reference": false,
+    "package_release_id": "b28fdf86-c142-4a22-b03c-3719461c092c",
+    "file_count": 516,
+    "manifest": "references/manifests/nema14-v1.13.0.json"
   },
   "motor": {
     "manufacturer": "STEPPERONLINE",
     "part_number": "11HS12-0674S",
     "datasheet_url": "https://files.omc-stepperonline.com/11HS12-0674S_Full_Datasheet.pdf",
     "step_url": "https://files.omc-stepperonline.com/11HS12-0674S.STEP",
-    "ratings_source": "user-specified current drawing; original documents not yet retrieved",
+    "ratings_source": "Original A0071 title revision 2, dated 2026-06-18; PDF and STEP hashes in artifacts/requirements/motor-originals.json",
     "phase_current_a": 0.67,
     "maximum_frame_mm": 28.3,
     "maximum_body_length_mm": 33,
@@ -20,14 +23,49 @@
     "front_thread": "M2.5",
     "rear_mounting_verified": false,
     "rear_shaft_verified": false,
-    "phase_resistance_ohms": null,
-    "phase_inductance_h": null,
-    "lead_colors_verified": false,
-    "shaft_dimensions_verified": false,
-    "thread_depth_verified": false
+    "phase_resistance_ohms": 5.6,
+    "phase_inductance_h": 0.004,
+    "lead_colors_verified": true,
+    "shaft_dimensions_verified": true,
+    "thread_depth_verified": true,
+    "phase_resistance_tolerance_fraction": 0.1,
+    "phase_inductance_tolerance_fraction": 0.2,
+    "front_thread_depth_min_mm": 3.5,
+    "front_mounting_pitch_tolerance_mm": 0.15,
+    "shaft_diameter_range_mm": [
+      4.988,
+      5.0
+    ],
+    "shaft_projection_range_mm": [
+      19,
+      21
+    ],
+    "front_pilot_diameter_range_mm": [
+      21.95,
+      22.0
+    ],
+    "front_pilot_projection_nominal_mm": 2.0,
+    "lead_AWG": 26,
+    "lead_insulation": "UL1569",
+    "lead_length_range_mm": [
+      290,
+      310
+    ],
+    "coil_leads": {
+      "1": "A+ BLACK",
+      "2": "A- GREEN",
+      "3": "B+ RED",
+      "4": "B- BLUE"
+    },
+    "ambient_range_c": [
+      -10,
+      50
+    ],
+    "temperature_rise_max_c": 80,
+    "insulation_class": "B 130 C"
   },
   "fabrication": {
-    "minimum_via_drill_mm": 0.30,
+    "minimum_via_drill_mm": 0.3,
     "minimum_via_pad_mm": 0.45,
     "final_board_outline_verified": false,
     "gerbers_released": false,
@@ -60,8 +98,9 @@
     "attachment, fasteners, lead route and insertion/tool clearance"
   ],
   "publication": {
-    "separate_package": "AnasSarkiz/NEMA11_RP2040",
-    "status": "not_published",
-    "only_validated_milestones": true
+    "separate_package": "AnasSarkiz/NEMA11_RP2040_MCU_Prototype",
+    "status": "MCU_subsystem_0.1.0_registry_files_verified",
+    "only_validated_milestones": true,
+    "full_controller_published": false
   }
 }

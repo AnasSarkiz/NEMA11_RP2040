@@ -1,0 +1,870 @@
+{
+  "package": "AnasSarkiz/NEMA14_RP2040",
+  "version": "1.13.0",
+  "package_release_id": "b28fdf86-c142-4a22-b03c-3719461c092c",
+  "board_sha256": "16a605a565a272ce12a5194f28e1d9d8359c183d6110d117a4771d2b8ec91d2d",
+  "source_sha256": "69a8b86917d6395fdec38e7dfd1a95e9a69c912c32bf29ba27efaec4e557fd3a",
+  "counts": {
+    "source_port": 343,
+    "source_component": 92,
+    "pcb_via": 329,
+    "pcb_trace": 536,
+    "pcb_copper_pour": 48
+  },
+  "components": [
+    {
+      "name": "J_PD",
+      "manufacturer_part_number": "USB4145-03-0070-C",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5815189"
+        ]
+      }
+    },
+    {
+      "name": "J_DATA",
+      "manufacturer_part_number": "USB4145-03-0070-C",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5815189"
+        ]
+      }
+    },
+    {
+      "name": "U_PD",
+      "manufacturer_part_number": "CH224A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C42459160"
+        ]
+      }
+    },
+    {
+      "name": "R_PD",
+      "manufacturer_part_number": "0603WAF0000T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21189"
+        ]
+      },
+      "resistance": 0
+    },
+    {
+      "name": "C_PD",
+      "manufacturer_part_number": "CL10A105KB8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "capacitance": 1e-06
+    },
+    {
+      "name": "R_PG",
+      "manufacturer_part_number": "0603WAF1002T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25804"
+        ]
+      },
+      "resistance": 10000
+    },
+    {
+      "name": "U_MCU",
+      "manufacturer_part_number": "RP2040",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2040"
+        ]
+      }
+    },
+    {
+      "name": "C_IO1",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_IO10",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_IO22",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_IO33",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_IO42",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_IO49",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_DV23",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_DV50",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_USB",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_ADC",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_VREG_IN",
+      "manufacturer_part_number": "CL05A105KA5NQNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C52923"
+        ]
+      },
+      "capacitance": 1e-06
+    },
+    {
+      "name": "C_VREG_OUT",
+      "manufacturer_part_number": "CL05A105KA5NQNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C52923"
+        ]
+      },
+      "capacitance": 1e-06
+    },
+    {
+      "name": "U_FLASH",
+      "manufacturer_part_number": "GD25Q16EEIGR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2986331"
+        ]
+      }
+    },
+    {
+      "name": "C_FLASH",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "R_FLASH_CS",
+      "manufacturer_part_number": "0402WGF1002TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "resistance": 10000
+    },
+    {
+      "name": "R_BOOT",
+      "manufacturer_part_number": "0402WGF1001TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "resistance": 1000
+    },
+    {
+      "name": "Y_MCU",
+      "manufacturer_part_number": "ABM8-272-T3",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20625731"
+        ]
+      }
+    },
+    {
+      "name": "R_XOUT",
+      "manufacturer_part_number": "0402WGF1001TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "resistance": 1000
+    },
+    {
+      "name": "C_XIN",
+      "manufacturer_part_number": "0402CG150J500NT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "capacitance": 1.5e-11
+    },
+    {
+      "name": "C_XOUT",
+      "manufacturer_part_number": "0402CG150J500NT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "capacitance": 1.5e-11
+    },
+    {
+      "name": "R_RUN",
+      "manufacturer_part_number": "0402WGF1002TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "resistance": 10000
+    },
+    {
+      "name": "R_DM",
+      "manufacturer_part_number": "0402WGF270JTCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "resistance": 27
+    },
+    {
+      "name": "R_DP",
+      "manufacturer_part_number": "0402WGF270JTCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "resistance": 27
+    },
+    {
+      "name": "R_CC1",
+      "manufacturer_part_number": "0402WGF5101TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25905"
+        ]
+      },
+      "resistance": 5100
+    },
+    {
+      "name": "R_CC2",
+      "manufacturer_part_number": "0402WGF5101TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25905"
+        ]
+      },
+      "resistance": 5100
+    },
+    {
+      "name": "R_USB_SENSE_H",
+      "manufacturer_part_number": "0402WGF1003TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "R_USB_SENSE_L",
+      "manufacturer_part_number": "0402WGF1003TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "R_VM_H",
+      "manufacturer_part_number": "0402WGF1003TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "R_VM_L",
+      "manufacturer_part_number": "0402WGF1002TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "resistance": 10000
+    },
+    {
+      "name": "C_VM_SENSE",
+      "manufacturer_part_number": "CL05B103KB5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15195"
+        ]
+      },
+      "capacitance": 1e-08
+    },
+    {
+      "name": "U_BUCK",
+      "manufacturer_part_number": "AP63203WU-7",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C780769"
+        ]
+      }
+    },
+    {
+      "name": "L_BUCK",
+      "manufacturer_part_number": "SRN4018-4R7M",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C780206"
+        ]
+      }
+    },
+    {
+      "name": "C_BOOTSTRAP",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_BUCK_IN",
+      "manufacturer_part_number": "CL31A106KBHNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C13585"
+        ]
+      },
+      "capacitance": 1e-05
+    },
+    {
+      "name": "C_BUCK_OUT1",
+      "manufacturer_part_number": "CL21A226MAQNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "capacitance": 2.2e-05
+    },
+    {
+      "name": "C_BUCK_OUT2",
+      "manufacturer_part_number": "CL21A226MAQNNNE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "capacitance": 2.2e-05
+    },
+    {
+      "name": "D_PD",
+      "manufacturer_part_number": "B5819W SL",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8598"
+        ]
+      }
+    },
+    {
+      "name": "D_DATA",
+      "manufacturer_part_number": "B5819W SL",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8598"
+        ]
+      }
+    },
+    {
+      "name": "U_DRV",
+      "manufacturer_part_number": "A4988SETTR-T",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C38437"
+        ]
+      }
+    },
+    {
+      "name": "C_CP",
+      "manufacturer_part_number": "CL05B104KB5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_VCP",
+      "manufacturer_part_number": "CL05B104KB5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_VREG",
+      "manufacturer_part_number": "CL10B224KA8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21120"
+        ]
+      },
+      "capacitance": 2.2e-07
+    },
+    {
+      "name": "C_DRV_LOGIC",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_VM",
+      "manufacturer_part_number": "CL05B104KB5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_BULK",
+      "manufacturer_part_number": "RVT1V470M0605",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C72522"
+        ]
+      },
+      "capacitance": 4.7e-05
+    },
+    {
+      "name": "R_SA",
+      "manufacturer_part_number": "FRL0805FR240TS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2930216"
+        ]
+      },
+      "resistance": 0.24
+    },
+    {
+      "name": "R_SB",
+      "manufacturer_part_number": "FRL0805FR240TS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2930216"
+        ]
+      },
+      "resistance": 0.24
+    },
+    {
+      "name": "R_REF_H",
+      "manufacturer_part_number": "0603WAF3902T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C23153"
+        ]
+      },
+      "resistance": 39000
+    },
+    {
+      "name": "R_REF_L",
+      "manufacturer_part_number": "0402WGF1002TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "resistance": 10000
+    },
+    {
+      "name": "C_REF",
+      "manufacturer_part_number": "CL10B103KB8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1589"
+        ]
+      },
+      "capacitance": 1e-08
+    },
+    {
+      "name": "R_ENABLE",
+      "manufacturer_part_number": "0402WGF1003TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "R_SLEEP",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25803"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "J_MOTOR",
+      "manufacturer_part_number": "BM04B-SRSS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C160390"
+        ]
+      }
+    },
+    {
+      "name": "U_ESD",
+      "manufacturer_part_number": "USBLC6-2SC6",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2687116"
+        ]
+      }
+    },
+    {
+      "name": "D_TVS",
+      "manufacturer_part_number": "SMF18A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19077512"
+        ]
+      }
+    },
+    {
+      "name": "U_TEMP",
+      "manufacturer_part_number": "TMP102AIDRLR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C99269"
+        ]
+      }
+    },
+    {
+      "name": "C_TEMP",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "R_TEMP_SDA",
+      "manufacturer_part_number": "0402WGF4701TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "resistance": 4700
+    },
+    {
+      "name": "R_TEMP_SCL",
+      "manufacturer_part_number": "0402WGF4701TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "resistance": 4700
+    },
+    {
+      "name": "D_PWR",
+      "manufacturer_part_number": "XL-1608SURC-06",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C965799"
+        ]
+      }
+    },
+    {
+      "name": "R_PWR_LED",
+      "manufacturer_part_number": "0402WGF3300TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25104"
+        ]
+      },
+      "resistance": 330
+    },
+    {
+      "name": "D_STATUS",
+      "manufacturer_part_number": "LTST-C19HE1WT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C458749"
+        ]
+      }
+    },
+    {
+      "name": "R_STATUS_R",
+      "manufacturer_part_number": "0402WGF1001TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "resistance": 1000
+    },
+    {
+      "name": "Q_STATUS_R",
+      "manufacturer_part_number": "DTC114EU3HZGT106",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C509876"
+        ]
+      }
+    },
+    {
+      "name": "R_STATUS_G",
+      "manufacturer_part_number": "0402WGF1001TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "resistance": 1000
+    },
+    {
+      "name": "Q_STATUS_G",
+      "manufacturer_part_number": "DTC114EU3HZGT106",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C509876"
+        ]
+      }
+    },
+    {
+      "name": "R_STATUS_B",
+      "manufacturer_part_number": "0402WGF1001TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "resistance": 1000
+    },
+    {
+      "name": "Q_STATUS_B",
+      "manufacturer_part_number": "DTC114EU3HZGT106",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C509876"
+        ]
+      }
+    },
+    {
+      "name": "BZ1",
+      "manufacturer_part_number": "HYG-8503A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C7544813"
+        ]
+      }
+    },
+    {
+      "name": "Q_BUZZER",
+      "manufacturer_part_number": "AO3400A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20917"
+        ]
+      }
+    },
+    {
+      "name": "D_BUZZER",
+      "manufacturer_part_number": "PMEG6020ELRX",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C478000"
+        ]
+      }
+    },
+    {
+      "name": "R_BUZZER_GATE",
+      "manufacturer_part_number": "0402WGF1000TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25076"
+        ]
+      },
+      "resistance": 100
+    },
+    {
+      "name": "R_BUZZER_PD",
+      "manufacturer_part_number": "0402WGF1003TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "resistance": 100000
+    },
+    {
+      "name": "C_BUZZER",
+      "manufacturer_part_number": "CL10A106KP8NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19702"
+        ]
+      },
+      "capacitance": 1e-05
+    },
+    {
+      "name": "TP_3V3"
+    },
+    {
+      "name": "TP_GND"
+    },
+    {
+      "name": "TP_SWCLK"
+    },
+    {
+      "name": "TP_SWDIO"
+    },
+    {
+      "name": "TP_RUN"
+    },
+    {
+      "name": "TP_BOOT"
+    },
+    {
+      "name": "TP_BOOT_GND"
+    },
+    {
+      "name": "U_ENCODER",
+      "manufacturer_part_number": "AS5600-ASOM",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C79815"
+        ]
+      }
+    },
+    {
+      "name": "C_ENCODER",
+      "manufacturer_part_number": "CL05B104KO5NNNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "capacitance": 1e-07
+    },
+    {
+      "name": "C_ENCODER_BULK",
+      "manufacturer_part_number": "CL05A105KA5NQNC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C52923"
+        ]
+      },
+      "capacitance": 1e-06
+    },
+    {
+      "name": "R_PD_CFG",
+      "manufacturer_part_number": "0402WGF5602TCE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25796"
+        ]
+      },
+      "resistance": 56000
+    }
+  ],
+  "DNP_components": [
+    "U_ENCODER",
+    "C_ENCODER",
+    "C_ENCODER_BULK"
+  ],
+  "parity_of_NEMA11_full_controller_verified": false,
+  "reference_modified": false
+}

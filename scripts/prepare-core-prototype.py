@@ -26,8 +26,17 @@ for record in base:
 combined = board + schematic[len(base):]
 OUT.mkdir(parents=True,exist_ok=True)
 path = OUT/'index.circuit.json'
-path.write_text(json.dumps(combined,separators=(',',':'))+'\n')
-package = {'name':'NEMA11_RP2040_MCU_Prototype','version':'0.1.0',
+serialized = (json.dumps(combined,separators=(',',':'))+'\n').encode()
+published_receipt = ROOT/'artifacts/publication/mcu-prototype-0.1.0.json'
+if published_receipt.exists():
+    published = json.loads(published_receipt.read_text())
+    uploaded = next(e for e in published['verified_files'] if e['path'] == 'index.circuit.json')
+    if published['registry_published'] and hashlib.sha256(serialized).hexdigest() == uploaded['sha256']:
+        assert path.read_bytes() == serialized
+        print('Verified published MCU snapshot is unchanged; package metadata preserved.')
+        raise SystemExit(0)
+path.write_bytes(serialized)
+package = {'name':'@tsci/AnasSarkiz.NEMA11_RP2040_MCU_Prototype','version':'0.1.0',
            'description':'Native tscircuit RP2040 subsystem PCB prototype; incomplete NEMA11 controller, NOT fabrication ready',
            'main':'index.circuit.json','type':'module','private':False,
            'repository':{'type':'git','url':'https://github.com/AnasSarkiz/NEMA11_RP2040.git'}}
@@ -38,7 +47,7 @@ proof = {'package':package['name'],'version':package['version'], 'scope':'MCU su
          'circuit_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'routed_board_sha256':sha,
          'source_board_records_preserved':True,'schematic_sheets':3,
          'source_repository':'https://github.com/AnasSarkiz/NEMA11_RP2040',
-         'registry_published':False,'publication_blocker':'Cloud policy denies registry-api.tscircuit.com; no CLI authorization URL issued',
+         'registry_published':False,'publication_blocker':None,
          'manufacturing_release':False}
 revision = subprocess.check_output(['git','log','-n','1','--format=%H','--','artifacts/rp2040-pcb/board.circuit.json'],cwd=ROOT,text=True).strip()
 committed = subprocess.check_output(['git','show',revision+':artifacts/rp2040-pcb/board.circuit.json'],cwd=ROOT)

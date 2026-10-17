@@ -27,9 +27,10 @@ class CurrentBudgetTests(unittest.TestCase):
         self.assertGreater(internal, external * 4)
         self.assertGreater(ipc2221_width_mm(1.0, 35, 30), external)
 
-    def test_unknown_thermal_values_are_not_invented(self):
+    def test_known_winding_loss_and_unknown_junction_temperature(self):
         result = report()
-        self.assertIsNone(result['thermal_screen']['motor_copper_loss_w'])
+        self.assertAlmostEqual(result['thermal_screen']['motor_copper_loss_w'], 5.02768)
+        self.assertAlmostEqual(result['thermal_screen']['motor_two_phase_DC_loss_at_25c_max_resistance_w'], 5.530448)
         self.assertIsNone(result['thermal_screen']['junction_temperature_c'])
         self.assertFalse(result['manufacturing_release'])
         self.assertGreater(result['thermal_screen']['conduction_loss_multiplier_vs_v1_12_at_same_rds'], 3.5)

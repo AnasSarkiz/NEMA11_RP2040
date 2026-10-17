@@ -8,9 +8,10 @@
   "schematic_sheets": 3,
   "source_repository": "https://github.com/AnasSarkiz/NEMA11_RP2040",
   "registry_published": false,
-  "publication_blocker": "Cloud policy denies registry-api.tscircuit.com; no CLI authorization URL issued",
+  "publication_blocker": null,
   "manufacturing_release": false,
   "source_milestone_commit": "478de92cdcd5b145257115b24d01b072410f9763",
   "native_CLI_record_roundtrip_equal": true,
-  "unique_native_record_ids": true
+  "unique_native_record_ids": true,
+  "registry_authentication_verified": true
 }

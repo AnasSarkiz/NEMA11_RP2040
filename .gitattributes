@@ -5,3 +5,5 @@ imports/supplier/**/*.obj binary
 imports/supplier/**/*.tsx.original -diff
 *.pdf binary
 *.glb binary
+
+imports/motor/**/*.step binary

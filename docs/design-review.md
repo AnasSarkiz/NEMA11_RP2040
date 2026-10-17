@@ -1,3 +1,5 @@
+> Historical pre-access review. Read the [2026-10-17 source/access update](access-restored.md) for resolved download/authentication blockers and the exact v1.13.0 inventory.
+
 # Engineering review — requirements milestone
 
 ## Reference identity

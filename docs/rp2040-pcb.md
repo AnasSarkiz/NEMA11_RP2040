@@ -1,3 +1,5 @@
+> Current reference/access status: [2026-10-17 update](access-restored.md). The routed artifact below remains the MCU-only milestone.
+
 # Native tscircuit MCU PCB development milestone
 
 This is the routed **MCU subsystem**, not the complete NEMA11 controller or a
@@ -123,9 +125,9 @@ A [separate native subsystem prototype package](../prototypes/rp2040-core/)
 combines the exact routed board and all three native schematic sheets. Its
 `index.circuit.json` is independently built by the native CLI and compared
 record-for-record. TSX source, original supplier imports and all reproducible
-checks remain in this GitHub repository. This package is **prepared, not
-registry-published**: cloud policy still denies the registry authentication and
-upload endpoints, so no CLI authorization or registry release URL exists.
+checks remain in this GitHub repository. The separate MCU package is now [registry-published at v0.1.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_MCU_Prototype).
+[Independent upload verification and newly retrieved original references](access-restored.md)
+replace the earlier network blocker. The full controller is still incomplete.
 
 Use `npm run pcb:cam-review`, `npm run pcb:shorts` and `npm run pcb:prototype`
 for these checks. The CAM parser dependencies are frozen separately in

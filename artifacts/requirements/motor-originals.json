@@ -1,0 +1,28 @@
+{
+  "bounds_mm": [
+    -14.100000100000003,
+    -34.100000000000016,
+    -19.99999999998181,
+    14.100000100000008,
+    14.100000100000004,
+    31.500000100000012
+  ],
+  "size_mm": [
+    28.200000200000012,
+    48.20000010000002,
+    51.50000009998182
+  ],
+  "valid": true,
+  "solids": 5,
+  "part": "11HS12-0674S",
+  "STEP_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "drawing_sha256": "5d63ad723e27c5db55ea3a042a06f0c6444b7560028b08bbde09103389644205",
+  "drawing_url": "https://files.omc-stepperonline.com/11HS12-0674S_Full_Datasheet.pdf",
+  "STEP_url": "https://files.omc-stepperonline.com/11HS12-0674S.STEP",
+  "drawing_number": "A0071",
+  "drawing_title_revision": "2",
+  "drawing_date": "2026-06-18",
+  "model_is_nominal_not_tolerance_envelope": true,
+  "rear_mounting_inferred": false,
+  "rear_shaft_inferred": false
+}

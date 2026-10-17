@@ -1,8 +1,8 @@
 # NEMA11 RP2040 MCU subsystem prototype
 
 **Native tscircuit subsystem prototype. Not a complete motor controller and not
-fabrication ready. This package is prepared locally; it has not been published
-to the tscircuit registry.**
+fabrication ready. This package describes the checked MCU-only development milestone.
+See the GitHub publication receipt for the verified registry version and file hashes.**
 
 `index.circuit.json` combines the checked routed MCU PCB, genuine supplier CAD
 and three connected functional schematic sheets. It preserves the original
@@ -34,6 +34,7 @@ manufacturing BOM/CPL and production qualification remain outstanding. The
 35 mm development outline has no motor mounting holes. Crowded silkscreen,
 thermal-via fill/cap/stencil and nominal 0.075 mm via annulus still need review.
 
-The current cloud policy blocks tscircuit registry authentication/publication
-and new JLCPCB imports. No authorization URL was issued by the CLI, no stock
-availability is asserted, and no registry release URL exists for this package.
+Registry access and native CLI authentication were verified on 2026-10-17.
+The full motor controller remains incomplete, and no manufacturing release is
+claimed by publishing this separate subsystem prototype. Supplier stock and
+manufacturer tolerance qualification remain outstanding.

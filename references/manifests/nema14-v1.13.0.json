@@ -1,0 +1,3103 @@
+{
+  "package": "AnasSarkiz/NEMA14_RP2040",
+  "version": "1.13.0",
+  "package_release_id": "b28fdf86-c142-4a22-b03c-3719461c092c",
+  "files": [
+    {
+      "path": "README.md",
+      "package_file_id": "252d6db5-7cd5-4415-9ad3-e24639793acd",
+      "bytes": 3703,
+      "sha256": "6f5f7ff62f2da0c557a368769de611a8173122778ad08d56378efe8c7e32ac87"
+    },
+    {
+      "path": "artifacts/board.circuit.json",
+      "package_file_id": "0bba959d-7050-4f26-a0e8-0fcb47da17f9",
+      "bytes": 12016438,
+      "sha256": "16a605a565a272ce12a5194f28e1d9d8359c183d6110d117a4771d2b8ec91d2d"
+    },
+    {
+      "path": "artifacts/bom.csv",
+      "package_file_id": "a259cd2d-c7fe-4c81-8f74-9f481b824c3e",
+      "bytes": 5046,
+      "sha256": "c476214d55cf1985bba0fff58288ba923bdfb02b1f722fbd52fe1b067018500d"
+    },
+    {
+      "path": "artifacts/ch224a-migration/electrical-and-preservation.json",
+      "package_file_id": "31513ccd-775f-46b4-8fda-968eaa8a6aec",
+      "bytes": 1134,
+      "sha256": "cb00f910144032e7e972da466b3c7213510a0dab43af948d0f03ad3649c30573"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/assembly-build.log",
+      "package_file_id": "7601a59f-4153-4392-87ea-3c03745d806e",
+      "bytes": 1569,
+      "sha256": "c94b7644671e13f4968db39cb4db73ac9ecad3e7f475af9b467b5c9eab7afcf6"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/assembly-check.log",
+      "package_file_id": "0488da6a-36d1-4215-8966-8756c22733a5",
+      "bytes": 4379,
+      "sha256": "dc7d01883461e35da00d77aac7610196968aeb6c60063eea962b8b74b21c3126"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/assembly-export.log",
+      "package_file_id": "e12566c9-fa21-4c1d-b165-491ea69a6105",
+      "bytes": 1487,
+      "sha256": "66da3b67d6cd84936f0fbc5bb812b2b2d514b4c2e324f7514b82122c1df0ba38"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/build.log",
+      "package_file_id": "507af37a-7d57-47b8-9ce5-690047ec6297",
+      "bytes": 783,
+      "sha256": "0627d283507c9c7941550ad78859dcc6a98ee0f3d5e2ed009b46bbff1224041c"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/export.log",
+      "package_file_id": "8644d106-3b46-4048-be9d-f3beca6cd019",
+      "bytes": 10249,
+      "sha256": "a538d71948ae810da5d833087ade83adf5dfc9b4e5622a923cd3731cfb74bcf5"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/mounts.log",
+      "package_file_id": "625caf12-ea18-45cc-9e8d-c5e3f59c30ac",
+      "bytes": 11759,
+      "sha256": "85c36f7ad89f21baeef9c72029407d6141e35bbea3a0324c686d69a4b946ae82"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/native-build.log",
+      "package_file_id": "2eb303e4-0dbf-47c1-ab7f-39fd539723a7",
+      "bytes": 500,
+      "sha256": "9f958403753bfd177666e78ab6ceb361944dcbe4708285a7a63a2b70d08a026c"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/order-cam.log",
+      "package_file_id": "e4b3560f-65dc-45e9-8807-2ce2a6f2d25e",
+      "bytes": 237,
+      "sha256": "a49044fe185dd99997c51617b61e064ea882fb56b22efd6b4fd3637d7934f75b"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/order-review.log",
+      "package_file_id": "7a6eaea6-de27-4da2-ab1d-e405f5fc2ce3",
+      "bytes": 2631,
+      "sha256": "c94365f0a137873804516360709c82a0983b4f8939e072162fb95f71a05c5f3e"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/package.log",
+      "package_file_id": "ad6fde66-edab-47c7-a517-1e99f659f8f2",
+      "bytes": 81,
+      "sha256": "af34d4deadbfa40dd1fe24673c968c07c37fcf187bdcac7aa526f7ef5ea589da"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/readiness.log",
+      "package_file_id": "6b7130dc-1e55-4c14-8cc8-66d01b24ea52",
+      "bytes": 244,
+      "sha256": "66fc231389358fea6e7fb5622bd428dd53413cd997c758d165802367815d49fe"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-logs/source.log",
+      "package_file_id": "a982a9c7-9517-48be-a81f-5eda60115b69",
+      "bytes": 186,
+      "sha256": "08db478cd3023a69ecc281b55f744e6a8cdec26367250eeec9c3ee9fe50a2274"
+    },
+    {
+      "path": "artifacts/ch224a-migration/final-review.json",
+      "package_file_id": "512949b9-4358-410e-81d7-41d7a985356c",
+      "bytes": 2008,
+      "sha256": "e77aedd3ef213fc134d96da9d032b8482ef8b88b1b96bb9087fea8b384723c21"
+    },
+    {
+      "path": "artifacts/ch224a-migration/ground-clearance.json",
+      "package_file_id": "96163a63-5f5f-4ae5-b66b-948270db4c38",
+      "bytes": 746,
+      "sha256": "af1f03e7c472324808db15616ef3dc1712c9e68ac750746a47090e2a1cc95f59"
+    },
+    {
+      "path": "artifacts/ch224a-migration/pcb-diff.json",
+      "package_file_id": "12ff9c24-5e29-4b22-b759-0222bc322c93",
+      "bytes": 2123,
+      "sha256": "5399a404e108ffea3af206475a4f4710ef6270d51d3cb1b41ac66d6dc7cb1533"
+    },
+    {
+      "path": "artifacts/ch224a-migration/public-model-assets.json",
+      "package_file_id": "bc57fe2b-652d-4a17-8f9e-93c4a211f296",
+      "bytes": 35076,
+      "sha256": "32981d24b8efb90090943e234102cd6cdbee10eaba79b48c2c52e842936881b3"
+    },
+    {
+      "path": "artifacts/ch224a-migration/transfer.json",
+      "package_file_id": "0a24eb78-1604-4ec7-a9ae-fd44e8933f0b",
+      "bytes": 1410,
+      "sha256": "aee048bbde521bfd0b0f3978b3009d76eedd964744a9ad55f0ee985d45fa0378"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation-before-edge-adjustment.json",
+      "package_file_id": "8fc5a7cc-dd1a-4a63-8795-88fb84e51608",
+      "bytes": 4593,
+      "sha256": "49a9ec1990024d6bf50a3a0a506ecdf60918e14eb375308fb320d598d9e628bc"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/a4-pdf.log",
+      "package_file_id": "174290a0-045a-463a-96ca-2634131597dc",
+      "bytes": 52,
+      "sha256": "80240224eb2cd91336510d1f0df189c6823f3a55456e80c41ae17ceaeabfa498"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/build-and-native-drc.log",
+      "package_file_id": "f1b35f02-60fc-40ae-8782-19588c5ed816",
+      "bytes": 783,
+      "sha256": "0627d283507c9c7941550ad78859dcc6a98ee0f3d5e2ed009b46bbff1224041c"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/circuit-json-schema.log",
+      "package_file_id": "becb4d4d-66e9-452c-abb3-b67e38fda09a",
+      "bytes": 132,
+      "sha256": "ddb31b70e5000296931895b62f847a997302e16a0637b747bfb9d3a04e029e56"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/circular-keepout-regression.log",
+      "package_file_id": "65e35804-7e7e-4d99-9d14-58086ef37b7e",
+      "bytes": 293,
+      "sha256": "9272a344461be3e3ea0fdb9b9ed02213eef4b79065a58f578af78bcb7eb70665"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/gerber-shorts.log",
+      "package_file_id": "dc8e5d21-3b04-4422-bf54-725b216ef064",
+      "bytes": 203,
+      "sha256": "adc9a89444c9f2f136a61176b00fd5a0b1ead63e5bb23e3ba5e6a0cb579c05ab"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/gerbers-bom-and-cpl.log",
+      "package_file_id": "5262a9d4-27aa-468c-8def-28d38c57a3e4",
+      "bytes": 10249,
+      "sha256": "c577cf0b3e6ec9c6603f788458daefdcc960bfe1879278f4a6de7f67f9e08ac5"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/manufacturing-cam.log",
+      "package_file_id": "85fbee83-412b-45d8-9ab8-7f739ef175bd",
+      "bytes": 356,
+      "sha256": "f572612c450c0fda5c7210140a9a8e175a1214b7e65c6bca30df63d87342360e"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/migration-pin-map-and-preservation.log",
+      "package_file_id": "e2f89c07-a4e7-4bcd-b22d-3cdb50c4a37c",
+      "bytes": 191,
+      "sha256": "70b5ed74b9e08b74613c21f1c3dcd9ff0475e75d0848c2e118fc853b7cf5f88e"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/mounting-holes-and-clearance.log",
+      "package_file_id": "0f39078f-5846-4b1a-9541-80f738380601",
+      "bytes": 11758,
+      "sha256": "ce39a92b36388e5d5493786be58546a6c3a6e55d944dde2a35d2f57312d2b10d"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/physical-connectivity.log",
+      "package_file_id": "6e073c69-f031-47c8-8ec1-c9588ae78c12",
+      "bytes": 204,
+      "sha256": "9e0d86cc0f96bf84317df11028486ce33759b8245af847fb601a95b7ff19ad70"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/schematic-placement-and-connectivity.log",
+      "package_file_id": "8b3684d6-2fe5-43da-910e-c6ceaf0f5b18",
+      "bytes": 1247,
+      "sha256": "eb3e3659ce7d5c3fa384dd75d12a8f853952f29bd78903136f92d346dbd08f7b"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/source-generation.log",
+      "package_file_id": "50aea01a-de87-4663-a7ff-49fefd4d928b",
+      "bytes": 186,
+      "sha256": "08db478cd3023a69ecc281b55f744e6a8cdec26367250eeec9c3ee9fe50a2274"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/trace-widths.log",
+      "package_file_id": "bb85a702-f17e-43de-bac3-9bf9bc76b61f",
+      "bytes": 212,
+      "sha256": "63e829548d1198ba6bcaebd7c53d0506e440337c7477f9bb6cddffd6c57767b8"
+    },
+    {
+      "path": "artifacts/ch224a-migration/validation/typescript.log",
+      "package_file_id": "e5b937ed-2194-4650-9dbe-cf634a3acc53",
+      "bytes": 50,
+      "sha256": "247e1ee08a8b1d1a0fd806356b6ca566acf3a3f0b65f2e84da54952ab3850cf3"
+    },
+    {
+      "path": "artifacts/ch224a-migration/vbus-rating-review.json",
+      "package_file_id": "88a29c9d-696a-4de0-a3be-b1cd18e7adcc",
+      "bytes": 1282,
+      "sha256": "c56d46ada2224ab0608707bfd20d3ad1a43d30d65d3d09c1437d42283e9de4be"
+    },
+    {
+      "path": "artifacts/ch224a-migration/vhv-via-adjustment.json",
+      "package_file_id": "a0758b6a-1a70-4bc1-a868-b9e65f83d8dc",
+      "bytes": 328,
+      "sha256": "b8376ce05a86fc6e2478e8ee71664092ea699ded9d6fb9912630f245ed25074c"
+    },
+    {
+      "path": "artifacts/check-output.txt",
+      "package_file_id": "6e7af4ab-d7a2-4b8c-a70a-365694823c8a",
+      "bytes": 248,
+      "sha256": "ef6f859bcb08de5dd46f0f006c3853fc79fe97b27b53cfe0bfb948126110118c"
+    },
+    {
+      "path": "artifacts/drc-report.json",
+      "package_file_id": "a16f3af6-ec10-4483-8df1-021637b05107",
+      "bytes": 602,
+      "sha256": "38868932aceaebf2bac03889d687882506d43d302032185b78edd7175fd15b25"
+    },
+    {
+      "path": "artifacts/edge-resistors/baseline.json",
+      "package_file_id": "eda6b518-adee-4c50-a702-82bec8af1009",
+      "bytes": 221,
+      "sha256": "460c41738d3d0f1173dced8c7df38a19f48171bb5f1fccec7b9853ccfe9d0903"
+    },
+    {
+      "path": "artifacts/edge-resistors/clearance-verification.csv",
+      "package_file_id": "e0a6b0e9-af21-4af1-8ddd-193cbc68db96",
+      "bytes": 1489,
+      "sha256": "abdb4cf44a53bcf8f34fb8e987ce5a3dc5880ba3dbdb66d44d7c6cc9cfa08aed"
+    },
+    {
+      "path": "artifacts/edge-resistors/clearance-verification.json",
+      "package_file_id": "61c1b639-58aa-4c96-90be-1b0deff010e5",
+      "bytes": 36702,
+      "sha256": "91f0a05bf63b666046cf0463db6b419db6165220064507d22f355b1e3613be6e"
+    },
+    {
+      "path": "artifacts/edge-resistors/placement-plan.json",
+      "package_file_id": "9d9ce507-7a4a-4c1d-8c79-c3a85d4c7afd",
+      "bytes": 9255,
+      "sha256": "800d59336cde0c86adfa4defb7b6c1ba7189fe5ace2ca63a3f9bc3011618b0b7"
+    },
+    {
+      "path": "artifacts/edge-resistors/translation-and-ripup.json",
+      "package_file_id": "162bee98-0aa9-4fb8-9514-6e820466b717",
+      "bytes": 4534,
+      "sha256": "cc67cacec39f9466ca55fc1a55894b1143cb56744eb332ec0a765ee3e2e47890"
+    },
+    {
+      "path": "artifacts/engineering-fixes/export-policy.json",
+      "package_file_id": "2ace5158-cea6-4d61-bb43-f1cd74161fd8",
+      "bytes": 431,
+      "sha256": "01694c78d4c1cc95916d1e06cedc62b744dd939cc443a32f7a06b2b562979e20"
+    },
+    {
+      "path": "artifacts/engineering-fixes/final-engineering-verification.json",
+      "package_file_id": "c552118a-a785-44c2-8577-a28194b97d2e",
+      "bytes": 15588,
+      "sha256": "898976ea57ea482b9859123db4bbf4c23db29918f7b26d1437eb38de8e309e54"
+    },
+    {
+      "path": "artifacts/engineering-fixes/schema-verification.json",
+      "package_file_id": "54417988-e2df-4497-bc0b-7613feb060da",
+      "bytes": 284,
+      "sha256": "6d5a9eb94d874cc92b9d7e656700e9f33f2da3403ebd777048b03f7161dddd0e"
+    },
+    {
+      "path": "artifacts/engineering-fixes/usb-routing-plan.json",
+      "package_file_id": "18461ff4-f0fe-4b97-a9cf-7965b6f30d98",
+      "bytes": 54470,
+      "sha256": "56052e3cc0ccbaa2fad531955acdf13ed6fe7a7e9810b5d584a963d2d8a79482"
+    },
+    {
+      "path": "artifacts/engineering-fixes/usb-verification.json",
+      "package_file_id": "7ed9d225-7633-48b1-b7f7-3d6195162077",
+      "bytes": 4920,
+      "sha256": "42366c2259cc1336c0c15a3ab795433f82c8b71bb567a0bb9e15d4449da0ae7f"
+    },
+    {
+      "path": "artifacts/jlcpcb-import-report.json",
+      "package_file_id": "327d3688-6110-4793-82f5-cd92a15db08b",
+      "bytes": 3022,
+      "sha256": "9f9bd6e70eceb1b2990633404d96d84917682dd6ddc211a31c405f1bff367eda"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/CAM-audit.json",
+      "package_file_id": "0e6de2e8-88fb-4fb6-9e51-97cc4970ea3d",
+      "bytes": 38055,
+      "sha256": "5e799bc71d038d8e56ea29a154ae30c304d6f74a45721e94a9106d87af647128"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/JLCPCB-BOM.csv",
+      "package_file_id": "c34175ec-ef2d-4aa4-b9a6-452132ef0f9d",
+      "bytes": 2076,
+      "sha256": "92b30d0bf88f95fed9be3f3fe4a97ccfbb21c6e2c67c435c0c67151e1940423d"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/JLCPCB-CPL.csv",
+      "package_file_id": "23e35dee-4999-489b-92db-2f1184767a5a",
+      "bytes": 2915,
+      "sha256": "7dc12c850c20adaec14c437dd708be3ff31b5dc4779c37186c7e8807c0ece192"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/JLCPCB-Gerbers.zip",
+      "package_file_id": "748dfcec-5c0a-4deb-9834-7909a7546609",
+      "bytes": 950124,
+      "sha256": "3b3894a997e251c3e50c207e56e1be8418555d7feb5678ba6d8d832b9d5bb368"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/JLCPCB-OrderReview.zip",
+      "package_file_id": "2f177418-96c4-4a43-9f6c-2b495784f310",
+      "bytes": 1845313,
+      "sha256": "6efe6c107b693809c305dcfa7e5f206598ebff4905a2e717082062e833f43f1f"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/Manual-THT-BOM.csv",
+      "package_file_id": "3a9dd3cd-a2c9-4a47-a2bb-436b16dae6ba",
+      "bytes": 75,
+      "sha256": "c19ba2d028e6978f3998954460e5b27dd0b632a1a00236200eb22f3587a957b8"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/REVIEW-INSTRUCTIONS.md",
+      "package_file_id": "cb2f756c-04ff-42ea-ae05-4deeaf9621a6",
+      "bytes": 6342,
+      "sha256": "af7b158be83f4ff7c7ad3bc6eae0a12042b35bc2089551330e66a5ea7609e087"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/Thermal-Via-Process.csv",
+      "package_file_id": "68c0f4bb-bf96-46e3-93b1-ff0800168b6c",
+      "bytes": 472,
+      "sha256": "1430f6cdde6cebf4db3c0497f4a950749a4d94403596409cf0b27d9fc4c2eb9c"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/Through-Hole-Joint-Plan.csv",
+      "package_file_id": "f24069bd-0f98-42e5-9471-f1e1d4bda8f6",
+      "bytes": 1537,
+      "sha256": "fd7ca02bd1943ef96aa60dccc1046a722f25c3f6a2003f684de8a8def22732ca"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/bottom-assembly-map.svg",
+      "package_file_id": "d4d541e3-35b5-47f3-8b00-a21299839cdf",
+      "bytes": 138396,
+      "sha256": "f4b24cf816226544c0bdd8eeb137c3a5fbf2c6cb3a0ec888770ff043bbfbda4b"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/bottom-order-preview.png",
+      "package_file_id": "da7d80af-ea1d-4a44-a3c7-8263f7ad40b3",
+      "bytes": 38134,
+      "sha256": "859b4dc9a341a02dc3eabcfcc7baeba1456557a0342a1668f522ecaa237bad9b"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/bottom-order-preview.svg",
+      "package_file_id": "c3f6cebe-e132-4f7a-a93d-c68f2e631c40",
+      "bytes": 137751,
+      "sha256": "30010eceef50590e981b470e8194bf3012c038103aaa00b1809b21dda3fa757c"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/bottom-stencil-preview.png",
+      "package_file_id": "7ab9ccd6-3b9e-464f-aeca-9e7ea4ee36af",
+      "bytes": 5231,
+      "sha256": "6fbaa84564b9a9ead5451ef83aa461bb96e1ba364e611f6fb27327680b5cd7ed"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/bottom-stencil-preview.svg",
+      "package_file_id": "56c4e380-fd6d-4e2a-8f02-44da7d558fde",
+      "bytes": 156,
+      "sha256": "45fe9a5e6c2a5cf63f1c8e1312795de217af36874d904ea859eb1d6f23651e15"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/ch224a-migration.md",
+      "package_file_id": "7024ce13-8ea1-499a-9102-865c354437ed",
+      "bytes": 7097,
+      "sha256": "814c28cfcefe9a432cc27c6606423e05b8de1b73f261c4cc7dab3f77496fd359"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/manifest.json",
+      "package_file_id": "330a799c-e1de-4258-813f-eb8d05d870f4",
+      "bytes": 13286,
+      "sha256": "b5c810028668c9193da766afb4b26b0bfb9c18707bbb629ef7e5a199e43a882d"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/native-json-compatibility.json",
+      "package_file_id": "a1c92187-e60c-4159-ba4e-ad21693b953b",
+      "bytes": 573,
+      "sha256": "d95eeee0059ad1aaf737e8317837d509750b80c79406fe7b4452cbd45a2e936c"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/order-paste-schema-verification.json",
+      "package_file_id": "35f0ce40-b5c6-4f9d-a6dd-d7310b36892d",
+      "bytes": 211,
+      "sha256": "27a8ba33d64c6525ffdd7d6265fa3e52ad6db0cbdd0c7ef7b52f1f0faa6a03d6"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/order-review-verification.json",
+      "package_file_id": "390fa669-3494-408e-ad5d-a1681e5a0461",
+      "bytes": 2414,
+      "sha256": "c4971471792c4998a6501115b95d0fca33d2fb2782ae1bd79356c01a7b7d73d0"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/placement-orientation-review.json",
+      "package_file_id": "6c7fdf78-9b60-4c5c-953b-aef201182143",
+      "bytes": 78205,
+      "sha256": "f25ea2284b3b74c75b8f2a0833894bb55810d12babb0615f4b1218d4f68414a4"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/review-cam.zip",
+      "package_file_id": "1c18c87d-94e0-43c4-b6e7-5bbd5435c879",
+      "bytes": 956577,
+      "sha256": "3936aec876438e4a872404e7f6dbfa0ca877ff45e1bfe1503c46675563b88fe3"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/schematic-a4.pdf",
+      "package_file_id": "3ff10613-6f7f-4a3b-b2a2-38216e02dafd",
+      "bytes": 229720,
+      "sha256": "51c5a9b986eb6d8116ec7d5074ac1237634181753d4c6ece1c7e3438770b221a"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/top-assembly-map.svg",
+      "package_file_id": "bc47441a-be38-44bb-8291-c1a88840271c",
+      "bytes": 664603,
+      "sha256": "f31d71325271e4da741dd0bc1ac018f6bef11dcd1485e74c7b73b1810bd6c254"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/top-order-preview.png",
+      "package_file_id": "c83c2e49-6ef2-4f60-875e-26e342843bc8",
+      "bytes": 115290,
+      "sha256": "c6dc91efa068fe077f78a2c9f105e65c98cdaf69bfab460cc80e9d30384af605"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/top-order-preview.svg",
+      "package_file_id": "f54da26d-9e11-4094-94b7-bb921048a513",
+      "bytes": 636462,
+      "sha256": "a02295a59dd9237d40ce26cc56e1255d741f2ec7c48856e0fd7318259f3146ea"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/top-stencil-preview.png",
+      "package_file_id": "11d59a63-abf0-4521-a26f-3a0705fe8977",
+      "bytes": 27140,
+      "sha256": "63b62af45ffd5ac630eb4e62e6d89236198db92c641aa75c1146f38ba93763c5"
+    },
+    {
+      "path": "artifacts/jlcpcb-review/top-stencil-preview.svg",
+      "package_file_id": "6689960d-43fa-4a0b-bad7-84a4abeb9afb",
+      "bytes": 193415,
+      "sha256": "8ff9b5ce9a56b581e783c56c28a06e3f5735fc89334467837ea207ce17919378"
+    },
+    {
+      "path": "artifacts/jst-restoration/R_SA-fanout-spacing.json",
+      "package_file_id": "f3fd6719-0e84-4c10-b2a5-e36d3657c39d",
+      "bytes": 252,
+      "sha256": "0eb30c01db1b7bcf58ef4e7644acf4b79da720ab172aca195a8cf3f566cba415"
+    },
+    {
+      "path": "artifacts/jst-restoration/baseline.json",
+      "package_file_id": "31063563-a672-409e-bb9b-24fee04258c1",
+      "bytes": 313,
+      "sha256": "25406c27209a1ccca24fe656863ce575cc943f8abee3604a940d4b57db40f192"
+    },
+    {
+      "path": "artifacts/jst-restoration/connector-verification.json",
+      "package_file_id": "cbe5be23-29fc-44ad-8eec-8dadf4cff5a3",
+      "bytes": 5334,
+      "sha256": "dce85df4360e70aee3ee7e69366cdf42ff8f30de89cbd1794a7a2efb482697e7"
+    },
+    {
+      "path": "artifacts/jst-restoration/initial-source-mount-usb-screen.json",
+      "package_file_id": "9403097e-d1e3-4cf8-9b67-9670a1f9b6df",
+      "bytes": 4688,
+      "sha256": "5d452f22a1bb5e65710107b76ef41341b29158ff5eb16fa9d8e325ebb66fe582"
+    },
+    {
+      "path": "artifacts/jst-restoration/local-ripup.json",
+      "package_file_id": "4e23ff1d-cf22-4f21-94ef-e7dada51ad8f",
+      "bytes": 2581,
+      "sha256": "83467b224d2c5945b036767696942e769ba117e36c023d0becc8ce90ef5820e0"
+    },
+    {
+      "path": "artifacts/jst-restoration/rebuilt-b-minus-escape.json",
+      "package_file_id": "36fa8ad4-665f-43cb-8592-0cdcd442cd68",
+      "bytes": 238,
+      "sha256": "7ebeb17124571000883e0bad3da7fcddc70420728671d9e99e2d15ffd83cd039"
+    },
+    {
+      "path": "artifacts/jst-restoration/rebuilt-enable-escape.json",
+      "package_file_id": "567f1f9a-c9cc-459b-bc15-e7bb12fca152",
+      "bytes": 173,
+      "sha256": "a66872da4eb8be0573ec1ced2bf9db0976004940d3e7c896144fab56e2a9ab33"
+    },
+    {
+      "path": "artifacts/jst-restoration/rebuilt-sense1-fanout.json",
+      "package_file_id": "adfce1f0-43ac-45e7-af43-03b095873169",
+      "bytes": 469,
+      "sha256": "001187766bc0e25ce526f174a6fb62372f7e8ccc9c25aea1780eb91c9fc2c02f"
+    },
+    {
+      "path": "artifacts/jst-restoration/removed-primary-PD-feeder.json",
+      "package_file_id": "b894d7b5-0dd7-48e0-bd30-330a1199de22",
+      "bytes": 744,
+      "sha256": "45cf81453eac0b484f80ec12d087028fcd348b242f00d2202cf55d45b1fd8561"
+    },
+    {
+      "path": "artifacts/jst-restoration/restored-baseline-control-fanout.json",
+      "package_file_id": "da17bf49-76ed-4c75-998e-8daa873db894",
+      "bytes": 2176,
+      "sha256": "c5ef05f0dfcd0519a32505d279ae802dd4d19e2bafda28851f0a5580f5bfb1ef"
+    },
+    {
+      "path": "artifacts/jst-restoration/sense2-straight-fanout.json",
+      "package_file_id": "8d1cb3ab-50e7-4acc-9939-352b4a0a0dd4",
+      "bytes": 160,
+      "sha256": "a6d7538f6b46f606559f5ac84198285c134701a0077937b5ae8651ec96128315"
+    },
+    {
+      "path": "artifacts/jst-restoration/unique-route-identities.json",
+      "package_file_id": "ee88145f-7e92-452d-81a8-3df63248edcd",
+      "bytes": 309,
+      "sha256": "97a4820c5e8cee649034fa717c692f4fea80132180b02527f540bdedf9dee93e"
+    },
+    {
+      "path": "artifacts/manufacturing/audit.json",
+      "package_file_id": "5b04ffbc-7bf6-4f2b-90f1-84490c82ebdf",
+      "bytes": 38041,
+      "sha256": "d2de89fccf14c822cf476cf63dd5714c084783b5c90d5accf213879d7e21c7c3"
+    },
+    {
+      "path": "artifacts/mechanical/mount-usb-screen.json",
+      "package_file_id": "2448c2e2-2fb9-4034-b1df-9076a423473f",
+      "bytes": 8409,
+      "sha256": "f3bb10563d32eadc164d164edf8b2cf8891da3a671594428f28d37c7cf2bacd7"
+    },
+    {
+      "path": "artifacts/mechanical/opposite-edge-fit.png",
+      "package_file_id": "1113b688-d4a3-4dd6-b514-afca32ebfb06",
+      "bytes": 192638,
+      "sha256": "e7e4e1c17df98e8096c7ed52ac347142112ee447f2d68e55c9916bd1dee4bb7f"
+    },
+    {
+      "path": "artifacts/mechanical/opposite-edge-fit.svg",
+      "package_file_id": "10b88147-c891-49d7-9a1d-48597e8432d3",
+      "bytes": 3942,
+      "sha256": "0477e98629382bc96d1d884969abd4901af0e8149b87ba60def385c5df1f4c2a"
+    },
+    {
+      "path": "artifacts/mount-drill-verification.json",
+      "package_file_id": "7a169d72-9273-49b6-8eee-f23c84ba16b1",
+      "bytes": 1811,
+      "sha256": "997a622f00f0070bafc9f1e6693a8137d3ee99e735f1b6f5ec312d1466c6fca2"
+    },
+    {
+      "path": "artifacts/mounting-change-proof.json",
+      "package_file_id": "7ea74618-a4b3-4d3a-b1e8-1898d87fe0f9",
+      "bytes": 6093,
+      "sha256": "dda0f6aa3a371a9e370fb82c0c0a68cf873d3aa0f94aa750216182dfa0b1a3ab"
+    },
+    {
+      "path": "artifacts/native-check.txt",
+      "package_file_id": "a7753bbf-6bb6-4508-b9bf-63fa8997f27a",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "artifacts/nema14-gerbers.zip",
+      "package_file_id": "9c300a30-fe0e-40f1-a1ed-133c12989aa6",
+      "bytes": 956577,
+      "sha256": "3936aec876438e4a872404e7f6dbfa0ca877ff45e1bfe1503c46675563b88fe3"
+    },
+    {
+      "path": "artifacts/opposite-edge/ADC-native-pad-contact.json",
+      "package_file_id": "db16a509-8cd9-4ccc-bc5c-da60e32fb3ab",
+      "bytes": 170,
+      "sha256": "9b497980c5fdb78d593778692e081e47a3b50632d665e95d6441df2e6abea3c4"
+    },
+    {
+      "path": "artifacts/opposite-edge/A_MINUS-overlong-inner1-replacement.json",
+      "package_file_id": "b776078c-8db9-4d3c-bd89-946454f14f79",
+      "bytes": 13846,
+      "sha256": "f9bac33e72594074f944c8e4e1d2c4830aa827117aaae7cc3a145b4c40d4acb2"
+    },
+    {
+      "path": "artifacts/opposite-edge/SLEEP-pulldown-orientation-plan.json",
+      "package_file_id": "1acfa6de-bc91-443e-85b0-46f152831464",
+      "bytes": 1791,
+      "sha256": "59e507adc29ac79827e5d9807a841e1df2a10b67e15b2406ae7d3ddd594b558d"
+    },
+    {
+      "path": "artifacts/opposite-edge/USB-ESD-core-terminal-repair.json",
+      "package_file_id": "1e0dfa6f-0a90-4c60-90ce-21415a9ff012",
+      "bytes": 336,
+      "sha256": "fa78d2b363751cc9c09236cc08e74d7257119d5cd61cfbc7efb6aae8ae978171"
+    },
+    {
+      "path": "artifacts/opposite-edge/actual-endpoint-contact-repairs.json",
+      "package_file_id": "87fe6b66-e01b-4547-866a-2a3a3f403a09",
+      "bytes": 1096,
+      "sha256": "e1e6880a3676552fc3772bbafd6af6d10be2065c7ea525ccfd2e8150313c9a9e"
+    },
+    {
+      "path": "artifacts/opposite-edge/buck-inductor-routing-window-plan.json",
+      "package_file_id": "13eb20d6-d01d-4a82-b1bd-03766191296a",
+      "bytes": 652,
+      "sha256": "7e84edcfff04266d06228e909e32e997b285816362efd0c1bb291c97d89ce613"
+    },
+    {
+      "path": "artifacts/opposite-edge/canonical-ground-return-overlay.json",
+      "package_file_id": "37ebf979-7daa-4753-931d-3a14d98e7173",
+      "bytes": 19231,
+      "sha256": "aef6e7491d1a383d5482d142bb6b616c5c3613686ab31faf674b00716086a6c8"
+    },
+    {
+      "path": "artifacts/opposite-edge/charge-pump-plan.json",
+      "package_file_id": "aae0ce64-b1ef-4c06-a471-c090511b035e",
+      "bytes": 1071,
+      "sha256": "8e111d3dcde84c79c1c086fb713f2a1f44168247bd42474d71ee2226604e182c"
+    },
+    {
+      "path": "artifacts/opposite-edge/complete-connectivity-candidate-promotion.json",
+      "package_file_id": "0f716a0a-c66f-441e-ab4c-28ce5bb4f7e8",
+      "bytes": 959,
+      "sha256": "bd281a4f57dc4e807c3700b27636a45c3885a1c687b2b43f3f53535aa3f5bafd"
+    },
+    {
+      "path": "artifacts/opposite-edge/core-supply-bridge-restoration.json",
+      "package_file_id": "7640838e-1cc9-4b29-bd1d-108127eb0903",
+      "bytes": 269,
+      "sha256": "01c8cae799fe339d33d5b51471ad257119b98aeda414a3b0b6d02f0219093f87"
+    },
+    {
+      "path": "artifacts/opposite-edge/current-draft-status.json",
+      "package_file_id": "d8ac6fd1-f583-4521-b26e-761a545c8d6d",
+      "bytes": 378,
+      "sha256": "c748304d322d2c500e117a6c6c2cac6d6eeb91e248c2a5e5845dfa987db261e6"
+    },
+    {
+      "path": "artifacts/opposite-edge/data-CC1-pulldown-placement-plan.json",
+      "package_file_id": "d5965912-a0e8-4dc3-a20b-300aa1b1f8a3",
+      "bytes": 462,
+      "sha256": "fccaf7b891321f930fc468bb876968eafab52e855d3e2f8d90a6c97d42143e2f"
+    },
+    {
+      "path": "artifacts/opposite-edge/driver-logic-ground-return.json",
+      "package_file_id": "d2069146-3702-4784-b8db-c8e22712cb9b",
+      "bytes": 225,
+      "sha256": "35cb4228b01c464eecb4a5e59da85e570995ca3def5e6d72577fbc2d0fe3a3e5"
+    },
+    {
+      "path": "artifacts/opposite-edge/dvdd23-escape.json",
+      "package_file_id": "248cd9b3-89e4-4baa-9705-4045085af313",
+      "bytes": 105,
+      "sha256": "70ac60a130f6f06f72c1dff58dc56ab844043bd535f1a2e1672f2a0b653581d7"
+    },
+    {
+      "path": "artifacts/opposite-edge/escape-requests-last.json",
+      "package_file_id": "72ab66f7-8c53-40ad-9d0a-6c4515ee1b86",
+      "bytes": 265,
+      "sha256": "822091c868778a032092a0c659b53c97779b9c1fd0378dcf8597beca0612cbae"
+    },
+    {
+      "path": "artifacts/opposite-edge/escape-requests-remaining.json",
+      "package_file_id": "4fdb27cb-945d-484a-bb97-412fe3343f44",
+      "bytes": 692,
+      "sha256": "a9fb26336d9d49bbd50345f5f65897813a7d05911b9e533260c8bb43ea545aa2"
+    },
+    {
+      "path": "artifacts/opposite-edge/escape-requests.json",
+      "package_file_id": "bf812fb5-d47b-43c6-b5ae-77ea48e04150",
+      "bytes": 9769,
+      "sha256": "4dc700d57576b97d598f4a1bead7df199d213dd21f31559805418fa96168f631"
+    },
+    {
+      "path": "artifacts/opposite-edge/failed-local-escapes.json",
+      "package_file_id": "adf56092-2a00-4ad4-bfbb-90b6fc22ef44",
+      "bytes": 432,
+      "sha256": "6d88087fea030db13fbedcba4d447f58f56235a75f1ef71cf5646f9b7c9e5340"
+    },
+    {
+      "path": "artifacts/opposite-edge/final-PWR-label-clearance.json",
+      "package_file_id": "57531a90-1f97-4272-b228-a4d01e9be72b",
+      "bytes": 1241,
+      "sha256": "c8a48e2864b1696ab5830a99b1c485057c6a9bb1f1fba41c5063e633a2b3b442"
+    },
+    {
+      "path": "artifacts/opposite-edge/final-USB-reference-and-CAM-repairs.json",
+      "package_file_id": "500fc6c4-54fa-4d5c-ab2f-e19af4eb1f1e",
+      "bytes": 1023,
+      "sha256": "f3b91d5c6cc3dc27288b7e5b8618de8ff5d57c9a4c7c2cdef222ee5345549be3"
+    },
+    {
+      "path": "artifacts/opposite-edge/flash-SD0-ground-access-replacement.json",
+      "package_file_id": "381f8145-c6fb-4903-a77b-f20f9ce9ddb5",
+      "bytes": 26616,
+      "sha256": "87ddcf0b57d127b70c5a523c0cceb4a93547df07e8e561c1239e533667cf3186"
+    },
+    {
+      "path": "artifacts/opposite-edge/flash-decoupling-placement-plan.json",
+      "package_file_id": "555c16ad-36d6-471a-beb5-8c40f298d3b9",
+      "bytes": 394,
+      "sha256": "a2af33e26a2414d33a7d80704747260cca4c0f0d80803c2781747d994ac1c09e"
+    },
+    {
+      "path": "artifacts/opposite-edge/flash-sd0-sd1-escapes.json",
+      "package_file_id": "41004256-5ee2-4543-a5cb-e31bfba5f65c",
+      "bytes": 917,
+      "sha256": "c2bb5317604c4582c8b0347b5407ee790aa651b728ffb96a906b79dacb346202"
+    },
+    {
+      "path": "artifacts/opposite-edge/flash-sd3-escape.json",
+      "package_file_id": "c0861f67-8adb-44f7-b30a-34df86d59d34",
+      "bytes": 197,
+      "sha256": "35d4ca884460c69beeb223122f822ef3d28781b809ee27daad1846de25e6aa21"
+    },
+    {
+      "path": "artifacts/opposite-edge/functional-and-crystal-preservation.json",
+      "package_file_id": "bc6a9f3e-61db-42d1-b2fa-132c7cc38dd9",
+      "bytes": 682,
+      "sha256": "1220d334938285a388642fc7b6b78c94942a254154b556bccd19277442fac088"
+    },
+    {
+      "path": "artifacts/opposite-edge/green-LED-resistor-placement-plan.json",
+      "package_file_id": "269e8db1-2921-411b-9522-d8ae745d19bb",
+      "bytes": 325,
+      "sha256": "9905680d522d121befe9c469a5f06b89586b9cc4d4022af20630d87579436e4a"
+    },
+    {
+      "path": "artifacts/opposite-edge/ground-escape-failures.json",
+      "package_file_id": "7b2dd1a8-8a54-41f3-8d0c-85fcd2b02e8f",
+      "bytes": 16,
+      "sha256": "2daf55cf20e3e07d8e9a226f02e4578b9ef7a7e66d7361192aff6f8686a3bd69"
+    },
+    {
+      "path": "artifacts/opposite-edge/ground-existing-return-bridges.json",
+      "package_file_id": "bb664b10-b42e-4df9-91b7-316e8db6d426",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/opposite-edge/ground-plane-channel-recovery.json",
+      "package_file_id": "ab820bb0-0d07-4c3d-a575-012c0e656fb9",
+      "bytes": 553,
+      "sha256": "76a3f6e38fdd694852403c58c0fa475b294b70c7d953afcef136bfd05a1bedf4"
+    },
+    {
+      "path": "artifacts/opposite-edge/ground-test-pad-placement-plan.json",
+      "package_file_id": "0c8f9f58-bf49-4464-a6fc-8a76fd20cc0a",
+      "bytes": 333,
+      "sha256": "5a59f1222ff84cc621f1bd668dfdd574c130b8b50cbcfdd642fae9d73e8e7e1a"
+    },
+    {
+      "path": "artifacts/opposite-edge/grouped-USB-divider-placement.json",
+      "package_file_id": "51c669ab-a96a-415e-96cd-4038a5d2a715",
+      "bytes": 32967,
+      "sha256": "17cd6772458eb397a36d555134e41aa6643ef445e576255f2d3074b37e829044"
+    },
+    {
+      "path": "artifacts/opposite-edge/io22-supply-escape.json",
+      "package_file_id": "e4acb409-9d53-4201-833a-b075507cb1cf",
+      "bytes": 186,
+      "sha256": "41e907879b13844250c8286ed3d234ff5b7121ea570e21b647fcadad45d17a56"
+    },
+    {
+      "path": "artifacts/opposite-edge/last-capture-failures.json",
+      "package_file_id": "6febbc38-11ee-47b8-949a-b415d1e9baa7",
+      "bytes": 218,
+      "sha256": "5988a6cb848d2e983fad8c11baf2e792e9d87d98e8fc86c94099b0032a1d97e7"
+    },
+    {
+      "path": "artifacts/opposite-edge/left-channel-clearance-plan.json",
+      "package_file_id": "54fe6df3-352b-4104-b618-17fbb445ef22",
+      "bytes": 777,
+      "sha256": "05caa4d114156cee32e3fae16efec7d3ad6d02d8506e29d4021fcf14502ff1a1"
+    },
+    {
+      "path": "artifacts/opposite-edge/local-DIR-barrel-channel-clearance.json",
+      "package_file_id": "92030f90-f9a4-4314-b123-0438e9952b60",
+      "bytes": 28945,
+      "sha256": "cd7de23cb8aacb7d25f2eae902bdc8903757d136d2e97c703be013d40e096ad1"
+    },
+    {
+      "path": "artifacts/opposite-edge/local-DIR-barrel-clearance.json",
+      "package_file_id": "2fe487dc-3cba-44f9-8f1d-089ba7a2c18b",
+      "bytes": 28945,
+      "sha256": "d592ff0a75ee9a33c48b279a8f8777f67ae4cc282e8ed04b3664682a593337cf"
+    },
+    {
+      "path": "artifacts/opposite-edge/local-driver-refinement.json",
+      "package_file_id": "61974b95-c6c9-4848-b7b1-739ad38e8b7b",
+      "bytes": 1389,
+      "sha256": "f8c238887767303ff09caa2b55bb80952fe295bfebc0b0a8af385e816ff3a399"
+    },
+    {
+      "path": "artifacts/opposite-edge/motor-voltage-filter-capacitor-plan.json",
+      "package_file_id": "89d4346b-037f-45c1-b460-aeebc41e007f",
+      "bytes": 663,
+      "sha256": "c7d5e9085e073cbb4e83a4aa8683e3581fc0ab80055b2334c3382cbe12bc8e9e"
+    },
+    {
+      "path": "artifacts/opposite-edge/moved-capacitor-obsolete-copper.json",
+      "package_file_id": "61201c7e-1215-4385-b3e0-46cca9ad0f75",
+      "bytes": 594,
+      "sha256": "b33a3c46949243dd913de5a07a5723254bf3592d1ed66f7a74670cee84fc1fa9"
+    },
+    {
+      "path": "artifacts/opposite-edge/native-placement-retained-copper.json",
+      "package_file_id": "b10e0d38-6d67-42bb-a586-189b3adf5a3e",
+      "bytes": 5134,
+      "sha256": "5acc5c6783bee71385927f60d3d248f143a71319fa57a947cdcac05c8c782873"
+    },
+    {
+      "path": "artifacts/opposite-edge/non-ground-escape-requests.json",
+      "package_file_id": "64fa20f4-b5b9-4be3-b506-6ec765e1a5d8",
+      "bytes": 4336,
+      "sha256": "6e628f564b24fa7d825c3e8d8cc3335426d7093006ed79e178dff01fc1a18c98"
+    },
+    {
+      "path": "artifacts/opposite-edge/old-STEP-channel-fanout.json",
+      "package_file_id": "5136957f-54f9-448b-b346-bd5760b14406",
+      "bytes": 3816,
+      "sha256": "925464bf33ea6468f8de08ab8b86c764b4d57562c7cefd191eef00b77831c872"
+    },
+    {
+      "path": "artifacts/opposite-edge/ordered-driver-escapes.json",
+      "package_file_id": "ae6c7d89-9ff6-4a6e-8315-20dfab6d5aac",
+      "bytes": 439,
+      "sha256": "9770411adb5ca442d0d86fc28da4fbb4be5e2a48d789cff6158729b014648610"
+    },
+    {
+      "path": "artifacts/opposite-edge/ordered-jst-escapes.json",
+      "package_file_id": "0bb3051c-186d-4674-b743-111395f7a9d3",
+      "bytes": 581,
+      "sha256": "f395f92c7e8ce2066286f040074f5673b8914165676949801a80e1d71b814d17"
+    },
+    {
+      "path": "artifacts/opposite-edge/ordered-left-mcu-escapes.json",
+      "package_file_id": "d293fbad-8709-4aa1-8089-ee039344dbef",
+      "bytes": 849,
+      "sha256": "f205ac69609fc56632e44a8f3a1797bd9a4b2e5de85ddf3550e4b24d63e80b8b"
+    },
+    {
+      "path": "artifacts/opposite-edge/ordered-left-search.json",
+      "package_file_id": "71233c8c-f41d-42ba-8659-0aa7576a3991",
+      "bytes": 3489,
+      "sha256": "94bd17c23145cf1a8627bcd4f293911780cc91ce8bc935e94beefed5db184816"
+    },
+    {
+      "path": "artifacts/opposite-edge/ordered-run-buzzer-escapes.json",
+      "package_file_id": "04fe27cb-9562-4da0-a742-4e6f056eecaf",
+      "bytes": 366,
+      "sha256": "17bde0093cd8c900d5588424b080120e05be5f193efa3ca2379f1937ce2645bf"
+    },
+    {
+      "path": "artifacts/opposite-edge/orphan-cleanup-proof.json",
+      "package_file_id": "e57f2419-ea67-4b40-8dcc-a9f6e84ba28c",
+      "bytes": 219,
+      "sha256": "03ad998181a336039beef101edd82f518f9e4891ef292faed6d38cd3896a71e9"
+    },
+    {
+      "path": "artifacts/opposite-edge/phase-transition-points.json",
+      "package_file_id": "b28e7b0f-caed-4b29-bf47-58ff67d886fd",
+      "bytes": 383,
+      "sha256": "07bab8683eb022b3aaad5258b6adaf1243f13d59ab0600f937473b0d71bec1d3"
+    },
+    {
+      "path": "artifacts/opposite-edge/placement-plan.json",
+      "package_file_id": "5587fbfa-3dc4-4c4b-ab7f-79248c3c311e",
+      "bytes": 9905,
+      "sha256": "8eb662927390982b570302ff27754f2bc7368878b6fad417a89397dc137a2fe0"
+    },
+    {
+      "path": "artifacts/opposite-edge/rail-escape-requests.json",
+      "package_file_id": "a8531ed9-4457-478f-ab7e-aac3e963394f",
+      "bytes": 175,
+      "sha256": "10d040c9eac895f2b04fd605619a5750312b8c85e67d914048025172580e66a4"
+    },
+    {
+      "path": "artifacts/opposite-edge/redundant-MCU-power-barrels.json",
+      "package_file_id": "e39a6b3e-162e-4d57-8b97-ccded543e161",
+      "bytes": 1427,
+      "sha256": "dab67878129a8734759e1cdbd737ad101e430314958a2f44f1e0be6cfb8c504c"
+    },
+    {
+      "path": "artifacts/opposite-edge/redundant-barrel-pruning.json",
+      "package_file_id": "5d0f4dd4-89e9-42fc-b596-4790f25de22e",
+      "bytes": 2779,
+      "sha256": "fcbb50d75eec20c815fd3e948f59530757ec152fecb85aef85ceb67cb70d04c6"
+    },
+    {
+      "path": "artifacts/opposite-edge/redundant-copper-pruning.json",
+      "package_file_id": "9294bb58-ba25-4db0-80a3-3c922dbec682",
+      "bytes": 19495,
+      "sha256": "8ec590ab1ac62649b7e39131d3495bf3a4ad7f27bea78c3028db493bd24654c1"
+    },
+    {
+      "path": "artifacts/opposite-edge/remaining-pin-escapes.json",
+      "package_file_id": "4bfd2690-c890-4eec-a026-4a270500357f",
+      "bytes": 1881,
+      "sha256": "f2326e704adc59b0caa9ed9a8047e1b0c1029e971974b6c414a8243301fd623b"
+    },
+    {
+      "path": "artifacts/opposite-edge/reviewed-QSPI-SD1-routing.json",
+      "package_file_id": "9ddfcef4-ee67-416d-bc4a-5816b9600f2d",
+      "bytes": 251,
+      "sha256": "7a7e9c0de83594a5f600a40993cfbf53a069c27a6664bd9cf0863972489ba57f"
+    },
+    {
+      "path": "artifacts/opposite-edge/reviewed-QSPI-ground-reference-routing.json",
+      "package_file_id": "80d130ed-366b-435d-8ee2-9713744d4b84",
+      "bytes": 690,
+      "sha256": "8c36ac0b206e148aa65e1495cc24ac57a0c40f77fe3e2d39d801d2b156a0142a"
+    },
+    {
+      "path": "artifacts/opposite-edge/reviewed-QSPI-joint-repair.json",
+      "package_file_id": "df5a329a-ba66-4ba3-bb78-13ab4ee2e2ad",
+      "bytes": 974,
+      "sha256": "3afaf6c304f16e95b838479d285acee6e77b7744d72196eeb2396e4091f809b8"
+    },
+    {
+      "path": "artifacts/opposite-edge/reviewed-SWDIO-fanout-clearance-routing.json",
+      "package_file_id": "af0faf1f-de88-4793-9340-d4973b8a2d31",
+      "bytes": 243,
+      "sha256": "ea865043909884c8ae00233d64f6b938b3e617440a4d26009b17bf88bd28aaac"
+    },
+    {
+      "path": "artifacts/opposite-edge/reviewed-phase-transitions.json",
+      "package_file_id": "7d8b15f2-0215-4bda-8e0b-98124a78d663",
+      "bytes": 1002,
+      "sha256": "16cda681f6d6b321c572d70e2b361db8931e8688e75c44b0fd4d00d68b0a7f00"
+    },
+    {
+      "path": "artifacts/opposite-edge/role-label-plan.json",
+      "package_file_id": "885b5657-be09-4b41-a734-345eca67cfce",
+      "bytes": 246,
+      "sha256": "6ce6fd3eff4e23be80cd1e5ac6f380d3744126583b02c359c725b3759de85135"
+    },
+    {
+      "path": "artifacts/opposite-edge/sense1-shortening.json",
+      "package_file_id": "681ba9d9-c891-41d7-af0c-c4858d2de4a9",
+      "bytes": 12657,
+      "sha256": "cfb78b5a13ed44394617ff8a1059bc5d97490835dab9d4d25c68150fa4607f5f"
+    },
+    {
+      "path": "artifacts/opposite-edge/sense2-shortening.json",
+      "package_file_id": "1578282f-93c1-4be4-86a1-809c447f47dd",
+      "bytes": 270,
+      "sha256": "bdce15d92b4b0b30f2497d7ec784674cc025eb7f5c9ce018571b6e9df4a57c5a"
+    },
+    {
+      "path": "artifacts/opposite-edge/south-mcu-ordered-escapes.json",
+      "package_file_id": "518270f3-7c9c-4a02-9478-551e6860113d",
+      "bytes": 1139,
+      "sha256": "16920a251183b6a090d1d7c8adfd49a947229b8de76520285b9988d6c067000e"
+    },
+    {
+      "path": "artifacts/opposite-edge/top-capacitor-power-bus.json",
+      "package_file_id": "31423f1e-b4c8-4eca-b190-9c31b00ba0b4",
+      "bytes": 6393,
+      "sha256": "378a87499c59b02d8bce3f2009fbde8268605d6e0a763be58eca93bae9a0b949"
+    },
+    {
+      "path": "artifacts/opposite-edge/verifier-baseline-context.json",
+      "package_file_id": "4355e78d-e1c5-4b7a-971d-1b7c656ea533",
+      "bytes": 552,
+      "sha256": "88d911616abacc6f46ec5e926e49420e849c31beb3be6d63cdc9932940377452"
+    },
+    {
+      "path": "artifacts/physical-connectivity.json",
+      "package_file_id": "0cbff5c3-2621-4aeb-b008-8f5f3b092478",
+      "bytes": 204,
+      "sha256": "b0e0af41d031007e30df5af99dddf80b69922d108879d5b89af9189af506c17e"
+    },
+    {
+      "path": "artifacts/pick_and_place.csv",
+      "package_file_id": "abaa80b5-fd14-4e1d-a071-7feac9a0a7ec",
+      "bytes": 2915,
+      "sha256": "7dc12c850c20adaec14c437dd708be3ff31b5dc4779c37186c7e8807c0ece192"
+    },
+    {
+      "path": "artifacts/presentation-verification.json",
+      "package_file_id": "f364eb31-c45b-48c2-9bc9-1ef41a6fe45c",
+      "bytes": 2357,
+      "sha256": "5d01cf27a8ec4244448200a9b3c29af19c8748722cd7515030eed24a5e5013f1"
+    },
+    {
+      "path": "artifacts/publication-provenance.json",
+      "package_file_id": "a6a0b1e2-4e6f-4f56-ad3e-93d77283ce27",
+      "bytes": 579,
+      "sha256": "2b04e16dbc09e1a94f26a7a4b9e6e2220d7e90d3fd330ed99babba5f069d56f8"
+    },
+    {
+      "path": "artifacts/reference-feedback/baseline.json",
+      "package_file_id": "edf2eabf-c0af-4a75-be8b-90696f115824",
+      "bytes": 473,
+      "sha256": "9d16a1f09c7abf1736ec8f03d7eb7524735b9ae8c360885feae95f1dcd4a3906"
+    },
+    {
+      "path": "artifacts/reference-feedback/circuit-verification.json",
+      "package_file_id": "6eaac755-0cf2-4d56-a49c-13ca5e3365fd",
+      "bytes": 14906,
+      "sha256": "364ea860f8132477af0bce2fae9d9171c6da392cafe340dc74a7ac5eeebd2295"
+    },
+    {
+      "path": "artifacts/reference-feedback/close-drill-pruning.json",
+      "package_file_id": "60122278-5b6b-4bb0-b06c-3cb385359fa7",
+      "bytes": 818,
+      "sha256": "b02436b6b8fbddb421cc32402e6bbebb0fa96621b1b7c13dcf926aa1e7facd0c"
+    },
+    {
+      "path": "artifacts/reference-feedback/controlled-pad-escapes.json",
+      "package_file_id": "2beb3fb6-4ab7-4570-ae2b-d54299bc9bf0",
+      "bytes": 12034,
+      "sha256": "00ae3479c57cc39a2c0aca7f02dfca1a12cb9aed1d0babc0d78b2c0fd47c6153"
+    },
+    {
+      "path": "artifacts/reference-feedback/copper-source-identities.json",
+      "package_file_id": "ba26fd1c-8beb-4631-8e10-4d20f2639335",
+      "bytes": 149,
+      "sha256": "dec34f91dac2211c9939a34f1a2c7403df15ca928bb5757e2c76cee28c7f3847"
+    },
+    {
+      "path": "artifacts/reference-feedback/courtyard-placement.json",
+      "package_file_id": "03803905-9247-40c4-89d6-3414ff5265c2",
+      "bytes": 7298,
+      "sha256": "cbadb222bb177f032e3b1c40749cf3d032eb18ffda837440847059b22d35ffaa"
+    },
+    {
+      "path": "artifacts/reference-feedback/every-trace-review.csv",
+      "package_file_id": "50206c89-2a15-4720-af05-ab240d9e649c",
+      "bytes": 56591,
+      "sha256": "e77133067390cc55afe3d993b1f1185d809f8c41f62bad8f499851f33309b29c"
+    },
+    {
+      "path": "artifacts/reference-feedback/every-trace-review.json",
+      "package_file_id": "ba48a4b4-13fa-41cd-af74-3acabadd83ff",
+      "bytes": 3516631,
+      "sha256": "de668c967e5210962fae6357268049bba73733eec16f90a23b48df55b6e4ba3e"
+    },
+    {
+      "path": "artifacts/reference-feedback/final-power-width-corrections.json",
+      "package_file_id": "e56b1ba0-b15e-4a93-ba26-4f67909f5cbd",
+      "bytes": 597,
+      "sha256": "0886eee771adb4b77d3d5abb11184429dbbc32d76563549963365cd752bb0a59"
+    },
+    {
+      "path": "artifacts/reference-feedback/forced-ground-ports.json",
+      "package_file_id": "d686305d-eb8a-4b94-bc2e-df4f624828d6",
+      "bytes": 2025,
+      "sha256": "083cf085301f97be8a1ba34151f6917f8782ec6da4a24d451b13bd946fd02234"
+    },
+    {
+      "path": "artifacts/reference-feedback/ground-escapes.json",
+      "package_file_id": "3ce49767-c927-4d4a-94fa-d44c65441e3f",
+      "bytes": 117,
+      "sha256": "dc4f4f176d070020d7e6ecba4e9be2a84eb6a4642ceb1fc478b9a076a87c08a4"
+    },
+    {
+      "path": "artifacts/reference-feedback/ground-stitching.json",
+      "package_file_id": "903f6bb2-e1c7-465c-a736-f7b16897bfa5",
+      "bytes": 215,
+      "sha256": "97aa2b6c9a31843b5a837a80826e3b5dbe28723e1e46019b6df040d6b5ed4ee6"
+    },
+    {
+      "path": "artifacts/reference-feedback/local-inner1-escapes.json",
+      "package_file_id": "0509596d-803e-4264-8c1b-4ca175005f8b",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/reference-feedback/local-power-bridges.json",
+      "package_file_id": "b694a165-1af6-4f0c-b6a9-b6e3fbcabaf4",
+      "bytes": 1074,
+      "sha256": "dedc51da767fb02145fac61f8682627c240b34f2ff9b402276ce95d24777493f"
+    },
+    {
+      "path": "artifacts/reference-feedback/preserved-electrical-interfaces.json",
+      "package_file_id": "7b7db804-eefc-48c7-bce0-e6a625d21f2a",
+      "bytes": 493,
+      "sha256": "4e67c9b792b4832eadb2226cc58bbcd7ec7024a07c7e3920ad0f350f1b1b901d"
+    },
+    {
+      "path": "artifacts/reference-feedback/redundant-signal-and-supply-copper.json",
+      "package_file_id": "38842e8f-69e3-48e9-aebd-0c3c455fd5f6",
+      "bytes": 1018,
+      "sha256": "3624090e80b460ddccba4cde78dad4965815d66f72d53d6bdc6fb47731d2ef0a"
+    },
+    {
+      "path": "artifacts/reference-feedback/reserved-ic-fanouts.json",
+      "package_file_id": "82f2c55e-9580-454d-959c-4b4167e8c567",
+      "bytes": 7177,
+      "sha256": "ba27097b547854f93a7dec5eb42fc9314f8bb39be1a6678fff0f2ca1cc2dfc3c"
+    },
+    {
+      "path": "artifacts/reference-feedback/selective-placement-merges.json",
+      "package_file_id": "f3605321-8b0c-4863-bb2b-00623f2a56af",
+      "bytes": 57169,
+      "sha256": "9a6dc75627e36589a91e574d39a7b14ca7bb05664e24a21e657a72f4d31fe645"
+    },
+    {
+      "path": "artifacts/reference-feedback/via-cage-repairs.json",
+      "package_file_id": "94608f4d-456d-4250-ba4a-1cbe71dfdcee",
+      "bytes": 5577,
+      "sha256": "70c8ed5eb9a2dfcd472e22f3f1a91e9956e6f246c1ddca374ddcc2f55b12fac9"
+    },
+    {
+      "path": "artifacts/reference-feedback/via-contact-normalization.json",
+      "package_file_id": "34252a87-b182-4fb6-ad15-3a5533f3734a",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/reference-feedback/widened-usb-supply-reroute.json",
+      "package_file_id": "35b82c94-d016-41ac-b8f2-d99f0c59aa86",
+      "bytes": 226,
+      "sha256": "95694a8f2b6f90d70ff023db287de2bebba0860c722bebada76603185c7c0209"
+    },
+    {
+      "path": "artifacts/resume-validation.json",
+      "package_file_id": "5e4b43a1-fbee-4c04-863b-2d52038f5dea",
+      "bytes": 6645,
+      "sha256": "b0fce7d6ced113887c25ecbda4a8159f2a19f12864d285baf7123b096d09d2ee"
+    },
+    {
+      "path": "artifacts/same-side-copper-cleanup.json",
+      "package_file_id": "6da32ce2-4753-4be0-864a-5542531af470",
+      "bytes": 64678,
+      "sha256": "2997eebbffd1ec71aa5ae053b776165272d2a1a20287246fdf102d0b9e9a9774"
+    },
+    {
+      "path": "artifacts/same-side-copper-repairs.json",
+      "package_file_id": "13fc7e93-c338-4554-bc76-56f5bb18c297",
+      "bytes": 52832,
+      "sha256": "6393ddadc16339a49e480768ef06d75c90ee2128fa46460726b618da5e1449ed"
+    },
+    {
+      "path": "artifacts/same-side-power-width-repair.json",
+      "package_file_id": "d14ea30a-d1d7-423d-b9a7-d7692518481f",
+      "bytes": 392,
+      "sha256": "69daa4a48fade3277460ac5c8dfb3608b73b4d4aed2833adab52cff0d1244fb8"
+    },
+    {
+      "path": "artifacts/same-side-pruned-stubs.json",
+      "package_file_id": "11f250e5-98f3-42fc-9171-48ccfb6bf54e",
+      "bytes": 38568,
+      "sha256": "b67c236bd8010eaf7249416a1a77104d2711ea2afa270b048b8518b08a2ef5f1"
+    },
+    {
+      "path": "artifacts/same-side-routing-proof.json",
+      "package_file_id": "32685bb9-579b-41ba-8c8a-671fa4e4607f",
+      "bytes": 2314,
+      "sha256": "8daae00504275e8740b449f6ad9b2ee370b956b18582ae507b64832410db61b5"
+    },
+    {
+      "path": "artifacts/same-side-trimmed-stubs.json",
+      "package_file_id": "771f9b4a-1004-4ce4-afae-091ddb438648",
+      "bytes": 38850,
+      "sha256": "a6b1676c7542f366d762390e05e449cd8910eccbf7ea56fe314d13c6660aba9c"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-01.svg",
+      "package_file_id": "72719dad-43da-4e4b-8872-fe3f0fe034ff",
+      "bytes": 207384,
+      "sha256": "9edc0366ebe424fb34a6effe941ac16db186788eedf1c71ef81e0431046cf851"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-02.svg",
+      "package_file_id": "a95a69e6-db97-4f67-90a8-c9e93d7f4120",
+      "bytes": 191893,
+      "sha256": "9147d48f41a31138215b66915a3b537dec23b94feb4b5a93427d327c8efa3811"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-03.svg",
+      "package_file_id": "bfdd9826-1940-4c63-a0c5-a617d1b317b0",
+      "bytes": 313824,
+      "sha256": "3e9c0282b1509fd8c7eac1d391d26db9828f560d0fcea4cb33786a3c39753d56"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-04.svg",
+      "package_file_id": "7234fabe-5822-4f15-8d12-bcf21b55d018",
+      "bytes": 227557,
+      "sha256": "fe55d10fc3113f2ee19e425b3bfa0a22fc6cea1bba8ee90b2e9d91bde505b8e2"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-05.svg",
+      "package_file_id": "254223f3-e7de-40b1-9144-cbc889e3ffb5",
+      "bytes": 175148,
+      "sha256": "3ffe51e16b76e96a20ad9b025442fd08beda299fc6a617da7b31e4a247d273dd"
+    },
+    {
+      "path": "artifacts/schematic-a4-page-06.svg",
+      "package_file_id": "efd96c3a-151b-4d00-b072-fc0294ca94ac",
+      "bytes": 79909,
+      "sha256": "716e251b17cadfe507571ca269755cfcc7bf7e6f90cf2df9a619ecd357707d7c"
+    },
+    {
+      "path": "artifacts/schematic-a4.pdf",
+      "package_file_id": "1770c0b4-27fd-4a9c-a3a5-d7758525849d",
+      "bytes": 229720,
+      "sha256": "51c5a9b986eb6d8116ec7d5074ac1237634181753d4c6ece1c7e3438770b221a"
+    },
+    {
+      "path": "artifacts/schematic-redesign/analysis.json",
+      "package_file_id": "59282aa4-b04c-4ec1-ad0f-840f4ebbc094",
+      "bytes": 953,
+      "sha256": "982b8864936e698a2a9f88bcf3dda0b766c33aa8728635debd80e69976fac765"
+    },
+    {
+      "path": "artifacts/schematic-redesign/native-analysis.txt",
+      "package_file_id": "99989169-856f-45ed-b2b2-86675a57d540",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "artifacts/schematic-redesign/preservation.json",
+      "package_file_id": "50d60f1c-2b5a-4eb7-96b4-f8d8a91f540e",
+      "bytes": 435,
+      "sha256": "f10aebcfb0a7d11fdf2e0e8b0bf1912af3198158c98306425ba483568d389e40"
+    },
+    {
+      "path": "artifacts/schematic.svg",
+      "package_file_id": "3d621007-aca6-424d-9d44-a0b63fdec05b",
+      "bytes": 207384,
+      "sha256": "9edc0366ebe424fb34a6effe941ac16db186788eedf1c71ef81e0431046cf851"
+    },
+    {
+      "path": "artifacts/shorts-output.txt",
+      "package_file_id": "863501f1-43d5-40df-a17b-155e360a8687",
+      "bytes": 41,
+      "sha256": "98ccc8689b6a81db2840368894d9370021add369e2d3f747e040164fff805b9a"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-build-verification.json",
+      "package_file_id": "beedf524-4b77-4730-b031-3e2934fa2639",
+      "bytes": 1488,
+      "sha256": "6d0d9286e36b9f6da5caeaa18095df247057330bff40683b0b00d207b7deae3d"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-complete.png",
+      "package_file_id": "d62248db-95b2-4480-9554-a7c0d83e7abb",
+      "bytes": 161175,
+      "sha256": "5fab7b54eefa2252b97259a239b6949e9e01880993f2acfca5772a339765cfcc"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-fit-verification.json",
+      "package_file_id": "a557b2e9-8c76-4eef-ba3b-820cd7c43560",
+      "bytes": 1539,
+      "sha256": "a66a5f9fca925d2a804ea19bc79a70c83e143e43ffd5da5a7276ebb0d9875591"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-preview.circuit.json",
+      "package_file_id": "bfb2c013-124d-468d-adb3-f7f852b29f07",
+      "bytes": 12174344,
+      "sha256": "6db97ffe4894eee37732961139523bc430a5c8e6d37477db12d1917fb67efb85"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-render-verification.json",
+      "package_file_id": "9d4d158c-949e-49c5-9deb-8e9f380f8183",
+      "bytes": 836,
+      "sha256": "d27762c73d2ba69054fbdfefe4703b4fe8394d0c404373ad213c5c0999fadaa4"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-schema-verification.json",
+      "package_file_id": "d3b2ba38-972a-4cac-86f5-619b964d81b1",
+      "bytes": 153,
+      "sha256": "5813576e8add1bbdd80284109e16bc116c012c0200bb6616e943d575d8abde7c"
+    },
+    {
+      "path": "artifacts/top-assembly/assembly-top.png",
+      "package_file_id": "c3921a81-5157-4003-b610-8074d78859c9",
+      "bytes": 319277,
+      "sha256": "c84043c313d4d800422cf925d063ff78fd4ec9be6507d9ba0793cf7d44660160"
+    },
+    {
+      "path": "artifacts/top-assembly/connector-decision.json",
+      "package_file_id": "eefdac66-e4aa-4502-87db-4cb2c130d8e3",
+      "bytes": 292,
+      "sha256": "afda35bac866beda327d09c68085ee2dfbb0e84dc7561965fdeadb496c69b816"
+    },
+    {
+      "path": "artifacts/top-assembly/copper-transfer.json",
+      "package_file_id": "a7d25206-ef3d-4919-933f-3d6191a301f9",
+      "bytes": 9930,
+      "sha256": "f2fab3974a8141a92d69ead11039847215919ad66494fd59091c7fa51d5da8cb"
+    },
+    {
+      "path": "artifacts/top-assembly/functional-preservation.json",
+      "package_file_id": "05c74677-d009-412a-8914-b91d2e4fc449",
+      "bytes": 493,
+      "sha256": "3dd1d62cc3f9512cb96fdb7ee06b9e8a8fcb607eaea0ed5add89f200722d7696"
+    },
+    {
+      "path": "artifacts/top-assembly/harness-connection-verification.json",
+      "package_file_id": "ca67c8fe-5c79-406a-b397-10e418ff5630",
+      "bytes": 2657,
+      "sha256": "a98fdcb423b4dfd681a0f978bd506046e5f434d50939a2a521064d7907f69555"
+    },
+    {
+      "path": "artifacts/top-assembly/harness-definition.json",
+      "package_file_id": "38bc0fd9-6611-4d8f-a56e-52157ee70ac4",
+      "bytes": 22485,
+      "sha256": "ce7af3fc01ec1acc2942113812219f0c708d3ec7fa2a8834186c347843f86549"
+    },
+    {
+      "path": "artifacts/top-assembly/harness-mesh-verification.json",
+      "package_file_id": "7e42127c-c8f1-41d8-ab6c-7c1516f9b92c",
+      "bytes": 1257,
+      "sha256": "7f0cf875dcdd359a336ddd94435cf98992d73a3409561d13c64a2b28970d05f5"
+    },
+    {
+      "path": "artifacts/top-assembly/model-downloads.json",
+      "package_file_id": "dfd1bcb1-5127-4000-9af0-18c6998675bf",
+      "bytes": 356,
+      "sha256": "adbf99b62d0b5d0c83098a92da4dc94b654ebc233e00c0dc1a829bc635721f28"
+    },
+    {
+      "path": "artifacts/top-assembly/placement-plan.json",
+      "package_file_id": "1b2e9c36-a1f1-411e-aeff-f519b46a5250",
+      "bytes": 1322,
+      "sha256": "a3e735184a38e775e089c38675e48ec16e39afd1c14f61ec7c2ef2c9f107d476"
+    },
+    {
+      "path": "artifacts/trace-width-review.json",
+      "package_file_id": "9accc049-5256-4a8c-9204-8f5f818b21ca",
+      "bytes": 4717482,
+      "sha256": "48aa94ae46c6d31084950725440dad1ef65ba03c74a157cc759b3f9bdf23c7c7"
+    },
+    {
+      "path": "artifacts/upright-revision/circle-checker-regression.json",
+      "package_file_id": "60bae4fa-27ae-4aa4-ba84-048894ec7d11",
+      "bytes": 230,
+      "sha256": "7ad9ca993154e074862c248f0d099087aa211bc1dd2d314460ced073186a78dc"
+    },
+    {
+      "path": "artifacts/upright-revision/native-circle-checker.json",
+      "package_file_id": "db7978d4-d7f0-4e11-89cd-65314d5c8b22",
+      "bytes": 812,
+      "sha256": "b6072f2b32edc644ec6a5e5ef436f066f9eddc1c4a3bb279ecd8b0674418ac4a"
+    },
+    {
+      "path": "artifacts/upright-revision/oscillator-verification.json",
+      "package_file_id": "724965af-34e6-4b42-b76a-89f7f0d12964",
+      "bytes": 942,
+      "sha256": "063668e3c7df3c1b3632dac1af8c6247144addfdce714078473abcc872a89cdd"
+    },
+    {
+      "path": "artifacts/upright-revision/thermal-restoration.json",
+      "package_file_id": "a188a18d-9f1e-40d1-a3d3-81a01aae9dd4",
+      "bytes": 145,
+      "sha256": "079de00438dd6d5b8a0849bc39cdba0b2981db012e522ec56e328f237e1a1ff0"
+    },
+    {
+      "path": "artifacts/upright-revision/via-fabrication-verification.json",
+      "package_file_id": "c250f3bf-5b31-46bb-a41d-1c5cff5e3755",
+      "bytes": 111927,
+      "sha256": "b452d67ce9f9e2d5a3a57d99a1ae4eb14c909bd24e84cdc998487a0badbbcf87"
+    },
+    {
+      "path": "artifacts/validation-resume/USB_coupled_copper_and_ground_reference.txt",
+      "package_file_id": "031efbc1-4c3a-47ee-8dff-ef32782cb1e8",
+      "bytes": 4920,
+      "sha256": "42366c2259cc1336c0c15a3ab795433f82c8b71bb567a0bb9e15d4449da0ae7f"
+    },
+    {
+      "path": "artifacts/validation-resume/actual_via_drills_and_JLCPCB_clearances.txt",
+      "package_file_id": "88a3bbb8-e465-4024-92fd-aea220f63ade",
+      "bytes": 49,
+      "sha256": "e80c4162e29f3c557149391fdf03c254535bd4429cd5563ffc0a3647fa9cd105"
+    },
+    {
+      "path": "artifacts/validation-resume/all_resistor_edge_clearances.txt",
+      "package_file_id": "284db47f-8784-4574-8319-e637af547121",
+      "bytes": 99,
+      "sha256": "2962e3ab9c7a84ef31bd60f89d6afa78106b3f1772d3194ad9576e1e6c85613c"
+    },
+    {
+      "path": "artifacts/validation-resume/connectivity.txt",
+      "package_file_id": "e029bf34-1d7f-4263-a898-041a3640b693",
+      "bytes": 204,
+      "sha256": "b0e0af41d031007e30df5af99dddf80b69922d108879d5b89af9189af506c17e"
+    },
+    {
+      "path": "artifacts/validation-resume/copper_widths.txt",
+      "package_file_id": "c41c0fa1-0d25-48fb-9ce9-9542aa39cd0e",
+      "bytes": 106,
+      "sha256": "79ea8560f3f57026fdb711560f9898f6438a4f784b26aead3221aaf767b88476"
+    },
+    {
+      "path": "artifacts/validation-resume/drc.txt",
+      "package_file_id": "7d0a08b6-4c75-4e86-80da-9c22aa68c64d",
+      "bytes": 248,
+      "sha256": "fec7328ae331ca863e7ff3e3bfb29142df32aa83d0d67f9ff8c0dc8c42d1f98b"
+    },
+    {
+      "path": "artifacts/validation-resume/every_trace_review.txt",
+      "package_file_id": "169cbf3b-f8c9-4ff2-b0e5-1a614e9ac08b",
+      "bytes": 122,
+      "sha256": "78542c807f5bd9e828022d23123180da44e1e0acbe9fec4649c4175314cc40a1"
+    },
+    {
+      "path": "artifacts/validation-resume/exact_mounts_and_actual_drills.txt",
+      "package_file_id": "97fa9612-76ce-40e2-bebc-e2f62e07842d",
+      "bytes": 1811,
+      "sha256": "997a622f00f0070bafc9f1e6693a8137d3ee99e735f1b6f5ec312d1466c6fca2"
+    },
+    {
+      "path": "artifacts/validation-resume/final-all-required-checks.txt",
+      "package_file_id": "c3b5a83e-f51b-4737-ac7e-3df788c7fff6",
+      "bytes": 680,
+      "sha256": "7641adbf1484ef52f3d0b46adfebf188f1199c16f95674af367f33e8b1e34911"
+    },
+    {
+      "path": "artifacts/validation-resume/final-default-and-order-manufacturing-export.txt",
+      "package_file_id": "94c78b71-1264-440d-ae46-b722018dbaaa",
+      "bytes": 10035,
+      "sha256": "7e69e152538488815c4012c3c372f395c2c52652c0d204a91c00524928773ae2"
+    },
+    {
+      "path": "artifacts/validation-resume/final-mechanical-diagram.txt",
+      "package_file_id": "821d04a9-e1e9-4281-b76b-86d6f9865c62",
+      "bytes": 76,
+      "sha256": "d41a3ad0edd836cba9e18dd033479b5a110ef1c14214b23515337332b77391d4"
+    },
+    {
+      "path": "artifacts/validation-resume/final-native-STEP-mechanical.txt",
+      "package_file_id": "92e722c0-4414-4519-a16d-16697a24c6f5",
+      "bytes": 9622,
+      "sha256": "0944ed567f13b981e108c35874b49c28874f527beedb8135a7749d3c81d11d14"
+    },
+    {
+      "path": "artifacts/validation-resume/final-order-CAM.txt",
+      "package_file_id": "50b6a2be-eb88-46b0-a45d-95c9e0227bec",
+      "bytes": 245,
+      "sha256": "345dae06de5e79cf20d548d079b9aec48b3c421a7aefaa7a0de2b6f5d564a0af"
+    },
+    {
+      "path": "artifacts/validation-resume/final-package-JLCPCB-review.txt",
+      "package_file_id": "1a31e5aa-fdaf-46dd-a466-79ad1adedb11",
+      "bytes": 89,
+      "sha256": "394e5be485e0f73ebfe1bfe90456ad8c8478db00e71fd4786f2d9a2256b22bb7"
+    },
+    {
+      "path": "artifacts/validation-resume/final-preservation.txt",
+      "package_file_id": "d22a4b73-c30f-497a-970b-1e0342c24f66",
+      "bytes": 612,
+      "sha256": "db2d95ec845a85df54b75316128fe624a4fcd062cda9e7ba217c6dfa1b0018fd"
+    },
+    {
+      "path": "artifacts/validation-resume/final-schematic-PCB-renders.txt",
+      "package_file_id": "b43f1963-4402-44a8-8905-1447bef0859f",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/validation-resume/final-six-sheet-PDF.txt",
+      "package_file_id": "86e6bb25-9fc8-4e79-9b00-849b4106bf66",
+      "bytes": 52,
+      "sha256": "80240224eb2cd91336510d1f0df189c6823f3a55456e80c41ae17ceaeabfa498"
+    },
+    {
+      "path": "artifacts/validation-resume/final-verify-JLCPCB-review.txt",
+      "package_file_id": "12dbf711-fd22-4078-948d-36d6a5cc1b53",
+      "bytes": 2151,
+      "sha256": "94baeb41bbaab8e183ae74394d1d3f78b54dcc31e581e8753885c6fccf62e0fd"
+    },
+    {
+      "path": "artifacts/validation-resume/fitted_JST_and_actual_drills.txt",
+      "package_file_id": "9f99b334-06cc-41dd-8c50-040f10820770",
+      "bytes": 52,
+      "sha256": "0e4740a4788121b614c7dc4c57608b51d65f407441ec63d5ecf11b586772fa84"
+    },
+    {
+      "path": "artifacts/validation-resume/full_independent_CAM.txt",
+      "package_file_id": "7d70144c-ac2d-4062-bdd1-12624ab7eee2",
+      "bytes": 233,
+      "sha256": "047b10d8e234c22f82a0bb620a22aff1f3b6eca10610af3d71ed02f9ac952490"
+    },
+    {
+      "path": "artifacts/validation-resume/gerber_shorts.txt",
+      "package_file_id": "bb057505-a27a-47fe-b35e-9686a11ce5d6",
+      "bytes": 41,
+      "sha256": "98ccc8689b6a81db2840368894d9370021add369e2d3f747e040164fff805b9a"
+    },
+    {
+      "path": "artifacts/validation-resume/native_circular_keepout_regression.txt",
+      "package_file_id": "bff4b3a0-5353-4400-80fd-baad09472d4c",
+      "bytes": 214,
+      "sha256": "380dddd68d0daa046051ef8a0d5bd882bb92c1a270caa5ebfcc919a7790496d0"
+    },
+    {
+      "path": "artifacts/validation-resume/native_json_checks.txt",
+      "package_file_id": "18d3a95c-a5d4-4266-81ad-9bfd9e4a2768",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "artifacts/validation-resume/native_netlist.txt",
+      "package_file_id": "f6b381b3-944e-46a2-8ad3-cc1e470fcfaa",
+      "bytes": 21426,
+      "sha256": "fe59a41382b69cda6a1978907a140d68d23776c9c882c01d72677830b8119605"
+    },
+    {
+      "path": "artifacts/validation-resume/native_pin_specification.txt",
+      "package_file_id": "2c777fb9-5dee-4c69-adf0-5e2e26c4192c",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "artifacts/validation-resume/native_placement.txt",
+      "package_file_id": "7a342499-98e3-478a-a04f-ebdc4c0183c5",
+      "bytes": 5591,
+      "sha256": "472aad845cfb74f95dc1db4ca6314fb94d8e88f2bc287709c4406433922c6f5d"
+    },
+    {
+      "path": "artifacts/validation-resume/native_schematic-placement.txt",
+      "package_file_id": "a7a88a23-58da-4708-827a-856a174c572b",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "artifacts/validation-resume/native_source.txt",
+      "package_file_id": "154e86bd-5862-48c0-a736-25eb1a75e340",
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "path": "artifacts/validation-resume/oscillator_layout.txt",
+      "package_file_id": "59a96628-6cf6-447c-8d07-e2ce5977df0b",
+      "bytes": 409,
+      "sha256": "1fe7a02cab66c3c1cf74b27602633e660c4710f0fc2a4827b9d748b6aad48d8e"
+    },
+    {
+      "path": "artifacts/validation-resume/reference_feedback.txt",
+      "package_file_id": "b96ca64b-2487-40a9-8a45-ac62e3831aa8",
+      "bytes": 84,
+      "sha256": "ecbe5bc352f6d72d259f0c0722a0067b21a28ce846658dedaa864ed4e2f3c5a6"
+    },
+    {
+      "path": "artifacts/validation-resume/schematic_geometry_ERC.txt",
+      "package_file_id": "d3405828-cb4f-478c-8015-12971b903099",
+      "bytes": 1076,
+      "sha256": "e147e71488cb54013ca63b666932fa8d5ebd60593f6f13c23d6680ea13756ef8"
+    },
+    {
+      "path": "artifacts/validation-resume/strict_Circuit_JSON_schema.txt",
+      "package_file_id": "a9390705-5345-4b63-93cf-b77c04af539c",
+      "bytes": 55,
+      "sha256": "977b0466ed6324064e41e55b968a94584cdbd008bc745917b8c10f3f42adfdbc"
+    },
+    {
+      "path": "artifacts/validation-resume/typescript.txt",
+      "package_file_id": "9f2c0d6f-275f-48e8-a7e0-9519f1ee7cbf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assembly-preview.circuit.tsx",
+      "package_file_id": "c0c0ab1b-f0f1-4d65-99fa-db37894477f2",
+      "bytes": 3223,
+      "sha256": "804b7700500a2a2c74e25801e8f333236fa3b87bfa32ec0e0eedcdd531a1a755"
+    },
+    {
+      "path": "assembly.circuit.json",
+      "package_file_id": "a3273a85-cae1-4498-a8d2-1e95d42c7f5f",
+      "bytes": 12174344,
+      "sha256": "6db97ffe4894eee37732961139523bc430a5c8e6d37477db12d1917fb67efb85"
+    },
+    {
+      "path": "dist/assembly/circuit.json",
+      "package_file_id": "0503e91d-fd1b-47d4-915f-932cb480af2d",
+      "bytes": 5614107,
+      "sha256": "7951e142f7ae0de374d0ec8160feee3190f98ac3ff6414a0f04d0b1722ac9330"
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "package_file_id": "18b8ac20-2017-4d58-b3af-2c51a9204abe",
+      "bytes": 5546329,
+      "sha256": "9ef58fea48454a0244cff70c9cbcb3182bc77666315143b93b120921da5e6cd7"
+    },
+    {
+      "path": "docs/ai-review-assessment.md",
+      "package_file_id": "cd8a7080-b624-424b-9765-2cca298369b3",
+      "bytes": 8656,
+      "sha256": "bb3567e595cb4de6baf5989979cf92b971e0eb3e66f29fa649ed8187332f0931"
+    },
+    {
+      "path": "docs/ch224a-migration.md",
+      "package_file_id": "dc50b357-766d-4119-9d7f-700aefed96bb",
+      "bytes": 7097,
+      "sha256": "814c28cfcefe9a432cc27c6606423e05b8de1b73f261c4cc7dab3f77496fd359"
+    },
+    {
+      "path": "docs/cloud-start.md",
+      "package_file_id": "684ffeb7-7e4d-462f-95ae-f5fb573cacc9",
+      "bytes": 2266,
+      "sha256": "d2b708da42795b7193a48870c602b24f8d2b24cc8303e6f3ab7ed3bb698d7100"
+    },
+    {
+      "path": "docs/electrical.md",
+      "package_file_id": "feaca250-8dd8-492a-abbd-d87f9da72cba",
+      "bytes": 8233,
+      "sha256": "11189b4ef6e25798d0576fe25f62baa64f0f4f4b75f0584390827d363d58e94d"
+    },
+    {
+      "path": "docs/engineering-fixes.md",
+      "package_file_id": "d4ca6fcc-52c4-4986-88db-4c85de9cd951",
+      "bytes": 9501,
+      "sha256": "35e296db31bd5481b12bc14f154ce16e07bc04985c54df1ebbb3f6121b036335"
+    },
+    {
+      "path": "docs/firmware-interface.md",
+      "package_file_id": "4eea0ce9-c5a0-482b-8d6e-17120cf94303",
+      "bytes": 1971,
+      "sha256": "f16daf4621451b3ca94868c4726eb7248cc9a6e1c03ee7ce114cb129295eb1a6"
+    },
+    {
+      "path": "docs/history/v1.4-jst-restoration.md",
+      "package_file_id": "fd8ea175-3227-4c80-8de2-3949f2941807",
+      "bytes": 4475,
+      "sha256": "a76c6b34ebc70683eb51ee54c630c1366079ed03bdfd290db159ffbca04113ac"
+    },
+    {
+      "path": "docs/history/v1.4-mounting-usb-verification.md",
+      "package_file_id": "f61c40db-5ec9-451c-9661-582a2403d01e",
+      "bytes": 9793,
+      "sha256": "995cca36bc6bed0c4d4a058f3d70cf5cfef395cdf292448bdeed060173c3f686"
+    },
+    {
+      "path": "docs/jlcpcb-order-review.md",
+      "package_file_id": "1f03c8dc-4fa3-4899-9829-ef028b5857a9",
+      "bytes": 6342,
+      "sha256": "af7b158be83f4ff7c7ad3bc6eae0a12042b35bc2089551330e66a5ea7609e087"
+    },
+    {
+      "path": "docs/jst-restoration.md",
+      "package_file_id": "cb812977-47e0-493a-b7d9-4ee8f435c925",
+      "bytes": 3065,
+      "sha256": "3133169a5757cc20e3cc861c755732a89682d1686b276bdb8be2566bfef52881"
+    },
+    {
+      "path": "docs/mounting-usb-verification.md",
+      "package_file_id": "34e44449-ae6a-48e7-a47e-0928ae1b2ba0",
+      "bytes": 1355,
+      "sha256": "43f014bd0410b4ad9ccef382251e8f5571b2d19285cf79f6c2ed29b13dd9d28e"
+    },
+    {
+      "path": "docs/opposite-edge-review.md",
+      "package_file_id": "e669a12e-a1e0-44ba-b9ab-ec2efe37ae57",
+      "bytes": 6602,
+      "sha256": "2fe0a1b2e2821baf5aced542805eb768f1804488baa4260a566327bf8132efaa"
+    },
+    {
+      "path": "docs/publication-verification.md",
+      "package_file_id": "20b6a7f6-5908-411a-ba4c-191a6b614015",
+      "bytes": 1409,
+      "sha256": "8fc29b2fa0060849bd4137ce8b32f4f73da0d33e6ec63c816abacd9ba53c194e"
+    },
+    {
+      "path": "docs/publishing.md",
+      "package_file_id": "f22785a5-3829-42da-b725-930efb709efa",
+      "bytes": 946,
+      "sha256": "059dc94957250ef87d6010e7b9f2e9a8246ce197248103c0efe0ad86b62aa977"
+    },
+    {
+      "path": "docs/reference-feedback.md",
+      "package_file_id": "49c1030c-8d4b-499e-b8d1-4758dccd0bde",
+      "bytes": 6440,
+      "sha256": "e5c759c89e221c4e65783bf3080b6eb3561c40e43398cf71e5805c243d95aadb"
+    },
+    {
+      "path": "docs/resistor-edge-clearance.md",
+      "package_file_id": "8320f78c-15fc-414f-bd0b-d989547c3f76",
+      "bytes": 3306,
+      "sha256": "8a44d777f9b07deb0ec948b072575005523650968521daeb460c0b4ca405f12b"
+    },
+    {
+      "path": "docs/routing.md",
+      "package_file_id": "6096a618-c7eb-43c7-97da-bb381dd03e55",
+      "bytes": 910,
+      "sha256": "e9649680b31f0590edadc38aae4d4384174a51901e39ca736278fb7f26b7e5cd"
+    },
+    {
+      "path": "docs/schematic-pin-alignment.md",
+      "package_file_id": "32396b47-09ea-4210-94a5-98f8a48c750f",
+      "bytes": 1189,
+      "sha256": "3fd2a8fed1815f433940759e5a270e82a94c289c3316b60dd3ebc7aae9446f71"
+    },
+    {
+      "path": "docs/schematic-verification.md",
+      "package_file_id": "31cee17b-4fe1-40e9-91de-622ab5c76f4a",
+      "bytes": 1070,
+      "sha256": "01c9f73342d325186d02499fd7187657ebb87477f907c3352b16f9d18a22d236"
+    },
+    {
+      "path": "docs/sources.md",
+      "package_file_id": "ebf13d73-df32-412c-927c-447dcc562e6c",
+      "bytes": 3128,
+      "sha256": "de7fee70db426e2611952c20bb770ad4a763e71e59f3678d3e3eff19dd3a43c7"
+    },
+    {
+      "path": "docs/supplier-cad.md",
+      "package_file_id": "2597d309-ad0c-4886-b5b9-d79e75104b23",
+      "bytes": 2606,
+      "sha256": "546080c5d414ef5b324fc84ba8df7f5ef07d8c07e214fc657ecde8e8a795a81f"
+    },
+    {
+      "path": "docs/top-assembly.md",
+      "package_file_id": "78ae2d0d-74dc-4bfd-bd44-09306d7688d5",
+      "bytes": 6625,
+      "sha256": "db8686e1326055829c7233c6e33ed4c25bfd13e5b42cf7e12ea81b91b4d05ffb"
+    },
+    {
+      "path": "docs/usb-programming.md",
+      "package_file_id": "e5633713-9f0c-4b72-aef5-1071ce17b0aa",
+      "bytes": 1581,
+      "sha256": "8d2b0260120b701c4ffd19a3a63e22227d9f5ee7b9f79296273f8a2c00d8a3a3"
+    },
+    {
+      "path": "docs/validation.md",
+      "package_file_id": "fa6cd73e-743f-4605-b416-553df582141f",
+      "bytes": 843,
+      "sha256": "27ab12dda0cb0975cea4a580e2cd3d2c1d6bd28e22e166b3098f589030fa64c0"
+    },
+    {
+      "path": "imports/supplier/A4988SETTR_T/A4988SETTR_T.tsx",
+      "package_file_id": "0d072da2-c3b0-468d-bc45-9fa1ca22e26c",
+      "bytes": 8919,
+      "sha256": "4aebc239ac258064fd1e6c0ff1cf5edd370b208fffb4b9e0d50fec4a52243524"
+    },
+    {
+      "path": "imports/supplier/ABM8_272_T3/ABM8_272_T3.tsx",
+      "package_file_id": "c6dcd452-d786-4fcb-9fab-3c10c6bf0419",
+      "bytes": 4327,
+      "sha256": "72accdce7e857f93e5875f5936e4215e3dfc342b32ab6494630ae5eb8e5e2b37"
+    },
+    {
+      "path": "imports/supplier/AO3400A/AO3400A.tsx",
+      "package_file_id": "fbb95220-6db1-49b2-8e0c-88d59183e396",
+      "bytes": 4261,
+      "sha256": "1d95dab6852c7e74e243d8048a327be3942a81dce41fa1d4c73060fdf7392c5e"
+    },
+    {
+      "path": "imports/supplier/AP63203WU_7/AP63203WU_7.tsx",
+      "package_file_id": "d6e56938-cd2d-463b-91eb-3ccbce82ea7f",
+      "bytes": 3519,
+      "sha256": "1b3f10c5d548b717eb0cb2abf14e9053052e5c91d232129c07154ca78b35076a"
+    },
+    {
+      "path": "imports/supplier/AS5600_ASOM/AS5600_ASOM.obj",
+      "package_file_id": "66f5ebab-db59-4c56-8f88-8d720816000d",
+      "bytes": 74072,
+      "sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278"
+    },
+    {
+      "path": "imports/supplier/AS5600_ASOM/AS5600_ASOM.step",
+      "package_file_id": "a75009b8-4580-4d98-87b9-3c36169cff73",
+      "bytes": 559111,
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84"
+    },
+    {
+      "path": "imports/supplier/AS5600_ASOM/AS5600_ASOM.tsx",
+      "package_file_id": "751ff9f5-daef-47a3-b9e8-0545432e3d31",
+      "bytes": 4130,
+      "sha256": "6ee3252e6d83437ad26a09a625dfce93e1c919c7513762ea62b3e91e53db0272"
+    },
+    {
+      "path": "imports/supplier/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "package_file_id": "cf939380-a06e-44d5-88a9-f349d55a7935",
+      "bytes": 3579,
+      "sha256": "97a6b0539504aab02c36b00a94e4b066899900450f5a1917172ed44847801886"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "package_file_id": "e0b2099c-0948-427b-b8c9-184e744410f2",
+      "bytes": 2059,
+      "sha256": "e51acb62334b5de71b323eec73eae9ce9192ea899110a6bb44b8e496fb7ab3b6"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "package_file_id": "0602b49d-a885-4b80-b3e0-58a8493be8dc",
+      "bytes": 2534,
+      "sha256": "42a20b8861b15ecb20159ec4fcfc047ed3f3514b6f2b2bdbc67a06480b35921a"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "package_file_id": "f167c816-884a-4840-ac8d-0de8f6603515",
+      "bytes": 2535,
+      "sha256": "cdda3c74a9f9199b271d9b576047b62b92d50741686c6ba14536a78589d45b74"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF1003TCE/A_0402WGF1003TCE.tsx",
+      "package_file_id": "f2267cfa-db99-4783-bd0e-95fc35f25172",
+      "bytes": 2536,
+      "sha256": "1325c925ce28274c75ff33fd736b70e20a170307f0ba9824724b62e7f1e7638d"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "package_file_id": "ff00890a-f876-4716-ba47-4e06214894f4",
+      "bytes": 2364,
+      "sha256": "56edd56ee75b701dd5f4c87c44cb8facea62266ac189e749533409d91fb804d6"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF3300TCE/A_0402WGF3300TCE.tsx",
+      "package_file_id": "9d5018b7-194f-47bd-acb0-0353443f7735",
+      "bytes": 2229,
+      "sha256": "e804bc0f9ec1cf9d9000a13596e240fe0454dced6a6908911d35fb58f01e2fab"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "package_file_id": "bf73efef-5fe1-4988-9988-292fc77e594b",
+      "bytes": 2060,
+      "sha256": "20a3fe1f754b56b10aff963c9bdbd7a5e63432dd193df18eb10197591ab29288"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF5101TCE/A_0402WGF5101TCE.tsx",
+      "package_file_id": "c1215fcf-09d3-452d-bffd-cd37f729d8ce",
+      "bytes": 2366,
+      "sha256": "e67ab7661b2e3d9bf31eef36521644d64edfb22182579d2abf99ddcab34ef11a"
+    },
+    {
+      "path": "imports/supplier/A_0402WGF5602TCE/A_0402WGF5602TCE.tsx",
+      "package_file_id": "e1f1ef72-fc67-4cd1-9b32-3608202bc947",
+      "bytes": 2059,
+      "sha256": "43d52352185b0163dd03744ce1d2a72e1d43e9d981560595309b0f8f6004db25"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF0000T5E/A_0603WAF0000T5E.tsx",
+      "package_file_id": "92b12531-fd46-4de2-b2e2-bc4e4e158a7c",
+      "bytes": 2060,
+      "sha256": "c5ac6eb6847c8c5171b74bef69c9ad0617b00f239724806dc5ecf8fa0ec9fa99"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF1001T5E/A_0603WAF1001T5E.tsx",
+      "package_file_id": "d86a60c5-4746-4a52-bcd5-d73cb0e2cbd1",
+      "bytes": 2553,
+      "sha256": "ab2be0ce5e3b0e082fe3102e14d888ce25d16d0743e896ae4e956433dcd102ad"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx",
+      "package_file_id": "f863aeff-eb2b-4ed7-9a9f-3e781cc3226e",
+      "bytes": 2554,
+      "sha256": "404f710a1e64c7341f7affe1e0d89c22e8aef22afa34ab79be0c5e460b5fe30b"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF1003T5E/A_0603WAF1003T5E.tsx",
+      "package_file_id": "2d2a37a1-f205-45d0-86f6-c2e39a95d966",
+      "bytes": 2555,
+      "sha256": "b480970bb6be335ded4717144176b39f3f67e3b5e63cbe5324cda8e9e0b57f0e"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF2202T5E/A_0603WAF2202T5E.tsx",
+      "package_file_id": "4f2dfda5-3f46-4042-a7e6-6cf9943af91c",
+      "bytes": 2384,
+      "sha256": "345d961667584202764bf0b0ed62e9e7608179d67ed4dd1a219cdc9424fa297c"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF3902T5E/A_0603WAF3902T5E.tsx",
+      "package_file_id": "b1338794-3566-4560-b735-5ded2992ba96",
+      "bytes": 2384,
+      "sha256": "1e0a23bc19211181a5575bc2dcfc55a7798012e6f0dbe73c1a1bca1528c7f49f"
+    },
+    {
+      "path": "imports/supplier/A_0603WAF5101T5E/A_0603WAF5101T5E.tsx",
+      "package_file_id": "7cb77aca-cfed-4f79-98d6-e736f25e0d72",
+      "bytes": 2385,
+      "sha256": "871f15e337b9e04662047c9ce8acfdcd921b90725f497525257962a558f33254"
+    },
+    {
+      "path": "imports/supplier/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.tsx",
+      "package_file_id": "30179023-f358-4e61-a567-5fc4f5009317",
+      "bytes": 2742,
+      "sha256": "c9dd081cea89d74b35718c3d5ef4b2110a07e85eb5f0032580a9f26da83c0192"
+    },
+    {
+      "path": "imports/supplier/B5819W_SL/B5819W_SL.tsx",
+      "package_file_id": "87a6e3ec-f68e-4c73-9b33-95ed77a670d8",
+      "bytes": 4675,
+      "sha256": "09f689034febdefb29eb6efb7fae2db21c6ffdd245ef5e9525266820fd483279"
+    },
+    {
+      "path": "imports/supplier/BM04B_SRSS_TB_LF__SN_/BM04B_SRSS_TB_LF__SN_.tsx",
+      "package_file_id": "015c0a78-dde6-48bc-80f4-91d613fe217a",
+      "bytes": 4745,
+      "sha256": "6580d8b3b94d5fa9e8f47c1fc51359c353180bb9d5ebc37af2c150b0d091c6f5"
+    },
+    {
+      "path": "imports/supplier/CC0603KRX7R9BB104/CC0603KRX7R9BB104.tsx",
+      "package_file_id": "cd552eb4-c96c-4c76-84e1-d29f4b71b91d",
+      "bytes": 3555,
+      "sha256": "a9c50a9f679faf773775765bd9ab943e43c5f531325718a1e7d4ee9cd469f390"
+    },
+    {
+      "path": "imports/supplier/CC0805KRX7R9BB104/CC0805KRX7R9BB104.tsx",
+      "package_file_id": "180d9fde-eb10-4d20-8600-90ffbdc9e89d",
+      "bytes": 3405,
+      "sha256": "17affedf91c2c80168b432637ec2dbc52cc33fcdd510014aafe027e68bd8423a"
+    },
+    {
+      "path": "imports/supplier/CH224A/CH224A.tsx",
+      "package_file_id": "dedb17e3-19b2-4b8c-a8e1-65d74e448a5e",
+      "bytes": 5138,
+      "sha256": "671c9f6b205928f9d56f4db6f3b85d8e5ec652029df78ad9fa72c68a4e9e5f96"
+    },
+    {
+      "path": "imports/supplier/CH224K/CH224K.tsx",
+      "package_file_id": "1dae271b-9dd6-4cdd-8f51-1055da4af579",
+      "bytes": 4685,
+      "sha256": "c87750b0686216c034b40a3d70e87201532436c436d6954c24d8cc1df992f93f"
+    },
+    {
+      "path": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "package_file_id": "8b8141e8-c5ec-44ab-a8df-04875671a85a",
+      "bytes": 3569,
+      "sha256": "a2411e0a55e0c031d6e18bc2387e22ec750e84f8f3d35be1373b1f125eb9358e"
+    },
+    {
+      "path": "imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "package_file_id": "423ad931-2702-4cb8-84cd-59d8136f076c",
+      "bytes": 3399,
+      "sha256": "370934beef9c645f718d295d4930648cd01c04076008332ffbd4eb7c5e356e30"
+    },
+    {
+      "path": "imports/supplier/CL05B104KB5NNNC/CL05B104KB5NNNC.tsx",
+      "package_file_id": "a90ae9c5-56f3-4650-9899-3637c62e4418",
+      "bytes": 3095,
+      "sha256": "104af34d7c97492265dc967fa818169b97605eecfc5e5f2f8f6f95c9d6b65181"
+    },
+    {
+      "path": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "package_file_id": "c34b2005-8002-4ed2-9025-58fd6b3ba03b",
+      "bytes": 3570,
+      "sha256": "901d035e4b64025d65d4c30cb289b7dc5258135cfdb8b1202ed62fe2a71d0b00"
+    },
+    {
+      "path": "imports/supplier/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "package_file_id": "c0dae222-ce13-4d88-8fb0-07681ce45c51",
+      "bytes": 3541,
+      "sha256": "eab7c24a455959948a2e5cff9a780bd2bc698c6d7918a5196ab2584b2b0d37da"
+    },
+    {
+      "path": "imports/supplier/CL10A106KP8NNNC/CL10A106KP8NNNC.tsx",
+      "package_file_id": "0ee16af2-74aa-42b4-bcab-9fb9d8f348da",
+      "bytes": 3065,
+      "sha256": "91e8ef964e31060f7c68283b1f949c3f0b3616a914dfd3c6690c97c3ef51159c"
+    },
+    {
+      "path": "imports/supplier/CL10B103KB8NNNC/CL10B103KB8NNNC.tsx",
+      "package_file_id": "136122d4-73b2-4555-8933-60d13ea54d19",
+      "bytes": 3370,
+      "sha256": "0271013fdd558f5216505992dfbfa58e33dc4118e8d792d14173983e8cd7a730"
+    },
+    {
+      "path": "imports/supplier/CL10B224KA8NNNC/CL10B224KA8NNNC.tsx",
+      "package_file_id": "edae219e-3034-421e-b9e4-501df5318b2c",
+      "bytes": 3372,
+      "sha256": "c6224e08663a9485fe52935a2f70724cd809d2dccdca9b8354752936b6327354"
+    },
+    {
+      "path": "imports/supplier/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "package_file_id": "c0d8155c-0cd5-478b-8d97-c4bc212d76d6",
+      "bytes": 3388,
+      "sha256": "85a4b8e073eda04e0b557c483ba6f93d80c2fbb42a2538621e79337f25bab4c3"
+    },
+    {
+      "path": "imports/supplier/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "package_file_id": "46ce2d3a-6966-4cc0-8038-e99a942b9a31",
+      "bytes": 3351,
+      "sha256": "c34c6946f46f8f72827a0f41168b317366fbda1167311fa1dad7fff0c4b9ccab"
+    },
+    {
+      "path": "imports/supplier/DTC114EU3HZGT106/DTC114EU3HZGT106.tsx",
+      "package_file_id": "2f8040df-67d9-4836-8b7f-714e7cd3c5d8",
+      "bytes": 4136,
+      "sha256": "5adb3f0f955e94f569a333464293aa1fb3194783f054254b036857e34751b4c1"
+    },
+    {
+      "path": "imports/supplier/ERJPA3F1001V/ERJPA3F1001V.tsx",
+      "package_file_id": "98a1218a-0d98-4384-b497-56f2ab5bc463",
+      "bytes": 2056,
+      "sha256": "d98e041e407f41e2ec916eff42dc1ea83621bc6a03e111c108479e343dc08a24"
+    },
+    {
+      "path": "imports/supplier/FRL0805FR240TS/FRL0805FR240TS.tsx",
+      "package_file_id": "09235b86-0165-4c15-be4c-35bf4f981d62",
+      "bytes": 2371,
+      "sha256": "e95bb715177703a410c25cbe6cd7d26efdcd43610df869ad4f6956f417bb6d99"
+    },
+    {
+      "path": "imports/supplier/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "package_file_id": "15552b43-2691-43f0-8e70-2285ca45d6cb",
+      "bytes": 3416,
+      "sha256": "dfedea85547c0a47aa8facd2aff047c95211a3e134537a22cd7583149c52788d"
+    },
+    {
+      "path": "imports/supplier/HYG_8503A/HYG_8503A.tsx",
+      "package_file_id": "c1fbecb2-56ee-4b6d-8dc1-b0a9b8c01c0f",
+      "bytes": 3671,
+      "sha256": "5f7d75346c5b391fbd4b673d5ff4ea0786cd75680f86e1836be5276f6c998360"
+    },
+    {
+      "path": "imports/supplier/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
+      "package_file_id": "80d83968-14fc-4c34-a197-717a0ad5a409",
+      "bytes": 39263,
+      "sha256": "74cb734a407c94f778d051e90afebd4c5adc91a38e5b85e8e8b3d1937cfa4b46"
+    },
+    {
+      "path": "imports/supplier/PMEG6020ELRX/PMEG6020ELRX.tsx",
+      "package_file_id": "9eb8379d-8f93-4399-97f9-2baab09b2121",
+      "bytes": 4171,
+      "sha256": "d71849fc1529ae0c1cff8bf2fc483daf9b7af0d1b0bf7de258dcf8b4f6d444bd"
+    },
+    {
+      "path": "imports/supplier/RP2040/RP2040.tsx",
+      "package_file_id": "a3df76ce-7f23-43f4-8cca-3559a04c000c",
+      "bytes": 22397,
+      "sha256": "76babbd45880c2867fc7f084e1af4e3dc6b8a294e9a941b426e7e56f5477f978"
+    },
+    {
+      "path": "imports/supplier/RVT1V470M0605/RVT1V470M0605.tsx",
+      "package_file_id": "01c9f1f3-fb3a-49f4-8c7e-b76da314a878",
+      "bytes": 3372,
+      "sha256": "c15c59c92a7997c9c13bbf7d2993fbe8222d3005cbad826912c2d680154a6682"
+    },
+    {
+      "path": "imports/supplier/SMF18A/SMF18A.tsx",
+      "package_file_id": "c0cba0c2-dc4e-4bd3-8175-3974e3cea0cc",
+      "bytes": 4764,
+      "sha256": "86655b0d1f6b5eb0257d3f3f110b49dc5a9d625e7021e8afda3422c7c2aa8393"
+    },
+    {
+      "path": "imports/supplier/SRN4018_4R7M/SRN4018_4R7M.tsx",
+      "package_file_id": "c026012c-82e7-4171-95ce-6c5855166d4f",
+      "bytes": 2234,
+      "sha256": "8f6e2943fbd7d157006ac6148ec1389606040e6490741a8c257839f8dd1a7b3f"
+    },
+    {
+      "path": "imports/supplier/TMP102AIDRLR/TMP102AIDRLR.tsx",
+      "package_file_id": "9bb9ac4b-d59d-467e-8d60-33ab1eff7874",
+      "bytes": 3073,
+      "sha256": "35649f7f4ef5aa4c1c3e0c3066486a71575467a0318a851e67079ac90ae5ad48"
+    },
+    {
+      "path": "imports/supplier/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "package_file_id": "2b701605-5187-404b-9e0e-9fd6a56ceff6",
+      "bytes": 7448,
+      "sha256": "a2b10a662637c44ba6912638a6cf995d1aca18497e36015dbe259109c1b73fb8"
+    },
+    {
+      "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
+      "package_file_id": "bccb737f-7748-4e75-8517-27f5320960ca",
+      "bytes": 452380,
+      "sha256": "39f20ea318cd7eb64a56cd55d4d793922c83ebfdb6ce5314f968fcda7aee196e"
+    },
+    {
+      "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.step",
+      "package_file_id": "ff5ff6bf-ef2d-40a6-b1da-4978c625ed41",
+      "bytes": 4904228,
+      "sha256": "37a757d880a4d9fd7245a628c6d26d1d405e234fb7ea8a957dfd7486c6544327"
+    },
+    {
+      "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+      "package_file_id": "23e3fc54-754c-4aff-9f51-f4c9223e1462",
+      "bytes": 5158,
+      "sha256": "47f4e9da7d6f58dcf792b09b76190f582327f53c0ae002f454e4d693e45b7bfc"
+    },
+    {
+      "path": "imports/supplier/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "package_file_id": "bed3f3e0-5f66-46f1-b3ce-12dbe158c154",
+      "bytes": 3231,
+      "sha256": "40878bf0e781f7ba55a4b0825a1e727c470a2614554b624766cd2f6872f1f4a7"
+    },
+    {
+      "path": "imports/supplier/XL_1608SURC_06/XL_1608SURC_06.tsx",
+      "package_file_id": "68a285a5-c31b-4e57-b7ef-ef6ca1bbb93b",
+      "bytes": 4380,
+      "sha256": "a33dfce892b38fc06e3e5934f1d62cad663dadb97f26e47241c7286f268e5a71"
+    },
+    {
+      "path": "index.circuit.json",
+      "package_file_id": "4d9e9f1f-c180-4448-9332-8128087bee63",
+      "bytes": 5546697,
+      "sha256": "5783828617a68737a8ee5f8c7ccdccce1ca992e1fae65c4426585547640ed027"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "package_file_id": "ecbf5912-82b0-48eb-a7c3-8d5ab99777e8",
+      "bytes": 130,
+      "sha256": "15ad1f5d90399ab207943f34bde5b8abbd5880aacd293de7e3e51d480752cedb"
+    },
+    {
+      "path": "package-lock.json",
+      "package_file_id": "22e7cfb5-ad25-4e71-8eda-f72f3bd8a730",
+      "bytes": 165785,
+      "sha256": "2aeb2cfa8485fba6ac4f0926adc494169068c8bd71fa0923d30405772d58635e"
+    },
+    {
+      "path": "package.json",
+      "package_file_id": "51570a2e-2da3-495b-930a-040f1071b305",
+      "bytes": 3150,
+      "sha256": "b00ccac0a54f16fe7af3b4c3d30a6913c1363aaa822aa10fdeeafc9b1356996d"
+    },
+    {
+      "path": "references/reference-feedback/README.md",
+      "package_file_id": "965a573d-4077-4a16-8b86-972c75574fef",
+      "bytes": 22974,
+      "sha256": "88b05a6b8b9aaef9c2e7de6fc66305f0da271d848710434b3df651a401a34222"
+    },
+    {
+      "path": "references/reference-feedback/engineering/i2c-temperature-alerts.md",
+      "package_file_id": "f7e8ee12-1ae1-455d-ad6d-503877e20e82",
+      "bytes": 1325,
+      "sha256": "24db174bf8795d5476bd9e72a78ce027ddd84f6f8722626c833d8224568c12ef"
+    },
+    {
+      "path": "references/reference-feedback/release.json",
+      "package_file_id": "58973606-7f60-4be8-a0ca-156fa017e7d6",
+      "bytes": 111,
+      "sha256": "39dcee37c7924ed931e6f092784a90590c417a2abe841c66f47119a9b3c4bc1c"
+    },
+    {
+      "path": "references/reference-feedback/schematic/FeedbackSection.tsx",
+      "package_file_id": "a4771df0-c2a7-4a53-9f72-d1f36424554b",
+      "bytes": 2964,
+      "sha256": "1a18bccec9493fbb3c0d482115cb98028fc1d560c74c8b821530e251c1861f7b"
+    },
+    {
+      "path": "references/reference-feedback/schematic/StatusLedSection.tsx",
+      "package_file_id": "8fd9c757-6a27-4f89-9a05-6a63e05173a4",
+      "bytes": 1634,
+      "sha256": "bbcc172f1a8b43874c0bb441fab5a61aad9219fe4c92f0ec8ce08cd2f773e4e1"
+    },
+    {
+      "path": "references/reference-feedback/schematic/ThermalProtectionSection.tsx",
+      "package_file_id": "d4e9bad0-664b-4600-b540-28a7b8c09f1b",
+      "bytes": 3795,
+      "sha256": "8688b7c59a7ce98bb18aa6e4a8a77394ef0d1bae52eca0ab937f2712c59977ec"
+    },
+    {
+      "path": "scripts/align-copper-source-identities.py",
+      "package_file_id": "31a08e75-86c0-44c1-9421-0849d3538e77",
+      "bytes": 2331,
+      "sha256": "5bc971da4a96dd1472be1af39f4f528c6cc6e5f7a853a53d553c1c1f8bfd100a"
+    },
+    {
+      "path": "scripts/apply-edge-resistors.py",
+      "package_file_id": "6308034e-bfa7-4a87-8988-bee011be0bc6",
+      "bytes": 4977,
+      "sha256": "59ca22322826e6bf6f21a8b29f3f172cd2c745483585be6c98db96128b2bf20b"
+    },
+    {
+      "path": "scripts/apply-saved-adjustments.py",
+      "package_file_id": "d99a65ef-2d4e-4ea7-a6f2-49d59742d725",
+      "bytes": 1027,
+      "sha256": "012a1def4f73b944953e7d2fa2fff17caae554a7e7c476088aefd759190c3bae"
+    },
+    {
+      "path": "scripts/assembly-viewer.mjs",
+      "package_file_id": "d95c38f9-06f8-4263-b5a8-08f1d54b3055",
+      "bytes": 1644,
+      "sha256": "7e8ea297920bd466318e6862d99ef6bb395513f6e1d54a7d3040292b00f5c403"
+    },
+    {
+      "path": "scripts/audit-every-trace.py",
+      "package_file_id": "25e962d4-2f2f-4537-aa2d-76be5d8dc3da",
+      "bytes": 6665,
+      "sha256": "b6ea4bd0ff7024bb17019c3add47c013e975542b8d84a4603d6596b57e6c59e4"
+    },
+    {
+      "path": "scripts/audit-manufacturing.py",
+      "package_file_id": "844e8590-11d4-4f82-891b-e610465e8c05",
+      "bytes": 28482,
+      "sha256": "a2adc475cef0f0a4285b4c2d89272786e8fa4cc35a5a24794d24ee5024923529"
+    },
+    {
+      "path": "scripts/audit-native-json-compatibility.mjs",
+      "package_file_id": "1b29dee6-c004-4e9c-8ece-9ce6333d8048",
+      "bytes": 1653,
+      "sha256": "7dde29f9851a5dac0e01d47450a8ca8164a6b1b3b48dd54a305f1efa6dca09d1"
+    },
+    {
+      "path": "scripts/audit-oscillator-layout.py",
+      "package_file_id": "e7ca1899-8497-4ae3-a22c-94219dad2a8e",
+      "bytes": 4332,
+      "sha256": "44e95ad6fd5139df7e0c338d6ac03b2d7fb6be0b0458b9b8837767d0d85c4db1"
+    },
+    {
+      "path": "scripts/audit-trace-widths.py",
+      "package_file_id": "49d40cfb-da89-494b-b33f-d42e285dbf93",
+      "bytes": 10704,
+      "sha256": "e614d26eac7f70712e689ef6caeb230931c6bdf74a236ca26f0db6d6ee88996b"
+    },
+    {
+      "path": "scripts/audit-via-fabrication.py",
+      "package_file_id": "1ba909dd-2b5d-4217-8ebe-02a40bfb70a9",
+      "bytes": 4948,
+      "sha256": "e4b4ae8605352d719a43c4215aa67e080aa820f9a472b8e22a4d7dfe1dccb951"
+    },
+    {
+      "path": "scripts/bridge-ground-to-existing-vias.py",
+      "package_file_id": "86d2f64a-5af4-4495-882f-3aba8c85ffdf",
+      "bytes": 3211,
+      "sha256": "1a39b7f409a2c5e20fd6455d8b84bba807163120f0050e56e881df1e224f810d"
+    },
+    {
+      "path": "scripts/bridge-local-power-islands.py",
+      "package_file_id": "a674cbe9-07d1-45b7-a3f2-301d4f4adf77",
+      "bytes": 3239,
+      "sha256": "c3a805f0918b9db8fc15ebe0a2b7102277e670d8a236dcf7193c6303dd85cc6a"
+    },
+    {
+      "path": "scripts/bridge-local-signal-islands.py",
+      "package_file_id": "3e2c5ff6-f32a-4340-8c25-ccd6b1fe276d",
+      "bytes": 3613,
+      "sha256": "a5f4ec51fa5c53290fc1aeaa3296f2eac563bed4389cbd78769c52d62c192121"
+    },
+    {
+      "path": "scripts/build-assembly-preview.tsx",
+      "package_file_id": "faa4e4c9-cc1f-4bb7-81db-2f74579e3c78",
+      "bytes": 4225,
+      "sha256": "86c8b6d73b6826073ee85112288ebb11aa6c9783715153896398a590ef11d9a6"
+    },
+    {
+      "path": "scripts/build.tsx",
+      "package_file_id": "6cb40488-16a9-418c-bcdb-45df757639d1",
+      "bytes": 1775,
+      "sha256": "cb7bc27e52241f95f232b8b1054acadf801f133393303e0fe6f1d161312e9780"
+    },
+    {
+      "path": "scripts/check-assembly-fit.py",
+      "package_file_id": "52346b51-88b5-493d-8868-f538ecd74e90",
+      "bytes": 8870,
+      "sha256": "56f917ae4ec1a21c18e01ff259da734ec3ac76866ad6b7e0c696d400f7c883a5"
+    },
+    {
+      "path": "scripts/check-ch224a.py",
+      "package_file_id": "8904e1ee-93e5-4b5b-b5b0-104615a553a8",
+      "bytes": 5527,
+      "sha256": "d88d7bc6ade7cadde42e50fc7c6e0573e6ff974daa05acc28dd3db19aac5ca57"
+    },
+    {
+      "path": "scripts/check-circle-regression.ts",
+      "package_file_id": "0ec6e54e-a5d2-4f03-adf2-48f7b68469f2",
+      "bytes": 1244,
+      "sha256": "d99a74acdef230fe2a0783a2f30030d134f4bcbc5985f8e920c8aba79777fe79"
+    },
+    {
+      "path": "scripts/check-exported-harness.py",
+      "package_file_id": "f015eff1-c102-4004-87b8-c7566d61b223",
+      "bytes": 4634,
+      "sha256": "46a7c6459d8e86450996939dda3f4e21d9cfa8d44cc0a870d656ba225207eb0e"
+    },
+    {
+      "path": "scripts/check-harness-connection.py",
+      "package_file_id": "d78a79e0-5920-42c6-aafb-cd27183372c1",
+      "bytes": 6768,
+      "sha256": "1ee4fd0f9a3f1f1ea2c90afa07c6dfbed3779846bc026ec58d726f4ae7e32236"
+    },
+    {
+      "path": "scripts/check-mechanical-mounts.py",
+      "package_file_id": "ca929a42-516b-4fe1-9640-982fac258867",
+      "bytes": 10232,
+      "sha256": "9523dad8635f3c5f86421aca8b8043d48e42d188b5a8d44b6aa7f18e6936c164"
+    },
+    {
+      "path": "scripts/check-motor-connector.py",
+      "package_file_id": "12030c97-459b-4acd-af38-23eceb453605",
+      "bytes": 3442,
+      "sha256": "cbd23dca0a701db9f24211f0bda7dea93e08b5eeb1a0fe8c8df499f2fe41cad2"
+    },
+    {
+      "path": "scripts/check-mount-drills.py",
+      "package_file_id": "8ec5875b-7ddc-4e20-8045-c75d1b0dc6e1",
+      "bytes": 2324,
+      "sha256": "3b2709d94038e643fcb3d54a29a00ea619331b138fb8b7b773c3b804a7449fa4"
+    },
+    {
+      "path": "scripts/check-native-schema.mjs",
+      "package_file_id": "0e60230b-8f8e-40c2-b449-c27cd4d2e6cf",
+      "bytes": 1259,
+      "sha256": "a8f87cdc8b1f5335ed7f337fc8525220980585056cf59a0691038150e4381d56"
+    },
+    {
+      "path": "scripts/check-order-paste-schema.mjs",
+      "package_file_id": "a816afa3-f1d1-4782-8475-f94f63a4cba5",
+      "bytes": 1016,
+      "sha256": "54c1c7841127dc601a4a0402c5fc2f8a9db155a1ab31c534a8c7db1eeb2beaa3"
+    },
+    {
+      "path": "scripts/check-reference-feedback.py",
+      "package_file_id": "c1f3835b-0d3a-4705-b5f2-4cf0ffde3217",
+      "bytes": 8157,
+      "sha256": "b2c15cd9b5db02fb369143f72adb512d2ab07ef114928fc51030ee2a89cc8719"
+    },
+    {
+      "path": "scripts/check-resistor-edges.py",
+      "package_file_id": "e4f2765b-eee9-4404-b805-3c7cab01f739",
+      "bytes": 5783,
+      "sha256": "d4f5a5191cfedfe0e2371107c836160eab2dac27eb8fcc1f6c1fcb27754e002e"
+    },
+    {
+      "path": "scripts/check-top-assembly.py",
+      "package_file_id": "ee6baa45-2a7d-4660-873b-c474dcf55487",
+      "bytes": 4269,
+      "sha256": "513087b965e5f38a3742d49fe59cdadc97dff6a6eb4879adfa4e507f400a8377"
+    },
+    {
+      "path": "scripts/check-usb-reference.py",
+      "package_file_id": "a378246e-94c3-4fa7-843e-d16ffbc43749",
+      "bytes": 4712,
+      "sha256": "a8774cc700533460f41ec09d1af76c5f1d2e96604ae640dcfe804293975fa23f"
+    },
+    {
+      "path": "scripts/check.ts",
+      "package_file_id": "a78703d1-97c7-4673-9def-0f7477c41920",
+      "bytes": 13745,
+      "sha256": "a48dbfff9573b6a979bd92fee21584b2ad870b475ab5d6ba61e5885d4bfd2528"
+    },
+    {
+      "path": "scripts/classify-source.ts",
+      "package_file_id": "a3f4402e-5483-4862-9d52-3a0be9eb513b",
+      "bytes": 819,
+      "sha256": "588b7b26d448f99bf752b6e86a8cdf68b14a3b38799d8ddbf6c3f82d58b3506d"
+    },
+    {
+      "path": "scripts/clean-same-side-copper.py",
+      "package_file_id": "4f9fb101-4a76-491d-86df-1f8e46de06de",
+      "bytes": 1483,
+      "sha256": "9a90ccec4b5283007874b8f62f2fea507677dd15992e687e1c389527849bc530"
+    },
+    {
+      "path": "scripts/cleanup-unassigned-vias.py",
+      "package_file_id": "83db14dd-1cf1-4bff-91e8-dc53e94f41f8",
+      "bytes": 1389,
+      "sha256": "0a1a314b182895923a70bc8a74a026d0a51e08ed58fca1c2f74173764ec7e4ca"
+    },
+    {
+      "path": "scripts/clear-ch224a-ground.py",
+      "package_file_id": "21a7aff0-3512-45ce-b86c-d4f477760da0",
+      "bytes": 4398,
+      "sha256": "1734dcb3363d59ead1733614ebda91487337bee43b56e989c637d4a5d78724b0"
+    },
+    {
+      "path": "scripts/clear-moved-hole-copper.py",
+      "package_file_id": "cf8f23c9-e350-4603-a96f-cb543d86a086",
+      "bytes": 823,
+      "sha256": "dcda45438b4b8ebb5649ec2ef7b7a9fffd65aaf6cf7b3bb50ac448b132b12ff1"
+    },
+    {
+      "path": "scripts/clear-usb-seed-conflicts.py",
+      "package_file_id": "83eb2672-983b-45fb-b531-138b36b31c3b",
+      "bytes": 1882,
+      "sha256": "db3755ea30a140f442ae82f2ea2da25f45e05d80877d1a3620bf7ace9104cb19"
+    },
+    {
+      "path": "scripts/cloud-install.sh",
+      "package_file_id": "d66ea667-5837-4863-8abb-a4f5ffb4c52f",
+      "bytes": 1062,
+      "sha256": "d48d3ade45dbe7aa988b55acbd643c881cdd27ddcdc4c5c087f4374f6ad0316c"
+    },
+    {
+      "path": "scripts/coalesce-baseline.py",
+      "package_file_id": "2d285d29-e9ff-464d-b003-44c29d83d2f6",
+      "bytes": 1202,
+      "sha256": "698a44b9d4221ca26da2dbd89ea89a8b9b613efea9b1bb7bd05193048782303d"
+    },
+    {
+      "path": "scripts/construct-reviewed-escapes.py",
+      "package_file_id": "01f5e074-c613-4767-9776-7a31d010beef",
+      "bytes": 4866,
+      "sha256": "9326e92b0ad1c7125ec34725c9b2292e23fc6b14a172db1692be1514a66c5933"
+    },
+    {
+      "path": "scripts/construct-reviewed-phase-bridges.py",
+      "package_file_id": "ff61d38a-04ec-4a12-8c09-2188dd21ecf3",
+      "bytes": 4883,
+      "sha256": "4a4eb00d1ae92bcbe68fb139bfed622b5a4ae7a9cd1cc669b36f345783220bf4"
+    },
+    {
+      "path": "scripts/create-local-escape-requests.py",
+      "package_file_id": "95675db1-a185-4d84-82b8-d3380761fddb",
+      "bytes": 1222,
+      "sha256": "0768f667a7390f8fe221721636826963680fd636a3e570c466a46a7737c64db7"
+    },
+    {
+      "path": "scripts/ensure-registry-release.py",
+      "package_file_id": "3ccd8884-1cd4-4f84-a1f1-424dd6bf72ca",
+      "bytes": 1301,
+      "sha256": "b106c62220c3470e5dab5b9b131abcba7da55013fd0e492d2af84635b148fb01"
+    },
+    {
+      "path": "scripts/escape-ground-to-plane.py",
+      "package_file_id": "1c94b48e-71c6-430c-875f-f0f3f789eeb3",
+      "bytes": 7271,
+      "sha256": "2120bca7625f01a55ca8bcbdad5082c74434b144889f9c6e7f33e36b2a90f185"
+    },
+    {
+      "path": "scripts/escape-inner-layer-cages.py",
+      "package_file_id": "d7362598-3159-4d01-b5e9-37d24c9406e4",
+      "bytes": 7636,
+      "sha256": "17235b856a46beee0ddbf48c7575a5edf613e84743d1577ffb896bcbdc9bf342"
+    },
+    {
+      "path": "scripts/export-a4-pdf.py",
+      "package_file_id": "5f3334ba-3492-4fe2-b931-3f88b1b947fd",
+      "bytes": 742,
+      "sha256": "b55f2932b649835bfd2feb18f712199a75b22e5514d3e73e4b6f95afee70019a"
+    },
+    {
+      "path": "scripts/export-assembly-3d.ts",
+      "package_file_id": "94e84900-0823-4415-bb8d-6d90c0f5dd40",
+      "bytes": 1792,
+      "sha256": "a2c3c0a6e2087ff32a7f6d5b0d6d285f6e09505a8b515d790ffbfda3c479fe28"
+    },
+    {
+      "path": "scripts/export-manufacturing.py",
+      "package_file_id": "baca4add-8c88-45ba-b681-392687a4de0f",
+      "bytes": 2927,
+      "sha256": "587325d8b5bc3841116306a4d85335af6b54c96f35eaf09b86dd6bd59bb1d994"
+    },
+    {
+      "path": "scripts/export-router.py",
+      "package_file_id": "cac4de4a-b3ab-42e2-8aec-ff6453e7aa05",
+      "bytes": 5685,
+      "sha256": "606aa0423a866fc19b880c3dfec9311010b1c10aea9878783cbdc5b4385c1ab0"
+    },
+    {
+      "path": "scripts/export-supplier-router.py",
+      "package_file_id": "629d9454-f526-4e9c-b7a8-4e9a55912380",
+      "bytes": 7379,
+      "sha256": "637adf5b5a103155df41734855e8e217b3c006fd6adbd5e00bdc528a506de384"
+    },
+    {
+      "path": "scripts/fast_grid_router.cpp",
+      "package_file_id": "37643a8b-9613-421c-b0c1-f9f12dd55e40",
+      "bytes": 1974,
+      "sha256": "1f0d719a0a592f0dd6278aba8bd63373a9eaaf4d9626a48c0ca1e819c301c4fa"
+    },
+    {
+      "path": "scripts/fast_grid_router.py",
+      "package_file_id": "b9ccbf15-e643-4e40-b9dd-6041bd21a34a",
+      "bytes": 1772,
+      "sha256": "dbbd23a8c191a18ad6055e09c475c40cad9a667c752742ffb635aa661367ac34"
+    },
+    {
+      "path": "scripts/fill-ground.py",
+      "package_file_id": "f9922b5e-e046-45c2-b463-148aaab54f3c",
+      "bytes": 3386,
+      "sha256": "5094b50c28bf0c87f893ab5a3e9d4bd6903196f8b7f4dc1597663b9df5705545"
+    },
+    {
+      "path": "scripts/finalize-manufacturing-artifacts.py",
+      "package_file_id": "95eb1f3f-264f-4ea0-9132-910a2842d782",
+      "bytes": 887,
+      "sha256": "b2c8709a82226caa316777df3ee499f55835ec38ce5731e1e65f2b536e50121d"
+    },
+    {
+      "path": "scripts/find-reviewed-escapes.py",
+      "package_file_id": "f3340259-0a10-4366-b3f2-761f61366290",
+      "bytes": 8266,
+      "sha256": "c04f4f59d220aea747807b870b884afacd76219788d6665beed0a117dc6a13bc"
+    },
+    {
+      "path": "scripts/fix-schematic-pin-stems.ts",
+      "package_file_id": "14c8b728-b358-4aca-8121-48d7a03e9de5",
+      "bytes": 3947,
+      "sha256": "f9e4a6174f6f10eece27be5a2431e1443956374a2a91a62b6e94113f2935a2fb"
+    },
+    {
+      "path": "scripts/import-session.py",
+      "package_file_id": "8b309d1c-9beb-4898-a939-e4c720094f16",
+      "bytes": 6026,
+      "sha256": "5a3c82d86376ab9b786714131c502ce4ac1df7ce19b8223eb39d8136cda94c75"
+    },
+    {
+      "path": "scripts/import-supplier-session.py",
+      "package_file_id": "2ae47bad-891a-44fe-b49e-e47809deb1ce",
+      "bytes": 7091,
+      "sha256": "aeb0ee0ccf0f405b6bf70d339761b095bc2d85379cada08aa526d9b28d6c555c"
+    },
+    {
+      "path": "scripts/merge-clear-native-placement.py",
+      "package_file_id": "b517ea3a-ebdf-42a7-b91d-f0ccd110ecca",
+      "bytes": 3563,
+      "sha256": "50723bf142a669e733b76a01c350518616338e9e34731d33a6eca48d94fd0f71"
+    },
+    {
+      "path": "scripts/merge-feedback-placement.py",
+      "package_file_id": "fae61b6f-0246-4277-a6ca-153b10caca19",
+      "bytes": 3505,
+      "sha256": "a0bcca97f1887b62712fccc1699ca45386083d0753e993da0b6fa91d18ec3c49"
+    },
+    {
+      "path": "scripts/merge-top-assembly.py",
+      "package_file_id": "c5defb1e-40f9-4031-92ae-8b0420afa11f",
+      "bytes": 6465,
+      "sha256": "a990dadea3926ba8249143e8445284c602626a444dcd92d7b426aee6ff17b320"
+    },
+    {
+      "path": "scripts/migrate-ch224a-pcb.py",
+      "package_file_id": "fc72a1f9-0e2a-4b7e-8ac0-d2293e639dfa",
+      "bytes": 7246,
+      "sha256": "0a30b79396581fda7a8449a969f0eb84f4e066e71df1c8e966c46961f9c7ca96"
+    },
+    {
+      "path": "scripts/netlist-source.circuit.tsx",
+      "package_file_id": "35e6b27e-1106-4f0b-b6d2-d8586b252d4e",
+      "bytes": 231,
+      "sha256": "4a21c8c873459bbb8124e0fa0e9fa82c7367b003b3b2c2de4f3b2ed806e427bc"
+    },
+    {
+      "path": "scripts/normalize-assembly.ts",
+      "package_file_id": "ebd44ac6-6795-4271-bb1e-a8dbe2f969ec",
+      "bytes": 2793,
+      "sha256": "d533f10b7712eef9c745ecb0009262c5a25f87802898e6ad20f8f99723da5a1a"
+    },
+    {
+      "path": "scripts/normalize-metadata.ts",
+      "package_file_id": "94eb87db-82b7-461b-92f5-486fdf14963d",
+      "bytes": 1186,
+      "sha256": "58d118f12519458994a37761617da74f945303ac005d326ba9f28cf38cb06b86"
+    },
+    {
+      "path": "scripts/normalize-via-contacts.py",
+      "package_file_id": "71e09c56-2957-469c-b2b6-e4286fadfe2c",
+      "bytes": 1121,
+      "sha256": "392e77830d1fa47114cebc4b29ffb8b27fecedec9d83bbba595de4c33893deca"
+    },
+    {
+      "path": "scripts/order-alphabet.json",
+      "package_file_id": "764d0f7e-74a9-44ea-a847-406cf19e9b75",
+      "bytes": 47147,
+      "sha256": "909b37cfe41ddea2c29c86e6b8a951abf5dfaa3fce83136794ae697e5bf97965"
+    },
+    {
+      "path": "scripts/ordered-rp-flash-escapes.py",
+      "package_file_id": "d0a59151-838f-4527-ae6d-edc116d34e44",
+      "bytes": 2108,
+      "sha256": "c12878516ce7817eac3c86bbdea33a0cec276173851680d27978920735a5e394"
+    },
+    {
+      "path": "scripts/package-jlcpcb-review.py",
+      "package_file_id": "5fbb312c-04ee-4b3c-ace2-d1a380f40e0a",
+      "bytes": 14946,
+      "sha256": "ef39be27f0bdcc6f44931cab110c677bcd9dc9ee92c0f1b3db6fdaed001be42f"
+    },
+    {
+      "path": "scripts/patch-native-circular-keepouts.py",
+      "package_file_id": "d390614e-eca6-418e-9ce5-af2d2e9a2246",
+      "bytes": 2240,
+      "sha256": "d4164ce81adad568a5fcc82c170f0784b5a44027fdfcd8aec6036125ae1c0672"
+    },
+    {
+      "path": "scripts/placement_advisories.py",
+      "package_file_id": "7ca47593-48da-4daa-9478-0b037632cd2c",
+      "bytes": 3523,
+      "sha256": "3bfaf975753d9ca28b9690e3dd77b4648ab9e74336a4acb9755475e42cc1b18e"
+    },
+    {
+      "path": "scripts/prepare-assembly-release.py",
+      "package_file_id": "48076ab0-9d87-41e9-a138-aff121e77c57",
+      "bytes": 5718,
+      "sha256": "b3ef19aa432fe968f65f2a4d503af5470bb6f09e37f6309f7d2050cdaf9da1bd"
+    },
+    {
+      "path": "scripts/prepare-feedback-routing.py",
+      "package_file_id": "1a32a554-2369-4e9d-b98c-8809eea3f176",
+      "bytes": 9551,
+      "sha256": "e7d4f6b7d27a8133c390ca39ccbcca08d733b8bbfcbab34117de1a8f83a20ed5"
+    },
+    {
+      "path": "scripts/prepare-jlcpcb-review.py",
+      "package_file_id": "7ce73268-9ab6-471e-b0e3-a00f1b7e1f09",
+      "bytes": 16902,
+      "sha256": "a8ba69cb69501358b16a9b7b1f687252cfdf31ad8a1ea4bdb6bb01b32b4f2e22"
+    },
+    {
+      "path": "scripts/prepare-same-side-routing.py",
+      "package_file_id": "69022273-09f1-458f-bd95-57bbe7b26abc",
+      "bytes": 6438,
+      "sha256": "080e492b50af3d644c3a7cc32ebd23da859264e52aa3efe6f16134b36be6d3a1"
+    },
+    {
+      "path": "scripts/prepare-schematic.ts",
+      "package_file_id": "4fffe93b-4991-4ab5-9109-3007b5b2c98f",
+      "bytes": 34152,
+      "sha256": "1a2fb366e4590e49b1a1551b2eb72c1cd9b0f74f33a65a287532d2c0b2819940"
+    },
+    {
+      "path": "scripts/prune-overlapping-drills.py",
+      "package_file_id": "0e69de78-912d-40da-abfb-ab697ed46bb7",
+      "bytes": 1372,
+      "sha256": "0b3926621f56499d928366f7e5551b3ac093e8a64feb1eeedd4eb5d30ee44bfa"
+    },
+    {
+      "path": "scripts/prune-redundant-copper.py",
+      "package_file_id": "aa3728ce-9612-41ec-a5ba-38ddfe10bd3f",
+      "bytes": 1775,
+      "sha256": "d1d1e4f025974118c294cdde7264b3078f004379fcf22adc0d336be0fbe0d964"
+    },
+    {
+      "path": "scripts/prune-same-side-stubs.py",
+      "package_file_id": "74857212-8548-4ecb-a9ae-f1c7d289ea80",
+      "bytes": 1423,
+      "sha256": "4fc56dc3cfcef5c6e8b06dd7d1aee1c07a635557a1b0c3fc6e435689af98b37f"
+    },
+    {
+      "path": "scripts/publish-tscircuit.sh",
+      "package_file_id": "a1d2b851-3a52-40a8-a3b3-2968266b21e3",
+      "bytes": 10400,
+      "sha256": "aa566500463c07b37f91a818cae2230947a1e927222f2e12541c06853e5b6e51"
+    },
+    {
+      "path": "scripts/qualify-copper.py",
+      "package_file_id": "aa171870-ec19-4b1b-8c60-51eceacd2720",
+      "bytes": 2161,
+      "sha256": "db79dc18bd7eed81a0a184a9d18fc9d75ed7bd2161435a0651b1ba86e7d1ca06"
+    },
+    {
+      "path": "scripts/recheck-resume-check.py",
+      "package_file_id": "3472b71a-bf97-41b7-9644-c49cd0462f87",
+      "bytes": 1505,
+      "sha256": "c0d38f5cc7e14a1c8d19ce673f8cd8a8f365f9d4d6d5eceda66956fa1ff32973"
+    },
+    {
+      "path": "scripts/record-current-preservation.py",
+      "package_file_id": "95d645d5-3847-47fc-a01e-dac35266d121",
+      "bytes": 3004,
+      "sha256": "e2b4b112164bf57b75c86ee5773ca012304b927f1682eec4638ecddc04bde5c3"
+    },
+    {
+      "path": "scripts/record-engineering-fixes.py",
+      "package_file_id": "5a6e9ad1-df8b-40be-9bc2-5ee7a3be7213",
+      "bytes": 4581,
+      "sha256": "8e4e931adc8e0f94319cc20ca73f584d09a64160d495a4343811576a2225b3ca"
+    },
+    {
+      "path": "scripts/record-same-side-proof.py",
+      "package_file_id": "2b4293ac-639b-4b38-96af-bc398698839f",
+      "bytes": 4745,
+      "sha256": "6977f9ccd89f1a28164b9e3fb50e75ee6b989cd332a2c443c2d096b31f1777af"
+    },
+    {
+      "path": "scripts/recover-publication.py",
+      "package_file_id": "e5a4f9ef-24eb-43b5-888f-7f6bd788b745",
+      "bytes": 3373,
+      "sha256": "d30fe4e20ea81c08ffd9621966977a0f24cbab798695ffe92a657e19ec0309d4"
+    },
+    {
+      "path": "scripts/refresh-ch224a-schematic.ts",
+      "package_file_id": "d8339e6b-f396-4dd9-86fd-0bdf6cc9c89f",
+      "bytes": 686,
+      "sha256": "b9f2f5e7a96908d85cdd49af494bb99ac1954501d9ee9ddb742beb9aa371408e"
+    },
+    {
+      "path": "scripts/refresh-physical-contacts.py",
+      "package_file_id": "ab399468-690e-45ad-9f06-f87ab4e12ff2",
+      "bytes": 1824,
+      "sha256": "9e1924b234b2e122c190feb113e54e032ef4865b45d39815c2485d1cf61b0d86"
+    },
+    {
+      "path": "scripts/refresh-schematic.ts",
+      "package_file_id": "04bf1360-8846-4e89-9335-feeeb74e3cf8",
+      "bytes": 611,
+      "sha256": "bd4366d5265e5d596714c23180087604ef84f74a037e4df2fd9a6e12f3d3920c"
+    },
+    {
+      "path": "scripts/refresh-top-schematic.ts",
+      "package_file_id": "f865d58a-e931-4539-84a3-f302ce9ba871",
+      "bytes": 414,
+      "sha256": "c5a978f68ab5f0a24f2ef439c418d9221a1c12626f055170a0843022129b3f84"
+    },
+    {
+      "path": "scripts/render-assembly-browser.py",
+      "package_file_id": "dbb041f0-7562-4fa5-9f90-7e853fe11b8e",
+      "bytes": 2235,
+      "sha256": "75b537c51868727044ebdec59360d31b13f6622e802c3fc46c2ade7676da2a78"
+    },
+    {
+      "path": "scripts/render-current-mechanical.py",
+      "package_file_id": "fbc14e54-b21b-4f3e-957a-7d4f9a6ffc75",
+      "bytes": 2866,
+      "sha256": "0f5aa08102e5cdfedae93f6839e6b318511cf898c8d1fad4a1c2b11ff81a9f08"
+    },
+    {
+      "path": "scripts/render-same-edge-fit.py",
+      "package_file_id": "9381c38f-2ee0-4033-a30e-299af3b90b20",
+      "bytes": 181,
+      "sha256": "dc0e130be628e41ac592f6e6543af8b014f5a542812edb5b43d277c565135880"
+    },
+    {
+      "path": "scripts/render.ts",
+      "package_file_id": "a9754de1-4199-4b55-a343-3ebe11f0f6ac",
+      "bytes": 1364,
+      "sha256": "e62dc1dac07b0781edf52a8b9e7c804da0a4e3c018e9032a21cfc78b772db7e3"
+    },
+    {
+      "path": "scripts/repair-enlarged-vias.py",
+      "package_file_id": "cd7c5bc6-e452-44b4-b93d-3d46902c9995",
+      "bytes": 4452,
+      "sha256": "4f7678b740fe595eb77effe7d1d90a6884289d342b7a90e5f91109947cfbfa93"
+    },
+    {
+      "path": "scripts/repair-same-side-copper.py",
+      "package_file_id": "78ab7d94-dbbd-45dd-b984-ba89788696b5",
+      "bytes": 19843,
+      "sha256": "4cd29f134b0e20710263924487b536ab8ba3bbd7994a832b9a0a14716d831f23"
+    },
+    {
+      "path": "scripts/repair-supplier-routing.py",
+      "package_file_id": "b79ac82f-ca4d-4905-99ea-c68bed914cfa",
+      "bytes": 5909,
+      "sha256": "196510551d7d24a6c95badc0e2846681f64af55575d7f88831cbd7ac98327b3d"
+    },
+    {
+      "path": "scripts/replay-supplier-adjustments.py",
+      "package_file_id": "1ffaac6b-8349-4655-a617-147a4d23d897",
+      "bytes": 714,
+      "sha256": "360c3ff6adee6d930ba28a2d7aabe43b8714927bd253b8a4be51267bf33c97c2"
+    },
+    {
+      "path": "scripts/report-ch224a-diff.py",
+      "package_file_id": "419d8f8c-0f55-4c5f-9ba0-0e26214eefae",
+      "bytes": 2859,
+      "sha256": "b3d38908e30d82f5d4bcacfbb4f5e7c17905c468108824f55dcfe451c9b920b4"
+    },
+    {
+      "path": "scripts/report-presentation.py",
+      "package_file_id": "7a0d5b32-3671-4e67-81ae-216f244f4e88",
+      "bytes": 6864,
+      "sha256": "c98d6ecf6ff03ef81bc43b4b0894bc0dead4bdcafe7881a0f18d9618de4f44fd"
+    },
+    {
+      "path": "scripts/report.py",
+      "package_file_id": "d0ad696a-4aa8-4590-9e5e-4272f8cfef45",
+      "bytes": 121,
+      "sha256": "a77538a283bf5fead0347c222a0821a422d5b91e12b5a351a20b0e154e0787d9"
+    },
+    {
+      "path": "scripts/requirements-router.txt",
+      "package_file_id": "7ea6cb4f-eb33-4b44-9ceb-a308e9d1257c",
+      "bytes": 107,
+      "sha256": "317b13e358d9bf16bd3aadcdffd7c37ae46655be7982538816a38b6613682ffc"
+    },
+    {
+      "path": "scripts/reserve-feedback-pad-escapes.py",
+      "package_file_id": "f80881f8-e8db-42e1-88ab-4ae8afeb5683",
+      "bytes": 6109,
+      "sha256": "e349cf395053e115ff70a360a70b15c1568866f3315185de2d48438455b08a6e"
+    },
+    {
+      "path": "scripts/reserve-review-escapes.py",
+      "package_file_id": "c622baa3-da84-422c-aa02-5c9189a55067",
+      "bytes": 4655,
+      "sha256": "af92a4167f1df35059f61e24160c4e0005590527360b327d2a2f5b69cdadbef2"
+    },
+    {
+      "path": "scripts/reserve-router-fanouts.py",
+      "package_file_id": "ec6eecc8-2371-4a79-8493-49e2dd64365f",
+      "bytes": 8938,
+      "sha256": "246c2448e4c0a87069a54be12ee7b76975779c668c7a04d9f3e760f873d641d9"
+    },
+    {
+      "path": "scripts/restore-critical-power.py",
+      "package_file_id": "8485667a-1440-45f0-b6cd-8c2beadb3019",
+      "bytes": 5257,
+      "sha256": "bec08a0901e27103c3d67734077576ce37d92595307fb4b30c4b49dfab3a31c2"
+    },
+    {
+      "path": "scripts/restore-legal-baseline-copper.py",
+      "package_file_id": "fd642f24-fefd-4eff-9e4d-d08bf13ae7d9",
+      "bytes": 7275,
+      "sha256": "28b89b582a888341ee9302530fefabd51da09cdd5b9bf537ec78748beb67478f"
+    },
+    {
+      "path": "scripts/restore-legal-via-sites.py",
+      "package_file_id": "afc67e6e-63a0-462a-9e16-973c2b125f05",
+      "bytes": 3203,
+      "sha256": "5fb693b26fbba2b6e51e94457d000f4056ba707b9804275c4d001aa38e1dd990"
+    },
+    {
+      "path": "scripts/restore-thermal-sites.py",
+      "package_file_id": "415c1cb9-2cf4-4487-b7f6-87a82ff9271b",
+      "bytes": 3219,
+      "sha256": "9b7cd27620bbbb843abf1dc5a5f58e76086142b623d428a754ea2de90e7721c7"
+    },
+    {
+      "path": "scripts/review-power-copper.py",
+      "package_file_id": "96291ba6-1880-4f09-85ce-2cc8faa8bac5",
+      "bytes": 4082,
+      "sha256": "cf648cbca5ef5323c90f4aeaa6515772a6a93acd4c95bed356a3862a17be461b"
+    },
+    {
+      "path": "scripts/route-local-charge-pump.py",
+      "package_file_id": "065f73de-a42a-490f-a787-19cfd82b2d4d",
+      "bytes": 2937,
+      "sha256": "f7864603312b042c27a8bf3694edc34dd6805dd0dc94c243a1fa0a35b4c7bec9"
+    },
+    {
+      "path": "scripts/route-oscillator.py",
+      "package_file_id": "222dad4a-9f79-4ac8-9895-be2a45da49d2",
+      "bytes": 3248,
+      "sha256": "2bc7394999d39c75e2133940383a57e005366cb9be26471c2b15d4f2d3dc9603"
+    },
+    {
+      "path": "scripts/route-usb-cores.py",
+      "package_file_id": "8520ad1a-3adf-4b18-9f29-859e2caef57e",
+      "bytes": 8610,
+      "sha256": "fe66a52f58f04ede8791c0c8f04d13c1a3d8c19b3ed477071342b9e0c28eacd5"
+    },
+    {
+      "path": "scripts/route-with-reviewed-ripup.py",
+      "package_file_id": "440c608b-d2e9-44f8-ae47-e19986876b98",
+      "bytes": 32020,
+      "sha256": "688a7b05757261d116e58d4db5fdab2533c7e3e5dad0d2249700c520bdfaa207"
+    },
+    {
+      "path": "scripts/routing_grid.py",
+      "package_file_id": "c9e72854-f80e-4d25-855e-771a839d2150",
+      "bytes": 5581,
+      "sha256": "506bfdfc1b4da36ee5c4b61772723ccac2b51d1d606e2a2852830ef0bd6e5d59"
+    },
+    {
+      "path": "scripts/run-resume-checks.py",
+      "package_file_id": "d0c3f9c7-e576-4dd8-bcb1-d49778418725",
+      "bytes": 5218,
+      "sha256": "2ab5fb5d19c1519ad418c2dc4acf8e1f3724ae4a347aa5a5b96d10da494f310c"
+    },
+    {
+      "path": "scripts/schematic-review-ui.py",
+      "package_file_id": "eb87a2c6-2a50-429c-a0bd-187fcc1b7b78",
+      "bytes": 4265,
+      "sha256": "d61c5b414c5ec6a71db294284a94fd1aee5e32e079af8c56b00932fa2607d4be"
+    },
+    {
+      "path": "scripts/seed-opposite-usb.py",
+      "package_file_id": "8edc0d8f-ef06-407f-a23f-b491d9fe704b",
+      "bytes": 2899,
+      "sha256": "a1614dbe33b6a12b3d4ba706239407d03c8f97927a09b4e42b8f3c42e8b6e69e"
+    },
+    {
+      "path": "scripts/seed-rp-usb-fanouts.py",
+      "package_file_id": "7f7b9fe9-607b-4f0b-84be-fa71d21aded8",
+      "bytes": 3558,
+      "sha256": "d0c61329fa6909d82686285c0d1a801c443e1019d0b7af4845e5eaffc0e016c1"
+    },
+    {
+      "path": "scripts/seed-upright-cc-escapes.py",
+      "package_file_id": "adfa5af0-dce7-4db5-8e37-686eb577f269",
+      "bytes": 1944,
+      "sha256": "0c2d172f5b49f6bec22f27dc87572a4defed963fcfad079943a4fa1ce766f1df"
+    },
+    {
+      "path": "scripts/seed-upright-power-escapes.py",
+      "package_file_id": "13727363-9e09-4395-ae38-789966316eb7",
+      "bytes": 2180,
+      "sha256": "7023b09f70b05aede40ec1a04681f6ca3a0d78fd18710c989c58c753774849d4"
+    },
+    {
+      "path": "scripts/solve-edge-resistors.py",
+      "package_file_id": "3dcf03fd-b001-48e2-bf46-4c33c39f981b",
+      "bytes": 7431,
+      "sha256": "c5f5770e9057914f715a632fa2b4c2e035be5f73dba3afb52ae2682eae77f581"
+    },
+    {
+      "path": "scripts/solve-reference-feedback-layout.py",
+      "package_file_id": "c63d0c00-64b4-443c-ab96-c3e3677293cf",
+      "bytes": 11626,
+      "sha256": "3dc55942bb8c7dc30a9d724dbcd3e2fb2fb03b0476fab330d426b46c5c1890af"
+    },
+    {
+      "path": "scripts/solve-top-assembly.py",
+      "package_file_id": "08786b90-b237-43f6-a6ad-54dbefc680e8",
+      "bytes": 5217,
+      "sha256": "1d51bf8dc4f8da49d79a61e3c030345d1de085a78c84e48fc0a4fef2199017a1"
+    },
+    {
+      "path": "scripts/solve-usb-escape-placement.py",
+      "package_file_id": "e83bddc9-153b-4660-8fa4-5e8711cba8a6",
+      "bytes": 6396,
+      "sha256": "81cdec9241fd4acf1d174e89cab4a2eea2b904542658809cb7d1cab0abfa3ac1"
+    },
+    {
+      "path": "scripts/split-physical-trace-records.py",
+      "package_file_id": "7d029867-6d74-4817-a4c2-0c769c44f3f6",
+      "bytes": 1210,
+      "sha256": "b920f87dcbe89158a83f07b3681997b9a439b4c21d75244726d7d8d59ebab9de"
+    },
+    {
+      "path": "scripts/stitch-ground-islands.py",
+      "package_file_id": "f5d1cf38-7e65-4d41-a912-692dbd93493e",
+      "bytes": 4459,
+      "sha256": "f6bde7195a55ca25a5ce0cf1026ac43dac1b6a670782700149c2ab66fc5b4aa6"
+    },
+    {
+      "path": "scripts/sync-presentation.py",
+      "package_file_id": "9f52242c-c18c-49a2-bfd3-11d499b4eeb8",
+      "bytes": 2191,
+      "sha256": "1f53bf460508a0fe8447b9421ac22e9f94cf1bab62a4a65c929e726f533236b4"
+    },
+    {
+      "path": "scripts/sync-reviewed-mounting.py",
+      "package_file_id": "6308c33b-b371-4a32-92b2-31813bcec461",
+      "bytes": 2610,
+      "sha256": "653112cfb466f2a18c3fa92d4072926351fc9df56d914ec601d99a643b40f6a5"
+    },
+    {
+      "path": "scripts/test-placement-advisories.py",
+      "package_file_id": "f1613aaf-56a5-4b6f-8c86-b17c435a20e7",
+      "bytes": 1242,
+      "sha256": "7a4182dd8e9df9a427d649f392010bd7c189bf5265aa43a25373514f87231cc2"
+    },
+    {
+      "path": "scripts/trace-linter.sha256",
+      "package_file_id": "00d026bb-cf23-4d30-b218-06cbb217e1f0",
+      "bytes": 1276,
+      "sha256": "3fbf57f9554b2b2b864afd0b754f7643052beef8f060cedbe7200a0fe741c163"
+    },
+    {
+      "path": "scripts/trim-same-side-stubs.py",
+      "package_file_id": "0cb4eb60-354f-47e1-a07d-7bf1bdcfdb06",
+      "bytes": 3667,
+      "sha256": "6cbe1cb640589c96fc839150cd5c52b29c56da0570b5b1db7c021d765db23296"
+    },
+    {
+      "path": "scripts/validate-ch224a-migration.py",
+      "package_file_id": "67a5987b-55aa-413a-830d-192968b8857a",
+      "bytes": 2418,
+      "sha256": "63526193830fb386637065e1d8149973092cdb8082f3bc5a2ed8df95906d736b"
+    },
+    {
+      "path": "scripts/verify-assembly-publication.py",
+      "package_file_id": "0563193f-c00d-48a2-804b-623be7900048",
+      "bytes": 3586,
+      "sha256": "4763965bc71c486d4425333c046679a1ff28073e0aa9ed11995a237e673a0314"
+    },
+    {
+      "path": "scripts/verify-connectivity.py",
+      "package_file_id": "65ddc1e7-c1e2-49e3-923c-02d1e86b1549",
+      "bytes": 148,
+      "sha256": "56868d157b9dcf72b55fe74b18f6be1b04610721492c8bcef22b913cd0672249"
+    },
+    {
+      "path": "scripts/verify-jlcpcb-review.py",
+      "package_file_id": "89593508-3670-48a8-83a5-94637a3c39df",
+      "bytes": 7985,
+      "sha256": "4d8031b9c47403cdaa9000582b2f2d0ba034bd6e0690b5f35ac0d7f969aa0535"
+    },
+    {
+      "path": "scripts/verify-public-model-assets.py",
+      "package_file_id": "99f2ac81-56d9-45e1-a860-cd5eb2180200",
+      "bytes": 2337,
+      "sha256": "29d307e4c6dcf224fb7745079cb53681dfeb425c6d589061d5c27e6035bd5e3e"
+    },
+    {
+      "path": "scripts/verify-publication.py",
+      "package_file_id": "9a1906b1-f7ce-4dad-8672-95534f192cc6",
+      "bytes": 16867,
+      "sha256": "03330a91e1907b0496f4771f79d82ce560e730aec2de68fe1567f0db2fd63aa5"
+    },
+    {
+      "path": "scripts/verify-publish-readiness.py",
+      "package_file_id": "c973c226-264c-401c-b88b-cf05eba1fd5b",
+      "bytes": 2437,
+      "sha256": "7b03943d1537a039739044f3199e5269cce1b9efc96917c37fbf803de8684f4f"
+    },
+    {
+      "path": "scripts/verify-schematic.py",
+      "package_file_id": "49f43718-fc41-4f82-8f87-dad0e64fd203",
+      "bytes": 11279,
+      "sha256": "51785abc0e21afcd2506d8d2cca4d0b9c92590e9b1dbc4058787554aef13bdc7"
+    },
+    {
+      "path": "scripts/verify_supplier_connectivity.py",
+      "package_file_id": "0adc3445-ec7d-477f-bc9f-78a33a3b277c",
+      "bytes": 4221,
+      "sha256": "6ea09e2285041a7d475a5312a8973cffdfc169e70de57ae343493d2474f32496"
+    },
+    {
+      "path": "scripts/write-engineering-docs.py",
+      "package_file_id": "1ff1579d-5788-40ec-80fb-5ed550ecdcd4",
+      "bytes": 14802,
+      "sha256": "8e4ef4149c05b8e2959742bcd6f78bcbbe2f754b8dc007079b339a30ba8b0507"
+    },
+    {
+      "path": "src/board.tsx",
+      "package_file_id": "bec2ae8b-4628-4426-9c32-eda9bb87635d",
+      "bytes": 17143,
+      "sha256": "69a8b86917d6395fdec38e7dfd1a95e9a69c912c32bf29ba27efaec4e557fd3a"
+    },
+    {
+      "path": "src/jlcpcb-catalog.json",
+      "package_file_id": "ef655033-7405-402b-8b18-5377f04b462b",
+      "bytes": 45260,
+      "sha256": "4639c3dcf6895ee0268b206e2cb247ce69e5d3dcdde4d574442104252d311dc0"
+    },
+    {
+      "path": "src/layer-routing-policy.json",
+      "package_file_id": "7dd330d0-9cb3-4290-8dd9-fdba366dbc2b",
+      "bytes": 1872,
+      "sha256": "b6b82a283ed992e5a229b65fdc9110a3a66b9a00bf25abcb6d60abef99d2ebb5"
+    },
+    {
+      "path": "src/motor-harness.ts",
+      "package_file_id": "d1aab130-5c69-4720-87ce-389ab21d0bae",
+      "bytes": 7010,
+      "sha256": "f0e50444d13b75d2f929b56f90d9b060c0910a7e49b87b3c1a923af7d43798b7"
+    },
+    {
+      "path": "src/pin-attributes.ts",
+      "package_file_id": "d799edcf-9b2a-4e04-80b1-bc27772cfd0c",
+      "bytes": 2685,
+      "sha256": "cd46e72f05b4c26f05887da33fabc2243ff66a51142a9e71af39b824759f3720"
+    },
+    {
+      "path": "src/reference-connectors.tsx",
+      "package_file_id": "e888fa7b-a079-441d-a816-4e92e071a1a7",
+      "bytes": 1699,
+      "sha256": "8741165db0238b7bf0219e24deff9bf3e8f24f6ff919be746fdb502a32d7fd6a"
+    },
+    {
+      "path": "src/schematic-notes.json",
+      "package_file_id": "ac49101d-e5f3-41da-a502-9b64a433823e",
+      "bytes": 1298,
+      "sha256": "c36c9b17c957be954854fe12b523abcfd3e545d94416df6a59a2a7c771ba280f"
+    },
+    {
+      "path": "src/schematic-notes.tsx",
+      "package_file_id": "6f2d4d62-326c-4c88-b4e6-bb68c10aedde",
+      "bytes": 884,
+      "sha256": "00c9561e5b64aa87967fa5def58fe0a699906bc262ba84db1e37c8daa8136b7b"
+    },
+    {
+      "path": "src/supplier-parts.tsx",
+      "package_file_id": "74e5c36b-f489-4317-bd38-d6f60529db16",
+      "bytes": 6302,
+      "sha256": "52520e59c8f99c8db463b79268077da65fa5e56ca1889fb84c8414fd0498b7d8"
+    },
+    {
+      "path": "src/supplier-placement.json",
+      "package_file_id": "0f2683a0-786d-4b2e-8813-0a53e587c419",
+      "bytes": 7324,
+      "sha256": "74c20c31c8f1be6546f520870343940ac8cff92f596d3c56f18945be5ef672fa"
+    },
+    {
+      "path": "src/thermal-via-offsets.json",
+      "package_file_id": "aba71881-8139-4892-a7ad-e0c2966e62b4",
+      "bytes": 130,
+      "sha256": "b2214bd77bb7eb7d8eef0c8acf5e33e697de7ba5afe4387aa4420c837ea39e9e"
+    },
+    {
+      "path": "tests/fixtures/native-orientation-advisories.txt",
+      "package_file_id": "1039f60b-205c-450c-9b73-444d13666ed0",
+      "bytes": 6624,
+      "sha256": "7ce3d2aa014a7d9169f13b9c491933c8a6fd6bdd88aa9224b48920535197b934"
+    },
+    {
+      "path": "tests/fixtures/placement-ten-orientations.txt",
+      "package_file_id": "7f46a0e6-9758-4430-a78b-3bbb2cb5ba8d",
+      "bytes": 7212,
+      "sha256": "d6bd460d2e082267ef87d31562a462c1b4ba61d9ca235aa7a21065d9e2ab3b5c"
+    },
+    {
+      "path": "tests/test_placement_advisories.py",
+      "package_file_id": "36aed14e-f75e-4bd2-90fa-3da06a119172",
+      "bytes": 2169,
+      "sha256": "279957a85ac54b0803ee774025ea05f2ece40e0faa19a5683ec589f0c8147bc6"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "package_file_id": "66f67e2a-63a3-49f6-81f4-daa2e334c76a",
+      "bytes": 179,
+      "sha256": "9d84c5c08426d477efad99320dcd22ef362733219af0e71d130c3161270850fe"
+    },
+    {
+      "path": "tsconfig.json",
+      "package_file_id": "16786e12-e613-4c36-a09d-2ab7d1b149be",
+      "bytes": 431,
+      "sha256": "f1f115c6efe5e681adf51faf26b9217d0a4cbdc20120a57de109ebd80fae6df4"
+    }
+  ]
+}

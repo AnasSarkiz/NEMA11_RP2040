@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pre-layout A4988 screening, conditional on the still-unverified v1.13 driver.
+"""Pre-layout screening of the published v1.13 A4988 and original motor drawing.
 
 This is a design calculation, not component selection, thermal simulation, a
 manufacturer-guaranteed current bound, or hardware validation.
@@ -45,7 +45,7 @@ def report():
     # Transients and input/regeneration need separate budgets and measurements.
     return {
         'status': 'pre_layout_conditional_calculation_only',
-        'driver_assumption': 'A4988, as observed in GitHub v1.12.0; verify v1.13.0',
+        'driver_assumption': 'A4988SETTR-T verified in exact published NEMA14 v1.13.0; accuracy/thermal qualification remains open',
         'motor_phase_current_ceiling_a': rated,
         'assumptions': {
             'logic_rail_v': 3.3, 'logic_rail_tolerance_fraction': .05,
@@ -75,7 +75,10 @@ def report():
             'driver_conduction_w_per_ohm_of_bridge_path_two_phases': 2 * rated ** 2,
             'conduction_loss_multiplier_vs_v1_12_at_same_rds': (rated / reference) ** 2,
             'motor_copper_loss_w_per_ohm_per_phase_two_phases_at_rated_current': 2 * rated ** 2,
-            'motor_copper_loss_w': None,
+            'motor_copper_loss_w': 2 * rated ** 2 * req['motor']['phase_resistance_ohms'],
+            'motor_two_phase_DC_loss_at_25c_max_resistance_w': 2 * rated ** 2 * req['motor']['phase_resistance_ohms'] * (1 + req['motor']['phase_resistance_tolerance_fraction']),
+            'ideal_sine_microstep_total_loss_at_nominal_trip_and_25c_w': nominal ** 2 * req['motor']['phase_resistance_ohms'],
+            'motor_loss_scope': 'Two phases at rated DC current versus ideal sine current regulation; excludes winding heating, drive losses and mechanical losses',
             'junction_temperature_c': None
         },
         'isolated_trace_screen_minimum_width_mm_at_0_67a': {
@@ -83,8 +86,7 @@ def report():
             'internal_17_5um': ipc2221_width_mm(rated, 17.5, 30, True)
         },
         'release_blockers': [
-            'Retrieve and hash published v1.13.0 and verify actual driver/sense topology.',
-            'Read original motor drawing, resistance, inductance, duty and temperature limits.',
+            'Complete physical-pin parity and current-sense topology review of exact published v1.13.0.',
             'Select genuine supplier parts; verify tolerance, pulse power and hot derating.',
             'Verify manufacturer current accuracy across microsteps and actual VDD limits.',
             'Review Kelvin sense, shared returns, exposed pad, copper and via thermal paths.',

@@ -1,5 +1,5 @@
 {
-  "name": "NEMA11_RP2040_MCU_Prototype",
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_MCU_Prototype",
   "version": "0.1.0",
   "description": "Native tscircuit RP2040 subsystem PCB prototype; incomplete NEMA11 controller, NOT fabrication ready",
   "main": "index.circuit.json",

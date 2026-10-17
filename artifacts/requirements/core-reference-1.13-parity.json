@@ -1,0 +1,17 @@
+{
+  "scope": "Implemented MCU subset physical pin/value parity against downloaded exact published v1.13.0",
+  "ports_compared": 119,
+  "components_compared": 31,
+  "errors": [
+    {
+      "component": "Y_MCU",
+      "field": "frequency",
+      "core": null,
+      "reference": 12000000
+    }
+  ],
+  "core_sha256": "e9d974d645e2eeaf0c5ef1668dc039b8fb795c7803f882523c58382b77b00621",
+  "reference_board_sha256": "16a605a565a272ce12a5194f28e1d9d8359c183d6110d117a4771d2b8ec91d2d",
+  "whole_controller_parity_verified": false,
+  "manufacturing_release": false
+}

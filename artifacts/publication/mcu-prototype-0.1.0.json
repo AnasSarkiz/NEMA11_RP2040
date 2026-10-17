@@ -1,0 +1,63 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_MCU_Prototype",
+  "version": "0.1.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_MCU_Prototype",
+  "package_release_id": "f9a921a5-4059-4a10-9e62-b98f14b025a4",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_exit_code": 1,
+  "CLI_reported_errors": "HTTP 413/500; CLI reported upload failures, but exact source and dist were persisted by the registry",
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2452,
+      "sha256": "a7ea5ab708d6315db0f3e299bd777b695886956c71868a441bd86d867420e5ad",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 8869724,
+      "sha256": "a2b96cf97b7df2ef5f435b75eb4d415d357114483cc0461372a3034b23bbc1e4",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 3396648,
+      "sha256": "617135ef3d43a8500557d4ed493ce4f5233b02388304ccf3300ce636fa71ca81",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 2531,
+      "sha256": "2ad2ce0443796464372d775be83907c0a82923bad9f033454ab7b0f6a46faa31",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 724,
+      "sha256": "efe6e8ef26c2a5a59716180eb546bac7ac9456f07acdd0471adbb89043ce8443",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 379,
+      "sha256": "e6bf0679bb9abe57612d27c92fb25099cf45d537f797d49002152c6c790279bb",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "registry_native_3d_preview": {
+    "verified": true,
+    "sha256": "57f5d9469c191124c6edbda49223222850bcb9a9328420462c8a5e949a41085d",
+    "bytes": 20148
+  },
+  "scope": "MCU subsystem only, incomplete NEMA11 controller",
+  "fabrication_ready": false
+}
