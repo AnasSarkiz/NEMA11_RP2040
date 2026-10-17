@@ -1,5 +1,11 @@
 # Motor-face compact redesign
 
+The active [four-hole candidate](four-mount-compact.md) supersedes the two-hole
+placement milestones described below. It has 76 fitted parts on top, with the
+complete buzzer circuit removed under the user's explicit authorization. All
+other features remain checked. The 0.1.0 and 0.2.0 prototypes below are frozen
+historical checkpoints; latest 0.3.0 is the unrouted four-hole source/3D snapshot.
+
 The user requires the PCB and installed USB/JST/component bodies to fit within
 the motor's **28.3 × 28.3 mm maximum frame**. The OEM drawing A0071 revision 2
 states that maximum; it does not state a 28.0 mm nominal frame. The initial PCB

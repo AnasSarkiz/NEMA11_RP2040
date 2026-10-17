@@ -25,5 +25,13 @@
   "compact_layout_validated": false,
   "manufacturing_release": false,
   "through_hole_soldering_allowed": true,
-  "user_single_side_definition": "All fitted components on top; through-hole joints may be soldered underneath"
+  "user_single_side_definition": "All fitted components on top; through-hole joints may be soldered underneath",
+  "PCB_mount_count_required": 4,
+  "mounting_profile": "config/compact-four-mounts.json",
+  "authorized_feature_exceptions": {
+    "buzzer": "May be removed if needed to fit four mounting holes; active four-hole profile removes complete drive circuit and marks GPIO16 NC"
+  },
+  "active_source_profile": "src/compact/four-mount-board.tsx",
+  "active_source_placement_and_schematic_validated": true,
+  "full_compact_routing_complete": false
 }

@@ -1,0 +1,12 @@
+{
+  "constraints": [
+    [
+      "C_REF",
+      "1",
+      "U_DRV",
+      "17",
+      3.0
+    ]
+  ],
+  "reason": "Keep the current-reference filter capacitor at the driver input; the divider can remain remote"
+}

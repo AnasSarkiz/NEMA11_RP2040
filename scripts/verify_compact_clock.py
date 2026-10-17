@@ -7,10 +7,10 @@ from shapely.ops import unary_union
 from pcb_geometry import Copper
 from fill_controller_ground import fill
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--source-folder',default='artifacts/compact-routing');parser.add_argument('--folder',default='artifacts/compact-clock');parser.add_argument('--keep-usb',action='store_true');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--source-folder',default='artifacts/compact-routing');parser.add_argument('--folder',default='artifacts/compact-clock');parser.add_argument('--keep-usb',action='store_true');parser.add_argument('--keep-all',action='store_true');args=parser.parse_args()
 folder=ROOT/args.folder;folder.mkdir(exist_ok=True);source=ROOT/args.source_folder/'routing-construction.circuit.json';records=json.loads(source.read_text());c=Copper(records)
 keep={'XIN','XOUT','XTAL_OUT'}|({'MCU_DM','MCU_DP'} if args.keep_usb else set())
-records=[e for e in records if e['type'] not in ['pcb_trace','pcb_via','pcb_copper_pour'] or (e['type'] in ['pcb_trace','pcb_via'] and (c.nets.get(c.key(e)) in keep or e.get('pcb_trace_id','').startswith('compact_GND_') or e.get('pcb_via_id','').startswith('compact_GND_')))]
+records=[e for e in records if args.keep_all or e['type'] not in ['pcb_trace','pcb_via','pcb_copper_pour'] or (e['type'] in ['pcb_trace','pcb_via'] and (c.nets.get(c.key(e)) in keep or e.get('pcb_trace_id','').startswith('compact_GND_') or e.get('pcb_via_id','').startswith('compact_GND_')))]
 fill(records);data=(json.dumps(records,indent=2)+'\n').encode();(folder/'board.circuit.json').write_bytes(data);c=Copper(records);keys={v:k for k,v in c.nets.items()};elements=c.elements();errors=[];rows=[];regions=[]
 for name,maximum in [('XIN',5),('XOUT',6),('XTAL_OUT',5)]:
  traces=[e for e in records if e['type']=='pcb_trace' and c.key(e)==keys[name]];vias=[e for e in records if e['type']=='pcb_via' and c.key(e)==keys[name]];length=0;layers=set()

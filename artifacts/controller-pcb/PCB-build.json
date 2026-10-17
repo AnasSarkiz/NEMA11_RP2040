@@ -44,7 +44,7 @@
     },
     {
       "path": "scripts/fill_controller_ground.py",
-      "sha256": "ea6b1e31b0c6b1e2d1cda007c1c878d085e3245bc97c72ce49ce0c38191a65b3"
+      "sha256": "1242df890ab323a14c20457b9dde7d556d084639211e1cb7bcd4aab12bab198f"
     },
     {
       "path": "scripts/annotate_controller_pcb.py",

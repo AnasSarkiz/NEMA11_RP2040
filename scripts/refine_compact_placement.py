@@ -10,10 +10,11 @@ import numpy as np
 from scipy.optimize import linprog
 ROOT=Path(__file__).resolve().parents[1]
 a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--omit-critical',action='store_true');a.add_argument('--clock-corridor',action='store_true');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');a.add_argument('--output',default='refined-placement.json');a.add_argument('--diagnose-critical',action='store_true');a.add_argument('--seed',type=int,default=0);a.add_argument('--IIS',action='store_true',dest='iis')
-a.add_argument('--mount-count',type=int,choices=[2,4],default=2);a.add_argument('--no-buzzer',action='store_true');args=a.parse_args()
+a.add_argument('--mount-count',type=int,choices=[2,4],default=2);a.add_argument('--no-buzzer',action='store_true');a.add_argument('--extra-constraints');args=a.parse_args()
 parts=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts']
 if args.no_buzzer:parts=[p for p in parts if p['name'] not in ['BZ1','Q_BUZZER','D_BUZZER','R_BUZZER_GATE','R_BUZZER_PD','C_BUZZER']]
 q=json.loads(Path(args.input).read_text())['placements'];cs=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
+if args.extra_constraints:cs+=json.loads(Path(args.extra_constraints).read_text())['constraints']
 if args.usb_escape:cs += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
 rng=random.Random(args.seed);switched=[]
 names=[p['name'] for p in parts];idx={n:i for i,n in enumerate(names)};N=len(names);rows=[];limits=[];labels=[]

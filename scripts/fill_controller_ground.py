@@ -29,7 +29,7 @@ def fill(records):
         elif e['type'] == 'pcb_hole':
             exclusions.append(pad_shape({**e, 'shape': 'circle', 'width': e['hole_diameter']}).buffer(.30))
     regions = []
-    for layer in LAYERS:
+    for layer in copper.layers:
         anchors, obstacles = [], list(exclusions)
         for record, other, shapes in elements:
             if layer not in shapes:

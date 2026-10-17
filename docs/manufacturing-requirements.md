@@ -1,5 +1,12 @@
 # Manufacturing and qualification requirements
 
+This page describes the **earlier 35 × 40 mm routed baseline**. Its BOM/CPL,
+Gerbers, counts, mounting hardware, coordinates and minimum mask web do not
+qualify the active four-hole 28 mm candidate. See [four-hole requirements](four-mount-compact.md).
+The compact candidate has no approved manufacturing output. Its filled/capped
+terminal-via plan, final stackup, mask/paste, panel, carrier and harness require
+separate review after routing.
+
 The review Gerbers and exact candidate BOM/CPL are generated and checked. They
 are not approved order files. No supplier quote, stock reservation, factory CAM
 approval or assembled hardware test is represented by this milestone.

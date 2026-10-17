@@ -36,25 +36,40 @@ const thermal = Object.entries(offsets).map(([name, raw]) => {
   if (found.length !== 1) throw new Error(`Expected exactly one reviewed ${name} exposed-pad thermal barrel`)
   return found[0]
 })
-// Only the three explicitly reviewed ground thermal vias are omitted from the
-// via-in-pad prohibition. Their required filled/capped fabrication is separate.
-const strict = records.filter(r => !thermal.includes(r)).map(r => r.type === "pcb_board" ? { ...r, is_via_in_pad_allowed: false } : r)
+const policyArg=process.argv.indexOf("--filled-capped-policy")
+const policy=policyArg>=0?JSON.parse(readFileSync(process.argv[policyArg+1],"utf8")):undefined
+if(policy && (policy.circuit_sha256!==createHash("sha256").update(bytes).digest("hex") || policy.required_process!=="IPC-4761 Type VII epoxy-filled and copper-capped on all 0.30 mm vias only" || policy.ordinary_vias_in_pads_permitted!==false))throw new Error("Filled/capped process policy does not match this native board")
+const terminal=(policy?.reviewed_vias??[]).map((v:any)=>{
+ const via=records.find(r=>r.type==="pcb_via" && r.pcb_via_id===v.via_id)
+ if(!via || via.source_net_id!==v.source_net_id || via.outer_diameter!==v.pad_diameter_mm || via.hole_diameter!==.3 || !v.owner_pad_ids.length)throw new Error("Invalid capped terminal-via process selection: "+v.via_id)
+ for(const id of v.owner_pad_ids){
+  const pad=records.find(r=>r.type==="pcb_smtpad" && r.pcb_smtpad_id===id)
+  const port=records.find(r=>r.type==="pcb_port" && r.pcb_port_id===pad?.pcb_port_id)
+  const source=records.find(r=>r.type==="source_port" && r.source_port_id===port?.source_port_id)
+  if(!source || source.subcircuit_connectivity_map_key!==via.subcircuit_connectivity_map_key)throw new Error("Capped via owner net mismatch: "+id)
+ }
+ return via
+})
+// The three thermal barrels and, when selected, the hash-bound Type VII
+// terminal-via process are permitted. Ordinary vias remain prohibited in pads.
+const strict = records.filter(r => !thermal.includes(r) && !terminal.includes(r)).map(r => r.type === "pcb_board" ? { ...r, is_via_in_pad_allowed: false } : r)
 // Keep all three thermal barrels present for connectivity and other checks.
 const checks = await runAllChecks(records.map(r => r.type === "pcb_board" ? { ...r, is_via_in_pad_allowed: true } : r))
 checks.push(...checkViasInPads(strict))
 const errors = [...records, ...checks].filter(r => r.type.endsWith("_error"))
 const unique = [...new Map(errors.map(r => [JSON.stringify(r), r])).values()]
 const warnings = checks.filter(r => r.type.endsWith("_warning"))
-writeFileSync(path + "native-drc.json", JSON.stringify({ scope: "Full 92-component controller native DRC",
+writeFileSync(path + "native-drc.json", JSON.stringify({ scope: policy || records.filter(r=>r.type==="source_component").length!==92 ? `Native ${records.filter(r=>r.type==="source_component").length}-component controller DRC` : "Full 92-component controller native DRC",
   tool: "@tscircuit/checks@0.0.242 with checksum-verified exact circular-keepout distance correction",
   toolchain_correction: patchPath,
   toolchain_correction_sha256: createHash("sha256").update(patchBytes).digest("hex"),
   no_findings_filtered_or_waived: true,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
-  strict_schema_pass: true, reviewed_thermal_vias: thermal.map(r => r.pcb_via_id),
+  strict_schema_pass: true, ...(policy?{selected_terminal_via_process:policy.required_process, reviewed_terminal_vias:terminal.map((r:any)=>r.pcb_via_id), terminal_via_factory_acceptance_received:policy.factory_acceptance_received}:{}), reviewed_thermal_vias: thermal.map(r => r.pcb_via_id),
   errors: unique, warnings, native_drc_pass: unique.length === 0, manufacturing_release: false }, null, 2) + "\n")
 if (!process.argv.includes("--checks-only")) {
-  for (const layer of ["top", "inner1", "inner2", "bottom"] as const) {
+  const renderLayers=records.find(r=>r.type==="pcb_board").num_layers===6 ? ["top","inner1","inner2","inner3","inner4","bottom"] as const : ["top","inner1","inner2","bottom"] as const
+  for (const layer of renderLayers) {
     const svg = convertCircuitJsonToPcbSvg(records, { layer, width: 1400, height: 1600,
       showSolderMask: false, showSolderPaste: false, shouldDrawRatsNest: false, showPinNumbers: true })
       .replace(/[ \t]+$/gm, "")

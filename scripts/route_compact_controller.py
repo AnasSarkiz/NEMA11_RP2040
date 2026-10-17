@@ -8,18 +8,27 @@ import argparse
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
 from shapely.geometry import Point,Polygon,LineString
 from shapely.ops import unary_union
-from pcb_geometry import Copper,pad_shape,LAYERS
+from pcb_geometry import Copper,pad_shape,LAYERS,board_layers
 import route_controller_connections as router
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'artifacts/compact-controller'
 router.STEP=.025;router.LOW=-14;router.N=1121;router.LAYOUT=['top','bottom','inner2']
+CONSTRUCTION_VIA_DIAMETER=.50
 xy=router.xy;N=router.N
 
+def configure(records):
+ global LAYERS
+ LAYERS=board_layers(records)
+ router.LAYERS=LAYERS
+ router.LAYOUT=['top','bottom']+[layer for layer in LAYERS if layer.startswith('inner') and layer!='inner1']
+
 def masks(records,copper,key,widths_by_layer,layers):
+ configure(records)
  wi=[Image.new('L',(N,N)) for _ in layers];vi=[Image.new('L',(N,N)) for _ in LAYERS]
  wd=[ImageDraw.Draw(i) for i in wi];vd=[ImageDraw.Draw(i) for i in vi]
  def draw(ds,stack,ls,shape,margin):
@@ -28,7 +37,8 @@ def masks(records,copper,key,widths_by_layer,layers):
    polygon=shape.buffer(margin[layer],quad_segs=16)
    for piece in polygon.geoms if hasattr(polygon,'geoms') else [polygon]:
     if piece.geom_type=='Polygon':ds[stack.index(layer)].polygon([xy(x,y) for x,y in piece.exterior.coords],fill=1)
- wm={l:.15+widths_by_layer[l]/2+.012 for l in layers};vm={l:.15+.25+.012 for l in LAYERS}
+ radius=CONSTRUCTION_VIA_DIAMETER/2
+ wm={l:.15+widths_by_layer[l]/2+.012 for l in layers};vm={l:.15+radius+.012 for l in LAYERS}
  for e,k,shapes in copper.elements():
   for l,shape in shapes.items():
    if k!=key:draw(wd,layers,[l],shape,wm)
@@ -43,7 +53,9 @@ def masks(records,copper,key,widths_by_layer,layers):
    hole=pad_shape(h)
    clearance=.45 if e['type']=='pcb_plated_hole' else .2
    draw(vd,LAYERS,LAYERS,hole,{l:.15+clearance+.012 for l in LAYERS})
-   if e['type']=='pcb_hole':draw(wd,layers,layers,hole,{l:.2+widths_by_layer[l]/2+.012 for l in layers})
+   if e['type']=='pcb_hole':
+    draw(vd,LAYERS,LAYERS,hole,{l:.2+radius+.012 for l in LAYERS})
+    draw(wd,layers,layers,hole,{l:.2+widths_by_layer[l]/2+.012 for l in layers})
  # Preserve the crystal top-copper guard and the adjacent inner1 reference.
  # Signal-via antipads must also remain outside that guard. Inner2/bottom
  # signal traces may pass behind the continuous inner1 ground reference.
@@ -59,13 +71,13 @@ def masks(records,copper,key,widths_by_layer,layers):
   if clock:
    guard=unary_union(clock).difference(unary_union(exempt))
    draw(wd,layers,['top'],guard,{l:widths_by_layer[l]/2+.012 for l in layers})
-   draw(vd,LAYERS,LAYERS,guard,{l:.25+.012 for l in LAYERS})
+   draw(vd,LAYERS,LAYERS,guard,{l:radius+.012 for l in LAYERS})
  for l,d in zip(layers,wd):
   margin=.25+widths_by_layer[l]/2+.012
   edge=math.ceil(margin/router.STEP);far=math.floor((28-margin)/router.STEP)
   d.rectangle([0,0,edge,N-1],fill=1);d.rectangle([far,0,N-1,N-1],fill=1);d.rectangle([0,0,N-1,edge],fill=1);d.rectangle([0,far,N-1,N-1],fill=1)
  for d in vd:
-  margin=.25+.25+.012;edge=math.ceil(margin/router.STEP);far=math.floor((28-margin)/router.STEP)
+  margin=.25+radius+.012;edge=math.ceil(margin/router.STEP);far=math.floor((28-margin)/router.STEP)
   d.rectangle([0,0,edge,N-1],fill=1);d.rectangle([far,0,N-1,N-1],fill=1);d.rectangle([0,0,N-1,edge],fill=1);d.rectangle([0,far,N-1,N-1],fill=1)
  return [np.asarray(i,dtype=np.bool_) for i in wi],[np.asarray(i,dtype=np.bool_) for i in vi]
 router.masks=masks
@@ -74,6 +86,7 @@ if __name__=='__main__':
  OUT=ROOT/args.folder
  target=OUT/'routing-construction.circuit.json';source=OUT/'unrouted.circuit.json';history_path=OUT/'routing-construction.json'
  records=json.loads((source if args.restart or not target.exists() else target).read_text())
+ configure(records)
  history=[] if args.restart or not history_path.exists() else json.loads(history_path.read_text())
  if args.restart or not target.exists():
   ports=[e for e in records if e['type']=='source_port']
@@ -84,13 +97,17 @@ if __name__=='__main__':
  if args.net:order=[args.net]
  failed=[]
  for name in order:
+  pattern=re.compile(r'^controller_connection_'+re.escape(name)+r'_(\d+)_section_\d+$')
+  serials=[int(m.group(1)) for e in records if e['type']=='pcb_trace' and (m:=pattern.match(e['pcb_trace_id']))]
+  serial_base=max(serials,default=-1)+1
   for attempt in range(100):
    copper=Copper(records);key=next(k for k,n in copper.nets.items() if n==name)
    members,roots=copper.groups(key);island_count=len({root for (e,_,_),root in zip(members,roots) if e['type'] in ['pcb_smtpad','pcb_plated_hole']})
    proof=None;failures=[]
    for rank in range(min(island_count,16)):
     try:
-     proof=router.connect(records,name,attempt,['top'] if args.top_only or name in ['XIN','XOUT','XTAL_OUT'] else None,start_rank=rank)
+     selected_layers=['top'] if args.top_only or name in ['XIN','XOUT','XTAL_OUT'] else (router.LAYOUT if len(LAYERS)==6 and name=='LOGIC_IN' else None)
+     proof=router.connect(records,name,serial_base+attempt,selected_layers,start_rank=rank)
      break
     except RuntimeError as err:failures.append({'start_rank':rank,'error':str(err)})
    if failures and proof is None:

@@ -7,7 +7,7 @@ from shapely.strtree import STRtree
 from pcb_geometry import Copper,pad_shape,LAYERS
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--folder',default='artifacts/compact-routing');args=p.parse_args();folder=ROOT/args.folder;path=folder/'routing-construction.circuit.json';records=json.loads(path.read_text());results=[]
-c=Copper(records);net=next(e for e in records if e['type']=='source_net' and e['name']=='GND');key=net['subcircuit_connectivity_map_key'];common=dict(source_net_id=net['source_net_id'],source_trace_id='source_trace_controller_route_GND',subcircuit_connectivity_map_key=key,subcircuit_id=net['subcircuit_id'])
+c=Copper(records);LAYERS=c.layers;net=next(e for e in records if e['type']=='source_net' and e['name']=='GND');key=net['subcircuit_connectivity_map_key'];common=dict(source_net_id=net['source_net_id'],source_trace_id='source_trace_controller_route_GND',subcircuit_connectivity_map_key=key,subcircuit_id=net['subcircuit_id'])
 geometry_cache={}
 def geometry():
  if geometry_cache.get('length')!=len(records):

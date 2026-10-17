@@ -68,7 +68,7 @@ def inspect(records):
             if pair in seen:continue
             seen.add(pair)
             gap=shape.distance(metal)
-            minimum=.30 if hole['type']=='pcb_plated_hole' and layer in ['inner1','inner2'] else .20
+            minimum=.30 if hole['type']=='pcb_plated_hole' and layer.startswith('inner') else .20
             if gap < minimum-2e-6:
                 errors.append({'type':'drill_to_foreign_copper','drill':hid,'copper':rid,'layer':layer,'gap_mm':gap,'minimum_mm':minimum})
     report.update(scope='Full controller physical copper; no symbolic net IDs substitute for contact',

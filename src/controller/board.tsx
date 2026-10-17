@@ -19,7 +19,7 @@ export type ControllerProfile = {
  width:number,height:number,outline:{x:number,y:number}[],
  mounts:{x:number,y:number,diameter:number,radius:number}[],
  placementOverrides?:Record<string,ControllerPlacement>,
- Part?:React.ComponentType<any>,compactLabels?:boolean,buzzerEnabled?:boolean,
+ Part?:React.ComponentType<any>,compactLabels?:boolean,buzzerEnabled?:boolean,layers?:4|6,
 }
 export default function Nema11Controller({ routingDisabled = false, schematicDisabled = false, profile }: { routingDisabled?: boolean, schematicDisabled?: boolean, profile?:ControllerProfile } = {}) {
  const SupplierPart=profile?.Part ?? OriginalSupplierPart
@@ -28,14 +28,14 @@ export default function Nema11Controller({ routingDisabled = false, schematicDis
  const mounts=profile?.mounts ?? [-mechanical.holePitch/2,mechanical.holePitch/2].flatMap(x=>[-mechanical.holePitch/2,mechanical.holePitch/2].map(y=>({x,y,diameter:mechanical.holeDiameter,radius:mechanical.headEnvelopeRadius})))
  const resistor = (name:string,value:string,a:string,b:string) => <SupplierPart key={name} name={name}  resistance={value} tolerance="1%" {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
 const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={name} name={name}  capacitance={value} maxVoltageRating={['PD_VBUS','LOGIC_IN','BUCK_BST','CP1'].includes(a)||b==='PD_VBUS'?35:10} {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
- return <board width={profile?.width ?? 35} height={profile?.height ?? 40} outline={profile?.outline ?? [{x:-17.5,y:-17.5},{x:17.5,y:-17.5},{x:17.5,y:22.5},{x:-17.5,y:22.5}]} layers={4} thickness={1.6}
+ return <board width={profile?.width ?? 35} height={profile?.height ?? 40} outline={profile?.outline ?? [{x:-17.5,y:-17.5},{x:17.5,y:-17.5},{x:17.5,y:22.5},{x:-17.5,y:22.5}]} layers={profile?.layers ?? 4} thickness={1.6}
   routingDisabled={routingDisabled} schematicDisabled={schematicDisabled} minTraceWidth={0.16} minTraceToPadEdgeClearance={0.15} minPadEdgeToPadEdgeClearance={0.15}
   minViaHoleDiameter={0.3} minViaPadDiameter={0.45} minViaHoleEdgeToViaHoleEdgeClearance={0.2} minPlatedHoleDrillEdgeToDrillEdgeClearance={0.45} minBoardEdgeClearance={0.25}
   autorouter={{local:true, traceClearance:0.15}} autorouterEffortLevel="2x" schAutoLayoutEnabled={false}>
   <schematicsheet name="NEMA11_RP2040" sheetSize="A4">
   {['GND','PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','PD_CC1','PD_CC2','DATA_CC1','DATA_CC2','USB_DP','USB_DM','STEP','DIR','ENABLE_N','SLEEP','PD_GOOD','DATA_PRESENT','VM_SENSE','VREF','CP1','CP2','VCP','VREG','SENSE1','SENSE2','A_PLUS','A_MINUS','B_PLUS','B_MINUS','V1V1','QSPI_SS','QSPI_SCLK','QSPI_SD0','QSPI_SD1','QSPI_SD2','QSPI_SD3','MCU_DM','MCU_DP','XIN','XOUT','XTAL_OUT','RUN','SWCLK','SWDIO','BUCK_SW','BUCK_BST','BOOT_PAD','PWR_LED_A','TEMP_SDA','TEMP_SCL','BUZZER_PWM','BUZZER_GATE','BUZZER_SINK','LED_R','LED_G','LED_B','STATUS_R_K','STATUS_G_K','STATUS_B_K','STATUS_R_C','STATUS_G_C','STATUS_B_C','PD_CFG'].filter(name=>buzzerEnabled || !['BUZZER_PWM','BUZZER_GATE','BUZZER_SINK'].includes(name)).map(name=><React.Fragment key={name}><net name={name} isGroundNet={name==='GND'} isPowerNet={['PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','V1V1'].includes(name)} nominalTraceWidth={['PD_VBUS','A_PLUS','A_MINUS','B_PLUS','B_MINUS','SENSE1','SENSE2'].includes(name)?0.30:0.16} /></React.Fragment>)}
   {/* These keepouts constrain copper. Supplier courtyards remain intact; native STEP solids independently validate component/head clearance. */}
-  {mounts.map(({x,y,diameter,radius})=><React.Fragment key={`${x},${y}`}><hole name={`M${x}_${y}`} pcbX={x} pcbY={y} diameter={diameter} /><keepout pcbX={x} pcbY={y} shape="circle" radius={radius} allowPlacements={true} layers={['top','inner1','inner2','bottom']} /><silkscreencircle pcbX={x} pcbY={y} radius={radius} strokeWidth={0.1} /></React.Fragment>)}
+  {mounts.map(({x,y,diameter,radius})=><React.Fragment key={`${x},${y}`}><hole name={`M${x}_${y}`} pcbX={x} pcbY={y} diameter={diameter} /><keepout pcbX={x} pcbY={y} shape="circle" radius={radius} allowPlacements={true} layers={profile?.layers===6?['top','inner1','inner2','inner3','inner4','bottom']:['top','inner1','inner2','bottom']} /><silkscreencircle pcbX={x} pcbY={y} radius={radius} strokeWidth={0.1} /></React.Fragment>)}
   <SupplierPart name="J_PD" {...pinProps("J_PD")}    noConnect={['DP1','DP2','DM1','DM2','SBU1','SBU2']} {...place("J_PD")} connections={{...baseUsb,VBUS1:n('PD_VBUS'),VBUS2:n('PD_VBUS'),VBUS3:n('PD_VBUS'),VBUS4:n('PD_VBUS'),CC1:n('PD_CC1'),CC2:n('PD_CC2')}} />
   <SupplierPart name="J_DATA" {...pinProps("J_DATA")}    noConnect={['SBU1','SBU2']} {...place("J_DATA")} connections={{...baseUsb,VBUS1:n('DATA_VBUS'),VBUS2:n('DATA_VBUS'),VBUS3:n('DATA_VBUS'),VBUS4:n('DATA_VBUS'),CC1:n('DATA_CC1'),CC2:n('DATA_CC2'),DP1:n('USB_DP'),DP2:n('USB_DP'),DM1:n('USB_DM'),DM2:n('USB_DM')}} />
   <SupplierPart name="U_PD" {...pinProps("U_PD")}  pinLabels={pdPins} noConnect={['DP','DM','CFG2','CFG3']} {...place("U_PD")} connections={{VHV:n('PD_VHV'),CFG1:n('PD_CFG'),VBUS:n('PD_VBUS'),CC1:n('PD_CC1'),CC2:n('PD_CC2'),PG:n('PD_GOOD'),GND:n('GND')}} />

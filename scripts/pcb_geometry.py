@@ -6,6 +6,13 @@ from shapely.strtree import STRtree
 
 LAYERS = ['top', 'inner1', 'inner2', 'bottom']
 
+def board_layers(records):
+    board = next((e for e in records if e['type'] == 'pcb_board'), {})
+    count = board.get('num_layers', 4)
+    if count not in [2, 4, 6, 8]:
+        raise ValueError('Unsupported copper layer count: ' + str(count))
+    return ['top'] + ['inner' + str(i) for i in range(1, count-1)] + ['bottom']
+
 
 def pad_shape(e):
     if e.get('shape') == 'polygon':
@@ -26,6 +33,7 @@ def pad_shape(e):
 class Copper:
     def __init__(self, records):
         self.records = records
+        self.layers = board_layers(records)
         self.source = {e['source_port_id']: e for e in records if e['type'] == 'source_port'}
         self.ports = {e['pcb_port_id']: e for e in records if e['type'] == 'pcb_port'}
         self.names = {e['source_component_id']: e['name'] for e in records if e['type'] == 'source_component'}
@@ -76,7 +84,7 @@ class Copper:
                 i = parent[i]
             return i
 
-        for layer in LAYERS:
+        for layer in self.layers:
             shapes, owners = [], []
             for i, (_, _, geometry) in enumerate(elements):
                 if layer in geometry:

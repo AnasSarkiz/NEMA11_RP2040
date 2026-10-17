@@ -10,7 +10,7 @@ from shapely.affinity import rotate,translate
 from shapely.geometry import Polygon,Point,box
 from pcb_geometry import Copper,pad_shape
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');parser.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=parser.parse_args();OUT=ROOT/args.folder
+parser=argparse.ArgumentParser();parser.add_argument('--folder',default='artifacts/compact-controller');parser.add_argument('--placement');parser.add_argument('--extra-constraints');parser.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=parser.parse_args();OUT=ROOT/args.folder
 path=OUT/'unrouted.circuit.json';records=json.loads(path.read_text());base=json.loads((ROOT/'artifacts/controller/unrouted.circuit.json').read_text());samples=json.loads((ROOT/'artifacts/compact-controller/supplier-samples.circuit.json').read_text());envelopes=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts'];poses=json.loads((ROOT/'src/compact/placement.json').read_text());
 placement_report=json.loads(Path(args.placement).read_text()) if args.placement else {}
 if args.placement:poses.update(placement_report['placements'])
@@ -71,6 +71,7 @@ parts={p['name']:p for p in envelopes}
 def pin(name,number):
  p=parts[name];x,y=p['pin_centers_relative_mm'][number];q=poses[name];a=math.radians(q['pcbRotation']-p['original_rotation']);c=round(math.cos(a));s=round(math.sin(a));return [c*x-s*y+q['pcbX'],s*x+c*y+q['pcbY']]
 critical=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
+if args.extra_constraints:critical+=json.loads(Path(args.extra_constraints).read_text())['constraints']
 if args.usb_escape:critical += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
 anchors={(v['a'],v['b']):v for v in placement_report.get('power_copper_connection_anchors',[])} if args.usb_escape else {}
 allowed_anchors={('L_BUCK.1','U_BUCK.5'),('C_BUCK_OUT1.1','L_BUCK.2'),('C_BUCK_OUT2.1','L_BUCK.2'),('C_USB.1','U_MCU.48')}

@@ -1,0 +1,30 @@
+{
+  "scope": "Routing construction and geometry-tool validation; no final compact PCB or fabrication claim",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "tests": 24,
+      "passed": true,
+      "output_sha256": "15e8280e6532833478755556ab41892771211028038ddf55e27b0a92d4e77f76"
+    },
+    {
+      "command": "python -m unittest discover -s tests-pcb -v",
+      "tests": 29,
+      "passed": true,
+      "output_sha256": "600ee64b6acc2a946925ea944c363465fd9c5d04894874b1d51ee37e36326c6b"
+    }
+  ],
+  "four_layer_baseline_PCB_byte_reproduces": true,
+  "baseline_PCB_sha256": "238069b48505686ba108172fe03950e0f088208d375153282332f9823190c3d6",
+  "baseline_independent_copper_errors": 0,
+  "baseline_all_pin_opens": 0,
+  "baseline_all_pin_shorts": 0,
+  "baseline_native_DRC_errors": 0,
+  "published_four_mount_source_byte_reproduces": true,
+  "source_sha256": "0d9f048f9ab05828a9fa6921667e6002284e45a871649c3d0c2e9d07b377ddd7",
+  "six_layer_source_renders": true,
+  "six_layer_electrical_components": 86,
+  "six_layer_physical_pins": 326,
+  "six_layer_final_routing_qualified": false,
+  "manufacturing_release": false
+}

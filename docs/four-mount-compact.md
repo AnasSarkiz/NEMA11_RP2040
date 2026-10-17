@@ -38,3 +38,6 @@ The checked native snapshot is published separately as
 The actual CLI upload exited successfully; all seven remote files were downloaded
 and matched byte-for-byte. This publication is explicitly unrouted and does not
 contain manufacturing-ready Gerbers/BOM/CPL.
+
+[Routing construction and layer-validation evidence](compact-routing-construction.md)
+tracks development beyond the frozen 0.3.0 placement snapshot.

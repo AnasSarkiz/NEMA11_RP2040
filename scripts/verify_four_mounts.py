@@ -11,9 +11,11 @@ def check_mounts(records,config):
  wanted=sorted((m['x'],m['y'],m['diameter']) for m in config['mounts'])
  if len(holes)!=4 or actual!=wanted:errors.append({'four_mount_geometry':actual,'expected':wanted})
  keepouts=[e for e in records if e['type']=='pcb_keepout']
+ count=next(e for e in records if e['type']=='pcb_board').get('num_layers',4)
+ required_layers={'top','bottom'}|{'inner'+str(i) for i in range(1,count-1)}
  for m in config['mounts']:
   found=[k for k in keepouts if k['shape']=='circle' and abs(k['center']['x']-m['x'])<1e-6 and abs(k['center']['y']-m['y'])<1e-6 and abs(k['radius']-m['radius'])<1e-6]
-  if len(found)!=1 or set(found[0]['layers'])!={'top','inner1','inner2','bottom'}:errors.append({'missing_four_layer_head_keepout':[m['x'],m['y']]})
+  if len(found)!=1 or set(found[0]['layers'])!=required_layers:errors.append({'missing_four_layer_head_keepout':[m['x'],m['y']]})
  return errors
 
 def main():

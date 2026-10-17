@@ -19,6 +19,9 @@ const option=(key:string)=>{const i=process.argv.indexOf(key);return i<0?undefin
 const constructionPlacement=option("--placement")
 const fourMounts=process.argv.includes("--four-mounts")
 const omitBuzzer=process.argv.includes("--no-buzzer")
+const layerOption=option("--layers")
+const layerCount=layerOption===undefined?undefined:Number(layerOption)
+if(layerCount!==undefined && (![4,6].includes(layerCount) || !compact || !constructionPlacement))throw new Error("Layer experiments require --compact, --placement, a separate --out and --layers 4 or 6")
 const output=option("--out") ?? (compact ? "artifacts/compact-controller" : "artifacts/controller")
 if((fourMounts || omitBuzzer) && (!compact || !constructionPlacement))throw new Error("Four-mount construction requires --compact, --placement and a separate --out folder")
 if(constructionPlacement && (!compact || output === "artifacts/compact-controller"))throw new Error("Routing placement experiments require --compact and a separate --out folder")
@@ -27,6 +30,7 @@ circuit.schematicDisabled = true
 circuit.add(constructionPlacement ? <Controller routingDisabled profile={{...compactProfile,
  ...(fourMounts?{mounts:fourMountConfig.mounts}:{}),
  ...(omitBuzzer?{buzzerEnabled:false}:{}),
+ ...(layerCount?{layers:layerCount as 4|6}:{}),
  placementOverrides:JSON.parse(readFileSync(constructionPlacement,"utf8")).placements}} /> : <Example />)
 await circuit.renderUntilSettled()
 const raw = circuit.getCircuitJson() as any[]

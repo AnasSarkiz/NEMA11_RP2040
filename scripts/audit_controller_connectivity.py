@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """All-pin copper connectivity from a physical graph, independent of net labels."""
 import csv
+import argparse
 import hashlib
 import json
 from collections import defaultdict
@@ -25,7 +26,7 @@ def inspect(records):
     # Unlike a logical connectivity map, this union includes foreign-net and NC
     # copper too. Only actual same-layer metal intersection joins nodes. One
     # plated-barrel node carries its real annulus on every declared layer.
-    for layer in LAYERS:
+    for layer in copper.layers:
         local=[(i,shapes[layer]) for i,(_,_,shapes) in enumerate(elements) if layer in shapes]
         tree=STRtree([shape for _,shape in local])
         for j,(owner,shape) in enumerate(local):
@@ -104,10 +105,14 @@ def inspect(records):
 
 
 if __name__=='__main__':
-    path=ROOT/'artifacts/controller-pcb/board.circuit.json'
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--input',type=Path,default=ROOT/'artifacts/controller-pcb/board.circuit.json')
+    parser.add_argument('--compact-four-mounts',action='store_true')
+    args=parser.parse_args();path=args.input
     report=inspect(json.loads(path.read_text()))
-    assert report['components_checked']==92 and report['physical_pins_checked']==341
-    assert report['required_connected_pins']==304 and report['intentional_NC_pins']==37 and report['nets_checked']==64
+    expected=(86,326,290,36,61) if args.compact_four_mounts else (92,341,304,37,64)
+    actual=tuple(report[k] for k in ['components_checked','physical_pins_checked','required_connected_pins','intentional_NC_pins','nets_checked'])
+    if actual!=expected:raise ValueError('Unexpected controller pin contract: '+str(actual)+' expected '+str(expected))
     report['circuit_sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
     (path.parent/'all-pin-connectivity.json').write_text(json.dumps(report,indent=2)+'\n')
     with (path.parent/'all-pin-connectivity.csv').open('w',newline='') as f:

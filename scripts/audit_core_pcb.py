@@ -23,16 +23,20 @@ def audit(records):
         boundary = Polygon([(p['x'], p['y']) for p in board['outline']]).buffer(-.25)
     for record, _, shapes in elements:
         for layer, shape in shapes.items():
+            if layer not in copper.layers:
+                errors.append({'type': 'unknown_copper_layer', 'id': record[record['type']+'_id'], 'layer': layer})
             if not shape.is_valid:
                 errors.append({'type': 'invalid_geometry', 'id': record[record['type']+'_id']})
             if not boundary.buffer(1e-6).covers(shape):
                 errors.append({'type': 'board_edge', 'id': record[record['type']+'_id'], 'layer': layer})
         if record['type'] == 'pcb_via' and (record['hole_diameter'] < .30-1e-8 or record['outer_diameter'] < .45-1e-8):
             errors.append({'type': 'via_minimum', 'id': record['pcb_via_id']})
+        if record['type'] in ['pcb_via','pcb_plated_hole'] and set(record.get('layers',[])) != set(copper.layers):
+            errors.append({'type': 'through_barrel_layer_coverage', 'id': record[record['type']+'_id'], 'actual':record.get('layers'), 'required':copper.layers})
         if record['type'] == 'pcb_trace' and min(p['width'] for p in record['route']) < .16-1e-8:
             errors.append({'type': 'trace_minimum', 'id': record['pcb_trace_id']})
     seen = set()
-    for layer in LAYERS:
+    for layer in copper.layers:
         local = [(record, key, shapes[layer]) for record, key, shapes in elements if layer in shapes]
         shapes = [e[2] for e in local]
         tree = STRtree(shapes)
