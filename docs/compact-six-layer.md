@@ -13,6 +13,10 @@ only its verified front M2.5 threads, 23 ±0.15 mm pitch and 3.5 mm minimum tapp
 depth. There are no assumed motor rear holes or rear shaft. Exact reference
 Ø3.2 mm holes at 26 mm pitch extend outside the permitted frame, so the smaller
 PCB hardware is a documented adaptation of its four-corner arrangement.
+The [A4 mounting comparison](../artifacts/requirements/mounting-review/four-mount-comparison.pdf)
+shows all three interfaces at the same scale: reference PCB, current PCB and
+verified motor front threads. It is generated from the checked native mount
+geometry and does not qualify carrier strength or manufacturing tolerances.
 
 Current review outputs:
 

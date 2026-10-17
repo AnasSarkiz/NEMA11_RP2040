@@ -1,0 +1,55 @@
+{
+  "scope": "Actual native PCB mount geometry and nominal dimensional comparison only",
+  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "PCB_holes": 4,
+  "PCB_hole_pitch_mm": 25,
+  "PCB_hole_diameter_mm": 1.8,
+  "head_exclusion_layers": 6,
+  "nominal_hole_edge_web_mm": 0.6,
+  "reference_hole_bounds_exceed_28_3_frame_per_side_mm": 0.45,
+  "motor_front_thread": "M2.5",
+  "motor_front_pitch_mm": 23,
+  "motor_front_pitch_tolerance_mm": 0.15,
+  "motor_front_minimum_thread_depth_mm": 3.5,
+  "rear_threads_or_shaft_assumed": false,
+  "native_mount_geometry_pass": true,
+  "fasteners_carrier_and_maximum_tolerances_qualified": false,
+  "PDF_pages": 1,
+  "PDF_paper_mm": [
+    297.0,
+    210.0
+  ],
+  "manufacturing_release": false,
+  "inputs": [
+    {
+      "path": "artifacts/compact-six-layer/board.circuit.json",
+      "sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6"
+    },
+    {
+      "path": "config/compact-four-mounts.json",
+      "sha256": "df1c965d546b59d1eeb6ac7013a8f89c630a8a60749e3d7421bb5a8926e824e5"
+    },
+    {
+      "path": "artifacts/requirements/motor-originals.json",
+      "sha256": "50fbe78c37dde0785b469abc7423d865e1d56597b6dac28d1ec8dfee72e0cc2b"
+    },
+    {
+      "path": "artifacts/compact-six-layer/milestone-verification.json",
+      "sha256": "5a9336d64e63228e2742654504ab7f0aa36eb36875b4dbf6427fa04784daf190"
+    }
+  ],
+  "drawings": [
+    {
+      "path": "artifacts/requirements/mounting-review/four-mount-comparison.pdf",
+      "sha256": "1d3ec1fc641641a3efa38319932c7acb3eae968dcb98a6378ccf6d3e56edad16"
+    },
+    {
+      "path": "artifacts/requirements/mounting-review/four-mount-comparison.png",
+      "sha256": "e3f4c483b294fd6247511d029abbf11cda906182fadfc8d607fb64b2c576bf6d"
+    },
+    {
+      "path": "artifacts/requirements/mounting-review/four-mount-comparison.svg",
+      "sha256": "b2c295288243e1c26512cf16616f5c908e7423a75cdfe6e75669931185b1d04e"
+    }
+  ]
+}
