@@ -8,9 +8,9 @@ import random
 import subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-a=argparse.ArgumentParser();a.add_argument('--seconds',type=float,default=120);a.add_argument('--seed',type=int,default=11);a.add_argument('--mounts',type=int,choices=[0,2],default=2);a.add_argument('--start');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=a.parse_args()
+a=argparse.ArgumentParser();a.add_argument('--seconds',type=float,default=120);a.add_argument('--seed',type=int,default=11);a.add_argument('--mounts',type=int,choices=[0,2,4],default=2);a.add_argument('--start');a.add_argument('--no-buzzer',action='store_true');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');args=a.parse_args()
 data=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())
-parts=data['parts'][:];poses=json.loads((ROOT/'src/controller/supplier-placement.json').read_text())
+parts=[p for p in data['parts'] if not args.no_buzzer or p['name'] not in ['BZ1','Q_BUZZER','D_BUZZER','R_BUZZER_GATE','R_BUZZER_PD','C_BUZZER']];poses=json.loads((ROOT/'src/controller/supplier-placement.json').read_text())
 constraints=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
 if args.usb_escape:constraints += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
 preferred={'U_MCU':(-.5,.5),'U_DRV':(2,-8),'U_PD':(-9,5),'J_PD':(-5.5,10),'J_DATA':(5.5,10),'J_MOTOR':(10.9,1),'C_BULK':(-8,-9),'BZ1':(10,-10),'L_BUCK':(-10,-2.8),'U_BUCK':(-11,1)}
@@ -28,9 +28,9 @@ def gap(a,b):
  if a in chips and b in chips:return .35 if a==b=='1206' else .25 if '1206' in [a,b] else .18 if any(c in ['0603','0805'] for c in [a,b]) else .15
  return 0
 if args.mounts:
- for xx in [-12.5,12.5]:
-  name='MOUNT_'+str(xx);parts.append(dict(name=name,original_rotation=0,construction_envelope_relative_mm=[-1.6,-1.6,1.6,1.6],copper_relative_to_pivot_mm=[-.9,-.9,.9,.9],nominal_component_including_leads_relative_mm=[-1.6,-1.6,1.6,1.6],assembly_spacing_class='other',pin_centers_relative_mm={}))
-  preferred[name]=(xx,12.5)
+ for xx,yy in itertools.product([-12.5,12.5],[-12.5,12.5] if args.mounts==4 else [12.5]):
+  name=f'MOUNT_{xx}_{yy}';parts.append(dict(name=name,original_rotation=0,construction_envelope_relative_mm=[-1.6,-1.6,1.6,1.6],copper_relative_to_pivot_mm=[-.9,-.9,.9,.9],nominal_component_including_leads_relative_mm=[-1.6,-1.6,1.6,1.6],assembly_spacing_class='other',pin_centers_relative_mm={}))
+  preferred[name]=(xx,yy)
 start_poses=json.loads(Path(args.start).read_text())['placements'] if args.start else {}
 indices={p['name']:i for i,p in enumerate(parts)};pins={p['name']:list(p['pin_centers_relative_mm']) for p in parts}
 lines=[f'{len(parts)} {len(constraints)} {args.seconds} {args.seed} {indices['Y_MCU']} {indices['U_MCU']} {indices['R_DP'] if args.usb_escape else -1} {indices['R_DM'] if args.usb_escape else -1}'];random.seed(args.seed)
@@ -77,5 +77,5 @@ r=subprocess.run([str(binary)],input='\n'.join(lines)+'\n',text=True,stdout=subp
 rows=r.stdout.splitlines();score,iterations=rows[0].split();placements={}
 for p,row in zip(parts,rows[1:]):
  xx,yy,rr=map(float,row.split());placements[p['name']]=dict(pcbX=xx,pcbY=yy,pcbRotation=(p['original_rotation']+int(rr)*90)%360)
-report={'scope':'Heuristic placement construction; residual cost is not a DRC result','seconds':args.seconds,'seed':args.seed,'heuristic_cost':float(score),'iterations':int(iterations),'provisional_PCB_mount_count':args.mounts,'placements':placements,'compact_routing_verified':False,'manufacturing_release':False}
+report={'scope':'Heuristic placement construction; residual cost is not a DRC result','seconds':args.seconds,'seed':args.seed,'heuristic_cost':float(score),'iterations':int(iterations),'buzzer_omitted':args.no_buzzer,'provisional_PCB_mount_count':args.mounts,'placements':placements,'compact_routing_verified':False,'manufacturing_release':False}
 path=ROOT/f'artifacts/compact-controller/annealed-placement-{args.seed}.json';path.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='placements'}))

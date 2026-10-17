@@ -44,7 +44,9 @@ for e,k,shapes in elements:
   if not outline.covers(shape) or d<.25-1e-6:errors.append({'copper_edge_clearance_mm':d,'element':e.get('pcb_port_id')})
 body_bounds={};courts={};constraints=[]
 for p in envelopes:
- name=p['name'];q=poses[name];angle=q['pcbRotation']-p['original_rotation']
+ name=p['name']
+ if name not in C.names.values():continue
+ q=poses[name];angle=q['pcbRotation']-p['original_rotation']
  if p['nominal_component_including_leads_relative_mm'] is not None:
   body_bounds[name]=translate(rotate(box(*p['nominal_component_including_leads_relative_mm']),angle,origin=(0,0)),q['pcbX'],q['pcbY'])
 for e in records:
@@ -87,5 +89,17 @@ for an,ap,bn,bp,maximum in critical:
  if d>maximum+1e-6:errors.append({'critical_pin_budget':[an,bn],'actual_mm':d,'maximum_mm':maximum})
 components=[e for e in records if e['type']=='pcb_component'];fitted=[e for e in components if not e.get('do_not_place')]
 if any(e['layer']!='top' for e in fitted):errors.append({'fitted_component_on_bottom':True})
-report={'scope':'Unrouted compact full-circuit placement, supplier copper and nominal envelopes only','circuit_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'components':len(components),'fitted_parts':len(fitted),'all_fitted_on_top':all(e['layer']=='top' for e in fitted),'original_supplier_pad_geometries_verified':len(pads),'top_courtyards_checked':len(courts),'foreign_pad_clearance_comparisons':pad_clearances,'minimum_foreign_pad_clearance_mm':min_gap,'minimum_copper_edge_clearance_mm':min_edge,'nominal_component_spacing_pairs_checked':checked,'minimum_JLC_spacing_surplus_mm':minimum_spacing_surplus,'critical_pin_construction_distances':constraints,'nominal_fitted_envelopes_within_28_3mm_frame':not any('component_frame' in e for e in errors),'PCB_outline_mm':[28,28],'shorted_pad_pairs':shorts,'routing_traces':sum(e['type']=='pcb_trace' for e in records),'physical_routing_complete':False,'placement_pass':not errors and not shorts,'manufacturer_tolerances_verified':False,'manufacturing_release':False,'errors':errors}
+mount_checks=[]
+for h in (e for e in records if e['type']=='pcb_hole' and not e.get('pcb_component_id')):
+ keepout=next((e for e in records if e['type']=='pcb_keepout' and abs(e['center']['x']-h['x'])<1e-6 and abs(e['center']['y']-h['y'])<1e-6),None)
+ if keepout is None:
+  errors.append({'mount_without_head_keepout':h});continue
+ head=Point(h['x'],h['y']).buffer(keepout['radius'],quad_segs=64)
+ for name,shape in courts.items():
+  if shape.intersection(head).area>1e-8:errors.append({'mount_head_courtyard_overlap':name,'mount':[h['x'],h['y']]})
+ for e,k,shapes in elements:
+  if any(shape.distance(head)<.15-1e-6 for shape in shapes.values()):errors.append({'mount_head_copper_clearance':e.get('pcb_port_id'),'mount':[h['x'],h['y']]})
+ mount_checks.append({'centre_mm':[h['x'],h['y']],'hole_diameter_mm':h['hole_diameter'],'head_keepout_radius_mm':keepout['radius'],'hole_edge_to_PCB_edge_mm':outline.boundary.distance(Point(h['x'],h['y']))-h['hole_diameter']/2,'head_within_28_3mm_frame':box(-14.15,-14.15,14.15,14.15).covers(head)})
+ if not mount_checks[-1]['head_within_28_3mm_frame']:errors.append({'mount_head_outside_frame':mount_checks[-1]})
+report={'PCB_mounts':mount_checks,'scope':'Unrouted compact full-circuit placement, supplier copper and nominal envelopes only','circuit_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'components':len(components),'fitted_parts':len(fitted),'all_fitted_on_top':all(e['layer']=='top' for e in fitted),'original_supplier_pad_geometries_verified':len(pads),'top_courtyards_checked':len(courts),'foreign_pad_clearance_comparisons':pad_clearances,'minimum_foreign_pad_clearance_mm':min_gap,'minimum_copper_edge_clearance_mm':min_edge,'nominal_component_spacing_pairs_checked':checked,'minimum_JLC_spacing_surplus_mm':minimum_spacing_surplus,'critical_pin_construction_distances':constraints,'nominal_fitted_envelopes_within_28_3mm_frame':not any('component_frame' in e for e in errors),'PCB_outline_mm':[28,28],'shorted_pad_pairs':shorts,'routing_traces':sum(e['type']=='pcb_trace' for e in records),'physical_routing_complete':False,'placement_pass':not errors and not shorts,'manufacturer_tolerances_verified':False,'manufacturing_release':False,'errors':errors}
 (OUT/'placement-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='critical_pin_construction_distances'}));raise SystemExit(bool(errors or shorts))

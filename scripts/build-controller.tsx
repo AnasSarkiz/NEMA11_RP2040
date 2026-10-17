@@ -11,16 +11,23 @@ import { compactProfile } from "../src/compact/board"
 import compactAssets from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 import cadAssets from "../config/controller-cad-assets.json"
+import fourMountConfig from "../config/compact-four-mounts.json"
 
 const compact=process.argv.includes("--compact")
 const Example=compact ? CompactExample : BaselineExample
 const option=(key:string)=>{const i=process.argv.indexOf(key);return i<0?undefined:process.argv[i+1]}
 const constructionPlacement=option("--placement")
+const fourMounts=process.argv.includes("--four-mounts")
+const omitBuzzer=process.argv.includes("--no-buzzer")
 const output=option("--out") ?? (compact ? "artifacts/compact-controller" : "artifacts/controller")
+if((fourMounts || omitBuzzer) && (!compact || !constructionPlacement))throw new Error("Four-mount construction requires --compact, --placement and a separate --out folder")
 if(constructionPlacement && (!compact || output === "artifacts/compact-controller"))throw new Error("Routing placement experiments require --compact and a separate --out folder")
 const circuit = new Circuit()
 circuit.schematicDisabled = true
-circuit.add(constructionPlacement ? <Controller routingDisabled profile={{...compactProfile,placementOverrides:JSON.parse(readFileSync(constructionPlacement,"utf8")).placements}} /> : <Example />)
+circuit.add(constructionPlacement ? <Controller routingDisabled profile={{...compactProfile,
+ ...(fourMounts?{mounts:fourMountConfig.mounts}:{}),
+ ...(omitBuzzer?{buzzerEnabled:false}:{}),
+ placementOverrides:JSON.parse(readFileSync(constructionPlacement,"utf8")).placements}} /> : <Example />)
 await circuit.renderUntilSettled()
 const raw = circuit.getCircuitJson() as any[]
 const source = new Map(raw.filter(e => e.type === "source_component").map(e => [e.source_component_id,e]))

@@ -186,7 +186,7 @@ export function prepareSchematic(json:any[],compact=false) {
  part({name:'R_ENABLE',x:9,y:11.8,section:'driver'});part({name:'R_SLEEP',x:9,y:8.8,section:'driver'})
  caption('Motor voltage monitor','100 kΩ / 10 kΩ divider; 10 nF filter',.6,7);part({name:'R_VM_H',x:3,y:4.9,section:'monitor'});part({name:'R_VM_L',x:7,y:4.9,section:'monitor'});part({name:'C_VM_SENSE',x:10.5,y:4.9,section:'monitor'})
  text('JST-PH pin order: 1 A+   2 A−   3 B+   4 B−',19,18.7,.23);finish()
- start(5,'Temperature & feedback','I²C temperature telemetry, RGB status outputs and PWM magnetic buzzer')
+ start(5,'Temperature & feedback',byName.has('BZ1')?'I²C temperature telemetry, RGB status outputs and PWM magnetic buzzer':'I²C temperature telemetry and RGB status; buzzer removed to fit four mounting holes')
  caption('TMP102 temperature','ADD0 grounded: address 0x48; ALERT unused',.6,19)
  part({name:'U_TEMP',x:5.2,y:15.5,section:'temp',box:[3.3,2.4],left:['SDA','SCL','ALERT'],right:['V_POS','ADD0','GND']});part({name:'C_TEMP',x:10.8,y:15.5,section:'temp'});part({name:'R_TEMP_SDA',x:2.3,y:11.5,section:'temp',symbol:'boxresistor_up'});part({name:'R_TEMP_SCL',x:6.3,y:11.5,section:'temp',symbol:'boxresistor_up'})
  caption('RGB status indicator','Common anode uses programming USB 5 V',16,19)
@@ -202,9 +202,11 @@ export function prepareSchematic(json:any[],compact=false) {
   part({name:'R_STATUS_'+color,x,y:14.8,section:'rgb',symbol:'boxresistor_down'});part({name:'Q_STATUS_'+color,x:x-.3625,y:12.7,section:'rgb',symbol:'npn_bipolar_transistor_down'})
  }
  text('DTC114E: NPN with internal input/bias resistors.',16,9.8,.22)
+ if(byName.has('BZ1')){
  caption('PWM buzzer',compact?'MLT-5020: 4 kHz, 50%; 100 mA max at 3 V test':'120 mA magnetic load; MOSFET drive and flyback diode',.6,9.3)
  part({name:'BZ1',x:9.4,y:6.5,section:'buzzer',box:[2.5,2.3],left:['_POS','_NEG'],right:compact?['NC']:['NC1','NC2']});part({name:'Q_BUZZER',x:8.5,y:3.8,section:'buzzer',symbol:'n_channel_e_mosfet_transistor_gate_left_drain_top'});part({name:'R_BUZZER_GATE',x:3.8,y:4.6,section:'buzzer',symbol:'boxresistor_right'});part({name:'R_BUZZER_PD',x:5.8,y:3.6,section:'buzzer'});part({name:'D_BUZZER',x:14,y:6.5,section:'buzzer',symbol:'diode_up'});part({name:'C_BUZZER',x:17,y:6.5,section:'buzzer'})
- caption('Power indication','3.3 V rail present; RGB/buzzer require firmware',22,8.6);part({name:'R_PWR_LED',x:25,y:6.2,section:'power_led'});part({name:'D_PWR',x:25,y:3.8,section:'power_led',symbol:'led_down'});finish()
+ }else{caption('Four-mount compact variant','Buzzer and complete drive circuit omitted with user approval; GPIO16 is NC',.6,9.3)}
+ caption('Power indication',byName.has('BZ1')?'3.3 V rail present; RGB/buzzer require firmware':'3.3 V rail present; RGB requires firmware',22,8.6);part({name:'R_PWR_LED',x:25,y:6.2,section:'power_led'});part({name:'D_PWR',x:25,y:3.8,section:'power_led',symbol:'led_down'});finish()
  start(6,'Optional encoder (DNP)','Bottom footprints only; AS5600 and both bypass capacitors omitted from factory assembly')
  caption(compact?'Future noncontact angle feedback':'Future magnetic shaft position',compact?'DNP: no documented rear shaft; magnet and attachment undefined':'Nominal sensor centre (0, 0); rear shaft/magnet geometry remains unverified',.6,19)
  part({name:'U_ENCODER',x:9,y:13,section:'encoder',box:[4.5,2.2],left:['VDD5V','VDD3V3','SDA','SCL'],right:['OUT','PGO'],bottom:['GND','DIR']})

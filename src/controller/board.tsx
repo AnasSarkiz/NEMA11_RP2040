@@ -19,10 +19,11 @@ export type ControllerProfile = {
  width:number,height:number,outline:{x:number,y:number}[],
  mounts:{x:number,y:number,diameter:number,radius:number}[],
  placementOverrides?:Record<string,ControllerPlacement>,
- Part?:React.ComponentType<any>,compactLabels?:boolean,
+ Part?:React.ComponentType<any>,compactLabels?:boolean,buzzerEnabled?:boolean,
 }
 export default function Nema11Controller({ routingDisabled = false, schematicDisabled = false, profile }: { routingDisabled?: boolean, schematicDisabled?: boolean, profile?:ControllerProfile } = {}) {
  const SupplierPart=profile?.Part ?? OriginalSupplierPart
+ const buzzerEnabled=profile?.buzzerEnabled !== false
  const place=(name:string)=>profile?.placementOverrides?.[name] ?? (placements as Record<string,ControllerPlacement>)[name]
  const mounts=profile?.mounts ?? [-mechanical.holePitch/2,mechanical.holePitch/2].flatMap(x=>[-mechanical.holePitch/2,mechanical.holePitch/2].map(y=>({x,y,diameter:mechanical.holeDiameter,radius:mechanical.headEnvelopeRadius})))
  const resistor = (name:string,value:string,a:string,b:string) => <SupplierPart key={name} name={name}  resistance={value} tolerance="1%" {...place(name)} connections={{pin1:n(a),pin2:n(b)}} />
@@ -32,7 +33,7 @@ const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={na
   minViaHoleDiameter={0.3} minViaPadDiameter={0.45} minViaHoleEdgeToViaHoleEdgeClearance={0.2} minPlatedHoleDrillEdgeToDrillEdgeClearance={0.45} minBoardEdgeClearance={0.25}
   autorouter={{local:true, traceClearance:0.15}} autorouterEffortLevel="2x" schAutoLayoutEnabled={false}>
   <schematicsheet name="NEMA11_RP2040" sheetSize="A4">
-  {['GND','PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','PD_CC1','PD_CC2','DATA_CC1','DATA_CC2','USB_DP','USB_DM','STEP','DIR','ENABLE_N','SLEEP','PD_GOOD','DATA_PRESENT','VM_SENSE','VREF','CP1','CP2','VCP','VREG','SENSE1','SENSE2','A_PLUS','A_MINUS','B_PLUS','B_MINUS','V1V1','QSPI_SS','QSPI_SCLK','QSPI_SD0','QSPI_SD1','QSPI_SD2','QSPI_SD3','MCU_DM','MCU_DP','XIN','XOUT','XTAL_OUT','RUN','SWCLK','SWDIO','BUCK_SW','BUCK_BST','BOOT_PAD','PWR_LED_A','TEMP_SDA','TEMP_SCL','BUZZER_PWM','BUZZER_GATE','BUZZER_SINK','LED_R','LED_G','LED_B','STATUS_R_K','STATUS_G_K','STATUS_B_K','STATUS_R_C','STATUS_G_C','STATUS_B_C','PD_CFG'].map(name=><React.Fragment key={name}><net name={name} isGroundNet={name==='GND'} isPowerNet={['PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','V1V1'].includes(name)} nominalTraceWidth={['PD_VBUS','A_PLUS','A_MINUS','B_PLUS','B_MINUS','SENSE1','SENSE2'].includes(name)?0.30:0.16} /></React.Fragment>)}
+  {['GND','PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','PD_CC1','PD_CC2','DATA_CC1','DATA_CC2','USB_DP','USB_DM','STEP','DIR','ENABLE_N','SLEEP','PD_GOOD','DATA_PRESENT','VM_SENSE','VREF','CP1','CP2','VCP','VREG','SENSE1','SENSE2','A_PLUS','A_MINUS','B_PLUS','B_MINUS','V1V1','QSPI_SS','QSPI_SCLK','QSPI_SD0','QSPI_SD1','QSPI_SD2','QSPI_SD3','MCU_DM','MCU_DP','XIN','XOUT','XTAL_OUT','RUN','SWCLK','SWDIO','BUCK_SW','BUCK_BST','BOOT_PAD','PWR_LED_A','TEMP_SDA','TEMP_SCL','BUZZER_PWM','BUZZER_GATE','BUZZER_SINK','LED_R','LED_G','LED_B','STATUS_R_K','STATUS_G_K','STATUS_B_K','STATUS_R_C','STATUS_G_C','STATUS_B_C','PD_CFG'].filter(name=>buzzerEnabled || !['BUZZER_PWM','BUZZER_GATE','BUZZER_SINK'].includes(name)).map(name=><React.Fragment key={name}><net name={name} isGroundNet={name==='GND'} isPowerNet={['PD_VBUS','V3V3','LOGIC_IN','DATA_VBUS','PD_VHV','V1V1'].includes(name)} nominalTraceWidth={['PD_VBUS','A_PLUS','A_MINUS','B_PLUS','B_MINUS','SENSE1','SENSE2'].includes(name)?0.30:0.16} /></React.Fragment>)}
   {/* These keepouts constrain copper. Supplier courtyards remain intact; native STEP solids independently validate component/head clearance. */}
   {mounts.map(({x,y,diameter,radius})=><React.Fragment key={`${x},${y}`}><hole name={`M${x}_${y}`} pcbX={x} pcbY={y} diameter={diameter} /><keepout pcbX={x} pcbY={y} shape="circle" radius={radius} allowPlacements={true} layers={['top','inner1','inner2','bottom']} /><silkscreencircle pcbX={x} pcbY={y} radius={radius} strokeWidth={0.1} /></React.Fragment>)}
   <SupplierPart name="J_PD" {...pinProps("J_PD")}    noConnect={['DP1','DP2','DM1','DM2','SBU1','SBU2']} {...place("J_PD")} connections={{...baseUsb,VBUS1:n('PD_VBUS'),VBUS2:n('PD_VBUS'),VBUS3:n('PD_VBUS'),VBUS4:n('PD_VBUS'),CC1:n('PD_CC1'),CC2:n('PD_CC2')}} />
@@ -41,7 +42,7 @@ const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={na
   {resistor('R_PD','0','PD_VBUS','PD_VHV')}
   <SupplierPart name="C_PD" capacitance="1uF" maxVoltageRating={50} {...place("C_PD")} connections={{pin1:n("PD_VHV"),pin2:n("GND")}} />
   {resistor('R_PG','10k','V3V3','PD_GOOD')}
-  <SupplierPart name="U_MCU" {...pinProps("U_MCU")}   pinLabels={mcuPins} noConnect={["GPIO0", "GPIO1", "GPIO4", "GPIO5", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15", "GPIO17", "GPIO18", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO24"]} {...place("U_MCU")} connections={{IOVDD1:n("V3V3"),IOVDD10:n("V3V3"),IOVDD22:n("V3V3"),IOVDD33:n("V3V3"),IOVDD42:n("V3V3"),IOVDD49:n("V3V3"),DVDD23:n("V1V1"),DVDD50:n("V1V1"),VREG_OUT:n("V1V1"),ADC_AVDD:n("V3V3"),USB_VDD:n("V3V3"),VREG_IN:n("V3V3"),TESTEN:n("GND"),GND:n("GND"),GPIO6:n("STEP"),GPIO7:n("DIR"),GPIO8:n("ENABLE_N"),GPIO9:n("SLEEP"),GPIO10:n("PD_GOOD"),GPIO28:n("VM_SENSE"),GPIO29:n("DATA_PRESENT"),USB_DM:n("MCU_DM"),USB_DP:n("MCU_DP"),RUN:n("RUN"),SWCLK:n("SWCLK"),SWDIO:n("SWDIO"),XIN:n("XIN"),XOUT:n("XOUT"),QSPI_SS:n("QSPI_SS"),QSPI_SCLK:n("QSPI_SCLK"),QSPI_SD0:n("QSPI_SD0"),QSPI_SD1:n("QSPI_SD1"),QSPI_SD2:n("QSPI_SD2"),QSPI_SD3:n("QSPI_SD3"),GPIO26:n("TEMP_SDA"),GPIO27:n("TEMP_SCL"),GPIO16:n("BUZZER_PWM"),GPIO25:n("LED_R"),GPIO2:n("LED_G"),GPIO3:n("LED_B")}} />
+  <SupplierPart name="U_MCU" {...pinProps("U_MCU")}   pinLabels={mcuPins} noConnect={["GPIO0", "GPIO1", "GPIO4", "GPIO5", "GPIO11", "GPIO12", "GPIO13", "GPIO14", "GPIO15", "GPIO17", "GPIO18", "GPIO19", "GPIO20", "GPIO21", "GPIO22", "GPIO23", "GPIO24",...(!buzzerEnabled?["GPIO16"]:[])]} {...place("U_MCU")} connections={{IOVDD1:n("V3V3"),IOVDD10:n("V3V3"),IOVDD22:n("V3V3"),IOVDD33:n("V3V3"),IOVDD42:n("V3V3"),IOVDD49:n("V3V3"),DVDD23:n("V1V1"),DVDD50:n("V1V1"),VREG_OUT:n("V1V1"),ADC_AVDD:n("V3V3"),USB_VDD:n("V3V3"),VREG_IN:n("V3V3"),TESTEN:n("GND"),GND:n("GND"),GPIO6:n("STEP"),GPIO7:n("DIR"),GPIO8:n("ENABLE_N"),GPIO9:n("SLEEP"),GPIO10:n("PD_GOOD"),GPIO28:n("VM_SENSE"),GPIO29:n("DATA_PRESENT"),USB_DM:n("MCU_DM"),USB_DP:n("MCU_DP"),RUN:n("RUN"),SWCLK:n("SWCLK"),SWDIO:n("SWDIO"),XIN:n("XIN"),XOUT:n("XOUT"),QSPI_SS:n("QSPI_SS"),QSPI_SCLK:n("QSPI_SCLK"),QSPI_SD0:n("QSPI_SD0"),QSPI_SD1:n("QSPI_SD1"),QSPI_SD2:n("QSPI_SD2"),QSPI_SD3:n("QSPI_SD3"),GPIO26:n("TEMP_SDA"),GPIO27:n("TEMP_SCL"),...(buzzerEnabled?{GPIO16:n("BUZZER_PWM")} : {}),GPIO25:n("LED_R"),GPIO2:n("LED_G"),GPIO3:n("LED_B")}} />
   {cap('C_IO1','100nF','V3V3','GND')}
   {cap('C_IO10','100nF','V3V3','GND')}
   {cap('C_IO22','100nF','V3V3','GND')}
@@ -113,12 +114,14 @@ const cap = (name:string,value:string,a:string,b="GND") => <SupplierPart key={na
     {resistor('R_STATUS_'+color,'1k','STATUS_'+color+'_K','STATUS_'+color+'_C')}
     <SupplierPart name={'Q_STATUS_'+color} {...pinProps('Q_STATUS_'+color)} {...place('Q_STATUS_'+color)} connections={{E:n('GND'),B:n('LED_'+color),C:n('STATUS_'+color+'_C')}} />
   </React.Fragment>)}
+  {buzzerEnabled && <>
   <SupplierPart name="BZ1" {...pinProps("BZ1")} {...place("BZ1")} noConnect={['NC1','NC2']} connections={{_POS:n('V3V3'),_NEG:n('BUZZER_SINK')}} />
   <SupplierPart name="Q_BUZZER" {...pinProps("Q_BUZZER")} {...place("Q_BUZZER")} connections={{G:n('BUZZER_GATE'),S:n('GND'),D:n('BUZZER_SINK')}} />
   <SupplierPart name="D_BUZZER" {...place("D_BUZZER")} connections={{cathode:n('V3V3'),anode:n('BUZZER_SINK')}} />
   {resistor('R_BUZZER_GATE','100','BUZZER_PWM','BUZZER_GATE')}
   {resistor('R_BUZZER_PD','100k','BUZZER_GATE','GND')}
   {cap('C_BUZZER','10uF','V3V3')}
+  </>}
   <testpoint doNotPlace name="TP_3V3" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_3V3")} connections={{pin1:n("V3V3")}} />
   <testpoint doNotPlace name="TP_GND" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_GND")} connections={{pin1:n("GND")}} />
   <testpoint doNotPlace name="TP_SWCLK" layer="top" footprintVariant="pad" padDiameter="1.1mm" footprint={<footprint><smtpad portHints={["pin1"]} shape="circle" radius={.55} /><courtyardoutline outline={[{x:-.7,y:-.7},{x:.7,y:-.7},{x:.7,y:.7},{x:-.7,y:.7},{x:-.7,y:-.7}]} /></footprint>} {...place("TP_SWCLK")} connections={{pin1:n("SWCLK")}} />

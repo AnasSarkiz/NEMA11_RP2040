@@ -1,0 +1,382 @@
+{
+  "scope": "Custom four-piece, front-anchored carrier: nominal CAD and sampled radial insertion paths only",
+  "bounds_mm": [
+    -14.001038553659003,
+    -14.001038553659006,
+    -43.00800476690117,
+    14.001038553659003,
+    14.001038553659003,
+    -0.7989614463409966
+  ],
+  "valid_solids": 4,
+  "separate_carrier_quarters": 4,
+  "front_mount_pitch_mm": 23,
+  "front_mount_thread": "Existing motor M2.5 front threads only",
+  "front_clearance_hole_diameter_mm": 2.9,
+  "front_plate_thickness_mm": 1,
+  "pilot_clearance_diameter_mm": 23.4,
+  "PCB_mount_centres_mm": [
+    [
+      -12.5,
+      -12.5
+    ],
+    [
+      -12.5,
+      12.5
+    ],
+    [
+      12.5,
+      -12.5
+    ],
+    [
+      12.5,
+      12.5
+    ]
+  ],
+  "PCB_mount_thread_candidate": "M1.6x0.35; 1.25 mm tap-drill shown, not a finished thread model",
+  "PCB_support_bearing_z_mm": -0.8,
+  "PCB_support_bearing_diameter_mm": 3,
+  "motor_rear_holes_or_shaft_assumed": false,
+  "within_28_3mm_frame_XY": true,
+  "nominal_motor_intersection_mm3": 0,
+  "nominal_quarter_collision_checks": [
+    {
+      "quarter": 0,
+      "motor_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "motor_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "motor_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "motor_intersection_mm3": 0
+    }
+  ],
+  "sampled_radial_installation_checks": [
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 0,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 0.1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 0.25,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 0.5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 2,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 3,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 8,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 12,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 20,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 0,
+      "radial_displacement_mm": 30,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 0,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 0.1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 0.25,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 0.5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 2,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 3,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 8,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 12,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 20,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 1,
+      "radial_displacement_mm": 30,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 0,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 0.1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 0.25,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 0.5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 2,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 3,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 8,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 12,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 20,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 2,
+      "radial_displacement_mm": 30,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 0,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 0.1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 0.25,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 0.5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 1,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 2,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 3,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 5,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 8,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 12,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 20,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    },
+    {
+      "quarter": 3,
+      "radial_displacement_mm": 30,
+      "motor_intersection_mm3": 0,
+      "other_quarters_intersection_mm3": 0
+    }
+  ],
+  "assembly_sequence": [
+    "Slide each separate quarter radially inward at its front datum",
+    "Fit four front M2.5 screws, leaving alignment adjustment",
+    "Fit PCB onto four rear support faces and install four M1.6 screws",
+    "Align quarters, then tighten front screws; torque and access require hardware qualification"
+  ],
+  "required_motor_corner_channel": {
+    "inner_diagonal_absX_plus_absY_mm": 26.85,
+    "nominal_OEM_STEP_corner_radius_mm": 3,
+    "corner_radius_guaranteed_by_drawing": false
+  },
+  "rail_cross_section_mm2": 0.6612499999999999,
+  "strength_qualified": false,
+  "unresolved_requirements": [
+    "Extremely narrow corner rails require a load, stiffness, vibration and thermal assessment; current proposal is not approved for use",
+    "OEM minimum corner relief over full body is not guaranteed by drawing",
+    "Genuine M2.5 front and M1.6 PCB screw drawings, maximum head/tool envelopes, lengths, engagement, torque and availability",
+    "Continuous swept-path, tolerance, physical assembly and tool-access validation; finite sampled paths are not a full proof",
+    "Front-machine mounting and lost shaft/pilot reach after adding the 1 mm plate",
+    "Harness insulation OD, termination, bend radius and strain relief"
+  ],
+  "files": [
+    {
+      "path": "imports/mechanical/nema11-four-mount-front-carrier.step",
+      "sha256": "ee5c684f104609191e19e6e3493df4d4a863e95c05f0d8d62a4f30409d66606b"
+    },
+    {
+      "path": "imports/mechanical/nema11-four-mount-front-carrier.obj",
+      "sha256": "286c73e9e08c6edad7598b6214158bf2052fbf957e92c789e24b1fd0d84ec717"
+    }
+  ],
+  "manufacturing_release": false
+}

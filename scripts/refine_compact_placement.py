@@ -9,8 +9,10 @@ from pathlib import Path
 import numpy as np
 from scipy.optimize import linprog
 ROOT=Path(__file__).resolve().parents[1]
-a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--omit-critical',action='store_true');a.add_argument('--clock-corridor',action='store_true');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');a.add_argument('--output',default='refined-placement.json');a.add_argument('--diagnose-critical',action='store_true');a.add_argument('--seed',type=int,default=0);a.add_argument('--IIS',action='store_true',dest='iis');args=a.parse_args()
+a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--omit-critical',action='store_true');a.add_argument('--clock-corridor',action='store_true');a.add_argument('--USB-escape',action='store_true',dest='usb_escape');a.add_argument('--output',default='refined-placement.json');a.add_argument('--diagnose-critical',action='store_true');a.add_argument('--seed',type=int,default=0);a.add_argument('--IIS',action='store_true',dest='iis')
+a.add_argument('--mount-count',type=int,choices=[2,4],default=2);a.add_argument('--no-buzzer',action='store_true');args=a.parse_args()
 parts=json.loads((ROOT/'artifacts/compact-controller/placement-envelopes.json').read_text())['parts']
+if args.no_buzzer:parts=[p for p in parts if p['name'] not in ['BZ1','Q_BUZZER','D_BUZZER','R_BUZZER_GATE','R_BUZZER_PD','C_BUZZER']]
 q=json.loads(Path(args.input).read_text())['placements'];cs=json.loads((ROOT/'config/compact-critical-pin-constraints.json').read_text())['constraints']
 if args.usb_escape:cs += [['R_DM','1','U_MCU','46',3.0],['R_DP','1','U_MCU','47',3.0]]
 rng=random.Random(args.seed);switched=[]
@@ -33,12 +35,12 @@ for i,p in enumerate(parts):
  if p['name'] in ['J_PD','J_DATA']:
   bound(i,0,-9.15,9.15,p['name']+' plugX');bound(i,1,-10.15,10.15,p['name']+' plugY')
  # Provisional carrier corner-head/tool envelope, not a motor rear thread.
- for xx in [-12.5,12.5]:
-  mount=[xx-1.6,10.9,xx+1.6,14.1];pose=q[p['name']];bx=[b[0]+pose['pcbX'],b[1]+pose['pcbY'],b[2]+pose['pcbX'],b[3]+pose['pcbY']]
+ for xx,yy in itertools.product([-12.5,12.5],[-12.5,12.5] if args.mount_count==4 else [12.5]):
+  mount=[xx-1.6,yy-1.6,xx+1.6,yy+1.6];pose=q[p['name']];bx=[b[0]+pose['pcbX'],b[1]+pose['pcbY'],b[2]+pose['pcbX'],b[3]+pose['pcbY']]
   vals=[mount[0]-bx[2],bx[0]-mount[2],mount[1]-bx[3],bx[1]-mount[3]]
   # The frame leaves no usable space outside or above a corner fastener.
-  side=max([1,2] if xx<0 else [0,2],key=lambda direction:vals[direction])
-  if args.usb_escape and p['name'] in ['J_PD','J_DATA']:side=2
+  side=max([1 if xx<0 else 0,2 if yy>0 else 3],key=lambda direction:vals[direction])
+  if args.usb_escape and yy>0 and p['name'] in ['J_PD','J_DATA']:side=2
   if side==0:add([(2*i,1)],mount[0]-b[2]-.02,'mount left')
   elif side==1:add([(2*i,-1)],b[0]-mount[2]-.02,'mount right')
   elif side==2:add([(2*i+1,1)],mount[1]-b[3]-.02,'mount below')
@@ -107,7 +109,7 @@ if not args.omit_critical:
   for sx,sy in itertools.product([-1,1],repeat=2):add([(2*i,sx),(2*j,-sx),(2*i+1,sy),(2*j+1,-sy)],d-sx*(aa[0]-bb[0])-sy*(aa[1]-bb[1]),an+' -> '+bn+' critical')
 c=np.concatenate([np.zeros(2*N),np.ones(2*N)])
 result=linprog(c,A_ub=np.array(rows),b_ub=np.array(limits),bounds=[(None,None)]*(2*N)+[(0,None)]*(2*N),method='highs')
-report={'scope':'Local LP placement construction; routing, solid and manufacturing checks are separate','success':result.success,'message':result.message,'constraints':len(rows),'separation_seed':args.seed,'alternative_separation_choices':switched,'critical_pin_constraints_enabled':not args.omit_critical,'manufacturing_release':False}
+report={'scope':'Local LP placement construction; routing, solid and manufacturing checks are separate','buzzer_omitted':args.no_buzzer,'provisional_PCB_mount_count':args.mount_count,'success':result.success,'message':result.message,'constraints':len(rows),'separation_seed':args.seed,'alternative_separation_choices':switched,'critical_pin_constraints_enabled':not args.omit_critical,'manufacturing_release':False}
 report['power_copper_connection_anchors']=power_anchor_proofs
 if result.success:
  report['placements']={n:dict(pcbX=round(float(result.x[2*i]),7),pcbY=round(float(result.x[2*i+1]),7),pcbRotation=q[n]['pcbRotation']) for i,n in enumerate(names)}

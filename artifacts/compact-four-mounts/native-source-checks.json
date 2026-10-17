@@ -1,0 +1,30 @@
+[
+  {
+    "check": "source",
+    "input": "artifacts/compact-four-mounts/schematic.circuit.json",
+    "input_sha256": "aead6b4df1645014b29e39805f4904b62efcbe7133184e39576e6774e744acd2",
+    "exit_code": 0,
+    "log": "artifacts/compact-four-mounts/native-source.txt"
+  },
+  {
+    "check": "pin_specification",
+    "input": "artifacts/compact-four-mounts/schematic.circuit.json",
+    "input_sha256": "aead6b4df1645014b29e39805f4904b62efcbe7133184e39576e6774e744acd2",
+    "exit_code": 0,
+    "log": "artifacts/compact-four-mounts/native-pin_specification.txt"
+  },
+  {
+    "check": "netlist",
+    "input": "examples/four-mount-controller.circuit.tsx",
+    "input_sha256": "73b5ce2b95a02d7405682fd01411348b0b4c74f539b07b4b1170008a1acc73cb",
+    "exit_code": 0,
+    "log": "artifacts/compact-four-mounts/native-netlist.txt"
+  },
+  {
+    "check": "schematic-placement",
+    "input": "artifacts/compact-four-mounts/schematic.circuit.json",
+    "input_sha256": "aead6b4df1645014b29e39805f4904b62efcbe7133184e39576e6774e744acd2",
+    "exit_code": 0,
+    "log": "artifacts/compact-four-mounts/native-schematic-placement.txt"
+  }
+]

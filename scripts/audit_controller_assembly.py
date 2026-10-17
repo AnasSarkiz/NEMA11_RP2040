@@ -39,7 +39,8 @@ for e in records:
     rows.append({'part': name, 'model': str(local.relative_to(ROOT)),
                  'bounds_mm': [b.xmin,b.ymin,b.zmin,b.xmax,b.ymax,b.zmax]})
     parts[name] = shape
-assert len(parts) == 82, len(parts)
+expected_count=76 if '--no-buzzer' in sys.argv else 82
+assert len(parts) == expected_count, len(parts)
 bounds = {e['part']: e['bounds_mm'] for e in rows}
 pairs = []
 for a, b in itertools.combinations(parts, 2):
@@ -100,7 +101,7 @@ for name,shape in parts.items():
     if volume>1e-5:
         errors.append({'part':name,'PCB_laminate_interference_mm3':volume})
 
-report = {'scope': '82 fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware',
+report = {'scope': f'{expected_count} fitted supplier STEP solids; nominal PCB assembly, excluding motor/carrier/harness/hardware',
           'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
           'parts': rows, 'nearby_pairs': pairs, 'connector_lead_sections': alignments,
           'PCB_material_intersections':PCB_intersections,

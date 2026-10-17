@@ -1,0 +1,42 @@
+{
+  "scope": "Four-corner PCB mounting candidate; front-anchored carrier and genuine fasteners remain unqualified",
+  "reference": {
+    "package": "AnasSarkiz/NEMA14_RP2040",
+    "version": "1.13.0",
+    "source_path": "src/board.tsx",
+    "PCB_hole_count": 4,
+    "PCB_hole_pitch_mm": 26,
+    "PCB_hole_diameter_mm": 3.2,
+    "head_copper_keepout_radius_mm": 3.2
+  },
+  "PCB_outline_mm": [28, 28],
+  "assembly_frame_maximum_mm": [28.3, 28.3],
+  "mounts": [
+    {"x": -12.5, "y": -12.5, "diameter": 1.8, "radius": 1.6},
+    {"x": -12.5, "y": 12.5, "diameter": 1.8, "radius": 1.6},
+    {"x": 12.5, "y": -12.5, "diameter": 1.8, "radius": 1.6},
+    {"x": 12.5, "y": 12.5, "diameter": 1.8, "radius": 1.6}
+  ],
+  "PCB_hole_pitch_mm": 25,
+  "candidate_PCB_fastener_thread": "M1.6, separate carrier interface",
+  "candidate_maximum_head_diameter_mm": 3.0,
+  "head_radial_construction_allowance_mm": 0.1,
+  "motor_attachment": {
+    "face": "front only",
+    "verified_thread": "M2.5",
+    "pitch_mm": 23,
+    "pitch_tolerance_mm": 0.15,
+    "minimum_thread_depth_mm": 3.5,
+    "rear_threads_or_shaft_assumed": false
+  },
+  "buzzer_removed_with_user_authorization": true,
+  "omitted_components": ["BZ1", "Q_BUZZER", "D_BUZZER", "R_BUZZER_GATE", "R_BUZZER_PD", "C_BUZZER"],
+  "omitted_nets": ["BUZZER_PWM", "BUZZER_GATE", "BUZZER_SINK"],
+  "released_MCU_pin": {"number": 27, "name": "GPIO16", "status": "explicit no-connect"},
+  "unresolved": [
+    "Genuine fastener drawing, maximum head and tool envelopes, engagement and purchasing part number",
+    "Four-support front-anchored carrier design, assembly sequence, tolerance, strength and vibration qualification",
+    "Routing, thermal and complete manufacturing checks for this four-hole candidate"
+  ],
+  "manufacturing_release": false
+}

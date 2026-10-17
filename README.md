@@ -9,6 +9,13 @@ must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
 The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
+**The active four-hole candidate** has four corner mounting holes and removes
+the buzzer circuit with the user's authorization. All 76 fitted parts are on
+top; source, nominal placement and six connected A4 sheets pass.
+[Four-hole geometry, evidence and remaining requirements](docs/four-mount-compact.md).
+Routing and carrier qualification remain incomplete. Earlier two-hole compact
+prototypes below are preserved historical checkpoints.
+
 The default native preview now opens the **28 × 28 mm compact assembly**.
 The [latest checked checkpoint](artifacts/compact-escape/README.md) includes
 all-top placement, full source, six connected A4 sheets, 84 native 3D models,

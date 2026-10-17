@@ -46,7 +46,7 @@ for (const e of native) {
   e.source_port_id=basePorts.get(`${c.source_component_id}:${p.pin_number}`).source_port_id
  }
 }
-if (native.filter(e=>e.type === "schematic_component").length !== 92) throw new Error("Incomplete native symbol render")
+if (native.filter(e=>e.type === "schematic_component").length !== source.length) throw new Error("Incomplete native symbol render")
 // The native USB symbol omits the four separate shell tabs. Add explicit
 // bottom terminals, retaining their real physical pin identities and ground net.
 // Paired GND/VBUS signal contacts are safely aggregated by prepareSchematic.

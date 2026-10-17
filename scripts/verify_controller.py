@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def check(records, reference, compact=False):
+def check(records, reference, compact=False, no_buzzer=False):
     errors = []
     components = {e['source_component_id']: e for e in records if e['type'] == 'source_component'}
     names = {e['name']: e for e in components.values()}
@@ -26,6 +26,8 @@ def check(records, reference, compact=False):
                               supplier_part_numbers={'jlcpcb':['C7434086']})
     if compact:
         expected['BZ1'].update(manufacturer_part_number='MLT-5020',supplier_part_numbers={'jlcpcb':['C94598']})
+    omitted = json.loads((ROOT/'config/compact-four-mounts.json').read_text())['omitted_components'] if no_buzzer else []
+    for name in omitted: expected.pop(name)
     if names.keys() != expected.keys():
         errors.append({'component_set_difference': sorted(names.keys() ^ expected.keys())})
     for name, fields in expected.items():
@@ -39,10 +41,16 @@ def check(records, reference, compact=False):
         assert expected_pins.pop(pin) is None
     if compact:
         assert expected_pins.pop(('BZ1',4)) is None
+    removed_pins = [pin for pin in expected_pins if pin[0] in omitted]
+    for pin in removed_pins: expected_pins.pop(pin)
+    if no_buzzer:
+        expected_pins[('U_MCU',27)] = None
+        if set(nets.values()) & {'BUZZER_PWM','BUZZER_GATE','BUZZER_SINK'}:
+            errors.append({'orphaned_buzzer_nets': sorted(set(nets.values()) & {'BUZZER_PWM','BUZZER_GATE','BUZZER_SINK'})})
     for pin in sorted(pins.keys() | expected_pins.keys()):
         if pin not in pins or pin not in expected_pins or pins.get(pin) != expected_pins.get(pin):
             errors.append({'pin': pin, 'expected': expected_pins.get(pin), 'actual': pins.get(pin)})
-    expected_count=340 if compact else 341
+    expected_count=(340 if compact else 341)-len(removed_pins)
     if len(pins) != expected_count:
         errors.append({'physical_pin_count': len(pins), 'expected': expected_count})
     pcb = {e['source_component_id']: e for e in records if e['type'] == 'pcb_component'}
@@ -70,15 +78,17 @@ def check(records, reference, compact=False):
 def main():
     import sys
     compact='--compact' in sys.argv
+    no_buzzer='--no-buzzer' in sys.argv
+    if no_buzzer and not compact: raise ValueError('Buzzer omission is only authorized for compact four-hole development')
     folder=sys.argv[sys.argv.index('--folder')+1] if '--folder' in sys.argv else 'artifacts/compact-controller' if compact else 'artifacts/controller'
     path = ROOT / folder / 'unrouted.circuit.json'
     records = json.loads(path.read_text())
     reference = json.loads((ROOT / 'references/manifests/nema14-v1.13-electrical.json').read_text())
-    errors = check(records, reference, compact=compact)
+    errors = check(records, reference, compact=compact, no_buzzer=no_buzzer)
     report = {'scope': 'All physical controller pins and component values; no copper qualification',
               'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
               'reference_board_sha256': reference['reference_board_sha256'],
-              'components_compared': 92, 'physical_pins_compared': 340 if compact else 341,
+              'components_compared': sum(e['type']=='source_component' for e in records), 'physical_pins_compared': sum(e['type']=='source_port' for e in records),
               'intentional_changes': ['R_REF_H: 39k/C23153 to 20k/C4184',
                                       'J_MOTOR: SH/C160390 to PH/C131334; two unused hold-down terminals removed',
                                       'R_SA/R_SB: 125mW C2930216 to 1/3W C7434086; same 0.24 ohm value and identical copper pads'],
@@ -86,7 +96,8 @@ def main():
               'assembly_metadata': 'Seven bare PCB test pads are doNotPlace; PH mates from above; encoder and both capacitors remain DNP',
               'manufacturer_footprint_correction':'Two GCT-required 0.71 mm NPTH locating holes per USB, 8.00 mm pitch; original supplier import omitted the right hole',
               'errors': errors, 'manufacturing_release': False}
-    if compact:report['intentional_changes'].append('BZ1: HYG-8503A/C7544813 to MLT-5020/C94598; three rather than four terminals, one dummy NC removed')
+    if no_buzzer:report['intentional_changes'].append('User-authorized complete buzzer circuit removal: '+', '.join(json.loads((ROOT/'config/compact-four-mounts.json').read_text())['omitted_components'])+'; MCU GPIO16 explicitly NC')
+    elif compact:report['intentional_changes'].append('BZ1: HYG-8503A/C7544813 to MLT-5020/C94598; three rather than four terminals, one dummy NC removed')
     (ROOT / folder / 'electrical-parity.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report))
     raise SystemExit(bool(errors))
