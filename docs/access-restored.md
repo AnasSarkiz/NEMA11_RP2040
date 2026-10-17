@@ -78,3 +78,19 @@ removal or unqualified wire crimp is accepted. Live search results observed
 so far include unrelated components, so they do not establish part identity
 or stock. Mechanical attachment, final copper, full schematics/ERC, BOM/CPL,
 thermal/fabrication checks and the complete native motor assembly remain open.
+
+## Fresh native JLCPCB import
+
+`tsci import --jlcpcb --download --use-exact-footprint C4184` now succeeds.
+The genuine 0603WAF2002T5E 20 kΩ resistor TSX, OBJ and STEP are committed with
+[original-file hashes and validation](../artifacts/requirements/jlc-import-C4184.json).
+Only the working TSX receives an explicit React import for this repository's
+classic JSX setting; its original generated TSX is retained separately.
+Supplier land geometry and model transforms are unchanged. TypeScript and
+original STEP-solid validation pass. It is a candidate current-divider part;
+it is not yet selected into the full controller, and live stock is unverified.
+
+The optional native registry command to attach the GitHub repository metadata
+returned exit 1. The package's source `repository` URL and README still identify
+GitHub, but automatic registry-to-GitHub integration has not been established.
+This does not change the independently verified manual upload or GitHub pushes.

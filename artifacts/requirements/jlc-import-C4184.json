@@ -1,0 +1,42 @@
+{
+  "lcsc": "C4184",
+  "manufacturer_part_number": "0603WAF2002T5E",
+  "nominal_resistance_ohms": 20000,
+  "command": "tsci import --jlcpcb --download --use-exact-footprint C4184",
+  "native_command_exit_code": 0,
+  "source": "Fresh native JLCPCB/EasyEDA import, 2026-10-17",
+  "supplier_geometry_or_model_modified": false,
+  "stock_verified": false,
+  "selected_in_full_controller_yet": false,
+  "files": [
+    {
+      "path": "imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "bytes": 78929
+    },
+    {
+      "path": "imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
+      "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "bytes": 1046696
+    },
+    {
+      "path": "imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx",
+      "sha256": "d675b06e69da9be14a923cc05f86e810c40fe60e8ef624a0997ee873d97b129d",
+      "bytes": 1821
+    },
+    {
+      "path": "imports/supplier/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx.original",
+      "sha256": "16d395442170fe58e97af6db054b85c3f16aff956cded6144ea5d3d64d048d44",
+      "bytes": 1795
+    }
+  ],
+  "manufacturing_release": false,
+  "STEP_valid": true,
+  "STEP_nominal_size_mm": [
+    0.8100001000000003,
+    1.6200000000000003,
+    0.45
+  ],
+  "runtime_compatibility_adjustment": "One explicit React import prepended for classic JSX; original generated TSX retained byte-for-byte; no footprint or CAD edits.",
+  "TypeScript_check": "passed"
+}

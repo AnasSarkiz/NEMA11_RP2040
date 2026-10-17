@@ -59,5 +59,12 @@
     "bytes": 20148
   },
   "scope": "MCU subsystem only, incomplete NEMA11 controller",
-  "fabrication_ready": false
+  "fabrication_ready": false,
+  "native_GitHub_link_update_exit_code": 1,
+  "registry_GitHub_metadata": {
+    "owner_github_username": "AnasSarkiz",
+    "github_repo_full_name": null,
+    "is_source_from_github": false,
+    "github_installation_id": null
+  }
 }
