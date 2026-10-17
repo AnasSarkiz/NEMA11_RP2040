@@ -1,0 +1,77 @@
+{
+  "scope": "Full controller native CAM development review",
+  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "files": [
+    {
+      "name": "F_Cu.gbr",
+      "bytes": 1779197,
+      "sha256": "a70c287b184dd0a3f25b61daa961ec940e2b671e66fb2a0d2b958354fa8bc357"
+    },
+    {
+      "name": "F_SilkScreen.gbr",
+      "bytes": 10424,
+      "sha256": "abf3d3750f8a72bc73dcdf2a460367d0818ac546a233e448d383f9d36c311e99"
+    },
+    {
+      "name": "F_Mask.gbr",
+      "bytes": 17010,
+      "sha256": "a4da8a6208ad176e1c9d71ab1a75938e73e6c365bacce09d9c192549274153ee"
+    },
+    {
+      "name": "F_Paste.gbr",
+      "bytes": 12718,
+      "sha256": "3fb39ab4a9842ae143122b76bff383d2b75433781f3eb48ed7bcb52a7f9b5380"
+    },
+    {
+      "name": "B_Cu.gbr",
+      "bytes": 2033276,
+      "sha256": "7e986d0f6c72bea060e9f3c1b3450aeb9db8bbd2c29f27af4366df2849927ca8"
+    },
+    {
+      "name": "B_SilkScreen.gbr",
+      "bytes": 28909,
+      "sha256": "68668f1ce20af184adba4ff5bff64711f6560672da5b21bf6d85556da93444d2"
+    },
+    {
+      "name": "B_Mask.gbr",
+      "bytes": 4090,
+      "sha256": "ea16baa0238299749f6db2eedf871c00d9db7b3e8388381287992f9c57e9d914"
+    },
+    {
+      "name": "B_Paste.gbr",
+      "bytes": 2408,
+      "sha256": "3cb7ade99af62575c622ab1859c5ca61a1b24902e011149432f3825505f3149b"
+    },
+    {
+      "name": "Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "782a432b8c999513e0a84279f27047d9e36b19aa35a43b67414ac5a15a7b1183"
+    },
+    {
+      "name": "In1_Cu.gbr",
+      "bytes": 2015171,
+      "sha256": "e5b73f481461e477e2abac4bbc23d7da6d7633ad3c512e55beef01ee78c7ffe6"
+    },
+    {
+      "name": "In2_Cu.gbr",
+      "bytes": 1991097,
+      "sha256": "fab8ace3ba6666359a8b2adea89b4f2203e69b5c6eb9731a7ad8d9d710cdff90"
+    },
+    {
+      "name": "F_Fab.gbr",
+      "bytes": 21042,
+      "sha256": "0249529676aa47ffbd5bfe791804f3b8866dcb38024456d572f9d7d13f930266"
+    },
+    {
+      "name": "drill-L1-L4.drl",
+      "bytes": 6390,
+      "sha256": "f6fac265e18ad743cf2674343240b59a03e2e0f351464502274f5e7ccf0f228b"
+    },
+    {
+      "name": "drill_npth.drl",
+      "bytes": 501,
+      "sha256": "dac1b5e230dac862106a2771e29381254afdd95864c9a6b21abcb741c18dc896"
+    }
+  ],
+  "manufacturing_release": false
+}

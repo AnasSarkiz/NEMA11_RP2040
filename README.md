@@ -4,11 +4,10 @@ Hardware development for the STEPPERONLINE **11HS12-0674S**, to preserve the
 published `AnasSarkiz/NEMA14_RP2040@1.13.0` feature set in a separate project.
 The NEMA14 repository is a read-only reference.
 
-**Current milestone: full native tscircuit controller source, 82 fitted supplier
-models and six functional A4 schematic sheets. Copper routing is complete only
-within the separately published MCU subsystem scope.
-No fabrication release, production BOM/CPL or complete motor assembly is available.
-Review Gerbers cover the MCU subsystem only.**
+**Current milestone: full native controller source, six A4 sheets, routed copper,
+review CAM, candidate SMT BOM/CPL and a native PCB/motor/front-carrier assembly.
+A manufacturer drawing exposed missing USB locating holes; that correction and
+renewed validation are in progress. This is not a fabrication release.**
 
 Native CLI authentication now succeeds. The [separate MCU prototype](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_MCU_Prototype)
 is published, and the exact NEMA14 v1.13.0 plus original motor drawing/STEP have
@@ -21,6 +20,7 @@ downloaded and matched byte-for-byte. This package contains the full electrical
 source, higher-power sense resistors and six schematics; its PCB is unrouted.
 
 - [Design requirements](config/design-requirements.json)
+- [Full controller PCB development and manufacturing blockers](docs/full-controller-pcb.md)
 - [Full controller source, parity and assembly findings](docs/full-controller.md)
 - [Full controller six-page A4 schematic PDF](artifacts/controller/schematic-a4.pdf)
 - [Full controller native PCB 3D review](artifacts/controller/development-controller.glb)

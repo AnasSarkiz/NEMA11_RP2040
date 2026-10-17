@@ -1,8 +1,8 @@
 {
-  "scope": "Native PCB and OEM motor clearance arrangement; carrier and harness absent",
-  "circuit_sha256": "84643d9b8e52b909ae83e02347d0968f11a07d6814d907061d46ec4cc1dba226",
-  "glb_sha256": "7c2299b78d2926c203abb88dbfe47b6562270ee2053c96bac52f99dc2acfdb3d",
-  "bytes": 19042360,
+  "scope": "Native PCB, OEM motor and original front carrier proposal; hardware and full harness absent",
+  "circuit_sha256": "1987f27800f15d84c49b32d441c2f60c8b428af7a6f6d5d51685b2ad5d43a492",
+  "glb_sha256": "c5194b84cb1e124b6427617533f62b5adfc72023a2e7c64125e44eef28647bef",
+  "bytes": 19760152,
   "original_supplier_assets_loaded": [
     {
       "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
@@ -233,6 +233,11 @@
       "path": "imports/motor/11HS12-0674S.obj",
       "sha256": "c39b0649babb9bdc0a37033344ef9249c53a7caf53b17f2adc587f39237c083b",
       "bytes": 2134747
+    },
+    {
+      "path": "imports/mechanical/nema11-front-carrier.obj",
+      "sha256": "f0fab050846e3b2edcaacbc764385605b68d96e81f6717633299e59ef6030a94",
+      "bytes": 254189
     }
   ],
   "motor_model_included": true,

@@ -1,0 +1,15 @@
+{
+  "url": "https://datasheet.lcsc.com/datasheet/pdf/c1dec92031ffeb04e3b9c692a9e731b4.pdf?productCode=C5815189",
+  "sha256": "c38c5977f6123b0178fa25853140c16bb2d8c70808f2203f3ab604ce31d18516",
+  "document": "GCT USB4145 drawing A2, 31 January 2023; sheets 1-2",
+  "facts": {
+    "locating_pegs_per_connector": 2,
+    "locating_peg_diameter_mm": 0.56,
+    "peg_diameter_tolerance_mm": 0.05,
+    "locating_hole_diameter_mm": 0.71,
+    "recommended_PCB_layout_tolerance_mm": 0.05,
+    "locating_hole_pitch_mm": 8.0
+  },
+  "finding": "Original supplier footprint contains only the left locating hole; add the right hole to each connector and reroute conflicting 15 V copper",
+  "manufacturing_release": false
+}

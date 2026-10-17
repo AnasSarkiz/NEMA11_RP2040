@@ -4,7 +4,7 @@ import hashlib
 import json
 from collections import Counter
 from pathlib import Path
-from shapely.geometry import box
+from shapely.geometry import box, Polygon
 from shapely.strtree import STRtree
 from pcb_geometry import Copper, LAYERS
 
@@ -19,6 +19,8 @@ def audit(records):
     board = next(e for e in records if e['type'] == 'pcb_board')
     boundary = box(-board['width']/2+.25, -board['height']/2+.25,
                    board['width']/2-.25, board['height']/2-.25)
+    if board.get('outline'):
+        boundary = Polygon([(p['x'], p['y']) for p in board['outline']]).buffer(-.25)
     for record, _, shapes in elements:
         for layer, shape in shapes.items():
             if not shape.is_valid:

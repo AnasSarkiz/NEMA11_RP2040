@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Render the original review copper files with the independent PyGerber parser."""
-import hashlib,json
+import hashlib,json,sys
 from pathlib import Path
 from pygerber.gerberx3.api import v2
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'artifacts/rp2040-pcb'
+OUT=ROOT/'artifacts'/('controller-pcb' if '--controller' in sys.argv else 'rp2040-pcb')
 files=[]
 for name,layer in [('F_Cu','top'),('In1_Cu','inner1'),('In2_Cu','inner2'),('B_Cu','bottom')]:
     source=OUT/'review-cam'/f'{name}.gbr'

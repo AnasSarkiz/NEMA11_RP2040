@@ -22,6 +22,8 @@ assert hashlib.sha256((ROOT / 'imports/motor/11HS12-0674S.step').read_bytes()).h
 b = original['bounds_mm']
 corners = [(-y, x, z-42) for x,y,z in itertools.product([b[0],b[3]], [b[1],b[4]], [b[2],b[5]])]
 expected['OEM_11HS12_0674S'] = [min(p[i] for p in corners) for i in range(3)] + [max(p[i] for p in corners) for i in range(3)]
+carrier=json.loads((ROOT / 'artifacts/requirements/front-carrier-proposal.json').read_text())
+expected['FRONT_CARRIER_PROPOSAL']=carrier['bounds_mm']
 checked, errors = [], []
 for node in gltf['nodes']:
     name = node.get('name')
@@ -40,18 +42,19 @@ for node in gltf['nodes']:
                     'maximum_STEP_bbox_deviation_mm': delta})
     if delta > .05:
         errors.append({'part': name, 'bbox_deviation_mm': delta})
-assert {e['part'] for e in checked} == set(expected) and len(checked) == 83
+assert {e['part'] for e in checked} == set(expected) and len(checked) == 84
 motor = next(e for e in checked if e['part'] == 'OEM_11HS12_0674S')['native_GLB_board_coordinates_bbox_mm']
 assert motor[3] > 34 and motor[0] > -14.11, 'Motor lead stubs must exit positive X toward the JST side'
 lowest = min(e['bounds_mm'][2] for e in audit['parts'])
-report = {'scope': 'Actual native GLB bounds versus 82 fitted supplier STEP poses plus genuine OEM motor',
-          'GLB_sha256': hashlib.sha256(data).hexdigest(), 'native_models_checked': 83,
+report = {'scope': 'Actual native GLB bounds versus 82 supplier STEP poses, genuine OEM motor and original carrier proposal',
+          'GLB_sha256': hashlib.sha256(data).hexdigest(), 'native_models_checked': 84,
           'scene_to_board_coordinates': {'X': '-glTF.X', 'Y': 'glTF.Z', 'Z': 'glTF.Y'},
           'parts': checked, 'errors': errors, 'passed': not errors,
           'nominal_motor_to_PCB_bottom_gap_mm': -.8-motor[5],
           'nominal_motor_to_lowest_fitted_component_vertical_gap_mm': lowest-motor[5],
           'drawing_maximum_body_to_PCB_bottom_gap_mm': 8.2,
           'motor_lead_stubs_point_toward_JST_side': True,
+          'front_carrier_proposal_included': True,
           'carrier_harness_hardware_included': False, 'manufacturing_release': False}
 (folder / 'assembly-geometry-verification.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({k:v for k,v in report.items() if k != 'parts'}))

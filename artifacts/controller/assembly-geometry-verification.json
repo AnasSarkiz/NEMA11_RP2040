@@ -1,7 +1,7 @@
 {
-  "scope": "Actual native GLB bounds versus 82 fitted supplier STEP poses plus genuine OEM motor",
-  "GLB_sha256": "7c2299b78d2926c203abb88dbfe47b6562270ee2053c96bac52f99dc2acfdb3d",
-  "native_models_checked": 83,
+  "scope": "Actual native GLB bounds versus 82 supplier STEP poses, genuine OEM motor and original carrier proposal",
+  "GLB_sha256": "c5194b84cb1e124b6427617533f62b5adfc72023a2e7c64125e44eef28647bef",
+  "native_models_checked": 84,
   "scene_to_board_coordinates": {
     "X": "-glTF.X",
     "Y": "glTF.Z",
@@ -1003,6 +1003,18 @@
         -10.5
       ],
       "maximum_STEP_bbox_deviation_mm": 1.0000001182675078e-07
+    },
+    {
+      "part": "FRONT_CARRIER_PROPOSAL",
+      "native_GLB_board_coordinates_bbox_mm": [
+        -19.5,
+        -19.5,
+        -43,
+        19.5,
+        19.5,
+        -0.8
+      ],
+      "maximum_STEP_bbox_deviation_mm": 0.008181853975742115
     }
   ],
   "errors": [],
@@ -1011,6 +1023,7 @@
   "nominal_motor_to_lowest_fitted_component_vertical_gap_mm": 8.300006,
   "drawing_maximum_body_to_PCB_bottom_gap_mm": 8.2,
   "motor_lead_stubs_point_toward_JST_side": true,
+  "front_carrier_proposal_included": true,
   "carrier_harness_hardware_included": false,
   "manufacturing_release": false
 }

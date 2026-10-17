@@ -1,0 +1,16 @@
+{
+  "scope": "Full controller physical copper; no symbolic net IDs substitute for contact",
+  "method": "Shapely per-layer pad/trace/annulus/pour geometry; plated barrels join layers",
+  "clearance_mm": 0.15,
+  "board_edge_mm": 0.25,
+  "via_drill_pad_mm": [
+    0.3,
+    0.45
+  ],
+  "error_counts": {},
+  "errors": [],
+  "manufacturing_release": false,
+  "actual_drilled_objects_checked": 357,
+  "minimum_declared_drill_pair_gap_mm": 0.2255956918481831,
+  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4"
+}

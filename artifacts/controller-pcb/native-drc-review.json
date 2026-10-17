@@ -1,0 +1,298 @@
+{
+  "scope": "Native DRC retained verbatim, with independently verified circular-keepout geometry review",
+  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "raw_native_error_count": 36,
+  "reviewed_circular_keepout_false_positives": [
+    {
+      "native_error_id": "overlap_controller_same_side_repair_6_PD_VBUS_1_pcb_keepout_3",
+      "copper": "controller_same_side_repair_6_PD_VBUS_1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.1681900588401739,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_9_V3V3_0_layer_section_0_pcb_keepout_0",
+      "copper": "controller_same_side_repair_9_V3V3_0_layer_section_0",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.34159992311071896,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_9_V3V3_0_layer_section_2_pcb_keepout_0",
+      "copper": "controller_same_side_repair_9_V3V3_0_layer_section_2",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.48030442102753085,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_reviewed_local_R_VM_H_pin1_pcb_keepout_3",
+      "copper": "controller_reviewed_local_R_VM_H_pin1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.9958331151281377,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_reviewed_local_R_VM_H_pin2_pcb_keepout_3",
+      "copper": "controller_reviewed_local_R_VM_H_pin2",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.4157049117263809,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_5_RUN_1_layer_section_0_pcb_keepout_1",
+      "copper": "controller_same_side_repair_5_RUN_1_layer_section_0",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.16819005884018068,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_reviewed_local_TP_BOOT_pin1_pcb_keepout_1",
+      "copper": "controller_reviewed_local_TP_BOOT_pin1",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.9979960261786138,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_reviewed_local_R_BUZZER_GATE_pin2_pcb_keepout_3",
+      "copper": "controller_reviewed_local_R_BUZZER_GATE_pin2",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.49235313453813107,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_37_V3V3_8_pcb_keepout_0",
+      "copper": "controller_same_side_repair_37_V3V3_8",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.18589342558674893,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_0_pcb_keepout_2",
+      "copper": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_0",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.1861522542698878,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_0_pcb_keepout_3",
+      "copper": "controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_0",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.16829232995248003,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_17_VM_SENSE_1_pcb_keepout_3",
+      "copper": "controller_same_side_repair_17_VM_SENSE_1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.4157135743062259,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_1_PD_VBUS_1_layer_section_0_pcb_keepout_2",
+      "copper": "controller_same_side_repair_1_PD_VBUS_1_layer_section_0",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.5257861883442482,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_28_PD_VBUS_1_layer_section_0_pcb_keepout_3",
+      "copper": "controller_same_side_repair_28_PD_VBUS_1_layer_section_0",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.19225110520395522,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_29_V3V3_0_pcb_keepout_0",
+      "copper": "controller_same_side_repair_29_V3V3_0",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.34159992311071896,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_48_V3V3_19_pcb_keepout_2",
+      "copper": "controller_same_side_repair_48_V3V3_19",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.2419066999794987,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_67_BUZZER_GATE_0_layer_section_0_pcb_keepout_3",
+      "copper": "controller_same_side_repair_67_BUZZER_GATE_0_layer_section_0",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.1877242033080201,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_2_B_PLUS_0_layer_section_1_pcb_keepout_3",
+      "copper": "controller_same_side_repair_2_B_PLUS_0_layer_section_1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.6799686201467006,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_3_B_MINUS_0_layer_section_2_pcb_keepout_0",
+      "copper": "controller_same_side_repair_3_B_MINUS_0_layer_section_2",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.4369509197056018,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_2",
+      "copper": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_1",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.4700400406326668,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_SWDIO_0_layer_section_3_pcb_keepout_3",
+      "copper": "controller_same_side_repair_0_SWDIO_0_layer_section_3",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.16819005884018023,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_3",
+      "copper": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.19584274699739015,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_4_pcb_keepout_0",
+      "copper": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_4",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.4372460108102197,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_STATUS_R_C_0_pcb_keepout_1",
+      "copper": "controller_same_side_repair_0_STATUS_R_C_0",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.16819005884017685,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_3_pcb_keepout_3",
+      "copper": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_3",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.18772518874508212,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_PWR_LED_A_0_layer_section_2_pcb_keepout_0",
+      "copper": "controller_same_side_repair_0_PWR_LED_A_0_layer_section_2",
+      "keepout": "pcb_keepout_0",
+      "actual_circle_gap_mm": 0.5795735148012509,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_5_pcb_keepout_2",
+      "copper": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_5",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.3450240490945707,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_BOOT_PAD_0_layer_section_3_pcb_keepout_1",
+      "copper": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_3",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.4700000000000007,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_1_RUN_1_rerouted_layer_section_0_pcb_keepout_1",
+      "copper": "controller_same_side_repair_1_RUN_1_rerouted_layer_section_0",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.9626406871192832,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_2",
+      "copper": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_1",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.8236803095751968,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_0_pcb_keepout_3",
+      "copper": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_0",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.16819005884018023,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_4_pcb_keepout_2",
+      "copper": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_4",
+      "keepout": "pcb_keepout_2",
+      "actual_circle_gap_mm": 0.16819005884017726,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_same_side_repair_0_PD_CFG_0_pcb_keepout_1",
+      "copper": "controller_same_side_repair_0_PD_CFG_0",
+      "keepout": "pcb_keepout_1",
+      "actual_circle_gap_mm": 0.17444723734555273,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_connection_STATUS_B_K_0_section_0_pcb_keepout_3",
+      "copper": "controller_connection_STATUS_B_K_0_section_0",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.2047177062089472,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_connection_STATUS_B_K_0_section_1_pcb_keepout_3",
+      "copper": "controller_connection_STATUS_B_K_0_section_1",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.5200000000000066,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    },
+    {
+      "native_error_id": "overlap_controller_connection_STATUS_B_K_0_section_2_pcb_keepout_3",
+      "copper": "controller_connection_STATUS_B_K_0_section_2",
+      "keepout": "pcb_keepout_3",
+      "actual_circle_gap_mm": 0.7610147722566329,
+      "actual_circle_overlap_mm2": 0.0,
+      "reason": "Native trace checker uses the circle bounding rectangle; actual circular keepout is clear"
+    }
+  ],
+  "unresolved_errors": [],
+  "reviewed_DRC_pass": true,
+  "manufacturing_release": false
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "net": "A_PLUS",
+    "trace_ids": [
+      "controller_connection_A_PLUS_0_section_0",
+      "controller_connection_A_PLUS_0_section_1",
+      "controller_connection_A_PLUS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 407225,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "B_PLUS",
+    "trace_ids": [
+      "controller_connection_B_PLUS_0_section_0",
+      "controller_connection_B_PLUS_0_section_1",
+      "controller_connection_B_PLUS_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 93297,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "A_MINUS",
+    "trace_ids": [
+      "controller_connection_A_MINUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 9651,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "B_MINUS",
+    "trace_ids": [
+      "controller_connection_B_MINUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 6154,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 76,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 6,
+    "physical_islands_after": 5
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_1_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 76,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 5,
+    "physical_islands_after": 4
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_2_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 6596,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 4,
+    "physical_islands_after": 3
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_3_section_0",
+      "controller_connection_PD_VBUS_3_section_1",
+      "controller_connection_PD_VBUS_3_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 88135,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 3,
+    "physical_islands_after": 2
+  },
+  {
+    "net": "PD_VBUS",
+    "trace_ids": [
+      "controller_connection_PD_VBUS_4_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 22,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "LOGIC_IN",
+    "trace_ids": [
+      "controller_connection_LOGIC_IN_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 36,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "DATA_VBUS",
+    "trace_ids": [
+      "controller_connection_DATA_VBUS_0_section_0"
+    ],
+    "added_vias": 0,
+    "expanded": 32,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_CC1",
+    "trace_ids": [
+      "controller_connection_PD_CC1_0_section_0",
+      "controller_connection_PD_CC1_0_section_1"
+    ],
+    "added_vias": 1,
+    "expanded": 82736,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "PD_CC2",
+    "trace_ids": [
+      "controller_connection_PD_CC2_0_section_0",
+      "controller_connection_PD_CC2_0_section_1",
+      "controller_connection_PD_CC2_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 53519,
+    "sense_local_inner_neckdown_centres_mm": [],
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  },
+  {
+    "net": "STATUS_B_K",
+    "trace_ids": [
+      "controller_connection_STATUS_B_K_0_section_0",
+      "controller_connection_STATUS_B_K_0_section_1",
+      "controller_connection_STATUS_B_K_0_section_2"
+    ],
+    "added_vias": 2,
+    "expanded": 45886,
+    "physical_islands_before": 2,
+    "physical_islands_after": 1
+  }
+]

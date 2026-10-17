@@ -1,0 +1,6 @@
+{
+  "scope": "Physical routing edits requiring subsequent independent DRC",
+  "removed_signal_via": "controller_reviewed_local_R_STATUS_B_pin1_via",
+  "reason": "Remove barrel from moved R_STATUS_B pad and construct a new connection",
+  "manufacturing_release": false
+}

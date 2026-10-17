@@ -1,0 +1,666 @@
+{
+  "scope": "Full 92-component controller native DRC",
+  "tool": "@tscircuit/checks",
+  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "strict_schema_pass": true,
+  "reviewed_thermal_vias": [
+    "controller_thermal_via_U_MCU",
+    "controller_thermal_via_U_DRV",
+    "controller_thermal_via_U_PD"
+  ],
+  "errors": [
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_PD.VBUS1 to J_PD.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_6_PD_VBUS_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_6_PD_VBUS_1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 15.975000000000001,
+        "y": 9.825000000000001
+      },
+      "pcb_port_ids": [
+        "pcb_port_177",
+        "pcb_port_268"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_9_V3V3_0_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_9_V3V3_0_layer_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.4,
+        "y": -10.15
+      },
+      "pcb_port_ids": [
+        "pcb_port_55"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.125mm)",
+      "pcb_trace_id": "controller_same_side_repair_9_V3V3_0_layer_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_9_V3V3_0_layer_section_2_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": -11.399999999999999
+      },
+      "pcb_port_ids": [
+        "pcb_port_284"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_PD.VBUS1 to J_PD.VBUS2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.063mm)",
+      "pcb_trace_id": "controller_reviewed_local_R_VM_H_pin1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_reviewed_local_R_VM_H_pin1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 16.2,
+        "y": 9.693478130841122
+      },
+      "pcb_port_ids": [
+        "pcb_port_177"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO28 to R_VM_H.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_reviewed_local_R_VM_H_pin2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_reviewed_local_R_VM_H_pin2_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 16.2,
+        "y": 10.452763364485982
+      },
+      "pcb_port_ids": [
+        "pcb_port_178"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.RUN to R_RUN.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_5_RUN_1_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_5_RUN_1_layer_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -16.2,
+        "y": 15.700000000000003
+      },
+      "pcb_port_ids": [
+        "pcb_port_324"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_BOOT.pin2 to TP_BOOT.pin1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.020mm)",
+      "pcb_trace_id": "controller_reviewed_local_TP_BOOT_pin1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_reviewed_local_TP_BOOT_pin1_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.25,
+        "y": 16.2
+      },
+      "pcb_port_ids": [
+        "pcb_port_325"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace Q_BUZZER.pin1 to R_BUZZER_GATE.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_reviewed_local_R_BUZZER_GATE_pin2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_reviewed_local_R_BUZZER_GATE_pin2_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.172816000000001,
+        "y": 9.98
+      },
+      "pcb_port_ids": [
+        "pcb_port_315"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.100mm)",
+      "pcb_trace_id": "controller_same_side_repair_37_V3V3_8",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_37_V3V3_8_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -15.65,
+        "y": -9.8
+      },
+      "pcb_port_ids": [
+        "pcb_port_163",
+        "pcb_port_55"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.125mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_0_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 12.350000000000001,
+        "y": -16.2
+      },
+      "pcb_port_ids": [
+        "pcb_port_320"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_STATUS_B.pin2 to Q_STATUS_B.pin3 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.045mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_STATUS_B_C_0_rerouted_layer_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 16.2,
+        "y": 15.950000000000001
+      },
+      "pcb_port_ids": [
+        "pcb_port_301"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO28 to R_VM_H.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_17_VM_SENSE_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_17_VM_SENSE_1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 15.675000000000004,
+        "y": 10.450000000000003
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_PD.VBUS1 to J_PD.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_1_PD_VBUS_1_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_1_PD_VBUS_1_layer_section_0_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.8,
+        "y": -10.774999999999999
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_PD.VBUS1 to J_PD.VBUS2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.025mm)",
+      "pcb_trace_id": "controller_same_side_repair_28_PD_VBUS_1_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_28_PD_VBUS_1_layer_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 14.150000000000002,
+        "y": 9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_29_V3V3_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_29_V3V3_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.425,
+        "y": -10.425
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_48_V3V3_19",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_48_V3V3_19_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.8,
+        "y": -11.2
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace Q_BUZZER.pin1 to R_BUZZER_GATE.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_67_BUZZER_GATE_0_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_67_BUZZER_GATE_0_layer_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.175,
+        "y": 10.5
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_DRV.OUT2A to J_MOTOR.B_PLUS is too close to pcb_keepout \"unnamed keepout\" (gap: 0.100mm)",
+      "pcb_trace_id": "controller_same_side_repair_2_B_PLUS_0_layer_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_2_B_PLUS_0_layer_section_1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.650000000000002,
+        "y": 9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_DRV.OUT2B to J_MOTOR.B_MINUS is too close to pcb_keepout \"unnamed keepout\" (gap: 0.027mm)",
+      "pcb_trace_id": "controller_same_side_repair_3_B_MINUS_0_layer_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_3_B_MINUS_0_layer_section_2_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": -9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_V3V3_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.975000000000001,
+        "y": -15.25
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.SWDIO to TP_SWDIO.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_SWDIO_0_layer_section_3",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_SWDIO_0_layer_section_3_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 16.15,
+        "y": 9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO25 to Q_STATUS_R.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_LED_R_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.787500000000001,
+        "y": 9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_DRV.OUT1B to J_MOTOR.A_MINUS is too close to pcb_keepout \"unnamed keepout\" (gap: 0.009mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_4",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_A_MINUS_0_rerouted_layer_section_4_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": -9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_STATUS_R.pin2 to Q_STATUS_R.pin3 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_STATUS_R_C_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_STATUS_R_C_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -16.1,
+        "y": 9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.B_NEG to R_STATUS_B.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_3",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_STATUS_B_K_0_rerouted_layer_section_3_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.8,
+        "y": 15.149999999999999
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_PWR.anode to R_PWR_LED.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_PWR_LED_A_0_layer_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_PWR_LED_A_0_layer_section_2_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.724999999999998,
+        "y": -9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO9 to U_DRV.SLEEP is too close to pcb_keepout \"unnamed keepout\" (gap: 0.020mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_5",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_layer_section_5_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 11.125,
+        "y": -9.8
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_BOOT.pin2 to TP_BOOT.pin1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.120mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_BOOT_PAD_0_layer_section_3",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_BOOT_PAD_0_layer_section_3_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": 15.475000000000001
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.RUN to R_RUN.pin2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.045mm)",
+      "pcb_trace_id": "controller_same_side_repair_1_RUN_1_rerouted_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_1_RUN_1_rerouted_layer_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": 10.275000000000002
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.CC2 to R_CC2.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_DATA_CC2_0_rerouted_rerouted_rerouted_layer_section_1_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.8,
+        "y": -10.399999999999999
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO9 to U_DRV.SLEEP overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_SLEEP_0_rerouted_rerouted_rerouted_rerouted_layer_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 15.400000000000002,
+        "y": 16.2
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO2 to Q_STATUS_G.pin2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.120mm)",
+      "pcb_trace_id": "controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_4",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_LED_G_0_rerouted_rerouted_layer_section_4_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 13.600000000000001,
+        "y": -16.2
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.CFG1 to R_PD_CFG.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_same_side_repair_0_PD_CFG_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_same_side_repair_0_PD_CFG_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.8,
+        "y": 9.75
+      },
+      "pcb_port_ids": [
+        "pcb_port_48",
+        "pcb_port_339"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.B_NEG to R_STATUS_B.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_B_K_0_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_B_K_0_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.625,
+        "y": 15.550000000000004
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.B_NEG to R_STATUS_B.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_B_K_0_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_B_K_0_section_1_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.3,
+        "y": 15.950000000000003
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.B_NEG to R_STATUS_B.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_B_K_0_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_B_K_0_section_2_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 15.64177827876982,
+        "y": 16.2
+      },
+      "pcb_port_ids": [
+        "pcb_port_300"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "type": "source_component_pins_underspecified_warning",
+      "source_component_pins_underspecified_warning_id": "source_component_pins_underspecified_warning_source_component_61",
+      "warning_type": "source_component_pins_underspecified_warning",
+      "message": "All pins on D_TVS are underspecified (no pinAttributes set)",
+      "source_component_id": "source_component_61",
+      "source_port_ids": [
+        "source_port_268",
+        "source_port_269"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_61",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "D_TVS has no pin with requires_power=true",
+      "source_component_id": "source_component_61",
+      "source_port_ids": [
+        "source_port_268",
+        "source_port_269"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_70",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q_STATUS_R has no pin with requires_power=true",
+      "source_component_id": "source_component_70",
+      "source_port_ids": [
+        "source_port_292",
+        "source_port_293",
+        "source_port_294"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_72",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q_STATUS_G has no pin with requires_power=true",
+      "source_component_id": "source_component_72",
+      "source_port_ids": [
+        "source_port_297",
+        "source_port_298",
+        "source_port_299"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_74",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q_STATUS_B has no pin with requires_power=true",
+      "source_component_id": "source_component_74",
+      "source_port_ids": [
+        "source_port_302",
+        "source_port_303",
+        "source_port_304"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_power_pin_defined_warning",
+      "source_no_power_pin_defined_warning_id": "source_no_power_pin_defined_warning_source_component_76",
+      "warning_type": "source_no_power_pin_defined_warning",
+      "message": "Q_BUZZER has no pin with requires_power=true",
+      "source_component_id": "source_component_76",
+      "source_port_ids": [
+        "source_port_309",
+        "source_port_310",
+        "source_port_311"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_ground_pin_defined_warning",
+      "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_source_component_61",
+      "warning_type": "source_no_ground_pin_defined_warning",
+      "message": "D_TVS has no pin with requires_ground=true",
+      "source_component_id": "source_component_61",
+      "source_port_ids": [
+        "source_port_268",
+        "source_port_269"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_ground_pin_defined_warning",
+      "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_source_component_68",
+      "warning_type": "source_no_ground_pin_defined_warning",
+      "message": "D_STATUS has no pin with requires_ground=true",
+      "source_component_id": "source_component_68",
+      "source_port_ids": [
+        "source_port_286",
+        "source_port_287",
+        "source_port_288",
+        "source_port_289"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "source_no_ground_pin_defined_warning",
+      "source_no_ground_pin_defined_warning_id": "source_no_ground_pin_defined_warning_source_component_75",
+      "warning_type": "source_no_ground_pin_defined_warning",
+      "message": "BZ1 has no pin with requires_ground=true",
+      "source_component_id": "source_component_75",
+      "source_port_ids": [
+        "source_port_305",
+        "source_port_306",
+        "source_port_307",
+        "source_port_308"
+      ],
+      "subcircuit_id": "subcircuit_source_group_0"
+    }
+  ],
+  "native_drc_pass": false,
+  "manufacturing_release": false
+}

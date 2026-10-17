@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Clock copper and return-path checks; bench clock qualification is separate."""
-import hashlib, json, math
+import hashlib, json, math, sys
 from pathlib import Path
 from shapely.geometry import Point, LineString
 from shapely.ops import unary_union
 from pcb_geometry import Copper
 
 ROOT = Path(__file__).resolve().parents[1]
-path = ROOT / 'artifacts/rp2040-pcb/board.circuit.json'
+directory = 'controller-pcb' if '--controller' in sys.argv else 'rp2040-pcb'
+path = ROOT / 'artifacts' / directory / 'board.circuit.json'
 records = json.loads(path.read_text())
 c = Copper(records)
 keys = {name: key for key, name in c.nets.items()}
@@ -51,6 +52,6 @@ for name, pin in [('Y_MCU', 2), ('Y_MCU', 4), ('C_XIN', 2), ('C_XOUT', 2)]:
 report = {'circuit_sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'routes': rows,
           'ground_returns': returns, 'errors': errors, 'bench_startup_drive_load_frequency_verified': False,
           'manufacturing_release': False}
-(ROOT/'artifacts/rp2040-pcb/clock-layout-audit.json').write_text(json.dumps(report, indent=2)+'\n')
+(ROOT/'artifacts'/directory/'clock-layout-audit.json').write_text(json.dumps(report, indent=2)+'\n')
 print(json.dumps(report))
 raise SystemExit(bool(errors))

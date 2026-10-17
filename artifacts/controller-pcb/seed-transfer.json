@@ -1,0 +1,20 @@
+{
+  "unchanged_reference_pads_verified": 313,
+  "moved_components": [
+    "D_DATA",
+    "J_MOTOR",
+    "J_PD",
+    "R_STATUS_B"
+  ],
+  "nets_removed_for_rerouting": [],
+  "removed_reference_copper_ids": [],
+  "scope": "Routing construction intermediate; opens, clearance and planes unresolved",
+  "source_sha256": "70bbc04ca291347b6789b5823050f1749838e55a43d25300b708ac6b8011ffe3",
+  "circuit_sha256": "09245921c0034883e33174915e9dbb8203bdf4dee3affdcb69e194556ce0a830",
+  "copper_counts": {
+    "pcb_via": 329,
+    "pcb_trace": 536
+  },
+  "reference_seed_sha256": "dd743284c8e50bbaabec1cb7361b681249c06270af2976d34a0ba55be4b444fe",
+  "manufacturing_release": false
+}

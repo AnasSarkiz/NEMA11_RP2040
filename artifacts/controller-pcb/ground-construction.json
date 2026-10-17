@@ -1,0 +1,239 @@
+{
+  "scope": "Ground pour construction; independent checks are required",
+  "clearance_mm": 0.2,
+  "board_edge_mm": 0.35,
+  "regions": [
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 127.38074404722013
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 157.1417016197285
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 88.18903962107154
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 16.83165486991955
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 43.27847230656953
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 14.355113739572495
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 3.377106617728997
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 4.959969026670505
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 69.78186682376545
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 7.707839599282007
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 4.038818977262504
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 0.9308837345884985
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 5.163775069530491
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 3.3544766683194998
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 5.419290583132511
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 2.064162588546997
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 2.3287284927755
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 2.4473670999290027
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 5.085064808403999
+    },
+    {
+      "layer": "top",
+      "net": "GND",
+      "area_mm2": 2.1232902812529977
+    },
+    {
+      "layer": "inner1",
+      "net": "GND",
+      "area_mm2": 874.2365398654684
+    },
+    {
+      "layer": "inner1",
+      "net": "GND",
+      "area_mm2": 0.29759327821300097
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 560.5267818942357
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 40.643671436850994
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 3.616705328077497
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 1.3562317692055
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 20.615186867433522
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 0.7081304276514999
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 11.821794046169478
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 1.5855110394800005
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 3.702277167714
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 17.43657139747896
+    },
+    {
+      "layer": "inner2",
+      "net": "GND",
+      "area_mm2": 3.7701329423440035
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 451.8427876553935
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 8.304652556425026
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 11.690710541791526
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 56.656004661773835
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 18.052971592257503
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 1.6349851448374972
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 35.670838930593426
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 11.492582554730017
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 1.6087992751454965
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 23.437935335288458
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 4.053967705679502
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 8.35111102768599
+    },
+    {
+      "layer": "bottom",
+      "net": "GND",
+      "area_mm2": 0.28285279546849973
+    }
+  ],
+  "circuit_sha256": "b162345ecb4e55b3ff91db0080383b6a6e94d8cad26c75682912d39bffd2adf4",
+  "manufacturing_release": false
+}

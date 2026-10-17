@@ -11,8 +11,8 @@ def pad_shape(e):
     if e.get('shape') == 'polygon':
         return Polygon([(p['x'], p['y']) for p in e['points']]).buffer(0)
     x, y = e['x'], e['y']
-    w = e.get('width', e.get('outer_diameter', e.get('radius', 0) * 2))
-    h = e.get('height', w)
+    w = e.get('width', e.get('outer_width', e.get('outer_diameter', e.get('radius', 0) * 2)))
+    h = e.get('height', e.get('outer_height', w))
     if e.get('shape') == 'circle':
         result = Point(x, y).buffer(w / 2, quad_segs=32)
     elif e.get('shape') in ['pill', 'rotated_pill']:
@@ -32,7 +32,7 @@ class Copper:
         self.nets = {e['subcircuit_connectivity_map_key']: e['name'] for e in records if e['type'] == 'source_net'}
 
     def key(self, record):
-        if record['type'] == 'pcb_smtpad':
+        if record['type'] in ['pcb_smtpad', 'pcb_plated_hole']:
             return self.source[self.ports[record['pcb_port_id']]['source_port_id']].get('subcircuit_connectivity_map_key')
         return record.get('subcircuit_connectivity_map_key')
 
@@ -40,9 +40,14 @@ class Copper:
         result = []
         for e in self.records:
             typ = e['type']
-            key = self.key(e) if typ in ['pcb_smtpad', 'pcb_trace', 'pcb_via', 'pcb_copper_pour'] else None
+            key = self.key(e) if typ in ['pcb_smtpad', 'pcb_plated_hole', 'pcb_trace', 'pcb_via', 'pcb_copper_pour'] else None
             if typ == 'pcb_smtpad':
                 result.append((e, key, {e['layer']: pad_shape(e)}))
+            elif typ == 'pcb_plated_hole':
+                hole = {**e, 'width': e.get('hole_width', e.get('hole_diameter')),
+                        'height': e.get('hole_height', e.get('hole_diameter'))}
+                ring = pad_shape(e).difference(pad_shape(hole))
+                result.append((e, key, {layer: ring for layer in e.get('layers', ['top', 'bottom'])}))
             elif typ == 'pcb_via':
                 ring = Point(e['x'], e['y']).buffer(e['outer_diameter']/2, quad_segs=32).difference(
                     Point(e['x'], e['y']).buffer(e['hole_diameter']/2, quad_segs=32))
@@ -61,8 +66,8 @@ class Copper:
                 result.append((e, key, {e['layer']: shape}))
         return result
 
-    def groups(self, net):
-        elements = [e for e in self.elements() if e[1] == net]
+    def groups(self, net, elements=None):
+        elements = [e for e in (self.elements() if elements is None else elements) if e[1] == net]
         parent = list(range(len(elements)))
 
         def root(i):
@@ -86,11 +91,12 @@ class Copper:
 
     def connectivity(self):
         errors = []
+        elements = self.elements()
         for key, name in self.nets.items():
-            elements, roots = self.groups(key)
+            members, roots = self.groups(key, elements)
             islands = defaultdict(set)
-            for (record, _, _), group in zip(elements, roots):
-                if record['type'] == 'pcb_smtpad':
+            for (record, _, _), group in zip(members, roots):
+                if record['type'] in ['pcb_smtpad', 'pcb_plated_hole']:
                     port = self.source[self.ports[record['pcb_port_id']]['source_port_id']]
                     islands[group].add(f"{self.names[port['source_component_id']]}.{port['pin_number']}")
             if len(islands) > 1:

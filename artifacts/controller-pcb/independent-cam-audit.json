@@ -1,0 +1,140 @@
+{
+  "scope": "Actual native full-controller review CAM; manufacturing qualification remains separate",
+  "circuit_sha256": "4d33d026537a410efe78e472d2409218a5e815acb3eddc21b8ddbf441bd198d4",
+  "parser": "Gerbonara 1.5 with explicit LR/G85 compatibility",
+  "files": {
+    "F_Cu.gbr": {
+      "objects": 3359,
+      "area_mm2": 846.8193360122966,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_SilkScreen.gbr": {
+      "objects": 130,
+      "area_mm2": 1.2096851379308895,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_Mask.gbr": {
+      "objects": 415,
+      "area_mm2": 259.80371964294727,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_Paste.gbr": {
+      "objects": 290,
+      "area_mm2": 114.02924371322021,
+      "LR_applied": 8,
+      "warnings": []
+    },
+    "B_Cu.gbr": {
+      "objects": 3897,
+      "area_mm2": 839.9095121598174,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_SilkScreen.gbr": {
+      "objects": 539,
+      "area_mm2": 6.804720577099444,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_Mask.gbr": {
+      "objects": 62,
+      "area_mm2": 62.39503084566176,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "B_Paste.gbr": {
+      "objects": 12,
+      "area_mm2": 20.04349491019714,
+      "LR_applied": 8,
+      "warnings": []
+    },
+    "Edge_Cuts.gbr": {
+      "objects": 4,
+      "area_mm2": 7.499463298281626,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "In1_Cu.gbr": {
+      "objects": 1705,
+      "area_mm2": 983.1431430783537,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "In2_Cu.gbr": {
+      "objects": 3574,
+      "area_mm2": 844.7834906085465,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "F_Fab.gbr": {
+      "objects": 591,
+      "area_mm2": 14.957980540967894,
+      "LR_applied": 0,
+      "warnings": []
+    },
+    "drill-L1-L4.drl": {
+      "objects": 351,
+      "G85_joined": 8,
+      "parser_notices": [
+        "<unknown>:16 \"G90\": G90 header statement found after end of header"
+      ],
+      "tools_mm": {
+        "0.599999": 8,
+        "0.999998": 4,
+        "0.3": 339
+      }
+    },
+    "drill_npth.drl": {
+      "objects": 6,
+      "G85_joined": 0,
+      "parser_notices": [
+        "<unknown>:14 \"G90\": G90 header statement found after end of header"
+      ],
+      "tools_mm": {
+        "3.2": 4,
+        "0.709981": 2
+      }
+    }
+  },
+  "copper_comparisons": [
+    {
+      "layer": "top",
+      "source_mm2": 815.035837341847,
+      "CAM_mm2": 815.0562709653548,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "inner1",
+      "source_mm2": 951.3618357672507,
+      "CAM_mm2": 951.3800780314069,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "inner2",
+      "source_mm2": 813.0005738717613,
+      "CAM_mm2": 813.0204255616032,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    },
+    {
+      "layer": "bottom",
+      "source_mm2": 808.1253396068026,
+      "CAM_mm2": 808.1464471128701,
+      "extra_beyond_3um_mm2": 0.0,
+      "missing_beyond_3um_mm2": 0.0
+    }
+  ],
+  "drilled_features": 357,
+  "silkscreen_mask_overlap_mm2": {
+    "F": 0.0,
+    "B": 0.0
+  },
+  "errors": [],
+  "CAM_roundtrip_pass": true,
+  "manufacturing_release": false
+}

@@ -48,7 +48,7 @@ if (glb.toString("ascii", 0, 4) !== "glTF" || glb.readUInt32LE(4) !== 2 || glb.r
 if (!used.size) throw new Error("No original supplier model assets were loaded")
 writeFileSync(path + output, glb)
 writeFileSync(path + (assembly ? "assembly-3d-export-verification.json" : "3d-export-verification.json"), JSON.stringify({
-  scope: assembly ? "Native PCB and OEM motor clearance arrangement; carrier and harness absent" : controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
+  scope: assembly ? "Native PCB, OEM motor and original front carrier proposal; hardware and full harness absent" : controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   glb_sha256: createHash("sha256").update(glb).digest("hex"), bytes: glb.length,
   original_supplier_assets_loaded: [...used.values()],

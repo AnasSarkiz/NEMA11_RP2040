@@ -59,6 +59,13 @@ jobs:
           python3 scripts/audit_core_clock.py
           python3 -m unittest discover -s tests-pcb -v
           git diff --exit-code -- artifacts/rp2040-pcb/board.circuit.json
+      - name: Reproduce and independently check full controller PCB
+        run: |
+          python3 scripts/build_controller_pcb.py --check
+          bun scripts/check-controller-pcb.tsx --checks-only --report-only
+          python3 scripts/audit_controller_pcb.py
+          python3 scripts/audit_core_clock.py --controller
+          python3 scripts/review_controller_native_drc.py
       - name: Independently parse committed review CAM and verify prototype
         run: |
           python3 -m pip install -r tools/requirements-cam.lock
