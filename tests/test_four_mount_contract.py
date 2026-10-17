@@ -1,4 +1,8 @@
-"""Reject incomplete mounting geometry and unauthorized loss of other features."""
+"""Preserve the frozen 25 mm carrier snapshot and reference feature contract.
+
+This fixture is historical; it does not define the current direct-motor-bolt
+interface, whose nominal STEP axes are at 23 mm pitch.
+"""
 import copy,json,unittest
 from pathlib import Path
 from scripts.verify_controller import check
@@ -16,7 +20,7 @@ class FourMountContractTests(unittest.TestCase):
  def test_missing_corner_hole_is_rejected(self):
   r=copy.deepcopy(self.records);r.remove(next(e for e in r if e['type']=='pcb_hole' and not e.get('pcb_component_id')))
   self.assertTrue(check_mounts(r,self.config))
- def test_wrong_motor_pitch_on_PCB_is_rejected(self):
+ def test_changed_pitch_in_frozen_carrier_snapshot_is_rejected(self):
   r=copy.deepcopy(self.records)
   next(e for e in r if e['type']=='pcb_hole' and not e.get('pcb_component_id'))['x']=-11.5
   self.assertTrue(check_mounts(r,self.config))

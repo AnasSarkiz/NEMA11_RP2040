@@ -1,0 +1,67 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Motor_Bolt_Study",
+  "version": "0.1.0",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Motor_Bolt_Study",
+  "package_release_id": "dce7e6c5-393f-4111-9b08-bb239bcde7ed",
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "native_CLI_push_exit_code": 0,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 2079,
+      "sha256": "78b3b066da1d2efe8882519fcc4b699ed40e96842988cd0284bb96233c969766",
+      "local_match": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 1203,
+      "sha256": "2c6d241e2725c4c6dfc3ce4064cf5cee2ffbebd2b1949f722ec7a325a312f233",
+      "local_match": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 1203,
+      "sha256": "2c6d241e2725c4c6dfc3ce4064cf5cee2ffbebd2b1949f722ec7a325a312f233",
+      "local_match": true
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 247,
+      "sha256": "6b05ee93310fc76352f9d3ceb4b97963637b8782fb0eaca133b939709fa7f2c2",
+      "local_match": true
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 908,
+      "sha256": "24ff1c048da16ecdf2aa700eaf2d084fe39ef45603241c31f696350a5962169b",
+      "local_match": true
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 449,
+      "sha256": "b63f4e7b632670ae8c9684c20c1a229e72cfba318811c10d7b7b50ac52e291b6",
+      "local_match": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_match": true
+    }
+  ],
+  "source_milestone_commit": "6340609c023731fd8fd386c013211de180430be3",
+  "scope": "Verified original OEM motor-only native study; PCB mounting redesign incomplete",
+  "ready_to_build": true,
+  "native_CAD_models": 1,
+  "nominal_existing_rear_bolt_axes_verified": true,
+  "nominal_bolt_pitch_mm": 23,
+  "PCB_included": false,
+  "carrier_included": false,
+  "rear_bolt_thread_or_length_assumed": false,
+  "direct_PCB_attachment_validated": false,
+  "server_preview_rendering_validated": false,
+  "manufacturing_release": false
+}

@@ -10,6 +10,11 @@ STEP shows those rear axes on a nominal **23 mm square**. Rear bolt thread,
 length and engagement are not specified in the front-thread drawing and remain
 unverified. The old 25 mm carrier PCB does not align with these axes and must be
 reworked. [Direct-mount evidence and remaining requirements](docs/direct-motor-bolts.md).
+The genuine motor-only inspection is published separately as
+[NEMA11_RP2040_Motor_Bolt_Study 0.1.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Motor_Bolt_Study).
+Its native CLI upload succeeded and all seven files were independently
+[downloaded and byte-verified](artifacts/publication/motor-bolt-study-0.1.0.json).
+It contains the OEM motor only, with no claimed completed PCB attachment.
 
 **Active redesign target: the entire PCB and fitted connector/component bodies
 must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
