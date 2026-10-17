@@ -1,0 +1,19 @@
+{
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Motor_Bolt_Study",
+  "version": "0.1.0",
+  "source_milestone_commit": "6340609c023731fd8fd386c013211de180430be3",
+  "scope": "Verified original OEM motor-only native study; PCB mounting redesign incomplete",
+  "circuit_sha256": "2c6d241e2725c4c6dfc3ce4064cf5cee2ffbebd2b1949f722ec7a325a312f233",
+  "native_CAD_models": 1,
+  "original_STEP_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "native_GLB_sha256": "9b670deb9dcb1d7a8f9f8d2bbefb1983ef2183d1703f5dee02747158461d5fc3",
+  "maximum_STEP_bbox_deviation_mm": 1.0000001182675078e-07,
+  "nominal_existing_rear_bolt_axes_verified": true,
+  "nominal_bolt_pitch_mm": 23,
+  "PCB_included": false,
+  "carrier_included": false,
+  "rear_bolt_thread_or_length_assumed": false,
+  "direct_PCB_attachment_validated": false,
+  "registry_published": false,
+  "manufacturing_release": false
+}

@@ -1,11 +1,13 @@
 {
-  "scope": "Exact routed compact Gerber/BOM/CPL review archive; DO NOT FABRICATE",
+  "scope": "Historical electrical PCB Gerber/BOM/CPL review archive; carrier mount superseded; DO NOT FABRICATE",
   "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "current_mount_requirement": "Direct existing motor case-bolts; no carrier or enclosure",
+  "PCB_direct_motor_bolt_axis_alignment_pass": false,
   "files": [
     {
       "path": "artifacts/compact-six-layer/README.md",
-      "bytes": 897,
-      "sha256": "5f98f62ae82d3b16d829ffbd5c90585d6dc7dd957b17d12644574ba91c1e983a"
+      "bytes": 1340,
+      "sha256": "87e26a9904d9ea01a827a4bdb77fe9377cdb554b3e6d29fcbbad97a96dc12d7a"
     },
     {
       "path": "artifacts/compact-six-layer/assembly-data/JLC_SMT_BOM.csv",
@@ -133,9 +135,29 @@
       "sha256": "e4263fb4415944b37fba15cb069cdd9e5e003167cb2bfe2c13bbfd01d25f2777"
     },
     {
+      "path": "artifacts/requirements/direct-motor-bolts/OEM-rear-bolt-view.png",
+      "bytes": 42676,
+      "sha256": "6a873614e27a75c790b2e09be797bf9331f6e2cbdb79e54c284287119f7518dd"
+    },
+    {
+      "path": "artifacts/requirements/direct-motor-bolts/nominal-step-bolt-audit.json",
+      "bytes": 2486,
+      "sha256": "b32c73823919634b0d052bc47351bf54e3007001ed8b146a8322c3e7733fd83c"
+    },
+    {
+      "path": "config/direct-motor-bolt-mounting.json",
+      "bytes": 1998,
+      "sha256": "6e77dc92bfce5656967eded1026388404b868266a49c0759bcc4c4f78c21f0b4"
+    },
+    {
       "path": "docs/compact-six-layer.md",
-      "bytes": 6366,
-      "sha256": "ab187f4e74346d82d3108c7c0c2c4e5476ace03d0f4a66a9afd5307aa6cf0fee"
+      "bytes": 7046,
+      "sha256": "bb93f8da0110af1972163196c4b53991186844469434896baf6fcca898effd83"
+    },
+    {
+      "path": "docs/direct-motor-bolts.md",
+      "bytes": 3787,
+      "sha256": "781b05abcf8e3c5022dd1044695e2997000760b834f4ebd792ab03623afef49c"
     }
   ],
   "manufacturing_release": false

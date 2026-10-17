@@ -1,0 +1,12 @@
+{
+  "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Motor_Bolt_Study",
+  "version": "0.1.0",
+  "main": "index.circuit.json",
+  "description": "Original OEM NEMA11 motor-only study: four existing rear bolt axes at 23 mm nominal. No carrier, PCB attachment or selected replacement hardware. NOT fabrication ready",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnasSarkiz/NEMA11_RP2040.git"
+  }
+}
