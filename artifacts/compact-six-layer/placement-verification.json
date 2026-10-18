@@ -2,51 +2,51 @@
   "PCB_mounts": [
     {
       "centre_mm": [
-        -12.5,
-        -12.5
+        -11.5,
+        -11.5
       ],
-      "hole_diameter_mm": 1.8,
-      "head_keepout_radius_mm": 1.6,
-      "minimum_copper_to_head_keepout_mm": 0.4776284049845889,
-      "hole_edge_to_PCB_edge_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "head_keepout_radius_mm": 2.35,
+      "minimum_copper_to_head_keepout_mm": 0.0,
+      "hole_edge_to_PCB_edge_mm": 1.15,
       "head_within_28_3mm_frame": true
     },
     {
       "centre_mm": [
-        -12.5,
-        12.5
+        -11.5,
+        11.5
       ],
-      "hole_diameter_mm": 1.8,
-      "head_keepout_radius_mm": 1.6,
-      "minimum_copper_to_head_keepout_mm": 0.20233720179757986,
-      "hole_edge_to_PCB_edge_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "head_keepout_radius_mm": 2.35,
+      "minimum_copper_to_head_keepout_mm": 0.0,
+      "hole_edge_to_PCB_edge_mm": 1.15,
       "head_within_28_3mm_frame": true
     },
     {
       "centre_mm": [
-        12.5,
-        -12.5
+        11.5,
+        -11.5
       ],
-      "hole_diameter_mm": 1.8,
-      "head_keepout_radius_mm": 1.6,
-      "minimum_copper_to_head_keepout_mm": 0.15534149452921703,
-      "hole_edge_to_PCB_edge_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "head_keepout_radius_mm": 2.35,
+      "minimum_copper_to_head_keepout_mm": 0.0,
+      "hole_edge_to_PCB_edge_mm": 1.15,
       "head_within_28_3mm_frame": true
     },
     {
       "centre_mm": [
-        12.5,
-        12.5
+        11.5,
+        11.5
       ],
-      "hole_diameter_mm": 1.8,
-      "head_keepout_radius_mm": 1.6,
-      "minimum_copper_to_head_keepout_mm": 0.6221652113905366,
-      "hole_edge_to_PCB_edge_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "head_keepout_radius_mm": 2.35,
+      "minimum_copper_to_head_keepout_mm": 0.0,
+      "hole_edge_to_PCB_edge_mm": 1.15,
       "head_within_28_3mm_frame": true
     }
   ],
   "scope": "Unrouted compact full-circuit placement, supplier copper and nominal envelopes only",
-  "circuit_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "circuit_sha256": "601807c474d13bf5d42d7ab7d2d7de9eddad14684ac4a2b35b558665731b308b",
   "components": 86,
   "fitted_parts": 76,
   "all_fitted_on_top": true,
@@ -319,8 +319,275 @@
   "shorted_pad_pairs": [],
   "routing_traces": 0,
   "physical_routing_complete": false,
-  "placement_pass": true,
+  "placement_pass": false,
   "manufacturer_tolerances_verified": false,
   "manufacturing_release": false,
-  "errors": []
+  "errors": [
+    {
+      "mount_head_courtyard_overlap": "R_USB_SENSE_H",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "C_BULK",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_STATUS_R",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "TP_GND",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_174",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_173",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_243",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_291",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_290",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_306",
+      "mount": [
+        -11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "J_PD",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_PD",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_USB_SENSE_L",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_TEMP_SCL",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_16",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_52",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_51",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_176",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_175",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_281",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_280",
+      "mount": [
+        -11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_PG",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "D_DATA",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "R_TEMP_SDA",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "TP_BOOT_GND",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_56",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_55",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_202",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_278",
+      "mount": [
+        11.5,
+        -11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "J_DATA",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_courtyard_overlap": "U_ESD",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_39",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_24",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_26",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_27",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_262",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_263",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    },
+    {
+      "mount_head_copper_overlap": "pcb_port_264",
+      "mount": [
+        11.5,
+        11.5
+      ]
+    }
+  ]
 }

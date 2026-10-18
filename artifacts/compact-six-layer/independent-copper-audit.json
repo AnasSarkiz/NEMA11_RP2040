@@ -7,10 +7,2073 @@
     0.3,
     0.45
   ],
-  "error_counts": {},
-  "errors": [],
+  "error_counts": {
+    "disconnected_net": 1,
+    "mounting_keepout": 272,
+    "drill_pair_clearance": 8,
+    "drill_to_foreign_copper": 69
+  },
+  "errors": [
+    {
+      "type": "disconnected_net",
+      "net": "GND",
+      "islands": [
+        [
+          "C_ADC.2",
+          "C_BUCK_IN.2",
+          "C_BUCK_OUT1.2",
+          "C_BUCK_OUT2.2",
+          "C_BULK.2",
+          "C_DRV_LOGIC.2",
+          "C_DV23.2",
+          "C_DV50.2",
+          "C_ENCODER.2",
+          "C_ENCODER_BULK.2",
+          "C_FLASH.2",
+          "C_IO1.2",
+          "C_IO10.2",
+          "C_IO22.2",
+          "C_IO33.2",
+          "C_IO42.2",
+          "C_IO49.2",
+          "C_PD.2",
+          "C_REF.2",
+          "C_TEMP.2",
+          "C_USB.2",
+          "C_VM.2",
+          "C_VM_SENSE.2",
+          "C_VREG.2",
+          "C_VREG_IN.2",
+          "C_VREG_OUT.2",
+          "C_XIN.2",
+          "C_XOUT.2",
+          "D_PWR.1",
+          "D_TVS.1",
+          "J_DATA.1",
+          "J_DATA.13",
+          "J_DATA.17",
+          "J_DATA.18",
+          "J_DATA.19",
+          "J_DATA.20",
+          "J_DATA.9",
+          "J_PD.1",
+          "J_PD.13",
+          "J_PD.17",
+          "J_PD.18",
+          "J_PD.19",
+          "J_PD.20",
+          "J_PD.5",
+          "J_PD.9",
+          "Q_STATUS_B.1",
+          "Q_STATUS_G.1",
+          "Q_STATUS_R.1",
+          "R_CC1.2",
+          "R_CC2.2",
+          "R_PD_CFG.2",
+          "R_REF_L.2",
+          "R_SA.2",
+          "R_SB.2",
+          "R_SLEEP.2",
+          "R_VM_L.2",
+          "TP_BOOT_GND.1",
+          "TP_GND.1",
+          "U_BUCK.4",
+          "U_DRV.13",
+          "U_DRV.18",
+          "U_DRV.29",
+          "U_DRV.3",
+          "U_ENCODER.4",
+          "U_ENCODER.8",
+          "U_ESD.2",
+          "U_FLASH.4",
+          "U_FLASH.9",
+          "U_MCU.19",
+          "U_MCU.57",
+          "U_PD.11",
+          "U_TEMP.2",
+          "U_TEMP.4",
+          "Y_MCU.2",
+          "Y_MCU.4"
+        ],
+        [
+          "J_DATA.5"
+        ],
+        [
+          "R_USB_SENSE_L.2"
+        ]
+      ]
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_165"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_166"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_234"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_278"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_279"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "pcb_smtpad_294"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "compact_terminal_R_STATUS_R_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "compact_terminal_TP_GND_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_VBUS_2_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_VBUS_2_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_VBUS_2_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_VBUS_2_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_via_129"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_PRESENT_1_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_via_17"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_G_K_0_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_R_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_R_K_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_DATA_VBUS_8_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_R_C_0_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_R_C_0_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "controller_connection_STATUS_R_C_0_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "compact_terminal_R_STATUS_R_1_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_0",
+      "id": "compact_terminal_TP_GND_1_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_plated_hole_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_43"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_44"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_167"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_168"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_268"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "pcb_smtpad_269"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "compact_terminal_R_USB_SENSE_L_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VBUS_1030_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_via_7"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_PD_VHV_1033_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_via_8"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_TEMP_SCL_1_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "compact_terminal_R_TEMP_SCL_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "controller_connection_V3V3_1057_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "compact_terminal_R_USB_SENSE_L_2_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_1",
+      "id": "compact_terminal_R_TEMP_SCL_2_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "pcb_smtpad_47"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "pcb_smtpad_48"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "pcb_smtpad_193"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "pcb_smtpad_267"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "compact_terminal_R_PG_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_PD_GOOD_0_section_3"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1032_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1044_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1044_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1044_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1044_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_V3V3_1044_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_TEMP_SDA_2_via_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_TEMP_SDA_2_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_TEMP_SDA_2_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_via_205"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "controller_connection_DATA_VBUS_8_section_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_2",
+      "id": "compact_terminal_R_PG_2_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_plated_hole_7"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_20"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_22"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_23"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_250"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_251"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "pcb_smtpad_252"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "compact_terminal_U_ESD_1"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "compact_terminal_U_ESD_2"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "controller_connection_USB_DM_0_section_0"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "compact_terminal_U_ESD_1_land_contact"
+    },
+    {
+      "type": "mounting_keepout",
+      "keepout": "pcb_keepout_3",
+      "id": "compact_terminal_U_ESD_2_land_contact"
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_0",
+      "b": "compact_terminal_R_STATUS_R_1",
+      "gap_mm": 0.045849308406297556,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_0",
+      "b": "controller_connection_DATA_PRESENT_0_via_129",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_0",
+      "b": "controller_connection_STATUS_G_K_0_via_17",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_1",
+      "b": "pcb_plated_hole_0",
+      "gap_mm": 0.4083631491789695,
+      "minimum_mm": 0.45
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_1",
+      "b": "controller_connection_PD_VHV_1033_via_7",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_1",
+      "b": "compact_terminal_R_TEMP_SCL_2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_2",
+      "b": "controller_connection_TEMP_SDA_2_via_2",
+      "gap_mm": 0.09493387286494022,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_pair_clearance",
+      "a": "pcb_hole_3",
+      "b": "pcb_plated_hole_7",
+      "gap_mm": 0.43580705424881533,
+      "minimum_mm": 0.45
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_R_C_0_section_2",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "pcb_smtpad_278",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_section_1",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_via_17",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "pcb_smtpad_279",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_G_K_0_section_0",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "compact_terminal_R_STATUS_R_1_land_contact",
+      "layer": "top",
+      "gap_mm": 0.11582822571503207,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_STATUS_R_K_0_section_0",
+      "layer": "bottom",
+      "gap_mm": 0.1653365764956715,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_via_129",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_0_section_1",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_0",
+      "copper": "controller_connection_DATA_PRESENT_1_section_0",
+      "layer": "inner2",
+      "gap_mm": 0.1084441145673043,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "inner3",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "inner1",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "bottom",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "top",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "inner2",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_plated_hole_0",
+      "layer": "inner4",
+      "gap_mm": 0.1584389443543289,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_smtpad_268",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_smtpad_269",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "compact_terminal_R_TEMP_SCL_2_land_contact",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_via_7",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "controller_connection_PD_VHV_1033_section_0",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_1",
+      "copper": "pcb_smtpad_43",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_section_0",
+      "layer": "top",
+      "gap_mm": 0.1648942249468266,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "inner4",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "inner3",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "inner2",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "inner1",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_via_2",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_PD_GOOD_0_section_3",
+      "layer": "bottom",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_V3V3_1032_section_0",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "controller_connection_TEMP_SDA_2_section_1",
+      "layer": "inner3",
+      "gap_mm": 0.16491279017367505,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "pcb_smtpad_47",
+      "layer": "top",
+      "gap_mm": 0.1801166761902977,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_2",
+      "copper": "pcb_smtpad_48",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "inner3",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "inner1",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "inner4",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "inner2",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "bottom",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_plated_hole_7",
+      "layer": "top",
+      "gap_mm": 0.18588284942417455,
+      "minimum_mm": 0.2
+    },
+    {
+      "type": "drill_to_foreign_copper",
+      "drill": "pcb_hole_3",
+      "copper": "pcb_smtpad_20",
+      "layer": "top",
+      "gap_mm": 0.0,
+      "minimum_mm": 0.2
+    }
+  ],
   "manufacturing_release": false,
   "actual_drilled_objects_checked": 281,
-  "minimum_declared_drill_pair_gap_mm": 0.3119055482662404,
-  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6"
+  "minimum_declared_drill_pair_gap_mm": 0.0,
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83"
 }

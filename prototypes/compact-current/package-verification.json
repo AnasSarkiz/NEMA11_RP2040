@@ -1,7 +1,7 @@
 {
   "scope": "Current controller hole alignment and native assembly export geometry only; electrical routing and clamp hardware NOT validated",
   "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
-  "version": "0.5.0-dev.1",
+  "version": "0.5.0-motor-bolts-wip",
   "source_milestone_commit": "edca7e902da1d081cb8a99e8aba7ac66a36fa04e",
   "source_assembly_sha256": "56cba67a351972c2e2da30d83cceaa6aaeb53df0d646428f9d81964b01731a41",
   "circuit_sha256": "dd9cff036a40edb7d99fb459791410321353fb6d129f26d0f79f1854b0cf19d8",
@@ -18,5 +18,21 @@
   "registry_published": false,
   "native_CLI_build_exit_code": 1,
   "native_CLI_build_pass": false,
-  "native_CLI_build_note": "Actual build retained 18 native footprint/hole errors. No ignore flags used. Publication as a validated routed milestone is blocked."
+  "native_CLI_build_note": "Actual build retained 18 native footprint/hole errors. No ignore flags used. Publication as a validated routed milestone is blocked.",
+  "native_build_output_formatting": {
+    "native_CLI_output_sha256": "1514281b6edc14b003151886a2db66aacae2a53a5c9f034fd64d68a41c7eb982",
+    "published_compact_JSON_sha256": "dd9cff036a40edb7d99fb459791410321353fb6d129f26d0f79f1854b0cf19d8",
+    "reason": "Lossless whitespace compaction for registry decompressed-file limit; every native CLI output record retained",
+    "native_CLI_record_roundtrip_verified": true
+  },
+  "publication_channel": "Tagged source/geometry development draft; not a validated routed milestone",
+  "native_CLI_push_initial_exit_code": 1,
+  "required_large_JSON_files_uploaded_by_individual_gzip_fallback": true,
+  "optional_native_PCB_SVG_upload_http_status": 413,
+  "optional_native_PCB_SVG_available_in_GitHub_artifacts": true,
+  "current_independent_copper_errors": 350,
+  "current_physical_graph_open_nets": 1,
+  "current_physical_graph_shorts": 0,
+  "source_schematic_ERC_pass": true,
+  "source_connected_A4_sheets": 6
 }

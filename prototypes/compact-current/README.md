@@ -15,6 +15,11 @@ certify electrical routing, component collisions, clamp hardware or harness fit.
 The original motor and original wire stubs are preserved; final terminated leads
 and mating plug fit within the frame remain unresolved.
 
+Fresh independent checks find 350 copper/drill/keepout errors and one open GND
+net (three islands). The native copper graph finds zero foreign-net shorts.
+All six connected A4 sheets pass the independent schematic ERC. These source
+checks do not waive the physical PCB failures.
+
 Placement/routing must be corrected around the new holes before new Gerbers,
 BOM/CPL and full checks can be accepted. Prior 0.4.1 zero-error checks describe the
 old 25 mm carrier-based layout and do not qualify this changed PCB. The complete

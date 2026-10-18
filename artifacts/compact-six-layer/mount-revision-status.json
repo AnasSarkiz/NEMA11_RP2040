@@ -16,5 +16,15 @@
   "native_assembly_contains_current_PCB_and_original_motor": true,
   "carrier_present": false,
   "existing_tscircuit_package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
-  "new_package_name_required": false
+  "new_package_name_required": false,
+  "current_independent_copper_errors": 350,
+  "current_physical_graph_open_nets": 1,
+  "current_physical_graph_shorts": 0,
+  "current_schematic_ERC_pass": true,
+  "current_connected_A4_sheets": 6,
+  "current_native_geometry_export_pass": true,
+  "publication_version": "0.5.0-motor-bolts-wip",
+  "publication_receipt": "artifacts/publication/compact-current-motor-bolts-wip.json",
+  "current_independent_placement_errors": 38,
+  "current_placement_pass": false
 }

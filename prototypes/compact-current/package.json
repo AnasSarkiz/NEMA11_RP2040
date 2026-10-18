@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
-  "version": "0.5.0-dev.1",
+  "version": "0.5.0",
   "description": "Current 23 mm motor-bolt hole revision and 77-model native assembly, no carrier. Placement/routing and hardware unqualified; 121 DRC errors. NOT FABRICATION READY",
   "main": "index.circuit.json",
   "type": "module",

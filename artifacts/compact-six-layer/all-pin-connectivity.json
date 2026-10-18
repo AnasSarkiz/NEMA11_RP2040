@@ -5,7 +5,7 @@
   "required_connected_pins": 290,
   "intentional_NC_pins": 36,
   "nets_checked": 61,
-  "opens": 0,
+  "opens": 1,
   "shorts": 0,
   "components": [
     {
@@ -614,7 +614,7 @@
   "nets": [
     {
       "name": "GND",
-      "physical_islands": 1,
+      "physical_islands": 3,
       "physical_terminal_count": 77,
       "pins": [
         "C_ADC.2",
@@ -1345,7 +1345,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1360,7 +1360,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_35",
+      "copper_island": "physical_island_36",
       "island_terminal_count": 1
     },
     {
@@ -1392,7 +1392,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_36",
+      "copper_island": "physical_island_37",
       "island_terminal_count": 2
     },
     {
@@ -1409,7 +1409,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1424,7 +1424,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_37",
+      "copper_island": "physical_island_38",
       "island_terminal_count": 1
     },
     {
@@ -1440,7 +1440,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_38",
+      "copper_island": "physical_island_39",
       "island_terminal_count": 1
     },
     {
@@ -1473,7 +1473,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1488,7 +1488,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_31",
+      "copper_island": "physical_island_32",
       "island_terminal_count": 1
     },
     {
@@ -1520,7 +1520,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_32",
+      "copper_island": "physical_island_33",
       "island_terminal_count": 1
     },
     {
@@ -1537,7 +1537,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1552,7 +1552,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_33",
+      "copper_island": "physical_island_34",
       "island_terminal_count": 1
     },
     {
@@ -1568,7 +1568,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_34",
+      "copper_island": "physical_island_35",
       "island_terminal_count": 2
     },
     {
@@ -1606,7 +1606,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1627,7 +1627,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1648,7 +1648,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_PD",
@@ -1669,7 +1669,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1685,7 +1685,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1748,8 +1748,8 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "copper_island": "physical_island_26",
+      "island_terminal_count": 1
     },
     {
       "designator": "J_DATA",
@@ -1780,7 +1780,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_26",
+      "copper_island": "physical_island_27",
       "island_terminal_count": 1
     },
     {
@@ -1813,7 +1813,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1877,7 +1877,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1946,7 +1946,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1967,7 +1967,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -1988,7 +1988,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_DATA",
@@ -2009,7 +2009,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_PD",
@@ -2040,7 +2040,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_92",
+      "copper_island": "physical_island_94",
       "island_terminal_count": 1
     },
     {
@@ -2056,7 +2056,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_93",
+      "copper_island": "physical_island_95",
       "island_terminal_count": 1
     },
     {
@@ -2072,7 +2072,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_94",
+      "copper_island": "physical_island_96",
       "island_terminal_count": 1
     },
     {
@@ -2088,7 +2088,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_95",
+      "copper_island": "physical_island_97",
       "island_terminal_count": 1
     },
     {
@@ -2104,7 +2104,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_34",
+      "copper_island": "physical_island_35",
       "island_terminal_count": 2
     },
     {
@@ -2120,7 +2120,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_36",
+      "copper_island": "physical_island_37",
       "island_terminal_count": 2
     },
     {
@@ -2152,7 +2152,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_50",
+      "copper_island": "physical_island_51",
       "island_terminal_count": 2
     },
     {
@@ -2168,7 +2168,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_51",
+      "copper_island": "physical_island_52",
       "island_terminal_count": 3
     },
     {
@@ -2185,7 +2185,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_PD",
@@ -2249,7 +2249,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_PG",
@@ -2280,7 +2280,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_51",
+      "copper_island": "physical_island_52",
       "island_terminal_count": 3
     },
     {
@@ -2312,7 +2312,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_79",
+      "copper_island": "physical_island_81",
       "island_terminal_count": 1
     },
     {
@@ -2328,7 +2328,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_83",
+      "copper_island": "physical_island_85",
       "island_terminal_count": 1
     },
     {
@@ -2344,7 +2344,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_41",
+      "copper_island": "physical_island_42",
       "island_terminal_count": 2
     },
     {
@@ -2360,7 +2360,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_39",
+      "copper_island": "physical_island_40",
       "island_terminal_count": 2
     },
     {
@@ -2376,7 +2376,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_90",
+      "copper_island": "physical_island_92",
       "island_terminal_count": 1
     },
     {
@@ -2392,7 +2392,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_91",
+      "copper_island": "physical_island_93",
       "island_terminal_count": 1
     },
     {
@@ -2408,7 +2408,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_62",
+      "copper_island": "physical_island_64",
       "island_terminal_count": 2
     },
     {
@@ -2424,7 +2424,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_63",
+      "copper_island": "physical_island_65",
       "island_terminal_count": 2
     },
     {
@@ -2456,7 +2456,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_49",
+      "copper_island": "physical_island_50",
       "island_terminal_count": 3
     },
     {
@@ -2472,7 +2472,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_55",
+      "copper_island": "physical_island_56",
       "island_terminal_count": 3
     },
     {
@@ -2488,7 +2488,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_51",
+      "copper_island": "physical_island_52",
       "island_terminal_count": 3
     },
     {
@@ -2504,7 +2504,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_74",
+      "copper_island": "physical_island_76",
       "island_terminal_count": 1
     },
     {
@@ -2520,7 +2520,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_75",
+      "copper_island": "physical_island_77",
       "island_terminal_count": 1
     },
     {
@@ -2536,7 +2536,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_76",
+      "copper_island": "physical_island_78",
       "island_terminal_count": 1
     },
     {
@@ -2552,7 +2552,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_77",
+      "copper_island": "physical_island_79",
       "island_terminal_count": 1
     },
     {
@@ -2568,7 +2568,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_78",
+      "copper_island": "physical_island_80",
       "island_terminal_count": 1
     },
     {
@@ -2585,7 +2585,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_MCU",
@@ -2616,7 +2616,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_59",
+      "copper_island": "physical_island_61",
       "island_terminal_count": 2
     },
     {
@@ -2664,7 +2664,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_60",
+      "copper_island": "physical_island_62",
       "island_terminal_count": 2
     },
     {
@@ -2680,7 +2680,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_61",
+      "copper_island": "physical_island_63",
       "island_terminal_count": 2
     },
     {
@@ -2696,7 +2696,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_52",
+      "copper_island": "physical_island_53",
       "island_terminal_count": 3
     },
     {
@@ -2712,7 +2712,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_80",
+      "copper_island": "physical_island_82",
       "island_terminal_count": 1
     },
     {
@@ -2728,7 +2728,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_81",
+      "copper_island": "physical_island_83",
       "island_terminal_count": 1
     },
     {
@@ -2744,7 +2744,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_82",
+      "copper_island": "physical_island_84",
       "island_terminal_count": 1
     },
     {
@@ -2760,7 +2760,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_84",
+      "copper_island": "physical_island_86",
       "island_terminal_count": 1
     },
     {
@@ -2776,7 +2776,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_85",
+      "copper_island": "physical_island_87",
       "island_terminal_count": 1
     },
     {
@@ -2792,7 +2792,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_86",
+      "copper_island": "physical_island_88",
       "island_terminal_count": 1
     },
     {
@@ -2824,7 +2824,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_87",
+      "copper_island": "physical_island_89",
       "island_terminal_count": 1
     },
     {
@@ -2840,7 +2840,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_88",
+      "copper_island": "physical_island_90",
       "island_terminal_count": 1
     },
     {
@@ -2856,7 +2856,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_89",
+      "copper_island": "physical_island_91",
       "island_terminal_count": 1
     },
     {
@@ -2872,7 +2872,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_43",
+      "copper_island": "physical_island_44",
       "island_terminal_count": 2
     },
     {
@@ -2888,7 +2888,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_57",
+      "copper_island": "physical_island_58",
       "island_terminal_count": 4
     },
     {
@@ -2904,7 +2904,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_56",
+      "copper_island": "physical_island_57",
       "island_terminal_count": 4
     },
     {
@@ -2936,7 +2936,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_58",
+      "copper_island": "physical_island_59",
       "island_terminal_count": 3
     },
     {
@@ -3016,7 +3016,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_47",
+      "copper_island": "physical_island_48",
       "island_terminal_count": 2
     },
     {
@@ -3032,7 +3032,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_48",
+      "copper_island": "physical_island_49",
       "island_terminal_count": 2
     },
     {
@@ -3096,7 +3096,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_73",
+      "copper_island": "physical_island_75",
       "island_terminal_count": 2
     },
     {
@@ -3112,7 +3112,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_72",
+      "copper_island": "physical_island_74",
       "island_terminal_count": 2
     },
     {
@@ -3128,7 +3128,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_71",
+      "copper_island": "physical_island_73",
       "island_terminal_count": 2
     },
     {
@@ -3144,7 +3144,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_70",
+      "copper_island": "physical_island_72",
       "island_terminal_count": 2
     },
     {
@@ -3160,7 +3160,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_69",
+      "copper_island": "physical_island_71",
       "island_terminal_count": 2
     },
     {
@@ -3176,7 +3176,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_45",
+      "copper_island": "physical_island_46",
       "island_terminal_count": 4
     },
     {
@@ -3193,7 +3193,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO1",
@@ -3225,7 +3225,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO10",
@@ -3257,7 +3257,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO22",
@@ -3289,7 +3289,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO33",
@@ -3321,7 +3321,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO42",
@@ -3353,7 +3353,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_IO49",
@@ -3385,7 +3385,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_DV23",
@@ -3417,7 +3417,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_DV50",
@@ -3449,7 +3449,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_USB",
@@ -3481,7 +3481,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_ADC",
@@ -3513,7 +3513,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_VREG_IN",
@@ -3545,7 +3545,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_VREG_OUT",
@@ -3577,7 +3577,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_FLASH",
@@ -3592,7 +3592,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_45",
+      "copper_island": "physical_island_46",
       "island_terminal_count": 4
     },
     {
@@ -3608,7 +3608,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_69",
+      "copper_island": "physical_island_71",
       "island_terminal_count": 2
     },
     {
@@ -3624,7 +3624,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_70",
+      "copper_island": "physical_island_72",
       "island_terminal_count": 2
     },
     {
@@ -3641,7 +3641,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_FLASH",
@@ -3656,7 +3656,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_71",
+      "copper_island": "physical_island_73",
       "island_terminal_count": 2
     },
     {
@@ -3672,7 +3672,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_72",
+      "copper_island": "physical_island_74",
       "island_terminal_count": 2
     },
     {
@@ -3688,7 +3688,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_73",
+      "copper_island": "physical_island_75",
       "island_terminal_count": 2
     },
     {
@@ -3721,7 +3721,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_FLASH",
@@ -3753,7 +3753,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_FLASH_CS",
@@ -3784,7 +3784,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_45",
+      "copper_island": "physical_island_46",
       "island_terminal_count": 4
     },
     {
@@ -3800,7 +3800,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_45",
+      "copper_island": "physical_island_46",
       "island_terminal_count": 4
     },
     {
@@ -3816,7 +3816,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_46",
+      "copper_island": "physical_island_47",
       "island_terminal_count": 2
     },
     {
@@ -3865,7 +3865,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "Y_MCU",
@@ -3881,7 +3881,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_XOUT",
@@ -3896,7 +3896,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_59",
+      "copper_island": "physical_island_61",
       "island_terminal_count": 2
     },
     {
@@ -3945,7 +3945,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_XOUT",
@@ -3977,7 +3977,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_RUN",
@@ -4008,7 +4008,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_52",
+      "copper_island": "physical_island_53",
       "island_terminal_count": 3
     },
     {
@@ -4024,7 +4024,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_47",
+      "copper_island": "physical_island_48",
       "island_terminal_count": 2
     },
     {
@@ -4056,7 +4056,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_48",
+      "copper_island": "physical_island_49",
       "island_terminal_count": 2
     },
     {
@@ -4105,7 +4105,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_CC2",
@@ -4137,7 +4137,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_USB_SENSE_H",
@@ -4168,7 +4168,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_58",
+      "copper_island": "physical_island_59",
       "island_terminal_count": 3
     },
     {
@@ -4184,7 +4184,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_58",
+      "copper_island": "physical_island_59",
       "island_terminal_count": 3
     },
     {
@@ -4200,8 +4200,8 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "copper_island": "physical_island_60",
+      "island_terminal_count": 1
     },
     {
       "designator": "R_VM_H",
@@ -4265,7 +4265,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_VM_SENSE",
@@ -4297,7 +4297,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_BUCK",
@@ -4361,7 +4361,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_BUCK",
@@ -4489,7 +4489,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_BUCK_OUT1",
@@ -4521,7 +4521,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_BUCK_OUT2",
@@ -4553,7 +4553,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "D_PD",
@@ -4632,7 +4632,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_30",
+      "copper_island": "physical_island_31",
       "island_terminal_count": 2
     },
     {
@@ -4648,7 +4648,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_49",
+      "copper_island": "physical_island_50",
       "island_terminal_count": 3
     },
     {
@@ -4665,7 +4665,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_DRV",
@@ -4728,7 +4728,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_66",
+      "copper_island": "physical_island_68",
       "island_terminal_count": 1
     },
     {
@@ -4825,7 +4825,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_DRV",
@@ -4840,7 +4840,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_55",
+      "copper_island": "physical_island_56",
       "island_terminal_count": 3
     },
     {
@@ -4872,7 +4872,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_62",
+      "copper_island": "physical_island_64",
       "island_terminal_count": 2
     },
     {
@@ -4905,7 +4905,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_DRV",
@@ -4920,7 +4920,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_63",
+      "copper_island": "physical_island_65",
       "island_terminal_count": 2
     },
     {
@@ -4936,7 +4936,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_64",
+      "copper_island": "physical_island_66",
       "island_terminal_count": 1
     },
     {
@@ -4952,7 +4952,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_28",
+      "copper_island": "physical_island_29",
       "island_terminal_count": 2
     },
     {
@@ -4984,7 +4984,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_53",
+      "copper_island": "physical_island_54",
       "island_terminal_count": 2
     },
     {
@@ -5000,7 +5000,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_27",
+      "copper_island": "physical_island_28",
       "island_terminal_count": 2
     },
     {
@@ -5016,7 +5016,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_65",
+      "copper_island": "physical_island_67",
       "island_terminal_count": 1
     },
     {
@@ -5032,7 +5032,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_29",
+      "copper_island": "physical_island_30",
       "island_terminal_count": 2
     },
     {
@@ -5048,7 +5048,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_54",
+      "copper_island": "physical_island_55",
       "island_terminal_count": 2
     },
     {
@@ -5081,7 +5081,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_CP",
@@ -5177,7 +5177,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_DRV_LOGIC",
@@ -5209,7 +5209,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_VM",
@@ -5241,7 +5241,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_BULK",
@@ -5257,7 +5257,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_BULK",
@@ -5288,7 +5288,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_53",
+      "copper_island": "physical_island_54",
       "island_terminal_count": 2
     },
     {
@@ -5305,7 +5305,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_SB",
@@ -5320,7 +5320,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_54",
+      "copper_island": "physical_island_55",
       "island_terminal_count": 2
     },
     {
@@ -5337,7 +5337,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_REF_H",
@@ -5401,7 +5401,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_REF",
@@ -5433,7 +5433,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_ENABLE",
@@ -5464,7 +5464,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_49",
+      "copper_island": "physical_island_50",
       "island_terminal_count": 3
     },
     {
@@ -5480,7 +5480,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_55",
+      "copper_island": "physical_island_56",
       "island_terminal_count": 3
     },
     {
@@ -5497,7 +5497,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "J_MOTOR",
@@ -5517,7 +5517,7 @@
         "inner4",
         "top"
       ],
-      "copper_island": "physical_island_27",
+      "copper_island": "physical_island_28",
       "island_terminal_count": 2
     },
     {
@@ -5538,7 +5538,7 @@
         "inner4",
         "top"
       ],
-      "copper_island": "physical_island_28",
+      "copper_island": "physical_island_29",
       "island_terminal_count": 2
     },
     {
@@ -5559,7 +5559,7 @@
         "inner4",
         "top"
       ],
-      "copper_island": "physical_island_29",
+      "copper_island": "physical_island_30",
       "island_terminal_count": 2
     },
     {
@@ -5580,7 +5580,7 @@
         "inner4",
         "top"
       ],
-      "copper_island": "physical_island_30",
+      "copper_island": "physical_island_31",
       "island_terminal_count": 2
     },
     {
@@ -5613,7 +5613,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_ESD",
@@ -5709,7 +5709,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_TEMP",
@@ -5724,7 +5724,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_56",
+      "copper_island": "physical_island_57",
       "island_terminal_count": 4
     },
     {
@@ -5741,7 +5741,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_TEMP",
@@ -5756,7 +5756,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_96",
+      "copper_island": "physical_island_98",
       "island_terminal_count": 1
     },
     {
@@ -5773,7 +5773,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_TEMP",
@@ -5804,7 +5804,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_57",
+      "copper_island": "physical_island_58",
       "island_terminal_count": 4
     },
     {
@@ -5837,7 +5837,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_TEMP_SDA",
@@ -5852,7 +5852,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_57",
+      "copper_island": "physical_island_58",
       "island_terminal_count": 4
     },
     {
@@ -5884,7 +5884,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_56",
+      "copper_island": "physical_island_57",
       "island_terminal_count": 4
     },
     {
@@ -5917,7 +5917,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "D_PWR",
@@ -6060,7 +6060,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_44",
+      "copper_island": "physical_island_45",
       "island_terminal_count": 2
     },
     {
@@ -6076,7 +6076,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_44",
+      "copper_island": "physical_island_45",
       "island_terminal_count": 2
     },
     {
@@ -6093,7 +6093,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "Q_STATUS_R",
@@ -6108,7 +6108,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_43",
+      "copper_island": "physical_island_44",
       "island_terminal_count": 2
     },
     {
@@ -6140,7 +6140,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_42",
+      "copper_island": "physical_island_43",
       "island_terminal_count": 2
     },
     {
@@ -6156,7 +6156,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_42",
+      "copper_island": "physical_island_43",
       "island_terminal_count": 2
     },
     {
@@ -6173,7 +6173,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "Q_STATUS_G",
@@ -6188,7 +6188,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_41",
+      "copper_island": "physical_island_42",
       "island_terminal_count": 2
     },
     {
@@ -6220,7 +6220,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_40",
+      "copper_island": "physical_island_41",
       "island_terminal_count": 2
     },
     {
@@ -6236,7 +6236,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_40",
+      "copper_island": "physical_island_41",
       "island_terminal_count": 2
     },
     {
@@ -6253,7 +6253,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "Q_STATUS_B",
@@ -6268,7 +6268,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_39",
+      "copper_island": "physical_island_40",
       "island_terminal_count": 2
     },
     {
@@ -6301,7 +6301,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "TP_SWCLK",
@@ -6316,7 +6316,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_60",
+      "copper_island": "physical_island_62",
       "island_terminal_count": 2
     },
     {
@@ -6332,7 +6332,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_61",
+      "copper_island": "physical_island_63",
       "island_terminal_count": 2
     },
     {
@@ -6348,7 +6348,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_52",
+      "copper_island": "physical_island_53",
       "island_terminal_count": 3
     },
     {
@@ -6364,7 +6364,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_46",
+      "copper_island": "physical_island_47",
       "island_terminal_count": 2
     },
     {
@@ -6381,7 +6381,7 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_ENCODER",
@@ -6428,7 +6428,7 @@
       "layers": [
         "bottom"
       ],
-      "copper_island": "physical_island_67",
+      "copper_island": "physical_island_69",
       "island_terminal_count": 1
     },
     {
@@ -6445,7 +6445,7 @@
         "bottom"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "U_ENCODER",
@@ -6460,7 +6460,7 @@
       "layers": [
         "bottom"
       ],
-      "copper_island": "physical_island_68",
+      "copper_island": "physical_island_70",
       "island_terminal_count": 1
     },
     {
@@ -6476,7 +6476,7 @@
       "layers": [
         "bottom"
       ],
-      "copper_island": "physical_island_57",
+      "copper_island": "physical_island_58",
       "island_terminal_count": 4
     },
     {
@@ -6492,7 +6492,7 @@
       "layers": [
         "bottom"
       ],
-      "copper_island": "physical_island_56",
+      "copper_island": "physical_island_57",
       "island_terminal_count": 4
     },
     {
@@ -6509,7 +6509,7 @@
         "bottom"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_ENCODER",
@@ -6541,7 +6541,7 @@
         "bottom"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "C_ENCODER_BULK",
@@ -6573,7 +6573,7 @@
         "bottom"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     },
     {
       "designator": "R_PD_CFG",
@@ -6588,7 +6588,7 @@
       "layers": [
         "top"
       ],
-      "copper_island": "physical_island_50",
+      "copper_island": "physical_island_51",
       "island_terminal_count": 2
     },
     {
@@ -6605,11 +6605,96 @@
         "top"
       ],
       "copper_island": "physical_island_1",
-      "island_terminal_count": 77
+      "island_terminal_count": 75
     }
   ],
-  "errors": [],
-  "passed": true,
+  "errors": [
+    {
+      "type": "open_net",
+      "net": "GND",
+      "physical_islands": 3,
+      "pins": [
+        "C_ADC.2",
+        "C_BUCK_IN.2",
+        "C_BUCK_OUT1.2",
+        "C_BUCK_OUT2.2",
+        "C_BULK.2",
+        "C_DRV_LOGIC.2",
+        "C_DV23.2",
+        "C_DV50.2",
+        "C_ENCODER.2",
+        "C_ENCODER_BULK.2",
+        "C_FLASH.2",
+        "C_IO1.2",
+        "C_IO10.2",
+        "C_IO22.2",
+        "C_IO33.2",
+        "C_IO42.2",
+        "C_IO49.2",
+        "C_PD.2",
+        "C_REF.2",
+        "C_TEMP.2",
+        "C_USB.2",
+        "C_VM.2",
+        "C_VM_SENSE.2",
+        "C_VREG.2",
+        "C_VREG_IN.2",
+        "C_VREG_OUT.2",
+        "C_XIN.2",
+        "C_XOUT.2",
+        "D_PWR.1",
+        "D_TVS.1",
+        "J_DATA.1",
+        "J_DATA.13",
+        "J_DATA.17",
+        "J_DATA.18",
+        "J_DATA.19",
+        "J_DATA.20",
+        "J_DATA.5",
+        "J_DATA.9",
+        "J_PD.1",
+        "J_PD.13",
+        "J_PD.17",
+        "J_PD.18",
+        "J_PD.19",
+        "J_PD.20",
+        "J_PD.5",
+        "J_PD.9",
+        "Q_STATUS_B.1",
+        "Q_STATUS_G.1",
+        "Q_STATUS_R.1",
+        "R_CC1.2",
+        "R_CC2.2",
+        "R_PD_CFG.2",
+        "R_REF_L.2",
+        "R_SA.2",
+        "R_SB.2",
+        "R_SLEEP.2",
+        "R_USB_SENSE_L.2",
+        "R_VM_L.2",
+        "TP_BOOT_GND.1",
+        "TP_GND.1",
+        "U_BUCK.4",
+        "U_DRV.13",
+        "U_DRV.18",
+        "U_DRV.29",
+        "U_DRV.3",
+        "U_ENCODER.4",
+        "U_ENCODER.8",
+        "U_ESD.2",
+        "U_FLASH.4",
+        "U_FLASH.9",
+        "U_MCU.19",
+        "U_MCU.57",
+        "U_PD.11",
+        "U_TEMP.2",
+        "U_TEMP.4",
+        "Y_MCU.2",
+        "Y_MCU.4"
+      ]
+    }
+  ],
+  "passed": false,
   "manufacturing_release": false,
-  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6"
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83"
 }

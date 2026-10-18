@@ -14,11 +14,16 @@ and routing are being reworked; prior DRC/CAM/assembly reports belong to the old
 board hash and do not validate this revision.
 [Current hole-change status](artifacts/compact-six-layer/mount-revision-status.json)
 and [mounting requirements](docs/direct-motor-bolts.md).
-The genuine motor-only inspection is published separately as
-[NEMA11_RP2040_Motor_Bolt_Study 0.1.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Motor_Bolt_Study).
-Its native CLI upload succeeded and all seven files were independently
-[downloaded and byte-verified](artifacts/publication/motor-bolt-study-0.1.0.json).
-It contains the OEM motor only, with no claimed completed PCB attachment.
+The existing [Compact_Prototype package](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
+has been updated as **0.5.0-motor-bolts-wip** with this current PCB and the genuine
+motor, no carrier. All seven required files were independently downloaded and
+[checked](artifacts/publication/compact-current-motor-bolts-wip.json); the registry
+reformatted generated JSON while retaining every exact native record.
+This is an explicitly incomplete source/geometry draft: native DRC has 121 errors
+and placement/routing are not qualified. The CLI build fails on the reported
+footprint conflicts. Older separately named studies remain historical; new
+controller milestones update this same package.
+[Current A4 bolt-pattern drawing](artifacts/requirements/direct-motor-bolts/current-PCB-motor-bolts-A4.pdf).
 
 **Active redesign target: the entire PCB and fitted connector/component bodies
 must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
@@ -121,3 +126,10 @@ from 0.4.0; it adds the mounting documentation.
 Its carrier assembly is superseded by the direct motor-bolt requirement; this
 published snapshot is retained as historical electrical/3D evidence only.
 The v0.1.0 / v0.2.0 two-hole and v0.3.0 four-hole snapshots are preserved.
+
+Fresh checks for the current 23 mm revision: six A4 schematic sheets pass
+independent ERC; native PCB DRC has 121 errors; independent copper/drill/head
+checks have 350 errors; the physical graph has one open GND net (three islands)
+and zero foreign-net copper shorts. These failures block a routing/CAM release.
+The [current status](artifacts/compact-six-layer/mount-revision-status.json)
+records the exact board hash.

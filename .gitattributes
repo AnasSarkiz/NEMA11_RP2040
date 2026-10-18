@@ -7,3 +7,7 @@ imports/supplier/**/*.tsx.original -diff
 *.glb binary
 
 imports/motor/**/*.step binary
+# Standard CSV exports retain the CSV writer's CRLF line endings.
+*.csv whitespace=cr-at-eol
+# Keep native exporter SVG formatting intact for registry file comparisons.
+prototypes/compact-current/dist/**/*.svg -whitespace

@@ -1,0 +1,93 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.5.0-motor-bolts-wip",
+  "url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "package_release_id": "cc3ec53a-abbf-480b-9f89-b8160d5f930b",
+  "same_existing_controller_package": true,
+  "public_page_http_status": 200,
+  "registry_published": true,
+  "independent_registry_download_verification": true,
+  "required_uploaded_file_count": 7,
+  "verified_files": [
+    {
+      "path": "README.md",
+      "remote_bytes": 1875,
+      "sha256": "0bd7a9dc0472b38c81163aa50c151d2897a09f312da3b181aba67b99b76b03e2",
+      "local_byte_match": true,
+      "native_record_match": null,
+      "registry_reformatted_only": false
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "remote_bytes": 26543596,
+      "sha256": "1514281b6edc14b003151886a2db66aacae2a53a5c9f034fd64d68a41c7eb982",
+      "local_byte_match": false,
+      "native_record_match": true,
+      "registry_reformatted_only": true
+    },
+    {
+      "path": "index.circuit.json",
+      "remote_bytes": 10354342,
+      "sha256": "dd9cff036a40edb7d99fb459791410321353fb6d129f26d0f79f1854b0cf19d8",
+      "local_byte_match": true,
+      "native_record_match": true,
+      "registry_reformatted_only": false
+    },
+    {
+      "path": "native-cli-build.txt",
+      "remote_bytes": 2298,
+      "sha256": "edb91e04523d6a349a93fee42a27adc6a249be786dd76d9f5a00baf7bd59224b",
+      "local_byte_match": true,
+      "native_record_match": null,
+      "registry_reformatted_only": false
+    },
+    {
+      "path": "package-verification.json",
+      "remote_bytes": 2050,
+      "sha256": "8a497de010d27808c65c9b8500f459fa3f17792cc501e29893b02db23933e14b",
+      "local_byte_match": true,
+      "native_record_match": null,
+      "registry_reformatted_only": false
+    },
+    {
+      "path": "package.json",
+      "remote_bytes": 445,
+      "sha256": "fe38420ecdee7a92d7a9cf89758fdb2f2cc09d17d8f48f9c8bc409dbce0681a1",
+      "local_byte_match": true,
+      "native_record_match": null,
+      "registry_reformatted_only": false
+    },
+    {
+      "path": "tscircuit.config.json",
+      "remote_bytes": 106,
+      "sha256": "dbf88fc61ed323385caf46a33773b112b6c366725ed94587657faee0590f3158",
+      "local_byte_match": true,
+      "native_record_match": null,
+      "registry_reformatted_only": false
+    }
+  ],
+  "source_files_byte_matched": true,
+  "registry_generated_circuit_all_native_records_match": true,
+  "source_milestone_commit": "edca7e902da1d081cb8a99e8aba7ac66a36fa04e",
+  "scope": "Current controller hole alignment and native assembly export geometry only; electrical routing and clamp hardware NOT validated",
+  "native_CLI_build_exit_code": 1,
+  "native_CLI_push_initial_exit_code": 1,
+  "upload_recovery": "Required large JSON files uploaded individually as gzip archives after CLI HTTP 413 failures",
+  "optional_native_PCB_SVG_upload_http_status": 413,
+  "optional_native_PCB_SVG_available_in_GitHub": true,
+  "registry_is_latest": true,
+  "ready_to_build": true,
+  "native_3D_models": 77,
+  "current_PCB_hole_pitch_mm": 23,
+  "current_PCB_hole_diameter_mm": 2.7,
+  "carrier_included": false,
+  "native_geometry_bounds_pass": true,
+  "native_DRC_errors": 121,
+  "current_independent_copper_errors": 350,
+  "current_physical_graph_open_nets": 1,
+  "current_physical_graph_shorts": 0,
+  "source_schematic_ERC_pass": true,
+  "full_routing_and_hardware_qualified": false,
+  "server_preview_rendering_validated": false,
+  "manufacturing_release": false
+}

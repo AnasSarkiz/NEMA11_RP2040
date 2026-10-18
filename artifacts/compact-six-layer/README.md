@@ -21,3 +21,8 @@ Current native 3D: 77 original models, current PCB plus genuine OEM motor, align
 actual GLB bounds. Clamp hardware, final insulation and terminated wire routing
 remain unqualified. Native DRC currently reports 121 errors and seven warnings;
 no findings are filtered or waived.
+
+Fresh independent checks on this current PCB report **350 copper/drill/head
+errors and one open GND net (three islands)**, with zero foreign-net copper
+shorts in the physical graph. The six connected A4 sheets pass schematic ERC.
+None of these source-level passes qualifies the failing physical PCB.

@@ -38,8 +38,11 @@ gap in the 3D study is not a qualified spacer/hardware selection.
 
 All new controller publications use revisions of the existing
 [Compact_Prototype package](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype).
-The published 0.4.1 revision contains the old 25 mm carrier-based layout and is
-historical. It must not be used as the completed direct motor-bolt design.
+The current **0.5.0-motor-bolts-wip** draft contains the changed PCB/motor native
+assembly. [Seven required files are remotely verified](../artifacts/publication/compact-current-motor-bolts-wip.json).
+Its native build and DRC fail on the visible conflicts; this is source/geometry
+publication, not a validated routed milestone. Historical 0.4.1 contains the old
+25 mm carrier-based layout and must not be used as the completed direct mount.
 
 Design checks remain mandatory: original supplier pad/model integrity, connected
 schematic pins, all-top fitted assembly, native DRC, independent copper and
@@ -80,3 +83,8 @@ bun scripts/export-core-3d.tsx --compact --assembly --folder artifacts/compact-s
 
 The source build deliberately fails while native footprint conflicts remain.
 Board routing must be regenerated from the source before rebuilding its assembly.
+
+Fresh independent checks on this current PCB report **350 copper/drill/head
+errors and one open GND net (three islands)**, with zero foreign-net copper
+shorts in the physical graph. The six connected A4 sheets pass schematic ERC.
+None of these source-level passes qualifies the failing physical PCB.
