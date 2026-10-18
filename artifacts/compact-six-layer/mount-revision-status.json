@@ -1,0 +1,13 @@
+{
+  "scope": "Current board mounting-hole revision; placement/routing construction in progress",
+  "source_sha256": "601807c474d13bf5d42d7ab7d2d7de9eddad14684ac4a2b35b558665731b308b",
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
+  "PCB_hole_pitch_mm": 23,
+  "PCB_hole_diameter_mm": 2.7,
+  "PCB_motor_bolt_axis_alignment_pass": true,
+  "diameter_and_hardware_qualified": false,
+  "previous_native_DRC_CAM_BOM_and_assembly_reports_invalidated_by_changed_board_hash": true,
+  "current_native_render_errors": 18,
+  "routing_revalidated": false,
+  "manufacturing_release": false
+}

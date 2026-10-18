@@ -57,54 +57,54 @@
   "rear_bolt_length_or_engagement_inferred": false,
   "front_M2_5_threads_do_not_establish_rear_bolt_thread": true,
   "PCB_file": "artifacts/compact-six-layer/board.circuit.json",
-  "PCB_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "PCB_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
   "PCB_hole_axis_comparisons": [
     {
       "PCB_hole_XY_mm": [
-        -12.5,
-        -12.5
+        -11.5,
+        -11.5
       ],
       "motor_axis_XY_mm": [
         -11.5,
         -11.5
       ],
-      "axis_error_mm": 1.414213562
+      "axis_error_mm": 0.0
     },
     {
       "PCB_hole_XY_mm": [
-        -12.5,
-        12.5
+        -11.5,
+        11.5
       ],
       "motor_axis_XY_mm": [
         -11.5,
         11.5
       ],
-      "axis_error_mm": 1.414213562
+      "axis_error_mm": 0.0
     },
     {
       "PCB_hole_XY_mm": [
-        12.5,
-        -12.5
+        11.5,
+        -11.5
       ],
       "motor_axis_XY_mm": [
         11.5,
         -11.5
       ],
-      "axis_error_mm": 1.414213562
+      "axis_error_mm": 0.0
     },
     {
       "PCB_hole_XY_mm": [
-        12.5,
-        12.5
+        11.5,
+        11.5
       ],
       "motor_axis_XY_mm": [
         11.5,
         11.5
       ],
-      "axis_error_mm": 1.414213562
+      "axis_error_mm": 0.0
     }
   ],
-  "PCB_motor_bolt_axis_alignment_pass": false,
+  "PCB_motor_bolt_axis_alignment_pass": true,
   "PCB_hole_diameter_hardware_and_tolerance_qualified": false,
   "custom_carrier_allowed": false,
   "new_rear_motor_threads_or_shaft_assumed": false,

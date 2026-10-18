@@ -1,14 +1,14 @@
 {
   "scope": "Native tscircuit six-layer copper checkpoint; USB, hardware and manufacturing qualification remain separate",
-  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
   "inputs": [
     {
       "path": "artifacts/compact-six-layer/unrouted.circuit.json",
-      "sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33"
+      "sha256": "601807c474d13bf5d42d7ab7d2d7de9eddad14684ac4a2b35b558665731b308b"
     },
     {
       "path": "src/compact/six-layer-routing.json",
-      "sha256": "668363931d1bbe07ddc2f813b054e9f51f4d20aeb0ff93b471f7dc4a3df3785a"
+      "sha256": "e327eff41ea0b5ec52a818ec396743f97f3dc14f406811018df531f74d4db551"
     },
     {
       "path": "config/compact-routing-placement.json",

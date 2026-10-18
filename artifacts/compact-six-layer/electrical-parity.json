@@ -1,6 +1,6 @@
 {
   "scope": "All physical controller pins and component values; no copper qualification",
-  "circuit_sha256": "fc64bd9e3d8098e882e4fd2c15d30d242090ea12197b31c6e912e7446e698b33",
+  "circuit_sha256": "601807c474d13bf5d42d7ab7d2d7de9eddad14684ac4a2b35b558665731b308b",
   "reference_board_sha256": "16a605a565a272ce12a5194f28e1d9d8359c183d6110d117a4771d2b8ec91d2d",
   "components_compared": 86,
   "physical_pins_compared": 326,

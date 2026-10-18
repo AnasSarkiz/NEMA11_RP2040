@@ -1,0 +1,20 @@
+{
+  "scope": "Current controller PCB: four holes on the existing OEM rear motor case-bolt axes",
+  "PCB_outline_mm": [28, 28],
+  "PCB_hole_pitch_mm": 23,
+  "PCB_hole_diameter_mm": 2.7,
+  "hole_diameter_status": "Provisional fine-clearance design envelope for a shank up to 2.5 mm; actual rear bolt thread/diameter remains unverified",
+  "nominal_STEP_bolt_head_diameter_mm": 4,
+  "design_maximum_head_diameter_mm": 4.5,
+  "head_radial_allowance_mm": 0.1,
+  "mounts": [
+    {"x": -11.5, "y": -11.5, "diameter": 2.7, "radius": 2.35},
+    {"x": -11.5, "y": 11.5, "diameter": 2.7, "radius": 2.35},
+    {"x": 11.5, "y": -11.5, "diameter": 2.7, "radius": 2.35},
+    {"x": 11.5, "y": 11.5, "diameter": 2.7, "radius": 2.35}
+  ],
+  "head_exclusion_layers": ["top", "inner1", "inner2", "inner3", "inner4", "bottom"],
+  "custom_carrier_allowed": false,
+  "rear_bolt_thread_length_engagement_and_torque_verified": false,
+  "manufacturing_release": false
+}

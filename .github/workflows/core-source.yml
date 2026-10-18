@@ -118,7 +118,7 @@ jobs:
           python3 scripts/verify_escape_prototype.py
       - name: Reproduce routed six-layer four-hole compact checkpoint
         run: |
-          bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --layers 6 --placement config/compact-routing-placement.json --out /tmp/nema11-six-source
+          bun scripts/build-controller.tsx --compact --four-mounts --motor-bolts --no-buzzer --layers 6 --placement config/compact-routing-placement.json --out /tmp/nema11-six-source
           cmp /tmp/nema11-six-source/unrouted.circuit.json artifacts/compact-six-layer/unrouted.circuit.json
           python3 scripts/verify_controller.py --compact --no-buzzer --folder artifacts/compact-six-layer
           python3 scripts/audit_compact_placement.py --folder artifacts/compact-six-layer --placement config/compact-routing-placement.json --USB-escape --extra-constraints config/compact-four-mount-routing-constraints.json

@@ -1,10 +1,18 @@
 # Routed four-hole compact review
 
-> Historical electrical checkpoint. The current user requirement is
-> [direct mounting on the motor's existing case bolts](direct-motor-bolts.md),
-> without a carrier. This checkpoint's 25 mm hole pitch does not match the
-> nominal 23 mm motor bolt axes. Its carrier is superseded; its copper checks
-> do not establish direct-mount compatibility.
+The **current PCB has been changed in place** to four provisionally Ø2.7 mm
+mounting holes on the actual **23 mm motor-bolt pattern**, at X/Y = ±11.5 mm.
+The head exclusions are radius 2.35 mm on every copper layer. There is no carrier.
+Component placement and routing are being reworked around those holes.
+[`mount-revision-status.json`](../artifacts/compact-six-layer/mount-revision-status.json)
+identifies the changed source/board hashes and invalidated checks. Rear bolt
+thread/length remain unverified; these are explicit provisional PCB clearances.
+
+**The zero-error evidence described below belongs to the preceding 25 mm
+electrical checkpoint, not the changed current board.** Its immutable source
+and review artifacts are retained in Git at
+[`399ffc3`](https://github.com/AnasSarkiz/NEMA11_RP2040/tree/399ffc34d70be4861b0224960d5a135c1c9d0d20).
+Fresh current-board DRC, connectivity, CAM and assembly checks are required.
 
 The retained native tscircuit controller has **zero native DRC errors, zero physical
 opens, zero physical shorts and zero independent copper/clearance errors**.

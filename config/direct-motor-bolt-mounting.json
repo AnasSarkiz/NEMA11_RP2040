@@ -6,7 +6,24 @@
   "invented_rear_motor_threads_or_shaft_allowed": false,
   "PCB_mount_count": 4,
   "interface": "Existing rear case-bolt axes; original or correctly specified longer OEM-compatible bolts",
-  "nominal_STEP_axes_mm": [[-11.5, -11.5], [-11.5, 11.5], [11.5, -11.5], [11.5, 11.5]],
+  "nominal_STEP_axes_mm": [
+    [
+      -11.5,
+      -11.5
+    ],
+    [
+      -11.5,
+      11.5
+    ],
+    [
+      11.5,
+      -11.5
+    ],
+    [
+      11.5,
+      11.5
+    ]
+  ],
   "nominal_STEP_pitch_mm": 23,
   "nominal_STEP_head_diameter_mm": 4,
   "rear_bolt_pattern_manufacturer_tolerance_verified": false,
@@ -14,8 +31,8 @@
   "rear_bolt_under_head_length_mm": null,
   "rear_bolt_head_maximum_diameter_mm": null,
   "rear_bolt_engagement_and_torque_verified": false,
-  "PCB_hole_diameter_mm": null,
-  "PCB_head_and_tool_exclusion_radius_mm": null,
+  "PCB_hole_diameter_mm": 2.7,
+  "PCB_head_and_tool_exclusion_radius_mm": 2.35,
   "PCB_to_motor_insulation_and_standoff_verified": false,
   "front_thread_drawing": {
     "thread": "M2.5",
@@ -35,5 +52,7 @@
     "Check PCB support, electrical insulation, screw/washer/tool clearance, assembly access and maximum 28.3 mm frame fit",
     "Rework component placement and routing around the four actual axes, then rerun native DRC, connectivity, shorts, CAM and native assembly checks"
   ],
-  "manufacturing_release": false
+  "manufacturing_release": false,
+  "PCB_hole_diameter_status": "Provisional clearance envelope for a shank up to 2.5 mm; not verification of rear bolt thread",
+  "current_PCB_geometry": "config/compact-motor-bolts.json"
 }

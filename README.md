@@ -8,8 +8,12 @@ The NEMA14 repository is a read-only reference.
 directly, with no custom carrier, case clamp or enclosure.** The unchanged OEM
 STEP shows those rear axes on a nominal **23 mm square**. Rear bolt thread,
 length and engagement are not specified in the front-thread drawing and remain
-unverified. The old 25 mm carrier PCB does not align with these axes and must be
-reworked. [Direct-mount evidence and remaining requirements](docs/direct-motor-bolts.md).
+unverified. **The current PCB has been changed to four holes on the 23 mm square,
+at X/Y = ±11.5 mm, provisionally Ø2.7 mm with larger head exclusions.** Placement
+and routing are being reworked; prior DRC/CAM/assembly reports belong to the old
+board hash and do not validate this revision.
+[Current hole-change status](artifacts/compact-six-layer/mount-revision-status.json)
+and [mounting requirements](docs/direct-motor-bolts.md).
 The genuine motor-only inspection is published separately as
 [NEMA11_RP2040_Motor_Bolt_Study 0.1.0](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Motor_Bolt_Study).
 Its native CLI upload succeeded and all seven files were independently
@@ -21,15 +25,16 @@ must fit the motor's 28.3 ×28.3 mm maximum frame, with all fitted parts on top.
 The existing routed 35 ×40 mm milestone below does not meet that new envelope.
 [Compact redesign requirements and part candidates](docs/compact-controller.md).**
 
-**The retained electrical baseline is fully routed in native tscircuit.**
+**The previous electrical baseline was fully routed in native tscircuit.**
 Its 28 × 28 mm six-layer PCB has four Ø1.8 mm corner holes at 25 mm pitch,
 76 fitted parts on top, six connected A4 sheets and 78 native 3D models.
 Native DRC, independent copper, every-pin connectivity, Gerber raster shorts
 and six-layer CAM comparison report **zero errors / opens / shorts**.
 The buzzer circuit is omitted with the user's authorization.
-Its 25 mm mounting pattern is historical and fails the current direct motor-bolt
-alignment check. Default preview shows the standalone electrical PCB; the
-superseded motor/carrier assembly is not the current mounting design.
+Its 25 mm mounting pattern is historical. Default preview now shows the current
+23 mm hole revision of that same controller PCB; the superseded motor/carrier
+assembly is not the current mounting design. New placement/routing checks are
+required for this changed board.
 
 [Current routed design, exact BOM/CPL/Gerbers and unresolved requirements](docs/compact-six-layer.md).
 [Native GLB](artifacts/compact-six-layer/development-assembly.glb).

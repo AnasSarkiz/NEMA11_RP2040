@@ -12852,9 +12852,9 @@
     "type": "pcb_hole",
     "pcb_hole_id": "pcb_hole_0",
     "hole_shape": "circle",
-    "hole_diameter": 1.8,
-    "x": -12.5,
-    "y": -12.5,
+    "hole_diameter": 2.7,
+    "x": -11.5,
+    "y": -11.5,
     "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12871,10 +12871,10 @@
     ],
     "shape": "circle",
     "allow_placements": true,
-    "radius": 1.6,
+    "radius": 2.35,
     "center": {
-      "x": -12.5,
-      "y": -12.5
+      "x": -11.5,
+      "y": -11.5
     },
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12882,9 +12882,9 @@
     "type": "pcb_hole",
     "pcb_hole_id": "pcb_hole_1",
     "hole_shape": "circle",
-    "hole_diameter": 1.8,
-    "x": -12.5,
-    "y": 12.5,
+    "hole_diameter": 2.7,
+    "x": -11.5,
+    "y": 11.5,
     "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12901,10 +12901,10 @@
     ],
     "shape": "circle",
     "allow_placements": true,
-    "radius": 1.6,
+    "radius": 2.35,
     "center": {
-      "x": -12.5,
-      "y": 12.5
+      "x": -11.5,
+      "y": 11.5
     },
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12912,9 +12912,9 @@
     "type": "pcb_hole",
     "pcb_hole_id": "pcb_hole_2",
     "hole_shape": "circle",
-    "hole_diameter": 1.8,
-    "x": 12.5,
-    "y": -12.5,
+    "hole_diameter": 2.7,
+    "x": 11.5,
+    "y": -11.5,
     "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12931,10 +12931,10 @@
     ],
     "shape": "circle",
     "allow_placements": true,
-    "radius": 1.6,
+    "radius": 2.35,
     "center": {
-      "x": 12.5,
-      "y": -12.5
+      "x": 11.5,
+      "y": -11.5
     },
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12942,9 +12942,9 @@
     "type": "pcb_hole",
     "pcb_hole_id": "pcb_hole_3",
     "hole_shape": "circle",
-    "hole_diameter": 1.8,
-    "x": 12.5,
-    "y": 12.5,
+    "hole_diameter": 2.7,
+    "x": 11.5,
+    "y": 11.5,
     "is_covered_with_solder_mask": false,
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -12961,10 +12961,10 @@
     ],
     "shape": "circle",
     "allow_placements": true,
-    "radius": 1.6,
+    "radius": 2.35,
     "center": {
-      "x": 12.5,
-      "y": 12.5
+      "x": 11.5,
+      "y": 11.5
     },
     "subcircuit_id": "subcircuit_source_group_0"
   },
@@ -46416,5 +46416,272 @@
       "y": -0.000012700000070253736,
       "z": 0
     }
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_0",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_0_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_plated_hole J_PD.EH1 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_0"
+    ],
+    "pcb_plated_hole_ids": [
+      "pcb_plated_hole_0"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_1",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_0_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_0"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_2",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_20_pcb_hole_3",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad J_DATA.GND2 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_1"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_20"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_3"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_3",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_23_pcb_hole_3",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad J_DATA.VBUS2 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_1"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_23"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_3"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_4",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_7_pcb_hole_3",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_plated_hole J_DATA.EH4 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_1"
+    ],
+    "pcb_plated_hole_ids": [
+      "pcb_plated_hole_7"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_3"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_5",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_1_pcb_hole_3",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_1"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_3"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_6",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_43_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_PD.pin2 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_3"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_43"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_7",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_3_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_3"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_8",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_48_pcb_hole_2",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_PG.pin1 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_5"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_48"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_2"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_9",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_5_pcb_hole_2",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_5"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_2"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_10",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_64_pcb_hole_2",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_64"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_2"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_11",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_268_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_65"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_268"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_12",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_269_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_65"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_269"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_13",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_65_pcb_hole_1",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_65"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_1"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_14",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_278_pcb_hole_0",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_69"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_278"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_0"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_15",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_279_pcb_hole_0",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_69"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_279"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_0"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_16",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_69_pcb_hole_0",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_69"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_0"
+    ]
+  },
+  {
+    "type": "pcb_footprint_overlap_error",
+    "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_17",
+    "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_294_pcb_hole_0",
+    "error_type": "pcb_footprint_overlap_error",
+    "message": "pcb_smtpad TP_GND.pin1 overlaps with pcb_hole unnamed hole",
+    "pcb_component_ids": [
+      "pcb_component_76"
+    ],
+    "pcb_smtpad_ids": [
+      "pcb_smtpad_294"
+    ],
+    "pcb_hole_ids": [
+      "pcb_hole_0"
+    ]
   }
 ]

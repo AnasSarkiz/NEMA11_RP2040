@@ -8,7 +8,8 @@ ROOT=Path(__file__).resolve().parents[1];F=ROOT/'artifacts/compact-six-layer'
 def read(name):return json.loads((F/name).read_text())
 def sha(name):return hashlib.sha256((F/name).read_bytes()).hexdigest()
 source=sha('unrouted.circuit.json');pcb=sha('board.circuit.json');r=read('board.circuit.json')
-assert not check_mounts(r,json.loads((ROOT/'config/compact-four-mounts.json').read_text()))
+mount_config=json.loads((ROOT/'config/compact-motor-bolts.json').read_text())
+assert not check_mounts(r,mount_config)
 assert next(e for e in r if e['type']=='pcb_board')['num_layers']==6
 for name in ['electrical-parity.json','placement-verification.json','nominal-assembly-audit.json']:
     d=read(name);assert d['circuit_sha256']==source,name
