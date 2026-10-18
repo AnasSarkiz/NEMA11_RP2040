@@ -1,0 +1,45 @@
+Building 1 file(s)...
+Building index.circuit.json...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+D_TVS has no pin with requires_power=true
+D_TVS has no pin with requires_ground=true
+All pins on D_TVS are underspecified (no pinAttributes set)
+D_STATUS has no pin with requires_ground=true
+Q_STATUS_R has no pin with requires_power=true
+Q_STATUS_G has no pin with requires_power=true
+Q_STATUS_B has no pin with requires_power=true
+pcb_plated_hole J_PD.EH1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad J_DATA.GND2 overlaps with pcb_hole unnamed hole
+pcb_smtpad J_DATA.VBUS2 overlaps with pcb_hole unnamed hole
+pcb_plated_hole J_DATA.EH4 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_PD.pin2 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_PG.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole
+pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole
+pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad TP_GND.pin1 overlaps with pcb_hole unnamed hole
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

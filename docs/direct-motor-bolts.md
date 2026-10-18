@@ -14,6 +14,12 @@ a maximum 4.5 mm head plus 0.10 mm radial allowance. See
 now passes; component placement and copper routing must be corrected and all
 manufacturing checks rerun for the changed board.
 
+[Current A4 PCB bolt-pattern drawing](../artifacts/requirements/direct-motor-bolts/current-PCB-motor-bolts-A4.pdf)
+shows the actual four revised holes, coordinate origin, PCB/frame edges and head
+exclusions. Its [verification](../artifacts/requirements/direct-motor-bolts/current-drawing-verification.json)
+binds the drawing to the current native PCB hash. It is a mechanical review,
+not an approved drilling or fabrication release.
+
 The unchanged original STEPPERONLINE STEP contains **four existing rear bolt
 heads on a nominal 23 × 23 mm square**, at X/Y = ±11.5 mm. Their convex cylindrical
 head surfaces have nominal Ø4 mm and Z = 29–30 mm in the OEM coordinates. These

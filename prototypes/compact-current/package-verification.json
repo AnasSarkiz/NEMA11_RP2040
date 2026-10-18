@@ -1,0 +1,22 @@
+{
+  "scope": "Current controller hole alignment and native assembly export geometry only; electrical routing and clamp hardware NOT validated",
+  "package": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
+  "version": "0.5.0-dev.1",
+  "source_milestone_commit": "edca7e902da1d081cb8a99e8aba7ac66a36fa04e",
+  "source_assembly_sha256": "56cba67a351972c2e2da30d83cceaa6aaeb53df0d646428f9d81964b01731a41",
+  "circuit_sha256": "dd9cff036a40edb7d99fb459791410321353fb6d129f26d0f79f1854b0cf19d8",
+  "native_3D_models": 77,
+  "PCB_hole_pitch_mm": 23,
+  "PCB_hole_diameter_mm": 2.7,
+  "hole_diameter_and_rear_hardware_qualified": false,
+  "carrier_present": false,
+  "native_geometry_bounds_pass": true,
+  "native_DRC_errors": 121,
+  "native_DRC_warnings": 7,
+  "routing_revalidated": false,
+  "manufacturing_release": false,
+  "registry_published": false,
+  "native_CLI_build_exit_code": 1,
+  "native_CLI_build_pass": false,
+  "native_CLI_build_note": "Actual build retained 18 native footprint/hole errors. No ignore flags used. Publication as a validated routed milestone is blocked."
+}

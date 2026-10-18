@@ -1,0 +1,35 @@
+{
+  "scope": "A4 drawing from current native PCB hole geometry and OEM-axis audit",
+  "PCB_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
+  "PDF_sha256": "5af0043f5abeb90c9b87c0af7175c76fa3a4f91858db62044e692f426bd8bfc8",
+  "PDF_page_mm": [
+    210.00000000000668,
+    296.9999999999902
+  ],
+  "holes": [
+    {
+      "x": -11.5,
+      "y": -11.5,
+      "diameter": 2.7
+    },
+    {
+      "x": -11.5,
+      "y": 11.5,
+      "diameter": 2.7
+    },
+    {
+      "x": 11.5,
+      "y": -11.5,
+      "diameter": 2.7
+    },
+    {
+      "x": 11.5,
+      "y": 11.5,
+      "diameter": 2.7
+    }
+  ],
+  "current_motor_bolt_axis_alignment_pass": true,
+  "native_DRC_errors": 121,
+  "rear_hardware_qualified": false,
+  "manufacturing_release": false
+}
