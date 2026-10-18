@@ -43,17 +43,24 @@ metal rear cover, PCB bottom copper, case temperature and mechanical support
 also need an actual insulation/spacing design. There is no approved direct
 assembly or orderable hardware selection yet.
 
-Default controller preview now shows the **electrical PCB baseline only**.
-Historical motor/carrier assembly rebuilding requires the explicit
-`--historical-carrier` option, to prevent reintroducing it as the current mount.
-The [native motor study](../examples/motor-bolt-study.circuit.tsx) contains only
-the unchanged genuine OEM motor in its original coordinates. It does not show a
-false completed attachment or add substitute bolt geometry.
-The [actual native CLI GLB](../artifacts/requirements/direct-motor-bolts/OEM-motor-native.glb)
-is checked against the unchanged STEP in the
-[native study verification](../artifacts/requirements/direct-motor-bolts/native-motor-study-verification.json).
-It contains one genuine motor model, with its original leads and front shaft;
-there is no PCB or carrier in this mechanical-only study.
+Default controller preview now shows the **current hole-revised PCB and genuine
+OEM motor together**, with the four bolt axes aligned. The native assembly has
+77 models and no carrier. The nominal rear-body gap is 2 mm for this clearance
+study; clamp hardware and final insulation/support are not represented as
+qualified. The unchanged OEM solid retains its seated original bolt heads, not
+invented longer screws. Its original wire stubs are preserved and extend beyond
+the frame toward the JST edge; final terminated harness fit remains unresolved.
+
+[Current native GLB](../artifacts/compact-six-layer/development-assembly.glb)
+and [geometry/export verification](../artifacts/compact-six-layer/current-assembly-geometry.json)
+check every fitted supplier STEP pose and the OEM motor against the actual
+native GLB. This proves export geometry, not collision-free attachment or valid
+routing. Historical motor/carrier rebuilding requires `--historical-carrier`.
+
+Future controller publications update versions of the existing
+[`AnasSarkiz/NEMA11_RP2040_Compact_Prototype`](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
+package. Earlier separately named studies remain historical; no additional
+package name is needed for this revision.
 
 Reproduce the geometry inspection with the CAD environment:
 
@@ -61,6 +68,7 @@ Reproduce the geometry inspection with the CAD environment:
 /workspace/.venvs/nema11-cad/bin/python scripts/inspect_direct_motor_bolts.py
 # This now checks the actual revised current PCB's 23 mm hole alignment.
 /workspace/.venvs/nema11-cad/bin/python scripts/inspect_direct_motor_bolts.py --require-compatible-pcb
+/workspace/.venvs/nema11-cad/bin/python scripts/verify_direct_motor_assembly.py
 ```
 
 The PCB requires placement and routing changes around its updated holes, then

@@ -4,7 +4,7 @@
   "toolchain_correction": "tools/pcb/patches/circle-keepout-clearance.json",
   "toolchain_correction_sha256": "3bdf7e94df7e3954c0a65d618e165772806bb410dfe8d8d5e1ff8b58423488ab",
   "no_findings_filtered_or_waived": true,
-  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
   "strict_schema_pass": true,
   "selected_terminal_via_process": "IPC-4761 Type VII epoxy-filled and copper-capped on all 0.30 mm vias only",
   "reviewed_terminal_vias": [
@@ -169,7 +169,1628 @@
     "compact_GND_U_DRV_EP",
     "compact_GND_U_FLASH_EP"
   ],
-  "errors": [],
+  "errors": [
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_0",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_0_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_plated_hole J_PD.EH1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_plated_hole_ids": [
+        "pcb_plated_hole_0"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_1",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_0_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_2",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_20_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad J_DATA.GND2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_20"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_3",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_23_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad J_DATA.VBUS2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_23"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_4",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_7_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_plated_hole J_DATA.EH4 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_plated_hole_ids": [
+        "pcb_plated_hole_7"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_5",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_1_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_6",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_43_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_PD.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_3"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_43"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_7",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_3_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_3"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_8",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_48_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_PG.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_5"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_48"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_9",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_5_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_5"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_10",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_64_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_64"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_11",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_268_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_268"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_12",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_269_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_269"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_13",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_65_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_14",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_278_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_278"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_15",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_279_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_279"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_16",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_69_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_footprint_overlap_error_id": "pcb_footprint_overlap_error_17",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_294_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad TP_GND.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_76"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_294"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_R_STATUS_R_1_pcb_keepout_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_TP_GND_1_pcb_keepout_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_DATA_PRESENT_0_via_129_pcb_keepout_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_STATUS_G_K_0_via_17_pcb_keepout_0",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_R_USB_SENSE_L_2_pcb_keepout_1",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_PD_VHV_1033_via_7_pcb_keepout_1",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_TEMP_SCL_1_via_8_pcb_keepout_1",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_R_TEMP_SCL_2_pcb_keepout_1",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_R_PG_2_pcb_keepout_2",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_TEMP_SDA_2_via_2_pcb_keepout_2",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_controller_connection_DATA_VBUS_8_via_205_pcb_keepout_2",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_U_ESD_1_pcb_keepout_3",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_placement_error",
+      "pcb_placement_error_id": "copper_over_keepout_compact_terminal_U_ESD_2_pcb_keepout_3",
+      "error_type": "pcb_placement_error",
+      "message": "Copper for via unnamed via overlaps a PCB keepout",
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_0_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_plated_hole J_PD.EH1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_plated_hole_ids": [
+        "pcb_plated_hole_0"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_0_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_20_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad J_DATA.GND2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_20"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_23_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad J_DATA.VBUS2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_23"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_plated_hole_7_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_plated_hole J_DATA.EH4 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_plated_hole_ids": [
+        "pcb_plated_hole_7"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_1_pcb_hole_3",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_3"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_43_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_PD.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_3"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_43"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_3_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_3"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_48_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_PG.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_5"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_48"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_5_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_5"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_64_pcb_hole_2",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_64"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_2"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_268_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_268"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_269_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_269"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_65_pcb_hole_1",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_65"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_1"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_278_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_278"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_279_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_279"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_courtyard_outline_69_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_69"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_footprint_overlap_error",
+      "pcb_error_id": "pcb_footprint_overlap_pcb_smtpad_294_pcb_hole_0",
+      "error_type": "pcb_footprint_overlap_error",
+      "message": "pcb_smtpad TP_GND.pin1 overlaps with pcb_hole unnamed hole",
+      "pcb_component_ids": [
+        "pcb_component_76"
+      ],
+      "pcb_smtpad_ids": [
+        "pcb_smtpad_294"
+      ],
+      "pcb_hole_ids": [
+        "pcb_hole_0"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.GND1] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_0"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_0"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.GND2] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_4"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_1"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.GND3] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_8"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_2"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.GND4] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_12"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_3"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.EH1] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_16"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_4"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.EH2] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_17"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_5"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.EH3] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_18"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_6"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_PD.EH4] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_19"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_0"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_7"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.GND1] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_20"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_14"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.GND2] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_24"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_15"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.GND3] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_28"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_16"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.GND4] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_32"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_17"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.EH1] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_36"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_18"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.EH2] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_37"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_19"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.EH3] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_38"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_20"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [J_DATA.EH4] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_39"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_1"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_21"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.TESTEN] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_75"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_6"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_57"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_MCU.GND] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_113"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_6"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_58"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_FLASH.GND] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_141"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_19"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_111"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_FLASH.EP] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_146"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_19"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_116"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_DRV.GND] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_205"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_45"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_179"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_DRV.GND18] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_220"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_45"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_180"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_DRV.EP] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_231"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_45"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_181"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_DRV.ROSC] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_215"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_45"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_191"
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "message": "Port [U_ENCODER.GND] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_315"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_82"
+      ],
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_280"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.DM1 to J_DATA.DM2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.109mm)",
+      "pcb_trace_id": "controller_connection_USB_DM_0_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_USB_DM_0_section_0_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.15,
+        "y": 10.375
+      },
+      "pcb_port_ids": [
+        "pcb_port_25",
+        "pcb_port_264"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_PD.VBUS1 to J_PD.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_VBUS_1030_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_VBUS_1030_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.87700320000001,
+        "y": 12.880126299999999
+      },
+      "pcb_port_ids": [
+        "pcb_port_51",
+        "pcb_port_268"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.VBUS1 to J_DATA.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_VBUS_2_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_VBUS_2_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.220013,
+        "y": -9.390002000000004
+      },
+      "pcb_port_ids": [
+        "pcb_port_173",
+        "pcb_port_289"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_0_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_0_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.15,
+        "y": -10.25
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_0_section_0",
+      "source_trace_id": "source_trace_controller_route_DATA_PRESENT",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_0_section_0_pcb_hole_0",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -11.525,
+        "y": -10.2
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_0_section_1",
+      "source_trace_id": "source_trace_controller_route_DATA_PRESENT",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_0_section_1_pcb_hole_0",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_174"
+      ],
+      "center": {
+        "x": -11.525,
+        "y": -10.2
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_0_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_0_section_1_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.525,
+        "y": -10.2
+      },
+      "pcb_port_ids": [
+        "pcb_port_174"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_1_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_1_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.3,
+        "y": -9.975
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.PG to R_PG.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_GOOD_0_section_3",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_GOOD_0_section_3_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.15,
+        "y": -12.65
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.PG to R_PG.pin2 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_GOOD_0_section_3",
+      "source_trace_id": "source_trace_controller_route_PD_GOOD",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_GOOD_0_section_3_pcb_hole_2",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 10.55,
+        "y": -11.25
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.VHV to R_PD.pin2 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_VHV_1033_section_0",
+      "source_trace_id": "source_trace_controller_route_PD_VHV",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_VHV_1033_section_0_pcb_hole_1",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_52"
+      ],
+      "center": {
+        "x": -10.702003200000002,
+        "y": 11.3733983
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.VHV to R_PD.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_VHV_1033_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_VHV_1033_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.702003200000002,
+        "y": 11.3733983
+      },
+      "pcb_port_ids": [
+        "pcb_port_52"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.VHV to R_PD.pin2 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_VHV_1033_section_1",
+      "source_trace_id": "source_trace_controller_route_PD_VHV",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_VHV_1033_section_1_pcb_hole_1",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -10.9,
+        "y": 10.600000000000001
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_PD.VHV to R_PD.pin2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_PD_VHV_1033_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_PD_VHV_1033_section_1_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.9,
+        "y": 10.600000000000001
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.G_NEG to R_STATUS_G.pin1 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.068mm)",
+      "pcb_trace_id": "controller_connection_STATUS_G_K_0_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_G_K_0_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -12.525765674392163,
+        "y": -9.15
+      },
+      "pcb_port_ids": [
+        "pcb_port_287"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.G_NEG to R_STATUS_G.pin1 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_G_K_0_section_0",
+      "source_trace_id": "source_trace_controller_route_STATUS_G_K",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_G_K_0_section_0_pcb_hole_0",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_287"
+      ],
+      "center": {
+        "x": -11.95,
+        "y": -10.5
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.G_NEG to R_STATUS_G.pin1 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_G_K_0_section_1",
+      "source_trace_id": "source_trace_controller_route_STATUS_G_K",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_G_K_0_section_1_pcb_hole_0",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -11.05,
+        "y": -10.725
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.G_NEG to R_STATUS_G.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_G_K_0_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_G_K_0_section_1_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.05,
+        "y": -10.725
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace D_STATUS.R_NEG to R_STATUS_R.pin1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_R_K_0_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_R_K_0_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.55131859290243,
+        "y": -9.15
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO27 to U_TEMP.SCL is too close to pcb_keepout \"unnamed keepout\" (gap: 0.144mm)",
+      "pcb_trace_id": "controller_connection_TEMP_SCL_1_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SCL_1_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -12,
+        "y": 9.15
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO27 to U_TEMP.SCL overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_TEMP_SCL_1_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SCL_1_section_1_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -13.1,
+        "y": 10.200000000000003
+      },
+      "pcb_port_ids": [
+        "pcb_port_280"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_V3V3_1032_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_V3V3_1032_section_0_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 11.3733983,
+        "y": -10.750000000000002
+      },
+      "pcb_port_ids": [
+        "pcb_port_55",
+        "pcb_port_279"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_V3V3_1032_section_0",
+      "source_trace_id": "source_trace_controller_route_V3V3",
+      "pcb_trace_error_id": "overlap_controller_connection_V3V3_1032_section_0_pcb_hole_2",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_55",
+        "pcb_port_279"
+      ],
+      "center": {
+        "x": 11.061643714570518,
+        "y": -11.062028435262228
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_V3V3_1044_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_V3V3_1044_section_0_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.970784223076924,
+        "y": -12.153846153846153
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO26 to U_TEMP.SDA overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_TEMP_SDA_2_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SDA_2_section_0_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.304986999999995,
+        "y": -12.940002000000005
+      },
+      "pcb_port_ids": [
+        "pcb_port_278"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace U_MCU.GPIO26 to U_TEMP.SDA overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_TEMP_SDA_2_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SDA_2_section_1_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 10.3,
+        "y": -12.55
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_V3V3_1057_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_V3V3_1057_section_0_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.617184,
+        "y": 10.162500000000001
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_PG.pin1 to U_MCU.IOVDD1 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_V3V3_1057_section_0",
+      "source_trace_id": "source_trace_controller_route_V3V3",
+      "pcb_trace_error_id": "overlap_controller_connection_V3V3_1057_section_0_pcb_hole_1",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -11.617184,
+        "y": 10.162500000000001
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.VBUS1 to J_DATA.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_VBUS_8_section_0",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_VBUS_8_section_0_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.695013000000005,
+        "y": -9.390002000000004
+      },
+      "pcb_port_ids": [
+        "pcb_port_173"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.VBUS1 to J_DATA.VBUS2 is too close to pcb_keepout \"unnamed keepout\" (gap: 0.129mm)",
+      "pcb_trace_id": "controller_connection_DATA_VBUS_8_section_1",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_VBUS_8_section_1_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.200000000000003,
+        "y": -10.1
+      },
+      "pcb_port_ids": []
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace J_DATA.VBUS1 to J_DATA.VBUS2 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_DATA_VBUS_8_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_VBUS_8_section_2_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 12.075000000000003,
+        "y": -9.399999999999999
+      },
+      "pcb_port_ids": [
+        "pcb_port_202"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_STATUS_R.pin2 to Q_STATUS_R.pin3 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_R_C_0_section_2",
+      "source_trace_id": "source_trace_controller_route_STATUS_R_C",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_R_C_0_section_2_pcb_hole_0",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_291"
+      ],
+      "center": {
+        "x": -10.1,
+        "y": -11.6
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace R_STATUS_R.pin2 to Q_STATUS_R.pin3 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "controller_connection_STATUS_R_C_0_section_2",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_R_C_0_section_2_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -9.15,
+        "y": -11.6
+      },
+      "pcb_port_ids": [
+        "pcb_port_291"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R_PG > .pin2 to net.PD_GOOD overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_R_PG_2_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_PG_2_land_contact_pcb_keepout_2",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 13.253364,
+        "y": -10.3479968
+      },
+      "pcb_port_ids": [
+        "pcb_port_56"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R_USB_SENSE_L > .pin2 to net.GND overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_R_USB_SENSE_L_2_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_USB_SENSE_L_2_land_contact_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.767183999999999,
+        "y": 9.55
+      },
+      "pcb_port_ids": [
+        "pcb_port_176"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U_ESD > .DP1 to net.USB_DP overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_U_ESD_1_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_U_ESD_1_land_contact_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.199096000000003,
+        "y": 11.30004
+      },
+      "pcb_port_ids": [
+        "pcb_port_262"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U_ESD > .GND to net.GND overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_U_ESD_2_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_U_ESD_2_land_contact_pcb_keepout_3",
+      "pcb_component_ids": [],
+      "center": {
+        "x": 9.199096000000003,
+        "y": 12.249999999999998
+      },
+      "pcb_port_ids": [
+        "pcb_port_263"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R_STATUS_R > .pin1 to net.STATUS_R_K overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_R_STATUS_R_1_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_STATUS_R_1_land_contact_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -10.350000000000001,
+        "y": -10.467184
+      },
+      "pcb_port_ids": [
+        "pcb_port_290"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .TP_GND > .pin1 to net.GND overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_TP_GND_1_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_TP_GND_1_land_contact_pcb_keepout_0",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -13.194999999999995,
+        "y": -9.749999999999996
+      },
+      "pcb_port_ids": [
+        "pcb_port_306"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R_TEMP_SCL > .pin2 to net.V3V3 overlaps with pcb_hole \"unnamed hole\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_R_TEMP_SCL_2_land_contact",
+      "source_trace_id": "source_trace_247",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_TEMP_SCL_2_land_contact_pcb_hole_1",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [
+        "pcb_port_281"
+      ],
+      "center": {
+        "x": -11.607184,
+        "y": 10.350000000000001
+      }
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R_TEMP_SCL > .pin2 to net.V3V3 overlaps with pcb_keepout \"unnamed keepout\" (accidental contact)",
+      "pcb_trace_id": "compact_terminal_R_TEMP_SCL_2_land_contact",
+      "source_trace_id": "",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_TEMP_SCL_2_land_contact_pcb_keepout_1",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -11.617184,
+        "y": 10.350000000000001
+      },
+      "pcb_port_ids": [
+        "pcb_port_281"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_controller_connection_USB_DM_0_section_0_pcb_hole_3",
+      "pcb_trace_id": "controller_connection_USB_DM_0_section_0",
+      "source_trace_id": "source_trace_controller_route_USB_DM",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 10,
+        "y": 11.5
+      },
+      "message": "Trace J_DATA.DM1 to J_DATA.DM2 is too close to non-plated hole unnamed hole (gap: 0.070000mm, required: 0.2mm)"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_controller_connection_DATA_PRESENT_1_section_0_pcb_hole_0",
+      "pcb_trace_id": "controller_connection_DATA_PRESENT_1_section_0",
+      "source_trace_id": "source_trace_controller_route_DATA_PRESENT",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -11.3,
+        "y": -9.975
+      },
+      "message": "Trace U_MCU.GPIO29 to R_USB_SENSE_H.pin2 is too close to non-plated hole unnamed hole (gap: 0.108059mm, required: 0.2mm)"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_controller_connection_STATUS_R_K_0_section_0_pcb_hole_0",
+      "pcb_trace_id": "controller_connection_STATUS_R_K_0_section_0",
+      "source_trace_id": "source_trace_controller_route_STATUS_R_K",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -10.443750000000001,
+        "y": -10.304804236790417
+      },
+      "message": "Trace D_STATUS.R_NEG to R_STATUS_R.pin1 is too close to non-plated hole unnamed hole (gap: 0.165041mm, required: 0.2mm)"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SDA_2_section_0_pcb_hole_2",
+      "pcb_trace_id": "controller_connection_TEMP_SDA_2_section_0",
+      "source_trace_id": "source_trace_controller_route_TEMP_SDA",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 10.3,
+        "y": -12.55
+      },
+      "message": "Trace U_MCU.GPIO26 to U_TEMP.SDA is too close to non-plated hole unnamed hole (gap: 0.164522mm, required: 0.2mm)"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_controller_connection_TEMP_SDA_2_section_1_pcb_hole_2",
+      "pcb_trace_id": "controller_connection_TEMP_SDA_2_section_1",
+      "source_trace_id": "source_trace_controller_route_TEMP_SDA",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": 10.3,
+        "y": -12.55
+      },
+      "message": "Trace U_MCU.GPIO26 to U_TEMP.SDA is too close to non-plated hole unnamed hole (gap: 0.164522mm, required: 0.2mm)"
+    },
+    {
+      "type": "pcb_trace_error",
+      "error_type": "pcb_trace_error",
+      "pcb_trace_error_id": "overlap_compact_terminal_R_STATUS_R_1_land_contact_pcb_hole_0",
+      "pcb_trace_id": "compact_terminal_R_STATUS_R_1_land_contact",
+      "source_trace_id": "source_trace_256",
+      "pcb_component_ids": [],
+      "pcb_port_ids": [],
+      "center": {
+        "x": -10.350000000000001,
+        "y": -10.467184
+      },
+      "message": "Trace .R_STATUS_R > .pin1 to net.STATUS_R_K is too close to non-plated hole unnamed hole (gap: 0.115707mm, required: 0.2mm)"
+    }
+  ],
   "warnings": [
     {
       "type": "source_component_pins_underspecified_warning",
@@ -261,6 +1882,6 @@
       "subcircuit_id": "subcircuit_source_group_0"
     }
   ],
-  "native_drc_pass": true,
+  "native_drc_pass": false,
   "manufacturing_release": false
 }

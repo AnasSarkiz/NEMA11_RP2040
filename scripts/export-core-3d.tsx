@@ -15,6 +15,8 @@ const filename = assembly ? "assembly.circuit.json" : fullPcb ? "board.circuit.j
 const output = assembly ? "development-assembly.glb" : fullPcb ? "development-pcb.glb" : controller ? "development-controller.glb" : routed ? "development-pcb.glb" : "development-core.glb"
 const bytes = readFileSync(path + filename)
 const records = JSON.parse(bytes.toString())
+const hasCarrier=records.some((e:any)=>e.type==="source_component" && e.name==="FRONT_CARRIER_PROPOSAL")
+const hasMotor=records.some((e:any)=>e.type==="source_component" && e.name==="OEM_11HS12_0674S")
 const modelPaths = new Map<string, string>()
 for (const record of records) {
   if (record.type !== "cad_component") continue
@@ -51,11 +53,11 @@ if (glb.toString("ascii", 0, 4) !== "glTF" || glb.readUInt32LE(4) !== 2 || glb.r
 if (!used.size) throw new Error("No original supplier model assets were loaded")
 writeFileSync(path + output, glb)
 writeFileSync(path + (assembly ? "assembly-3d-export-verification.json" : "3d-export-verification.json"), JSON.stringify({
-  scope: assembly ? "Native PCB, OEM motor and original front carrier proposal; hardware and full harness absent" : controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
+  scope: assembly ? hasCarrier ? "Native PCB, OEM motor and original front carrier proposal; hardware and full harness absent" : "Current native PCB and genuine OEM motor on matching bolt axes; no carrier; routing and clamping hardware unqualified" : controller ? "Full controller native development PCB; motor carrier and harness not included" : `${routed ? "Routed" : "Unrouted"} MCU subsystem development canvas; not completed motor assembly`,
   circuit_sha256: createHash("sha256").update(bytes).digest("hex"),
   glb_sha256: createHash("sha256").update(glb).digest("hex"), bytes: glb.length,
   original_supplier_assets_loaded: [...used.values()],
-  motor_model_included: assembly, final_NEMA11_layout: false, manufacturing_release: false,
+  motor_model_included: hasMotor, ...(assembly && !hasCarrier?{front_carrier_proposal_included:false,replacement_clamping_hardware_modeled:false}:{}),final_NEMA11_layout: false, manufacturing_release: false,
 }, null, 2) + "\n")
 console.log(JSON.stringify({ exported: path + output, bytes: glb.length,
   supplier_assets_loaded: used.size, manufacturing_release: false }))

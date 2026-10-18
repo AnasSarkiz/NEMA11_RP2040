@@ -1,0 +1,331 @@
+{
+  "scope": "Current PCB and OEM motor native GLB versus 77 original STEP poses; geometry/export only",
+  "PCB_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
+  "assembly_sha256": "56cba67a351972c2e2da30d83cceaa6aaeb53df0d646428f9d81964b01731a41",
+  "native_GLB_sha256": "2a0fcefb0d6bb350df52d651670b6768bcdee1bc32bb24213c6be63803a3580a",
+  "models_checked": 77,
+  "carrier_present": false,
+  "motor_bolt_axis_alignment_pass": true,
+  "nominal_motor_to_PCB_bottom_gap_mm": 1.9999998999999942,
+  "original_supplier_STEP_invalid_parts": [
+    "J_PD",
+    "J_DATA"
+  ],
+  "maximum_STEP_bbox_deviation_mm": 0.010000099999999623,
+  "native_geometry_bounds_pass": true,
+  "current_full_PCB_DRC_and_hardware_qualified": false,
+  "motor_original_wire_stubs_extend_outside_frame": true,
+  "final_harness_termination_and_frame_fit_qualified": false,
+  "manufacturing_release": false,
+  "parts": [
+    {
+      "part": "J_PD",
+      "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
+    },
+    {
+      "part": "J_DATA",
+      "maximum_STEP_bbox_deviation_mm": 6.563902822942502e-07
+    },
+    {
+      "part": "U_PD",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_PD",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_PD",
+      "maximum_STEP_bbox_deviation_mm": 1.00000003833145e-07
+    },
+    {
+      "part": "R_PG",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "U_MCU",
+      "maximum_STEP_bbox_deviation_mm": 3.552713678800501e-14
+    },
+    {
+      "part": "C_IO1",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_IO10",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_IO22",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000205678816e-07
+    },
+    {
+      "part": "C_IO33",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_IO42",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000205678816e-07
+    },
+    {
+      "part": "C_IO49",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_DV23",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_DV50",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000238985507e-07
+    },
+    {
+      "part": "C_USB",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_ADC",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_VREG_IN",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_VREG_OUT",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "U_FLASH",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000005838672e-07
+    },
+    {
+      "part": "C_FLASH",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000227883277e-07
+    },
+    {
+      "part": "R_FLASH_CS",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_BOOT",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "Y_MCU",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "R_XOUT",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "C_XIN",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "C_XOUT",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000233434392e-07
+    },
+    {
+      "part": "R_RUN",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_DM",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_DP",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_CC1",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "R_CC2",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_USB_SENSE_H",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_USB_SENSE_L",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_VM_H",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000038
+    },
+    {
+      "part": "R_VM_L",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000006144
+    },
+    {
+      "part": "C_VM_SENSE",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "U_BUCK",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "L_BUCK",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "C_BOOTSTRAP",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_BUCK_IN",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "C_BUCK_OUT1",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000649768026e-07
+    },
+    {
+      "part": "C_BUCK_OUT2",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000649768026e-07
+    },
+    {
+      "part": "D_PD",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "D_DATA",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "U_DRV",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999999483
+    },
+    {
+      "part": "C_CP",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000250087737e-07
+    },
+    {
+      "part": "C_VCP",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_VREG",
+      "maximum_STEP_bbox_deviation_mm": 1.00000003833145e-07
+    },
+    {
+      "part": "C_DRV_LOGIC",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "C_VM",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000294496658e-07
+    },
+    {
+      "part": "C_BULK",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_SA",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_SB",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "R_REF_H",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_REF_L",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "C_REF",
+      "maximum_STEP_bbox_deviation_mm": 1.00000003833145e-07
+    },
+    {
+      "part": "R_ENABLE",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "R_SLEEP",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000028043132e-07
+    },
+    {
+      "part": "J_MOTOR",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999979499
+    },
+    {
+      "part": "U_ESD",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999997262
+    },
+    {
+      "part": "D_TVS",
+      "maximum_STEP_bbox_deviation_mm": 9.99999993922529e-08
+    },
+    {
+      "part": "U_TEMP",
+      "maximum_STEP_bbox_deviation_mm": 0.0010000999999999483
+    },
+    {
+      "part": "C_TEMP",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_TEMP_SDA",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "R_TEMP_SCL",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "D_PWR",
+      "maximum_STEP_bbox_deviation_mm": 0.010000099999999623
+    },
+    {
+      "part": "R_PWR_LED",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000593
+    },
+    {
+      "part": "D_STATUS",
+      "maximum_STEP_bbox_deviation_mm": 0.009024679404747715
+    },
+    {
+      "part": "R_STATUS_R",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "Q_STATUS_R",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000050247593e-07
+    },
+    {
+      "part": "R_STATUS_G",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000000107
+    },
+    {
+      "part": "Q_STATUS_G",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000116860974e-07
+    },
+    {
+      "part": "R_STATUS_B",
+      "maximum_STEP_bbox_deviation_mm": 0.0010001000000001703
+    },
+    {
+      "part": "Q_STATUS_B",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000050247593e-07
+    },
+    {
+      "part": "R_PD_CFG",
+      "maximum_STEP_bbox_deviation_mm": 0.001000099999998838
+    },
+    {
+      "part": "OEM_11HS12_0674S",
+      "maximum_STEP_bbox_deviation_mm": 1.0000000649768026e-07
+    }
+  ],
+  "errors": []
+}

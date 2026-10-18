@@ -32,11 +32,11 @@ Native DRC, independent copper, every-pin connectivity, Gerber raster shorts
 and six-layer CAM comparison report **zero errors / opens / shorts**.
 The buzzer circuit is omitted with the user's authorization.
 Its 25 mm mounting pattern is historical. Default preview now shows the current
-23 mm hole revision of that same controller PCB; the superseded motor/carrier
-assembly is not the current mounting design. New placement/routing checks are
+23 mm hole revision of that same controller PCB together with the genuine OEM
+motor: 77 native models, matching bolt axes and no carrier. New placement/routing checks are
 required for this changed board.
 
-[Current routed design, exact BOM/CPL/Gerbers and unresolved requirements](docs/compact-six-layer.md).
+[Current geometry revision, historical routed checks and unresolved requirements](docs/compact-six-layer.md).
 [Native GLB](artifacts/compact-six-layer/development-assembly.glb).
 This is a checked engineering prototype, **not fabrication-ready**: direct
 motor-bolt layout/hardware, USB pair/stackup, maximum tolerances, harness, stock/factory acceptance

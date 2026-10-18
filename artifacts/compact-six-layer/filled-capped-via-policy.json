@@ -1,6 +1,6 @@
 {
   "scope": "Explicit filled/capped land-via process selection; all clearance, drill, short and connection checks remain mandatory",
-  "circuit_sha256": "59b2a18d5e99aa5b4a39572939d4a2d0c7e147dc9548cb9d31384416714745c6",
+  "circuit_sha256": "83b632ac816aeac1dc2577a92ccc89640ddf23d10eb0fedf09493aa2de511b83",
   "required_process": "IPC-4761 Type VII epoxy-filled and copper-capped on all 0.30 mm vias only",
   "reviewed_vias": [
     {

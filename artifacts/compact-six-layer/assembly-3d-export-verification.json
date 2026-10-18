@@ -1,8 +1,8 @@
 {
-  "scope": "Native PCB, OEM motor and original front carrier proposal; hardware and full harness absent",
-  "circuit_sha256": "66ddbf7c44f5095bc80425fbae0567f7f3610253e39084de441a5aa780ba52e9",
-  "glb_sha256": "3874ef1a6c6390e497f41f584afebe980f40080227e9e71f4eedbc635a6002de",
-  "bytes": 18536140,
+  "scope": "Current native PCB and genuine OEM motor on matching bolt axes; no carrier; routing and clamping hardware unqualified",
+  "circuit_sha256": "56cba67a351972c2e2da30d83cceaa6aaeb53df0d646428f9d81964b01731a41",
+  "glb_sha256": "2a0fcefb0d6bb350df52d651670b6768bcdee1bc32bb24213c6be63803a3580a",
+  "bytes": 18100296,
   "original_supplier_assets_loaded": [
     {
       "path": "imports/supplier/USB4145_03_0070_C/USB4145_03_0070_C.obj",
@@ -208,14 +208,11 @@
       "path": "imports/motor/11HS12-0674S.obj",
       "sha256": "c39b0649babb9bdc0a37033344ef9249c53a7caf53b17f2adc587f39237c083b",
       "bytes": 2134747
-    },
-    {
-      "path": "imports/mechanical/nema11-four-mount-front-carrier.obj",
-      "sha256": "286c73e9e08c6edad7598b6214158bf2052fbf957e92c789e24b1fd0d84ec717",
-      "bytes": 252617
     }
   ],
   "motor_model_included": true,
+  "front_carrier_proposal_included": false,
+  "replacement_clamping_hardware_modeled": false,
   "final_NEMA11_layout": false,
   "manufacturing_release": false
 }

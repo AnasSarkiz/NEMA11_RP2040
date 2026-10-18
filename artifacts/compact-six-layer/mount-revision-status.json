@@ -9,5 +9,12 @@
   "previous_native_DRC_CAM_BOM_and_assembly_reports_invalidated_by_changed_board_hash": true,
   "current_native_render_errors": 18,
   "routing_revalidated": false,
-  "manufacturing_release": false
+  "manufacturing_release": false,
+  "current_native_DRC_errors": 121,
+  "current_native_DRC_warnings": 7,
+  "current_native_3D_models": 77,
+  "native_assembly_contains_current_PCB_and_original_motor": true,
+  "carrier_present": false,
+  "existing_tscircuit_package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "new_package_name_required": false
 }

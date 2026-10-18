@@ -6,11 +6,46 @@ import * as schemas from "circuit-json"
 import BaselinePreview from "../examples/controller-assembly.circuit"
 import CompactPreview from "../examples/compact-assembly.circuit"
 import FourMountPreview from "../examples/four-mount-assembly.circuit"
+import MotorStudy from "../examples/motor-bolt-study.circuit"
+import motorBoltConfig from "../config/compact-motor-bolts.json"
 
-// Carrier files are retained solely to reproduce frozen historical checkpoints.
-// The active user requirement is direct mounting on the OEM motor case bolts.
-if(!process.argv.includes("--historical-carrier"))throw new Error(
- "Carrier assembly is superseded by direct motor-bolt mounting. Rear bolt thread/length and the matching PCB are pending verification. Use --historical-carrier only to reproduce an archived carrier checkpoint.")
+// Default: update the CURRENT controller assembly, using its actual PCB holes.
+// The complete unchanged OEM motor retains its seated original bolt geometry;
+// longer clamping hardware is not invented or represented as qualified.
+if(!process.argv.includes("--historical-carrier")){
+ const at=process.argv.indexOf("--folder")
+ const directFolder=at>=0?process.argv[at+1]:"artifacts/compact-six-layer"
+ const bytes=readFileSync(directFolder+"/board.circuit.json")
+ const base=JSON.parse(bytes.toString()) as any[]
+ const holes=base.filter(e=>e.type==="pcb_hole" && !e.pcb_component_id)
+ if(holes.length!==4 || motorBoltConfig.mounts.some(m=>!holes.some(h=>h.x===m.x && h.y===m.y && h.hole_diameter===m.diameter)))throw new Error("Current PCB does not have the motor-bolt mounting pattern")
+ const c=new Circuit();c.schematicDisabled=true;c.add(<MotorStudy />);await c.renderUntilSettled()
+ const fresh=c.getCircuitJson() as any[]
+ const motor=fresh.find(e=>e.type==="source_component" && e.name==="OEM_11HS12_0674S")
+ const cad=fresh.find(e=>e.type==="cad_component" && e.source_component_id===motor?.source_component_id)
+ if(!motor || !cad)throw new Error("Genuine OEM motor missing")
+ const motorFrontZ=-34.3 // nominal STEP rear 31.5 -> -2.8; PCB bottom -0.8: 2 mm gap
+ const extra=[{...motor,source_component_id:"source_component_OEM_motor"},
+  {...cad,source_component_id:"source_component_OEM_motor",cad_component_id:"cad_component_OEM_motor",
+   position:{x:0,y:0,z:motorFrontZ},rotation:{x:0,y:0,z:90}}]
+ for(const e of extra)delete e.subcircuit_id
+ const sheets=JSON.parse(readFileSync(directFolder+"/schematic.circuit.json","utf8")).filter((e:any)=>e.type.startsWith("schematic_"))
+ const out=[...base,...sheets,...extra]
+ const registry=schemas as any
+ for(const e of out){const schema=e.type==="source_component"?registry.any_source_component:registry[e.type]??registry.any_circuit_element;schema.parse(e)}
+ writeFileSync(directFolder+"/assembly.circuit.json",JSON.stringify(out,null,2)+"\n")
+ writeFileSync(directFolder+"/assembly-build.json",JSON.stringify({
+  scope:"Current controller PCB and unchanged OEM motor, matching 23 mm bolt axes; placement/routing and clamping hardware unqualified",
+  PCB_source_file:directFolder+"/board.circuit.json",source_sha256:createHash("sha256").update(bytes).digest("hex"),
+  PCB_mount_pitch_mm:23,PCB_hole_diameter_mm:2.7,PCB_mount_axes_match_OEM_STEP:true,
+  motor_raw_front_datum_z_mm:motorFrontZ,motor_rotation_z_degrees:90,nominal_STEP_motor_to_PCB_bottom_gap_mm:2,
+  original_PCB_electrical_CAD_records_preserved:true,front_carrier_proposal_included:false,
+  replacement_clamping_hardware_modeled:false,hardware_thread_length_engagement_qualified:false,
+  motor_rear_holes_or_shaft_invented:false,motor_leads_point_toward_JST_edge:true,
+  full_current_DRC_and_assembly_qualified:false,manufacturing_release:false},null,2)+"\n")
+ console.log("Updated current PCB/motor assembly: 23 mm motor-bolt axes, no carrier; hardware remains unqualified")
+ process.exit(0)
+}
 
 const compact=process.argv.includes("--compact")
 const folderArg=process.argv.indexOf("--folder")

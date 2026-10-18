@@ -3,7 +3,7 @@
   "version": "0.4.0-dev",
   "private": true,
   "type": "module",
-  "description": "Native tscircuit electrical baseline; direct OEM motor-bolt mounting redesign pending; historical carrier superseded",
+  "description": "Native tscircuit NEMA11 controller; current 23 mm motor-bolt PCB revision; placement/routing and hardware unqualified",
   "scripts": {
     "core:build": "bun scripts/build-core.tsx",
     "core:check": "python3 scripts/verify_core.py",
@@ -27,7 +27,7 @@
     "controller:schematic": "bun scripts/schematic-controller.tsx && python3 scripts/verify_controller_schematic.py",
     "controller:pcb": "/workspace/.venvs/nema11-cad/bin/python scripts/build_controller_pcb.py --check",
     "controller:assembly": "bun scripts/build-controller-assembly.tsx",
-    "controller:dev": "tsci dev artifacts/compact-six-layer/board.circuit.json",
+    "controller:dev": "tsci dev artifacts/compact-six-layer/assembly.circuit.json",
     "controller:drc": "python3 scripts/apply_native_keepout_fix.py --check && bun scripts/check-controller-pcb.tsx --checks-only",
     "controller:connectivity": "/workspace/.venvs/nema11-cad/bin/python scripts/audit_controller_connectivity.py",
     "native:test": "bun test tests-native",
@@ -36,17 +36,17 @@
     "compact:check": "python3 scripts/verify_controller.py --compact && /workspace/.venvs/nema11-cad/bin/python scripts/audit_compact_placement.py && python3 scripts/verify_compact_milestone.py",
     "compact:schematic": "bun scripts/schematic-controller.tsx --compact && /workspace/.venvs/nema11-cad/bin/python scripts/verify_controller_schematic.py --compact && /workspace/.venvs/nema11-cad/bin/python scripts/export-core-pdf.py --compact",
     "compact:3d": "bun scripts/build-controller-assembly.tsx --compact && bun scripts/export-core-3d.tsx --compact --assembly && python3 scripts/verify_controller_3d.py --compact",
-    "compact:dev": "tsci dev artifacts/compact-six-layer/board.circuit.json",
+    "compact:dev": "tsci dev artifacts/compact-six-layer/assembly.circuit.json",
     "escape:dev": "tsci dev artifacts/compact-escape/board.circuit.json",
     "escape:check": "/workspace/.venvs/nema11-cad/bin/python scripts/verify_compact_escape.py",
-    "four-mounts:dev": "tsci dev artifacts/compact-six-layer/board.circuit.json",
+    "four-mounts:dev": "tsci dev artifacts/compact-six-layer/assembly.circuit.json",
     "four-mounts:check": "python3 scripts/verify_four_mounts.py --assembly",
-    "six-layer:dev": "tsci dev artifacts/compact-six-layer/board.circuit.json",
+    "six-layer:dev": "tsci dev artifacts/compact-six-layer/assembly.circuit.json",
     "six-layer:check": "python3 scripts/verify_compact_six_layer.py",
     "controller:historical-assembly": "bun scripts/build-controller-assembly.tsx --historical-carrier --pcb && bun scripts/export-core-3d.tsx --assembly && /workspace/.venvs/nema11-cad/bin/python scripts/verify_controller_3d.py",
     "motor:bolts:inspect": "/workspace/.venvs/nema11-cad/bin/python scripts/inspect_direct_motor_bolts.py",
-    "controller:historical-carrier:dev": "tsci dev artifacts/compact-six-layer/assembly.circuit.json",
-    "motor:bolts:dev": "tsci dev examples/motor-bolt-study.circuit.tsx"
+    "motor:bolts:dev": "tsci dev examples/motor-bolt-study.circuit.tsx",
+    "controller:direct-assembly:check": "/workspace/.venvs/nema11-cad/bin/python scripts/verify_direct_motor_assembly.py"
   },
-  "main": "artifacts/compact-six-layer/board.circuit.json"
+  "main": "artifacts/compact-six-layer/assembly.circuit.json"
 }
