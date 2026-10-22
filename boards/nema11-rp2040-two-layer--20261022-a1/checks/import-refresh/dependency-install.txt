@@ -1,0 +1,209 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [470]
+warn: incorrect peer dependency "circuit-json@0.0.521"
+
+warn: incorrect peer dependency "circuit-to-svg@0.0.445"
+
+error: GET https://registry.npmjs.org/@tscircuit%2ffootprinter - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-bpc - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fsimple-3d-svg - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcircuit-json-util - 503
+
+error: GET https://registry.npmjs.org/@rollup%2fplugin-typescript - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fmatchpack - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-simple-3d - 503
+
+error: GET https://registry.npmjs.org/calculate-cell-boundaries - 503
+
+error: GET https://registry.npmjs.org/kicad-to-circuit-json - 503
+
+error: GET https://registry.npmjs.org/@rollup%2fplugin-json - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fsoup-util - 503
+
+error: GET https://registry.npmjs.org/@rollup%2fplugin-commonjs - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fchecks - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcopper-pour-solver - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcapacity-autorouter - 503
+
+error: GET https://registry.npmjs.org/schematic-symbols - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-pnp-csv - 503
+
+error: GET https://registry.npmjs.org/calculate-elbow - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcore - 503
+
+error: GET https://registry.npmjs.org/bpc-graph - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fkrt-wasm - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2frunframe - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2feval - 503
+
+error: GET https://registry.npmjs.org/@flatten-js%2fcore - 503
+
+error: GET https://registry.npmjs.org/svg-path-commander - 503
+
+error: GET https://registry.npmjs.org/sucrase - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fminiflex - 503
+
+error: GET https://registry.npmjs.org/calculate-packing - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fprops - 503
+
+error: GET https://registry.npmjs.org/format-si-unit - 503
+
+error: GET https://registry.npmjs.org/gl-matrix - 503
+
+error: GET https://registry.npmjs.org/performance-now - 503
+
+error: GET https://registry.npmjs.org/s-expression - 503
+
+error: GET https://registry.npmjs.org/jscad-fiber - 503
+
+error: GET https://registry.npmjs.org/jscad-planner - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcli - 503
+
+error: GET https://registry.npmjs.org/rollup - 503
+
+error: GET https://registry.npmjs.org/spicey - 503
+
+error: GET https://registry.npmjs.org/circuit-json - 503
+
+error: GET https://registry.npmjs.org/connectivity-map - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fschematic-match-adapt - 503
+
+error: GET https://registry.npmjs.org/comlink - 503
+
+error: GET https://registry.npmjs.org/spicets - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fngspice-spice-engine - 503
+
+error: GET https://registry.npmjs.org/tslib - 503
+
+error: GET https://registry.npmjs.org/readable-stream - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2finfer-cable-insertion-point - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-connectivity-map - 503
+
+error: GET https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz - 503
+
+error: GET https://registry.npmjs.org/flatbush - 503
+
+error: GET https://registry.npmjs.org/debug - 503
+
+error: GET https://registry.npmjs.org/pureimage - 503
+
+error: GET https://registry.npmjs.org/zod - 503
+
+error: GET https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz - 503
+
+error: GET https://registry.npmjs.org/poppygl/-/poppygl-0.0.36.tgz - 503
+
+error: GET https://registry.npmjs.org/react-dom - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2falphabet - 503
+
+error: GET https://registry.npmjs.org/@tscircuit/modelprinter/-/modelprinter-0.0.18.tgz - 503
+
+error: GET https://registry.npmjs.org/earcut - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fmm - 503
+
+error: GET https://registry.npmjs.org/jscad-electronics - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-gltf/-/circuit-json-to-gltf-0.0.151.tgz - 503
+
+error: GET https://registry.npmjs.org/jscad-to-gltf - 503
+
+error: GET https://registry.npmjs.org/occt-import-js - 503
+
+error: GET https://registry.npmjs.org/@jscad%2fmodeling - 503
+
+error: GET https://registry.npmjs.org/@tscircuit%2fcableprinter - 503
+
+error: GET https://registry.npmjs.org/circuit-json-to-spice - 503
+
+error: GET https://registry.npmjs.org/circuit-to-svg - 503
+error: zod@^3.25.67 failed to resolve
+error: debug@^4.3.6 failed to resolve
+error: tslib@^2.8.1 failed to resolve
+error: rollup@^4.53.2 failed to resolve
+error: spicey@^0.0.14 failed to resolve
+error: comlink@^4.4.2 failed to resolve
+error: spicets@^0.0.4 failed to resolve
+error: sucrase@^3.35.0 failed to resolve
+error: flatbush@^4.5.0 failed to resolve
+error: bpc-graph@^0.0.57 failed to resolve
+error: gl-matrix@^3.4.4 failed to resolve
+error: react-dom@^19.1.0 failed to resolve
+error: jscad-fiber@^0.0.88 failed to resolve
+error: circuit-json@^0.0.529 failed to resolve
+error: s-expression@^3.1.1 failed to resolve
+error: jscad-planner@^0.0.18 failed to resolve
+error: @tscircuit/cli@^0.1.2400 failed to resolve
+error: circuit-to-svg@^0.0.453 failed to resolve
+error: format-si-unit@^0.0.12 failed to resolve
+error: @tscircuit/core@^0.0.2196 failed to resolve
+error: @tscircuit/eval@^0.0.1655 failed to resolve
+error: calculate-elbow@^0.0.12 failed to resolve
+error: performance-now@^2.1.0 failed to resolve
+error: @flatten-js/core@^1.6.2 failed to resolve
+error: @tscircuit/props@^0.0.707 failed to resolve
+error: connectivity-map@^1.0.1 failed to resolve
+error: @tscircuit/checks@^0.0.261 failed to resolve
+error: calculate-packing@^0.0.90 failed to resolve
+error: schematic-symbols@^0.0.248 failed to resolve
+error: svg-path-commander@^2.1.11 failed to resolve
+error: @rollup/plugin-json@^6.1.0 failed to resolve
+error: @tscircuit/krt-wasm@^0.1.1 failed to resolve
+error: @tscircuit/miniflex@^0.0.4 failed to resolve
+error: @tscircuit/runframe@^0.0.3055 failed to resolve
+error: circuit-json-to-bpc@^0.0.13 failed to resolve
+error: @tscircuit/matchpack@^0.0.100 failed to resolve
+error: @tscircuit/soup-util@^0.0.41 failed to resolve
+error: circuit-json-to-spice@^0.0.45 failed to resolve
+error: kicad-to-circuit-json@^0.0.142 failed to resolve
+error: @tscircuit/footprinter@^0.0.442 failed to resolve
+error: @rollup/plugin-commonjs@^29.0.0 failed to resolve
+error: circuit-json-to-pnp-csv@^0.0.20 failed to resolve
+error: @tscircuit/simple-3d-svg@^0.0.41 failed to resolve
+error: @rollup/plugin-typescript@^12.3.0 failed to resolve
+error: calculate-cell-boundaries@^0.0.25 failed to resolve
+error: circuit-json-to-simple-3d@^0.0.9 failed to resolve
+error: @tscircuit/circuit-json-util@^0.0.123 failed to resolve
+error: @tscircuit/copper-pour-solver@^0.0.67 failed to resolve
+error: @tscircuit/capacity-autorouter@^0.0.999 failed to resolve
+error: @tscircuit/ngspice-spice-engine@^0.0.20 failed to resolve
+error: @tscircuit/schematic-match-adapt@^0.0.18 failed to resolve
+error: circuit-json-to-connectivity-map@^0.0.33 failed to resolve
+error: @tscircuit/infer-cable-insertion-point@^0.0.4 failed to resolve
+error: @tscircuit/capacity-autorouter@0.0.718 failed to resolve
+error: @tscircuit/mm@^0.0.9 failed to resolve
+error: earcut@^3.0.2 failed to resolve
+error: gl-matrix@^3.4.4 failed to resolve
+error: jscad-planner@^0.0.19 failed to resolve
+error: jscad-to-gltf@^0.0.5 failed to resolve
+error: occt-import-js@^0.0.23 failed to resolve
+error: @jscad/modeling@^2.12.6 failed to resolve
+error: jscad-electronics@^0.0.210 failed to resolve
+error: @tscircuit/alphabet@^0.0.25 failed to resolve
+error: @tscircuit/cableprinter@^0.0.6 failed to resolve
+error: gl-matrix@^3.4.4 failed to resolve
+error: pureimage@^0.4.18 failed to resolve
+error: readable-stream@^4.7.0 failed to resolve

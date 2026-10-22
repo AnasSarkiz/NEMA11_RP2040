@@ -1,0 +1,12 @@
+{
+  "@tscircuit/cli": {
+    "version": "0.1.2400",
+    "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+    "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+  },
+  "tscircuit": {
+    "version": "0.0.3003",
+    "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+    "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+  }
+}

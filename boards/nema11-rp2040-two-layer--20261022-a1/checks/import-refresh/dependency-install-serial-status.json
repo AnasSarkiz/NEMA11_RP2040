@@ -1,0 +1,5 @@
+{
+  "command": "bun install --network-concurrency 1 --prefer-offline",
+  "exit_code": 1,
+  "dependency_integrity_verification_disabled": false
+}

@@ -1,0 +1,5 @@
+{
+  "command": "tsc --noEmit",
+  "exit_code": 0,
+  "scope": "Restored original toolchain only; not a new-version component check"
+}

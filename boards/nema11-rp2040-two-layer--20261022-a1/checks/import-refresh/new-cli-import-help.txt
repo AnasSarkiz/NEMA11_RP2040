@@ -1,0 +1,17 @@
+Using local @tscircuit/cli v0.1.2261 instead of global v0.1.2400
+Usage: tsci import [options] <query...>
+
+Search JLCPCB or the tscircuit registry and import a component
+
+Arguments:
+  query                     Chip name, part number, or package name
+
+Options:
+  --jlcpcb                  Search JLCPCB components
+  --lcsc                    Alias for --jlcpcb
+  --tscircuit               Search tscircuit registry packages
+  --download                Download 3D model assets (.step, .obj) locally
+  --exclude-pin-attributes  Skip datasheet pin attributes when importing
+  --use-exact-footprint     Keep the exact EasyEDA footprint instead of using a
+                            >98% footprinter match
+  -h, --help                display help for command
