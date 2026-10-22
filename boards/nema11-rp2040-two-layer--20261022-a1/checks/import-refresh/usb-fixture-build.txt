@@ -1,0 +1,23 @@
+Building 1 file(s)...
+Building checks/import-refresh/usb-new-import.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/checks/import-refresh/usb-new-import/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J1 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+All pins on J1 are underspecified (no pinAttributes set)
+J1 is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J1 may not have availability from jlcpcb (C5815189).
+Generating preview images...
+[checks/import-refresh/usb-new-import] Generating PCB SVG...
+[checks/import-refresh/usb-new-import] Written pcb.svg
+[checks/import-refresh/usb-new-import] Generating PCB PNG...
+[checks/import-refresh/usb-new-import] Written pcb.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

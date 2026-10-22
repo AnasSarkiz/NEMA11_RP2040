@@ -24,3 +24,10 @@ No current source or CAM is fabrication-ready or physically tested.
 Destination: existing public `AnasSarkiz/NEMA11_RP2040` repository, `main` branch,
 and existing `AnasSarkiz/NEMA11_RP2040_Compact_Prototype` package. Versions update
 that same package; a separate registry package is not created for this task.
+
+Current review revision: `0.6.1-import-refresh-wip`. `tsci upgrade` and the local
+upgrade succeeded: tscircuit 0.0.3003 / CLI 0.1.2400. All 47 unique JLCPCB parts
+were freshly imported with untouched TSX/OBJ/STEP assets. See
+[the refresh report](docs/import-refresh-20261022.md): the GCT second locator
+is now a malformed polygon, and the board still fails placement. Routing stays
+disabled; this is not a fabrication-ready or hardware-tested assembly.

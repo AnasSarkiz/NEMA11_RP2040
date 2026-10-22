@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": false,
   "type": "module",
   "description": "WIP two-layer NEMA11 controller with required buzzer, imported JLCPCB components; unrouted until validation gates pass",
@@ -14,11 +14,13 @@
     "check:pins": "tsci check pin_specification index.circuit.tsx",
     "check:source": "tsci check source index.circuit.tsx",
     "check:schematic": "tsci check schematic-placement index.circuit.tsx",
-    "check:placement": "tsci check placement index.circuit.tsx"
+    "check:placement": "tsci check placement index.circuit.tsx",
+    "check:imports": "python3 scripts/audit_component_refresh.py",
+    "check:usb-locator": "python3 scripts/check_usb_locator_holes.py imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx --output checks/import-refresh/usb-locator-current.json"
   },
   "dependencies": {
-    "@tscircuit/cli": "0.1.2261",
-    "tscircuit": "0.0.2764",
+    "@tscircuit/cli": "0.1.2400",
+    "tscircuit": "0.0.3003",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },

@@ -677,10 +677,12 @@ flagged components:
   - U_MCU and C_ENCODER_BULK pad overlap by 0.2mm. Suggested move: move C_ENCODER_BULK 0.2mm down.
 
 placement drc:
-Errors: 145
+Errors: 147
 Warnings: 3
 - pcb_placement_error: SMT pad D_STATUS.G_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
 - pcb_placement_error: SMT pad D_STATUS.R_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+- pcb_component_outside_board_error: Component C_BULK extends outside board boundaries by 0.29mm. Try moving it 0.29mm up to fit within the board edge.
+- pcb_component_outside_board_error: Component D_STATUS extends outside board boundaries by 0.14mm. Try moving it 0.14mm right to fit within the board edge.
 - pcb_placement_error: Copper for component R_USB_SENSE_H overlaps a PCB keepout
 - pcb_placement_error: Copper for component TP_3V3 overlaps a PCB keepout
 - pcb_placement_error: Copper for component R_STATUS_R overlaps a PCB keepout

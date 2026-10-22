@@ -44,13 +44,11 @@ All pins on Q_BUZZER are underspecified (no pinAttributes set)
 J_PD is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
 J_DATA is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
 J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
-TP_BOOT has no courtyard
-TP_BOOT_GND has no courtyard
-TP_3V3 has no courtyard
-TP_GND has no courtyard
-TP_SWCLK has no courtyard
-TP_SWDIO has no courtyard
-TP_RUN has no courtyard
+R_PD_CFG may not have availability from jlcpcb (C25796).
+R_FLASH_CS may not have availability from jlcpcb (C25744).
+R_RUN may not have availability from jlcpcb (C25744).
+R_REF_L may not have availability from jlcpcb (C25744).
+R_VM_L may not have availability from jlcpcb (C25744).
 C_BOOTSTRAP may not have availability from jlcpcb (C1525).
 C_FLASH may not have availability from jlcpcb (C1525).
 C_IO1 may not have availability from jlcpcb (C1525).
@@ -65,62 +63,59 @@ C_DV23 may not have availability from jlcpcb (C1525).
 C_DV50 may not have availability from jlcpcb (C1525).
 C_DRV_LOGIC may not have availability from jlcpcb (C1525).
 C_TEMP may not have availability from jlcpcb (C1525).
-L_BUCK may not have availability from jlcpcb (C780206).
-R_PD may not have availability from jlcpcb (C21189).
-C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
-C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
-D_TVS may not have availability from jlcpcb (C19077512).
-C_PD may not have availability from jlcpcb (C15849).
-C_XIN may not have availability from jlcpcb (C1548).
-C_XOUT may not have availability from jlcpcb (C1548).
-C_BUCK_IN may not have availability from jlcpcb (C13585).
 R_TEMP_SDA may not have availability from jlcpcb (C25900).
 R_TEMP_SCL may not have availability from jlcpcb (C25900).
-C_VREG_IN may not have availability from jlcpcb (C52923).
-C_VREG_OUT may not have availability from jlcpcb (C52923).
-R_PG may not have availability from jlcpcb (C25804).
-R_SLEEP may not have availability from jlcpcb (C25803).
-D_PD may not have availability from jlcpcb (C8598).
-D_DATA may not have availability from jlcpcb (C8598).
-R_USB_SENSE_H may not have availability from jlcpcb (C25741).
-R_USB_SENSE_L may not have availability from jlcpcb (C25741).
-R_ENABLE may not have availability from jlcpcb (C25741).
-R_VM_H may not have availability from jlcpcb (C25741).
-R_BUZZER_PD may not have availability from jlcpcb (C25741).
-R_REF_H may not have availability from jlcpcb (C4184).
 R_CC1 may not have availability from jlcpcb (C25905).
 R_CC2 may not have availability from jlcpcb (C25905).
-R_SA may not have availability from jlcpcb (C7434086).
-R_SB may not have availability from jlcpcb (C7434086).
-R_BUZZER_GATE may not have availability from jlcpcb (C25076).
-R_FLASH_CS may not have availability from jlcpcb (C25744).
-R_RUN may not have availability from jlcpcb (C25744).
-R_REF_L may not have availability from jlcpcb (C25744).
-R_VM_L may not have availability from jlcpcb (C25744).
-C_REF may not have availability from jlcpcb (C1589).
-C_VM_SENSE may not have availability from jlcpcb (C15195).
-R_DP may not have availability from jlcpcb (C25100).
-R_DM may not have availability from jlcpcb (C25100).
-C_VREG may not have availability from jlcpcb (C21120).
-D_BUZZER may not have availability from jlcpcb (C478000).
-R_PD_CFG may not have availability from jlcpcb (C25796).
 R_PWR_LED may not have availability from jlcpcb (C25104).
-C_CP may not have availability from jlcpcb (C960916).
-C_VCP may not have availability from jlcpcb (C960916).
-C_VM may not have availability from jlcpcb (C960916).
 R_BOOT may not have availability from jlcpcb (C11702).
 R_XOUT may not have availability from jlcpcb (C11702).
 R_STATUS_R may not have availability from jlcpcb (C11702).
 R_STATUS_G may not have availability from jlcpcb (C11702).
 R_STATUS_B may not have availability from jlcpcb (C11702).
+D_PD may not have availability from jlcpcb (C8598).
+D_DATA may not have availability from jlcpcb (C8598).
+R_DP may not have availability from jlcpcb (C25100).
+R_DM may not have availability from jlcpcb (C25100).
 C_BUZZER may not have availability from jlcpcb (C19702).
+R_USB_SENSE_H may not have availability from jlcpcb (C25741).
+R_USB_SENSE_L may not have availability from jlcpcb (C25741).
+R_ENABLE may not have availability from jlcpcb (C25741).
+R_VM_H may not have availability from jlcpcb (C25741).
+R_BUZZER_PD may not have availability from jlcpcb (C25741).
+C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
+C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
+R_PD may not have availability from jlcpcb (C21189).
+C_VREG_IN may not have availability from jlcpcb (C52923).
+C_VREG_OUT may not have availability from jlcpcb (C52923).
+C_PD may not have availability from jlcpcb (C15849).
+R_BUZZER_GATE may not have availability from jlcpcb (C25076).
+L_BUCK may not have availability from jlcpcb (C780206).
+R_SLEEP may not have availability from jlcpcb (C25803).
+R_PG may not have availability from jlcpcb (C25804).
+C_VM_SENSE may not have availability from jlcpcb (C15195).
+C_REF may not have availability from jlcpcb (C1589).
+R_SA may not have availability from jlcpcb (C7434086).
+R_SB may not have availability from jlcpcb (C7434086).
+C_BUCK_IN may not have availability from jlcpcb (C13585).
+C_VREG may not have availability from jlcpcb (C21120).
+R_REF_H may not have availability from jlcpcb (C4184).
+D_BUZZER may not have availability from jlcpcb (C478000).
+C_XIN may not have availability from jlcpcb (C1548).
+C_XOUT may not have availability from jlcpcb (C1548).
+C_CP may not have availability from jlcpcb (C960916).
+C_VCP may not have availability from jlcpcb (C960916).
+C_VM may not have availability from jlcpcb (C960916).
+J_MOTOR may not have availability from jlcpcb (C131334).
 U_ESD may not have availability from jlcpcb (C2687116).
 J_PD may not have availability from jlcpcb (C165948).
 J_DATA may not have availability from jlcpcb (C165948).
 Y_MCU may not have availability from jlcpcb (C20625731).
-J_MOTOR may not have availability from jlcpcb (C131334).
+D_TVS may not have availability from jlcpcb (C19077512).
 SMT pad D_STATUS.G_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
 SMT pad D_STATUS.R_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+Component C_BULK extends outside board boundaries by 0.29mm. Try moving it 0.29mm up to fit within the board edge.
+Component D_STATUS extends outside board boundaries by 0.14mm. Try moving it 0.14mm right to fit within the board edge.
 Copper for component R_USB_SENSE_H overlaps a PCB keepout
 Copper for component TP_3V3 overlaps a PCB keepout
 Copper for component R_STATUS_R overlaps a PCB keepout
@@ -274,7 +269,6 @@ Courtyard of R_BUZZER_GATE overlaps with courtyard of R_BUZZER_PD
 Test point TP_GND is not accessible because it is inside the courtyard of C_BULK
 Test point TP_SWCLK is not accessible because it is inside the courtyard of C_BULK
 Test point TP_SWDIO is not accessible because it is inside the courtyard of C_BULK
-Autorouting was skipped because 155 PCB placement errors were found. Fix the placement errors or set placementDrcChecksDisabled to true to route anyway.
 Generating preview images...
 [index] Generating PCB SVG...
 [index] Written pcb.svg

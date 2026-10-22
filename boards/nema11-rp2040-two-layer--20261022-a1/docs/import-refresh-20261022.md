@@ -1,59 +1,79 @@
-# Full import refresh attempt — 2026-10-22
+# Import refresh completed — 2026-10-22
 
-Request: update tscircuit, freshly re-import every purchased component and report
-issues. This attempt is **blocked**, not a successful upgrade or import refresh.
+`tsci upgrade` succeeded, installing tscircuit 0.0.3003 globally. The board's local
+installation was then updated successfully to `@tscircuit/cli@0.1.2400` and
+`tscircuit@0.0.3003`; exact pins and lockfile are committed. This supersedes the
+earlier blocked attempts, retained in `checks/import-refresh/` as history.
+The successful upgrade populated the default Bun package cache, which the
+successful local installation reused. TLS and package integrity checks stayed on.
 
-The npm registry responded long enough to verify published versions:
+All **47 unique parts** were freshly imported using the supported command:
 
-| Package          | Installed working version | Requested published version |
-| ---------------- | ------------------------- | --------------------------- |
-| `@tscircuit/cli` | 0.1.2261                  | 0.1.2400                    |
-| `tscircuit`      | 0.0.2764                  | 0.0.3003                    |
+```sh
+tscircuit-cli import --jlcpcb --download --use-exact-footprint C_PART_NUMBER
+```
 
-Metadata, source package integrity values, exact installation commands and exits
-are recorded in `checks/import-refresh/`. The normal `bun install` failed on
-HTTP 503 responses. Serial retries with `--network-concurrency 1 --prefer-offline`
-fetched additional dependency metadata but failed on required tarballs, including:
+This includes all 46 selected BOM parts and the excluded C5815189 connector.
+Every command exited 0 and returned original TSX, OBJ and STEP assets: 141 files.
+The candidate outputs were copied byte-for-byte into `imports/`, without editing
+component definitions, pins, symbols, footprint geometry or model poses.
 
-- `@tscircuit/core@0.0.2196`
-- `@tscircuit/checks@0.0.261`
-- `@tscircuit/runframe@0.0.3055`
-- `circuit-to-svg@0.0.453`
-- the new dependency `@tscircuit/pcb-trace-linter` from its pinned GitHub commit
+The comparison against Git baseline `4775f9a` checks manufacturer identity, pin
+labels, fixed passive values, electrical pad hints/dimensions/relative positions,
+and model file hashes. All electrical comparisons match. Eight TSX definitions
+changed; all 94 OBJ/STEP asset files are identical to their baseline. One CAD
+origin changed, on the excluded C5815189. These checks do not approve datasheet
+ratings, stock, complete mechanical fit or native model alignment.
 
-Requests retain the cloud proxy, TLS verification and package integrity checks.
-Some metadata reads succeeded while package tarball reads failed; successful
-metadata alone does not prove the toolchain was installed.
+## Blocking component finding: C5815189
 
-The CLI 0.1.2400 tarball was downloaded to Bun's cache. Its launcher defaults to
-the older project-local CLI, so simply executing that downloaded entrypoint would
-not prove a new-version import. The supported `--use-global` selector chooses
-0.1.2400; startup then fails because the installed old `circuit-json` does not
-export `simulation_return_current_excitation`. This is an incomplete/mixed
-installation problem, not evidence that a correctly installed new CLI is broken.
+The earlier description of two circular holes was incorrect. The GCT drawing,
+page 2, specifies one Ø0.71 mm round hole and one **1.01 × 0.71 mm horizontal
+slot**, at 8 mm spacing. Drawing tolerance is ±0.05 mm.
 
-The pending refresh includes 47 unique parts: all 46 selected BOM parts and the
-excluded C5815189 USB connector. **Zero fresh imports were run with the new
-release.** No result from the old CLI is counted as a fresh new-version result.
-The original imported assets are byte-for-byte unchanged. The original package
-manifest was restored to its working pins; the requested manifest is preserved
-as `checks/import-refresh/requested-package.json` rather than committed as an
-installed upgrade. The existing native board output remains unchanged.
+The new importer now includes the second opening as a polygon cutout, but:
 
-`scripts/refresh_components.py` provides the candidate import workflow after a
-complete verified installation. It checks actual package versions before doing
-any work, imports C5815189 first, imports every other part independently, and
-records untouched source/model hashes and exit codes. Candidate output stays
-under this task's ignored `.cache/import-refresh/candidate/` until reviewed and
-promoted. No purchased component definition is authored or patched.
+- Its bounding dimensions are approximately **0.80 × 0.71 mm**.
+- Its sides curve inward, leaving a narrow middle. Its area is approximately
+  0.198 mm², versus 0.609 mm² for the nominal manufacturer capsule.
+- It does not contain the minimum 0.96 × 0.66 mm capsule allowed by the drawing
+  tolerance. Its locator center spacing is approximately 8.000 mm.
 
-No new footprint, pin mapping, model alignment or complete-board result can be
-reported from this blocked attempt. The previously documented missing USB hole,
-placement findings and hardware dimensions remain unresolved. Do not claim that
-updating alone fixes them.
+Thus the old missing-opening problem has changed into a malformed-opening
+problem. The untouched new source and native diagnostic render reproduce it.
+Do not patch it locally or approve this part. C5815189 remains excluded; the
+board's C165948 alternative remains an unapproved candidate, not a repair of GCT.
+The affected stages are schematic/BOM mechanical review, placement and assembly.
 
-The same existing registry release accepted the diagnostic archive upload after
-these failures. A further serial install still failed on the same required
-tarballs. Registry write access therefore does not establish npm tarball access.
-GitHub push also returned HTTP 503. The working package pins were restored after
-the last attempt; full upgrade and all 47 imports remain pending.
+Evidence:
+
+- `docs/GCT-USB4145-drawing.pdf`, page 2.
+- `checks/import-refresh/usb-locator-new-cli.json` and `usb-locator-current.json`.
+- `checks/import-refresh/usb-new-import.circuit.tsx`: native A4 review fixture.
+- `dist/checks/import-refresh/usb-new-import/pcb.png` and `circuit.json`.
+
+The native fixture builds successfully despite this defect. Build success alone
+cannot establish that the imported geometry matches the manufacturer's drawing.
+
+## Other findings and verification limits
+
+- The former internal autorouter exceptions are absent in all five rerun CLI
+  checks, with routing still disabled.
+- Netlist and source checks report zero errors and zero warnings.
+- Pin specification reports **31 warnings** about missing pin-role attributes.
+  They remain unresolved; no imported definitions were edited to suppress them.
+- Schematic-placement returns exit 0 while reporting label collisions, spacing
+  and alignment issues. It is not accepted as a clean schematic-placement gate.
+- Board placement and native build fail with **157 error records**: 60 footprint
+  overlaps, 56 courtyard overlaps, 29 placement errors, 10 pad-clearance errors
+  and two component-outside-board errors. The former skipped-routing error is
+  absent. The two additional board-edge findings are C_BULK (0.289 mm) and
+  D_STATUS (0.142 mm), measured against native component bounds.
+- No PCB traces or vias are present. All 587 structural/import-integrity
+  assertions pass. TypeScript passes with the refreshed imports.
+- Installer peer warnings remain for circuit-json and circuit-to-svg; they are
+  reported rather than treated as component failures or suppressed.
+- Models were downloaded, but no complete 3D interference or manufacturer
+  assembly approval is claimed. Stock is not reserved or verified for the BOM.
+
+This revision is an **unrouted, untested WIP prototype**, not fabrication-ready.

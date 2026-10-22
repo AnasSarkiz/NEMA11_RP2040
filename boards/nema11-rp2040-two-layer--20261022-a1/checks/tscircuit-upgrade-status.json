@@ -1,31 +1,13 @@
 {
-  "request": "Resolve C5815189 missing locator through a released tscircuit version and a fresh supported import; no hand-edited footprint",
-  "installed": {
-    "@tscircuit/cli": "0.1.2261",
-    "tscircuit": "0.0.2764"
-  },
-  "registry_queries": [
-    {
-      "url": "https://registry.npmjs.org/@tscircuit%2fcli/latest",
-      "http_status": 503
-    },
-    {
-      "url": "https://registry.npmjs.org/tscircuit/latest",
-      "http_status": 503
-    }
-  ],
-  "latest_version_verified": false,
-  "upgrade_installed": false,
-  "fresh_import_with_new_release_completed": false,
-  "baseline_screen_command": [
-    "python3",
-    "scripts/check_usb_locator_holes.py",
-    "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
-    "--output",
-    "checks/usb-locator-baseline.json"
-  ],
-  "baseline_screen_exit_code": 1,
-  "blocking_issue": "Cloud outbound proxy HTTP 503 prevents npm metadata/download and new-version import verification",
-  "upstream_root_cause_confirmed": false,
-  "note": "Missing hole is verified in generated import. Without raw current supplier data, cannot determine whether upstream supplier data or conversion caused the omission."
+  "command": "tsci upgrade",
+  "exit_code": 0,
+  "global_tscircuit_version": "0.0.3003",
+  "installed_local_cli": "0.1.2400",
+  "installed_local_tscircuit": "0.0.3003",
+  "local_dependency_install_exit_code": 0,
+  "fresh_imports_completed": 47,
+  "fresh_import_failures": 0,
+  "dependency_integrity_verification_disabled": false,
+  "remaining_blocking_component_issue": "C5815189 malformed locator polygon; drawing requires one round 0.71 mm hole and one 1.01 x 0.71 mm slot",
+  "full_bom_approved": false
 }

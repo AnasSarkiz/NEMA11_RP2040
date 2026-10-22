@@ -1,0 +1,1940 @@
+{
+  "baseline_commit": "4775f9a",
+  "scope": "Import integrity and baseline electrical mapping comparison only; all geometry, ratings and CAD poses still require review",
+  "parts": [
+    {
+      "part": "C5815189",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+      "fresh_source": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+      "baseline_source_sha256": "13805c7fbf1f7fcb339dbceb15679888f05304639efc612be5b351aba55024ab",
+      "fresh_source_sha256": "36d880dbe4b8404e74bde59ab4c46905f792179212686a574f85a3388c0265db",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        -0.1749995999999996,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": true,
+      "before_model_origin": {
+        "x": -0.15501140000004598,
+        "y": 3.4270054999999795,
+        "z": -4.5927207999999995
+      },
+      "after_model_origin": {
+        "x": 0.019988200000045975,
+        "y": 3.4270054999999795,
+        "z": -4.5927207999999995
+      },
+      "mechanical_hole_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 1
+      }
+    },
+    {
+      "part": "C11702",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "fresh_source": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "baseline_source_sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1",
+      "fresh_source_sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C131334",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.tsx",
+      "fresh_source": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.tsx",
+      "baseline_source_sha256": "65f410e9be84b9c617caf6d514e11c583d01ebf356b80bb6fea5a69fb1609c7c",
+      "fresh_source_sha256": "65f410e9be84b9c617caf6d514e11c583d01ebf356b80bb6fea5a69fb1609c7c",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 2.9999872999999297,
+        "y": -0.5500383000000056,
+        "z": -5.999999999950489e-06
+      },
+      "after_model_origin": {
+        "x": 2.9999872999999297,
+        "y": -0.5500383000000056,
+        "z": -5.999999999950489e-06
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C13585",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "fresh_source": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "baseline_source_sha256": "4f86abd9dd3867049419b6bd29e4a01e1d566db240cba11e08d4c57d4f3d52dc",
+      "fresh_source_sha256": "4f86abd9dd3867049419b6bd29e4a01e1d566db240cba11e08d4c57d4f3d52dc",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.65
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.65
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C15195",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "fresh_source": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "baseline_source_sha256": "6d19803b9cbbb8cadcc5636f533b0ef823366af12d307a939aa66268ef23fa25",
+      "fresh_source_sha256": "6d19803b9cbbb8cadcc5636f533b0ef823366af12d307a939aa66268ef23fa25",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C1525",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "fresh_source": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "baseline_source_sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8",
+      "fresh_source_sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C1548",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "fresh_source": "imports/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "baseline_source_sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f",
+      "fresh_source_sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C15849",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "fresh_source": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "baseline_source_sha256": "ea887d62ca4bfb4f6eb44fd8652de70354b52fbab2f0c2459fce27fc68481b14",
+      "fresh_source_sha256": "ea887d62ca4bfb4f6eb44fd8652de70354b52fbab2f0c2459fce27fc68481b14",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C1589",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.tsx",
+      "fresh_source": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.tsx",
+      "baseline_source_sha256": "bee018f6b940718f656cf9682be3fc0236bf004a9f662e854a6d67359f32994e",
+      "fresh_source_sha256": "bee018f6b940718f656cf9682be3fc0236bf004a9f662e854a6d67359f32994e",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C165948",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "fresh_source": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "baseline_source_sha256": "f72ec6955f7f982441478d44f69e2f67961da1195766faefe651de29dd2b0cbd",
+      "fresh_source_sha256": "f72ec6955f7f982441478d44f69e2f67961da1195766faefe651de29dd2b0cbd",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "mechanical_hole_counts": {
+        "before": 2,
+        "after": 2
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C19077512",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/SMF18A/SMF18A.tsx",
+      "fresh_source": "imports/SMF18A/SMF18A.tsx",
+      "baseline_source_sha256": "6ccb0c0ba1b83d9a050566943fb2b15f75b0a3f07964ec9cd315c5e609af7b05",
+      "fresh_source_sha256": "ea6865502734ada10295effe2a88b2c6f6158f23c5199a17dee8917142bd955d",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.00010160000010728254,
+        "y": 0.0,
+        "z": -0.11
+      },
+      "after_model_origin": {
+        "x": 0.00010160000010728254,
+        "y": 0.0,
+        "z": -0.11
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C19702",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.tsx",
+      "fresh_source": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.tsx",
+      "baseline_source_sha256": "18d2efe28e58c378cb6c8c48363c3ea8d13cc0f71430bf85be41facd748499fe",
+      "fresh_source_sha256": "18d2efe28e58c378cb6c8c48363c3ea8d13cc0f71430bf85be41facd748499fe",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C2040",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/RP2040/RP2040.tsx",
+      "fresh_source": "imports/RP2040/RP2040.tsx",
+      "baseline_source_sha256": "72ada7e0fdea2889683e5142de8f933482d1118c3ebb6259d1b1294e9ab1a0d6",
+      "fresh_source_sha256": "72ada7e0fdea2889683e5142de8f933482d1118c3ebb6259d1b1294e9ab1a0d6",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 1.2699999956566899e-05,
+        "y": -0.0001269999999067295,
+        "z": -0.02
+      },
+      "after_model_origin": {
+        "x": 1.2699999956566899e-05,
+        "y": -0.0001269999999067295,
+        "z": -0.02
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C20625731",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/ABM8_272_T3/ABM8_272_T3.tsx",
+      "fresh_source": "imports/ABM8_272_T3/ABM8_272_T3.tsx",
+      "baseline_source_sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6",
+      "fresh_source_sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C20917",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/AO3400A/AO3400A.tsx",
+      "fresh_source": "imports/AO3400A/AO3400A.tsx",
+      "baseline_source_sha256": "045b391cb3c1cbb4f387ae76a933db8614de730c8c75a281d66c971608b2f423",
+      "fresh_source_sha256": "045b391cb3c1cbb4f387ae76a933db8614de730c8c75a281d66c971608b2f423",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": -1.2699999956566899e-05,
+        "z": 0.050795
+      },
+      "after_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": -1.2699999956566899e-05,
+        "z": 0.050795
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C21120",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.tsx",
+      "fresh_source": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.tsx",
+      "baseline_source_sha256": "abb4a490363ea48aa098283cf79b094d9dbe4dc37c30bf014c0a381c6a0313d3",
+      "fresh_source_sha256": "abb4a490363ea48aa098283cf79b094d9dbe4dc37c30bf014c0a381c6a0313d3",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.4
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C21189",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.tsx",
+      "fresh_source": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.tsx",
+      "baseline_source_sha256": "b47270ff2444d6fc83f7a132c3b236a3a77cf8062525e1840be78f11f6a6fbc0",
+      "fresh_source_sha256": "b47270ff2444d6fc83f7a132c3b236a3a77cf8062525e1840be78f11f6a6fbc0",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "after_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25076",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "fresh_source": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "baseline_source_sha256": "94e8eca58f755ecafad87f2d34407c688d1e782a585f16d01366db2349a4e4dd",
+      "fresh_source_sha256": "94e8eca58f755ecafad87f2d34407c688d1e782a585f16d01366db2349a4e4dd",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25100",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "fresh_source": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "baseline_source_sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803",
+      "fresh_source_sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25104",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.tsx",
+      "fresh_source": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.tsx",
+      "baseline_source_sha256": "8d56c9393a184d954df04eff9423690c831e8bcc6fcae8d64ab12f367c2ab719",
+      "fresh_source_sha256": "8d56c9393a184d954df04eff9423690c831e8bcc6fcae8d64ab12f367c2ab719",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25741",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.tsx",
+      "fresh_source": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.tsx",
+      "baseline_source_sha256": "06dc4b807ed08046857436372994722bfee24cb88b914ee7430e7d76bca18484",
+      "fresh_source_sha256": "06dc4b807ed08046857436372994722bfee24cb88b914ee7430e7d76bca18484",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25744",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "fresh_source": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "baseline_source_sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8",
+      "fresh_source_sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25796",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.tsx",
+      "fresh_source": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.tsx",
+      "baseline_source_sha256": "8eb042cac3987ad9de08b691a5a6c622ee81e603814ad0a7830193e2edcd12b5",
+      "fresh_source_sha256": "8eb042cac3987ad9de08b691a5a6c622ee81e603814ad0a7830193e2edcd12b5",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25803",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0603WAF1003T5E/A_0603WAF1003T5E.tsx",
+      "fresh_source": "imports/A_0603WAF1003T5E/A_0603WAF1003T5E.tsx",
+      "baseline_source_sha256": "c33c9b46f2a3d7fce5991bbc6e77eeebfa4b0e31f2d721a868b3a9c4d90bd8df",
+      "fresh_source_sha256": "c33c9b46f2a3d7fce5991bbc6e77eeebfa4b0e31f2d721a868b3a9c4d90bd8df",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "after_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25804",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx",
+      "fresh_source": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx",
+      "baseline_source_sha256": "f6ac09b90652e630334ed327f993187e970d7b0791e6f34a92f1ecf6f0614b5b",
+      "fresh_source_sha256": "f6ac09b90652e630334ed327f993187e970d7b0791e6f34a92f1ecf6f0614b5b",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "after_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25900",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "fresh_source": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "baseline_source_sha256": "12ea4d84494dc68a32cac0bbdd8258a4cf159664e2b41dac92e26bb49c932191",
+      "fresh_source_sha256": "12ea4d84494dc68a32cac0bbdd8258a4cf159664e2b41dac92e26bb49c932191",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C25905",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.tsx",
+      "fresh_source": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.tsx",
+      "baseline_source_sha256": "a35a01c6014e47dafccf409322a330b9ce31a0879b601495648a175435b158e0",
+      "fresh_source_sha256": "a35a01c6014e47dafccf409322a330b9ce31a0879b601495648a175435b158e0",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C2687116",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "fresh_source": "imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "baseline_source_sha256": "3cb8aa29019dba860b6118110613528c9911218e817c362eeedd3f0fc5d70175",
+      "fresh_source_sha256": "3cb8aa29019dba860b6118110613528c9911218e817c362eeedd3f0fc5d70175",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -1.2700000070253736e-05,
+        "y": 1.2700000070253736e-05,
+        "z": -0.048939
+      },
+      "after_model_origin": {
+        "x": -1.2700000070253736e-05,
+        "y": 1.2700000070253736e-05,
+        "z": -0.048939
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C2986331",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "fresh_source": "imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "baseline_source_sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd",
+      "fresh_source_sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -0.005107950000000305,
+        "z": -0.02
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -0.005107950000000305,
+        "z": -0.02
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C38437",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A4988SETTR_T/A4988SETTR_T.tsx",
+      "fresh_source": "imports/A4988SETTR_T/A4988SETTR_T.tsx",
+      "baseline_source_sha256": "fc22d27778d1f4f37c490681d34b0c846cb335749030fce7ffab790cda784398",
+      "fresh_source_sha256": "fc22d27778d1f4f37c490681d34b0c846cb335749030fce7ffab790cda784398",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.05
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.05
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C4184",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx",
+      "fresh_source": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx",
+      "baseline_source_sha256": "16d395442170fe58e97af6db054b85c3f16aff956cded6144ea5d3d64d048d44",
+      "fresh_source_sha256": "16d395442170fe58e97af6db054b85c3f16aff956cded6144ea5d3d64d048d44",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "after_model_origin": {
+        "x": -0.004999999999999977,
+        "y": 0.0,
+        "z": -0.01
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C42459160",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CH224A/CH224A.tsx",
+      "fresh_source": "imports/CH224A/CH224A.tsx",
+      "baseline_source_sha256": "76fbf29cfb369e20b612e84b914e28160bae3c8ca5061562bc375a03e523f1fc",
+      "fresh_source_sha256": "76fbf29cfb369e20b612e84b914e28160bae3c8ca5061562bc375a03e523f1fc",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 6.3500000123895e-05,
+        "y": 0.0,
+        "z": -0.81
+      },
+      "after_model_origin": {
+        "x": 6.3500000123895e-05,
+        "y": 0.0,
+        "z": -0.81
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C45783",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "fresh_source": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "baseline_source_sha256": "6a1d0d39089308ba4719d9b899a045a2ff79080850fd5891afffcc4b78c4f648",
+      "fresh_source_sha256": "6a1d0d39089308ba4719d9b899a045a2ff79080850fd5891afffcc4b78c4f648",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C458749",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
+      "fresh_source": "imports/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
+      "baseline_source_sha256": "25071ca212206f257d5b84c6cb084188cb90b292f826e0e71597a986527c9cfb",
+      "fresh_source_sha256": "a5641bdee61013882c19832844229636166a13bc34a5651aeccd4c0d3b052c0d",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.11
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.11
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C478000",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/PMEG6020ELRX/PMEG6020ELRX.tsx",
+      "fresh_source": "imports/PMEG6020ELRX/PMEG6020ELRX.tsx",
+      "baseline_source_sha256": "a89155151ed4bf85e474204ba40343bf36a8ea2fb3fde97477b12332ea9d3166",
+      "fresh_source_sha256": "99bb94cf9271d91312871e5d0f9ed8f3162cce80e643d55f149fbd95a992934d",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.55
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.55
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C509876",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.tsx",
+      "fresh_source": "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.tsx",
+      "baseline_source_sha256": "213baa70fda5362e58b1db91d0bf60d0a48c9e354d56de2ac5dcc9ad2f5b495d",
+      "fresh_source_sha256": "213baa70fda5362e58b1db91d0bf60d0a48c9e354d56de2ac5dcc9ad2f5b495d",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 1.2699999956566899e-05,
+        "y": 0.0,
+        "z": -0.1
+      },
+      "after_model_origin": {
+        "x": 1.2699999956566899e-05,
+        "y": 0.0,
+        "z": -0.1
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C52923",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "fresh_source": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "baseline_source_sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a",
+      "fresh_source_sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C72522",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/RVT1V470M0605/RVT1V470M0605.tsx",
+      "fresh_source": "imports/RVT1V470M0605/RVT1V470M0605.tsx",
+      "baseline_source_sha256": "776e116b89c627640cfe7efe79a67c87d0457c534bca492f0bec584d3c9738d7",
+      "fresh_source_sha256": "997442498daa2957b6dfa918d1b864585dd7cd77ef639f69a6ac3d20a38c6b82",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.05
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.05
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C7434086",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/HP05W3F240LT5E/HP05W3F240LT5E.tsx",
+      "fresh_source": "imports/HP05W3F240LT5E/HP05W3F240LT5E.tsx",
+      "baseline_source_sha256": "63546e71899d44c8f8d4bc35703c89dc3f92e4a96dcc49b73d0c7c16c63a1b96",
+      "fresh_source_sha256": "63546e71899d44c8f8d4bc35703c89dc3f92e4a96dcc49b73d0c7c16c63a1b96",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 1.2699999842880061e-05,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 1.2699999842880061e-05,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C780206",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/SRN4018_4R7M/SRN4018_4R7M.tsx",
+      "fresh_source": "imports/SRN4018_4R7M/SRN4018_4R7M.tsx",
+      "baseline_source_sha256": "8a2be5fd0458b153ed39d6700efb52e4176413b45a613bf746591398936168d6",
+      "fresh_source_sha256": "8a2be5fd0458b153ed39d6700efb52e4176413b45a613bf746591398936168d6",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 0.02499999999999991,
+        "z": -0.02
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 0.02499999999999991,
+        "z": -0.02
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C780769",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/AP63203WU_7/AP63203WU_7.tsx",
+      "fresh_source": "imports/AP63203WU_7/AP63203WU_7.tsx",
+      "baseline_source_sha256": "1a9806ba82674c63b85093e9725c82ed58aa58f35e76759d5032121fc441ceee",
+      "fresh_source_sha256": "1a9806ba82674c63b85093e9725c82ed58aa58f35e76759d5032121fc441ceee",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": 0.0,
+        "z": -0.62
+      },
+      "after_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": 0.0,
+        "z": -0.62
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C79815",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "fresh_source": "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "baseline_source_sha256": "e011f3f1890780db9d07c533df55eb5cb15861934e6b8adc105614291fe3b944",
+      "fresh_source_sha256": "e011f3f1890780db9d07c533df55eb5cb15861934e6b8adc105614291fe3b944",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 1.2700000070253736e-05,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C8598",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/B5819W_SL/B5819W_SL.tsx",
+      "fresh_source": "imports/B5819W_SL/B5819W_SL.tsx",
+      "baseline_source_sha256": "42d39d8e0698b939d0da5b0f074f4dd098def9abf40b254d401c0bb0d93cdd4f",
+      "fresh_source_sha256": "eb33e0421fb4faf9d6082e336c12202cefee3b7e9ecc46a1748cdcb5a31df684",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C94598",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/MLT_5020/MLT_5020.tsx",
+      "fresh_source": "imports/MLT_5020/MLT_5020.tsx",
+      "baseline_source_sha256": "f74b608a7e7de32403b990b723e97f8b5dc13f573e27e36544a338559e20789c",
+      "fresh_source_sha256": "a8d9b647d2b7f523cafe7b7c02dee6387bbb043f00274cc58996fd8dfbe1b8e1",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 7.619999996677507e-05,
+        "y": 0.06042139999991303,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": 7.619999996677507e-05,
+        "y": 0.06042139999991303,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C960916",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.tsx",
+      "fresh_source": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.tsx",
+      "baseline_source_sha256": "e613221bc1ad5638a5839e0118815e0112b7a48c3b57474c6a77c3087050dcbc",
+      "fresh_source_sha256": "e613221bc1ad5638a5839e0118815e0112b7a48c3b57474c6a77c3087050dcbc",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "after_model_origin": {
+        "x": 0.0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C965799",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/XL_1608SURC_06/XL_1608SURC_06.tsx",
+      "fresh_source": "imports/XL_1608SURC_06/XL_1608SURC_06.tsx",
+      "baseline_source_sha256": "c82043ec6ffbce3090b39f84e3fc21f70343fc5000f4bc0d864e76e876723140",
+      "fresh_source_sha256": "cec5d10bd5d93476e4789f9f6df138ad98a8cae5af669b03b40af8ed8df6766f",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -1.2700000070253736e-05,
+        "y": 5.079999993995443e-05,
+        "z": -0.01
+      },
+      "after_model_origin": {
+        "x": -1.2700000070253736e-05,
+        "y": 5.079999993995443e-05,
+        "z": -0.01
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "part": "C99269",
+      "import_exit_code": 0,
+      "assets_present": true,
+      "full_component_approved": false,
+      "baseline_source": "imports/TMP102AIDRLR/TMP102AIDRLR.tsx",
+      "fresh_source": "imports/TMP102AIDRLR/TMP102AIDRLR.tsx",
+      "baseline_source_sha256": "b65d9e3b1bbb645ec74a87f2838da04963b5346a6760689b6f5d7e4e31a1ea20",
+      "fresh_source_sha256": "b65d9e3b1bbb645ec74a87f2838da04963b5346a6760689b6f5d7e4e31a1ea20",
+      "mpn_unchanged": true,
+      "pin_labels_unchanged": true,
+      "passive_values_unchanged": true,
+      "electrical_pad_mapping_unchanged_up_to_translation": true,
+      "pad_translation_mm": [
+        0.0,
+        0.0
+      ],
+      "model_files_byte_equal": {
+        ".obj": true,
+        ".step": true
+      },
+      "model_origin_changed": false,
+      "before_model_origin": {
+        "x": -5.079999999679785e-05,
+        "y": 0.029921200000003978,
+        "z": 0.0
+      },
+      "after_model_origin": {
+        "x": -5.079999999679785e-05,
+        "y": 0.029921200000003978,
+        "z": 0.0
+      },
+      "mechanical_hole_counts": {
+        "before": 0,
+        "after": 0
+      },
+      "cutout_counts": {
+        "before": 0,
+        "after": 0
+      }
+    }
+  ],
+  "checked": 47,
+  "expected": 47,
+  "all_imports_succeeded_with_assets": true,
+  "all_electrical_mappings_and_values_unchanged": true,
+  "source_files_changed": 8,
+  "cad_origins_changed": 1,
+  "full_bom_approved": false
+}

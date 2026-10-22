@@ -4,3 +4,4 @@ imports/** -text -whitespace
 dist/** -text -whitespace
 # Preserve exact native diagnostic logs, including terminal blank lines.
 checks/*.txt -text -whitespace
+checks/**/*.txt -text -whitespace

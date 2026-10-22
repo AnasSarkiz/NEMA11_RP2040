@@ -4,7 +4,7 @@
       "part": "C11702",
       "exported_symbol": "A_0402WGF1001TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -29,13 +29,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C131334",
       "exported_symbol": "B4B_PH_K_S_LF__SN_",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -60,13 +72,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C13585",
       "exported_symbol": "CL31A106KBHNNNE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -91,13 +115,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C15195",
       "exported_symbol": "CL05B103KB5NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -122,13 +158,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C1525",
       "exported_symbol": "CL05B104KO5NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -153,13 +201,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C1548",
       "exported_symbol": "A_0402CG150J500NT",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -184,13 +244,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C15849",
       "exported_symbol": "CL10A105KB8NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -215,13 +287,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C1589",
       "exported_symbol": "CL10B103KB8NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -246,13 +330,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C165948",
       "exported_symbol": "TYPE_C_31_M_12",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -277,13 +373,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C19077512",
       "exported_symbol": "SMF18A",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -303,18 +411,30 @@
         },
         {
           "path": "imports/SMF18A/SMF18A.tsx",
-          "sha256": "6ccb0c0ba1b83d9a050566943fb2b15f75b0a3f07964ec9cd315c5e609af7b05",
-          "bytes": 4194
+          "sha256": "ea6865502734ada10295effe2a88b2c6f6158f23c5199a17dee8917142bd955d",
+          "bytes": 4263
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C19702",
       "exported_symbol": "CL10A106KP8NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -339,13 +459,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C2040",
       "exported_symbol": "RP2040",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -370,13 +502,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C20625731",
       "exported_symbol": "ABM8_272_T3",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -401,13 +545,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C20917",
       "exported_symbol": "AO3400A",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -432,13 +588,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C21120",
       "exported_symbol": "CL10B224KA8NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -463,13 +631,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C21189",
       "exported_symbol": "A_0603WAF0000T5E",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -494,13 +674,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25076",
       "exported_symbol": "A_0402WGF1000TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -525,13 +717,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25100",
       "exported_symbol": "A_0402WGF270JTCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -556,13 +760,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25104",
       "exported_symbol": "A_0402WGF3300TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -587,13 +803,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25741",
       "exported_symbol": "A_0402WGF1003TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -618,13 +846,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25744",
       "exported_symbol": "A_0402WGF1002TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -649,13 +889,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25796",
       "exported_symbol": "A_0402WGF5602TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -680,13 +932,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25803",
       "exported_symbol": "A_0603WAF1003T5E",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -711,13 +975,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25804",
       "exported_symbol": "A_0603WAF1002T5E",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -742,13 +1018,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25900",
       "exported_symbol": "A_0402WGF4701TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -773,13 +1061,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C25905",
       "exported_symbol": "A_0402WGF5101TCE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -804,13 +1104,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C2687116",
       "exported_symbol": "USBLC6_2SC6",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -835,13 +1147,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C2986331",
       "exported_symbol": "GD25Q16EEIGR",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -866,13 +1190,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C38437",
       "exported_symbol": "A4988SETTR_T",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -897,13 +1233,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C4184",
       "exported_symbol": "A_0603WAF2002T5E",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -928,13 +1276,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C42459160",
       "exported_symbol": "CH224A",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -959,13 +1319,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C45783",
       "exported_symbol": "CL21A226MAQNNNE",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -990,13 +1362,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C458749",
       "exported_symbol": "LTST_C19HE1WT",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1016,18 +1400,30 @@
         },
         {
           "path": "imports/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
-          "sha256": "25071ca212206f257d5b84c6cb084188cb90b292f826e0e71597a986527c9cfb",
-          "bytes": 38987
+          "sha256": "a5641bdee61013882c19832844229636166a13bc34a5651aeccd4c0d3b052c0d",
+          "bytes": 41770
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C478000",
       "exported_symbol": "PMEG6020ELRX",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1047,18 +1443,30 @@
         },
         {
           "path": "imports/PMEG6020ELRX/PMEG6020ELRX.tsx",
-          "sha256": "a89155151ed4bf85e474204ba40343bf36a8ea2fb3fde97477b12332ea9d3166",
-          "bytes": 3897
+          "sha256": "99bb94cf9271d91312871e5d0f9ed8f3162cce80e643d55f149fbd95a992934d",
+          "bytes": 3966
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C509876",
       "exported_symbol": "DTC114EU3HZGT106",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1083,13 +1491,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C52923",
       "exported_symbol": "CL05A105KA5NQNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1114,13 +1534,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C72522",
       "exported_symbol": "RVT1V470M0605",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1140,18 +1572,30 @@
         },
         {
           "path": "imports/RVT1V470M0605/RVT1V470M0605.tsx",
-          "sha256": "776e116b89c627640cfe7efe79a67c87d0457c534bca492f0bec584d3c9738d7",
-          "bytes": 2790
+          "sha256": "997442498daa2957b6dfa918d1b864585dd7cd77ef639f69a6ac3d20a38c6b82",
+          "bytes": 2859
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C7434086",
       "exported_symbol": "HP05W3F240LT5E",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1176,13 +1620,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C780206",
       "exported_symbol": "SRN4018_4R7M",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1207,13 +1663,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C780769",
       "exported_symbol": "AP63203WU_7",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1238,13 +1706,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C79815",
       "exported_symbol": "AS5600_ASOM",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1269,13 +1749,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C8598",
       "exported_symbol": "B5819W_SL",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1295,18 +1787,30 @@
         },
         {
           "path": "imports/B5819W_SL/B5819W_SL.tsx",
-          "sha256": "42d39d8e0698b939d0da5b0f074f4dd098def9abf40b254d401c0bb0d93cdd4f",
-          "bytes": 4101
+          "sha256": "eb33e0421fb4faf9d6082e336c12202cefee3b7e9ecc46a1748cdcb5a31df684",
+          "bytes": 4193
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C94598",
       "exported_symbol": "MLT_5020",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1326,18 +1830,30 @@
         },
         {
           "path": "imports/MLT_5020/MLT_5020.tsx",
-          "sha256": "f74b608a7e7de32403b990b723e97f8b5dc13f573e27e36544a338559e20789c",
-          "bytes": 4794
+          "sha256": "a8d9b647d2b7f523cafe7b7c02dee6387bbb043f00274cc58996fd8dfbe1b8e1",
+          "bytes": 4840
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C960916",
       "exported_symbol": "CL05B104KB5NNNC",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1362,13 +1878,25 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C965799",
       "exported_symbol": "XL_1608SURC_06",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1388,18 +1916,30 @@
         },
         {
           "path": "imports/XL_1608SURC_06/XL_1608SURC_06.tsx",
-          "sha256": "c82043ec6ffbce3090b39f84e3fc21f70343fc5000f4bc0d864e76e876723140",
-          "bytes": 4102
+          "sha256": "cec5d10bd5d93476e4789f9f6df138ad98a8cae5af669b03b40af8ed8df6766f",
+          "bytes": 4171
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     },
     {
       "part": "C99269",
       "exported_symbol": "TMP102AIDRLR",
       "command": [
-        "tsci",
+        "tscircuit-cli",
         "import",
         "--jlcpcb",
         "--download",
@@ -1424,7 +1964,19 @@
         }
       ],
       "definitions_symbols_footprints_and_models_unmodified": true,
-      "full_component_approval": false
+      "full_component_approval": false,
+      "tool_versions": {
+        "@tscircuit/cli": {
+          "version": "0.1.2400",
+          "integrity": "sha512-K+DwBVNAlNY7dz8KMCd1Q8q4YuAg2zFnz4RgHQwpfXV+E+8LVn3X9CKOHOHB5blM3ilEQmq7YmfeLOuku38RMQ==",
+          "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2400.tgz"
+        },
+        "tscircuit": {
+          "version": "0.0.3003",
+          "integrity": "sha512-auJoFwHOUBwiwaQZlWbkLrDAHlInQ5DbYxAT2CXW8XNMExfDPQB2F6+DAsrTxfaQEn2xq0eNl5AVqE1mKuLotA==",
+          "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3003.tgz"
+        }
+      }
     }
   ]
 }

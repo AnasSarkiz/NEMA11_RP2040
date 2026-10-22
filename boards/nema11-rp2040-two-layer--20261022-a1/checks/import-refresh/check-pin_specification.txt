@@ -1,0 +1,33 @@
+Errors: 0
+Warnings: 31
+- source_component_pins_underspecified_warning: All pins on D_TVS are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Y_MCU are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on J_MOTOR are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on D_STATUS are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q_STATUS_R are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q_STATUS_G are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q_STATUS_B are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q_BUZZER are underspecified (no pinAttributes set)
+- source_no_power_pin_defined_warning: J_PD has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D_TVS has no pin with requires_power=true
+- source_no_power_pin_defined_warning: J_DATA has no pin with requires_power=true
+- source_no_power_pin_defined_warning: U_ESD has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Y_MCU has no pin with requires_power=true
+- source_no_power_pin_defined_warning: J_MOTOR has no pin with requires_power=true
+- source_no_power_pin_defined_warning: D_STATUS has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_R has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_G has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_STATUS_B has no pin with requires_power=true
+- source_no_power_pin_defined_warning: BZ1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q_BUZZER has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: J_PD has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D_TVS has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: J_DATA has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Y_MCU has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: J_MOTOR has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: D_STATUS has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q_STATUS_R has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q_STATUS_G has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q_STATUS_B has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: BZ1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q_BUZZER has no pin with requires_ground=true

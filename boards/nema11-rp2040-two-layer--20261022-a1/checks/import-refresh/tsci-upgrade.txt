@@ -1,0 +1,27 @@
+Updating tsci using: bun install -g tscircuit@latest
+bun add v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [1184]
+warn: incorrect peer dependency "react-dom@19.3.1"
+
+warn: incorrect peer dependency "react@19.3.1"
+
+warn: incorrect peer dependency "circuit-json@0.0.529"
+
+warn: incorrect peer dependency "circuit-to-svg@0.0.453"
+
+warn: incorrect peer dependency "react-dom@19.3.1"
+
+warn: incorrect peer dependency "react@19.3.1"
+
+warn: incorrect peer dependency "circuit-json@0.0.529"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+Saved lockfile
+
+installed tscircuit@0.0.3003 with binaries:
+ - tsci
+ - tscircuit
+
+302 packages installed [9.92s]
+tsci has been updated successfully!

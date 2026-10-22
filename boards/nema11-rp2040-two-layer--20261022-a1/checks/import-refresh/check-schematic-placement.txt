@@ -1,0 +1,85 @@
+<SchematicSheet name="05 Temperature &amp; feedback" id="schematic_sheet_4">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_TEMP" positionAnchor="center" schX="0" schY="0" width="1.2" height="0.8" />
+<SchematicBoxPlacement componentName="R_TEMP_SCL" positionAnchor="center" schX="0.163" schY="-3.705" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="D_STATUS" positionAnchor="center" schX="0" schY="-1.9" width="1.2" height="0.6" />
+<SchematicBoxPlacement componentName="R_STATUS_B" positionAnchor="center" schX="3.215" schY="3.845" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="BZ1" positionAnchor="center" schX="2.6" schY="-0.005" width="0.38" height="0.6" />
+<SchematicBoxPlacement componentName="Q_BUZZER" positionAnchor="center" schX="3.16" schY="1.9" width="0.68" height="0.4" />
+<SchematicBoxPlacement componentName="D_BUZZER" positionAnchor="center" schX="2.935" schY="-4.2" width="0.54" height="1.04" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicBoxInnerLabelCollision message="Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="U_TEMP" currentSchWidth="1.2" currentSchHeight="0.8" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.289">
+  <PinLabelPair label1="ALERT" label2="V_POS" port1="schematic_port_273" port2="schematic_port_275" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
+</SchematicBoxInnerLabelCollision>
+<SchematicBoxInnerLabelCollision message="Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="D_STATUS" currentSchWidth="1.2" currentSchHeight="0.6" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.272">
+  <PinLabelPair label1="R_NEG" label2="B_NEG" port1="schematic_port_283" port2="schematic_port_285" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
+  <PinLabelPair label1="G_NEG" label2="B_NEG" port1="schematic_port_284" port2="schematic_port_285" side1="left" side2="right" kind="clearance" measuredGap="0.028" />
+</SchematicBoxInnerLabelCollision>
+<DiodeResistorNotAligned diodeComponentName="D_BUZZER" diodePin="cathode" resistorComponentName="R_TEMP_SCL" resistorPin="cathode" message="trace has corners — align D_BUZZER and R_TEMP_SCL on same axis and rotate so D_BUZZER.cathode faces R_TEMP_SCL.cathode" />
+<ComponentNetLabelCollision pair1="U_TEMP/BZ1" pair2="R_STATUS_B/Q_BUZZER">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="U_TEMP" newSchX="-0.57" newSchY="0" />
+    <Move componentName="BZ1" newSchX="3.17" newSchY="-0.01" />
+    <Move componentName="Q_BUZZER" newSchX="2.91" newSchY="1.9" />
+    <Move componentName="R_STATUS_B" newSchX="3.47" newSchY="3.85" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="01 Power &amp; USB-PD" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="R_PD" positionAnchor="center" schX="-0.275" schY="2.24" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="C_BOOTSTRAP" positionAnchor="center" schX="-2.675" schY="-6.28" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="C_BUCK_OUT1" positionAnchor="center" schX="-5.175" schY="-0.32" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="C_BUCK_OUT2" positionAnchor="center" schX="-7.335" schY="-0.32" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="R_PD" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_PD by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="C_BOOTSTRAP" railPin="pin2" railType="power" deltaSchRotation="90" suggestedRailFacingDirection="up" message="rotate C_BOOTSTRAP by 90° so its power-connected pin faces up and the component is vertical" />
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="C_BUCK_OUT1, C_BUCK_OUT2" maxBodyGap="1.51" maxRecommendedBodyGap="1" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="04 Stepper motor driver" id="schematic_sheet_3">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C_VCP" positionAnchor="center" schX="0.842" schY="-3.22" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R_REF_H" positionAnchor="center" schX="-1.083" schY="-3.36" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="C_REF" positionAnchor="center" schX="2.762" schY="-5.018" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="R_VM_H" positionAnchor="center" schX="0.782" schY="-5.24" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R_VM_L" positionAnchor="center" schX="2.682" schY="-6.883" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="C_VCP" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate C_VCP by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R_REF_H" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_REF_H by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R_VM_H" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_VM_H by -90° so its power-connected pin faces up and the component is vertical" />
+<ComponentNetLabelCollision pair1="R_VM_L/C_REF">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="R_VM_L" newSchX="2.57" newSchY="-6.88" />
+    <Move componentName="C_REF" newSchX="2.87" newSchY="-5.02" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="02 Programming &amp; USB" id="schematic_sheet_1">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_FLASH" positionAnchor="center" schX="0.25" schY="2.7" width="1.8" height="1.2" />
+<SchematicBoxPlacement componentName="C_FLASH" positionAnchor="center" schX="2.77" schY="2.3" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<ComponentNetLabelCollision pair1="C_FLASH/U_FLASH">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="U_FLASH" newSchX="0" newSchY="2.7" />
+    <Move componentName="C_FLASH" newSchX="3.02" newSchY="2.3" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="06 Optional encoder (DNP)" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C_ENCODER" positionAnchor="center" schX="-5.08" schY="-0.2" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="C_ENCODER_BULK" positionAnchor="center" schX="-2.86" schY="-0.2" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="C_ENCODER, C_ENCODER_BULK" maxBodyGap="1.57" maxRecommendedBodyGap="1" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
+</SchematicSheet>

@@ -1,0 +1,5 @@
+{
+  "command": "tsci build checks/import-refresh/usb-new-import.circuit.tsx --pcb-png --pcb-svgs",
+  "exit_code": 0,
+  "scope": "Promoted untouched import, native A4 diagnostic fixture; source build success does not approve manufacturer geometry"
+}

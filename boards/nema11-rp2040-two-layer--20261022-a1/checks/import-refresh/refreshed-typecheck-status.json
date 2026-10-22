@@ -1,0 +1,5 @@
+{
+  "command": "tsc --noEmit",
+  "exit_code": 0,
+  "scope": "New installed toolchain and all refreshed raw supplier definitions"
+}

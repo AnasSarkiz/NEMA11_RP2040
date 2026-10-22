@@ -1,0 +1,95 @@
+{
+  "part": "C5815189",
+  "manufacturer_part": "USB4145-03-0070-C",
+  "source": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+  "source_sha256": "36d880dbe4b8404e74bde59ab4c46905f792179212686a574f85a3388c0265db",
+  "manufacturer_evidence": "docs/GCT-USB4145-drawing.pdf, page 2",
+  "required": {
+    "circular_hole_diameter_mm": 0.71,
+    "horizontal_slot_mm": [
+      1.01,
+      0.71
+    ],
+    "pitch_mm": 8.0,
+    "drawing_tolerance_mm": 0.05
+  },
+  "observed_circular_holes": [
+    {
+      "pcbX": -4.0224964,
+      "pcbY": 0.000127,
+      "diameter": 0.7099808
+    }
+  ],
+  "observed_polygon_cutout_count": 1,
+  "observed_slot": {
+    "center": {
+      "x": 3.9774876000000177,
+      "y": 2.5399999969977216e-05
+    },
+    "width_mm": 0.7999984000000495,
+    "height_mm": 0.7099807999999257,
+    "polygon_area_mm2": 0.19762535338031317,
+    "nominal_capsule_area_mm2": 0.6089192141686537,
+    "contains_minimum_slot_interior": false,
+    "polygon": [
+      {
+        "x": 4.377486800000042,
+        "y": -0.35496499999999287
+      },
+      {
+        "x": 3.577488399999993,
+        "y": -0.35496499999999287
+      },
+      {
+        "x": 3.786146521825458,
+        "y": -0.2871678664400861
+      },
+      {
+        "x": 3.915104333142267,
+        "y": -0.10967266644001938
+      },
+      {
+        "x": 3.915104333142267,
+        "y": 0.10972346643984565
+      },
+      {
+        "x": 3.786146521825458,
+        "y": 0.28721866643991234
+      },
+      {
+        "x": 3.577488399999993,
+        "y": 0.35501579999981914
+      },
+      {
+        "x": 4.377486800000042,
+        "y": 0.3550157999999328
+      },
+      {
+        "x": 4.168828678174464,
+        "y": 0.28721866643991234
+      },
+      {
+        "x": 4.039870866857768,
+        "y": 0.10972346643984565
+      },
+      {
+        "x": 4.039870866857768,
+        "y": -0.10967266644001938
+      },
+      {
+        "x": 4.168828678174464,
+        "y": -0.2871678664400861
+      },
+      {
+        "x": 4.377486800000042,
+        "y": -0.35496499999999287
+      }
+    ]
+  },
+  "observed_pitch_mm": 7.999984000645179,
+  "unsupported_syntax": [],
+  "locator_geometry_passed": false,
+  "full_component_approved": false,
+  "correction": "Earlier two-circle interpretation was incorrect. Drawing specifies one circle and one horizontal slot.",
+  "limitations": "Explicit numeric hole and polygon-cutout JSX only. Unsupported syntax requires native-output review. Does not approve remaining footprint, pins, CAD pose or assembly."
+}

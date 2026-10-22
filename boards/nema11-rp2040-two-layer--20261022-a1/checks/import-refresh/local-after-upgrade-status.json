@@ -1,0 +1,6 @@
+{
+  "command": "bun install --network-concurrency 1 --prefer-offline",
+  "exit_code": 0,
+  "reason": "Use package cache populated by successful tsci upgrade",
+  "integrity_verification_disabled": false
+}

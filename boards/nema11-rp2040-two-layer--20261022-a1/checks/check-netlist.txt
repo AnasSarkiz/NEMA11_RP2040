@@ -1,8 +1,3 @@
-AutoroutingPipelineSolver9_PreloadedTraceGraph error: Error: ExpandEdgesToEmptySpaceSolver bounds must be finite, got {"minX":null,"maxX":null,"minY":null,"maxY":null}
-Async effect error in PcbTraceRender "autorouting":
-AutorouterError: ExpandEdgesToEmptySpaceSolver bounds must be finite, got {"minX":null,"maxX":null,"minY":null,"maxY":null} (capacity-autorouter@0.0.958)
-    at runCycleAndQueueNextCycle (/workspace/NEMA11_RP2040/boards/nema11-rp2040-two-layer--20261022-a1/node_modules/@tscircuit/core/dist/index.js:107833:45)
-    at processTicksAndRejections (native:7:39)
 Errors: 0
 Warnings: 0
 

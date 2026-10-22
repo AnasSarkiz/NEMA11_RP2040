@@ -1,0 +1,5 @@
+{
+  "command": "tsc --noEmit",
+  "exit_code": 0,
+  "scope": "New installed toolchain with existing supplier definitions; fresh imports pending review"
+}
