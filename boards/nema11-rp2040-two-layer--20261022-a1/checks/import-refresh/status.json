@@ -71,8 +71,10 @@
   "original_import_file_count": 141,
   "original_imports_unchanged": true,
   "working_package_manifest_restored": true,
-  "reason": "Both normal and serial dependency installation failed on HTTP 503 downloads. Do not run or count imports with an old/mixed CLI.",
+  "reason": "Standard install and two serial attempts failed on required HTTP 503 tarball downloads, including after a registry report upload succeeded. Original package pins restored; no new-version imports run.",
   "additional_observation": "Cached CLI 0.1.2400 entrypoint selects old local CLI by default. Explicit --use-global selects the new CLI but startup fails on missing simulation_return_current_excitation export from old installed circuit-json; required dependencies are not installed.",
   "new_component_geometry_or_pin_review_completed": false,
-  "baseline_C5815189_missing_hole_retested_with_new_release": false
+  "baseline_C5815189_missing_hole_retested_with_new_release": false,
+  "installation_attempts": 3,
+  "registry_diagnostic_upload_succeeded": true
 }

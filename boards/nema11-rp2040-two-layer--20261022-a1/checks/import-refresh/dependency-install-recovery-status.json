@@ -1,0 +1,6 @@
+{
+  "command": "bun install --network-concurrency 1 --prefer-offline",
+  "exit_code": 1,
+  "reason_for_retry": "Registry archive POST succeeded after prior transport failures; reuse newly populated package cache",
+  "dependency_integrity_verification_disabled": false
+}

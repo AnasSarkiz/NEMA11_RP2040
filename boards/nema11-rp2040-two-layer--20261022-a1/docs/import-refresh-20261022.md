@@ -12,8 +12,8 @@ The npm registry responded long enough to verify published versions:
 
 Metadata, source package integrity values, exact installation commands and exits
 are recorded in `checks/import-refresh/`. The normal `bun install` failed on
-HTTP 503 responses. A serial retry with `--network-concurrency 1 --prefer-offline`
-fetched additional dependencies but failed on required tarballs, including:
+HTTP 503 responses. Serial retries with `--network-concurrency 1 --prefer-offline`
+fetched additional dependency metadata but failed on required tarballs, including:
 
 - `@tscircuit/core@0.0.2196`
 - `@tscircuit/checks@0.0.261`
@@ -51,3 +51,9 @@ No new footprint, pin mapping, model alignment or complete-board result can be
 reported from this blocked attempt. The previously documented missing USB hole,
 placement findings and hardware dimensions remain unresolved. Do not claim that
 updating alone fixes them.
+
+The same existing registry release accepted the diagnostic archive upload after
+these failures. A further serial install still failed on the same required
+tarballs. Registry write access therefore does not establish npm tarball access.
+GitHub push also returned HTTP 503. The working package pins were restored after
+the last attempt; full upgrade and all 47 imports remain pending.

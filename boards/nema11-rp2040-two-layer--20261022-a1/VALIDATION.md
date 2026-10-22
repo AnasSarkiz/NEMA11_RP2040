@@ -158,7 +158,9 @@ unapproved WIP and is not presented as a repair of C5815189.
 ## Full refresh attempt requested by the user
 
 Latest npm metadata verified CLI 0.1.2400 and tscircuit 0.0.3003. Installing them
-failed twice on cloud HTTP 503 downloads, including a serial network retry.
+failed on cloud HTTP 503 downloads in standard and serial attempts. A further
+serial attempt after registry report upload succeeded still failed on required
+tarballs.
 The working manifest was restored. No new-release imports were completed;
 47 unique parts are queued, including C5815189. All original imported files
 remain unchanged. See `docs/import-refresh-20261022.md` and
