@@ -143,3 +143,14 @@ failed HTTP 503 before uploading any recovery files. `git push origin main`
 also failed HTTP 503. The implementation and artifacts are preserved in local
 commit `f7485ac`; this commit has not reached GitHub. No new tscircuit package
 identity was created. Both failures are transport failures, not token rejection.
+
+## Required upstream-version resolution for C5815189
+
+The user requires the missing USB4145 locating hole to be resolved through a
+released tscircuit update and a fresh, unmodified JLCPCB import. No newer version
+could be fetched: npm registry queries return HTTP 503. No dependency or board
+source was changed. The baseline geometry screen fails with one locating hole;
+see `checks/usb-locator-baseline.json`, `checks/tscircuit-upgrade-status.json` and
+`docs/tscircuit-usb-import-release-gate.md`. A newer release is not yet confirmed
+to fix either the supplier data or conversion. The alternate C165948 remains
+unapproved WIP and is not presented as a repair of C5815189.
