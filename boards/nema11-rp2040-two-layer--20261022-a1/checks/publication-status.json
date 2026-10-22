@@ -11,8 +11,11 @@
   "files_compared": 249,
   "source_and_native_circuit_json_verified_byte_equal": true,
   "complete": false,
-  "recovery_attempted": false,
+  "recovery_attempted": true,
   "blocking_issue": "Outbound proxy HTTP 503 / remote connection failure affects tscircuit and GitHub; no credential failure observed",
   "ready_to_build_last_observed": false,
-  "manufacturing_approved": false
+  "manufacturing_approved": false,
+  "recovery_result": "Official archive request failed HTTP 503 before any recovery file succeeded",
+  "github_push_result": "Failed HTTP 503 through cloud outbound proxy",
+  "local_implementation_commit": "f7485ac"
 }

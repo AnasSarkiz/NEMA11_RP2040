@@ -137,3 +137,9 @@ Resume the **same** registry release through the official
 preview build. Do not run another ordinary push to create a replacement package
 or silently bump around the partial release. Commit source and review artifacts
 locally; push to the existing `main` when network access is restored.
+
+Recovery was attempted through the official archive endpoint; its first request
+failed HTTP 503 before uploading any recovery files. `git push origin main`
+also failed HTTP 503. The implementation and artifacts are preserved in local
+commit `f7485ac`; this commit has not reached GitHub. No new tscircuit package
+identity was created. Both failures are transport failures, not token rejection.
