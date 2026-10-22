@@ -114,3 +114,19 @@ then push matching source, lockfile and native outputs to GitHub. Exact native
 `dist/index/circuit.json` is included without editing. Remote receipts identify
 completed uploads, hashes and visibility; do not infer success from local files
 or a preview-build request. Earlier HTTP 503 attempts remain historical evidence.
+
+### Verified publication result
+
+Version `0.6.1-import-refresh-wip` was uploaded to the existing public package
+before the GitHub push. All 302 source, supplier-asset and native-output files
+were downloaded publicly and matched local bytes. The two verification receipts
+are excluded from their recursive manifest and uploaded/checked separately.
+GitHub repository metadata confirms public visibility. Implementation commit
+`f13b9cfe1f4fb2dda2fd90bc277a59a8dc464bad` was pushed to `main`; an anonymous raw download
+of its native circuit JSON matched the registry and local SHA-256:
+`f77bbbc2b67d7912dd384f5daae351517041d187f515a30a9df7acc89af0deb8`.
+
+At verification, the registry preview status was `pending`;
+no complete store preview or 3D interference approval is inferred. Publication
+is successful for the import-refresh WIP milestone, not fabrication approval.
+See `checks/registry-verification.json` and `checks/publication-status.json`.

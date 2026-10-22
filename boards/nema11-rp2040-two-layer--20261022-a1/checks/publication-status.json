@@ -1,0 +1,22 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.6.1-import-refresh-wip",
+  "same_package_identity": true,
+  "package_public": true,
+  "upload_workflow": "Official registry upload_archive with exact CLI archive schema, bounded payloads after earlier full-archive size failures",
+  "all_source_and_asset_files_verified_byte_equal": true,
+  "verified_file_count": 302,
+  "verification_receipts_excluded_from_recursive_manifest": true,
+  "github_repository": "AnasSarkiz/NEMA11_RP2040",
+  "github_public": true,
+  "implementation_commit": "f13b9cfe1f4fb2dda2fd90bc277a59a8dc464bad",
+  "github_push_succeeded": true,
+  "github_and_registry_native_json_match_local": true,
+  "native_circuit_json_sha256": "f77bbbc2b67d7912dd384f5daae351517041d187f515a30a9df7acc89af0deb8",
+  "preview_build_display_status": "pending",
+  "preview_build_completed_at": null,
+  "preview_build_error": null,
+  "full_3d_interference_approved": false,
+  "manufacturing_approved": false,
+  "scope": "Completed toolchain upgrade and 47-part import refresh; unrouted WIP, unresolved component geometry and board validation issues"
+}
