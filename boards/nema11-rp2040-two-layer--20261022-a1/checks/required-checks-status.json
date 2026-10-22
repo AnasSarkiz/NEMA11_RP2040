@@ -1,0 +1,37 @@
+[
+  {
+    "check": "netlist",
+    "command": "tsci check netlist index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": true,
+    "accepted": false
+  },
+  {
+    "check": "pin_specification",
+    "command": "tsci check pin_specification index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": true,
+    "accepted": false
+  },
+  {
+    "check": "source",
+    "command": "tsci check source index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": true,
+    "accepted": false
+  },
+  {
+    "check": "schematic-placement",
+    "command": "tsci check schematic-placement index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": true,
+    "accepted": false
+  },
+  {
+    "check": "placement",
+    "command": "tsci check placement index.circuit.tsx",
+    "exit_code": 1,
+    "internal_exception_present": false,
+    "accepted": false
+  }
+]

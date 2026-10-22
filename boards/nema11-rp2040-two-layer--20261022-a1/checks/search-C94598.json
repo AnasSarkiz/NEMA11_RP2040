@@ -1,0 +1,16 @@
+{
+  "query": "C94598",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 94598,
+      "mfr": "MLT-5020",
+      "package": "SMD,5x5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-20℃~+70℃ 100mA 2.5mm 2V~4V 3V 4kHz 5.2mm 5.2mm 75dB Electromagnetic Passive (Externally Driven) SMD,5x5mm Buzzers ROHS",
+      "stock": 58895,
+      "price": 0.4393
+    }
+  ]
+}

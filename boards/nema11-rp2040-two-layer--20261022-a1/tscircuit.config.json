@@ -1,0 +1,4 @@
+{
+  "includeBoardFiles": ["index.circuit.tsx"],
+  "previewComponentPath": "index.circuit.tsx"
+}

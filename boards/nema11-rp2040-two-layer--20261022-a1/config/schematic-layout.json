@@ -1,0 +1,475 @@
+{
+  "scope": "Draft functional A4 positions only; fresh imported symbols must be visually checked",
+  "sheets": {
+    "01 Power & USB-PD": [
+      "J_PD",
+      "U_PD",
+      "R_PD_CFG",
+      "R_PD",
+      "C_PD",
+      "R_PG",
+      "D_TVS",
+      "D_PD",
+      "D_DATA",
+      "U_BUCK",
+      "L_BUCK",
+      "C_BOOTSTRAP",
+      "C_BUCK_IN",
+      "C_BUCK_OUT1",
+      "C_BUCK_OUT2"
+    ],
+    "02 Programming & USB": [
+      "J_DATA",
+      "R_CC1",
+      "R_CC2",
+      "U_ESD",
+      "R_DP",
+      "R_DM",
+      "R_USB_SENSE_H",
+      "R_USB_SENSE_L",
+      "U_FLASH",
+      "C_FLASH",
+      "R_FLASH_CS",
+      "R_BOOT",
+      "TP_BOOT",
+      "TP_BOOT_GND"
+    ],
+    "03 Controller & clocks": [
+      "U_MCU",
+      "Y_MCU",
+      "R_XOUT",
+      "C_XIN",
+      "C_XOUT",
+      "C_IO1",
+      "C_IO10",
+      "C_IO22",
+      "C_IO33",
+      "C_IO42",
+      "C_IO49",
+      "C_ADC",
+      "C_USB",
+      "C_VREG_IN",
+      "C_VREG_OUT",
+      "C_DV23",
+      "C_DV50",
+      "R_RUN",
+      "TP_3V3",
+      "TP_GND",
+      "TP_SWCLK",
+      "TP_SWDIO",
+      "TP_RUN"
+    ],
+    "04 Stepper motor driver": [
+      "U_DRV",
+      "J_MOTOR",
+      "R_SA",
+      "R_SB",
+      "C_CP",
+      "C_VCP",
+      "C_VREG",
+      "C_VM",
+      "C_BULK",
+      "C_DRV_LOGIC",
+      "R_REF_H",
+      "R_REF_L",
+      "C_REF",
+      "R_ENABLE",
+      "R_SLEEP",
+      "R_VM_H",
+      "R_VM_L",
+      "C_VM_SENSE"
+    ],
+    "05 Temperature & feedback": [
+      "U_TEMP",
+      "C_TEMP",
+      "R_TEMP_SDA",
+      "R_TEMP_SCL",
+      "D_STATUS",
+      "R_STATUS_R",
+      "Q_STATUS_R",
+      "R_STATUS_G",
+      "Q_STATUS_G",
+      "R_STATUS_B",
+      "Q_STATUS_B",
+      "BZ1",
+      "Q_BUZZER",
+      "R_BUZZER_GATE",
+      "R_BUZZER_PD",
+      "D_BUZZER",
+      "C_BUZZER",
+      "R_PWR_LED",
+      "D_PWR"
+    ],
+    "06 Optional encoder (DNP)": ["U_ENCODER", "C_ENCODER", "C_ENCODER_BULK"]
+  },
+  "placements": {
+    "J_PD": {
+      "schX": 4,
+      "schY": 14.8
+    },
+    "U_PD": {
+      "schX": 11,
+      "schY": 15.72
+    },
+    "R_PD_CFG": {
+      "schX": 15.9,
+      "schY": 10.2
+    },
+    "R_PD": {
+      "schX": 9.8,
+      "schY": 10.2
+    },
+    "C_PD": {
+      "schX": 12.7,
+      "schY": 10.2
+    },
+    "R_PG": {
+      "schX": 14.5,
+      "schY": 15.5
+    },
+    "D_TVS": {
+      "schX": 4,
+      "schY": 9.2
+    },
+    "D_PD": {
+      "schX": 19.2,
+      "schY": 16.8
+    },
+    "D_DATA": {
+      "schX": 19.2,
+      "schY": 14.5
+    },
+    "U_BUCK": {
+      "schX": 24,
+      "schY": 13.2
+    },
+    "L_BUCK": {
+      "schX": 28.2,
+      "schY": 13.2
+    },
+    "C_BOOTSTRAP": {
+      "schX": 26.5,
+      "schY": 15.2
+    },
+    "C_BUCK_IN": {
+      "schX": 21,
+      "schY": 9.5
+    },
+    "C_BUCK_OUT1": {
+      "schX": 27,
+      "schY": 9.5
+    },
+    "C_BUCK_OUT2": {
+      "schX": 29.1,
+      "schY": 9.5
+    },
+    "J_DATA": {
+      "schX": 4,
+      "schY": 14.1
+    },
+    "R_CC1": {
+      "schX": 8.3,
+      "schY": 16.4
+    },
+    "R_CC2": {
+      "schX": 11,
+      "schY": 16.4
+    },
+    "U_ESD": {
+      "schX": 10,
+      "schY": 11.3
+    },
+    "R_DP": {
+      "schX": 15.4,
+      "schY": 11.85
+    },
+    "R_DM": {
+      "schX": 15.4,
+      "schY": 10.75
+    },
+    "R_USB_SENSE_H": {
+      "schX": 4,
+      "schY": 6.2
+    },
+    "R_USB_SENSE_L": {
+      "schX": 4,
+      "schY": 3.8
+    },
+    "U_FLASH": {
+      "schX": 24.5,
+      "schY": 14.6
+    },
+    "C_FLASH": {
+      "schX": 29.8,
+      "schY": 14.8
+    },
+    "R_FLASH_CS": {
+      "schX": 20,
+      "schY": 11.5
+    },
+    "R_BOOT": {
+      "schX": 23.5,
+      "schY": 7
+    },
+    "TP_BOOT": {
+      "schX": 27,
+      "schY": 7
+    },
+    "TP_BOOT_GND": {
+      "schX": 27,
+      "schY": 5.5
+    },
+    "U_MCU": {
+      "schX": 9.5,
+      "schY": 11.5
+    },
+    "Y_MCU": {
+      "schX": 23,
+      "schY": 16.5
+    },
+    "R_XOUT": {
+      "schX": 27.5,
+      "schY": 16.4875
+    },
+    "C_XIN": {
+      "schX": 19.5,
+      "schY": 16
+    },
+    "C_XOUT": {
+      "schX": 25.5,
+      "schY": 16
+    },
+    "C_IO1": {
+      "schX": 17.3,
+      "schY": 11.5
+    },
+    "C_IO10": {
+      "schX": 19.400000000000002,
+      "schY": 11.5
+    },
+    "C_IO22": {
+      "schX": 21.5,
+      "schY": 11.5
+    },
+    "C_IO33": {
+      "schX": 23.6,
+      "schY": 11.5
+    },
+    "C_IO42": {
+      "schX": 25.700000000000003,
+      "schY": 11.5
+    },
+    "C_IO49": {
+      "schX": 27.8,
+      "schY": 11.5
+    },
+    "C_ADC": {
+      "schX": 17.3,
+      "schY": 7.8
+    },
+    "C_USB": {
+      "schX": 19.400000000000002,
+      "schY": 7.8
+    },
+    "C_VREG_IN": {
+      "schX": 21.5,
+      "schY": 7.8
+    },
+    "C_VREG_OUT": {
+      "schX": 17.3,
+      "schY": 3.5
+    },
+    "C_DV23": {
+      "schX": 19.400000000000002,
+      "schY": 3.5
+    },
+    "C_DV50": {
+      "schX": 21.5,
+      "schY": 3.5
+    },
+    "R_RUN": {
+      "schX": 3,
+      "schY": 10.1
+    },
+    "TP_3V3": {
+      "schX": 2,
+      "schY": 6.5
+    },
+    "TP_GND": {
+      "schX": 4.5,
+      "schY": 6.5
+    },
+    "TP_SWCLK": {
+      "schX": 2,
+      "schY": 5
+    },
+    "TP_SWDIO": {
+      "schX": 2,
+      "schY": 3.5
+    },
+    "TP_RUN": {
+      "schX": 4.5,
+      "schY": 3.5
+    },
+    "U_DRV": {
+      "schX": 15.5,
+      "schY": 12.3
+    },
+    "J_MOTOR": {
+      "schX": 28,
+      "schY": 13.91
+    },
+    "R_SA": {
+      "schX": 22,
+      "schY": 10.9
+    },
+    "R_SB": {
+      "schX": 25.8,
+      "schY": 10.9
+    },
+    "C_CP": {
+      "schX": 23,
+      "schY": 8.4
+    },
+    "C_VCP": {
+      "schX": 27.5,
+      "schY": 8.4
+    },
+    "C_VREG": {
+      "schX": 29.5,
+      "schY": 5.2
+    },
+    "C_VM": {
+      "schX": 3,
+      "schY": 16.5
+    },
+    "C_BULK": {
+      "schX": 5.1,
+      "schY": 16.5
+    },
+    "C_DRV_LOGIC": {
+      "schX": 8.5,
+      "schY": 16.5
+    },
+    "R_REF_H": {
+      "schX": 3,
+      "schY": 11
+    },
+    "R_REF_L": {
+      "schX": 3,
+      "schY": 8.6
+    },
+    "C_REF": {
+      "schX": 6.8,
+      "schY": 8.6
+    },
+    "R_ENABLE": {
+      "schX": 9,
+      "schY": 11.8
+    },
+    "R_SLEEP": {
+      "schX": 9,
+      "schY": 8.8
+    },
+    "R_VM_H": {
+      "schX": 3,
+      "schY": 4.9
+    },
+    "R_VM_L": {
+      "schX": 7,
+      "schY": 4.9
+    },
+    "C_VM_SENSE": {
+      "schX": 10.5,
+      "schY": 4.9
+    },
+    "U_TEMP": {
+      "schX": 5.2,
+      "schY": 15.5
+    },
+    "C_TEMP": {
+      "schX": 10.8,
+      "schY": 15.5
+    },
+    "R_TEMP_SDA": {
+      "schX": 2.3,
+      "schY": 11.5
+    },
+    "R_TEMP_SCL": {
+      "schX": 6.3,
+      "schY": 11.5
+    },
+    "D_STATUS": {
+      "schX": 25.3,
+      "schY": 17.3
+    },
+    "R_STATUS_R": {
+      "schX": 22,
+      "schY": 14.8
+    },
+    "Q_STATUS_R": {
+      "schX": 21.6375,
+      "schY": 12.7
+    },
+    "R_STATUS_G": {
+      "schX": 25.3,
+      "schY": 14.8
+    },
+    "Q_STATUS_G": {
+      "schX": 24.9375,
+      "schY": 12.7
+    },
+    "R_STATUS_B": {
+      "schX": 28.6,
+      "schY": 14.8
+    },
+    "Q_STATUS_B": {
+      "schX": 28.2375,
+      "schY": 12.7
+    },
+    "BZ1": {
+      "schX": 9.4,
+      "schY": 6.5
+    },
+    "Q_BUZZER": {
+      "schX": 8.5,
+      "schY": 3.8
+    },
+    "R_BUZZER_GATE": {
+      "schX": 3.8,
+      "schY": 4.6
+    },
+    "R_BUZZER_PD": {
+      "schX": 5.8,
+      "schY": 3.6
+    },
+    "D_BUZZER": {
+      "schX": 14,
+      "schY": 6.5
+    },
+    "C_BUZZER": {
+      "schX": 17,
+      "schY": 6.5
+    },
+    "R_PWR_LED": {
+      "schX": 25,
+      "schY": 6.2
+    },
+    "D_PWR": {
+      "schX": 25,
+      "schY": 3.8
+    },
+    "U_ENCODER": {
+      "schX": 9,
+      "schY": 13
+    },
+    "C_ENCODER": {
+      "schX": 19,
+      "schY": 13
+    },
+    "C_ENCODER_BULK": {
+      "schX": 21.1,
+      "schY": 13
+    }
+  }
+}

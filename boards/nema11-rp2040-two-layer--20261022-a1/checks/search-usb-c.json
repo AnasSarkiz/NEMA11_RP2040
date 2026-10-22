@@ -1,0 +1,115 @@
+{
+  "query": "USB-C",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 12779,
+      "mfr": "L2N7002LT1G",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1 N-channel 1.4Ω@10V 10pF 115mA 17pF 2.5pF 225mW 2V 60V N-Channel SOT-23 MOSFETs ROHS",
+      "stock": 1088681,
+      "price": 0.013
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 46550432,
+      "mfr": "PA35V220M6x12",
+      "package": "插件,D6.3xL12mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 250611,
+      "price": 0.175
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 2874965,
+      "mfr": "LM2902DR",
+      "package": "SOP-14",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-13V~-1.5V、1.5V~13V -40℃~+105℃ 1.2MHz 20mA 20nA 2nA 35nV/√Hz@1kHz 3V~26V 3mV 4 500V/ms 700uA 80dB Built-in compensation SOP-14 Operational Amplifier ROHS",
+      "stock": 232505,
+      "price": 0.1102
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 74301,
+      "mfr": "SDCL1005C24NJTDF",
+      "package": "0402",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "24nH Multilayer inductor ±5% 0402 Inductors (SMD) ROHS",
+      "stock": 215878,
+      "price": 0.0065
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 12777,
+      "mfr": "LMUN2233LT1G",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 0.185 1 NPN (Pre-Biased) 100mA 100nA 200mV 246mW 250mV 47kΩ 50V 80 NPN SOT-23 Digital Transistors ROHS",
+      "stock": 204449,
+      "price": 0.0197
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 521230,
+      "mfr": "DLM11SN900HZ2L",
+      "package": "SMD-4P,1.2x1mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+125℃ 1.38Ω 100MΩ 100mA 12.5V 2 5V 90Ω@100MHz SMD-4P,1.2x1mm Common Mode Filters ROHS",
+      "stock": 166300,
+      "price": 0.1199
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 16903,
+      "mfr": "BLM21PG300SN1D",
+      "package": "0805",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1 14mΩ 30Ω@100MHz 4A ±25% 0805 Ferrite Beads ROHS",
+      "stock": 137132,
+      "price": 0.0274
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 22395541,
+      "mfr": "MM1W75",
+      "package": "SOD-123",
+      "is_basic": false,
+      "is_preferred": true,
+      "description": "",
+      "stock": 122727,
+      "price": 0.0354
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 42385002,
+      "mfr": "EL357N(D)(TA)-G",
+      "package": "SOP-4-2.54mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 122315,
+      "price": 0.0687
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 347479,
+      "mfr": "AO3415A",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 1 P-Channel 1.45nF 160pF 17.2nC@4.5V 205pF 20V 350mW 36mΩ@4.5V、60mΩ@2.5V 4A 560mV P-Channel SOT-23 MOSFETs ROHS",
+      "stock": 99505,
+      "price": 0.0419
+    }
+  ]
+}

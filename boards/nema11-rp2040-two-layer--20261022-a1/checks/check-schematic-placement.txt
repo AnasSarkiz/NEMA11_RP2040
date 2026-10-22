@@ -1,0 +1,66 @@
+AutoroutingPipelineSolver9_PreloadedTraceGraph error: Error: ExpandEdgesToEmptySpaceSolver bounds must be finite, got {"minX":null,"maxX":null,"minY":null,"maxY":null}
+Async effect error in PcbTraceRender "autorouting":
+AutorouterError: ExpandEdgesToEmptySpaceSolver bounds must be finite, got {"minX":null,"maxX":null,"minY":null,"maxY":null} (capacity-autorouter@0.0.958)
+    at runCycleAndQueueNextCycle (/workspace/NEMA11_RP2040/boards/nema11-rp2040-two-layer--20261022-a1/node_modules/@tscircuit/core/dist/index.js:107833:45)
+    at processTicksAndRejections (native:7:39)
+<SchematicSheet name="02 Programming &amp; USB" id="schematic_sheet_1">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="R_DP" positionAnchor="center" schX="-2.56" schY="-1.595" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicTextCollision text="USB_DP" collidingObjectType="trace" message="Text &quot;USB_DP&quot; overlaps trace; adjust the owning trace's label placement or remove stale duplicates to leave the visible text area clear." />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="01 Power &amp; USB-PD" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="R_PD" positionAnchor="center" schX="0.625" schY="2.24" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="D_PD" positionAnchor="center" schX="-2.78" schY="1.45" width="1.04" height="0.54" />
+<SchematicBoxPlacement componentName="C_BOOTSTRAP" positionAnchor="center" schX="0.13" schY="-5.32" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="C_BUCK_OUT1" positionAnchor="center" schX="-2.61" schY="-4.28" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="C_BUCK_OUT2" positionAnchor="center" schX="-4.77" schY="-4.28" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="D_PD" diodePin="anode" resistorComponentName="R_PD" resistorPin="anode" message="trace has corners — align D_PD and R_PD on same axis and rotate so D_PD.anode faces R_PD.anode" />
+<TwoPinComponentShouldBeVertical componentName="R_PD" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_PD by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="C_BOOTSTRAP" railPin="pin2" railType="power" deltaSchRotation="90" suggestedRailFacingDirection="up" message="rotate C_BOOTSTRAP by 90° so its power-connected pin faces up and the component is vertical" />
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="C_BUCK_OUT1, C_BUCK_OUT2" maxBodyGap="1.51" maxRecommendedBodyGap="1" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="05 Temperature &amp; feedback" id="schematic_sheet_4">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_TEMP" positionAnchor="center" schX="0" schY="0" width="1.2" height="0.8" />
+<SchematicBoxPlacement componentName="R_TEMP_SCL" positionAnchor="center" schX="0.163" schY="-3.705" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="BZ1" positionAnchor="center" schX="2.6" schY="-0.005" width="0.38" height="0.6" />
+<SchematicBoxPlacement componentName="D_BUZZER" positionAnchor="center" schX="2.935" schY="-4.2" width="0.54" height="1.04" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="D_BUZZER" diodePin="cathode" resistorComponentName="R_TEMP_SCL" resistorPin="cathode" message="trace has corners — align D_BUZZER and R_TEMP_SCL on same axis and rotate so D_BUZZER.cathode faces R_TEMP_SCL.cathode" />
+<ComponentNetLabelCollision pair1="U_TEMP/BZ1">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="U_TEMP" newSchX="-0.57" newSchY="0" />
+    <Move componentName="BZ1" newSchX="3.17" newSchY="-0.01" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="04 Stepper motor driver" id="schematic_sheet_3">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C_VCP" positionAnchor="center" schX="-10.1" schY="-2.375" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R_REF_H" positionAnchor="center" schX="-2.04" schY="-2.375" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R_VM_H" positionAnchor="center" schX="4.505" schY="-2.375" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="C_VCP" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate C_VCP by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R_REF_H" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_REF_H by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R_VM_H" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R_VM_H by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="06 Optional encoder (DNP)" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C_ENCODER" positionAnchor="center" schX="-5.08" schY="-0.2" width="0.65" height="0.6" />
+<SchematicBoxPlacement componentName="C_ENCODER_BULK" positionAnchor="center" schX="-2.86" schY="-0.2" width="0.65" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="C_ENCODER, C_ENCODER_BULK" maxBodyGap="1.57" maxRecommendedBodyGap="1" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
+</SchematicSheet>

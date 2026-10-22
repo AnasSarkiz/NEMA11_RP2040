@@ -1,0 +1,12 @@
+index.circuit.tsx 134ms
+assets.d.ts 3ms (unchanged)
+package.json 15ms (unchanged)
+tsconfig.json 2ms (unchanged)
+tscircuit.config.json 1ms (unchanged)
+config/component-plan.json 4ms (unchanged)
+config/connections.json 17ms (unchanged)
+config/placement.json 11ms (unchanged)
+config/requirements.json 3ms (unchanged)
+config/schematic-layout.json 7ms (unchanged)
+README.md 22ms (unchanged)
+VALIDATION.md 16ms (unchanged)

@@ -1,0 +1,3138 @@
+{
+  "source_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
+  "circuit_json_sha256": "8ae3f3aee82d7c470a452a13b4d511cce0a19670f6098a3749d76ddab7a8ee6e",
+  "structural_checks": [
+    {
+      "check": "native output belongs to current source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_DATA genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_TVS genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BULK genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "L_BUCK genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Y_MCU genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PG genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_FLASH_CS genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BOOT genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_XOUT genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_RUN genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DM genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC1 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC2 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_H genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_L genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_H genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_L genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SA genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SB genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_H genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_L genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_ENABLE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SLEEP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO1 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO10 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO22 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO33 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO42 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO49 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV23 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV50 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_USB genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ADC genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_IN genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_OUT genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_FLASH genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XIN genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XOUT genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM_SENSE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BOOTSTRAP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_IN genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT1 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT2 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_CP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VCP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DRV_LOGIC genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_REF genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_MOTOR genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_PWR genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PWR_LED genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_STATUS genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_R genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_G genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_B genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_TEMP genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SDA genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SCL genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BZ1 genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_BUZZER genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_BUZZER genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_GATE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUZZER genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER_BULK genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD_CFG genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B103KB5NNNC/CL05B103KB5NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B103KB8NNNC/CL10B103KB8NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B103KB8NNNC/CL10B103KB8NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SMF18A/SMF18A.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SMF18A/SMF18A.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SMF18A/SMF18A.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A106KP8NNNC/CL10A106KP8NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10A106KP8NNNC/CL10A106KP8NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RP2040/RP2040.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RP2040/RP2040.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RP2040/RP2040.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/ABM8_272_T3/ABM8_272_T3.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/ABM8_272_T3/ABM8_272_T3.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/ABM8_272_T3/ABM8_272_T3.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AO3400A/AO3400A.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AO3400A/AO3400A.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AO3400A/AO3400A.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B224KA8NNNC/CL10B224KA8NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL10B224KA8NNNC/CL10B224KA8NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF0000T5E/A_0603WAF0000T5E.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF0000T5E/A_0603WAF0000T5E.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF3300TCE/A_0402WGF3300TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF3300TCE/A_0402WGF3300TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1003TCE/A_0402WGF1003TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5602TCE/A_0402WGF5602TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5602TCE/A_0402WGF5602TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1003T5E/A_0603WAF1003T5E.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1003T5E/A_0603WAF1003T5E.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0402WGF5101TCE/A_0402WGF5101TCE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/USBLC6_2SC6/USBLC6_2SC6.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A4988SETTR_T/A4988SETTR_T.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A4988SETTR_T/A4988SETTR_T.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A4988SETTR_T/A4988SETTR_T.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CH224A/CH224A.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CH224A/CH224A.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CH224A/CH224A.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/LTST_C19HE1WT/LTST_C19HE1WT.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/LTST_C19HE1WT/LTST_C19HE1WT.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/PMEG6020ELRX/PMEG6020ELRX.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/PMEG6020ELRX/PMEG6020ELRX.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/PMEG6020ELRX/PMEG6020ELRX.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DTC114EU3HZGT106/DTC114EU3HZGT106.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RVT1V470M0605/RVT1V470M0605.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RVT1V470M0605/RVT1V470M0605.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/RVT1V470M0605/RVT1V470M0605.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/HP05W3F240LT5E/HP05W3F240LT5E.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/HP05W3F240LT5E/HP05W3F240LT5E.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SRN4018_4R7M/SRN4018_4R7M.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SRN4018_4R7M/SRN4018_4R7M.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/SRN4018_4R7M/SRN4018_4R7M.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AP63203WU_7/AP63203WU_7.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AP63203WU_7/AP63203WU_7.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AP63203WU_7/AP63203WU_7.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AS5600_ASOM/AS5600_ASOM.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AS5600_ASOM/AS5600_ASOM.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B5819W_SL/B5819W_SL.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B5819W_SL/B5819W_SL.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/B5819W_SL/B5819W_SL.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/MLT_5020/MLT_5020.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/MLT_5020/MLT_5020.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/MLT_5020/MLT_5020.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CL05B104KB5NNNC/CL05B104KB5NNNC.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/XL_1608SURC_06/XL_1608SURC_06.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/XL_1608SURC_06/XL_1608SURC_06.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/XL_1608SURC_06/XL_1608SURC_06.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TMP102AIDRLR/TMP102AIDRLR.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TMP102AIDRLR/TMP102AIDRLR.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/TMP102AIDRLR/TMP102AIDRLR.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 3 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 13 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 14 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 6 -> PD_CC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 12 -> PD_CC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 15 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD pin 16 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 3 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 13 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 14 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 6 -> DATA_CC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 12 -> DATA_CC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 15 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 16 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 7 -> USB_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 9 -> USB_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 8 -> USB_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA pin 10 -> USB_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 1 -> PD_VHV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 6 -> PD_CC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 7 -> PD_CC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 8 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 9 -> PD_CFG",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 10 -> PD_GOOD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD pin 11 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD pin 1 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD pin 2 -> PD_VHV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 0,
+        "actual": 0
+      }
+    },
+    {
+      "check": "C_PD pin 1 -> PD_VHV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_PD supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-06,
+        "actual": 1e-06
+      }
+    },
+    {
+      "check": "R_PG pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PG pin 2 -> PD_GOOD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PG supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "U_MCU pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 4 -> LED_G",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 5 -> LED_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 8 -> STEP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 9 -> DIR",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 10 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 11 -> ENABLE_N",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 12 -> SLEEP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 13 -> PD_GOOD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 19 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 20 -> XIN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 21 -> XOUT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 22 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 23 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 24 -> SWCLK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 25 -> SWDIO",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 26 -> RUN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 27 -> BUZZER_PWM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 33 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 37 -> LED_R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 38 -> TEMP_SDA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 39 -> TEMP_SCL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 40 -> VM_SENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 41 -> DATA_PRESENT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 42 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 43 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 44 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 45 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 46 -> MCU_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 47 -> MCU_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 48 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 49 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 50 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 51 -> QSPI_SD3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 52 -> QSPI_SCLK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 53 -> QSPI_SD0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 54 -> QSPI_SD2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 55 -> QSPI_SD1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 56 -> QSPI_SS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU pin 57 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO1 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO1 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO1 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_IO10 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO10 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO10 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_IO22 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO22 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO22 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_IO33 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO33 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO33 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_IO42 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO42 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO42 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_IO49 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO49 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_IO49 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_DV23 pin 1 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV23 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV23 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_DV50 pin 1 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV50 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DV50 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_USB pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_USB pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_USB supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_ADC pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ADC pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ADC supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_VREG_IN pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_IN pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_IN supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-06,
+        "actual": 1e-06
+      }
+    },
+    {
+      "check": "C_VREG_OUT pin 1 -> V1V1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_OUT pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG_OUT supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-06,
+        "actual": 1e-06
+      }
+    },
+    {
+      "check": "U_FLASH pin 1 -> QSPI_SS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 2 -> QSPI_SD1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 3 -> QSPI_SD2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 5 -> QSPI_SD0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 6 -> QSPI_SCLK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 7 -> QSPI_SD3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 8 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_FLASH pin 9 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_FLASH pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_FLASH pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_FLASH supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "R_FLASH_CS pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_FLASH_CS pin 2 -> QSPI_SS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_FLASH_CS supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "R_BOOT pin 1 -> QSPI_SS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BOOT pin 2 -> BOOT_PAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BOOT supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "Y_MCU pin 1 -> XIN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Y_MCU pin 3 -> XTAL_OUT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Y_MCU pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Y_MCU pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_XOUT pin 1 -> XOUT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_XOUT pin 2 -> XTAL_OUT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_XOUT supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "C_XIN pin 1 -> XIN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XIN pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XIN supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1.5e-11,
+        "actual": 1.5e-11
+      }
+    },
+    {
+      "check": "C_XOUT pin 1 -> XTAL_OUT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XOUT pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_XOUT supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1.5e-11,
+        "actual": 1.5e-11
+      }
+    },
+    {
+      "check": "R_RUN pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_RUN pin 2 -> RUN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_RUN supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "R_DM pin 1 -> MCU_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DM pin 2 -> USB_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DM supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 27,
+        "actual": 27
+      }
+    },
+    {
+      "check": "R_DP pin 1 -> MCU_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DP pin 2 -> USB_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_DP supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 27,
+        "actual": 27
+      }
+    },
+    {
+      "check": "R_CC1 pin 1 -> DATA_CC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC1 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC1 supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 5100,
+        "actual": 5100
+      }
+    },
+    {
+      "check": "R_CC2 pin 1 -> DATA_CC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC2 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_CC2 supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 5100,
+        "actual": 5100
+      }
+    },
+    {
+      "check": "R_USB_SENSE_H pin 1 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_H pin 2 -> DATA_PRESENT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_H supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "R_USB_SENSE_L pin 1 -> DATA_PRESENT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_L pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_USB_SENSE_L supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "R_VM_H pin 1 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_H pin 2 -> VM_SENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_H supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "R_VM_L pin 1 -> VM_SENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_L pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_VM_L supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "C_VM_SENSE pin 1 -> VM_SENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM_SENSE pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM_SENSE supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-08,
+        "actual": 1e-08
+      }
+    },
+    {
+      "check": "U_BUCK pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK pin 2 -> LOGIC_IN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK pin 3 -> LOGIC_IN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK pin 5 -> BUCK_SW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_BUCK pin 6 -> BUCK_BST",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "L_BUCK pin 1 -> BUCK_SW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "L_BUCK pin 2 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "L_BUCK supplier inductance",
+      "passed": true,
+      "detail": {
+        "expected": "4.7uH",
+        "actual": 4.7e-06
+      }
+    },
+    {
+      "check": "C_BOOTSTRAP pin 1 -> BUCK_BST",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BOOTSTRAP pin 2 -> BUCK_SW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BOOTSTRAP supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_BUCK_IN pin 1 -> LOGIC_IN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_IN pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_IN supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-05,
+        "actual": 1e-05
+      }
+    },
+    {
+      "check": "C_BUCK_OUT1 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT1 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT1 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 2.2e-05,
+        "actual": 2.2e-05
+      }
+    },
+    {
+      "check": "C_BUCK_OUT2 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT2 pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUCK_OUT2 supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 2.2e-05,
+        "actual": 2.2e-05
+      }
+    },
+    {
+      "check": "D_PD pin 1 -> LOGIC_IN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_PD pin 2 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_DATA pin 1 -> LOGIC_IN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_DATA pin 2 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 1 -> B_MINUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 2 -> ENABLE_N",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 3 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 4 -> CP1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 5 -> CP2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 6 -> VCP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 8 -> VREG",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 9 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 10 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 11 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 12 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 13 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 14 -> SLEEP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 15 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 16 -> STEP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 17 -> VREF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 18 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 19 -> DIR",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 21 -> A_MINUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 22 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 23 -> SENSE1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 24 -> A_PLUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 26 -> B_PLUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 27 -> SENSE2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 28 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV pin 29 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_CP pin 1 -> CP1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_CP pin 2 -> CP2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_CP supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_VCP pin 1 -> VCP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VCP pin 2 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VCP supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_VREG pin 1 -> VREG",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VREG supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 2.2e-07,
+        "actual": 2.2e-07
+      }
+    },
+    {
+      "check": "C_DRV_LOGIC pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DRV_LOGIC pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_DRV_LOGIC supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_VM pin 1 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_VM supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_BULK pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BULK pin 1 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BULK supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 4.7e-05,
+        "actual": 4.7e-05
+      }
+    },
+    {
+      "check": "R_SA pin 1 -> SENSE1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SA pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SA supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 0.24,
+        "actual": 0.24
+      }
+    },
+    {
+      "check": "R_SB pin 1 -> SENSE2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SB pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SB supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 0.24,
+        "actual": 0.24
+      }
+    },
+    {
+      "check": "R_REF_H pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_H pin 2 -> VREF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_H supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 20000,
+        "actual": 20000
+      }
+    },
+    {
+      "check": "R_REF_L pin 1 -> VREF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_L pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_REF_L supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "C_REF pin 1 -> VREF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_REF pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_REF supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-08,
+        "actual": 1e-08
+      }
+    },
+    {
+      "check": "R_ENABLE pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_ENABLE pin 2 -> ENABLE_N",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_ENABLE supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "R_SLEEP pin 1 -> SLEEP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SLEEP pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_SLEEP supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "J_MOTOR pin 1 -> A_PLUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_MOTOR pin 2 -> A_MINUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_MOTOR pin 3 -> B_PLUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_MOTOR pin 4 -> B_MINUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 1 -> USB_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 3 -> USB_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 4 -> USB_DM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 5 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ESD pin 6 -> USB_DP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_TVS pin 2 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_TVS pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP pin 1 -> TEMP_SCL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP pin 5 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP pin 6 -> TEMP_SDA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_TEMP pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_TEMP pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_TEMP supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "R_TEMP_SDA pin 1 -> TEMP_SDA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SDA pin 2 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SDA supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 4700,
+        "actual": 4700
+      }
+    },
+    {
+      "check": "R_TEMP_SCL pin 1 -> TEMP_SCL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SCL pin 2 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_TEMP_SCL supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 4700,
+        "actual": 4700
+      }
+    },
+    {
+      "check": "D_PWR pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_PWR pin 2 -> PWR_LED_A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PWR_LED pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PWR_LED pin 2 -> PWR_LED_A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PWR_LED supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 330,
+        "actual": 330
+      }
+    },
+    {
+      "check": "D_STATUS pin 1 -> STATUS_R_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_STATUS pin 2 -> STATUS_G_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_STATUS pin 3 -> STATUS_B_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_STATUS pin 4 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R pin 1 -> STATUS_R_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R pin 2 -> STATUS_R_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "Q_STATUS_R pin 3 -> STATUS_R_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_R pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_R pin 2 -> LED_R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G pin 1 -> STATUS_G_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G pin 2 -> STATUS_G_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "Q_STATUS_G pin 3 -> STATUS_G_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_G pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_G pin 2 -> LED_G",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B pin 1 -> STATUS_B_K",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B pin 2 -> STATUS_B_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "Q_STATUS_B pin 3 -> STATUS_B_C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_B pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_STATUS_B pin 2 -> LED_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BZ1 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BZ1 pin 2 -> BUZZER_SINK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_BUZZER pin 3 -> BUZZER_SINK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_BUZZER pin 1 -> BUZZER_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_BUZZER pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_BUZZER pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "D_BUZZER pin 2 -> BUZZER_SINK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_GATE pin 1 -> BUZZER_PWM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_GATE pin 2 -> BUZZER_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_GATE supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100,
+        "actual": 100
+      }
+    },
+    {
+      "check": "R_BUZZER_PD pin 1 -> BUZZER_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_BUZZER_PD supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 100000,
+        "actual": 100000
+      }
+    },
+    {
+      "check": "C_BUZZER pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUZZER pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_BUZZER supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-05,
+        "actual": 1e-05
+      }
+    },
+    {
+      "check": "TP_3V3 pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_GND pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_SWCLK pin 1 -> SWCLK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_SWDIO pin 1 -> SWDIO",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_RUN pin 1 -> RUN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_BOOT pin 1 -> BOOT_PAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "TP_BOOT_GND pin 1 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 2 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 4 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 6 -> TEMP_SDA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 7 -> TEMP_SCL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER pin 8 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "C_ENCODER_BULK pin 1 -> V3V3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER_BULK pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ENCODER_BULK supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-06,
+        "actual": 1e-06
+      }
+    },
+    {
+      "check": "R_PD_CFG pin 1 -> PD_CFG",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD_CFG pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_PD_CFG supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 56000,
+        "actual": 56000
+      }
+    },
+    {
+      "check": "two copper layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "28 mm square outline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "routing remains disabled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "full buzzer stage present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "optional encoder remains DNP",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "structural_failure_count": 0,
+  "native_errors": {
+    "pcb_placement_error": 29,
+    "pcb_footprint_overlap_error": 60,
+    "pcb_pad_pad_clearance_error": 10,
+    "pcb_courtyard_overlap_error": 56,
+    "pcb_autorouting_error": 1
+  },
+  "native_error_count": 156,
+  "manufacturing_approved": false,
+  "scope": "Source preservation and import integrity only; does not approve schematic, placement, routing, shorts, mechanics or manufacturing."
+}

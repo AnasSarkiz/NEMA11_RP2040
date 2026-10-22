@@ -1,0 +1,829 @@
+placement summary: 31 pad overlaps, 57 courtyard collisions, 12 connector-body intrusions, 2 footprint intrusions, 4 suboptimal orientations
+
+worst issues:
+1. U_ENCODER intrudes 4.13mm into U_MCU connector body. Suggested move: move U_ENCODER 4.13mm down.
+2. C_BUCK_IN and Q_BUZZER pad overlap by 0.65mm. Suggested move: move Q_BUZZER 0.65mm up.
+3. U_MCU and U_ENCODER pad overlap by 0.568mm. Suggested move: move U_ENCODER 0.568mm right.
+4. C_BUCK_OUT2 and C_IO33 pad overlap by 0.5mm. Suggested move: move C_IO33 0.5mm right.
+5. C_USB and U_ENCODER pad overlap by 0.5mm. Suggested move: move C_USB 0.5mm left.
+
+likely bad clusters:
+- U_ENCODER cluster: U_ENCODER, U_MCU, C_USB, C_DV50, R_DP, C_IO49, R_DM, C_ENCODER_BULK, U_FLASH, C_IO1, C_ENCODER, C_VREG_OUT, C_FLASH
+- Q_BUZZER cluster: Q_BUZZER, U_BUCK, C_BUCK_OUT2, C_ADC, C_BUCK_IN, L_BUCK, R_BUZZER_PD, D_BUZZER, R_BUZZER_GATE, C_VREG_IN, C_IO33, C_BUCK_OUT1, C_IO42, R_STATUS_B, R_ENABLE, R_USB_SENSE_H, R_STATUS_R, C_BOOTSTRAP
+- U_PD cluster: U_PD, C_PD, R_CC1, R_CC2, D_TVS, R_VM_H
+- Y_MCU cluster: Y_MCU, C_XOUT, Q_STATUS_B, R_STATUS_G, R_FLASH_CS, C_DV23, R_XOUT, C_IO22, C_XIN
+- J_DATA cluster: R_SB, C_REF, U_DRV, R_SA, C_VM, C_VREG, J_DATA, C_BULK, J_PD
+- D_PD cluster: D_PD, R_TEMP_SCL, R_USB_SENSE_L, R_PD
+- U_ESD cluster: U_ESD, D_DATA, R_VM_L
+
+board top-layer utilization:
+- occupied: 52.272% (409.816mm^2 of 784mm^2)
+- empty spaces over 5% of board area:
+  - 17.5% (137.199mm^2); bounds=(minX=-14mm, maxX=14mm, minY=9.1mm, maxY=14mm)
+  - 8.985% (70.445mm^2); bounds=(minX=4.35mm, maxX=14mm, minY=-14mm, maxY=-6.7mm)
+
+board-edge status:
+- J_PD: 3.775mm inside left edge
+- U_PD: 1.3mm inside bottom edge
+- R_PD_CFG: 0.28mm inside right edge
+- R_PD: 0.343mm inside bottom edge
+- C_PD: 0.75mm inside bottom edge
+- R_PG: 0.343mm inside right edge
+- D_TVS: 0.6mm inside bottom edge
+- D_PD: 2.7mm inside bottom edge
+- D_DATA: 2.7mm inside bottom edge
+- U_BUCK: 3.775mm inside left edge
+- L_BUCK: 3.2mm inside left edge
+- C_BOOTSTRAP: 1.83mm inside left edge
+- C_BUCK_IN: 2.265mm inside left edge
+- C_BUCK_OUT1: 5.495mm inside top edge
+- C_BUCK_OUT2: 7.325mm inside left edge
+- J_DATA: 3.775mm inside right edge
+- R_CC1: 0.434mm inside bottom edge
+- R_CC2: 2.58mm inside bottom edge
+- U_ESD: 0.534mm inside bottom edge
+- R_DP: 11.569mm inside bottom edge
+- R_DM: 11.03mm inside left edge
+- R_USB_SENSE_H: 1.884mm inside left edge
+- R_USB_SENSE_L: 1.084mm inside left edge
+- U_FLASH: 8.977mm inside bottom edge
+- C_FLASH: 7.83mm inside bottom edge
+- R_FLASH_CS: 4.38mm inside top edge
+- R_BOOT: 5.534mm inside right edge
+- TP_BOOT: 0.65mm inside top edge
+- TP_BOOT_GND: 0.65mm inside top edge
+- U_MCU: 6.75mm inside top edge
+- Y_MCU: 2.6mm inside top edge
+- R_XOUT: 3.072mm inside top edge
+- C_XIN: 4.368mm inside top edge
+- C_XOUT: 0.918mm inside top edge
+- C_IO1: 10.83mm inside right edge
+- C_IO10: 8.78mm inside right edge
+- C_IO22: 5.565mm inside top edge
+- C_IO33: 7.78mm inside left edge
+- C_IO42: 7.78mm inside left edge
+- C_IO49: 11.715mm inside bottom edge
+- C_ADC: 8.38mm inside left edge
+- C_USB: 10.828mm inside bottom edge
+- C_VREG_IN: 7.78mm inside left edge
+- C_VREG_OUT: 10.23mm inside left edge
+- C_DV23: 4.824mm inside top edge
+- C_DV50: 11.715mm inside bottom edge
+- R_RUN: 5.434mm inside right edge
+- TP_3V3: 0.65mm inside top edge
+- TP_GND: 0.65mm inside top edge
+- TP_SWCLK: 0.65mm inside top edge
+- TP_SWDIO: 0.65mm inside top edge
+- TP_RUN: 0.65mm inside top edge
+- U_DRV: 6.85mm inside top edge
+- J_MOTOR: 1.7mm inside right edge
+- R_SA: 10.234mm inside right edge
+- R_SB: 11.034mm inside left edge
+- C_CP: 9.23mm inside left edge
+- C_VCP: 7.83mm inside top edge
+- C_VREG: 5.05mm inside top edge
+- C_VM: 10.33mm inside left edge
+- C_BULK: 2.661mm inside top edge
+- C_DRV_LOGIC: 3.23mm inside top edge
+- R_REF_H: 2.218mm inside bottom edge
+- R_REF_L: 6.134mm inside right edge
+- C_REF: 5.55mm inside top edge
+- R_ENABLE: 0.734mm inside left edge
+- R_SLEEP: 4.743mm inside right edge
+- R_VM_H: 0.46mm inside bottom edge
+- R_VM_L: 1.584mm inside bottom edge
+- C_VM_SENSE: 0.63mm inside bottom edge
+- U_TEMP: 4.35mm inside top edge
+- C_TEMP: 4.73mm inside top edge
+- R_TEMP_SDA: 0.58mm inside top edge
+- R_TEMP_SCL: 1.234mm inside left edge
+- D_STATUS: 0.108mm inside left edge
+- R_STATUS_R: 2.384mm inside top edge
+- Q_STATUS_R: 1.45mm inside right edge
+- R_STATUS_G: 0.984mm inside top edge
+- Q_STATUS_G: 0.66mm inside top edge
+- R_STATUS_B: 3.684mm inside left edge
+- Q_STATUS_B: 0.5mm inside top edge
+- BZ1: 1.65mm inside left edge
+- Q_BUZZER: 5.5mm inside left edge
+- R_BUZZER_GATE: 7.284mm inside left edge
+- R_BUZZER_PD: 7.284mm inside left edge
+- D_BUZZER: 0.333mm inside left edge
+- C_BUZZER: 2.7mm inside left edge
+- R_PWR_LED: 5.434mm inside right edge
+- D_PWR: 0.997mm inside right edge
+- U_ENCODER: 10.32mm inside top edge
+- C_ENCODER: 10.23mm inside left edge
+- C_ENCODER_BULK: 10.23mm inside left edge
+
+flagged components:
+- J_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-5.3mm, 3.925mm) on top; bounds=(minX=-10.225mm, maxX=-0.375mm, minY=0.676mm, maxY=7.174mm); size=(width=9.85mm, height=6.498mm); anchor_alignment="center"
+  board edge status: 3.775mm inside left edge
+  issues:
+  - J_PD and R_SB courtyard collision by 0.153mm. Suggested move: move R_SB 0.153mm up.
+- U_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-5mm, 10.4mm) on bottom; bounds=(minX=-8.75mm, maxX=-1.25mm, minY=8.1mm, maxY=12.7mm); size=(width=7.5mm, height=4.6mm); anchor_alignment="center"
+  board edge status: 1.3mm inside bottom edge
+  issues:
+  - U_PD and D_TVS pad overlap by 0.5mm. Suggested move: move D_TVS 0.5mm down.
+  - U_PD and C_PD pad overlap by 0.35mm. Suggested move: move C_PD 0.35mm down.
+  - R_CC2 intrudes 0.54mm into U_PD connector body. Suggested move: move R_CC2 0.54mm down.
+  - U_PD and R_CC2 pad overlap by 0.32mm. Suggested move: move R_CC2 0.32mm down.
+  - U_PD and R_CC1 pad overlap by 0.17mm. Suggested move: move R_CC1 0.17mm right.
+  - D_TVS intrudes 0.5mm into U_PD connector body. Suggested move: move D_TVS 0.5mm down.
+  - C_PD intrudes 0.35mm into U_PD connector body. Suggested move: move C_PD 0.35mm down.
+  - R_CC1 intrudes 0.17mm into U_PD connector body. Suggested move: move R_CC1 0.17mm right.
+- R_PD_CFG
+  source placement: placement_mode=none
+  resolved placement: center=(13.45mm, 4.8mm) on bottom; bounds=(minX=13.18mm, maxX=13.72mm, minY=4.084mm, maxY=5.516mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 0.28mm inside right edge
+  issues:
+  - R_PD_CFG connections cross the routing path between its pads. Suggested move: rotate R_PD_CFG 180 degrees.
+- R_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-10.3mm, 12.5mm) on bottom; bounds=(minX=-10.732mm, maxX=-9.868mm, minY=11.343mm, maxY=13.657mm); size=(width=0.864mm, height=2.313mm); anchor_alignment="center"
+  board edge status: 0.343mm inside bottom edge
+  issues:
+  - R_PD and D_PD courtyard collision by 0.457mm. Suggested move: move R_PD 0.457mm down.
+- C_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-0.7mm, 12.8mm) on bottom; bounds=(minX=-1.8mm, maxX=0.4mm, minY=12.35mm, maxY=13.25mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 0.75mm inside bottom edge
+  issues:
+  - C_PD and R_CC1 pad overlap by 0.35mm. Suggested move: move R_CC1 0.35mm down.
+  - U_PD and C_PD pad overlap by 0.35mm. Suggested move: move C_PD 0.35mm down.
+  - C_PD and R_VM_H pad overlap by 0.12mm. Suggested move: move R_VM_H 0.12mm right.
+  - C_PD intrudes 0.35mm into U_PD connector body. Suggested move: move C_PD 0.35mm down.
+- D_TVS
+  source placement: placement_mode=none
+  resolved placement: center=(-6.4mm, 12.8mm) on bottom; bounds=(minX=-8.7mm, maxX=-4.1mm, minY=12.2mm, maxY=13.4mm); size=(width=4.6mm, height=1.2mm); anchor_alignment="center"
+  board edge status: 0.6mm inside bottom edge
+  issues:
+  - U_PD and D_TVS pad overlap by 0.5mm. Suggested move: move D_TVS 0.5mm down.
+  - D_TVS intrudes 0.5mm into U_PD connector body. Suggested move: move D_TVS 0.5mm down.
+  - D_TVS and R_CC2 courtyard collision by 0.02mm. Suggested move: move R_CC2 0.02mm up.
+- D_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-10.8mm, 9mm) on bottom; bounds=(minX=-11.275mm, maxX=-10.325mm, minY=6.7mm, maxY=11.3mm); size=(width=0.95mm, height=4.6mm); anchor_alignment="center"
+  board edge status: 2.7mm inside bottom edge
+  issues:
+  - D_PD and R_TEMP_SCL courtyard collision by 0.816mm. Suggested move: move R_TEMP_SCL 0.816mm left.
+  - D_PD and R_USB_SENSE_L courtyard collision by 0.666mm. Suggested move: move R_USB_SENSE_L 0.666mm left.
+  - R_PD and D_PD courtyard collision by 0.457mm. Suggested move: move R_PD 0.457mm down.
+- D_DATA
+  source placement: placement_mode=none
+  resolved placement: center=(10.8mm, 9mm) on bottom; bounds=(minX=10.325mm, maxX=11.275mm, minY=6.7mm, maxY=11.3mm); size=(width=0.95mm, height=4.6mm); anchor_alignment="center"
+  board edge status: 2.7mm inside bottom edge
+  issues:
+  - D_DATA and U_ESD courtyard collision by 0.285mm. Suggested move: move D_DATA 0.285mm right.
+- U_BUCK
+  source placement: placement_mode=none
+  resolved placement: center=(-9mm, -3mm) on bottom; bounds=(minX=-10.225mm, maxX=-7.775mm, minY=-4.75mm, maxY=-1.25mm); size=(width=2.45mm, height=3.5mm); anchor_alignment="center"
+  board edge status: 3.775mm inside left edge
+  issues:
+  - U_BUCK and D_BUZZER pad overlap by 0.125mm. Suggested move: move D_BUZZER 0.125mm down.
+  - U_BUCK and Q_BUZZER pad overlap by 0.125mm. Suggested move: move Q_BUZZER 0.125mm down.
+  - U_BUCK and R_STATUS_B pad overlap by 0.12mm. Suggested move: move R_STATUS_B 0.12mm down.
+  - U_BUCK and L_BUCK pad overlap by 0.05mm. Suggested move: move U_BUCK 0.05mm down.
+  - U_BUCK and C_BOOTSTRAP courtyard collision by 0.12mm. Suggested move: move C_BOOTSTRAP 0.12mm left.
+- L_BUCK
+  source placement: placement_mode=none
+  resolved placement: center=(-8.7mm, -6.8mm) on bottom; bounds=(minX=-10.8mm, maxX=-6.6mm, minY=-8.9mm, maxY=-4.7mm); size=(width=4.2mm, height=4.2mm); anchor_alignment="center"
+  board edge status: 3.2mm inside left edge
+  issues:
+  - L_BUCK and C_BUCK_OUT2 pad overlap by 0.075mm. Suggested move: move C_BUCK_OUT2 0.075mm right.
+  - U_BUCK and L_BUCK pad overlap by 0.05mm. Suggested move: move U_BUCK 0.05mm down.
+  - L_BUCK and C_BUCK_OUT1 courtyard collision by 0.375mm. Suggested move: move C_BUCK_OUT1 0.375mm right.
+  - L_BUCK and C_IO33 courtyard collision by 0.12mm. Suggested move: move C_IO33 0.12mm right.
+  - L_BUCK and R_USB_SENSE_H courtyard collision by 0.07mm. Suggested move: move R_USB_SENSE_H 0.07mm up.
+  - L_BUCK connections cross the routing path between its pads. Suggested move: rotate L_BUCK 180 degrees.
+- C_BOOTSTRAP
+  source placement: placement_mode=none
+  resolved placement: center=(-11.5mm, -3.1mm) on bottom; bounds=(minX=-12.17mm, maxX=-10.83mm, minY=-3.37mm, maxY=-2.83mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 1.83mm inside left edge
+  issues:
+  - U_BUCK and C_BOOTSTRAP courtyard collision by 0.12mm. Suggested move: move C_BOOTSTRAP 0.12mm left.
+- C_BUCK_IN
+  source placement: placement_mode=none
+  resolved placement: center=(-9.4mm, 0.35mm) on bottom; bounds=(minX=-11.735mm, maxX=-7.065mm, minY=-0.514mm, maxY=1.214mm); size=(width=4.67mm, height=1.728mm); anchor_alignment="center"
+  board edge status: 2.265mm inside left edge
+  issues:
+  - C_BUCK_IN and Q_BUZZER pad overlap by 0.65mm. Suggested move: move Q_BUZZER 0.65mm up.
+  - C_BUCK_IN and D_BUZZER pad overlap by 0.033mm. Suggested move: move D_BUZZER 0.033mm left.
+  - C_BUCK_IN and R_ENABLE courtyard collision by 0.401mm. Suggested move: move R_ENABLE 0.401mm left.
+  - C_BUCK_IN and R_BUZZER_GATE courtyard collision by 0.151mm. Suggested move: move R_BUZZER_GATE 0.151mm right.
+  - C_BUCK_IN and R_BUZZER_PD courtyard collision by 0.151mm. Suggested move: move R_BUZZER_PD 0.151mm right.
+- C_BUCK_OUT1
+  source placement: placement_mode=none
+  resolved placement: center=(-5.8mm, -6.8mm) on bottom; bounds=(minX=-6.475mm, maxX=-5.125mm, minY=-8.505mm, maxY=-5.095mm); size=(width=1.35mm, height=3.41mm); anchor_alignment="center"
+  board edge status: 5.495mm inside top edge
+  issues:
+  - C_BUCK_OUT1 and C_BUCK_OUT2 pad overlap by 0.01mm. Suggested move: move C_BUCK_OUT1 0.01mm up.
+  - L_BUCK and C_BUCK_OUT1 courtyard collision by 0.375mm. Suggested move: move C_BUCK_OUT1 0.375mm right.
+  - C_BUCK_OUT1 and C_IO33 courtyard collision by 0.137mm. Suggested move: move C_IO33 0.137mm down.
+- C_BUCK_OUT2
+  source placement: placement_mode=none
+  resolved placement: center=(-6mm, -3.4mm) on bottom; bounds=(minX=-6.675mm, maxX=-5.325mm, minY=-5.105mm, maxY=-1.695mm); size=(width=1.35mm, height=3.41mm); anchor_alignment="center"
+  board edge status: 7.325mm inside left edge
+  issues:
+  - C_BUCK_OUT2 and C_IO33 pad overlap by 0.5mm. Suggested move: move C_IO33 0.5mm right.
+  - L_BUCK and C_BUCK_OUT2 pad overlap by 0.075mm. Suggested move: move C_BUCK_OUT2 0.075mm right.
+  - C_BUCK_OUT1 and C_BUCK_OUT2 pad overlap by 0.01mm. Suggested move: move C_BUCK_OUT1 0.01mm up.
+  - C_BUCK_OUT2 and Q_BUZZER courtyard collision by 0.355mm. Suggested move: move C_BUCK_OUT2 0.355mm up.
+  - C_BUCK_OUT2 and C_IO42 courtyard collision by 0.187mm. Suggested move: move C_IO42 0.187mm down.
+- J_DATA
+  source placement: placement_mode=none
+  resolved placement: center=(5.3mm, 3.925mm) on top; bounds=(minX=0.375mm, maxX=10.225mm, minY=0.676mm, maxY=7.174mm); size=(width=9.85mm, height=6.498mm); anchor_alignment="center"
+  board edge status: 3.775mm inside right edge
+  issues:
+  - J_DATA and R_SA courtyard collision by 0.153mm. Suggested move: move R_SA 0.153mm up.
+  - J_DATA and R_SB courtyard collision by 0.153mm. Suggested move: move R_SB 0.153mm up.
+- R_CC1
+  source placement: placement_mode=none
+  resolved placement: center=(-1.15mm, 12.85mm) on bottom; bounds=(minX=-1.42mm, maxX=-0.88mm, minY=12.134mm, maxY=13.566mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 0.434mm inside bottom edge
+  issues:
+  - C_PD and R_CC1 pad overlap by 0.35mm. Suggested move: move R_CC1 0.35mm down.
+  - U_PD and R_CC1 pad overlap by 0.17mm. Suggested move: move R_CC1 0.17mm right.
+  - R_CC1 intrudes 0.17mm into U_PD connector body. Suggested move: move R_CC1 0.17mm right.
+- R_CC2
+  source placement: placement_mode=none
+  resolved placement: center=(-7.25mm, 11.15mm) on bottom; bounds=(minX=-7.966mm, maxX=-6.534mm, minY=10.88mm, maxY=11.42mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 2.58mm inside bottom edge
+  issues:
+  - R_CC2 intrudes 0.54mm into U_PD connector body. Suggested move: move R_CC2 0.54mm down.
+  - U_PD and R_CC2 pad overlap by 0.32mm. Suggested move: move R_CC2 0.32mm down.
+  - D_TVS and R_CC2 courtyard collision by 0.02mm. Suggested move: move R_CC2 0.02mm up.
+- U_ESD
+  source placement: placement_mode=none
+  resolved placement: center=(8.05mm, 12.25mm) on bottom; bounds=(minX=6.365mm, maxX=9.735mm, minY=11.034mm, maxY=13.466mm); size=(width=3.37mm, height=2.432mm); anchor_alignment="center"
+  board edge status: 0.534mm inside bottom edge
+  issues:
+  - D_DATA and U_ESD courtyard collision by 0.285mm. Suggested move: move D_DATA 0.285mm right.
+  - U_ESD and R_VM_L courtyard collision by 0.055mm. Suggested move: move R_VM_L 0.055mm left.
+- R_DP
+  source placement: placement_mode=none
+  resolved placement: center=(-1.8mm, 1.716mm) on bottom; bounds=(minX=-2.07mm, maxX=-1.53mm, minY=1mm, maxY=2.431mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 11.569mm inside bottom edge
+  issues:
+  - R_DP and U_ENCODER pad overlap by 0.449mm. Suggested move: move R_DP 0.449mm left.
+  - R_DP intrudes 0.54mm into U_ENCODER connector body. Suggested move: move R_DP 0.54mm left.
+  - R_DP and C_USB courtyard collision by 0.299mm. Suggested move: move C_USB 0.299mm down.
+  - R_DP and R_DM courtyard collision by 0.14mm. Suggested move: move R_DM 0.14mm left.
+- R_DM
+  source placement: placement_mode=none
+  resolved placement: center=(-2.7mm, 1.716mm) on bottom; bounds=(minX=-2.97mm, maxX=-2.43mm, minY=1mm, maxY=2.431mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 11.03mm inside left edge
+  issues:
+  - R_DM and U_ENCODER courtyard collision by 0.52mm. Suggested move: move R_DM 0.52mm left.
+  - R_DM and C_USB courtyard collision by 0.24mm. Suggested move: move C_USB 0.24mm right.
+  - R_DM and C_VREG_OUT courtyard collision by 0.24mm. Suggested move: move C_VREG_OUT 0.24mm left.
+  - R_DM and C_ENCODER courtyard collision by 0.17mm. Suggested move: move C_ENCODER 0.17mm up.
+  - R_DP and R_DM courtyard collision by 0.14mm. Suggested move: move R_DM 0.14mm left.
+- R_USB_SENSE_H
+  source placement: placement_mode=none
+  resolved placement: center=(-11.4mm, -9.6mm) on bottom; bounds=(minX=-12.116mm, maxX=-10.684mm, minY=-9.87mm, maxY=-9.33mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 1.884mm inside left edge
+  issues:
+  - R_USB_SENSE_H and R_STATUS_R courtyard collision by 0.186mm. Suggested move: move R_STATUS_R 0.186mm up.
+  - L_BUCK and R_USB_SENSE_H courtyard collision by 0.07mm. Suggested move: move R_USB_SENSE_H 0.07mm up.
+- R_USB_SENSE_L
+  source placement: placement_mode=none
+  resolved placement: center=(-12.2mm, 9.55mm) on bottom; bounds=(minX=-12.916mm, maxX=-11.484mm, minY=9.28mm, maxY=9.82mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 1.084mm inside left edge
+  issues:
+  - D_PD and R_USB_SENSE_L courtyard collision by 0.666mm. Suggested move: move R_USB_SENSE_L 0.666mm left.
+  - R_USB_SENSE_L and R_TEMP_SCL courtyard collision by 0.24mm. Suggested move: move R_TEMP_SCL 0.24mm down.
+- U_FLASH
+  source placement: placement_mode=none
+  resolved placement: center=(3.5mm, 3.2mm) on bottom; bounds=(minX=2.6mm, maxX=4.4mm, minY=1.377mm, maxY=5.023mm); size=(width=1.8mm, height=3.646mm); anchor_alignment="center"
+  board edge status: 8.977mm inside bottom edge
+  issues:
+  - U_FLASH and C_IO1 pad overlap by 0.23mm. Suggested move: move C_IO1 0.23mm left.
+  - U_FLASH and C_FLASH courtyard collision by 0.475mm. Suggested move: move C_FLASH 0.475mm right.
+  - U_FLASH and U_ENCODER courtyard collision by 0.455mm. Suggested move: move U_FLASH 0.455mm right.
+- C_FLASH
+  source placement: placement_mode=none
+  resolved placement: center=(4.8mm, 5.5mm) on bottom; bounds=(minX=4.53mm, maxX=5.07mm, minY=4.83mm, maxY=6.17mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 7.83mm inside bottom edge
+  issues:
+  - U_FLASH and C_FLASH courtyard collision by 0.475mm. Suggested move: move C_FLASH 0.475mm right.
+- R_FLASH_CS
+  source placement: placement_mode=none
+  resolved placement: center=(1.3mm, -9.35mm) on bottom; bounds=(minX=0.584mm, maxX=2.016mm, minY=-9.62mm, maxY=-9.08mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 4.38mm inside top edge
+  issues:
+  - R_FLASH_CS and Y_MCU pad overlap by 0.12mm. Suggested move: move R_FLASH_CS 0.12mm down.
+- R_BOOT
+  source placement: placement_mode=none
+  resolved placement: center=(7.75mm, 0.55mm) on bottom; bounds=(minX=7.034mm, maxX=8.466mm, minY=0.28mm, maxY=0.82mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 5.534mm inside right edge
+  issues:
+  - R_BOOT and R_PWR_LED courtyard collision by 0.14mm. Suggested move: move R_PWR_LED 0.14mm up.
+- U_MCU
+  source placement: placement_mode=none
+  resolved placement: center=(-0.5mm, -3.4mm) on bottom; bounds=(minX=-4.35mm, maxX=3.35mm, minY=-7.25mm, maxY=0.45mm); size=(width=7.7mm, height=7.7mm); anchor_alignment="center"
+  board edge status: 6.75mm inside top edge
+  issues:
+  - U_ENCODER intrudes 4.13mm into U_MCU connector body. Suggested move: move U_ENCODER 4.13mm down.
+  - U_MCU and U_ENCODER pad overlap by 0.568mm. Suggested move: move U_ENCODER 0.568mm right.
+  - C_ENCODER intrudes 0.54mm into U_MCU connector body. Suggested move: move C_ENCODER 0.54mm left.
+  - C_ENCODER_BULK intrudes 0.54mm into U_MCU connector body. Suggested move: move C_ENCODER_BULK 0.54mm left.
+  - U_MCU and C_ENCODER_BULK pad overlap by 0.2mm. Suggested move: move C_ENCODER_BULK 0.2mm down.
+  - U_MCU and C_IO49 courtyard collision by 0.005mm. Suggested move: move C_IO49 0.005mm down.
+  - U_MCU and C_VREG_OUT courtyard collision by 0.005mm. Suggested move: move C_VREG_OUT 0.005mm down.
+  - U_MCU and C_DV50 courtyard collision by 0.005mm. Suggested move: move C_DV50 0.005mm down.
+- Y_MCU
+  source placement: placement_mode=none
+  resolved placement: center=(1.5mm, -9.6mm) on bottom; bounds=(minX=0.05mm, maxX=2.95mm, minY=-11.4mm, maxY=-7.8mm); size=(width=2.9mm, height=3.6mm); anchor_alignment="center"
+  board edge status: 2.6mm inside top edge
+  issues:
+  - Y_MCU and Q_STATUS_B pad overlap by 0.35mm. Suggested move: move Q_STATUS_B 0.35mm right.
+  - R_FLASH_CS and Y_MCU pad overlap by 0.12mm. Suggested move: move R_FLASH_CS 0.12mm down.
+  - Y_MCU and R_STATUS_G courtyard collision by 0.316mm. Suggested move: move R_STATUS_G 0.316mm up.
+  - Y_MCU and R_XOUT courtyard collision by 0.22mm. Suggested move: move R_XOUT 0.22mm left.
+  - Y_MCU and C_XIN courtyard collision by 0.22mm. Suggested move: move C_XIN 0.22mm right.
+  - Y_MCU and C_XOUT courtyard collision by 0.158mm. Suggested move: move C_XOUT 0.158mm up.
+- R_XOUT
+  source placement: placement_mode=none
+  resolved placement: center=(-0.5mm, -10.212mm) on bottom; bounds=(minX=-0.77mm, maxX=-0.23mm, minY=-10.928mm, maxY=-9.497mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 3.072mm inside top edge
+  issues:
+  - Y_MCU and R_XOUT courtyard collision by 0.22mm. Suggested move: move R_XOUT 0.22mm left.
+  - R_XOUT and C_DV23 courtyard collision by 0.179mm. Suggested move: move C_DV23 0.179mm down.
+- C_XIN
+  source placement: placement_mode=none
+  resolved placement: center=(3.5mm, -8.962mm) on bottom; bounds=(minX=3.23mm, maxX=3.77mm, minY=-9.632mm, maxY=-8.292mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 4.368mm inside top edge
+  issues:
+  - Y_MCU and C_XIN courtyard collision by 0.22mm. Suggested move: move C_XIN 0.22mm right.
+- C_XOUT
+  source placement: placement_mode=none
+  resolved placement: center=(0.25mm, -12.412mm) on bottom; bounds=(minX=-0.02mm, maxX=0.52mm, minY=-13.082mm, maxY=-11.742mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 0.918mm inside top edge
+  issues:
+  - C_XOUT and R_STATUS_G pad overlap by 0.09mm. Suggested move: move C_XOUT 0.09mm right.
+  - C_XOUT and Q_STATUS_B courtyard collision by 0.27mm. Suggested move: move C_XOUT 0.27mm left.
+  - Y_MCU and C_XOUT courtyard collision by 0.158mm. Suggested move: move C_XOUT 0.158mm up.
+- C_IO1
+  source placement: placement_mode=none
+  resolved placement: center=(2.5mm, 1.365mm) on bottom; bounds=(minX=1.83mm, maxX=3.17mm, minY=1.095mm, maxY=1.635mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 10.83mm inside right edge
+  issues:
+  - U_FLASH and C_IO1 pad overlap by 0.23mm. Suggested move: move C_IO1 0.23mm left.
+  - C_IO1 intrudes 0.359mm into U_ENCODER connector body. Suggested move: move C_IO1 0.359mm right.
+- C_IO22
+  source placement: placement_mode=none
+  resolved placement: center=(-1.85mm, -8.165mm) on bottom; bounds=(minX=-2.52mm, maxX=-1.18mm, minY=-8.435mm, maxY=-7.895mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 5.565mm inside top edge
+  issues:
+  - C_IO22 and C_DV23 courtyard collision by 0.299mm. Suggested move: move C_DV23 0.299mm up.
+- C_IO33
+  source placement: placement_mode=none
+  resolved placement: center=(-5.55mm, -4.462mm) on bottom; bounds=(minX=-6.22mm, maxX=-4.88mm, minY=-4.732mm, maxY=-4.192mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.78mm inside left edge
+  issues:
+  - C_BUCK_OUT2 and C_IO33 pad overlap by 0.5mm. Suggested move: move C_IO33 0.5mm right.
+  - C_BUCK_OUT1 and C_IO33 courtyard collision by 0.137mm. Suggested move: move C_IO33 0.137mm down.
+  - L_BUCK and C_IO33 courtyard collision by 0.12mm. Suggested move: move C_IO33 0.12mm right.
+- C_IO42
+  source placement: placement_mode=none
+  resolved placement: center=(-5.55mm, -1.112mm) on bottom; bounds=(minX=-6.22mm, maxX=-4.88mm, minY=-1.382mm, maxY=-0.842mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.78mm inside left edge
+  issues:
+  - C_IO42 and Q_BUZZER footprint intrusion by 0.533mm. Suggested move: move C_IO42 0.533mm up.
+  - C_IO42 and C_VREG_IN courtyard collision by 0.24mm. Suggested move: move C_VREG_IN 0.24mm down.
+  - C_BUCK_OUT2 and C_IO42 courtyard collision by 0.187mm. Suggested move: move C_IO42 0.187mm down.
+- C_IO49
+  source placement: placement_mode=none
+  resolved placement: center=(0.3mm, 1.615mm) on bottom; bounds=(minX=0.03mm, maxX=0.57mm, minY=0.945mm, maxY=2.285mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 11.715mm inside bottom edge
+  issues:
+  - C_IO49 intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_IO49 0.54mm right.
+  - C_IO49 and U_ENCODER pad overlap by 0.219mm. Suggested move: move C_IO49 0.219mm right.
+  - C_IO49 and C_DV50 courtyard collision by 0.24mm. Suggested move: move C_IO49 0.24mm right.
+  - U_MCU and C_IO49 courtyard collision by 0.005mm. Suggested move: move C_IO49 0.005mm down.
+- C_ADC
+  source placement: placement_mode=none
+  resolved placement: center=(-5.35mm, 0.888mm) on bottom; bounds=(minX=-5.62mm, maxX=-5.08mm, minY=0.218mm, maxY=1.558mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 8.38mm inside left edge
+  issues:
+  - C_ADC and R_BUZZER_PD pad overlap by 0.336mm. Suggested move: move C_ADC 0.336mm right.
+  - C_ADC and R_BUZZER_GATE pad overlap by 0.328mm. Suggested move: move C_ADC 0.328mm up.
+  - C_ADC and Q_BUZZER pad overlap by 0.007mm. Suggested move: move C_ADC 0.007mm down.
+  - C_ADC and C_VREG_IN courtyard collision by 0.24mm. Suggested move: move C_ADC 0.24mm down.
+- C_USB
+  source placement: placement_mode=none
+  resolved placement: center=(-1.5mm, 2.902mm) on bottom; bounds=(minX=-2.17mm, maxX=-0.83mm, minY=2.632mm, maxY=3.172mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 10.828mm inside bottom edge
+  issues:
+  - C_USB and U_ENCODER pad overlap by 0.5mm. Suggested move: move C_USB 0.5mm left.
+  - C_USB intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_USB 0.54mm down.
+  - R_DP and C_USB courtyard collision by 0.299mm. Suggested move: move C_USB 0.299mm down.
+  - R_DM and C_USB courtyard collision by 0.24mm. Suggested move: move C_USB 0.24mm right.
+  - C_USB and C_DV50 courtyard collision by 0.153mm. Suggested move: move C_USB 0.153mm down.
+- C_VREG_IN
+  source placement: placement_mode=none
+  resolved placement: center=(-5.55mm, -0.312mm) on bottom; bounds=(minX=-6.22mm, maxX=-4.88mm, minY=-0.582mm, maxY=-0.042mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.78mm inside left edge
+  issues:
+  - C_VREG_IN and Q_BUZZER pad overlap by 0.383mm. Suggested move: move C_VREG_IN 0.383mm up.
+  - C_ADC and C_VREG_IN courtyard collision by 0.24mm. Suggested move: move C_ADC 0.24mm down.
+  - C_IO42 and C_VREG_IN courtyard collision by 0.24mm. Suggested move: move C_VREG_IN 0.24mm down.
+  - C_VREG_IN and R_BUZZER_PD courtyard collision by 0.128mm. Suggested move: move C_VREG_IN 0.128mm up.
+- C_VREG_OUT
+  source placement: placement_mode=none
+  resolved placement: center=(-3.5mm, 1.615mm) on bottom; bounds=(minX=-3.77mm, maxX=-3.23mm, minY=0.945mm, maxY=2.285mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 10.23mm inside left edge
+  issues:
+  - R_DM and C_VREG_OUT courtyard collision by 0.24mm. Suggested move: move C_VREG_OUT 0.24mm left.
+  - C_VREG_OUT and C_ENCODER courtyard collision by 0.225mm. Suggested move: move C_ENCODER 0.225mm up.
+  - U_MCU and C_VREG_OUT courtyard collision by 0.005mm. Suggested move: move C_VREG_OUT 0.005mm down.
+- C_DV23
+  source placement: placement_mode=none
+  resolved placement: center=(-1.6mm, -8.906mm) on bottom; bounds=(minX=-2.27mm, maxX=-0.93mm, minY=-9.176mm, maxY=-8.636mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 4.824mm inside top edge
+  issues:
+  - C_IO22 and C_DV23 courtyard collision by 0.299mm. Suggested move: move C_DV23 0.299mm up.
+  - R_XOUT and C_DV23 courtyard collision by 0.179mm. Suggested move: move C_DV23 0.179mm down.
+- C_DV50
+  source placement: placement_mode=none
+  resolved placement: center=(-0.5mm, 1.615mm) on bottom; bounds=(minX=-0.77mm, maxX=-0.23mm, minY=0.945mm, maxY=2.285mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 11.715mm inside bottom edge
+  issues:
+  - C_DV50 and U_ENCODER pad overlap by 0.419mm. Suggested move: move C_DV50 0.419mm left.
+  - C_DV50 intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_DV50 0.54mm left.
+  - C_IO49 and C_DV50 courtyard collision by 0.24mm. Suggested move: move C_IO49 0.24mm right.
+  - C_USB and C_DV50 courtyard collision by 0.153mm. Suggested move: move C_USB 0.153mm down.
+  - U_MCU and C_DV50 courtyard collision by 0.005mm. Suggested move: move C_DV50 0.005mm down.
+- R_RUN
+  source placement: placement_mode=none
+  resolved placement: center=(7.85mm, 1.7mm) on bottom; bounds=(minX=7.134mm, maxX=8.566mm, minY=1.43mm, maxY=1.97mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 5.434mm inside right edge
+  issues:
+  - R_RUN connections cross the routing path between its pads. Suggested move: rotate R_RUN 180 degrees.
+- U_DRV
+  source placement: placement_mode=none
+  resolved placement: center=(-0.5mm, -4.2mm) on top; bounds=(minX=-3.45mm, maxX=2.45mm, minY=-7.15mm, maxY=-1.25mm); size=(width=5.9mm, height=5.9mm); anchor_alignment="center"
+  board edge status: 6.85mm inside top edge
+  issues:
+  - U_DRV and R_SA courtyard collision by 0.298mm. Suggested move: move R_SA 0.298mm down.
+  - U_DRV and R_SB courtyard collision by 0.298mm. Suggested move: move R_SB 0.298mm down.
+  - U_DRV and C_BULK courtyard collision by 0.211mm. Suggested move: move C_BULK 0.211mm up.
+  - U_DRV and C_REF courtyard collision by 0.1mm. Suggested move: move C_REF 0.1mm up.
+- R_SA
+  source placement: placement_mode=none
+  resolved placement: center=(2.2mm, -0.36mm) on top; bounds=(minX=0.634mm, maxX=3.766mm, minY=-1.049mm, maxY=0.329mm); size=(width=3.133mm, height=1.377mm); anchor_alignment="center"
+  board edge status: 10.234mm inside right edge
+  issues:
+  - U_DRV and R_SA courtyard collision by 0.298mm. Suggested move: move R_SA 0.298mm down.
+  - J_DATA and R_SA courtyard collision by 0.153mm. Suggested move: move R_SA 0.153mm up.
+  - R_SA and R_SB courtyard collision by 0.033mm. Suggested move: move R_SB 0.033mm left.
+- R_SB
+  source placement: placement_mode=none
+  resolved placement: center=(-1.4mm, -0.36mm) on top; bounds=(minX=-2.966mm, maxX=0.166mm, minY=-1.049mm, maxY=0.329mm); size=(width=3.133mm, height=1.377mm); anchor_alignment="center"
+  board edge status: 11.034mm inside left edge
+  issues:
+  - R_SB and C_VM pad overlap by 0.5mm. Suggested move: move C_VM 0.5mm left.
+  - U_DRV and R_SB courtyard collision by 0.298mm. Suggested move: move R_SB 0.298mm down.
+  - J_PD and R_SB courtyard collision by 0.153mm. Suggested move: move R_SB 0.153mm up.
+  - J_DATA and R_SB courtyard collision by 0.153mm. Suggested move: move R_SB 0.153mm up.
+  - R_SA and R_SB courtyard collision by 0.033mm. Suggested move: move R_SB 0.033mm left.
+- C_VREG
+  source placement: placement_mode=none
+  resolved placement: center=(3mm, -8.5mm) on top; bounds=(minX=1.9mm, maxX=4.1mm, minY=-8.95mm, maxY=-8.05mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 5.05mm inside top edge
+  issues:
+  - C_VREG and C_REF pad overlap by 0.4mm. Suggested move: move C_VREG 0.4mm up.
+- C_VM
+  source placement: placement_mode=none
+  resolved placement: center=(-3mm, -0.3mm) on top; bounds=(minX=-3.67mm, maxX=-2.33mm, minY=-0.57mm, maxY=-0.03mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 10.33mm inside left edge
+  issues:
+  - R_SB and C_VM pad overlap by 0.5mm. Suggested move: move C_VM 0.5mm left.
+- C_BULK
+  source placement: placement_mode=none
+  resolved placement: center=(-4.5mm, -10.739mm) on top; bounds=(minX=-8.92mm, maxX=-0.08mm, minY=-11.339mm, maxY=-10.139mm); size=(width=8.84mm, height=1.2mm); anchor_alignment="center"
+  board edge status: 2.661mm inside top edge
+  issues:
+  - U_DRV and C_BULK courtyard collision by 0.211mm. Suggested move: move C_BULK 0.211mm up.
+  - C_BULK and C_REF courtyard collision by 0.02mm. Suggested move: move C_REF 0.02mm right.
+- R_REF_H
+  source placement: placement_mode=none
+  resolved placement: center=(3.45mm, 11.35mm) on bottom; bounds=(minX=2.293mm, maxX=4.607mm, minY=10.918mm, maxY=11.782mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 2.218mm inside bottom edge
+  issues:
+  - R_REF_H and C_VM_SENSE courtyard collision by 0.252mm. Suggested move: move C_VM_SENSE 0.252mm down.
+- C_REF
+  source placement: placement_mode=none
+  resolved placement: center=(1.5mm, -8mm) on top; bounds=(minX=0.4mm, maxX=2.6mm, minY=-8.45mm, maxY=-7.55mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 5.55mm inside top edge
+  issues:
+  - C_VREG and C_REF pad overlap by 0.4mm. Suggested move: move C_VREG 0.4mm up.
+  - U_DRV and C_REF courtyard collision by 0.1mm. Suggested move: move C_REF 0.1mm up.
+  - C_BULK and C_REF courtyard collision by 0.02mm. Suggested move: move C_REF 0.02mm right.
+- R_ENABLE
+  source placement: placement_mode=none
+  resolved placement: center=(-12.55mm, 0.345mm) on bottom; bounds=(minX=-13.266mm, maxX=-11.834mm, minY=0.075mm, maxY=0.615mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 0.734mm inside left edge
+  issues:
+  - R_ENABLE and D_BUZZER courtyard collision by 0.425mm. Suggested move: move R_ENABLE 0.425mm down.
+  - C_BUCK_IN and R_ENABLE courtyard collision by 0.401mm. Suggested move: move R_ENABLE 0.401mm left.
+- R_SLEEP
+  source placement: placement_mode=none
+  resolved placement: center=(8.1mm, 4.9mm) on bottom; bounds=(minX=6.943mm, maxX=9.257mm, minY=4.468mm, maxY=5.332mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 4.743mm inside right edge
+  issues:
+  - R_SLEEP and Q_STATUS_R courtyard collision by 0.007mm. Suggested move: move R_SLEEP 0.007mm left.
+- R_VM_H
+  source placement: placement_mode=none
+  resolved placement: center=(0.55mm, 12.825mm) on bottom; bounds=(minX=0.28mm, maxX=0.82mm, minY=12.109mm, maxY=13.54mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 0.46mm inside bottom edge
+  issues:
+  - C_PD and R_VM_H pad overlap by 0.12mm. Suggested move: move R_VM_H 0.12mm right.
+- R_VM_L
+  source placement: placement_mode=none
+  resolved placement: center=(5.65mm, 11.7mm) on bottom; bounds=(minX=5.38mm, maxX=5.92mm, minY=10.984mm, maxY=12.416mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 1.584mm inside bottom edge
+  issues:
+  - U_ESD and R_VM_L courtyard collision by 0.055mm. Suggested move: move R_VM_L 0.055mm left.
+- C_VM_SENSE
+  source placement: placement_mode=none
+  resolved placement: center=(4mm, 12.7mm) on bottom; bounds=(minX=3.73mm, maxX=4.27mm, minY=12.03mm, maxY=13.37mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 0.63mm inside bottom edge
+  issues:
+  - R_REF_H and C_VM_SENSE courtyard collision by 0.252mm. Suggested move: move C_VM_SENSE 0.252mm down.
+- R_TEMP_SCL
+  source placement: placement_mode=none
+  resolved placement: center=(-12.05mm, 10.35mm) on bottom; bounds=(minX=-12.766mm, maxX=-11.334mm, minY=10.08mm, maxY=10.62mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 1.234mm inside left edge
+  issues:
+  - D_PD and R_TEMP_SCL courtyard collision by 0.816mm. Suggested move: move R_TEMP_SCL 0.816mm left.
+  - R_USB_SENSE_L and R_TEMP_SCL courtyard collision by 0.24mm. Suggested move: move R_TEMP_SCL 0.24mm down.
+- R_STATUS_R
+  source placement: placement_mode=none
+  resolved placement: center=(-10.35mm, -10.9mm) on bottom; bounds=(minX=-10.62mm, maxX=-10.08mm, minY=-11.616mm, maxY=-10.184mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 2.384mm inside top edge
+  issues:
+  - R_USB_SENSE_H and R_STATUS_R courtyard collision by 0.186mm. Suggested move: move R_STATUS_R 0.186mm up.
+- Q_STATUS_R
+  source placement: placement_mode=none
+  resolved placement: center=(11.15mm, 4.688mm) on bottom; bounds=(minX=9.75mm, maxX=12.55mm, minY=3.688mm, maxY=5.688mm); size=(width=2.8mm, height=2mm); anchor_alignment="center"
+  board edge status: 1.45mm inside right edge
+  issues:
+  - R_SLEEP and Q_STATUS_R courtyard collision by 0.007mm. Suggested move: move R_SLEEP 0.007mm left.
+- R_STATUS_G
+  source placement: placement_mode=none
+  resolved placement: center=(-0.2mm, -12.3mm) on bottom; bounds=(minX=-0.47mm, maxX=0.07mm, minY=-13.016mm, maxY=-11.584mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 0.984mm inside top edge
+  issues:
+  - C_XOUT and R_STATUS_G pad overlap by 0.09mm. Suggested move: move C_XOUT 0.09mm right.
+  - Y_MCU and R_STATUS_G courtyard collision by 0.316mm. Suggested move: move R_STATUS_G 0.316mm up.
+- R_STATUS_B
+  source placement: placement_mode=none
+  resolved placement: center=(-9.6mm, -2.5mm) on bottom; bounds=(minX=-10.316mm, maxX=-8.884mm, minY=-2.77mm, maxY=-2.23mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 3.684mm inside left edge
+  issues:
+  - U_BUCK and R_STATUS_B pad overlap by 0.12mm. Suggested move: move R_STATUS_B 0.12mm down.
+- Q_STATUS_B
+  source placement: placement_mode=none
+  resolved placement: center=(1.75mm, -12.1mm) on bottom; bounds=(minX=0.75mm, maxX=2.75mm, minY=-13.5mm, maxY=-10.7mm); size=(width=2mm, height=2.8mm); anchor_alignment="center"
+  board edge status: 0.5mm inside top edge
+  issues:
+  - Y_MCU and Q_STATUS_B pad overlap by 0.35mm. Suggested move: move Q_STATUS_B 0.35mm right.
+  - C_XOUT and Q_STATUS_B courtyard collision by 0.27mm. Suggested move: move C_XOUT 0.27mm left.
+- Q_BUZZER
+  source placement: placement_mode=none
+  resolved placement: center=(-7mm, -0.1mm) on bottom; bounds=(minX=-8.5mm, maxX=-5.5mm, minY=-1.375mm, maxY=1.175mm); size=(width=3mm, height=2.55mm); anchor_alignment="center"
+  board edge status: 5.5mm inside left edge
+  issues:
+  - C_BUCK_IN and Q_BUZZER pad overlap by 0.65mm. Suggested move: move Q_BUZZER 0.65mm up.
+  - C_VREG_IN and Q_BUZZER pad overlap by 0.383mm. Suggested move: move C_VREG_IN 0.383mm up.
+  - U_BUCK and Q_BUZZER pad overlap by 0.125mm. Suggested move: move Q_BUZZER 0.125mm down.
+  - C_ADC and Q_BUZZER pad overlap by 0.007mm. Suggested move: move C_ADC 0.007mm down.
+  - Q_BUZZER and R_BUZZER_PD footprint intrusion by 0.54mm. Suggested move: move R_BUZZER_PD 0.54mm down.
+  - C_IO42 and Q_BUZZER footprint intrusion by 0.533mm. Suggested move: move C_IO42 0.533mm up.
+  - Q_BUZZER and R_BUZZER_GATE courtyard collision by 0.62mm. Suggested move: move R_BUZZER_GATE 0.62mm down.
+  - C_BUCK_OUT2 and Q_BUZZER courtyard collision by 0.355mm. Suggested move: move C_BUCK_OUT2 0.355mm up.
+- R_BUZZER_GATE
+  source placement: placement_mode=none
+  resolved placement: center=(-6mm, 1.5mm) on bottom; bounds=(minX=-6.716mm, maxX=-5.284mm, minY=1.23mm, maxY=1.77mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.284mm inside left edge
+  issues:
+  - C_ADC and R_BUZZER_GATE pad overlap by 0.328mm. Suggested move: move C_ADC 0.328mm up.
+  - Q_BUZZER and R_BUZZER_GATE courtyard collision by 0.62mm. Suggested move: move R_BUZZER_GATE 0.62mm down.
+  - C_BUCK_IN and R_BUZZER_GATE courtyard collision by 0.151mm. Suggested move: move R_BUZZER_GATE 0.151mm right.
+  - R_BUZZER_GATE and R_BUZZER_PD courtyard collision by 0.14mm. Suggested move: move R_BUZZER_PD 0.14mm up.
+- R_BUZZER_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-6mm, 0.6mm) on bottom; bounds=(minX=-6.716mm, maxX=-5.284mm, minY=0.33mm, maxY=0.87mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.284mm inside left edge
+  issues:
+  - C_ADC and R_BUZZER_PD pad overlap by 0.336mm. Suggested move: move C_ADC 0.336mm right.
+  - Q_BUZZER and R_BUZZER_PD footprint intrusion by 0.54mm. Suggested move: move R_BUZZER_PD 0.54mm down.
+  - C_BUCK_IN and R_BUZZER_PD courtyard collision by 0.151mm. Suggested move: move R_BUZZER_PD 0.151mm right.
+  - R_BUZZER_GATE and R_BUZZER_PD courtyard collision by 0.14mm. Suggested move: move R_BUZZER_PD 0.14mm up.
+  - C_VREG_IN and R_BUZZER_PD courtyard collision by 0.128mm. Suggested move: move C_VREG_IN 0.128mm up.
+  - R_BUZZER_PD connections cross the routing path between its pads. Suggested move: rotate R_BUZZER_PD 180 degrees.
+- D_BUZZER
+  source placement: placement_mode=none
+  resolved placement: center=(-11.5mm, -0.8mm) on bottom; bounds=(minX=-13.667mm, maxX=-9.333mm, minY=-1.375mm, maxY=-0.225mm); size=(width=4.335mm, height=1.15mm); anchor_alignment="center"
+  board edge status: 0.333mm inside left edge
+  issues:
+  - U_BUCK and D_BUZZER pad overlap by 0.125mm. Suggested move: move D_BUZZER 0.125mm down.
+  - C_BUCK_IN and D_BUZZER pad overlap by 0.033mm. Suggested move: move D_BUZZER 0.033mm left.
+  - R_ENABLE and D_BUZZER courtyard collision by 0.425mm. Suggested move: move R_ENABLE 0.425mm down.
+- R_PWR_LED
+  source placement: placement_mode=none
+  resolved placement: center=(7.85mm, -0.35mm) on bottom; bounds=(minX=7.134mm, maxX=8.566mm, minY=-0.62mm, maxY=-0.08mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 5.434mm inside right edge
+  issues:
+  - R_BOOT and R_PWR_LED courtyard collision by 0.14mm. Suggested move: move R_PWR_LED 0.14mm up.
+- U_ENCODER
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on bottom; bounds=(minX=-2.189mm, maxX=2.189mm, minY=-3.68mm, maxY=3.68mm); size=(width=4.378mm, height=7.36mm); anchor_alignment="center"
+  board edge status: 10.32mm inside top edge
+  issues:
+  - U_ENCODER intrudes 4.13mm into U_MCU connector body. Suggested move: move U_ENCODER 4.13mm down.
+  - U_MCU and U_ENCODER pad overlap by 0.568mm. Suggested move: move U_ENCODER 0.568mm right.
+  - C_USB and U_ENCODER pad overlap by 0.5mm. Suggested move: move C_USB 0.5mm left.
+  - R_DP and U_ENCODER pad overlap by 0.449mm. Suggested move: move R_DP 0.449mm left.
+  - C_DV50 and U_ENCODER pad overlap by 0.419mm. Suggested move: move C_DV50 0.419mm left.
+  - R_DP intrudes 0.54mm into U_ENCODER connector body. Suggested move: move R_DP 0.54mm left.
+  - C_IO49 intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_IO49 0.54mm right.
+  - C_DV50 intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_DV50 0.54mm left.
+  - C_USB intrudes 0.54mm into U_ENCODER connector body. Suggested move: move C_USB 0.54mm down.
+  - C_IO49 and U_ENCODER pad overlap by 0.219mm. Suggested move: move C_IO49 0.219mm right.
+  - C_IO1 intrudes 0.359mm into U_ENCODER connector body. Suggested move: move C_IO1 0.359mm right.
+  - R_DM and U_ENCODER courtyard collision by 0.52mm. Suggested move: move R_DM 0.52mm left.
+  - U_FLASH and U_ENCODER courtyard collision by 0.455mm. Suggested move: move U_FLASH 0.455mm right.
+- C_ENCODER
+  source placement: placement_mode=none
+  resolved placement: center=(-3.5mm, 0mm) on bottom; bounds=(minX=-3.77mm, maxX=-3.23mm, minY=-0.67mm, maxY=0.67mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 10.23mm inside left edge
+  issues:
+  - C_ENCODER intrudes 0.54mm into U_MCU connector body. Suggested move: move C_ENCODER 0.54mm left.
+  - C_VREG_OUT and C_ENCODER courtyard collision by 0.225mm. Suggested move: move C_ENCODER 0.225mm up.
+  - R_DM and C_ENCODER courtyard collision by 0.17mm. Suggested move: move C_ENCODER 0.17mm up.
+- C_ENCODER_BULK
+  source placement: placement_mode=none
+  resolved placement: center=(-3.5mm, -2mm) on bottom; bounds=(minX=-3.77mm, maxX=-3.23mm, minY=-2.67mm, maxY=-1.33mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 10.23mm inside left edge
+  issues:
+  - C_ENCODER_BULK intrudes 0.54mm into U_MCU connector body. Suggested move: move C_ENCODER_BULK 0.54mm left.
+  - U_MCU and C_ENCODER_BULK pad overlap by 0.2mm. Suggested move: move C_ENCODER_BULK 0.2mm down.
+
+placement drc:
+Errors: 145
+Warnings: 3
+- pcb_placement_error: SMT pad D_STATUS.G_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+- pcb_placement_error: SMT pad D_STATUS.R_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+- pcb_placement_error: Copper for component R_USB_SENSE_H overlaps a PCB keepout
+- pcb_placement_error: Copper for component TP_3V3 overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_STATUS_R overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_PD overlaps a PCB keepout
+- pcb_placement_error: Copper for component D_PD overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_USB_SENSE_L overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_TEMP_SCL overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_PG overlaps a PCB keepout
+- pcb_placement_error: Copper for component TP_BOOT_GND overlaps a PCB keepout
+- pcb_placement_error: Copper for component R_TEMP_SDA overlaps a PCB keepout
+- pcb_placement_error: Copper for component D_DATA overlaps a PCB keepout
+- pcb_placement_error: Copper for component U_ESD overlaps a PCB keepout
+- pcb_placement_error: Courtyard of R_PD overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_PG overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of D_PD overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of D_DATA overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of U_ESD overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_USB_SENSE_H overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_USB_SENSE_L overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of C_BULK overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of U_TEMP overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_TEMP_SDA overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_TEMP_SCL overlaps PCB keepout "unnamed keepout"
+- pcb_placement_error: Courtyard of R_STATUS_R overlaps PCB keepout "unnamed keepout"
+- pcb_footprint_overlap_error: J_PD overlaps D_PD: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: pcb_plated_hole J_PD.EH2 overlaps with pcb_courtyard_outline unnamed courtyard outline
+- pcb_footprint_overlap_error: J_PD overlaps R_DP: 3 footprint overlaps, 2 pad clearance violations. Move the components apart.
+- pcb_footprint_overlap_error: J_PD overlaps C_USB: 2 footprint overlaps, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: J_PD overlaps C_DV50: 3 footprint overlaps, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: J_PD overlaps C_BUZZER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: J_PD overlaps U_ENCODER: 1 footprint overlap, 2 pad clearance violations. Move the components apart.
+- pcb_footprint_overlap_error: U_PD overlaps C_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: U_PD overlaps D_TVS: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: U_PD overlaps R_CC1: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: U_PD overlaps R_CC2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: pcb_smtpad R_PD.pin1 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: R_CC1 overlaps C_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_PD overlaps R_VM_H: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: pcb_smtpad R_PG.pin2 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_smtpad D_PD.anode overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: J_DATA overlaps D_DATA: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: pcb_smtpad D_DATA.anode overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: L_BUCK overlaps U_BUCK: 2 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: R_STATUS_B overlaps U_BUCK: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: Q_BUZZER overlaps U_BUCK: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: L_BUCK overlaps C_BUCK_OUT2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_BUCK_IN overlaps Q_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_BUCK_IN overlaps D_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_BUCK_OUT1 overlaps C_BUCK_OUT2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_BUCK_OUT2 overlaps C_IO33: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: J_DATA overlaps C_IO49: 3 footprint overlaps, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: pcb_plated_hole J_DATA.EH4 overlaps with pcb_courtyard_outline unnamed courtyard outline
+- pcb_footprint_overlap_error: pcb_plated_hole J_DATA.EH4 overlaps with pcb_courtyard_outline unnamed courtyard outline
+- pcb_footprint_overlap_error: J_DATA overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: R_DP overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: U_FLASH overlaps C_IO1: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: R_FLASH_CS overlaps Y_MCU: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: pcb_smtpad TP_BOOT_GND.pin1 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: U_MCU overlaps U_ENCODER: 2 footprint overlaps, 2 pad clearance violations. Move the components apart.
+- pcb_footprint_overlap_error: U_MCU overlaps C_ENCODER_BULK: 2 footprint overlaps, 6 pad clearance violations. Move the components apart.
+- pcb_footprint_overlap_error: Y_MCU overlaps Q_STATUS_B: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_XOUT overlaps R_STATUS_G: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_IO10 overlaps J_MOTOR: 2 footprint overlaps, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: C_IO49 overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: C_ADC overlaps Q_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_ADC overlaps R_BUZZER_GATE: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_ADC overlaps R_BUZZER_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_USB overlaps U_ENCODER: 2 footprint overlaps, 2 pad clearance violations. Move the components apart.
+- pcb_footprint_overlap_error: C_VREG_IN overlaps Q_BUZZER: 1 footprint overlap, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_DV50 overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+- pcb_footprint_overlap_error: pcb_smtpad TP_3V3.pin1 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: R_SB overlaps C_VM: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C_VREG overlaps C_REF: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole
+- pcb_footprint_overlap_error: pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+- pcb_courtyard_overlap_error: Courtyard of J_PD overlaps with courtyard of R_SB
+- pcb_courtyard_overlap_error: Courtyard of R_PD overlaps with courtyard of D_PD
+- pcb_courtyard_overlap_error: Courtyard of D_TVS overlaps with courtyard of R_CC2
+- pcb_courtyard_overlap_error: Courtyard of D_PD overlaps with courtyard of R_USB_SENSE_L
+- pcb_courtyard_overlap_error: Courtyard of D_PD overlaps with courtyard of R_TEMP_SCL
+- pcb_courtyard_overlap_error: Courtyard of D_DATA overlaps with courtyard of U_ESD
+- pcb_courtyard_overlap_error: Courtyard of U_BUCK overlaps with courtyard of C_BOOTSTRAP
+- pcb_courtyard_overlap_error: Courtyard of U_BUCK overlaps with courtyard of D_BUZZER
+- pcb_courtyard_overlap_error: Courtyard of L_BUCK overlaps with courtyard of C_BUCK_OUT1
+- pcb_courtyard_overlap_error: Courtyard of L_BUCK overlaps with courtyard of R_USB_SENSE_H
+- pcb_courtyard_overlap_error: Courtyard of L_BUCK overlaps with courtyard of C_IO33
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_IN overlaps with courtyard of R_ENABLE
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_IN overlaps with courtyard of R_BUZZER_GATE
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_IN overlaps with courtyard of R_BUZZER_PD
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_OUT1 overlaps with courtyard of C_IO33
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_OUT2 overlaps with courtyard of C_IO42
+- pcb_courtyard_overlap_error: Courtyard of C_BUCK_OUT2 overlaps with courtyard of Q_BUZZER
+- pcb_courtyard_overlap_error: Courtyard of J_DATA overlaps with courtyard of R_SA
+- pcb_courtyard_overlap_error: Courtyard of J_DATA overlaps with courtyard of R_SB
+- pcb_courtyard_overlap_error: Courtyard of U_ESD overlaps with courtyard of R_VM_L
+- pcb_courtyard_overlap_error: Courtyard of R_DP overlaps with courtyard of R_DM
+- pcb_courtyard_overlap_error: Courtyard of R_DP overlaps with courtyard of C_USB
+- pcb_courtyard_overlap_error: Courtyard of R_DM overlaps with courtyard of C_USB
+- pcb_courtyard_overlap_error: Courtyard of R_DM overlaps with courtyard of C_VREG_OUT
+- pcb_courtyard_overlap_error: Courtyard of R_USB_SENSE_H overlaps with courtyard of R_STATUS_R
+- pcb_courtyard_overlap_error: Courtyard of R_USB_SENSE_L overlaps with courtyard of R_TEMP_SCL
+- pcb_courtyard_overlap_error: Courtyard of U_FLASH overlaps with courtyard of C_FLASH
+- pcb_courtyard_overlap_error: Courtyard of R_BOOT overlaps with courtyard of R_PWR_LED
+- pcb_courtyard_overlap_error: Courtyard of U_MCU overlaps with courtyard of C_IO49
+- pcb_courtyard_overlap_error: Courtyard of U_MCU overlaps with courtyard of C_VREG_OUT
+- pcb_courtyard_overlap_error: Courtyard of U_MCU overlaps with courtyard of C_DV50
+- pcb_courtyard_overlap_error: Courtyard of Y_MCU overlaps with courtyard of R_XOUT
+- pcb_courtyard_overlap_error: Courtyard of Y_MCU overlaps with courtyard of C_XIN
+- pcb_courtyard_overlap_error: Courtyard of Y_MCU overlaps with courtyard of C_XOUT
+- pcb_courtyard_overlap_error: Courtyard of Y_MCU overlaps with courtyard of R_STATUS_G
+- pcb_courtyard_overlap_error: Courtyard of R_XOUT overlaps with courtyard of C_DV23
+- pcb_courtyard_overlap_error: Courtyard of C_XOUT overlaps with courtyard of Q_STATUS_B
+- pcb_courtyard_overlap_error: Courtyard of C_IO22 overlaps with courtyard of C_DV23
+- pcb_courtyard_overlap_error: Courtyard of C_IO42 overlaps with courtyard of C_VREG_IN
+- pcb_courtyard_overlap_error: Courtyard of C_IO42 overlaps with courtyard of Q_BUZZER
+- pcb_courtyard_overlap_error: Courtyard of C_IO49 overlaps with courtyard of C_DV50
+- pcb_courtyard_overlap_error: Courtyard of C_ADC overlaps with courtyard of C_VREG_IN
+- pcb_courtyard_overlap_error: Courtyard of C_USB overlaps with courtyard of C_DV50
+- pcb_courtyard_overlap_error: Courtyard of C_VREG_IN overlaps with courtyard of R_BUZZER_PD
+- pcb_courtyard_overlap_error: Courtyard of U_DRV overlaps with courtyard of R_SA
+- pcb_courtyard_overlap_error: Courtyard of U_DRV overlaps with courtyard of R_SB
+- pcb_courtyard_overlap_error: Courtyard of U_DRV overlaps with courtyard of C_BULK
+- pcb_courtyard_overlap_error: Courtyard of U_DRV overlaps with courtyard of C_REF
+- pcb_courtyard_overlap_error: Courtyard of R_SA overlaps with courtyard of R_SB
+- pcb_courtyard_overlap_error: Courtyard of C_BULK overlaps with courtyard of C_REF
+- pcb_courtyard_overlap_error: Courtyard of R_REF_H overlaps with courtyard of C_VM_SENSE
+- pcb_courtyard_overlap_error: Courtyard of R_ENABLE overlaps with courtyard of D_BUZZER
+- pcb_courtyard_overlap_error: Courtyard of R_SLEEP overlaps with courtyard of Q_STATUS_R
+- pcb_courtyard_overlap_error: Courtyard of Q_BUZZER overlaps with courtyard of R_BUZZER_GATE
+- pcb_courtyard_overlap_error: Courtyard of Q_BUZZER overlaps with courtyard of R_BUZZER_PD
+- pcb_courtyard_overlap_error: Courtyard of R_BUZZER_GATE overlaps with courtyard of R_BUZZER_PD
+- pcb_placement_error: Test point TP_GND is not accessible because it is inside the courtyard of C_BULK
+- pcb_placement_error: Test point TP_SWCLK is not accessible because it is inside the courtyard of C_BULK
+- pcb_placement_error: Test point TP_SWDIO is not accessible because it is inside the courtyard of C_BULK
+- pcb_connector_not_in_accessible_orientation_warning: J_PD is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: J_DATA is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).

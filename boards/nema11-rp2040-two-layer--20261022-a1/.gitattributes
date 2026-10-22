@@ -1,0 +1,6 @@
+imports/** -text -whitespace
+*.pdf binary
+*.png binary
+dist/** -text -whitespace
+# Preserve exact native diagnostic logs, including terminal blank lines.
+checks/*.txt -text -whitespace

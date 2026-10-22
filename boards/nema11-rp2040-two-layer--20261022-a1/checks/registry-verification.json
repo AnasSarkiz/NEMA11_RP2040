@@ -1,0 +1,1742 @@
+{
+  "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.6.0-two-layer-buzzer-wip",
+  "public": true,
+  "files": [
+    {
+      "file_path": "README.md",
+      "byte_equal": true,
+      "local_sha256": "f712b44e49430648d6ac879b8ccfeba46d6b41040766905b74cee97061c99af0",
+      "remote_sha256": "f712b44e49430648d6ac879b8ccfeba46d6b41040766905b74cee97061c99af0",
+      "bytes": 1535
+    },
+    {
+      "file_path": "VALIDATION.md",
+      "byte_equal": false,
+      "error_type": "ConnectionResetError",
+      "http_status": null
+    },
+    {
+      "file_path": "assets.d.ts",
+      "byte_equal": true,
+      "local_sha256": "b4ad0f28cd82061e9cc66b5a3461c71bb9bfdbb091de36bc8066417a9359f257",
+      "remote_sha256": "b4ad0f28cd82061e9cc66b5a3461c71bb9bfdbb091de36bc8066417a9359f257",
+      "bytes": 141
+    },
+    {
+      "file_path": "bun.lock",
+      "byte_equal": true,
+      "local_sha256": "3ea54bb4f64f1ce538c4844f98b521acfee890af6404527eb686d1941800b97a",
+      "remote_sha256": "3ea54bb4f64f1ce538c4844f98b521acfee890af6404527eb686d1941800b97a",
+      "bytes": 93805
+    },
+    {
+      "file_path": "checks/GCT-USB4145-footprint.png",
+      "byte_equal": true,
+      "local_sha256": "2a61a2a3be8f949b1069ffdafab7615568e9375e3ed59ecb957f16d9269a2b27",
+      "remote_sha256": "2a61a2a3be8f949b1069ffdafab7615568e9375e3ed59ecb957f16d9269a2b27",
+      "bytes": 280530
+    },
+    {
+      "file_path": "checks/check-netlist.txt",
+      "byte_equal": true,
+      "local_sha256": "e72872f7fc97a92ed936a4ac31d56782fe38eb6c24bc4cebcb71ba5212e42c9b",
+      "remote_sha256": "e72872f7fc97a92ed936a4ac31d56782fe38eb6c24bc4cebcb71ba5212e42c9b",
+      "bytes": 21476
+    },
+    {
+      "file_path": "checks/check-pin_specification.txt",
+      "byte_equal": true,
+      "local_sha256": "db21f9472a3a7e6d8b49d89c5fd784ee272099cc47cfff967664135808a13e70",
+      "remote_sha256": "db21f9472a3a7e6d8b49d89c5fd784ee272099cc47cfff967664135808a13e70",
+      "bytes": 3415
+    },
+    {
+      "file_path": "checks/check-placement.txt",
+      "byte_equal": true,
+      "local_sha256": "7c313dd3809ed52200098bf4c01ed44f1f82639576971e0965ac1372171babed",
+      "remote_sha256": "7c313dd3809ed52200098bf4c01ed44f1f82639576971e0965ac1372171babed",
+      "bytes": 61849
+    },
+    {
+      "file_path": "checks/check-schematic-placement.txt",
+      "byte_equal": true,
+      "local_sha256": "a7e6ee7bc34453ef8cf7f73c18b3fe6d6fefb08ab0be3670659872186f788849",
+      "remote_sha256": "a7e6ee7bc34453ef8cf7f73c18b3fe6d6fefb08ab0be3670659872186f788849",
+      "bytes": 6295
+    },
+    {
+      "file_path": "checks/check-source.txt",
+      "byte_equal": true,
+      "local_sha256": "111369a2e1523e4a45ba5453bf6b223a23cae2a8d09c479122adf680f6abe7ee",
+      "remote_sha256": "111369a2e1523e4a45ba5453bf6b223a23cae2a8d09c479122adf680f6abe7ee",
+      "bytes": 600
+    },
+    {
+      "file_path": "checks/dependency-install.txt",
+      "byte_equal": true,
+      "local_sha256": "e9e54f82ea0073261ae509f42a3f0c2d48bbce3fbc779166278a6d68f448bbb4",
+      "remote_sha256": "e9e54f82ea0073261ae509f42a3f0c2d48bbce3fbc779166278a6d68f448bbb4",
+      "bytes": 210
+    },
+    {
+      "file_path": "checks/format-check.txt",
+      "byte_equal": true,
+      "local_sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+      "remote_sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+      "bytes": 66
+    },
+    {
+      "file_path": "checks/format-source.txt",
+      "byte_equal": true,
+      "local_sha256": "40d6bd626204800c46798ac4cac98e07b79961a645dfb7fdf4cd61886163fe5d",
+      "remote_sha256": "40d6bd626204800c46798ac4cac98e07b79961a645dfb7fdf4cd61886163fe5d",
+      "bytes": 24
+    },
+    {
+      "file_path": "checks/format.txt",
+      "byte_equal": true,
+      "local_sha256": "baf3226d7086d3bb610c59c8d122c4a746b55f41c0105412dc16c6cb4c1d8de6",
+      "remote_sha256": "baf3226d7086d3bb610c59c8d122c4a746b55f41c0105412dc16c6cb4c1d8de6",
+      "bytes": 417
+    },
+    {
+      "file_path": "checks/import-C11702.txt",
+      "byte_equal": true,
+      "local_sha256": "dc8ae0713f98b1864f69e5aac528dbff8ef5fec3722579db94c7ab8970491fd3",
+      "remote_sha256": "dc8ae0713f98b1864f69e5aac528dbff8ef5fec3722579db94c7ab8970491fd3",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C131334.txt",
+      "byte_equal": true,
+      "local_sha256": "1e8b48bf1946f4e88d2a3a6e85491452fb123929f091f6c8457181e98c384738",
+      "remote_sha256": "1e8b48bf1946f4e88d2a3a6e85491452fb123929f091f6c8457181e98c384738",
+      "bytes": 184
+    },
+    {
+      "file_path": "checks/import-C13585.txt",
+      "byte_equal": true,
+      "local_sha256": "4c47482f1fff8be3ffb504b555c7f8f5331973be561b974ddc47fc19b908fbb7",
+      "remote_sha256": "4c47482f1fff8be3ffb504b555c7f8f5331973be561b974ddc47fc19b908fbb7",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C15195.txt",
+      "byte_equal": true,
+      "local_sha256": "9b9d362bbb41a94d2e734724eb7816c5d9ea5737878f0495df28679e630eebce",
+      "remote_sha256": "9b9d362bbb41a94d2e734724eb7816c5d9ea5737878f0495df28679e630eebce",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C1525.txt",
+      "byte_equal": true,
+      "local_sha256": "5fe8d9d5eb721403e0f5b0140f9e8598e8072febafa4edc42c1f45e19bbff615",
+      "remote_sha256": "5fe8d9d5eb721403e0f5b0140f9e8598e8072febafa4edc42c1f45e19bbff615",
+      "bytes": 176
+    },
+    {
+      "file_path": "checks/import-C1548.txt",
+      "byte_equal": true,
+      "local_sha256": "121c6c6ba993b66f090cd4cec5dff4ee574342cc2bcb35ceb39e97f856ee8567",
+      "remote_sha256": "121c6c6ba993b66f090cd4cec5dff4ee574342cc2bcb35ceb39e97f856ee8567",
+      "bytes": 180
+    },
+    {
+      "file_path": "checks/import-C15849.txt",
+      "byte_equal": true,
+      "local_sha256": "40a7e44f7746c9effdc6eff119f73d913ff8a180823d0a52449b357345e92b2f",
+      "remote_sha256": "40a7e44f7746c9effdc6eff119f73d913ff8a180823d0a52449b357345e92b2f",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C1589.txt",
+      "byte_equal": true,
+      "local_sha256": "27c3ca4f22eefb7284c93d7a7afcef4f76a43af1b6247fef9e9cd4de0bba3e5d",
+      "remote_sha256": "27c3ca4f22eefb7284c93d7a7afcef4f76a43af1b6247fef9e9cd4de0bba3e5d",
+      "bytes": 176
+    },
+    {
+      "file_path": "checks/import-C165948.txt",
+      "byte_equal": true,
+      "local_sha256": "e8a8ea996517c8d8bb97cc2a054f537efa911e8bb3c82820a58204184b6580df",
+      "remote_sha256": "e8a8ea996517c8d8bb97cc2a054f537efa911e8bb3c82820a58204184b6580df",
+      "bytes": 176
+    },
+    {
+      "file_path": "checks/import-C19077512.txt",
+      "byte_equal": true,
+      "local_sha256": "3b3ca0b383f89ebae0155818cb27fc952153150e521c45a561e1e4174a02394e",
+      "remote_sha256": "3b3ca0b383f89ebae0155818cb27fc952153150e521c45a561e1e4174a02394e",
+      "bytes": 162
+    },
+    {
+      "file_path": "checks/import-C19702.txt",
+      "byte_equal": true,
+      "local_sha256": "efef7aa20bfb1edef71bfa07cd835b1eb0335552ba9d290af3ee4ab15d06b14c",
+      "remote_sha256": "efef7aa20bfb1edef71bfa07cd835b1eb0335552ba9d290af3ee4ab15d06b14c",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C2040.txt",
+      "byte_equal": true,
+      "local_sha256": "5be3390dd8320e187653837102a7d3af4fc44b15b7133c0f607c48ea6d427ee9",
+      "remote_sha256": "5be3390dd8320e187653837102a7d3af4fc44b15b7133c0f607c48ea6d427ee9",
+      "bytes": 158
+    },
+    {
+      "file_path": "checks/import-C20625731.txt",
+      "byte_equal": true,
+      "local_sha256": "80a67eb5752bb54d64d8d02b9ad71b853873a99d50d0fd01a8dd30b42e343d0f",
+      "remote_sha256": "80a67eb5752bb54d64d8d02b9ad71b853873a99d50d0fd01a8dd30b42e343d0f",
+      "bytes": 172
+    },
+    {
+      "file_path": "checks/import-C20917.txt",
+      "byte_equal": true,
+      "local_sha256": "6def7f66635fa5aa90067f5d61ac808fd11b5aa3107721fd68da6d25a14c7efc",
+      "remote_sha256": "6def7f66635fa5aa90067f5d61ac808fd11b5aa3107721fd68da6d25a14c7efc",
+      "bytes": 161
+    },
+    {
+      "file_path": "checks/import-C21120.txt",
+      "byte_equal": true,
+      "local_sha256": "5138e654709d3e0629cf147863f0505c62de031024b5100341345cf956d3f970",
+      "remote_sha256": "5138e654709d3e0629cf147863f0505c62de031024b5100341345cf956d3f970",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C21189.txt",
+      "byte_equal": true,
+      "local_sha256": "a31b15566a820345e2ff1785ec5e080957c4fa4633a4034a9cabceab0338b1b7",
+      "remote_sha256": "a31b15566a820345e2ff1785ec5e080957c4fa4633a4034a9cabceab0338b1b7",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25076.txt",
+      "byte_equal": true,
+      "local_sha256": "f283a43510c43fe261f2462c4b085f131066a0ff35762b34c0342c31170af567",
+      "remote_sha256": "f283a43510c43fe261f2462c4b085f131066a0ff35762b34c0342c31170af567",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25100.txt",
+      "byte_equal": true,
+      "local_sha256": "0832d2473cfc88600afa094af25326d9d110e7cfe495ac512382ba8c9f3cd630",
+      "remote_sha256": "0832d2473cfc88600afa094af25326d9d110e7cfe495ac512382ba8c9f3cd630",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25104.txt",
+      "byte_equal": true,
+      "local_sha256": "74aabf0cc48422c4dabd61639143d1747f81a55913b7ebbc4fdaf32a5404ed3c",
+      "remote_sha256": "74aabf0cc48422c4dabd61639143d1747f81a55913b7ebbc4fdaf32a5404ed3c",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25741.txt",
+      "byte_equal": true,
+      "local_sha256": "b319b69dc9a84511e95099051430aa69db8dc76f7945add48a6f1f68f00575b6",
+      "remote_sha256": "b319b69dc9a84511e95099051430aa69db8dc76f7945add48a6f1f68f00575b6",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25744.txt",
+      "byte_equal": true,
+      "local_sha256": "6d2efde7ede6cf47bb0e1d8bd4824f74ff4ff8a6520a4e0b2c690114bf5bc691",
+      "remote_sha256": "6d2efde7ede6cf47bb0e1d8bd4824f74ff4ff8a6520a4e0b2c690114bf5bc691",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25796.txt",
+      "byte_equal": true,
+      "local_sha256": "6285734e758a420b6a7f7c6453f4d56b8aa9a854c50592d2ed7b7706e15cf9f6",
+      "remote_sha256": "6285734e758a420b6a7f7c6453f4d56b8aa9a854c50592d2ed7b7706e15cf9f6",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25803.txt",
+      "byte_equal": true,
+      "local_sha256": "e45abc03985d9774960d2fcac53d0686378b1137f0426888e219c97d7a50de56",
+      "remote_sha256": "e45abc03985d9774960d2fcac53d0686378b1137f0426888e219c97d7a50de56",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25804.txt",
+      "byte_equal": true,
+      "local_sha256": "b37ea8698e9ff0c97bb66aa092b1c3343cef070d9b2f1d86def216b90e468d23",
+      "remote_sha256": "b37ea8698e9ff0c97bb66aa092b1c3343cef070d9b2f1d86def216b90e468d23",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25900.txt",
+      "byte_equal": true,
+      "local_sha256": "356570f61f6e869c2b071cc06c9083c8eed197d887872fdd2180d47d92e10943",
+      "remote_sha256": "356570f61f6e869c2b071cc06c9083c8eed197d887872fdd2180d47d92e10943",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C25905.txt",
+      "byte_equal": true,
+      "local_sha256": "05a9f51615f4ae0109f485d27cfd1cb6485644a90d0c7d1a62ca587c5781c88b",
+      "remote_sha256": "05a9f51615f4ae0109f485d27cfd1cb6485644a90d0c7d1a62ca587c5781c88b",
+      "bytes": 179
+    },
+    {
+      "file_path": "checks/import-C2687116.txt",
+      "byte_equal": true,
+      "local_sha256": "737f013a7ecff473b4be4b2a6b7af08046507ee03c30ef4e63c822775a39c4c1",
+      "remote_sha256": "737f013a7ecff473b4be4b2a6b7af08046507ee03c30ef4e63c822775a39c4c1",
+      "bytes": 171
+    },
+    {
+      "file_path": "checks/import-C2986331.txt",
+      "byte_equal": true,
+      "local_sha256": "e7e484d1675a66818abd3f8218cdbda7c70b156520ad77d5cb846def4b4b58c8",
+      "remote_sha256": "e7e484d1675a66818abd3f8218cdbda7c70b156520ad77d5cb846def4b4b58c8",
+      "bytes": 173
+    },
+    {
+      "file_path": "checks/import-C38437.txt",
+      "byte_equal": true,
+      "local_sha256": "35108af0a77757c2c9b8902fe9d83b4eb51e1d72fd0e35204b0a8b5e1a5d64a1",
+      "remote_sha256": "35108af0a77757c2c9b8902fe9d83b4eb51e1d72fd0e35204b0a8b5e1a5d64a1",
+      "bytes": 171
+    },
+    {
+      "file_path": "checks/import-C4184.txt",
+      "byte_equal": true,
+      "local_sha256": "1979a874e4ae04ecb3c6d00c0b8d0573f97408f0b59a76b70160b0e4b5337da4",
+      "remote_sha256": "1979a874e4ae04ecb3c6d00c0b8d0573f97408f0b59a76b70160b0e4b5337da4",
+      "bytes": 178
+    },
+    {
+      "file_path": "checks/import-C42459160.txt",
+      "byte_equal": true,
+      "local_sha256": "f518d8d21ba621e2e204094beeddcd22954a3568f930e34543ca06a1ebfc2519",
+      "remote_sha256": "f518d8d21ba621e2e204094beeddcd22954a3568f930e34543ca06a1ebfc2519",
+      "bytes": 162
+    },
+    {
+      "file_path": "checks/import-C45783.txt",
+      "byte_equal": true,
+      "local_sha256": "bb5d3d407a47b21faebd185a8cad72877692115bc34804aaf593bf950109732a",
+      "remote_sha256": "bb5d3d407a47b21faebd185a8cad72877692115bc34804aaf593bf950109732a",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C458749.txt",
+      "byte_equal": true,
+      "local_sha256": "2b20016f27972bda4db18a2d721af91c12627f9e2ea75a44e1a67a95aa608acd",
+      "remote_sha256": "2b20016f27972bda4db18a2d721af91c12627f9e2ea75a44e1a67a95aa608acd",
+      "bytes": 174
+    },
+    {
+      "file_path": "checks/import-C478000.txt",
+      "byte_equal": true,
+      "local_sha256": "ea1dddcd48390251853d2aad4b64463479b88822a54b140afaf13083787f247d",
+      "remote_sha256": "ea1dddcd48390251853d2aad4b64463479b88822a54b140afaf13083787f247d",
+      "bytes": 172
+    },
+    {
+      "file_path": "checks/import-C509876.txt",
+      "byte_equal": true,
+      "local_sha256": "33a9a902d510fea801b0c7ca4504c82433d332f49571fb5dead35323ae7dcf3a",
+      "remote_sha256": "33a9a902d510fea801b0c7ca4504c82433d332f49571fb5dead35323ae7dcf3a",
+      "bytes": 180
+    },
+    {
+      "file_path": "checks/import-C52923.txt",
+      "byte_equal": true,
+      "local_sha256": "df7f70be9462deceb20efad75529bd4db017552d69bc973ea9ad0c949ac0fe65",
+      "remote_sha256": "df7f70be9462deceb20efad75529bd4db017552d69bc973ea9ad0c949ac0fe65",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C5815189.txt",
+      "byte_equal": true,
+      "local_sha256": "be1dfab4c645f70418809065ec0f7167e8a9d1754e22b949236df8990c963926",
+      "remote_sha256": "be1dfab4c645f70418809065ec0f7167e8a9d1754e22b949236df8990c963926",
+      "bytes": 183
+    },
+    {
+      "file_path": "checks/import-C72522.txt",
+      "byte_equal": true,
+      "local_sha256": "2f28061dfb759a6055590819610b8e96842790c204cc3dac2cbc3c44c644fda5",
+      "remote_sha256": "2f28061dfb759a6055590819610b8e96842790c204cc3dac2cbc3c44c644fda5",
+      "bytes": 173
+    },
+    {
+      "file_path": "checks/import-C7434086.txt",
+      "byte_equal": true,
+      "local_sha256": "dba57055879b8541ca9f9ff5a999c1ad62490e000cf682f2d1b6467624a8cb46",
+      "remote_sha256": "dba57055879b8541ca9f9ff5a999c1ad62490e000cf682f2d1b6467624a8cb46",
+      "bytes": 177
+    },
+    {
+      "file_path": "checks/import-C780206.txt",
+      "byte_equal": true,
+      "local_sha256": "802b1b456e81f3eb9d79e88826e62515c125446c9ca0f9cc07bbff2574f07ef8",
+      "remote_sha256": "802b1b456e81f3eb9d79e88826e62515c125446c9ca0f9cc07bbff2574f07ef8",
+      "bytes": 172
+    },
+    {
+      "file_path": "checks/import-C780769.txt",
+      "byte_equal": true,
+      "local_sha256": "c962312322fa7d786604978d2273433b50138e2f4fd60eccb6f455efb1262575",
+      "remote_sha256": "c962312322fa7d786604978d2273433b50138e2f4fd60eccb6f455efb1262575",
+      "bytes": 170
+    },
+    {
+      "file_path": "checks/import-C79815.txt",
+      "byte_equal": true,
+      "local_sha256": "73265ea93e6d20a1745d3d2739f6714f20b4e977eb63f9cdc9d2cb3f23afe5d9",
+      "remote_sha256": "73265ea93e6d20a1745d3d2739f6714f20b4e977eb63f9cdc9d2cb3f23afe5d9",
+      "bytes": 169
+    },
+    {
+      "file_path": "checks/import-C8598.txt",
+      "byte_equal": true,
+      "local_sha256": "fe349ace9fa6caf8540d1c01c845a1c649b5c0d83465b5560461702984b7a5b1",
+      "remote_sha256": "fe349ace9fa6caf8540d1c01c845a1c649b5c0d83465b5560461702984b7a5b1",
+      "bytes": 164
+    },
+    {
+      "file_path": "checks/import-C94598.txt",
+      "byte_equal": true,
+      "local_sha256": "c0ba3134f9f8a30ab3bb13b3473541d68ced88bc4a7be93f0e43cdba666bfe88",
+      "remote_sha256": "c0ba3134f9f8a30ab3bb13b3473541d68ced88bc4a7be93f0e43cdba666bfe88",
+      "bytes": 163
+    },
+    {
+      "file_path": "checks/import-C94599.txt",
+      "byte_equal": true,
+      "local_sha256": "42885768e6c5cd7e2b26f0909aafbebd2924faeccef99b8edb8b9369a0aac5e2",
+      "remote_sha256": "42885768e6c5cd7e2b26f0909aafbebd2924faeccef99b8edb8b9369a0aac5e2",
+      "bytes": 42
+    },
+    {
+      "file_path": "checks/import-C960916.txt",
+      "byte_equal": true,
+      "local_sha256": "ad37c444e7ee5eb2df1c134fb6faaff6b5570fa31601ac6fb53fe84884629845",
+      "remote_sha256": "ad37c444e7ee5eb2df1c134fb6faaff6b5570fa31601ac6fb53fe84884629845",
+      "bytes": 178
+    },
+    {
+      "file_path": "checks/import-C965799.txt",
+      "byte_equal": true,
+      "local_sha256": "8b9ef293002d2f48da88574d7f1c9307315518753e853fe1e0ee576b5ac534b7",
+      "remote_sha256": "8b9ef293002d2f48da88574d7f1c9307315518753e853fe1e0ee576b5ac534b7",
+      "bytes": 176
+    },
+    {
+      "file_path": "checks/import-C99269.txt",
+      "byte_equal": true,
+      "local_sha256": "5d892a63194b50d41d4c3439b0a2bac959aa090eaa27c2a5fef194f4200fea35",
+      "remote_sha256": "5d892a63194b50d41d4c3439b0a2bac959aa090eaa27c2a5fef194f4200fea35",
+      "bytes": 171
+    },
+    {
+      "file_path": "checks/import-all.txt",
+      "byte_equal": true,
+      "local_sha256": "1a18130e3f7d619017482315ee7e7c2b6bf313a150e0594ac1f5070b54502ebe",
+      "remote_sha256": "1a18130e3f7d619017482315ee7e7c2b6bf313a150e0594ac1f5070b54502ebe",
+      "bytes": 1929
+    },
+    {
+      "file_path": "checks/import-manifest.json",
+      "byte_equal": true,
+      "local_sha256": "d94123f0912f554b91f7335799cf085268f58692132ca8fbb1bb49ccc0008714",
+      "remote_sha256": "d94123f0912f554b91f7335799cf085268f58692132ca8fbb1bb49ccc0008714",
+      "bytes": 44036
+    },
+    {
+      "file_path": "checks/native-build-status.json",
+      "byte_equal": true,
+      "local_sha256": "4490903d435ef470bcf8d6bd8b4972ea305043f594ae264b8c70280371179d77",
+      "remote_sha256": "4490903d435ef470bcf8d6bd8b4972ea305043f594ae264b8c70280371179d77",
+      "bytes": 251
+    },
+    {
+      "file_path": "checks/native-build.txt",
+      "byte_equal": true,
+      "local_sha256": "023cb4e83c712437ba0e99fad92ae61db356442dad9acaa460c3abc3c8213083",
+      "remote_sha256": "023cb4e83c712437ba0e99fad92ae61db356442dad9acaa460c3abc3c8213083",
+      "bytes": 19987
+    },
+    {
+      "file_path": "checks/native-json-checks-status.json",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "checks/native-json-netlist.txt",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "checks/native-json-pin_specification.txt",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "checks/native-json-schematic-placement.txt",
+      "byte_equal": false,
+      "error_type": "HTTPError",
+      "http_status": 404
+    },
+    {
+      "file_path": "checks/native-json-source.txt",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "checks/required-checks-status.json",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "checks/schematic-overview.png",
+      "byte_equal": true,
+      "local_sha256": "7f3ef6f8dbabbc26bf2b40b66f48a00e7b8b2a953be6f241dcb9a7c7020e93be",
+      "remote_sha256": "7f3ef6f8dbabbc26bf2b40b66f48a00e7b8b2a953be6f241dcb9a7c7020e93be",
+      "bytes": 80018
+    },
+    {
+      "file_path": "checks/search-C165948-stderr.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/search-C165948.json",
+      "byte_equal": true,
+      "local_sha256": "5c84ed89e09453b0ddffff6ccad809c69902e901fc05b7b19cc4d1ebcb972bfb",
+      "remote_sha256": "5c84ed89e09453b0ddffff6ccad809c69902e901fc05b7b19cc4d1ebcb972bfb",
+      "bytes": 42
+    },
+    {
+      "file_path": "checks/search-C5815189-stderr.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/search-C5815189.json",
+      "byte_equal": true,
+      "local_sha256": "f20114d6bad9911215d668029f86e2032db5df0693f3be71f3511bd68f7ceea9",
+      "remote_sha256": "f20114d6bad9911215d668029f86e2032db5df0693f3be71f3511bd68f7ceea9",
+      "bytes": 43
+    },
+    {
+      "file_path": "checks/search-C94598-stderr.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/search-C94598.json",
+      "byte_equal": true,
+      "local_sha256": "967aca48613bfff6be5e0cfb9baa4c13834613012acf59dbffc2be229bf899f6",
+      "remote_sha256": "967aca48613bfff6be5e0cfb9baa4c13834613012acf59dbffc2be229bf899f6",
+      "bytes": 404
+    },
+    {
+      "file_path": "checks/search-usb-c-stderr.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/search-usb-c.json",
+      "byte_equal": true,
+      "local_sha256": "1ed25ee072ec15ad76b9bfbc82a7e8c52ca2f812a71b733d1cd15d3af2171536",
+      "remote_sha256": "1ed25ee072ec15ad76b9bfbc82a7e8c52ca2f812a71b733d1cd15d3af2171536",
+      "bytes": 3169
+    },
+    {
+      "file_path": "checks/search-usb-type-c-stderr.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/search-usb-type-c.json",
+      "byte_equal": true,
+      "local_sha256": "06bc64872220d7fd95aa34c2cd02f014f1127d784cfc0bf699c469d21e456c78",
+      "remote_sha256": "06bc64872220d7fd95aa34c2cd02f014f1127d784cfc0bf699c469d21e456c78",
+      "bytes": 3373
+    },
+    {
+      "file_path": "checks/source-integrity.json",
+      "byte_equal": true,
+      "local_sha256": "7c3682915a89e25cd83e54913272070200ffe6e82966b3efa35b6f3a546fe6f3",
+      "remote_sha256": "7c3682915a89e25cd83e54913272070200ffe6e82966b3efa35b6f3a546fe6f3",
+      "bytes": 67295
+    },
+    {
+      "file_path": "checks/typecheck-status.json",
+      "byte_equal": true,
+      "local_sha256": "6cb74a81a5c3c135ada3fd0bb96c3555bacc3810f6458f046b3651bd2c68631d",
+      "remote_sha256": "6cb74a81a5c3c135ada3fd0bb96c3555bacc3810f6458f046b3651bd2c68631d",
+      "bytes": 50
+    },
+    {
+      "file_path": "checks/typecheck.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "config/component-plan.json",
+      "byte_equal": true,
+      "local_sha256": "3b90309428dcf0198194135c36a703587c723360a180d5274492b4a6c9ec4c38",
+      "remote_sha256": "3b90309428dcf0198194135c36a703587c723360a180d5274492b4a6c9ec4c38",
+      "bytes": 2783
+    },
+    {
+      "file_path": "config/connections.json",
+      "byte_equal": true,
+      "local_sha256": "99f84c98b2f45c06c7842307fa57942e677848d229f971270004457179872876",
+      "remote_sha256": "99f84c98b2f45c06c7842307fa57942e677848d229f971270004457179872876",
+      "bytes": 16175
+    },
+    {
+      "file_path": "config/placement.json",
+      "byte_equal": true,
+      "local_sha256": "159fe046a6029f5427dc8b32f67bca836601fa70e1f36fc8080a31d933d2e699",
+      "remote_sha256": "159fe046a6029f5427dc8b32f67bca836601fa70e1f36fc8080a31d933d2e699",
+      "bytes": 10852
+    },
+    {
+      "file_path": "config/requirements.json",
+      "byte_equal": true,
+      "local_sha256": "c8fcdbd10ed1b9aabf412ee8609ecfbfa4a9b559135613ef4f80eddde8da866f",
+      "remote_sha256": "c8fcdbd10ed1b9aabf412ee8609ecfbfa4a9b559135613ef4f80eddde8da866f",
+      "bytes": 1790
+    },
+    {
+      "file_path": "config/schematic-layout.json",
+      "byte_equal": true,
+      "local_sha256": "dd6e84f2168dd8f461e58201e60f58c050f68c45ec648d757bfd2be851e81cd5",
+      "remote_sha256": "dd6e84f2168dd8f461e58201e60f58c050f68c45ec648d757bfd2be851e81cd5",
+      "bytes": 7632
+    },
+    {
+      "file_path": "dist/index/circuit.json",
+      "byte_equal": true,
+      "local_sha256": "8ae3f3aee82d7c470a452a13b4d511cce0a19670f6098a3749d76ddab7a8ee6e",
+      "remote_sha256": "8ae3f3aee82d7c470a452a13b4d511cce0a19670f6098a3749d76ddab7a8ee6e",
+      "bytes": 2006293
+    },
+    {
+      "file_path": "dist/index/pcb.png",
+      "byte_equal": true,
+      "local_sha256": "814dd09f363530a9887dc978f68e03f5e346f099903c3e0e5cf4b3c647a03c0d",
+      "remote_sha256": "814dd09f363530a9887dc978f68e03f5e346f099903c3e0e5cf4b3c647a03c0d",
+      "bytes": 168648
+    },
+    {
+      "file_path": "dist/index/pcb.svg",
+      "byte_equal": true,
+      "local_sha256": "997ff126ba987f29a060819a0330e7f6a6802a7d4a4ba83059120b8d3a725c98",
+      "remote_sha256": "997ff126ba987f29a060819a0330e7f6a6802a7d4a4ba83059120b8d3a725c98",
+      "bytes": 457030
+    },
+    {
+      "file_path": "dist/index/schematic.svg",
+      "byte_equal": true,
+      "local_sha256": "0105cac697e27de9aa88693116e33c4876bdfb1417d1aedc817d2416b893cc1b",
+      "remote_sha256": "0105cac697e27de9aa88693116e33c4876bdfb1417d1aedc817d2416b893cc1b",
+      "bytes": 181935
+    },
+    {
+      "file_path": "docs/GCT-USB4145-drawing.pdf",
+      "byte_equal": true,
+      "local_sha256": "c38c5977f6123b0178fa25853140c16bb2d8c70808f2203f3ab604ce31d18516",
+      "remote_sha256": "c38c5977f6123b0178fa25853140c16bb2d8c70808f2203f3ab604ce31d18516",
+      "bytes": 771248
+    },
+    {
+      "file_path": "docs/GCT-USB4145-drawing.txt",
+      "byte_equal": true,
+      "local_sha256": "009391559b2777d7003b4a8f2ac076416b66eee634361c208c85dae6d174cda0",
+      "remote_sha256": "009391559b2777d7003b4a8f2ac076416b66eee634361c208c85dae6d174cda0",
+      "bytes": 4
+    },
+    {
+      "file_path": "docs/MLT-5020-datasheet.pdf",
+      "byte_equal": true,
+      "local_sha256": "db73c860afd42abdf9a2e69c4a34ac915d68e07108a2188d6ee0a9c02f723be9",
+      "remote_sha256": "db73c860afd42abdf9a2e69c4a34ac915d68e07108a2188d6ee0a9c02f723be9",
+      "bytes": 492825
+    },
+    {
+      "file_path": "docs/MLT-5020-datasheet.txt",
+      "byte_equal": true,
+      "local_sha256": "ad55f11ae07700a3d99505a20566bd25e1d2bfe9cbad5f31cc604d983dd5a995",
+      "remote_sha256": "ad55f11ae07700a3d99505a20566bd25e1d2bfe9cbad5f31cc604d983dd5a995",
+      "bytes": 6443
+    },
+    {
+      "file_path": "docs/user-validation-policy.md",
+      "byte_equal": true,
+      "local_sha256": "3f1188e121f1741ef48bd4254683ba3c0dc2cf797a9fd19c2bbaba2c6bf8f1b9",
+      "remote_sha256": "3f1188e121f1741ef48bd4254683ba3c0dc2cf797a9fd19c2bbaba2c6bf8f1b9",
+      "bytes": 13011
+    },
+    {
+      "file_path": "imports/A4988SETTR_T/A4988SETTR_T.obj",
+      "byte_equal": true,
+      "local_sha256": "01eb47f12909a50a9f70825ab23b31c6be4b33ffe26bd7c8697f94077b87ebd9",
+      "remote_sha256": "01eb47f12909a50a9f70825ab23b31c6be4b33ffe26bd7c8697f94077b87ebd9",
+      "bytes": 80209
+    },
+    {
+      "file_path": "imports/A4988SETTR_T/A4988SETTR_T.step",
+      "byte_equal": true,
+      "local_sha256": "578a8ff75c4016df2d5e6e332aba2899ef713bf2d1c439906bc57edf2a57e121",
+      "remote_sha256": "578a8ff75c4016df2d5e6e332aba2899ef713bf2d1c439906bc57edf2a57e121",
+      "bytes": 1874198
+    },
+    {
+      "file_path": "imports/A4988SETTR_T/A4988SETTR_T.tsx",
+      "byte_equal": true,
+      "local_sha256": "fc22d27778d1f4f37c490681d34b0c846cb335749030fce7ffab790cda784398",
+      "remote_sha256": "fc22d27778d1f4f37c490681d34b0c846cb335749030fce7ffab790cda784398",
+      "bytes": 8244
+    },
+    {
+      "file_path": "imports/ABM8_272_T3/ABM8_272_T3.obj",
+      "byte_equal": true,
+      "local_sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7",
+      "remote_sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7",
+      "bytes": 133015
+    },
+    {
+      "file_path": "imports/ABM8_272_T3/ABM8_272_T3.step",
+      "byte_equal": true,
+      "local_sha256": "55aee3da5b1518e84230f692ed298823bc71771ac97e871a21b265f0b4f8232b",
+      "remote_sha256": "55aee3da5b1518e84230f692ed298823bc71771ac97e871a21b265f0b4f8232b",
+      "bytes": 1285360
+    },
+    {
+      "file_path": "imports/ABM8_272_T3/ABM8_272_T3.tsx",
+      "byte_equal": true,
+      "local_sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6",
+      "remote_sha256": "11477d5e66d47580b3719439b1616814be42b08fcfb2ad5136f196d6581338a6",
+      "bytes": 3749
+    },
+    {
+      "file_path": "imports/AO3400A/AO3400A.obj",
+      "byte_equal": true,
+      "local_sha256": "b579ed36991ffc8657e2b5bba0fd00fea2f2aa889925092ca9c543ce88ba8199",
+      "remote_sha256": "b579ed36991ffc8657e2b5bba0fd00fea2f2aa889925092ca9c543ce88ba8199",
+      "bytes": 357468
+    },
+    {
+      "file_path": "imports/AO3400A/AO3400A.step",
+      "byte_equal": true,
+      "local_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "remote_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "bytes": 2774137
+    },
+    {
+      "file_path": "imports/AO3400A/AO3400A.tsx",
+      "byte_equal": true,
+      "local_sha256": "045b391cb3c1cbb4f387ae76a933db8614de730c8c75a281d66c971608b2f423",
+      "remote_sha256": "045b391cb3c1cbb4f387ae76a933db8614de730c8c75a281d66c971608b2f423",
+      "bytes": 3997
+    },
+    {
+      "file_path": "imports/AP63203WU_7/AP63203WU_7.obj",
+      "byte_equal": true,
+      "local_sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69",
+      "remote_sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69",
+      "bytes": 82763
+    },
+    {
+      "file_path": "imports/AP63203WU_7/AP63203WU_7.step",
+      "byte_equal": true,
+      "local_sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "remote_sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "bytes": 1646923
+    },
+    {
+      "file_path": "imports/AP63203WU_7/AP63203WU_7.tsx",
+      "byte_equal": true,
+      "local_sha256": "1a9806ba82674c63b85093e9725c82ed58aa58f35e76759d5032121fc441ceee",
+      "remote_sha256": "1a9806ba82674c63b85093e9725c82ed58aa58f35e76759d5032121fc441ceee",
+      "bytes": 3351
+    },
+    {
+      "file_path": "imports/AS5600_ASOM/AS5600_ASOM.obj",
+      "byte_equal": true,
+      "local_sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278",
+      "remote_sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278",
+      "bytes": 74072
+    },
+    {
+      "file_path": "imports/AS5600_ASOM/AS5600_ASOM.step",
+      "byte_equal": true,
+      "local_sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "remote_sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "bytes": 559111
+    },
+    {
+      "file_path": "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "byte_equal": true,
+      "local_sha256": "e011f3f1890780db9d07c533df55eb5cb15861934e6b8adc105614291fe3b944",
+      "remote_sha256": "e011f3f1890780db9d07c533df55eb5cb15861934e6b8adc105614291fe3b944",
+      "bytes": 4104
+    },
+    {
+      "file_path": "imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "byte_equal": true,
+      "local_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "remote_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "file_path": "imports/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "byte_equal": true,
+      "local_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "remote_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "bytes": 1481985
+    },
+    {
+      "file_path": "imports/A_0402CG150J500NT/A_0402CG150J500NT.tsx",
+      "byte_equal": true,
+      "local_sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f",
+      "remote_sha256": "6223eacf22dffae2483c114155180fbd2920da0eba889983e96e7f832f9a620f",
+      "bytes": 2989
+    },
+    {
+      "file_path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "94e8eca58f755ecafad87f2d34407c688d1e782a585f16d01366db2349a4e4dd",
+      "remote_sha256": "94e8eca58f755ecafad87f2d34407c688d1e782a585f16d01366db2349a4e4dd",
+      "bytes": 1777
+    },
+    {
+      "file_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1",
+      "remote_sha256": "c93c05842bb1338cae91506e313a05256b11817d542a7d8f452b1ff7a89509c1",
+      "bytes": 1946
+    },
+    {
+      "file_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8",
+      "remote_sha256": "8c9f02c23d15d7d2164d8a430bc13f92aba576cd300c757d7706ceeb7911d3f8",
+      "bytes": 1947
+    },
+    {
+      "file_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "06dc4b807ed08046857436372994722bfee24cb88b914ee7430e7d76bca18484",
+      "remote_sha256": "06dc4b807ed08046857436372994722bfee24cb88b914ee7430e7d76bca18484",
+      "bytes": 1948
+    },
+    {
+      "file_path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803",
+      "remote_sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803",
+      "bytes": 1776
+    },
+    {
+      "file_path": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "8d56c9393a184d954df04eff9423690c831e8bcc6fcae8d64ab12f367c2ab719",
+      "remote_sha256": "8d56c9393a184d954df04eff9423690c831e8bcc6fcae8d64ab12f367c2ab719",
+      "bytes": 1947
+    },
+    {
+      "file_path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "12ea4d84494dc68a32cac0bbdd8258a4cf159664e2b41dac92e26bb49c932191",
+      "remote_sha256": "12ea4d84494dc68a32cac0bbdd8258a4cf159664e2b41dac92e26bb49c932191",
+      "bytes": 1778
+    },
+    {
+      "file_path": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "a35a01c6014e47dafccf409322a330b9ce31a0879b601495648a175435b158e0",
+      "remote_sha256": "a35a01c6014e47dafccf409322a330b9ce31a0879b601495648a175435b158e0",
+      "bytes": 1778
+    },
+    {
+      "file_path": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
+      "byte_equal": true,
+      "local_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "remote_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "bytes": 18730
+    },
+    {
+      "file_path": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.step",
+      "byte_equal": true,
+      "local_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "remote_sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "bytes": 1068271
+    },
+    {
+      "file_path": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.tsx",
+      "byte_equal": true,
+      "local_sha256": "8eb042cac3987ad9de08b691a5a6c622ee81e603814ad0a7830193e2edcd12b5",
+      "remote_sha256": "8eb042cac3987ad9de08b691a5a6c622ee81e603814ad0a7830193e2edcd12b5",
+      "bytes": 1777
+    },
+    {
+      "file_path": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
+      "byte_equal": true,
+      "local_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "remote_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "bytes": 78929
+    },
+    {
+      "file_path": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.step",
+      "byte_equal": true,
+      "local_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "bytes": 1046696
+    },
+    {
+      "file_path": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.tsx",
+      "byte_equal": true,
+      "local_sha256": "b47270ff2444d6fc83f7a132c3b236a3a77cf8062525e1840be78f11f6a6fbc0",
+      "remote_sha256": "b47270ff2444d6fc83f7a132c3b236a3a77cf8062525e1840be78f11f6a6fbc0",
+      "bytes": 1794
+    },
+    {
+      "file_path": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+      "byte_equal": true,
+      "local_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "remote_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "bytes": 78929
+    },
+    {
+      "file_path": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.step",
+      "byte_equal": true,
+      "local_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "bytes": 1046696
+    },
+    {
+      "file_path": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx",
+      "byte_equal": true,
+      "local_sha256": "f6ac09b90652e630334ed327f993187e970d7b0791e6f34a92f1ecf6f0614b5b",
+      "remote_sha256": "f6ac09b90652e630334ed327f993187e970d7b0791e6f34a92f1ecf6f0614b5b",
+      "bytes": 1966
+    },
+    {
+      "file_path": "imports/A_0603WAF1003T5E/A_0603WAF1003T5E.obj",
+      "byte_equal": true,
+      "local_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "remote_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "bytes": 78929
+    },
+    {
+      "file_path": "imports/A_0603WAF1003T5E/A_0603WAF1003T5E.step",
+      "byte_equal": true,
+      "local_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "bytes": 1046696
+    },
+    {
+      "file_path": "imports/A_0603WAF1003T5E/A_0603WAF1003T5E.tsx",
+      "byte_equal": true,
+      "local_sha256": "c33c9b46f2a3d7fce5991bbc6e77eeebfa4b0e31f2d721a868b3a9c4d90bd8df",
+      "remote_sha256": "c33c9b46f2a3d7fce5991bbc6e77eeebfa4b0e31f2d721a868b3a9c4d90bd8df",
+      "bytes": 1967
+    },
+    {
+      "file_path": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+      "byte_equal": true,
+      "local_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "remote_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "bytes": 78929
+    },
+    {
+      "file_path": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.step",
+      "byte_equal": true,
+      "local_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "bytes": 1046696
+    },
+    {
+      "file_path": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.tsx",
+      "byte_equal": true,
+      "local_sha256": "16d395442170fe58e97af6db054b85c3f16aff956cded6144ea5d3d64d048d44",
+      "remote_sha256": "16d395442170fe58e97af6db054b85c3f16aff956cded6144ea5d3d64d048d44",
+      "bytes": 1795
+    },
+    {
+      "file_path": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
+      "byte_equal": true,
+      "local_sha256": "333d51fc2722f28c1a73c3ef4b240453d4ce90bba01e4b2a7b6d8c059fa62d0f",
+      "remote_sha256": "333d51fc2722f28c1a73c3ef4b240453d4ce90bba01e4b2a7b6d8c059fa62d0f",
+      "bytes": 203317
+    },
+    {
+      "file_path": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.step",
+      "byte_equal": true,
+      "local_sha256": "330cfdeb167726774e998328867b10007c6ca195a3a7aab25f476c0c19b5a7a1",
+      "remote_sha256": "330cfdeb167726774e998328867b10007c6ca195a3a7aab25f476c0c19b5a7a1",
+      "bytes": 2149575
+    },
+    {
+      "file_path": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.tsx",
+      "byte_equal": true,
+      "local_sha256": "65f410e9be84b9c617caf6d514e11c583d01ebf356b80bb6fea5a69fb1609c7c",
+      "remote_sha256": "65f410e9be84b9c617caf6d514e11c583d01ebf356b80bb6fea5a69fb1609c7c",
+      "bytes": 2148
+    },
+    {
+      "file_path": "imports/B5819W_SL/B5819W_SL.obj",
+      "byte_equal": true,
+      "local_sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344",
+      "remote_sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344",
+      "bytes": 61981
+    },
+    {
+      "file_path": "imports/B5819W_SL/B5819W_SL.step",
+      "byte_equal": true,
+      "local_sha256": "f2468af30d27a00c11bf5070ed3293c491829997423ccad7906ca52893418de7",
+      "remote_sha256": "f2468af30d27a00c11bf5070ed3293c491829997423ccad7906ca52893418de7",
+      "bytes": 1130934
+    },
+    {
+      "file_path": "imports/B5819W_SL/B5819W_SL.tsx",
+      "byte_equal": true,
+      "local_sha256": "42d39d8e0698b939d0da5b0f074f4dd098def9abf40b254d401c0bb0d93cdd4f",
+      "remote_sha256": "42d39d8e0698b939d0da5b0f074f4dd098def9abf40b254d401c0bb0d93cdd4f",
+      "bytes": 4101
+    },
+    {
+      "file_path": "imports/CH224A/CH224A.obj",
+      "byte_equal": true,
+      "local_sha256": "9fceace97b3056c9b525486645e2f69ac9290eee319061ac743edf3570fb6296",
+      "remote_sha256": "9fceace97b3056c9b525486645e2f69ac9290eee319061ac743edf3570fb6296",
+      "bytes": 60457
+    },
+    {
+      "file_path": "imports/CH224A/CH224A.step",
+      "byte_equal": true,
+      "local_sha256": "d18445242d4c9c099a3b99743d6cf639e9433f0b32efd8152de33d2d4984c8a7",
+      "remote_sha256": "d18445242d4c9c099a3b99743d6cf639e9433f0b32efd8152de33d2d4984c8a7",
+      "bytes": 1724834
+    },
+    {
+      "file_path": "imports/CH224A/CH224A.tsx",
+      "byte_equal": true,
+      "local_sha256": "76fbf29cfb369e20b612e84b914e28160bae3c8ca5061562bc375a03e523f1fc",
+      "remote_sha256": "76fbf29cfb369e20b612e84b914e28160bae3c8ca5061562bc375a03e523f1fc",
+      "bytes": 4876
+    },
+    {
+      "file_path": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "byte_equal": true,
+      "local_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "remote_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "file_path": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.step",
+      "byte_equal": true,
+      "local_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "remote_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "bytes": 1481985
+    },
+    {
+      "file_path": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a",
+      "remote_sha256": "fc3a55691d57b8e2e4c81300b33ba879d6c7df0f05cd3ec9dd3cd65b52717a4a",
+      "bytes": 2983
+    },
+    {
+      "file_path": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "remote_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "file_path": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "remote_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "bytes": 1481985
+    },
+    {
+      "file_path": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "6d19803b9cbbb8cadcc5636f533b0ef823366af12d307a939aa66268ef23fa25",
+      "remote_sha256": "6d19803b9cbbb8cadcc5636f533b0ef823366af12d307a939aa66268ef23fa25",
+      "bytes": 2813
+    },
+    {
+      "file_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "remote_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "file_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "remote_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "bytes": 1481985
+    },
+    {
+      "file_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "e613221bc1ad5638a5839e0118815e0112b7a48c3b57474c6a77c3087050dcbc",
+      "remote_sha256": "e613221bc1ad5638a5839e0118815e0112b7a48c3b57474c6a77c3087050dcbc",
+      "bytes": 2815
+    },
+    {
+      "file_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "remote_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "bytes": 55992
+    },
+    {
+      "file_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "remote_sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "bytes": 1481985
+    },
+    {
+      "file_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8",
+      "remote_sha256": "0937a498f3f223734b2f7792da0a556892898437e194bff292d79c82d729b2e8",
+      "bytes": 2984
+    },
+    {
+      "file_path": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "remote_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "bytes": 57506
+    },
+    {
+      "file_path": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "remote_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "bytes": 1468156
+    },
+    {
+      "file_path": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "ea887d62ca4bfb4f6eb44fd8652de70354b52fbab2f0c2459fce27fc68481b14",
+      "remote_sha256": "ea887d62ca4bfb4f6eb44fd8652de70354b52fbab2f0c2459fce27fc68481b14",
+      "bytes": 2955
+    },
+    {
+      "file_path": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "remote_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "bytes": 57506
+    },
+    {
+      "file_path": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "remote_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "bytes": 1468156
+    },
+    {
+      "file_path": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "18d2efe28e58c378cb6c8c48363c3ea8d13cc0f71430bf85be41facd748499fe",
+      "remote_sha256": "18d2efe28e58c378cb6c8c48363c3ea8d13cc0f71430bf85be41facd748499fe",
+      "bytes": 2785
+    },
+    {
+      "file_path": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "remote_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "bytes": 57506
+    },
+    {
+      "file_path": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "remote_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "bytes": 1468156
+    },
+    {
+      "file_path": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "bee018f6b940718f656cf9682be3fc0236bf004a9f662e854a6d67359f32994e",
+      "remote_sha256": "bee018f6b940718f656cf9682be3fc0236bf004a9f662e854a6d67359f32994e",
+      "bytes": 2784
+    },
+    {
+      "file_path": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
+      "byte_equal": true,
+      "local_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "remote_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "bytes": 57506
+    },
+    {
+      "file_path": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.step",
+      "byte_equal": true,
+      "local_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "remote_sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "bytes": 1468156
+    },
+    {
+      "file_path": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.tsx",
+      "byte_equal": true,
+      "local_sha256": "abb4a490363ea48aa098283cf79b094d9dbe4dc37c30bf014c0a381c6a0313d3",
+      "remote_sha256": "abb4a490363ea48aa098283cf79b094d9dbe4dc37c30bf014c0a381c6a0313d3",
+      "bytes": 2786
+    },
+    {
+      "file_path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "byte_equal": true,
+      "local_sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "remote_sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "bytes": 57153
+    },
+    {
+      "file_path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "byte_equal": true,
+      "local_sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "remote_sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "bytes": 1480687
+    },
+    {
+      "file_path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "byte_equal": true,
+      "local_sha256": "6a1d0d39089308ba4719d9b899a045a2ff79080850fd5891afffcc4b78c4f648",
+      "remote_sha256": "6a1d0d39089308ba4719d9b899a045a2ff79080850fd5891afffcc4b78c4f648",
+      "bytes": 2802
+    },
+    {
+      "file_path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "byte_equal": true,
+      "local_sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0",
+      "remote_sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0",
+      "bytes": 120447
+    },
+    {
+      "file_path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "byte_equal": true,
+      "local_sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "remote_sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "bytes": 1169799
+    },
+    {
+      "file_path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "byte_equal": true,
+      "local_sha256": "4f86abd9dd3867049419b6bd29e4a01e1d566db240cba11e08d4c57d4f3d52dc",
+      "remote_sha256": "4f86abd9dd3867049419b6bd29e4a01e1d566db240cba11e08d4c57d4f3d52dc",
+      "bytes": 2765
+    },
+    {
+      "file_path": "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.obj",
+      "byte_equal": true,
+      "local_sha256": "c24d37ae061693e0de70fbeb9b6d1ee94d9f764beabc5f85764346747b1b1b77",
+      "remote_sha256": "c24d37ae061693e0de70fbeb9b6d1ee94d9f764beabc5f85764346747b1b1b77",
+      "bytes": 107596
+    },
+    {
+      "file_path": "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+      "byte_equal": true,
+      "local_sha256": "a4302d82281bf18f6eca6b7d52994f13db2aa1063f54f05d7903ee5d99e83dac",
+      "remote_sha256": "a4302d82281bf18f6eca6b7d52994f13db2aa1063f54f05d7903ee5d99e83dac",
+      "bytes": 2159210
+    },
+    {
+      "file_path": "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.tsx",
+      "byte_equal": true,
+      "local_sha256": "213baa70fda5362e58b1db91d0bf60d0a48c9e354d56de2ac5dcc9ad2f5b495d",
+      "remote_sha256": "213baa70fda5362e58b1db91d0bf60d0a48c9e354d56de2ac5dcc9ad2f5b495d",
+      "bytes": 3854
+    },
+    {
+      "file_path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "byte_equal": true,
+      "local_sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
+      "remote_sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
+      "bytes": 86770
+    },
+    {
+      "file_path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "byte_equal": true,
+      "local_sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20",
+      "remote_sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20",
+      "bytes": 1087615
+    },
+    {
+      "file_path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "byte_equal": true,
+      "local_sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd",
+      "remote_sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd",
+      "bytes": 2836
+    },
+    {
+      "file_path": "imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "byte_equal": true,
+      "local_sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
+      "remote_sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
+      "bytes": 18763
+    },
+    {
+      "file_path": "imports/HP05W3F240LT5E/HP05W3F240LT5E.step",
+      "byte_equal": true,
+      "local_sha256": "fc4726ad0364128aa67ad16e76bace8fa7a85fb80514f68d5fbf53d114860b6f",
+      "remote_sha256": "fc4726ad0364128aa67ad16e76bace8fa7a85fb80514f68d5fbf53d114860b6f",
+      "bytes": 1067918
+    },
+    {
+      "file_path": "imports/HP05W3F240LT5E/HP05W3F240LT5E.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/LTST_C19HE1WT/LTST_C19HE1WT.obj",
+      "byte_equal": true,
+      "local_sha256": "91d2ed9dbc575337fd7846c7fffc5d6380171764896dfc49ed433cf571c81d1b",
+      "remote_sha256": "91d2ed9dbc575337fd7846c7fffc5d6380171764896dfc49ed433cf571c81d1b",
+      "bytes": 34547
+    },
+    {
+      "file_path": "imports/LTST_C19HE1WT/LTST_C19HE1WT.step",
+      "byte_equal": false,
+      "error_type": "ConnectionResetError",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/LTST_C19HE1WT/LTST_C19HE1WT.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/MLT_5020/MLT_5020.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/MLT_5020/MLT_5020.step",
+      "byte_equal": true,
+      "local_sha256": "867309604960a2d7b111a32890275508b957a192f906f17a71728fc991489fac",
+      "remote_sha256": "867309604960a2d7b111a32890275508b957a192f906f17a71728fc991489fac",
+      "bytes": 1435098
+    },
+    {
+      "file_path": "imports/MLT_5020/MLT_5020.tsx",
+      "byte_equal": true,
+      "local_sha256": "f74b608a7e7de32403b990b723e97f8b5dc13f573e27e36544a338559e20789c",
+      "remote_sha256": "f74b608a7e7de32403b990b723e97f8b5dc13f573e27e36544a338559e20789c",
+      "bytes": 4794
+    },
+    {
+      "file_path": "imports/PMEG6020ELRX/PMEG6020ELRX.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/PMEG6020ELRX/PMEG6020ELRX.step",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/PMEG6020ELRX/PMEG6020ELRX.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/RP2040/RP2040.obj",
+      "byte_equal": true,
+      "local_sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e",
+      "remote_sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e",
+      "bytes": 167735
+    },
+    {
+      "file_path": "imports/RP2040/RP2040.step",
+      "byte_equal": true,
+      "local_sha256": "174a866c06fe9b824f197259a77cb3b39625ba986ddd7214fb32f0d873eb4bbd",
+      "remote_sha256": "174a866c06fe9b824f197259a77cb3b39625ba986ddd7214fb32f0d873eb4bbd",
+      "bytes": 2121609
+    },
+    {
+      "file_path": "imports/RP2040/RP2040.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/RVT1V470M0605/RVT1V470M0605.obj",
+      "byte_equal": true,
+      "local_sha256": "c2f7aa7cd71a979dfeda7f8834d57e7bc89a1a551214fb36539b6e2a07d00d5f",
+      "remote_sha256": "c2f7aa7cd71a979dfeda7f8834d57e7bc89a1a551214fb36539b6e2a07d00d5f",
+      "bytes": 171757
+    },
+    {
+      "file_path": "imports/RVT1V470M0605/RVT1V470M0605.step",
+      "byte_equal": true,
+      "local_sha256": "3f7752a412a9f28abd4ba1fb513f336b1342c32f1ced0c14865dbb1ba2b22fe0",
+      "remote_sha256": "3f7752a412a9f28abd4ba1fb513f336b1342c32f1ced0c14865dbb1ba2b22fe0",
+      "bytes": 1175916
+    },
+    {
+      "file_path": "imports/RVT1V470M0605/RVT1V470M0605.tsx",
+      "byte_equal": false,
+      "error_type": "ConnectionResetError",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/SMF18A/SMF18A.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/SMF18A/SMF18A.step",
+      "byte_equal": true,
+      "local_sha256": "09d6262e2e56a71ebe143062f98e269803bdd3ebbb9d1202f29942ae90e5109f",
+      "remote_sha256": "09d6262e2e56a71ebe143062f98e269803bdd3ebbb9d1202f29942ae90e5109f",
+      "bytes": 1090348
+    },
+    {
+      "file_path": "imports/SMF18A/SMF18A.tsx",
+      "byte_equal": true,
+      "local_sha256": "6ccb0c0ba1b83d9a050566943fb2b15f75b0a3f07964ec9cd315c5e609af7b05",
+      "remote_sha256": "6ccb0c0ba1b83d9a050566943fb2b15f75b0a3f07964ec9cd315c5e609af7b05",
+      "bytes": 4194
+    },
+    {
+      "file_path": "imports/SRN4018_4R7M/SRN4018_4R7M.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/SRN4018_4R7M/SRN4018_4R7M.step",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/SRN4018_4R7M/SRN4018_4R7M.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/TMP102AIDRLR/TMP102AIDRLR.obj",
+      "byte_equal": true,
+      "local_sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59",
+      "remote_sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59",
+      "bytes": 104973
+    },
+    {
+      "file_path": "imports/TMP102AIDRLR/TMP102AIDRLR.step",
+      "byte_equal": true,
+      "local_sha256": "2fa2e0f7cefa8b58279161303b6e060e28345b91cc712c9c548aa9b06a56d4b6",
+      "remote_sha256": "2fa2e0f7cefa8b58279161303b6e060e28345b91cc712c9c548aa9b06a56d4b6",
+      "bytes": 2388676
+    },
+    {
+      "file_path": "imports/TMP102AIDRLR/TMP102AIDRLR.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "byte_equal": false,
+      "error_type": "ConnectionResetError",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "byte_equal": true,
+      "local_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "remote_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "bytes": 3046769
+    },
+    {
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "byte_equal": true,
+      "local_sha256": "f72ec6955f7f982441478d44f69e2f67961da1195766faefe651de29dd2b0cbd",
+      "remote_sha256": "f72ec6955f7f982441478d44f69e2f67961da1195766faefe651de29dd2b0cbd",
+      "bytes": 6848
+    },
+    {
+      "file_path": "imports/USB4145_03_0070_C/USB4145_03_0070_C.obj",
+      "byte_equal": true,
+      "local_sha256": "39f20ea318cd7eb64a56cd55d4d793922c83ebfdb6ce5314f968fcda7aee196e",
+      "remote_sha256": "39f20ea318cd7eb64a56cd55d4d793922c83ebfdb6ce5314f968fcda7aee196e",
+      "bytes": 452380
+    },
+    {
+      "file_path": "imports/USB4145_03_0070_C/USB4145_03_0070_C.step",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
+      "byte_equal": true,
+      "local_sha256": "13805c7fbf1f7fcb339dbceb15679888f05304639efc612be5b351aba55024ab",
+      "remote_sha256": "13805c7fbf1f7fcb339dbceb15679888f05304639efc612be5b351aba55024ab",
+      "bytes": 5132
+    },
+    {
+      "file_path": "imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/USBLC6_2SC6/USBLC6_2SC6.step",
+      "byte_equal": true,
+      "local_sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff",
+      "remote_sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff",
+      "bytes": 3277419
+    },
+    {
+      "file_path": "imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/XL_1608SURC_06/XL_1608SURC_06.obj",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "imports/XL_1608SURC_06/XL_1608SURC_06.step",
+      "byte_equal": true,
+      "local_sha256": "fab2695222ffaa79870ed46cefbbc99c0c4f0c2752ed686b150d2720065b3be6",
+      "remote_sha256": "fab2695222ffaa79870ed46cefbbc99c0c4f0c2752ed686b150d2720065b3be6",
+      "bytes": 1476247
+    },
+    {
+      "file_path": "imports/XL_1608SURC_06/XL_1608SURC_06.tsx",
+      "byte_equal": true,
+      "local_sha256": "c82043ec6ffbce3090b39f84e3fc21f70343fc5000f4bc0d864e76e876723140",
+      "remote_sha256": "c82043ec6ffbce3090b39f84e3fc21f70343fc5000f4bc0d864e76e876723140",
+      "bytes": 4102
+    },
+    {
+      "file_path": "index.circuit.tsx",
+      "byte_equal": true,
+      "local_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
+      "remote_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
+      "bytes": 34617
+    },
+    {
+      "file_path": "package.json",
+      "byte_equal": true,
+      "local_sha256": "f07d2c987f45b92b3f267a8ee9ffe81179c050e1dba52321deb086746eb577d1",
+      "remote_sha256": "f07d2c987f45b92b3f267a8ee9ffe81179c050e1dba52321deb086746eb577d1",
+      "bytes": 1476
+    },
+    {
+      "file_path": "scripts/generate_source.py",
+      "byte_equal": false,
+      "error_type": "RemoteDisconnected",
+      "http_status": null
+    },
+    {
+      "file_path": "scripts/import_components.py",
+      "byte_equal": true,
+      "local_sha256": "8e1151c486e8c94fe58ad347de3f39307de9d2e50a684b146fc53f525897a649",
+      "remote_sha256": "8e1151c486e8c94fe58ad347de3f39307de9d2e50a684b146fc53f525897a649",
+      "bytes": 2661
+    },
+    {
+      "file_path": "scripts/verify_registry.py",
+      "byte_equal": false,
+      "error_type": "HTTPError",
+      "http_status": 404
+    },
+    {
+      "file_path": "scripts/verify_source.py",
+      "byte_equal": true,
+      "local_sha256": "333c09bbd2e379d59d521eb3639cf17be7930448813b18dd6d800d1d2aaabfc3",
+      "remote_sha256": "333c09bbd2e379d59d521eb3639cf17be7930448813b18dd6d800d1d2aaabfc3",
+      "bytes": 3696
+    },
+    {
+      "file_path": "tscircuit.config.json",
+      "byte_equal": true,
+      "local_sha256": "2b405bf2835cee14ee94c85ff2719a6d2d98738af0cd4c29cf1ba1dc564f9d4e",
+      "remote_sha256": "2b405bf2835cee14ee94c85ff2719a6d2d98738af0cd4c29cf1ba1dc564f9d4e",
+      "bytes": 96
+    },
+    {
+      "file_path": "tsconfig.json",
+      "byte_equal": false,
+      "error_type": "ConnectionResetError",
+      "http_status": null
+    }
+  ],
+  "matched": 220,
+  "checked": 249,
+  "release": {
+    "package_release_id": "aa4594c8-4fec-457c-84d5-21e2646c372e",
+    "version": "0.6.0-two-layer-buzzer-wip",
+    "is_latest": true,
+    "ready_to_build": false,
+    "build_status": null,
+    "build_error": null
+  },
+  "manufacturing_approved": false,
+  "excludes": [
+    "dot files/directories",
+    "node_modules",
+    "__pycache__",
+    "this verification receipt"
+  ],
+  "verification_complete": false,
+  "registry_metadata_currently_readable": false,
+  "public_verified_before_transport_failure": true,
+  "blocking_issue": "Cloud outbound proxy transport failure: HTTP 503, remote connection failure. Both registry-api.tscircuit.com and GitHub Git operations fail. Publication remains partial."
+}

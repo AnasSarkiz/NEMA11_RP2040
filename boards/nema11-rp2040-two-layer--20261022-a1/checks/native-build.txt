@@ -1,0 +1,292 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+J_PD has no pin with requires_power=true
+J_PD has no pin with requires_ground=true
+D_TVS has no pin with requires_power=true
+D_TVS has no pin with requires_ground=true
+All pins on D_TVS are underspecified (no pinAttributes set)
+J_DATA has no pin with requires_power=true
+J_DATA has no pin with requires_ground=true
+U_ESD has no pin with requires_power=true
+Y_MCU has no pin with requires_power=true
+Y_MCU has no pin with requires_ground=true
+All pins on Y_MCU are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+D_STATUS has no pin with requires_power=true
+D_STATUS has no pin with requires_ground=true
+All pins on D_STATUS are underspecified (no pinAttributes set)
+Q_STATUS_R has no pin with requires_power=true
+Q_STATUS_R has no pin with requires_ground=true
+All pins on Q_STATUS_R are underspecified (no pinAttributes set)
+Q_STATUS_G has no pin with requires_power=true
+Q_STATUS_G has no pin with requires_ground=true
+All pins on Q_STATUS_G are underspecified (no pinAttributes set)
+Q_STATUS_B has no pin with requires_power=true
+Q_STATUS_B has no pin with requires_ground=true
+All pins on Q_STATUS_B are underspecified (no pinAttributes set)
+BZ1 has no pin with requires_power=true
+BZ1 has no pin with requires_ground=true
+Q_BUZZER has no pin with requires_power=true
+Q_BUZZER has no pin with requires_ground=true
+All pins on Q_BUZZER are underspecified (no pinAttributes set)
+J_PD is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_DATA is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP_BOOT has no courtyard
+TP_BOOT_GND has no courtyard
+TP_3V3 has no courtyard
+TP_GND has no courtyard
+TP_SWCLK has no courtyard
+TP_SWDIO has no courtyard
+TP_RUN has no courtyard
+C_BOOTSTRAP may not have availability from jlcpcb (C1525).
+C_FLASH may not have availability from jlcpcb (C1525).
+C_IO1 may not have availability from jlcpcb (C1525).
+C_IO10 may not have availability from jlcpcb (C1525).
+C_IO22 may not have availability from jlcpcb (C1525).
+C_IO33 may not have availability from jlcpcb (C1525).
+C_IO42 may not have availability from jlcpcb (C1525).
+C_IO49 may not have availability from jlcpcb (C1525).
+C_ADC may not have availability from jlcpcb (C1525).
+C_USB may not have availability from jlcpcb (C1525).
+C_DV23 may not have availability from jlcpcb (C1525).
+C_DV50 may not have availability from jlcpcb (C1525).
+C_DRV_LOGIC may not have availability from jlcpcb (C1525).
+C_TEMP may not have availability from jlcpcb (C1525).
+L_BUCK may not have availability from jlcpcb (C780206).
+R_PD may not have availability from jlcpcb (C21189).
+C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
+C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
+D_TVS may not have availability from jlcpcb (C19077512).
+C_PD may not have availability from jlcpcb (C15849).
+C_XIN may not have availability from jlcpcb (C1548).
+C_XOUT may not have availability from jlcpcb (C1548).
+C_BUCK_IN may not have availability from jlcpcb (C13585).
+R_TEMP_SDA may not have availability from jlcpcb (C25900).
+R_TEMP_SCL may not have availability from jlcpcb (C25900).
+C_VREG_IN may not have availability from jlcpcb (C52923).
+C_VREG_OUT may not have availability from jlcpcb (C52923).
+R_PG may not have availability from jlcpcb (C25804).
+R_SLEEP may not have availability from jlcpcb (C25803).
+D_PD may not have availability from jlcpcb (C8598).
+D_DATA may not have availability from jlcpcb (C8598).
+R_USB_SENSE_H may not have availability from jlcpcb (C25741).
+R_USB_SENSE_L may not have availability from jlcpcb (C25741).
+R_ENABLE may not have availability from jlcpcb (C25741).
+R_VM_H may not have availability from jlcpcb (C25741).
+R_BUZZER_PD may not have availability from jlcpcb (C25741).
+R_REF_H may not have availability from jlcpcb (C4184).
+R_CC1 may not have availability from jlcpcb (C25905).
+R_CC2 may not have availability from jlcpcb (C25905).
+R_SA may not have availability from jlcpcb (C7434086).
+R_SB may not have availability from jlcpcb (C7434086).
+R_BUZZER_GATE may not have availability from jlcpcb (C25076).
+R_FLASH_CS may not have availability from jlcpcb (C25744).
+R_RUN may not have availability from jlcpcb (C25744).
+R_REF_L may not have availability from jlcpcb (C25744).
+R_VM_L may not have availability from jlcpcb (C25744).
+C_REF may not have availability from jlcpcb (C1589).
+C_VM_SENSE may not have availability from jlcpcb (C15195).
+R_DP may not have availability from jlcpcb (C25100).
+R_DM may not have availability from jlcpcb (C25100).
+C_VREG may not have availability from jlcpcb (C21120).
+D_BUZZER may not have availability from jlcpcb (C478000).
+R_PD_CFG may not have availability from jlcpcb (C25796).
+R_PWR_LED may not have availability from jlcpcb (C25104).
+C_CP may not have availability from jlcpcb (C960916).
+C_VCP may not have availability from jlcpcb (C960916).
+C_VM may not have availability from jlcpcb (C960916).
+R_BOOT may not have availability from jlcpcb (C11702).
+R_XOUT may not have availability from jlcpcb (C11702).
+R_STATUS_R may not have availability from jlcpcb (C11702).
+R_STATUS_G may not have availability from jlcpcb (C11702).
+R_STATUS_B may not have availability from jlcpcb (C11702).
+C_BUZZER may not have availability from jlcpcb (C19702).
+U_ESD may not have availability from jlcpcb (C2687116).
+J_PD may not have availability from jlcpcb (C165948).
+J_DATA may not have availability from jlcpcb (C165948).
+Y_MCU may not have availability from jlcpcb (C20625731).
+J_MOTOR may not have availability from jlcpcb (C131334).
+SMT pad D_STATUS.G_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+SMT pad D_STATUS.R_NEG violates copper-to-board-edge clearance (measured 0.108mm, required 0.250mm)
+Copper for component R_USB_SENSE_H overlaps a PCB keepout
+Copper for component TP_3V3 overlaps a PCB keepout
+Copper for component R_STATUS_R overlaps a PCB keepout
+Copper for component R_PD overlaps a PCB keepout
+Copper for component D_PD overlaps a PCB keepout
+Copper for component R_USB_SENSE_L overlaps a PCB keepout
+Copper for component R_TEMP_SCL overlaps a PCB keepout
+Copper for component R_PG overlaps a PCB keepout
+Copper for component TP_BOOT_GND overlaps a PCB keepout
+Copper for component R_TEMP_SDA overlaps a PCB keepout
+Copper for component D_DATA overlaps a PCB keepout
+Copper for component U_ESD overlaps a PCB keepout
+Courtyard of R_PD overlaps PCB keepout "unnamed keepout"
+Courtyard of R_PG overlaps PCB keepout "unnamed keepout"
+Courtyard of D_PD overlaps PCB keepout "unnamed keepout"
+Courtyard of D_DATA overlaps PCB keepout "unnamed keepout"
+Courtyard of U_ESD overlaps PCB keepout "unnamed keepout"
+Courtyard of R_USB_SENSE_H overlaps PCB keepout "unnamed keepout"
+Courtyard of R_USB_SENSE_L overlaps PCB keepout "unnamed keepout"
+Courtyard of C_BULK overlaps PCB keepout "unnamed keepout"
+Courtyard of U_TEMP overlaps PCB keepout "unnamed keepout"
+Courtyard of R_TEMP_SDA overlaps PCB keepout "unnamed keepout"
+Courtyard of R_TEMP_SCL overlaps PCB keepout "unnamed keepout"
+Courtyard of R_STATUS_R overlaps PCB keepout "unnamed keepout"
+J_PD overlaps D_PD: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+pcb_plated_hole J_PD.EH2 overlaps with pcb_courtyard_outline unnamed courtyard outline
+J_PD overlaps R_DP: 3 footprint overlaps, 2 pad clearance violations. Move the components apart.
+J_PD overlaps C_USB: 2 footprint overlaps, 1 pad clearance violation. Move the components apart.
+J_PD overlaps C_DV50: 3 footprint overlaps, 1 pad clearance violation. Move the components apart.
+J_PD overlaps C_BUZZER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+J_PD overlaps U_ENCODER: 1 footprint overlap, 2 pad clearance violations. Move the components apart.
+U_PD overlaps C_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+U_PD overlaps D_TVS: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+U_PD overlaps R_CC1: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+U_PD overlaps R_CC2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+pcb_smtpad R_PD.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+R_CC1 overlaps C_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_PD overlaps R_VM_H: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+pcb_smtpad R_PG.pin2 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad D_PD.anode overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+J_DATA overlaps D_DATA: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+pcb_smtpad D_DATA.anode overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+L_BUCK overlaps U_BUCK: 2 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+R_STATUS_B overlaps U_BUCK: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+Q_BUZZER overlaps U_BUCK: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+L_BUCK overlaps C_BUCK_OUT2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_BUCK_IN overlaps Q_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_BUCK_IN overlaps D_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_BUCK_OUT1 overlaps C_BUCK_OUT2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_BUCK_OUT2 overlaps C_IO33: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+J_DATA overlaps C_IO49: 3 footprint overlaps, 1 pad clearance violation. Move the components apart.
+pcb_plated_hole J_DATA.EH4 overlaps with pcb_courtyard_outline unnamed courtyard outline
+pcb_plated_hole J_DATA.EH4 overlaps with pcb_courtyard_outline unnamed courtyard outline
+J_DATA overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+R_DP overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+U_FLASH overlaps C_IO1: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+R_FLASH_CS overlaps Y_MCU: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+pcb_smtpad TP_BOOT_GND.pin1 overlaps with pcb_hole unnamed hole
+U_MCU overlaps U_ENCODER: 2 footprint overlaps, 2 pad clearance violations. Move the components apart.
+U_MCU overlaps C_ENCODER_BULK: 2 footprint overlaps, 6 pad clearance violations. Move the components apart.
+Y_MCU overlaps Q_STATUS_B: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_XOUT overlaps R_STATUS_G: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+C_IO10 overlaps J_MOTOR: 2 footprint overlaps, 1 pad clearance violation. Move the components apart.
+C_IO49 overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+C_ADC overlaps Q_BUZZER: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_ADC overlaps R_BUZZER_GATE: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_ADC overlaps R_BUZZER_PD: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_USB overlaps U_ENCODER: 2 footprint overlaps, 2 pad clearance violations. Move the components apart.
+C_VREG_IN overlaps Q_BUZZER: 1 footprint overlap, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+C_DV50 overlaps U_ENCODER: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+pcb_smtpad TP_3V3.pin1 overlaps with pcb_hole unnamed hole
+R_SB overlaps C_VM: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C_VREG overlaps C_REF: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_TEMP_SCL.pin2 overlaps with pcb_hole unnamed hole
+pcb_smtpad R_TEMP_SCL.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+pcb_smtpad R_STATUS_R.pin2 overlaps with pcb_hole unnamed hole
+pcb_smtpad R_STATUS_R.pin1 overlaps with pcb_hole unnamed hole
+pcb_courtyard_outline unnamed courtyard outline overlaps with pcb_hole unnamed hole
+Pads D_PD.anode and R_TEMP_SCL.pin1 are too close (clearance: 0.059mm, minimum: 0.15mm)
+Pads U_BUCK.EN and D_BUZZER.cathode are too close (clearance: 0.058mm, minimum: 0.15mm)
+Pads L_BUCK.pin1 and C_BUCK_OUT1.pin2 are too close (clearance: 0.125mm, minimum: 0.15mm)
+Pads L_BUCK.pin1 and C_BUCK_OUT1.pin1 are too close (clearance: 0.125mm, minimum: 0.15mm)
+Pads C_BUCK_IN.pin2 and R_ENABLE.pin2 are too close (clearance: 0.099mm, minimum: 0.15mm)
+Pads U_FLASH.VCC and C_FLASH.pin2 are too close (clearance: 0.13mm, minimum: 0.15mm)
+Pads U_MCU.ADC_AVDD and C_ENCODER.pin2 are too close (clearance: 0.03mm, minimum: 0.15mm)
+Pads U_MCU.IOVDD2 and C_ENCODER.pin2 are too close (clearance: 0.03mm, minimum: 0.15mm)
+Pads Q_BUZZER.pin3 and R_BUZZER_PD.pin2 are too close (clearance: 0.105mm, minimum: 0.15mm)
+Pads Q_BUZZER.pin3 and R_BUZZER_PD.pin1 are too close (clearance: 0.105mm, minimum: 0.15mm)
+Courtyard of J_PD overlaps with courtyard of R_SB
+Courtyard of R_PD overlaps with courtyard of D_PD
+Courtyard of D_TVS overlaps with courtyard of R_CC2
+Courtyard of D_PD overlaps with courtyard of R_USB_SENSE_L
+Courtyard of D_PD overlaps with courtyard of R_TEMP_SCL
+Courtyard of D_DATA overlaps with courtyard of U_ESD
+Courtyard of U_BUCK overlaps with courtyard of C_BOOTSTRAP
+Courtyard of U_BUCK overlaps with courtyard of D_BUZZER
+Courtyard of L_BUCK overlaps with courtyard of C_BUCK_OUT1
+Courtyard of L_BUCK overlaps with courtyard of R_USB_SENSE_H
+Courtyard of L_BUCK overlaps with courtyard of C_IO33
+Courtyard of C_BUCK_IN overlaps with courtyard of R_ENABLE
+Courtyard of C_BUCK_IN overlaps with courtyard of R_BUZZER_GATE
+Courtyard of C_BUCK_IN overlaps with courtyard of R_BUZZER_PD
+Courtyard of C_BUCK_OUT1 overlaps with courtyard of C_IO33
+Courtyard of C_BUCK_OUT2 overlaps with courtyard of C_IO42
+Courtyard of C_BUCK_OUT2 overlaps with courtyard of Q_BUZZER
+Courtyard of J_DATA overlaps with courtyard of R_SA
+Courtyard of J_DATA overlaps with courtyard of R_SB
+Courtyard of U_ESD overlaps with courtyard of R_VM_L
+Courtyard of R_DP overlaps with courtyard of R_DM
+Courtyard of R_DP overlaps with courtyard of C_USB
+Courtyard of R_DM overlaps with courtyard of C_USB
+Courtyard of R_DM overlaps with courtyard of C_VREG_OUT
+Courtyard of R_USB_SENSE_H overlaps with courtyard of R_STATUS_R
+Courtyard of R_USB_SENSE_L overlaps with courtyard of R_TEMP_SCL
+Courtyard of U_FLASH overlaps with courtyard of C_FLASH
+Courtyard of R_BOOT overlaps with courtyard of R_PWR_LED
+Courtyard of U_MCU overlaps with courtyard of C_IO49
+Courtyard of U_MCU overlaps with courtyard of C_VREG_OUT
+Courtyard of U_MCU overlaps with courtyard of C_DV50
+Courtyard of Y_MCU overlaps with courtyard of R_XOUT
+Courtyard of Y_MCU overlaps with courtyard of C_XIN
+Courtyard of Y_MCU overlaps with courtyard of C_XOUT
+Courtyard of Y_MCU overlaps with courtyard of R_STATUS_G
+Courtyard of R_XOUT overlaps with courtyard of C_DV23
+Courtyard of C_XOUT overlaps with courtyard of Q_STATUS_B
+Courtyard of C_IO22 overlaps with courtyard of C_DV23
+Courtyard of C_IO42 overlaps with courtyard of C_VREG_IN
+Courtyard of C_IO42 overlaps with courtyard of Q_BUZZER
+Courtyard of C_IO49 overlaps with courtyard of C_DV50
+Courtyard of C_ADC overlaps with courtyard of C_VREG_IN
+Courtyard of C_USB overlaps with courtyard of C_DV50
+Courtyard of C_VREG_IN overlaps with courtyard of R_BUZZER_PD
+Courtyard of U_DRV overlaps with courtyard of R_SA
+Courtyard of U_DRV overlaps with courtyard of R_SB
+Courtyard of U_DRV overlaps with courtyard of C_BULK
+Courtyard of U_DRV overlaps with courtyard of C_REF
+Courtyard of R_SA overlaps with courtyard of R_SB
+Courtyard of C_BULK overlaps with courtyard of C_REF
+Courtyard of R_REF_H overlaps with courtyard of C_VM_SENSE
+Courtyard of R_ENABLE overlaps with courtyard of D_BUZZER
+Courtyard of R_SLEEP overlaps with courtyard of Q_STATUS_R
+Courtyard of Q_BUZZER overlaps with courtyard of R_BUZZER_GATE
+Courtyard of Q_BUZZER overlaps with courtyard of R_BUZZER_PD
+Courtyard of R_BUZZER_GATE overlaps with courtyard of R_BUZZER_PD
+Test point TP_GND is not accessible because it is inside the courtyard of C_BULK
+Test point TP_SWCLK is not accessible because it is inside the courtyard of C_BULK
+Test point TP_SWDIO is not accessible because it is inside the courtyard of C_BULK
+Autorouting was skipped because 155 PCB placement errors were found. Fix the placement errors or set placementDrcChecksDisabled to true to route anyway.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

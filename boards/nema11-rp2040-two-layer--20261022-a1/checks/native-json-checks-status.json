@@ -1,0 +1,26 @@
+[
+  {
+    "check": "netlist",
+    "command": "tsci check netlist dist/index/circuit.json",
+    "exit_code": 1,
+    "internal_exception_present": false
+  },
+  {
+    "check": "pin_specification",
+    "command": "tsci check pin_specification dist/index/circuit.json",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "check": "source",
+    "command": "tsci check source dist/index/circuit.json",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "check": "schematic-placement",
+    "command": "tsci check schematic-placement dist/index/circuit.json",
+    "exit_code": 0,
+    "internal_exception_present": false
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "package_name_with_version": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype@0.6.0-two-layer-buzzer-wip",
+  "native_cli_command": "tsci push --include-dist --compress --version-tag two-layer-buzzer-wip",
+  "native_cli_exit_code": 1,
+  "native_cli_partial_upload": true,
+  "native_failed_uploads": [
+    "imports/DTC114EU3HZGT106/DTC114EU3HZGT106.step",
+    "imports/USB4145_03_0070_C/USB4145_03_0070_C.step"
+  ],
+  "exact_remote_matches_verified": 220,
+  "files_compared": 249,
+  "source_and_native_circuit_json_verified_byte_equal": true,
+  "complete": false,
+  "recovery_attempted": false,
+  "blocking_issue": "Outbound proxy HTTP 503 / remote connection failure affects tscircuit and GitHub; no credential failure observed",
+  "ready_to_build_last_observed": false,
+  "manufacturing_approved": false
+}

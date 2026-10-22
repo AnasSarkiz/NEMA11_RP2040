@@ -1,0 +1,844 @@
+{
+  "scope": "Board wiring by manufacturer physical pin numbers, derived from baseline reference; imported pin definitions are not changed",
+  "baseline": "2a9fa01f4c5ee052f18ce4c3c719bab706a5de36",
+  "candidate_USB_part": "C165948",
+  "candidate_buzzer_part": "C94598",
+  "components": {
+    "J_PD": {
+      "connections": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND",
+        "13": "GND",
+        "14": "GND",
+        "6": "PD_CC1",
+        "12": "PD_CC2",
+        "15": "PD_VBUS",
+        "16": "PD_VBUS"
+      },
+      "no_connect": ["5", "11", "7", "8", "9", "10"]
+    },
+    "J_DATA": {
+      "connections": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "GND",
+        "13": "GND",
+        "14": "GND",
+        "6": "DATA_CC1",
+        "12": "DATA_CC2",
+        "15": "DATA_VBUS",
+        "16": "DATA_VBUS",
+        "7": "USB_DM",
+        "9": "USB_DM",
+        "8": "USB_DP",
+        "10": "USB_DP"
+      },
+      "no_connect": ["5", "11"]
+    },
+    "U_PD": {
+      "connections": {
+        "1": "PD_VHV",
+        "6": "PD_CC2",
+        "7": "PD_CC1",
+        "8": "PD_VBUS",
+        "9": "PD_CFG",
+        "10": "PD_GOOD",
+        "11": "GND"
+      },
+      "no_connect": ["2", "3", "4", "5"]
+    },
+    "R_PD": {
+      "connections": {
+        "1": "PD_VBUS",
+        "2": "PD_VHV"
+      },
+      "no_connect": [],
+      "resistance": 0
+    },
+    "C_PD": {
+      "connections": {
+        "1": "PD_VHV",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-6
+    },
+    "R_PG": {
+      "connections": {
+        "1": "V3V3",
+        "2": "PD_GOOD"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "U_MCU": {
+      "connections": {
+        "1": "V3V3",
+        "4": "LED_G",
+        "5": "LED_B",
+        "8": "STEP",
+        "9": "DIR",
+        "10": "V3V3",
+        "11": "ENABLE_N",
+        "12": "SLEEP",
+        "13": "PD_GOOD",
+        "19": "GND",
+        "20": "XIN",
+        "21": "XOUT",
+        "22": "V3V3",
+        "23": "V1V1",
+        "24": "SWCLK",
+        "25": "SWDIO",
+        "26": "RUN",
+        "27": "BUZZER_PWM",
+        "33": "V3V3",
+        "37": "LED_R",
+        "38": "TEMP_SDA",
+        "39": "TEMP_SCL",
+        "40": "VM_SENSE",
+        "41": "DATA_PRESENT",
+        "42": "V3V3",
+        "43": "V3V3",
+        "44": "V3V3",
+        "45": "V1V1",
+        "46": "MCU_DM",
+        "47": "MCU_DP",
+        "48": "V3V3",
+        "49": "V3V3",
+        "50": "V1V1",
+        "51": "QSPI_SD3",
+        "52": "QSPI_SCLK",
+        "53": "QSPI_SD0",
+        "54": "QSPI_SD2",
+        "55": "QSPI_SD1",
+        "56": "QSPI_SS",
+        "57": "GND"
+      },
+      "no_connect": [
+        "2",
+        "3",
+        "6",
+        "7",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "34",
+        "35",
+        "36"
+      ]
+    },
+    "C_IO1": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_IO10": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_IO22": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_IO33": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_IO42": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_IO49": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_DV23": {
+      "connections": {
+        "1": "V1V1",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_DV50": {
+      "connections": {
+        "1": "V1V1",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_USB": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_ADC": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_VREG_IN": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-6
+    },
+    "C_VREG_OUT": {
+      "connections": {
+        "1": "V1V1",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-6
+    },
+    "U_FLASH": {
+      "connections": {
+        "1": "QSPI_SS",
+        "2": "QSPI_SD1",
+        "3": "QSPI_SD2",
+        "4": "GND",
+        "5": "QSPI_SD0",
+        "6": "QSPI_SCLK",
+        "7": "QSPI_SD3",
+        "8": "V3V3",
+        "9": "GND"
+      },
+      "no_connect": []
+    },
+    "C_FLASH": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "R_FLASH_CS": {
+      "connections": {
+        "1": "V3V3",
+        "2": "QSPI_SS"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "R_BOOT": {
+      "connections": {
+        "1": "QSPI_SS",
+        "2": "BOOT_PAD"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "Y_MCU": {
+      "connections": {
+        "1": "XIN",
+        "3": "XTAL_OUT",
+        "4": "GND",
+        "2": "GND"
+      },
+      "no_connect": []
+    },
+    "R_XOUT": {
+      "connections": {
+        "1": "XOUT",
+        "2": "XTAL_OUT"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "C_XIN": {
+      "connections": {
+        "1": "XIN",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1.5e-11
+    },
+    "C_XOUT": {
+      "connections": {
+        "1": "XTAL_OUT",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1.5e-11
+    },
+    "R_RUN": {
+      "connections": {
+        "1": "V3V3",
+        "2": "RUN"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "R_DM": {
+      "connections": {
+        "1": "MCU_DM",
+        "2": "USB_DM"
+      },
+      "no_connect": [],
+      "resistance": 27
+    },
+    "R_DP": {
+      "connections": {
+        "1": "MCU_DP",
+        "2": "USB_DP"
+      },
+      "no_connect": [],
+      "resistance": 27
+    },
+    "R_CC1": {
+      "connections": {
+        "1": "DATA_CC1",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 5100
+    },
+    "R_CC2": {
+      "connections": {
+        "1": "DATA_CC2",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 5100
+    },
+    "R_USB_SENSE_H": {
+      "connections": {
+        "1": "DATA_VBUS",
+        "2": "DATA_PRESENT"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "R_USB_SENSE_L": {
+      "connections": {
+        "1": "DATA_PRESENT",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "R_VM_H": {
+      "connections": {
+        "1": "PD_VBUS",
+        "2": "VM_SENSE"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "R_VM_L": {
+      "connections": {
+        "1": "VM_SENSE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "C_VM_SENSE": {
+      "connections": {
+        "1": "VM_SENSE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-8
+    },
+    "U_BUCK": {
+      "connections": {
+        "1": "V3V3",
+        "2": "LOGIC_IN",
+        "3": "LOGIC_IN",
+        "4": "GND",
+        "5": "BUCK_SW",
+        "6": "BUCK_BST"
+      },
+      "no_connect": []
+    },
+    "L_BUCK": {
+      "connections": {
+        "1": "BUCK_SW",
+        "2": "V3V3"
+      },
+      "no_connect": [],
+      "inductance": "4.7uH"
+    },
+    "C_BOOTSTRAP": {
+      "connections": {
+        "1": "BUCK_BST",
+        "2": "BUCK_SW"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_BUCK_IN": {
+      "connections": {
+        "1": "LOGIC_IN",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-5
+    },
+    "C_BUCK_OUT1": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 2.2e-5
+    },
+    "C_BUCK_OUT2": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 2.2e-5
+    },
+    "D_PD": {
+      "connections": {
+        "1": "LOGIC_IN",
+        "2": "PD_VBUS"
+      },
+      "no_connect": []
+    },
+    "D_DATA": {
+      "connections": {
+        "1": "LOGIC_IN",
+        "2": "DATA_VBUS"
+      },
+      "no_connect": []
+    },
+    "U_DRV": {
+      "connections": {
+        "1": "B_MINUS",
+        "2": "ENABLE_N",
+        "3": "GND",
+        "4": "CP1",
+        "5": "CP2",
+        "6": "VCP",
+        "8": "VREG",
+        "9": "V3V3",
+        "10": "V3V3",
+        "11": "V3V3",
+        "12": "V3V3",
+        "13": "GND",
+        "14": "SLEEP",
+        "15": "V3V3",
+        "16": "STEP",
+        "17": "VREF",
+        "18": "GND",
+        "19": "DIR",
+        "21": "A_MINUS",
+        "22": "PD_VBUS",
+        "23": "SENSE1",
+        "24": "A_PLUS",
+        "26": "B_PLUS",
+        "27": "SENSE2",
+        "28": "PD_VBUS",
+        "29": "GND"
+      },
+      "no_connect": ["7", "20", "25"]
+    },
+    "C_CP": {
+      "connections": {
+        "1": "CP1",
+        "2": "CP2"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_VCP": {
+      "connections": {
+        "1": "VCP",
+        "2": "PD_VBUS"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_VREG": {
+      "connections": {
+        "1": "VREG",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 2.2e-7
+    },
+    "C_DRV_LOGIC": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_VM": {
+      "connections": {
+        "1": "PD_VBUS",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_BULK": {
+      "connections": {
+        "2": "GND",
+        "1": "PD_VBUS"
+      },
+      "no_connect": [],
+      "capacitance": 4.7e-5
+    },
+    "R_SA": {
+      "connections": {
+        "1": "SENSE1",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 0.24
+    },
+    "R_SB": {
+      "connections": {
+        "1": "SENSE2",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 0.24
+    },
+    "R_REF_H": {
+      "connections": {
+        "1": "V3V3",
+        "2": "VREF"
+      },
+      "no_connect": [],
+      "resistance": 20000
+    },
+    "R_REF_L": {
+      "connections": {
+        "1": "VREF",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "C_REF": {
+      "connections": {
+        "1": "VREF",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-8
+    },
+    "R_ENABLE": {
+      "connections": {
+        "1": "V3V3",
+        "2": "ENABLE_N"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "R_SLEEP": {
+      "connections": {
+        "1": "SLEEP",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "J_MOTOR": {
+      "connections": {
+        "1": "A_PLUS",
+        "2": "A_MINUS",
+        "3": "B_PLUS",
+        "4": "B_MINUS"
+      },
+      "no_connect": []
+    },
+    "U_ESD": {
+      "connections": {
+        "1": "USB_DP",
+        "2": "GND",
+        "3": "USB_DM",
+        "4": "USB_DM",
+        "5": "DATA_VBUS",
+        "6": "USB_DP"
+      },
+      "no_connect": []
+    },
+    "D_TVS": {
+      "connections": {
+        "2": "PD_VBUS",
+        "1": "GND"
+      },
+      "no_connect": []
+    },
+    "U_TEMP": {
+      "connections": {
+        "1": "TEMP_SCL",
+        "2": "GND",
+        "4": "GND",
+        "5": "V3V3",
+        "6": "TEMP_SDA"
+      },
+      "no_connect": ["3"]
+    },
+    "C_TEMP": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "R_TEMP_SDA": {
+      "connections": {
+        "1": "TEMP_SDA",
+        "2": "V3V3"
+      },
+      "no_connect": [],
+      "resistance": 4700
+    },
+    "R_TEMP_SCL": {
+      "connections": {
+        "1": "TEMP_SCL",
+        "2": "V3V3"
+      },
+      "no_connect": [],
+      "resistance": 4700
+    },
+    "D_PWR": {
+      "connections": {
+        "1": "GND",
+        "2": "PWR_LED_A"
+      },
+      "no_connect": []
+    },
+    "R_PWR_LED": {
+      "connections": {
+        "1": "V3V3",
+        "2": "PWR_LED_A"
+      },
+      "no_connect": [],
+      "resistance": 330
+    },
+    "D_STATUS": {
+      "connections": {
+        "1": "STATUS_R_K",
+        "2": "STATUS_G_K",
+        "3": "STATUS_B_K",
+        "4": "DATA_VBUS"
+      },
+      "no_connect": []
+    },
+    "R_STATUS_R": {
+      "connections": {
+        "1": "STATUS_R_K",
+        "2": "STATUS_R_C"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "Q_STATUS_R": {
+      "connections": {
+        "3": "STATUS_R_C",
+        "1": "GND",
+        "2": "LED_R"
+      },
+      "no_connect": []
+    },
+    "R_STATUS_G": {
+      "connections": {
+        "1": "STATUS_G_K",
+        "2": "STATUS_G_C"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "Q_STATUS_G": {
+      "connections": {
+        "3": "STATUS_G_C",
+        "1": "GND",
+        "2": "LED_G"
+      },
+      "no_connect": []
+    },
+    "R_STATUS_B": {
+      "connections": {
+        "1": "STATUS_B_K",
+        "2": "STATUS_B_C"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "Q_STATUS_B": {
+      "connections": {
+        "3": "STATUS_B_C",
+        "1": "GND",
+        "2": "LED_B"
+      },
+      "no_connect": []
+    },
+    "BZ1": {
+      "connections": {
+        "1": "V3V3",
+        "2": "BUZZER_SINK"
+      },
+      "no_connect": ["3"]
+    },
+    "Q_BUZZER": {
+      "connections": {
+        "3": "BUZZER_SINK",
+        "1": "BUZZER_GATE",
+        "2": "GND"
+      },
+      "no_connect": []
+    },
+    "D_BUZZER": {
+      "connections": {
+        "1": "V3V3",
+        "2": "BUZZER_SINK"
+      },
+      "no_connect": []
+    },
+    "R_BUZZER_GATE": {
+      "connections": {
+        "1": "BUZZER_PWM",
+        "2": "BUZZER_GATE"
+      },
+      "no_connect": [],
+      "resistance": 100
+    },
+    "R_BUZZER_PD": {
+      "connections": {
+        "1": "BUZZER_GATE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 100000
+    },
+    "C_BUZZER": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-5
+    },
+    "TP_3V3": {
+      "connections": {
+        "1": "V3V3"
+      },
+      "no_connect": []
+    },
+    "TP_GND": {
+      "connections": {
+        "1": "GND"
+      },
+      "no_connect": []
+    },
+    "TP_SWCLK": {
+      "connections": {
+        "1": "SWCLK"
+      },
+      "no_connect": []
+    },
+    "TP_SWDIO": {
+      "connections": {
+        "1": "SWDIO"
+      },
+      "no_connect": []
+    },
+    "TP_RUN": {
+      "connections": {
+        "1": "RUN"
+      },
+      "no_connect": []
+    },
+    "TP_BOOT": {
+      "connections": {
+        "1": "BOOT_PAD"
+      },
+      "no_connect": []
+    },
+    "TP_BOOT_GND": {
+      "connections": {
+        "1": "GND"
+      },
+      "no_connect": []
+    },
+    "U_ENCODER": {
+      "connections": {
+        "1": "V3V3",
+        "2": "V3V3",
+        "4": "GND",
+        "6": "TEMP_SDA",
+        "7": "TEMP_SCL",
+        "8": "GND"
+      },
+      "no_connect": ["3", "5"]
+    },
+    "C_ENCODER": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "C_ENCODER_BULK": {
+      "connections": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-6
+    },
+    "R_PD_CFG": {
+      "connections": {
+        "1": "PD_CFG",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 56000
+    }
+  }
+}

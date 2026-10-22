@@ -1,0 +1,115 @@
+{
+  "query": "TYPE-C-31-M-12",
+  "results": [
+    {
+      "source": "jlcpcb",
+      "lcsc": 7496818,
+      "mfr": "F.0603.00025/P2-0603G1TS2-06T-002",
+      "package": "0603",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40℃~+85℃ 120° 2.6V~2.9V 230mcd 30mA 517nm 520nm~525nm 90mW Discrete Diode Emerald Green 0603 LED Indication - Discrete ROHS",
+      "stock": 3919060,
+      "price": 0.0043
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 57668,
+      "mfr": "BC847B,215",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-65℃~+150℃ 1 NPN 100MHz 100mA 200 200mV 250mW 45V 5uA 6V NPN SOT-23 Bipolar (BJT) ROHS",
+      "stock": 519686,
+      "price": 0.0163
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 688884,
+      "mfr": "TZ-P2-0805RTCS2-0.8T",
+      "package": "0805",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-40℃~+80℃ 120° 180mcd 2.4V 20mA 524nm 60mW 620nm~630nm Discrete Diode Red Water Clear 0805 LED Indication - Discrete ROHS",
+      "stock": 516113,
+      "price": 0.0059
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 106697,
+      "mfr": "ERS1VM221F12OT",
+      "package": "插件,D8xL12mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "12mm 220uF 3.5mm 35V 7000hrs@105℃ 8mm ±20% 插件,D8xL12mm Aluminum Electrolytic Capacitors - Leaded ROHS",
+      "stock": 513588,
+      "price": 0.0423
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 82045,
+      "mfr": "BSS138LT1G",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 1 N-channel 200mA 225mW 5.6Ω@2.75V 500mV 50V 50pF 5pF SOT-23 MOSFETs ROHS",
+      "stock": 474607,
+      "price": 0.0417
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 27637010,
+      "mfr": "TX1812MWCA5-F01",
+      "package": "SMD-4P,1.6x1.5mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "",
+      "stock": 327242,
+      "price": 0.0445
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 20069138,
+      "mfr": "MMBTA42",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": true,
+      "description": "-55℃~+150℃ 1 NPN 100 100nA 200mV 300V 350mW 500mA 50MHz 5V NPN SOT-23 Bipolar (BJT) ROHS",
+      "stock": 285255,
+      "price": 0.0273
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 19077450,
+      "mfr": "BZT52C18S",
+      "package": "SOD-323",
+      "is_basic": false,
+      "is_preferred": true,
+      "description": "",
+      "stock": 268811,
+      "price": 0.0176
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 916372,
+      "mfr": "MMBT2222A",
+      "package": "SOT-23",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "-55℃~+150℃ 1 NPN 10nA 1V 20V 300 300MHz 300mW 350mA 6V NPN SOT-23 Bipolar (BJT) ROHS",
+      "stock": 266991,
+      "price": 0.0111
+    },
+    {
+      "source": "jlcpcb",
+      "lcsc": 965863,
+      "mfr": "XL-1606UGC",
+      "package": "SMD,1.7x1.1mm",
+      "is_basic": false,
+      "is_preferred": false,
+      "description": "1.1cd 120° 20mA 3.4V 520nm~535nm 525nm 70mW Discrete Diode Emerald Green Side View Mount Water Clear SMD,1.7x1.1mm LED Indication - Discrete ROHS",
+      "stock": 258232,
+      "price": 0.0148
+    }
+  ]
+}
