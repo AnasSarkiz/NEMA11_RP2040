@@ -138,3 +138,21 @@ local generation or requesting a preview alone does not prove publication.
 The previous `0.6.1-import-refresh-wip` publication was verified: 302 files
 matched public registry bytes and GitHub native JSON matched. Its receipts are
 retained under `checks/history/0.6.1-*`. This does not attest to the new revision.
+
+### Verified publication result
+
+Version `0.6.2-issues-review-wip` was published to the same public tscircuit
+package before the GitHub push. All **363** source, supplier-asset, native-output
+and review files were anonymously downloaded and matched local bytes.
+The two verification receipts are excluded from the recursive manifest and
+uploaded/checked separately.
+
+Implementation commit `af904a282196448cc51dabdfac7b21285911fc4a` was pushed to public `main`.
+An anonymous GitHub raw download of its native JSON matches the public registry
+and local SHA-256:
+`300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac`.
+
+The registry preview status is `pending`;
+no completed preview or 3D interference acceptance is inferred. Publication is
+successful for this WIP review milestone, not fabrication approval.
+See `checks/registry-verification.json` and `checks/publication-status.json`.

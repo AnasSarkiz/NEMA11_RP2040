@@ -13,9 +13,9 @@
     {
       "file_path": "VALIDATION.md",
       "byte_equal": true,
-      "local_sha256": "8a248c746bceb4ee1a76729bea19b54ddaaa0fddf4ad3bfd810700d4c7525a6d",
-      "remote_sha256": "8a248c746bceb4ee1a76729bea19b54ddaaa0fddf4ad3bfd810700d4c7525a6d",
-      "bytes": 11896
+      "local_sha256": "636df4fa79c4b553555022e86b196c12e423170b457341329f4e75b5d086b29e",
+      "remote_sha256": "636df4fa79c4b553555022e86b196c12e423170b457341329f4e75b5d086b29e",
+      "bytes": 12793
     },
     {
       "file_path": "artifacts/20261023/NEMA11-schematics-A4-WIP.pdf",

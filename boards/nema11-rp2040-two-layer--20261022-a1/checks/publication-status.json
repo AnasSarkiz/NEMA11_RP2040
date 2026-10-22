@@ -9,11 +9,15 @@
   "verification_receipts_excluded_from_recursive_manifest": true,
   "github_repository": "AnasSarkiz/NEMA11_RP2040",
   "github_public": true,
-  "github_push_succeeded": false,
-  "github_and_registry_native_json_match_local": false,
+  "github_push_succeeded": true,
+  "github_and_registry_native_json_match_local": true,
   "native_circuit_json_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
   "preview_build_display_status": "pending",
   "full_3d_interference_approved": false,
   "manufacturing_approved": false,
-  "scope": "Toolchain upgrade, 47-part refresh, reproducible issue catalog and complete six-page A4 review; unrouted WIP. GitHub push pending."
+  "scope": "Completed upgrade, 47-part refresh, reproducible issue catalog and six-page A4 review; unrouted WIP with unresolved import, schematic, placement and mechanical blockers.",
+  "implementation_commit": "af904a282196448cc51dabdfac7b21285911fc4a",
+  "anonymous_github_native_json_verified": true,
+  "preview_build_completed_at": null,
+  "preview_build_error": null
 }
