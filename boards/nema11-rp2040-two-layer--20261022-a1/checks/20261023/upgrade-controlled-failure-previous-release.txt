@@ -1,0 +1,4 @@
+Updating tsci using: bun install -g tscircuit@latest
+CONTROLLED_INSTALL_FAILURE_42
+Update failed. You can try updating manually by running:
+  bun install -g tscircuit@latest

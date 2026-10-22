@@ -25,9 +25,16 @@ Destination: existing public `AnasSarkiz/NEMA11_RP2040` repository, `main` branc
 and existing `AnasSarkiz/NEMA11_RP2040_Compact_Prototype` package. Versions update
 that same package; a separate registry package is not created for this task.
 
-Current review revision: `0.6.1-import-refresh-wip`. `tsci upgrade` and the local
-upgrade succeeded: tscircuit 0.0.3003 / CLI 0.1.2400. All 47 unique JLCPCB parts
-were freshly imported with untouched TSX/OBJ/STEP assets. See
-[the refresh report](docs/import-refresh-20261022.md): the GCT second locator
-is now a malformed polygon, and the board still fails placement. Routing stays
-disabled; this is not a fabrication-ready or hardware-tested assembly.
+Current review revision: `0.6.2-issues-review-wip`. Actual `tsci upgrade`
+succeeded; local pins are tscircuit 0.0.3005 / CLI 0.1.2401. All 47 unique
+JLCPCB parts were freshly imported with untouched TSX/OBJ/STEP assets.
+See [the tool/import issue report](docs/tscircuit-issues-20261023.md) for
+reproductions, resolved behavior and remaining blockers. The GCT slot's pinching
+is fixed, but it is 1.51 mm wide against a 1.01 mm drawing dimension.
+
+The [complete six-sheet A4 PDF](artifacts/20261023/NEMA11-schematics-A4-WIP.pdf)
+and unchanged vector SVGs cover all 92 components and 332 ports. Source and
+schematic attachment checks pass for 296 connected pins plus 36 explicit NCs;
+layout/readability approval remains blocked. There are 157 native board layout
+records, 13 schematic findings and 31 pin-role warnings. Routing remains
+disabled; no fabrication or physical test approval is claimed.

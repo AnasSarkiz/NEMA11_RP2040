@@ -1,0 +1,53 @@
+{
+  "pdf": "artifacts/20261023/NEMA11-schematics-A4-WIP.pdf",
+  "page_count": 6,
+  "page_size_points": [
+    [
+      841.8898,
+      595.2756
+    ],
+    [
+      841.8898,
+      595.2756
+    ],
+    [
+      841.8898,
+      595.2756
+    ],
+    [
+      841.8898,
+      595.2756
+    ],
+    [
+      841.8898,
+      595.2756
+    ],
+    [
+      841.8898,
+      595.2756
+    ]
+  ],
+  "a4_landscape_verified": true,
+  "vector_output": false,
+  "raster_resolution_dpi": 300,
+  "raster_width_pixels": 3508,
+  "renderer": "@resvg/resvg-js + ReportLab",
+  "native_svg_unchanged": true,
+  "vector_svg_files": [
+    "artifacts/20261023/schematic/01.svg",
+    "artifacts/20261023/schematic/02.svg",
+    "artifacts/20261023/schematic/03.svg",
+    "artifacts/20261023/schematic/04.svg",
+    "artifacts/20261023/schematic/05.svg",
+    "artifacts/20261023/schematic/06.svg"
+  ],
+  "components_covered": 92,
+  "schematic_ports_covered": 332,
+  "native_json_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+  "conversion_observations": [
+    "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
+    "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."
+  ],
+  "layout_approved": false,
+  "manufacturing_approved": false
+}

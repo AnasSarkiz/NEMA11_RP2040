@@ -89,7 +89,7 @@
     "R_PD_CFG": "C25796"
   },
   "excluded_parts": {
-    "C5815189": "Latest CLI 0.1.2400 emits malformed second locator polygon: ~0.80 x 0.71 mm with inward pinch; manufacturer requires 1.01 x 0.71 mm slot, alongside one diameter 0.71 mm round hole. Keep excluded; do not patch."
+    "C5815189": "CLI 0.1.2401 removes the inward pinch, but its locator slot measures about 1.51 x 0.71 mm against manufacturer 1.01 x 0.71 mm; keep excluded. Raw supplier request HTTP 403, so ownership of dimensional discrepancy is unconfirmed."
   },
   "candidate_replacements": {
     "C165948": "Fresh unmodified USB-C import with two locating holes; datasheet, current stock, frame/plug/lead fit and electrical review not approved",

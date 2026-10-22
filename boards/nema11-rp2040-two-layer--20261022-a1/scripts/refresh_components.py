@@ -12,8 +12,11 @@ ROOT = Path(__file__).resolve().parents[1]
 assert Path.cwd() == ROOT, 'Run from the board task directory'
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--resume', action='store_true')
+parser.add_argument('--evidence-dir', type=Path, default=Path('checks/import-refresh'))
 args = parser.parse_args()
-versions = json.loads((ROOT / 'checks/import-refresh/npm-versions.json').read_text())
+evidence = ROOT / args.evidence_dir
+evidence.mkdir(parents=True, exist_ok=True)
+versions = json.loads((evidence / 'npm-versions.json').read_text())
 for package in ['@tscircuit/cli', 'tscircuit']:
     installed = json.loads((ROOT / 'node_modules' / package / 'package.json').read_text())['version']
     assert installed == versions[package]['version'], f'{package}: expected new version, installed {installed}'
@@ -22,11 +25,11 @@ parts = sorted(set(plan['components'].values()) | set(plan.get('excluded_parts',
 # Check the known defective part first, but continue independent imports on failures.
 parts.remove('C5815189')
 parts.insert(0, 'C5815189')
-base = ROOT / '.cache/import-refresh/candidate'
+base = ROOT / '.cache' / args.evidence_dir.name / 'candidate'
 base.mkdir(parents=True, exist_ok=True)
-logdir = ROOT / '.cache/import-refresh/logs'
+logdir = base.parent / 'logs'
 logdir.mkdir(parents=True, exist_ok=True)
-manifest_path = ROOT / 'checks/import-refresh/fresh-imports.json'
+manifest_path = evidence / 'fresh-imports.json'
 prior = {}
 if args.resume and manifest_path.exists():
     prior = {x['part']: x for x in json.loads(manifest_path.read_text())['imports']}
@@ -34,7 +37,7 @@ manifest = []
 env = dict(os.environ, PATH=str(ROOT / 'node_modules/.bin') + os.pathsep + os.environ['PATH'])
 for part in parts:
     previous = prior.get(part)
-    if previous and previous['exit_code'] == 0 and all((ROOT / f['path']).exists() and hashlib.sha256((ROOT / f['path']).read_bytes()).hexdigest() == f['sha256'] for f in previous['files']):
+    if previous and previous['exit_code'] == 0 and previous.get('tool_versions') == versions and previous.get('required_assets_present') and all((ROOT / f['path']).exists() and hashlib.sha256((ROOT / f['path']).read_bytes()).hexdigest() == f['sha256'] for f in previous['files']):
         manifest.append(previous)
         print('Resumed verified new-version import', part, flush=True)
         continue

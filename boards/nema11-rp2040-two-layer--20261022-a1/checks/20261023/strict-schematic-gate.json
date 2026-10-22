@@ -1,0 +1,148 @@
+{
+  "native_log": "checks/20261023/check-schematic-placement.txt",
+  "native_exit": 0,
+  "reported_issue_count": 13,
+  "issue_kinds": {
+    "SchematicBoxInnerLabelCollision": 2,
+    "DiodeResistorNotAligned": 1,
+    "ComponentNetLabelCollision": 3,
+    "TwoPinComponentShouldBeVertical": 5,
+    "DecouplingCapacitorsNotCloseTogether": 2
+  },
+  "issues": [
+    {
+      "kind": "SchematicBoxInnerLabelCollision",
+      "attributes": {
+        "message": "Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels.",
+        "componentName": "U_TEMP",
+        "currentSchWidth": "1.2",
+        "currentSchHeight": "0.8",
+        "overlappingSides": "left,right",
+        "minimumLabelGap": "0.1",
+        "suggestedSchWidth": "1.289"
+      }
+    },
+    {
+      "kind": "SchematicBoxInnerLabelCollision",
+      "attributes": {
+        "message": "Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels.",
+        "componentName": "D_STATUS",
+        "currentSchWidth": "1.2",
+        "currentSchHeight": "0.6",
+        "overlappingSides": "left,right",
+        "minimumLabelGap": "0.1",
+        "suggestedSchWidth": "1.272"
+      }
+    },
+    {
+      "kind": "DiodeResistorNotAligned",
+      "attributes": {
+        "diodeComponentName": "D_BUZZER",
+        "diodePin": "cathode",
+        "resistorComponentName": "R_TEMP_SCL",
+        "resistorPin": "cathode",
+        "message": "trace has corners \u2014 align D_BUZZER and R_TEMP_SCL on same axis and rotate so D_BUZZER.cathode faces R_TEMP_SCL.cathode"
+      }
+    },
+    {
+      "kind": "ComponentNetLabelCollision",
+      "attributes": {
+        "pair1": "U_TEMP/BZ1",
+        "pair2": "R_STATUS_B/Q_BUZZER"
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "R_PD",
+        "railPin": "pin1",
+        "railType": "power",
+        "deltaSchRotation": "-90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate R_PD by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "C_BOOTSTRAP",
+        "railPin": "pin2",
+        "railType": "power",
+        "deltaSchRotation": "90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate C_BOOTSTRAP by 90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    },
+    {
+      "kind": "DecouplingCapacitorsNotCloseTogether",
+      "attributes": {
+        "rail": "V3V3",
+        "ground": "GND",
+        "capacitorNames": "C_BUCK_OUT1, C_BUCK_OUT2",
+        "maxBodyGap": "1.51",
+        "maxRecommendedBodyGap": "1",
+        "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "C_VCP",
+        "railPin": "pin1",
+        "railType": "power",
+        "deltaSchRotation": "-90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate C_VCP by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "R_REF_H",
+        "railPin": "pin1",
+        "railType": "power",
+        "deltaSchRotation": "-90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate R_REF_H by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "R_VM_H",
+        "railPin": "pin1",
+        "railType": "power",
+        "deltaSchRotation": "-90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate R_VM_H by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    },
+    {
+      "kind": "ComponentNetLabelCollision",
+      "attributes": {
+        "pair1": "R_VM_L/C_REF"
+      }
+    },
+    {
+      "kind": "ComponentNetLabelCollision",
+      "attributes": {
+        "pair1": "C_FLASH/U_FLASH"
+      }
+    },
+    {
+      "kind": "DecouplingCapacitorsNotCloseTogether",
+      "attributes": {
+        "rail": "V3V3",
+        "ground": "GND",
+        "capacitorNames": "C_ENCODER, C_ENCODER_BULK",
+        "maxBodyGap": "1.57",
+        "maxRecommendedBodyGap": "1",
+        "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+      }
+    }
+  ],
+  "parse_errors": [],
+  "internal_exception_present": false,
+  "strict_gate_passed": false,
+  "scope": "Additional gate after the required unchanged native CLI command; no findings waived or suppressed"
+}

@@ -1,0 +1,16 @@
+{
+  "real_cli_package_version": "0.1.2401",
+  "cli_package_root": "node_modules/@tscircuit/cli",
+  "npm_latest_cli_version": "0.1.2401",
+  "installed_cli_already_latest": true,
+  "real_cli_invoked_unmodified": true,
+  "only_child_package_manager_stubbed": true,
+  "controlled_child_exit_code": 42,
+  "child_installer_called": false,
+  "cli_exit_code": 0,
+  "failure_message_present": false,
+  "failure_propagation_issue_reproduced": false,
+  "unnecessary_upgrade_attempt_reproduced": false,
+  "real_dependency_install_performed": false,
+  "command": "absolute-real-bun node_modules/@tscircuit/cli/dist/cli/main.js upgrade; PATH prefixed with test-only package-manager stubs"
+}

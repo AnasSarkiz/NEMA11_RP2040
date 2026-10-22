@@ -1,0 +1,335 @@
+{
+  "counts": {
+    "geometry_and_source_connected_ports": 296,
+    "explicit_no_connect_ports": 36
+  },
+  "total_schematic_ports": 332,
+  "source_and_schematic_geometry_passed": true,
+  "failures": [],
+  "is_connected_metadata_discrepancy_count": 29,
+  "metadata_discrepancies": [
+    {
+      "component": "R_PD_CFG",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_28",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_3"
+      ]
+    },
+    {
+      "component": "C_PD",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_32",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_4"
+      ]
+    },
+    {
+      "component": "L_BUCK",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_48",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_13"
+      ]
+    },
+    {
+      "component": "C_BUCK_IN",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_51",
+      "expected_net": "LOGIC_IN",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_17"
+      ]
+    },
+    {
+      "component": "C_BUCK_IN",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_52",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_5"
+      ]
+    },
+    {
+      "component": "R_USB_SENSE_L",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_90",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_22"
+      ]
+    },
+    {
+      "component": "U_FLASH",
+      "pin": "6",
+      "schematic_port_id": "schematic_port_96",
+      "expected_net": "QSPI_SCLK",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_28"
+      ]
+    },
+    {
+      "component": "U_FLASH",
+      "pin": "7",
+      "schematic_port_id": "schematic_port_97",
+      "expected_net": "QSPI_SD3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_29"
+      ]
+    },
+    {
+      "component": "U_MCU",
+      "pin": "22",
+      "schematic_port_id": "schematic_port_129",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_32"
+      ]
+    },
+    {
+      "component": "C_XOUT",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_174",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_39"
+      ]
+    },
+    {
+      "component": "R_RUN",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_199",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_34"
+      ]
+    },
+    {
+      "component": "TP_3V3",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_201",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_35"
+      ]
+    },
+    {
+      "component": "U_DRV",
+      "pin": "4",
+      "schematic_port_id": "schematic_port_209",
+      "expected_net": "CP1",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_56"
+      ]
+    },
+    {
+      "component": "U_DRV",
+      "pin": "5",
+      "schematic_port_id": "schematic_port_210",
+      "expected_net": "CP2",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_57"
+      ]
+    },
+    {
+      "component": "U_DRV",
+      "pin": "14",
+      "schematic_port_id": "schematic_port_219",
+      "expected_net": "SLEEP",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_63"
+      ]
+    },
+    {
+      "component": "R_SB",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_242",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_49"
+      ]
+    },
+    {
+      "component": "C_DRV_LOGIC",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_254",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_51"
+      ]
+    },
+    {
+      "component": "R_REF_L",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_258",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_52"
+      ]
+    },
+    {
+      "component": "C_REF",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_260",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_53"
+      ]
+    },
+    {
+      "component": "R_ENABLE",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_261",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_62"
+      ]
+    },
+    {
+      "component": "R_SLEEP",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_264",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_54"
+      ]
+    },
+    {
+      "component": "R_VM_L",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_267",
+      "expected_net": "VM_SENSE",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_69"
+      ]
+    },
+    {
+      "component": "U_TEMP",
+      "pin": "5",
+      "schematic_port_id": "schematic_port_275",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_75"
+      ]
+    },
+    {
+      "component": "U_TEMP",
+      "pin": "6",
+      "schematic_port_id": "schematic_port_276",
+      "expected_net": "TEMP_SDA",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_79"
+      ]
+    },
+    {
+      "component": "BZ1",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_303",
+      "expected_net": "BUZZER_SINK",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_81"
+      ]
+    },
+    {
+      "component": "Q_BUZZER",
+      "pin": "3",
+      "schematic_port_id": "schematic_port_305",
+      "expected_net": "BUZZER_SINK",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_82"
+      ]
+    },
+    {
+      "component": "R_BUZZER_PD",
+      "pin": "2",
+      "schematic_port_id": "schematic_port_311",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_73"
+      ]
+    },
+    {
+      "component": "R_PWR_LED",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_316",
+      "expected_net": "V3V3",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_78"
+      ]
+    },
+    {
+      "component": "D_PWR",
+      "pin": "1",
+      "schematic_port_id": "schematic_port_318",
+      "expected_net": "GND",
+      "reported_is_connected": false,
+      "matching_traces": [],
+      "matching_labels": [
+        "schematic_net_label_74"
+      ]
+    }
+  ],
+  "schematic_layout_approved": false,
+  "schematic_shorts_approved": false,
+  "pcb_connectivity_approved": false,
+  "scope": "Every non-NC pin must have its intended source net plus same-net wire geometry or an anchored net label; the native is_connected flag alone is not used as proof."
+}

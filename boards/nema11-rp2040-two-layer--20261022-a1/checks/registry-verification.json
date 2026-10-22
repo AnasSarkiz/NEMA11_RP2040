@@ -1,21 +1,70 @@
 {
   "package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
-  "version": "0.6.1-import-refresh-wip",
+  "version": "0.6.2-issues-review-wip",
   "public": true,
   "files": [
     {
       "file_path": "README.md",
       "byte_equal": true,
-      "local_sha256": "c2b1b114b71a64ed754f950970b32252f6044705bd46ce40735fcf9d025434fa",
-      "remote_sha256": "c2b1b114b71a64ed754f950970b32252f6044705bd46ce40735fcf9d025434fa",
-      "bytes": 1989
+      "local_sha256": "8509abd8813938f520144719d276e992519ce81a902c6cd5baf8ed7b6c8ca5e1",
+      "remote_sha256": "8509abd8813938f520144719d276e992519ce81a902c6cd5baf8ed7b6c8ca5e1",
+      "bytes": 2432
     },
     {
       "file_path": "VALIDATION.md",
       "byte_equal": true,
-      "local_sha256": "69373b8a6c2040538bdbc966d62d9a9af7e539f41afe15c3f432ee50cc53cccc",
-      "remote_sha256": "69373b8a6c2040538bdbc966d62d9a9af7e539f41afe15c3f432ee50cc53cccc",
-      "bytes": 10566
+      "local_sha256": "8a248c746bceb4ee1a76729bea19b54ddaaa0fddf4ad3bfd810700d4c7525a6d",
+      "remote_sha256": "8a248c746bceb4ee1a76729bea19b54ddaaa0fddf4ad3bfd810700d4c7525a6d",
+      "bytes": 11896
+    },
+    {
+      "file_path": "artifacts/20261023/NEMA11-schematics-A4-WIP.pdf",
+      "byte_equal": true,
+      "local_sha256": "e3887e01da7e27d73f18886556e269024461b9dfcea653adcf4f384f913dc8b1",
+      "remote_sha256": "e3887e01da7e27d73f18886556e269024461b9dfcea653adcf4f384f913dc8b1",
+      "bytes": 901432
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/01.svg",
+      "byte_equal": true,
+      "local_sha256": "689da399ca4fbef1493ccb6907f8f8660741729e1e0488f703f63512c5ac6a6b",
+      "remote_sha256": "689da399ca4fbef1493ccb6907f8f8660741729e1e0488f703f63512c5ac6a6b",
+      "bytes": 183549
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/02.svg",
+      "byte_equal": true,
+      "local_sha256": "b2acf606c0077469d63ace627c2cf2516e023c07317063f591ae0354a3aca618",
+      "remote_sha256": "b2acf606c0077469d63ace627c2cf2516e023c07317063f591ae0354a3aca618",
+      "bytes": 162750
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/03.svg",
+      "byte_equal": true,
+      "local_sha256": "1bca33ff9ad71f171c294dbec2f416820e3fc67be0efa25d175622d125d191e3",
+      "remote_sha256": "1bca33ff9ad71f171c294dbec2f416820e3fc67be0efa25d175622d125d191e3",
+      "bytes": 272764
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/04.svg",
+      "byte_equal": true,
+      "local_sha256": "5b703760feda71d7dbe2edb13d82566bbdc76b73b3b051bf0e863670da6d2396",
+      "remote_sha256": "5b703760feda71d7dbe2edb13d82566bbdc76b73b3b051bf0e863670da6d2396",
+      "bytes": 202533
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/05.svg",
+      "byte_equal": true,
+      "local_sha256": "b7029b147ed0636e111b1e913849c6cfcef2cba6e8a9b0dc9707bdf4648e0d4f",
+      "remote_sha256": "b7029b147ed0636e111b1e913849c6cfcef2cba6e8a9b0dc9707bdf4648e0d4f",
+      "bytes": 163454
+    },
+    {
+      "file_path": "artifacts/20261023/schematic/06.svg",
+      "byte_equal": true,
+      "local_sha256": "9955a2363214a651be51bd0182a557e5e0ccac94b72d096752dcf2980b68bd40",
+      "remote_sha256": "9955a2363214a651be51bd0182a557e5e0ccac94b72d096752dcf2980b68bd40",
+      "bytes": 68176
     },
     {
       "file_path": "assets.d.ts",
@@ -27,9 +76,296 @@
     {
       "file_path": "bun.lock",
       "byte_equal": true,
-      "local_sha256": "25aa64f3f6ebab77de3eda9a0737aef70639980e038db6dc0da9711beb002bd7",
-      "remote_sha256": "25aa64f3f6ebab77de3eda9a0737aef70639980e038db6dc0da9711beb002bd7",
+      "local_sha256": "16fec8154886f57d43a8e2b292a2613925b45a231e45f49ecfe55d693dc8f660",
+      "remote_sha256": "16fec8154886f57d43a8e2b292a2613925b45a231e45f49ecfe55d693dc8f660",
       "bytes": 94402
+    },
+    {
+      "file_path": "checks/20261023/a4-contact-sheet.png",
+      "byte_equal": true,
+      "local_sha256": "2e5c33e127412d56e3641b468887f944ed34062026e384896af054183d2b204d",
+      "remote_sha256": "2e5c33e127412d56e3641b468887f944ed34062026e384896af054183d2b204d",
+      "bytes": 188298
+    },
+    {
+      "file_path": "checks/20261023/a4-pdf-export.json",
+      "byte_equal": true,
+      "local_sha256": "fb9752a87405105390f725c46eef411b36d620bd86c08ed229248c1b6b2966da",
+      "remote_sha256": "fb9752a87405105390f725c46eef411b36d620bd86c08ed229248c1b6b2966da",
+      "bytes": 1296
+    },
+    {
+      "file_path": "checks/20261023/a4-pdf-export.txt",
+      "byte_equal": true,
+      "local_sha256": "9ddc7e976f85c7d12f802b7d306fa278258c1a3381057bd323d42de3b1dc1dc7",
+      "remote_sha256": "9ddc7e976f85c7d12f802b7d306fa278258c1a3381057bd323d42de3b1dc1dc7",
+      "bytes": 194
+    },
+    {
+      "file_path": "checks/20261023/a4-sheet-export.json",
+      "byte_equal": true,
+      "local_sha256": "71acb753bc112972120b8a0a151f24045d36f48a67d0229725cd076f1f733345",
+      "remote_sha256": "71acb753bc112972120b8a0a151f24045d36f48a67d0229725cd076f1f733345",
+      "bytes": 3769
+    },
+    {
+      "file_path": "checks/20261023/baseline.json",
+      "byte_equal": true,
+      "local_sha256": "d656326846d89652e10c01b5c88ffa75d4ff2aa1bf87e5aff6505a1cb7363c24",
+      "remote_sha256": "d656326846d89652e10c01b5c88ffa75d4ff2aa1bf87e5aff6505a1cb7363c24",
+      "bytes": 26842
+    },
+    {
+      "file_path": "checks/20261023/check-netlist.txt",
+      "byte_equal": true,
+      "local_sha256": "ad266ca598587e22f4147fd24257cb16bad5bfbd31b43770885c6bd0c3d74777",
+      "remote_sha256": "ad266ca598587e22f4147fd24257cb16bad5bfbd31b43770885c6bd0c3d74777",
+      "bytes": 20898
+    },
+    {
+      "file_path": "checks/20261023/check-pin_specification.txt",
+      "byte_equal": true,
+      "local_sha256": "7bf2f6ad198e4ea847bb8cbb76f209424031e5fb7b204950e0ad786820a36c70",
+      "remote_sha256": "7bf2f6ad198e4ea847bb8cbb76f209424031e5fb7b204950e0ad786820a36c70",
+      "bytes": 2837
+    },
+    {
+      "file_path": "checks/20261023/check-placement.txt",
+      "byte_equal": true,
+      "local_sha256": "906eb602ad5804e2d9a48f3d2fc9e1af3f1127785cf8cd1d8f46b4dbc74d4f6b",
+      "remote_sha256": "906eb602ad5804e2d9a48f3d2fc9e1af3f1127785cf8cd1d8f46b4dbc74d4f6b",
+      "bytes": 62158
+    },
+    {
+      "file_path": "checks/20261023/check-schematic-placement.txt",
+      "byte_equal": true,
+      "local_sha256": "6d98c36fffd15c0bf2948d8a6f33f300ec3a6767a67f9b5b227f8ca8f7ec8b97",
+      "remote_sha256": "6d98c36fffd15c0bf2948d8a6f33f300ec3a6767a67f9b5b227f8ca8f7ec8b97",
+      "bytes": 7986
+    },
+    {
+      "file_path": "checks/20261023/check-source.txt",
+      "byte_equal": true,
+      "local_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "remote_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "bytes": 22
+    },
+    {
+      "file_path": "checks/20261023/check-status.json",
+      "byte_equal": true,
+      "local_sha256": "fd6a6719417f61c459d74fe8847ed9b5b8ee10444ffc9c22a731d6689d75f721",
+      "remote_sha256": "fd6a6719417f61c459d74fe8847ed9b5b8ee10444ffc9c22a731d6689d75f721",
+      "bytes": 1121
+    },
+    {
+      "file_path": "checks/20261023/comparison.json",
+      "byte_equal": true,
+      "local_sha256": "8440e923e9267444e919cb7900521739a457d6a68e43530f22a1197a06979f02",
+      "remote_sha256": "8440e923e9267444e919cb7900521739a457d6a68e43530f22a1197a06979f02",
+      "bytes": 57385
+    },
+    {
+      "file_path": "checks/20261023/final-integrity.json",
+      "byte_equal": true,
+      "local_sha256": "7e7f182c1ea480e194a024dd949fb1e17a2f080139f16ad4e7f6e043c87f1236",
+      "remote_sha256": "7e7f182c1ea480e194a024dd949fb1e17a2f080139f16ad4e7f6e043c87f1236",
+      "bytes": 252
+    },
+    {
+      "file_path": "checks/20261023/fresh-imports.json",
+      "byte_equal": true,
+      "local_sha256": "22eecac3a2f9a20d0b763046f9482008caaa153be26967e22ca22a424845ecf9",
+      "remote_sha256": "22eecac3a2f9a20d0b763046f9482008caaa153be26967e22ca22a424845ecf9",
+      "bytes": 93555
+    },
+    {
+      "file_path": "checks/20261023/historical-upload-errors.json",
+      "byte_equal": true,
+      "local_sha256": "d7fd1d43f2cf1aae1e98c89cce196bb46933cd7edb84ec85ea8f3e40975150f3",
+      "remote_sha256": "d7fd1d43f2cf1aae1e98c89cce196bb46933cd7edb84ec85ea8f3e40975150f3",
+      "bytes": 198
+    },
+    {
+      "file_path": "checks/20261023/imported-symbol-labels-repro.circuit.tsx",
+      "byte_equal": true,
+      "local_sha256": "2596ccba352c071449961906c3540ebf7c9325a79dc70f1723b14dc2fc5564ef",
+      "remote_sha256": "2596ccba352c071449961906c3540ebf7c9325a79dc70f1723b14dc2fc5564ef",
+      "bytes": 1381
+    },
+    {
+      "file_path": "checks/20261023/imported-symbol-labels-repro.txt",
+      "byte_equal": true,
+      "local_sha256": "17b159d45ced0c8289921d7506ed7a5e1611e5be55cc5b03ab24eb133ba72aac",
+      "remote_sha256": "17b159d45ced0c8289921d7506ed7a5e1611e5be55cc5b03ab24eb133ba72aac",
+      "bytes": 1603
+    },
+    {
+      "file_path": "checks/20261023/local-upgrade.txt",
+      "byte_equal": true,
+      "local_sha256": "127b46ad581f5cdd4c2e875173936b80c3fa0fc1ccbdfbeecef48ddba55b706a",
+      "remote_sha256": "127b46ad581f5cdd4c2e875173936b80c3fa0fc1ccbdfbeecef48ddba55b706a",
+      "bytes": 300
+    },
+    {
+      "file_path": "checks/20261023/multi-sheet-export-check.json",
+      "byte_equal": true,
+      "local_sha256": "da61ac7bbb82470bcb459a541ddb0d3fe9d2ed53673d3f0479e044747176aec1",
+      "remote_sha256": "da61ac7bbb82470bcb459a541ddb0d3fe9d2ed53673d3f0479e044747176aec1",
+      "bytes": 251
+    },
+    {
+      "file_path": "checks/20261023/multi-sheet-repro.circuit.tsx",
+      "byte_equal": true,
+      "local_sha256": "80a555e7ceb373c3fbeb4c98983ddf042206546d8af22b553c1e3429b764c987",
+      "remote_sha256": "80a555e7ceb373c3fbeb4c98983ddf042206546d8af22b553c1e3429b764c987",
+      "bytes": 848
+    },
+    {
+      "file_path": "checks/20261023/multi-sheet-repro.txt",
+      "byte_equal": true,
+      "local_sha256": "a00fbad050e20e49c65d368bc1de87eea46346ad96cf819c5c8909639b6fb6dd",
+      "remote_sha256": "a00fbad050e20e49c65d368bc1de87eea46346ad96cf819c5c8909639b6fb6dd",
+      "bytes": 593
+    },
+    {
+      "file_path": "checks/20261023/native-build.txt",
+      "byte_equal": true,
+      "local_sha256": "ff575b49bdc824a3d31e4bed61ead2056753b5bd25cc90f2fa1b20106f9c6b57",
+      "remote_sha256": "ff575b49bdc824a3d31e4bed61ead2056753b5bd25cc90f2fa1b20106f9c6b57",
+      "bytes": 19834
+    },
+    {
+      "file_path": "checks/20261023/npm-versions.json",
+      "byte_equal": true,
+      "local_sha256": "eab782588749db0f3487a101e8dabb17339b0ca72911eebb5199035c1184301b",
+      "remote_sha256": "eab782588749db0f3487a101e8dabb17339b0ca72911eebb5199035c1184301b",
+      "bytes": 495
+    },
+    {
+      "file_path": "checks/20261023/pdf-tool-versions.json",
+      "byte_equal": true,
+      "local_sha256": "85e867028d8db3ce788882778776081974d33e4917d45979c64ba10b28460132",
+      "remote_sha256": "85e867028d8db3ce788882778776081974d33e4917d45979c64ba10b28460132",
+      "bytes": 131
+    },
+    {
+      "file_path": "checks/20261023/raw-supplier-fetch-status.json",
+      "byte_equal": true,
+      "local_sha256": "0dea8f8da3c9c899db53b27a4c58e367ebb19fbbb10833ee7032e259374d8ff6",
+      "remote_sha256": "0dea8f8da3c9c899db53b27a4c58e367ebb19fbbb10833ee7032e259374d8ff6",
+      "bytes": 110
+    },
+    {
+      "file_path": "checks/20261023/reproduction-status.json",
+      "byte_equal": true,
+      "local_sha256": "f33de369d316e04b1bbf93a774e8922dd23fd2711618e82707665769a20a06ea",
+      "remote_sha256": "f33de369d316e04b1bbf93a774e8922dd23fd2711618e82707665769a20a06ea",
+      "bytes": 378
+    },
+    {
+      "file_path": "checks/20261023/schematic-port-connectivity.json",
+      "byte_equal": true,
+      "local_sha256": "94c7888839f2a1349017e14e8f7a601093b674101f70a922ce5eff44b4479707",
+      "remote_sha256": "94c7888839f2a1349017e14e8f7a601093b674101f70a922ce5eff44b4479707",
+      "bytes": 8558
+    },
+    {
+      "file_path": "checks/20261023/source-integrity-summary.txt",
+      "byte_equal": true,
+      "local_sha256": "c996795851c657f4498f71af3d0202beb316a660b6f677c8cd5556adfd23ffa8",
+      "remote_sha256": "c996795851c657f4498f71af3d0202beb316a660b6f677c8cd5556adfd23ffa8",
+      "bytes": 642
+    },
+    {
+      "file_path": "checks/20261023/strict-schematic-gate.json",
+      "byte_equal": true,
+      "local_sha256": "331c7738c6253e740317bdff030f67ec309477d8817fc44f584b5ab595f68c20",
+      "remote_sha256": "331c7738c6253e740317bdff030f67ec309477d8817fc44f584b5ab595f68c20",
+      "bytes": 5058
+    },
+    {
+      "file_path": "checks/20261023/tsci-upgrade.txt",
+      "byte_equal": true,
+      "local_sha256": "031934f79f90b1e5f9e417fe15602a3c51b605035a0b317c5364638b09c899d8",
+      "remote_sha256": "031934f79f90b1e5f9e417fe15602a3c51b605035a0b317c5364638b09c899d8",
+      "bytes": 291
+    },
+    {
+      "file_path": "checks/20261023/typecheck.txt",
+      "byte_equal": true,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file_path": "checks/20261023/upgrade-controlled-failure-current.json",
+      "byte_equal": true,
+      "local_sha256": "1e0bd1db63a1dc2400c0ab98c4c816fc47a8a3bccef6c41a0c82cc27891ecfd9",
+      "remote_sha256": "1e0bd1db63a1dc2400c0ab98c4c816fc47a8a3bccef6c41a0c82cc27891ecfd9",
+      "bytes": 677
+    },
+    {
+      "file_path": "checks/20261023/upgrade-controlled-failure-current.txt",
+      "byte_equal": true,
+      "local_sha256": "583ac726eb7004b1f1414a1b3fdda50141d50a5e3cf7cb30b0bf06f6d752ef36",
+      "remote_sha256": "583ac726eb7004b1f1414a1b3fdda50141d50a5e3cf7cb30b0bf06f6d752ef36",
+      "bytes": 61
+    },
+    {
+      "file_path": "checks/20261023/upgrade-controlled-failure-previous-release.json",
+      "byte_equal": true,
+      "local_sha256": "82c90462e3c8f0939ff0e450f89b392bb868225853df229c5f5fe5b5f50cafac",
+      "remote_sha256": "82c90462e3c8f0939ff0e450f89b392bb868225853df229c5f5fe5b5f50cafac",
+      "bytes": 686
+    },
+    {
+      "file_path": "checks/20261023/upgrade-controlled-failure-previous-release.txt",
+      "byte_equal": true,
+      "local_sha256": "85559e9bec35897013e1f504a5126780e200ebb5305942d09a786a08e6117eee",
+      "remote_sha256": "85559e9bec35897013e1f504a5126780e200ebb5305942d09a786a08e6117eee",
+      "bytes": 174
+    },
+    {
+      "file_path": "checks/20261023/upgrade-failure-handling-source.json",
+      "byte_equal": true,
+      "local_sha256": "8a8c7043e6d60766086bd3f37691c33779c3aa1552c7e0d260ed77cf15aaab0f",
+      "remote_sha256": "8a8c7043e6d60766086bd3f37691c33779c3aa1552c7e0d260ed77cf15aaab0f",
+      "bytes": 361
+    },
+    {
+      "file_path": "checks/20261023/upgrade-failure-handling-source.txt",
+      "byte_equal": true,
+      "local_sha256": "efdd85a235d9e4f83bead73e95ca6bf9666a9bd2dae7b138d410642d0f2b823d",
+      "remote_sha256": "efdd85a235d9e4f83bead73e95ca6bf9666a9bd2dae7b138d410642d0f2b823d",
+      "bytes": 522
+    },
+    {
+      "file_path": "checks/20261023/upgrade-status.json",
+      "byte_equal": true,
+      "local_sha256": "e6cc84ece9bb79c704fa9db82b616ac6f988b7807f43e68022e032db9c8a8ed8",
+      "remote_sha256": "e6cc84ece9bb79c704fa9db82b616ac6f988b7807f43e68022e032db9c8a8ed8",
+      "bytes": 256
+    },
+    {
+      "file_path": "checks/20261023/usb-locator-repro.circuit.tsx",
+      "byte_equal": true,
+      "local_sha256": "5bc023a16a500c69cd9df7490b7237d85cfba3d8e88fdfb68a5d2cbd434709c4",
+      "remote_sha256": "5bc023a16a500c69cd9df7490b7237d85cfba3d8e88fdfb68a5d2cbd434709c4",
+      "bytes": 524
+    },
+    {
+      "file_path": "checks/20261023/usb-locator-repro.txt",
+      "byte_equal": true,
+      "local_sha256": "950a0cc8e81d116aa9587e128fff62d68fadde1c0ce0724f981d64e42d4951ff",
+      "remote_sha256": "950a0cc8e81d116aa9587e128fff62d68fadde1c0ce0724f981d64e42d4951ff",
+      "bytes": 1277
+    },
+    {
+      "file_path": "checks/20261023/usb-locator.json",
+      "byte_equal": true,
+      "local_sha256": "dfd9cd62b3f3acbfd9bf49a2e5843fd47955f514af08e1e45ef630755ba49e11",
+      "remote_sha256": "dfd9cd62b3f3acbfd9bf49a2e5843fd47955f514af08e1e45ef630755ba49e11",
+      "bytes": 2667
     },
     {
       "file_path": "checks/GCT-USB4145-footprint.png",
@@ -114,6 +450,20 @@
       "local_sha256": "a970e29f257981f90cec4290130a2123f936dca5230ff697b9748e8cb8d58325",
       "remote_sha256": "a970e29f257981f90cec4290130a2123f936dca5230ff697b9748e8cb8d58325",
       "bytes": 71081
+    },
+    {
+      "file_path": "checks/history/0.6.1-publication-status.json",
+      "byte_equal": true,
+      "local_sha256": "e367a31b54f6d4dc4c851e10e6ca79d3a004326328e4b8bca2d3146313fb02fa",
+      "remote_sha256": "e367a31b54f6d4dc4c851e10e6ca79d3a004326328e4b8bca2d3146313fb02fa",
+      "bytes": 1130
+    },
+    {
+      "file_path": "checks/history/0.6.1-registry-verification.json",
+      "byte_equal": true,
+      "local_sha256": "6648b8a4cf34f3da9512e90a39fd1cc61ae7c09dea97414872eccdbe87d1be8f",
+      "remote_sha256": "6648b8a4cf34f3da9512e90a39fd1cc61ae7c09dea97414872eccdbe87d1be8f",
+      "bytes": 90955
     },
     {
       "file_path": "checks/import-C11702.txt",
@@ -461,8 +811,8 @@
     {
       "file_path": "checks/import-manifest.json",
       "byte_equal": true,
-      "local_sha256": "5af55acb8fb6c440de6613fb12ceda69472358ebdb9e5c044ee57111988021a8",
-      "remote_sha256": "5af55acb8fb6c440de6613fb12ceda69472358ebdb9e5c044ee57111988021a8",
+      "local_sha256": "2d253aa8940eb42da248585f43b00715123e80daa98688405b9dbcce25163ce0",
+      "remote_sha256": "2d253aa8940eb42da248585f43b00715123e80daa98688405b9dbcce25163ce0",
       "bytes": 71360
     },
     {
@@ -741,8 +1091,8 @@
     {
       "file_path": "checks/native-build-status.json",
       "byte_equal": true,
-      "local_sha256": "cdc4b5d1ebef0e790d9ef2ae5850a86de593c7129bc44e87832c6ae89cd2ea83",
-      "remote_sha256": "cdc4b5d1ebef0e790d9ef2ae5850a86de593c7129bc44e87832c6ae89cd2ea83",
+      "local_sha256": "5fd2c20e026d302ae94ccd1dcfd48310b95f517b33c1a165dc6722ad11ff631d",
+      "remote_sha256": "5fd2c20e026d302ae94ccd1dcfd48310b95f517b33c1a165dc6722ad11ff631d",
       "bytes": 315
     },
     {
@@ -874,16 +1224,16 @@
     {
       "file_path": "checks/source-integrity.json",
       "byte_equal": true,
-      "local_sha256": "c40e7e0f4f8b87ebe929da01e0f52895ac5d55a8526e41f61b676e8a408a3c19",
-      "remote_sha256": "c40e7e0f4f8b87ebe929da01e0f52895ac5d55a8526e41f61b676e8a408a3c19",
+      "local_sha256": "e23e39d19df2dc7b549699b046099744bf58c2f0ea0b9ba64a8abbaf3e1738e1",
+      "remote_sha256": "e23e39d19df2dc7b549699b046099744bf58c2f0ea0b9ba64a8abbaf3e1738e1",
       "bytes": 67307
     },
     {
       "file_path": "checks/tscircuit-upgrade-status.json",
       "byte_equal": true,
-      "local_sha256": "8d73699c497006d33c762de508ab551979a1be382fabc453084136655fd592a0",
-      "remote_sha256": "8d73699c497006d33c762de508ab551979a1be382fabc453084136655fd592a0",
-      "bytes": 510
+      "local_sha256": "a68c118901dbf790a5932acb5a15dfa618b7cf24a608119a8f3443961b42bcbf",
+      "remote_sha256": "a68c118901dbf790a5932acb5a15dfa618b7cf24a608119a8f3443961b42bcbf",
+      "bytes": 555
     },
     {
       "file_path": "checks/typecheck-status.json",
@@ -916,9 +1266,9 @@
     {
       "file_path": "config/component-plan.json",
       "byte_equal": true,
-      "local_sha256": "f69634a832dbcd5bbc30a6a8e5bea0a13aa2d783562860160f35067f38bdeffe",
-      "remote_sha256": "f69634a832dbcd5bbc30a6a8e5bea0a13aa2d783562860160f35067f38bdeffe",
-      "bytes": 2908
+      "local_sha256": "09180ed32dd9131cacbd8367baac4cdce752d7f0207e4b86bfa3c3182cae8e7d",
+      "remote_sha256": "09180ed32dd9131cacbd8367baac4cdce752d7f0207e4b86bfa3c3182cae8e7d",
+      "bytes": 2927
     },
     {
       "file_path": "config/connections.json",
@@ -949,6 +1299,41 @@
       "bytes": 7632
     },
     {
+      "file_path": "dist/checks/20261023/multi-sheet-repro/circuit.json",
+      "byte_equal": true,
+      "local_sha256": "c1cf198a908ccaf8c2be0bbf610ea6e47f2e539469b0f3e7fcc448992a06c5bb",
+      "remote_sha256": "c1cf198a908ccaf8c2be0bbf610ea6e47f2e539469b0f3e7fcc448992a06c5bb",
+      "bytes": 25875
+    },
+    {
+      "file_path": "dist/checks/20261023/multi-sheet-repro/schematic.svg",
+      "byte_equal": true,
+      "local_sha256": "ac5a5f8d7bbf0103ca72c9d58f50463b30ac027d1bbd4f2360f0e38f0f9c5bcc",
+      "remote_sha256": "ac5a5f8d7bbf0103ca72c9d58f50463b30ac027d1bbd4f2360f0e38f0f9c5bcc",
+      "bytes": 44248
+    },
+    {
+      "file_path": "dist/checks/20261023/usb-locator-repro/circuit.json",
+      "byte_equal": true,
+      "local_sha256": "6b8a21f3f552a7fa552f7131ce94b6d5313382083ad897ccb5f8736229d715b8",
+      "remote_sha256": "6b8a21f3f552a7fa552f7131ce94b6d5313382083ad897ccb5f8736229d715b8",
+      "bytes": 52660
+    },
+    {
+      "file_path": "dist/checks/20261023/usb-locator-repro/pcb.png",
+      "byte_equal": true,
+      "local_sha256": "1f6b68e7855ce6bba35f743cd891e2ed6609bfc10d5e4d7e2af4cc930a4f3ef0",
+      "remote_sha256": "1f6b68e7855ce6bba35f743cd891e2ed6609bfc10d5e4d7e2af4cc930a4f3ef0",
+      "bytes": 13870
+    },
+    {
+      "file_path": "dist/checks/20261023/usb-locator-repro/pcb.svg",
+      "byte_equal": true,
+      "local_sha256": "aea0f63329f8ae403f4085eeb1e20294c063f42dc1a56d3407f72c1f64efc0ee",
+      "remote_sha256": "aea0f63329f8ae403f4085eeb1e20294c063f42dc1a56d3407f72c1f64efc0ee",
+      "bytes": 38739
+    },
+    {
       "file_path": "dist/checks/import-refresh/usb-new-import/circuit.json",
       "byte_equal": true,
       "local_sha256": "c013f0935d65f3176efbb4e5af2f758c829125f61fc6894e799a434320429c7f",
@@ -972,9 +1357,9 @@
     {
       "file_path": "dist/index/circuit.json",
       "byte_equal": true,
-      "local_sha256": "f77bbbc2b67d7912dd384f5daae351517041d187f515a30a9df7acc89af0deb8",
-      "remote_sha256": "f77bbbc2b67d7912dd384f5daae351517041d187f515a30a9df7acc89af0deb8",
-      "bytes": 2025053
+      "local_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+      "remote_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+      "bytes": 2024571
     },
     {
       "file_path": "dist/index/pcb.png",
@@ -1031,6 +1416,13 @@
       "local_sha256": "023b9e2bad988e9d23e37ad9316ca22c0b0dd7d38ab2f920a1904c5eff114e38",
       "remote_sha256": "023b9e2bad988e9d23e37ad9316ca22c0b0dd7d38ab2f920a1904c5eff114e38",
       "bytes": 4441
+    },
+    {
+      "file_path": "docs/tscircuit-issues-20261023.md",
+      "byte_equal": true,
+      "local_sha256": "186d70319dc231b5ea6e4f209d29d3a0fe97f9c07b69ccd9c7833dbf93b2e5bb",
+      "remote_sha256": "186d70319dc231b5ea6e4f209d29d3a0fe97f9c07b69ccd9c7833dbf93b2e5bb",
+      "bytes": 12537
     },
     {
       "file_path": "docs/tscircuit-usb-import-release-gate.md",
@@ -1987,9 +2379,9 @@
     {
       "file_path": "imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx",
       "byte_equal": true,
-      "local_sha256": "36d880dbe4b8404e74bde59ab4c46905f792179212686a574f85a3388c0265db",
-      "remote_sha256": "36d880dbe4b8404e74bde59ab4c46905f792179212686a574f85a3388c0265db",
-      "bytes": 5800
+      "local_sha256": "bae12dca4485a1939b814d137088e19ad23586b25b874a53989d0e37033c8e2f",
+      "remote_sha256": "bae12dca4485a1939b814d137088e19ad23586b25b874a53989d0e37033c8e2f",
+      "bytes": 5906
     },
     {
       "file_path": "imports/USBLC6_2SC6/USBLC6_2SC6.obj",
@@ -2043,16 +2435,23 @@
     {
       "file_path": "package.json",
       "byte_equal": true,
-      "local_sha256": "6be40adea267574fc4a8cc43898e3194bffb2ed65d49478a58c57b9d770ca6a6",
-      "remote_sha256": "6be40adea267574fc4a8cc43898e3194bffb2ed65d49478a58c57b9d770ca6a6",
-      "bytes": 1718
+      "local_sha256": "d3b3043e68382660563920bf58b61ea01655dcc3136825753a6def292d4fbc90",
+      "remote_sha256": "d3b3043e68382660563920bf58b61ea01655dcc3136825753a6def292d4fbc90",
+      "bytes": 1840
     },
     {
       "file_path": "scripts/audit_component_refresh.py",
       "byte_equal": true,
-      "local_sha256": "8e79811465acffe31b0673b7ae32d25cdc82590ab747b044d6fe1131374e8ab7",
-      "remote_sha256": "8e79811465acffe31b0673b7ae32d25cdc82590ab747b044d6fe1131374e8ab7",
-      "bytes": 6319
+      "local_sha256": "c47af1b48b3348fe7221a26f446acd1d4147eba634521690f53b9fa1e9e82563",
+      "remote_sha256": "c47af1b48b3348fe7221a26f446acd1d4147eba634521690f53b9fa1e9e82563",
+      "bytes": 6486
+    },
+    {
+      "file_path": "scripts/check_schematic_findings.py",
+      "byte_equal": true,
+      "local_sha256": "880d387936d4a9a6a186e4b1c8c1f7057b3bf8dca3543aa7a6eb534aa4fbeb2a",
+      "remote_sha256": "880d387936d4a9a6a186e4b1c8c1f7057b3bf8dca3543aa7a6eb534aa4fbeb2a",
+      "bytes": 1539
     },
     {
       "file_path": "scripts/check_usb_locator_holes.py",
@@ -2060,6 +2459,20 @@
       "local_sha256": "ceec1ac3309f6b42f83495ea9b754161ead34bdd31d1aeb4beecb1b9219231f8",
       "remote_sha256": "ceec1ac3309f6b42f83495ea9b754161ead34bdd31d1aeb4beecb1b9219231f8",
       "bytes": 4089
+    },
+    {
+      "file_path": "scripts/export_a4_pdf.py",
+      "byte_equal": true,
+      "local_sha256": "5b15ec8dd1985def912b9af31f82239b043a093d5001fafba84968507a43d9da",
+      "remote_sha256": "5b15ec8dd1985def912b9af31f82239b043a093d5001fafba84968507a43d9da",
+      "bytes": 2809
+    },
+    {
+      "file_path": "scripts/export_a4_schematics.mjs",
+      "byte_equal": true,
+      "local_sha256": "195a7a1ae13884138333fc7a16224ceaa03fa9686ef1b194fbf9e2d1152d320a",
+      "remote_sha256": "195a7a1ae13884138333fc7a16224ceaa03fa9686ef1b194fbf9e2d1152d320a",
+      "bytes": 2572
     },
     {
       "file_path": "scripts/generate_source.py",
@@ -2085,16 +2498,30 @@
     {
       "file_path": "scripts/refresh_components.py",
       "byte_equal": true,
-      "local_sha256": "364516689b246d457179405d29b3748c6bf43ecdfa10db1abcc4988fa91f2322",
-      "remote_sha256": "364516689b246d457179405d29b3748c6bf43ecdfa10db1abcc4988fa91f2322",
-      "bytes": 3765
+      "local_sha256": "9e187d6327656ef0e5c67d97d0e83ea6ccc87abf2e0a84154141f08451028065",
+      "remote_sha256": "9e187d6327656ef0e5c67d97d0e83ea6ccc87abf2e0a84154141f08451028065",
+      "bytes": 3986
+    },
+    {
+      "file_path": "scripts/reproduce_upgrade_exit.py",
+      "byte_equal": true,
+      "local_sha256": "72cce28289fa18a0035ebecd8a462c813f3c10b111889d293d7ff0c4727202bb",
+      "remote_sha256": "72cce28289fa18a0035ebecd8a462c813f3c10b111889d293d7ff0c4727202bb",
+      "bytes": 2725
     },
     {
       "file_path": "scripts/verify_registry.py",
       "byte_equal": true,
-      "local_sha256": "61e7c13a7533432b1e5d91b427638aba8848b83702375316d81c1f4ff8f842d1",
-      "remote_sha256": "61e7c13a7533432b1e5d91b427638aba8848b83702375316d81c1f4ff8f842d1",
-      "bytes": 4418
+      "local_sha256": "c07dc8aacf7464a06344aae1da7a45d39bf72c2ad40f481a6f96ef55d820b025",
+      "remote_sha256": "c07dc8aacf7464a06344aae1da7a45d39bf72c2ad40f481a6f96ef55d820b025",
+      "bytes": 4417
+    },
+    {
+      "file_path": "scripts/verify_schematic_ports.py",
+      "byte_equal": true,
+      "local_sha256": "51f730e2021814d664bc177f527fd4a323545a8f7d2d9c8e5c0a45ec943ff456",
+      "remote_sha256": "51f730e2021814d664bc177f527fd4a323545a8f7d2d9c8e5c0a45ec943ff456",
+      "bytes": 4317
     },
     {
       "file_path": "scripts/verify_source.py",
@@ -2118,11 +2545,11 @@
       "bytes": 410
     }
   ],
-  "matched": 302,
-  "checked": 302,
+  "matched": 363,
+  "checked": 363,
   "release": {
-    "package_release_id": "ddba9235-e4ac-481e-9106-03f0f7d89db7",
-    "version": "0.6.1-import-refresh-wip",
+    "package_release_id": "9c9ce88d-a130-40e1-ad14-0939562eb6fa",
+    "version": "0.6.2-issues-review-wip",
     "is_latest": true,
     "ready_to_build": true,
     "build_status": null,

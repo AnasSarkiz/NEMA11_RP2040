@@ -1,0 +1,6 @@
+{
+  "native_json_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+  "source_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
+  "review_files_outside_task": false,
+  "potential_secret_paths": []
+}

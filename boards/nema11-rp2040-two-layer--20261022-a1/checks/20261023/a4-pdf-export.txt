@@ -1,0 +1,1 @@
+Export completed: 6 A4 landscape pages at 300 dpi. All 92 schematic components / 332 ports covered. Unchanged native vector SVG files retained. Layout and manufacturing approval remain blocked.

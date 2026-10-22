@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 NAME = 'AnasSarkiz/NEMA11_RP2040_Compact_Prototype'
-VERSION = '0.6.1-import-refresh-wip'
+VERSION = '0.6.2-issues-review-wip'
 TARGET = NAME + '@' + VERSION
 BASE = 'https://registry-api.tscircuit.com/'
 

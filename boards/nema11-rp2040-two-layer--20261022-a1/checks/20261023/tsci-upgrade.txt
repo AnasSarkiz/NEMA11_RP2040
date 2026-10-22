@@ -1,0 +1,12 @@
+Updating tsci using: bun install -g tscircuit@latest
+bun add v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [86]
+Saved lockfile
+
+installed tscircuit@0.0.3005 with binaries:
+ - tsci
+ - tscircuit
+
+14 packages installed [3.74s]
+tsci has been updated successfully!

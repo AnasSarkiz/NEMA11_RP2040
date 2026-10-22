@@ -4,6 +4,6 @@
   "source_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
   "routing_enabled": false,
   "no_ignore_flags_used": true,
-  "cli_version": "0.1.2400",
-  "tscircuit_version": "0.0.3003"
+  "cli_version": "0.1.2401",
+  "tscircuit_version": "0.0.3005"
 }

@@ -1,0 +1,9 @@
+{
+  "command": "bun install --network-concurrency 1 --prefer-offline",
+  "exit_code": 0,
+  "tsci_upgrade_command_exit_code": 0,
+  "date": "2026-10-23",
+  "integrity_verification_disabled": false,
+  "@tscircuit/cli": "0.1.2401",
+  "tscircuit": "0.0.3005"
+}

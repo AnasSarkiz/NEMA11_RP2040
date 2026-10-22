@@ -1,13 +1,17 @@
 """Compare untouched new imports with baseline; no manufacturing approval."""
 import hashlib
+import argparse
 import json
 import re
 import subprocess
 from pathlib import Path
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--evidence-dir', type=Path, default=Path('checks/import-refresh'))
+args = parser.parse_args()
 root = Path.cwd()
-manifest = json.loads(Path('checks/import-refresh/fresh-imports.json').read_text())
-baseline = json.loads(Path('checks/import-refresh/baseline.json').read_text())
+manifest = json.loads((args.evidence_dir / 'fresh-imports.json').read_text())
+baseline = json.loads((args.evidence_dir / 'baseline.json').read_text())
 baseline_hashes = {f['path']: f['sha256'] for f in baseline['files']}
 prefix = subprocess.check_output(['git', 'rev-parse', '--show-prefix']).decode().strip()
 
@@ -67,7 +71,7 @@ for record in manifest['imports']:
         item['comparison_error'] = {'old_source_count': len(old), 'new_source_count': len(sources)}
     results.append(item)
 report = {'baseline_commit': baseline['commit'], 'scope': 'Import integrity and baseline electrical mapping comparison only; all geometry, ratings and CAD poses still require review', 'parts': results, 'checked': len(results), 'expected': len(manifest['expected_parts']), 'all_imports_succeeded_with_assets': len(results) == len(manifest['expected_parts']) and all(x['import_exit_code'] == 0 and x['assets_present'] for x in results), 'all_electrical_mappings_and_values_unchanged': all(all(x.get(key, False) for key in ['mpn_unchanged', 'pin_labels_unchanged', 'passive_values_unchanged', 'electrical_pad_mapping_unchanged_up_to_translation']) for x in results), 'source_files_changed': sum(x.get('baseline_source_sha256') != x.get('fresh_source_sha256') for x in results), 'cad_origins_changed': sum(x.get('model_origin_changed', False) for x in results), 'full_bom_approved': False}
-Path('checks/import-refresh/comparison.json').write_text(json.dumps(report, indent=2) + '\n')
+(args.evidence_dir / 'comparison.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({k: v for k, v in report.items() if k != 'parts'}, indent=2))
 for item in results:
     if not all(item.get(key, False) for key in ['mpn_unchanged', 'pin_labels_unchanged', 'passive_values_unchanged', 'electrical_pad_mapping_unchanged_up_to_translation']):

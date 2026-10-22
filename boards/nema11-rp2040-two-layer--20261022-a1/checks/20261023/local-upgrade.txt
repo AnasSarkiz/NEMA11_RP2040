@@ -1,0 +1,12 @@
+bun install v1.4.2 (744846f84)
+Resolving dependencies
+Resolved, downloaded and extracted [1]
+warn: incorrect peer dependency "circuit-json@0.0.531"
+
+warn: incorrect peer dependency "circuit-to-svg@0.0.453"
+Saved lockfile
+
++ @tscircuit/cli@0.1.2401
++ tscircuit@0.0.3005
+
+16 packages installed [1.76s]

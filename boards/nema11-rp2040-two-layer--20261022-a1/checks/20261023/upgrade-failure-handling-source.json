@@ -1,0 +1,7 @@
+{
+  "tested_previous_cli": "0.1.2400",
+  "current_cli": "0.1.2401",
+  "source_exactly_equal": true,
+  "current_function_sha256": "bff75f8f7ca98e71cf5b17c33dee10f857f465f8755be410df1b3791ad4a2333",
+  "scope": "Previous version runtime failure reproduced; latest up-to-date path correctly skips install; identical failure-handler source remains in current CLI"
+}

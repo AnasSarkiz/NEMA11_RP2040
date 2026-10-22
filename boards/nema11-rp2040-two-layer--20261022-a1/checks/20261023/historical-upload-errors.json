@@ -1,0 +1,6 @@
+{
+  "historical_cli": "0.1.2261",
+  "observed_http_error_codes": {},
+  "raw_log_kept_private": true,
+  "scope": "Historical archive/file upload limitations; not a new reproduction on current CLI"
+}

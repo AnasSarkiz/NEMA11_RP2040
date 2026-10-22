@@ -1,0 +1,44 @@
+[
+  {
+    "name": "native-build",
+    "command": "tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
+    "exit_code": 1,
+    "internal_exception_present": false
+  },
+  {
+    "name": "typecheck",
+    "command": "tsc --noEmit",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "name": "check-netlist",
+    "command": "tsci check netlist index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "name": "check-pin_specification",
+    "command": "tsci check pin_specification index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "name": "check-source",
+    "command": "tsci check source index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "name": "check-schematic-placement",
+    "command": "tsci check schematic-placement index.circuit.tsx",
+    "exit_code": 0,
+    "internal_exception_present": false
+  },
+  {
+    "name": "check-placement",
+    "command": "tsci check placement index.circuit.tsx",
+    "exit_code": 1,
+    "internal_exception_present": false
+  }
+]

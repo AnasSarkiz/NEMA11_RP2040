@@ -1,72 +1,78 @@
-# Validation — upgraded imports, two-layer NEMA11 with buzzer
+# Validation — upgraded tools, imports and schematic review
 
-Revision: `0.6.1-import-refresh-wip`; date: 2026-10-22 (Europe/Tirane).
+Revision: `0.6.2-issues-review-wip`; date: 2026-10-23 (Europe/Tirane).
 Task: `nema11-rp2040-two-layer--20261022-a1`.
-Import comparison baseline: Git commit `4775f9a`.
+Import comparison baseline: Git `b96bc2b158cee0256459a1a03d8df38c7f5c18af`.
 Original controller/reference baseline: `2a9fa01f4c5ee052f18ce4c3c719bab706a5de36`.
 
 **Unrouted, untested WIP prototype. Not fabrication-ready.**
 The supplied [validation policy](docs/user-validation-policy.md) governs this
-revision. No imported component, symbol, footprint, pin mapping or model pose
-was manually patched. No six-layer routing, CAM or thermal result applies.
+revision. Imported definitions, symbols, footprints, pin maps and model poses
+remain unmodified. Native generated circuit JSON is retained unchanged. No
+six-layer routing, CAM or thermal result applies to this two-layer board.
 
-| Stage                      | Status      | Current evidence / blocker                                                                                                                                    |
-| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Requirements            | blocked     | Two copper layers, top/bottom assembly and full buzzer retained. Actual rear case-bolt dimensions and motor-to-PCB gap unresolved.                            |
-| 2. Schematic/BOM           | blocked     | All 47 fresh imports succeeded. C5815189 has a malformed locator cutout; C165948 alternative still needs datasheet, ratings, availability and mating review.  |
-| 3. Placement               | blocked     | 157 native placement/clearance error records; pin-specification warnings and schematic-placement findings remain unresolved.                                  |
-| 4. Routing                 | not started | Explicitly disabled; native output has zero PCB traces and vias.                                                                                              |
-| 5. Automated/visual review | in progress | TypeScript and 587 structural/import-integrity assertions pass. Build exits 1. USB native fixture reproduces the malformed slot despite its successful build. |
-| 6. Prototype fabrication   | not started | No approved Gerbers, drills, JLCPCB BOM/CPL, CAM or assembly acceptance.                                                                                      |
-| 7. Physical prototype      | not started | No physical assembly, fit, electrical or temperature test evidence.                                                                                           |
-| 8. Store release           | not started | Publication is a WIP review milestone, not an approved product.                                                                                               |
+| Stage                      | Status      | Evidence / blocker                                                                                                                                                                         |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. Requirements            | blocked     | Full buzzer and two layers/top-bottom assembly retained. Rear case-bolt dimensions and motor-to-PCB gap unresolved.                                                                        |
+| 2. Schematic/BOM           | blocked     | 47 fresh imports succeeded. C5815189 slot width mismatch, default C99269/C458749 label clearance, alternative C165948 qualification and complete datasheet/stock/mating review unresolved. |
+| 3. Placement               | blocked     | 157 native board layout records, 31 pin-role warnings and 13 schematic-placement findings.                                                                                                 |
+| 4. Routing                 | not started | Disabled; native output contains zero PCB traces and vias.                                                                                                                                 |
+| 5. Automated/visual review | in progress | TypeScript, 587 structural assertions and source/schematic pin attachment checks pass. Six-sheet A4 PDF exported and visually reviewed for rendering; layout approval remains blocked.     |
+| 6. Prototype fabrication   | not started | No approved Gerbers/drills, exact JLCPCB BOM/CPL, CAM or assembly acceptance.                                                                                                              |
+| 7. Physical prototype      | not started | No physical fit, electrical or temperature test evidence.                                                                                                                                  |
+| 8. Store release           | not started | Publication is a WIP review milestone, not an approved product.                                                                                                                            |
 
-## Upgrade and full import refresh
+## Upgrade and issue review
 
-`tsci upgrade` succeeded. Global and local tscircuit are 0.0.3003; the local CLI
-is 0.1.2400. Package pins and Bun lockfile record the successful installation.
-All 47 unique parts were freshly imported, including the 46 selected parts and
-excluded C5815189. All returned original TSX, OBJ and STEP files. Their bytes
-were promoted unchanged into `imports/`; none was patched.
+Actual `tsci upgrade` succeeded: tscircuit 0.0.3005. Local exact pins and lockfile
+are CLI 0.1.2401 / tscircuit 0.0.3005. All 47 unique JLCPCB parts were freshly
+imported into isolated candidates; all 141 original TSX/OBJ/STEP outputs were
+promoted unchanged. One source changed (excluded C5815189); all 94 model assets,
+manufacturer identities, pin labels, passive values and electrical pad mappings
+match the baseline, allowing a uniform footprint-origin translation.
 
-All baseline manufacturer identities, pin labels, passive values and electrical
-pad mappings match. Eight TSX definitions changed. All 94 model assets match
-baseline bytes; only excluded C5815189's model origin changed. Full datasheet,
-stock and 3D interference approval do not follow from those comparisons.
+The GCT drawing specifies one round Ø0.71 mm locator plus one horizontal
+1.01 × 0.71 mm slot at 8 mm pitch. The earlier inward-pinched polygon is fixed,
+but the new slot is approximately 1.51 × 0.71 mm. It still fails the manufacturer
+comparison. Raw supplier access returned 403; importer-only responsibility is
+not established. C5815189 stays excluded, without a local footprint patch.
 
-The C5815189 drawing requires one round Ø0.71 mm hole plus one horizontal
-1.01 × 0.71 mm slot at 8 mm spacing. Earlier two-circle wording was incorrect.
-The new importer produces an approximately 0.80 × 0.71 mm inward-pinched polygon
-instead of the required slot. Native rendering reproduces it. Keep the part
-excluded and stop dependent acceptance; no local geometry workaround is used.
-See [the import refresh report](docs/import-refresh-20261022.md).
+The [issue catalog](docs/tscircuit-issues-20261023.md) includes native fixtures
+and evidence for the slot discrepancy, first-sheet-only default SVG export,
+default imported label clearance, zero exit despite schematic findings,
+upgrader failure status handling and net-label connection metadata. It separates
+current reproductions from historical failures and environment observations.
+No upstream issue/comment/message was sent. Previous refresh evidence is
+historical; current reports are in `checks/20261023/`.
 
-## Current commands and outcomes
+## Commands and results
 
-Run from this task directory with `node_modules/.bin` on PATH. No ignore flags,
-warning suppression, generated-JSON edits or forced snapshot acceptance used.
+Commands run from this task directory with `node_modules/.bin` on PATH.
+No ignore flags, suppressed findings, generated-JSON edits or snapshot acceptance.
 
-| Command                                                              | Exit | Interpretation                                                                           |
-| -------------------------------------------------------------------- | ---- | ---------------------------------------------------------------------------------------- |
-| `tsc --noEmit`                                                       | 0    | Refreshed definitions compile.                                                           |
-| `python3 scripts/audit_component_refresh.py`                         | 0    | All 47 source/model comparisons completed; this is not BOM approval.                     |
-| `python3 scripts/verify_source.py`                                   | 0    | 587 structural/import-integrity assertions pass; native errors reported separately.      |
-| `tsci check netlist index.circuit.tsx`                               | 0    | Zero reported errors/warnings; no internal exception.                                    |
-| `tsci check pin_specification index.circuit.tsx`                     | 0    | 31 unresolved pin-role warnings.                                                         |
-| `tsci check source index.circuit.tsx`                                | 0    | Zero reported errors/warnings; no internal exception.                                    |
-| `tsci check schematic-placement index.circuit.tsx`                   | 0    | Issues reported despite zero exit: label collisions and alignment/spacing. Not accepted. |
-| `tsci check placement index.circuit.tsx`                             | 1    | Placement gate fails.                                                                    |
-| `tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs` | 1    | Native output generated; 157 error records.                                              |
-| Corrected USB locator screen on fresh C5815189                       | 1    | Manufacturer geometry mismatch.                                                          |
+| Command / check                                                              | Exit | Result                                                                           |
+| ---------------------------------------------------------------------------- | ---- | -------------------------------------------------------------------------------- |
+| `tsci upgrade`                                                               | 0    | Actual global upgrade succeeded.                                                 |
+| `bun install --network-concurrency 1 --prefer-offline`                       | 0    | Local exact versions installed; integrity verification enabled.                  |
+| `tsc --noEmit`                                                               | 0    | Native definitions compile.                                                      |
+| `python3 scripts/audit_component_refresh.py --evidence-dir checks/20261023`  | 0    | 47 complete import comparisons; not BOM approval.                                |
+| `python3 scripts/verify_source.py`                                           | 0    | 587 structural/import assertions; native failures reported separately.           |
+| `tsci check netlist index.circuit.tsx`                                       | 0    | No reported findings or internal exception.                                      |
+| `tsci check pin_specification index.circuit.tsx`                             | 0    | 31 unresolved semantic pin-role warnings.                                        |
+| `tsci check source index.circuit.tsx`                                        | 0    | No reported findings or internal exception.                                      |
+| `tsci check schematic-placement index.circuit.tsx`                           | 0    | 13 findings; zero exit does not mean acceptance.                                 |
+| Strict post-check schematic report gate                                      | 1    | Findings retained; gate fails.                                                   |
+| `tsci check placement index.circuit.tsx`                                     | 1    | Placement fails.                                                                 |
+| `tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs`         | 1    | Native output generated with 157 error records.                                  |
+| `python3 scripts/verify_schematic_ports.py`                                  | 0    | 296 attached source/schematic ports + 36 explicit NC; 29 metadata discrepancies. |
+| Corrected USB locator comparison                                             | 1    | Slot width mismatch; native fixture build alone exits 0.                         |
+| `node scripts/export_a4_schematics.mjs` / `python3 scripts/export_a4_pdf.py` | 0    | All six A4 sheets, 92 components / 332 ports covered.                            |
 
-All five required CLI source checks now run without the former internal
-autorouter exception. That earlier tooling failure is no longer reproduced.
-The current native build reports 60 footprint overlaps, 56 courtyard overlaps,
-29 placement errors, 10 pad-clearance errors and two outside-board errors.
-The additional outside-board findings are C_BULK (0.289 mm) and D_STATUS
-(0.142 mm), based on native component bounds. The former skipped-routing error
-is absent. These board findings must be resolved; imported definitions are not
-shrunk or patched to conceal them.
+All five required source checks complete without the former internal autorouter
+exception. Native board errors: 60 footprint overlaps, 56 courtyard overlaps,
+29 placement, 10 pad clearance and 2 outside-board records. C_BULK extends
+0.289 mm and D_STATUS 0.142 mm beyond native board bounds. These are board-design
+failures, not established tscircuit bugs. Routing remains gated.
 
 ## Preserved controller and remaining engineering requirements
 
@@ -100,33 +106,35 @@ snapshot reported 58,895 units on 2026-10-22; stock is not reserved and the full
 BOM is not availability-approved. JST mating/termination, wire pin order and
 whole-assembly frame clearance remain unverified.
 
-Main PCB preview remains visually crowded. The USB fixture's native render shows
-the inward-pinched locator cutout. Schematic readability and a complete six-page
-A4 PDF remain unfinished. No full 3D motor/plug/fastener interference approval,
-zero-shorts claim, qualified CAM or physical hardware testing is asserted.
+## Schematic review artifacts
+
+The [six-page A4 landscape PDF](artifacts/20261023/NEMA11-schematics-A4-WIP.pdf)
+embeds 300 dpi renders of unchanged native SVG sheets. Vector SVGs remain in
+`artifacts/20261023/schematic/`. Page dimensions and coverage are independently
+recorded in `checks/20261023/a4-pdf-export.json`; the contact sheet and MCU sheet
+were visually inspected. The rejected Inkscape conversion had black-filled
+symbols; resvg rendering resolves that conversion problem. Crowded labels and
+13 native schematic findings remain; readability is not approved.
+
+Source/net and schematic geometry checks find 296 correctly attached non-NC
+ports and 36 explicitly unused ports. The 29 `is_connected: false` values are
+metadata discrepancies at matching label anchors, not actual open pins. This
+check does not prove absence of schematic shorts, correct datasheet mapping or
+PCB connectivity. Native JSON is never patched to change those flags.
+
+Main PCB remains crowded. There is no full 3D motor/plug/fastener interference
+approval, zero-shorts claim, qualified CAM or physical hardware test evidence.
 
 ## Publication
 
-Destination remains the same public GitHub repository and the same public
-`AnasSarkiz/NEMA11_RP2040_Compact_Prototype` package. This is a new version of
-that existing package, not another package identity. Publish tscircuit first,
-then push matching source, lockfile and native outputs to GitHub. Exact native
-`dist/index/circuit.json` is included without editing. Remote receipts identify
-completed uploads, hashes and visibility; do not infer success from local files
-or a preview-build request. Earlier HTTP 503 attempts remain historical evidence.
+Destination remains the public GitHub repository `AnasSarkiz/NEMA11_RP2040`
+and the same public `AnasSarkiz/NEMA11_RP2040_Compact_Prototype` package.
+Publish `0.6.2-issues-review-wip` to tscircuit first, then push matching source,
+lockfile, review artifacts and exact native JSON to GitHub. A separate package
+identity is not created. `checks/registry-verification.json` and
+`checks/publication-status.json` record actual upload/visibility/hash results;
+local generation or requesting a preview alone does not prove publication.
 
-### Verified publication result
-
-Version `0.6.1-import-refresh-wip` was uploaded to the existing public package
-before the GitHub push. All 302 source, supplier-asset and native-output files
-were downloaded publicly and matched local bytes. The two verification receipts
-are excluded from their recursive manifest and uploaded/checked separately.
-GitHub repository metadata confirms public visibility. Implementation commit
-`f13b9cfe1f4fb2dda2fd90bc277a59a8dc464bad` was pushed to `main`; an anonymous raw download
-of its native circuit JSON matched the registry and local SHA-256:
-`f77bbbc2b67d7912dd384f5daae351517041d187f515a30a9df7acc89af0deb8`.
-
-At verification, the registry preview status was `pending`;
-no complete store preview or 3D interference approval is inferred. Publication
-is successful for the import-refresh WIP milestone, not fabrication approval.
-See `checks/registry-verification.json` and `checks/publication-status.json`.
+The previous `0.6.1-import-refresh-wip` publication was verified: 302 files
+matched public registry bytes and GitHub native JSON matched. Its receipts are
+retained under `checks/history/0.6.1-*`. This does not attest to the new revision.

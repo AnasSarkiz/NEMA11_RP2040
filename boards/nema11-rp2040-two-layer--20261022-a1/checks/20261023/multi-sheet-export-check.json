@@ -1,0 +1,9 @@
+{
+  "native_sheet_count": 2,
+  "cli_svg_files": [
+    "schematic.svg"
+  ],
+  "first_component_present": true,
+  "second_component_present": false,
+  "scope": "Two untouched JLCPCB resistors on two native A4 sheets; default CLI schematic SVG output"
+}

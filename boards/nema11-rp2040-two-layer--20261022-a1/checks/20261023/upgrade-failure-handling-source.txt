@@ -1,0 +1,13 @@
+var updateTsci = async () => {
+  const packageManager = getPackageManager();
+  const installCommand = getGlobalDepsInstallCommand(packageManager.name, "tscircuit@latest");
+  try {
+    console.log(`Updating tsci using: ${installCommand}`);
+    execSync4(installCommand, { stdio: "inherit" });
+    console.log(kleur_default.green("tsci has been updated successfully!"));
+  } catch {
+    console.warn("Update failed. You can try updating manually by running:");
+    console.warn(`  ${installCommand}`);
+  }
+  return true;
+};

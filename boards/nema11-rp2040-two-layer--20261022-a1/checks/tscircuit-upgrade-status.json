@@ -1,13 +1,14 @@
 {
   "command": "tsci upgrade",
   "exit_code": 0,
-  "global_tscircuit_version": "0.0.3003",
-  "installed_local_cli": "0.1.2400",
-  "installed_local_tscircuit": "0.0.3003",
+  "global_tscircuit_version": "0.0.3005",
+  "installed_local_cli": "0.1.2401",
+  "installed_local_tscircuit": "0.0.3005",
   "local_dependency_install_exit_code": 0,
   "fresh_imports_completed": 47,
   "fresh_import_failures": 0,
   "dependency_integrity_verification_disabled": false,
-  "remaining_blocking_component_issue": "C5815189 malformed locator polygon; drawing requires one round 0.71 mm hole and one 1.01 x 0.71 mm slot",
-  "full_bom_approved": false
+  "remaining_blocking_component_issue": "C5815189 slot 1.51 x 0.71 mm vs manufacturer 1.01 x 0.71 mm; supplier/importer responsibility unconfirmed",
+  "full_bom_approved": false,
+  "evidence_directory": "checks/20261023"
 }

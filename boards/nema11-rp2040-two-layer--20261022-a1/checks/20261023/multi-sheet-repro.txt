@@ -1,0 +1,17 @@
+Building 1 file(s)...
+Building checks/20261023/multi-sheet-repro.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/checks/20261023/multi-sheet-repro/circuit.json
+R_FIRST may not have availability from jlcpcb (C25076).
+R_SECOND may not have availability from jlcpcb (C25076).
+Generating preview images...
+[checks/20261023/multi-sheet-repro] Generating schematic SVG...
+[checks/20261023/multi-sheet-repro] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

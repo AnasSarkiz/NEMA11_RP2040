@@ -1,0 +1,13 @@
+[
+  {
+    "name": "multi-sheet-repro",
+    "command": "tsci build checks/20261023/multi-sheet-repro.circuit.tsx --schematic-svgs",
+    "exit_code": 0
+  },
+  {
+    "name": "imported-symbol-labels-repro",
+    "command": "tsci check schematic-placement checks/20261023/imported-symbol-labels-repro.circuit.tsx",
+    "exit_code": 0,
+    "inner_label_collision_reported": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
+  "circuit_json_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+  "structural_failure_count": 0,
+  "native_errors": {
+    "pcb_placement_error": 29,
+    "pcb_component_outside_board_error": 2,
+    "pcb_footprint_overlap_error": 60,
+    "pcb_pad_pad_clearance_error": 10,
+    "pcb_courtyard_overlap_error": 56
+  },
+  "native_error_count": 157,
+  "manufacturing_approved": false,
+  "scope": "Source preservation and import integrity only; does not approve schematic, placement, routing, shorts, mechanics or manufacturing."
+}
