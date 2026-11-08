@@ -1,0 +1,79 @@
+{
+  "review_date_utc": "2026-11-08",
+  "part": {
+    "manufacturer": "Jiangsu Huaneng / Huawha Electronics",
+    "model": "MLT-5020",
+    "stock_code": "C94598"
+  },
+  "sources": [
+    {
+      "id": "JLC_C94598",
+      "url": "https://jlcpcb.com/partdetail/MLT-5020/C94598",
+      "kind": "distributor exact SKU",
+      "observed": "3 V, 2-4 V, 4 kHz, 100 mA, 75 dB, -20 to +70 C",
+      "limitation": "Signed direct PDF download returned HTTP 403; bytes of that direct JLC attachment not verified."
+    },
+    {
+      "id": "LCSC_C94598",
+      "url": "https://www.lcsc.com/product-detail/C94598.html",
+      "kind": "distributor exact SKU",
+      "datasheet_page": "https://www.lcsc.com/datasheet/C94598.pdf"
+    },
+    {
+      "id": "HUAWHA_2021",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/23f5c6599ed9cb614c21ac31ad2b1106.pdf?productCode=C94598",
+      "kind": "manufacturer specification linked from LCSC C94598",
+      "printed_date": "2021-05-27",
+      "explicit_revision": null,
+      "pages": 5,
+      "file": "C94598_linked_Huawha_MLT-5020_2021-05-27.pdf",
+      "sha256": "db73c860afd42abdf9a2e69c4a34ac915d68e07108a2188d6ee0a9c02f723be9",
+      "bytes": 492825,
+      "access": "Web text plus original PDF downloaded through normal browser download control and visually inspected."
+    },
+    {
+      "id": "HUANENG_2017",
+      "url": "https://file.elecfans.com/web1/M00/A2/2B/pIYBAF1JIOGAJiicAAXD2xPzpTw612.pdf?filename=MLT-5020_HNDZ.pdf",
+      "kind": "historical manufacturer sheet on third-party host",
+      "printed_date": "2017-07-20",
+      "pages": 6,
+      "access": "Searchable text retrieved by web tool; browser load was blocked. No local PDF or visual verification of old drawing.",
+      "applicability": "Historical comparison only; equivalence to current SKU not established."
+    },
+    {
+      "id": "DMN2300UFB4",
+      "url": "https://www.diodes.com/datasheet/download/DMN2300UFB4.pdf",
+      "kind": "manufacturer datasheet",
+      "document": "DS35269 Rev. 5-2",
+      "date": "2019-07",
+      "pages": 7,
+      "applicability": "Explicit ordering row includes DMN2300UFB4-7B."
+    },
+    {
+      "id": "PMEG6020ELR",
+      "url": "https://assets.nexperia.com/documents/data-sheet/PMEG6020ELR.pdf",
+      "kind": "manufacturer datasheet",
+      "date": "2023-01-01",
+      "pages": 13,
+      "applicability": "Type-level reference. Board procurement suffix and fitted package still require BOM/sample verification."
+    },
+    {
+      "id": "AP63203",
+      "url": "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf",
+      "kind": "manufacturer datasheet",
+      "document": "DS41326 Rev. 3-2",
+      "date": "2024-11",
+      "pages": 18
+    }
+  ],
+  "board_verification": {
+    "requested_path": "/workspace/scratch/07b71d1575ce/nema11_work/boards/nema11-rp2040-two-layer--20261022-a1",
+    "status": "Path absent in worker environment; board not independently inspected",
+    "parent_provided_commit": "1180e9a",
+    "parent_provided_native_json_sha256": "3323aa0f2322cafc0713d6c94e5841ff43ebf47c8a5281acf4744c58ac088600"
+  },
+  "tests_executed": false,
+  "model_edits": false,
+  "hardware_changes": false,
+  "publication": false
+}
