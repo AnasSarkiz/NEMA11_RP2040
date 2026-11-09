@@ -1,7 +1,21 @@
-# Keep original supplier and generated renderer bytes unchanged.
 imports/** -text -whitespace
+*.pdf binary
+*.png binary
+dist/** -text -whitespace
+# Preserve exact native diagnostic logs, including terminal blank lines.
+checks/*.txt -text -whitespace
+checks/**/*.txt -text -whitespace
+
+# Keep official per-sheet SVG renderer bytes unchanged.
+artifacts/**/*.svg -text -whitespace
+
+# Preserve newly imported assets and exact source evidence.
 imports/**/*.step binary
 imports/**/*.obj -diff
-dist/**/*.svg -whitespace
-artifacts/**/*.svg -whitespace
-references/**/*.svg -whitespace
+references/**/*.svg -text -whitespace
+references/compact-replacements/*.html -text -whitespace
+references/compact-replacements/*.txt -text -whitespace
+references/compact-replacements/CH224-wch-response -text -whitespace
+
+# Preserve the fetched reference checklist bytes and its recorded hash.
+references/nema14-v2-requirements-20261108.md -text -whitespace

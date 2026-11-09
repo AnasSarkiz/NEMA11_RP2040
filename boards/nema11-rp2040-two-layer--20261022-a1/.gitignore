@@ -4,3 +4,8 @@ node_modules/
 .env.*
 .tscircuit/
 __pycache__/
+
+# Immutable public native fixture is required by portable tests.
+!references/baseline-1233ccdf/dist/
+!references/baseline-1233ccdf/dist/index/
+!references/baseline-1233ccdf/dist/index/circuit.json
