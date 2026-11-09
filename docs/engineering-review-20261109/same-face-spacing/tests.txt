@@ -1,0 +1,12 @@
+test_authored_origin_and_bottom_rotation (test_spacing.SpacingTests.test_authored_origin_and_bottom_rotation) ... ok
+test_crossing_edges_without_vertex_containment (test_spacing.SpacingTests.test_crossing_edges_without_vertex_containment) ... ok
+test_diagonal_separation_and_symmetry (test_spacing.SpacingTests.test_diagonal_separation_and_symmetry) ... ok
+test_disjoint_parallel (test_spacing.SpacingTests.test_disjoint_parallel) ... ok
+test_hull_omits_interior_and_duplicate_points (test_spacing.SpacingTests.test_hull_omits_interior_and_duplicate_points) ... ok
+test_opposite_faces_are_not_same_face_pairs (test_spacing.SpacingTests.test_opposite_faces_are_not_same_face_pairs) ... ok
+test_overlap_touch_and_containment_are_not_clear (test_spacing.SpacingTests.test_overlap_touch_and_containment_are_not_clear) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

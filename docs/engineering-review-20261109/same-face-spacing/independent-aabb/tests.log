@@ -1,0 +1,10 @@
+test_axis_gap (test_review.GeometryTests.test_axis_gap) ... ok
+test_diagonal_gap (test_review.GeometryTests.test_diagonal_gap) ... ok
+test_opposite_faces_excluded (test_review.GeometryTests.test_opposite_faces_excluded) ... ok
+test_overlap_zero (test_review.GeometryTests.test_overlap_zero) ... ok
+test_unsupported_transform_rejected (test_review.GeometryTests.test_unsupported_transform_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

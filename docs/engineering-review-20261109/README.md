@@ -133,3 +133,12 @@ The full negative integration result is retained, not normalized away.
 5. Obtain actual rear-fastener, gap and motor/interface evidence before any
    fit claim; then qualify panel, assembly and hardware behavior. Routing and
    fabrication remain gated separately from local software test success.
+
+## Offline same-face assembly-spacing screen
+
+The [same-face spacing review](same-face-spacing/README.md) checks the saved
+current-placement candidate without a native rebuild. No pair among 2,748
+same-face fitted-component pairs is below 0.2 mm in the nominal imported
+whole-model screen; the closest is 0.524997 mm. This is not manufacturer
+acceptance or a real-part tolerance check. Opposite-face projections and
+courtyards are reported separately. Native validation remains paused.

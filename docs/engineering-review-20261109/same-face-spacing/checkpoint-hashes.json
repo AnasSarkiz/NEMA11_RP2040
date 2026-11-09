@@ -1,0 +1,16 @@
+{
+  "README.md": "77b45f486a1532452dd47c375ec55c82090c5a4cc0f722582c3f089236596942",
+  "audit_spacing.py": "6e660e063d523b531dc97ce9148b02bed74c7e5fbc0223ec650c52c8175c6117",
+  "independent-aabb/REPORT.md": "9730bda9e3534e2f6c05ca82590f328d6d912861d95f940cdacc28347b5e7290",
+  "independent-aabb/circuit-courtyard.json": "7cad803872899ddf31f64ccf203805fe49b2f2ff2ee84af8cfdf39d59260afb4",
+  "independent-aabb/integrated.circuit-courtyard.json": "0114b782920b3ccde6685f9962e533f1e597446c98fe92fef3613468e8d2f7e9",
+  "independent-aabb/model-xy-screen.png": "093ef6f393a392cbc93461c8fc10e37ac02bf2ca7e4e2c175c2eb167e18a508d",
+  "independent-aabb/model_spacing.json": "4dd73efffe3f900a1d7794bc8e079ab3e3834d13efbf6c91702727f4d5913e01",
+  "independent-aabb/portability-validation.json": "41d6777ec52d654f56f10257d25caa10dcf0b1d724bdd233149714fb1cb3c408",
+  "independent-aabb/review.py": "9984f8df976560d7c948d8d49a1b925fe018e226652719db00ffcf81ebc868be",
+  "independent-aabb/test_review.py": "7d005766c13fba6fcb93caa347c7ceb2449218ac40928b80b254148ecb0ebbf5",
+  "independent-aabb/tests.log": "8e24cf4854ac43399bf72dcff16b01f9e81f11bd7b67d5ae2a80a1f7952c0365",
+  "spacing-report.json": "91123e6ceb75d891677a16f9260388222593c4fd54c73293831fe28fef34850d",
+  "test_spacing.py": "d178de06cc662bd0d8aed5d24a85d6bda7a7c44d4fbacac41c2cedcc0d812f75",
+  "tests.txt": "92d4be945f53011283e56b67f5d61bc89e2aaac8abc17f29de2b693ec44e5608"
+}

@@ -1,0 +1,27 @@
+{
+  "metadata_change": "model_spacing.json input intentionally changed from absolute to repository-relative path",
+  "input": "boards/nema11-rp2040-two-layer--20261022-a1/references/electrical-placement-20261109/integrated.circuit.json",
+  "numerical_rows_pairs_unchanged": true,
+  "files": [
+    {
+      "file": "model_spacing.json",
+      "sha256": "4dd73efffe3f900a1d7794bc8e079ab3e3834d13efbf6c91702727f4d5913e01",
+      "byte_identical_to_original": false
+    },
+    {
+      "file": "circuit-courtyard.json",
+      "sha256": "7cad803872899ddf31f64ccf203805fe49b2f2ff2ee84af8cfdf39d59260afb4",
+      "byte_identical_to_original": true
+    },
+    {
+      "file": "integrated.circuit-courtyard.json",
+      "sha256": "0114b782920b3ccde6685f9962e533f1e597446c98fe92fef3613468e8d2f7e9",
+      "byte_identical_to_original": true
+    },
+    {
+      "file": "model-xy-screen.png",
+      "sha256": "093ef6f393a392cbc93461c8fc10e37ac02bf2ca7e4e2c175c2eb167e18a508d",
+      "byte_identical_to_original": true
+    }
+  ]
+}

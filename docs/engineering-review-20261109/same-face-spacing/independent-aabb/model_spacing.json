@@ -1,0 +1,1447 @@
+{
+  "scope": "Whole imported OBJ model XY AABB screening, not body-only, no native build",
+  "input": "boards/nema11-rp2040-two-layer--20261022-a1/references/electrical-placement-20261109/integrated.circuit.json",
+  "sha256": "f590d22ad18feff381969d4dfc4032eb65f51c80465a360de8063ea7953ab538",
+  "verified_transform_order": "zyx",
+  "rows": [
+    {
+      "name": "J_PD",
+      "side": "top",
+      "lo": [
+        -4.47,
+        6.100028900000052,
+        -0.050010999999999806
+      ],
+      "hi": [
+        4.47,
+        14.000028900000052,
+        4.050989
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj"
+    },
+    {
+      "name": "U_PD",
+      "side": "bottom",
+      "lo": [
+        -2.6551872999999295,
+        7.629899999999999,
+        -1.613
+      ],
+      "hi": [
+        -0.6351872999999297,
+        9.6299,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CH224Q/CH224Q.obj"
+    },
+    {
+      "name": "R_PD_CFG",
+      "side": "bottom",
+      "lo": [
+        2.9317127000000704,
+        8.126,
+        -1.1600000000000001
+      ],
+      "hi": [
+        3.4317127000000704,
+        9.126,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF5602TCE/A_0402WGF5602TCE.obj"
+    },
+    {
+      "name": "R_PD",
+      "side": "bottom",
+      "lo": [
+        -3.4240999999999997,
+        11.584299999999999,
+        -1.25
+      ],
+      "hi": [
+        -2.6140999999999996,
+        13.2043,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0603WAF0000T5E/A_0603WAF0000T5E.obj"
+    },
+    {
+      "name": "C_PD",
+      "side": "bottom",
+      "lo": [
+        -1.7633,
+        11.2899,
+        -1.6
+      ],
+      "hi": [
+        -0.1632999999999999,
+        12.0899,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj"
+    },
+    {
+      "name": "R_PG",
+      "side": "bottom",
+      "lo": [
+        0.4133,
+        7.5339,
+        -1.2500000000000002
+      ],
+      "hi": [
+        2.0333,
+        8.3439,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj"
+    },
+    {
+      "name": "D_TVS",
+      "side": "bottom",
+      "lo": [
+        -0.6690983999998927,
+        5.185,
+        -1.8100000000000003
+      ],
+      "hi": [
+        2.9309016000001074,
+        6.985,
+        -0.7999999999999998
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/SMF18A/SMF18A.obj"
+    },
+    {
+      "name": "D_PD",
+      "side": "bottom",
+      "lo": [
+        -11.035900000000002,
+        5.816587300000001,
+        -2.25
+      ],
+      "hi": [
+        -7.185900000000001,
+        7.5165873,
+        -0.7999999999999998
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/B5819W_SL/B5819W_SL.obj"
+    },
+    {
+      "name": "D_DATA",
+      "side": "bottom",
+      "lo": [
+        11.8000127,
+        -1.925,
+        -2.25
+      ],
+      "hi": [
+        13.5000127,
+        1.925,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/B5819W_SL/B5819W_SL.obj"
+    },
+    {
+      "name": "U_BUCK",
+      "side": "bottom",
+      "lo": [
+        5.204387299999929,
+        10.2363,
+        -1.6900000000000004
+      ],
+      "hi": [
+        8.10438729999993,
+        13.0363,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/AP63203WU_7/AP63203WU_7.obj"
+    },
+    {
+      "name": "L_BUCK",
+      "side": "bottom",
+      "lo": [
+        5.5863,
+        5.255700000000001,
+        -2.6300000000000003
+      ],
+      "hi": [
+        9.5863,
+        9.3057,
+        -0.7999999999999998
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/SRN4018_4R7M/SRN4018_4R7M.obj"
+    },
+    {
+      "name": "C_BOOTSTRAP",
+      "side": "bottom",
+      "lo": [
+        3.2604,
+        12.90231270000007,
+        -1.3000000000000003
+      ],
+      "hi": [
+        4.260400000000001,
+        13.40231270000007,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_BUCK_IN",
+      "side": "bottom",
+      "lo": [
+        0.7244999999999996,
+        9.628,
+        -2.1
+      ],
+      "hi": [
+        2.3245000000000005,
+        12.828,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj"
+    },
+    {
+      "name": "C_BUCK_OUT1",
+      "side": "bottom",
+      "lo": [
+        3.3441872999999296,
+        1.9580000000000002,
+        -2.1
+      ],
+      "hi": [
+        4.64418729999993,
+        3.958,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj"
+    },
+    {
+      "name": "C_BUCK_OUT2",
+      "side": "bottom",
+      "lo": [
+        5.22528729999993,
+        0.7515000000000001,
+        -2.1
+      ],
+      "hi": [
+        6.52528729999993,
+        2.7515,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj"
+    },
+    {
+      "name": "J_DATA",
+      "side": "top",
+      "lo": [
+        6.100028900000051,
+        -4.470000000000001,
+        -0.050010999999999806
+      ],
+      "hi": [
+        14.000028900000054,
+        4.47,
+        4.050989
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj"
+    },
+    {
+      "name": "R_CC1",
+      "side": "bottom",
+      "lo": [
+        8.5,
+        -3.05001270000007,
+        -1.1600000000000001
+      ],
+      "hi": [
+        9.5,
+        -2.55001270000007,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj"
+    },
+    {
+      "name": "R_CC2",
+      "side": "bottom",
+      "lo": [
+        10.9,
+        -3.36998729999993,
+        -1.1600000000000001
+      ],
+      "hi": [
+        11.9,
+        -2.86998729999993,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj"
+    },
+    {
+      "name": "U_ESD",
+      "side": "bottom",
+      "lo": [
+        8.349987299999931,
+        -1.4063462999999297,
+        -2.448939
+      ],
+      "hi": [
+        11.24998729999993,
+        1.4063717000000702,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/USBLC6_2SC6/USBLC6_2SC6.obj"
+    },
+    {
+      "name": "R_DP",
+      "side": "bottom",
+      "lo": [
+        -4.57228729999993,
+        -0.341802,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -4.07228729999993,
+        0.6581980000000001,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj"
+    },
+    {
+      "name": "R_DM",
+      "side": "bottom",
+      "lo": [
+        -8.88558729999993,
+        -0.344302,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -8.38558729999993,
+        0.655698,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj"
+    },
+    {
+      "name": "R_USB_SENSE_H",
+      "side": "bottom",
+      "lo": [
+        3.4485,
+        0.16738729999992968,
+        -1.1600000000000001
+      ],
+      "hi": [
+        4.4485,
+        0.6673872999999297,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj"
+    },
+    {
+      "name": "R_USB_SENSE_L",
+      "side": "bottom",
+      "lo": [
+        5.0328,
+        -1.0084872999999297,
+        -1.1600000000000001
+      ],
+      "hi": [
+        6.0328,
+        -0.5084872999999297,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj"
+    },
+    {
+      "name": "U_FLASH",
+      "side": "bottom",
+      "lo": [
+        -7.217992049999999,
+        10.287798,
+        -1.2700000000000002
+      ],
+      "hi": [
+        -5.20799205,
+        13.287798,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/GD25Q16EEIGR/GD25Q16EEIGR.obj"
+    },
+    {
+      "name": "C_FLASH",
+      "side": "bottom",
+      "lo": [
+        -7.33201270000007,
+        8.267798,
+        -1.3
+      ],
+      "hi": [
+        -6.83201270000007,
+        9.267798,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "R_FLASH_CS",
+      "side": "bottom",
+      "lo": [
+        -5.8372,
+        8.741887299999929,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -4.8372,
+        9.241887299999929,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "R_BOOT",
+      "side": "bottom",
+      "lo": [
+        -3.2267,
+        10.18418729999993,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -2.2267,
+        10.68418729999993,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "C_ESD",
+      "side": "bottom",
+      "lo": [
+        7.10001270000007,
+        -0.5,
+        -1.3
+      ],
+      "hi": [
+        7.60001270000007,
+        0.5,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "U_MCU",
+      "side": "bottom",
+      "lo": [
+        -11.326587300000043,
+        -8.451875000000094,
+        -1.6700000000000004
+      ],
+      "hi": [
+        -4.306587300000044,
+        -1.431875000000093,
+        -0.7999999999999996
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/RP2040/RP2040.obj"
+    },
+    {
+      "name": "Y_MCU",
+      "side": "bottom",
+      "lo": [
+        -4.25001270000007,
+        -12.723502,
+        -1.501
+      ],
+      "hi": [
+        -1.75001270000007,
+        -9.523502,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/ABM8_272_T3/ABM8_272_T3.obj"
+    },
+    {
+      "name": "R_XOUT",
+      "side": "bottom",
+      "lo": [
+        -5.49881270000007,
+        -10.542802,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -4.99881270000007,
+        -9.542802,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "C_XIN",
+      "side": "bottom",
+      "lo": [
+        -0.9991127000000704,
+        -9.092402,
+        -1.3
+      ],
+      "hi": [
+        -0.49911270000007013,
+        -8.092402,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402CG150J500NT/A_0402CG150J500NT.obj"
+    },
+    {
+      "name": "C_XOUT",
+      "side": "bottom",
+      "lo": [
+        -6.57221270000007,
+        -11.599602,
+        -1.3
+      ],
+      "hi": [
+        -6.07221270000007,
+        -10.599602,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402CG150J500NT/A_0402CG150J500NT.obj"
+    },
+    {
+      "name": "C_IO1",
+      "side": "bottom",
+      "lo": [
+        -3.37831270000007,
+        -2.799302,
+        -1.3
+      ],
+      "hi": [
+        -2.87831270000007,
+        -1.799302,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_IO10",
+      "side": "bottom",
+      "lo": [
+        -3.4096872999999297,
+        -5.618002,
+        -1.3
+      ],
+      "hi": [
+        -2.9096872999999297,
+        -4.618002,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_IO22",
+      "side": "bottom",
+      "lo": [
+        -9.09,
+        -9.84398929999993,
+        -1.3000000000000003
+      ],
+      "hi": [
+        -8.09,
+        -9.34398929999993,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_IO33",
+      "side": "bottom",
+      "lo": [
+        -12.74151270000007,
+        -7.191902,
+        -1.3
+      ],
+      "hi": [
+        -12.24151270000007,
+        -6.191902,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_IO42",
+      "side": "bottom",
+      "lo": [
+        -12.752712700000071,
+        -1.948502,
+        -1.3
+      ],
+      "hi": [
+        -12.252712700000071,
+        -0.948502,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_IO49",
+      "side": "bottom",
+      "lo": [
+        -5.8205872999999295,
+        -0.389502,
+        -1.3
+      ],
+      "hi": [
+        -5.3205872999999295,
+        0.610498,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_ADC",
+      "side": "bottom",
+      "lo": [
+        -9.96188729999993,
+        -0.390802,
+        -1.3
+      ],
+      "hi": [
+        -9.46188729999993,
+        0.609198,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_USB",
+      "side": "bottom",
+      "lo": [
+        -6.2932,
+        1.3330107000000702,
+        -1.3000000000000003
+      ],
+      "hi": [
+        -5.2932,
+        1.8330107000000702,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_VREG_IN",
+      "side": "bottom",
+      "lo": [
+        -11.6877,
+        -0.22338929999992974,
+        -1.3000000000000003
+      ],
+      "hi": [
+        -10.6877,
+        0.27661070000007026,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj"
+    },
+    {
+      "name": "C_VREG_OUT",
+      "side": "bottom",
+      "lo": [
+        -10.24328729999993,
+        1.480398,
+        -1.3
+      ],
+      "hi": [
+        -9.74328729999993,
+        2.480398,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj"
+    },
+    {
+      "name": "C_DV23",
+      "side": "bottom",
+      "lo": [
+        -7.2194,
+        -9.848789299999929,
+        -1.3000000000000003
+      ],
+      "hi": [
+        -6.2194,
+        -9.348789299999929,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "C_DV50",
+      "side": "bottom",
+      "lo": [
+        -7.81058729999993,
+        -0.301802,
+        -1.3
+      ],
+      "hi": [
+        -7.31058729999993,
+        0.698198,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "R_RUN",
+      "side": "bottom",
+      "lo": [
+        -2.9198,
+        6.3655872999999294,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -1.9198,
+        6.8655872999999294,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "U_DRV",
+      "side": "top",
+      "lo": [
+        -0.5010000000000003,
+        -5.7010000000000005,
+        0.8
+      ],
+      "hi": [
+        4.501,
+        -0.6989999999999998,
+        1.4300000000000002
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A4988SETTR_T/A4988SETTR_T.obj"
+    },
+    {
+      "name": "J_MOTOR",
+      "side": "top",
+      "lo": [
+        -1.07499029999993,
+        -13.549961699999994,
+        -2.1999940000000002
+      ],
+      "hi": [
+        8.82500970000007,
+        -8.849961699999994,
+        6.800006
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj"
+    },
+    {
+      "name": "R_SA",
+      "side": "top",
+      "lo": [
+        1.5899999999999999,
+        0.5636873000001571,
+        0.8
+      ],
+      "hi": [
+        3.59,
+        1.8636873000001573,
+        1.4100000000000001
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/HP05W3F240LT5E/HP05W3F240LT5E.obj"
+    },
+    {
+      "name": "R_SB",
+      "side": "top",
+      "lo": [
+        -2.0772,
+        0.3229873000001571,
+        0.8
+      ],
+      "hi": [
+        -0.07719999999999994,
+        1.6229873000001571,
+        1.4100000000000001
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/HP05W3F240LT5E/HP05W3F240LT5E.obj"
+    },
+    {
+      "name": "C_CP",
+      "side": "top",
+      "lo": [
+        -2.1213872999999297,
+        -1.4976,
+        0.8
+      ],
+      "hi": [
+        -1.6213872999999297,
+        -0.49760000000000004,
+        1.3
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj"
+    },
+    {
+      "name": "C_VCP",
+      "side": "top",
+      "lo": [
+        -2.0041872999999297,
+        -3.48,
+        0.8
+      ],
+      "hi": [
+        -1.5041872999999297,
+        -2.48,
+        1.3
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj"
+    },
+    {
+      "name": "C_VREG",
+      "side": "top",
+      "lo": [
+        -0.05130000000000001,
+        -7.6000000000000005,
+        0.8
+      ],
+      "hi": [
+        1.5487000000000002,
+        -6.8,
+        1.6
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL10B224KA8NNNC/CL10B224KA8NNNC.obj"
+    },
+    {
+      "name": "C_VM",
+      "side": "top",
+      "lo": [
+        -3.7286,
+        -3.4498872999999297,
+        0.8
+      ],
+      "hi": [
+        -2.7286,
+        -2.9498872999999297,
+        1.3
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj"
+    },
+    {
+      "name": "C_BULK",
+      "side": "top",
+      "lo": [
+        -8.19998729999993,
+        -12.9,
+        0.8
+      ],
+      "hi": [
+        -1.5999872999999298,
+        -5.1,
+        8.55
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/RVT1V470M0605/RVT1V470M0605.obj"
+    },
+    {
+      "name": "C_DRV_LOGIC",
+      "side": "top",
+      "lo": [
+        3.75,
+        -7.450987299999929,
+        0.8
+      ],
+      "hi": [
+        4.75,
+        -6.950987299999929,
+        1.3
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "R_REF_H",
+      "side": "bottom",
+      "lo": [
+        0.44310000000000005,
+        -8.3186,
+        -1.2500000000000002
+      ],
+      "hi": [
+        2.0631000000000004,
+        -7.5085999999999995,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0603WAF2002T5E/A_0603WAF2002T5E.obj"
+    },
+    {
+      "name": "R_REF_L",
+      "side": "bottom",
+      "lo": [
+        3.2126,
+        -9.44598729999993,
+        -1.1600000000000001
+      ],
+      "hi": [
+        4.2126,
+        -8.94598729999993,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "C_REF",
+      "side": "top",
+      "lo": [
+        5.7841000000000005,
+        -6.309500000000001,
+        0.8
+      ],
+      "hi": [
+        7.3841,
+        -5.5095,
+        1.6
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL10B103KB8NNNC/CL10B103KB8NNNC.obj"
+    },
+    {
+      "name": "R_ENABLE",
+      "side": "bottom",
+      "lo": [
+        5.3341,
+        -2.30091270000007,
+        -1.1600000000000001
+      ],
+      "hi": [
+        6.3341,
+        -1.8009127000000702,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "R_SLEEP",
+      "side": "bottom",
+      "lo": [
+        1.4184,
+        -6.055512700000071,
+        -1.1600000000000001
+      ],
+      "hi": [
+        2.4184,
+        -5.555512700000071,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "R_VM_H",
+      "side": "bottom",
+      "lo": [
+        3.1895872999999297,
+        -6.042,
+        -1.1600000000000001
+      ],
+      "hi": [
+        3.6895872999999297,
+        -5.042,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj"
+    },
+    {
+      "name": "R_VM_L",
+      "side": "bottom",
+      "lo": [
+        4.95978729999993,
+        -4.0793,
+        -1.1600000000000001
+      ],
+      "hi": [
+        5.45978729999993,
+        -3.0793,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "C_VM_SENSE",
+      "side": "bottom",
+      "lo": [
+        6.02481270000007,
+        -7.1138,
+        -1.3
+      ],
+      "hi": [
+        6.52481270000007,
+        -6.1138,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B103KB5NNNC/CL05B103KB5NNNC.obj"
+    },
+    {
+      "name": "U_TEMP",
+      "side": "bottom",
+      "lo": [
+        3.6204507999999964,
+        -8.393178799999996,
+        -1.4100000000000001
+      ],
+      "hi": [
+        5.2204507999999965,
+        -6.793178799999996,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/TMP102AIDRLR/TMP102AIDRLR.obj"
+    },
+    {
+      "name": "C_TEMP",
+      "side": "bottom",
+      "lo": [
+        3.9185,
+        -12.15391270000007,
+        -1.3000000000000003
+      ],
+      "hi": [
+        4.9185,
+        -11.65391270000007,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj"
+    },
+    {
+      "name": "R_TEMP_SDA",
+      "side": "bottom",
+      "lo": [
+        4.7367,
+        -5.3886127000000705,
+        -1.1600000000000001
+      ],
+      "hi": [
+        5.7367,
+        -4.8886127000000705,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj"
+    },
+    {
+      "name": "R_TEMP_SCL",
+      "side": "bottom",
+      "lo": [
+        7.2948,
+        -7.7889872999999294,
+        -1.1600000000000001
+      ],
+      "hi": [
+        8.2948,
+        -7.2889872999999294,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj"
+    },
+    {
+      "name": "D_STATUS",
+      "side": "top",
+      "lo": [
+        -11.9213,
+        5.6319,
+        0.8
+      ],
+      "hi": [
+        -10.321299999999999,
+        7.2318999999999996,
+        1.1600000000000001
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/LTST_C19HE1WT/LTST_C19HE1WT.obj"
+    },
+    {
+      "name": "R_STATUS_R",
+      "side": "bottom",
+      "lo": [
+        -13.53358729999993,
+        7.9575,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -13.03358729999993,
+        8.9575,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "Q_STATUS_R",
+      "side": "bottom",
+      "lo": [
+        -13.113988900000036,
+        6.2291889000001515,
+        -1.2100000000000002
+      ],
+      "hi": [
+        -12.093988900000037,
+        6.849188900000151,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj"
+    },
+    {
+      "name": "R_STATUS_G",
+      "side": "bottom",
+      "lo": [
+        -10.53278729999993,
+        4.0663,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -10.03278729999993,
+        5.0663,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "Q_STATUS_G",
+      "side": "bottom",
+      "lo": [
+        -7.471888900000151,
+        4.226011099999964,
+        -1.2100000000000002
+      ],
+      "hi": [
+        -6.8518889000001515,
+        5.246011099999963,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj"
+    },
+    {
+      "name": "R_STATUS_B",
+      "side": "bottom",
+      "lo": [
+        8.5633,
+        -5.9892127000000706,
+        -1.1600000000000001
+      ],
+      "hi": [
+        9.5633,
+        -5.4892127000000706,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "Q_STATUS_B",
+      "side": "bottom",
+      "lo": [
+        8.75671109999985,
+        -9.569588900000037,
+        -1.2100000000000002
+      ],
+      "hi": [
+        9.37671109999985,
+        -8.549588900000037,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj"
+    },
+    {
+      "name": "BZ1",
+      "side": "top",
+      "lo": [
+        -12.912625399999914,
+        -2.1845368000000334,
+        0.8
+      ],
+      "hi": [
+        -7.712625399999912,
+        3.081289199999967,
+        2.8099999999999996
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/MLT_5020/MLT_5020.obj"
+    },
+    {
+      "name": "Q_BUZZER",
+      "side": "bottom",
+      "lo": [
+        -8.075011099999964,
+        2.9926110999998494,
+        -1.2100000000000002
+      ],
+      "hi": [
+        -7.055011099999963,
+        3.6126110999998495,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj"
+    },
+    {
+      "name": "R_BUZZER_GATE",
+      "side": "bottom",
+      "lo": [
+        -12.0092,
+        2.79601270000007,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -11.0092,
+        3.29601270000007,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "R_BUZZER_PD",
+      "side": "bottom",
+      "lo": [
+        -9.2623,
+        4.7645872999999295,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -8.2623,
+        5.2645872999999295,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "D_BUZZER",
+      "side": "bottom",
+      "lo": [
+        -5.9508,
+        4.2104,
+        -2.0200000000000005
+      ],
+      "hi": [
+        -2.2708000000000004,
+        5.8104,
+        -0.7999999999999998
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/PMEG6020ELRX/PMEG6020ELRX.obj"
+    },
+    {
+      "name": "C_BUZZER",
+      "side": "bottom",
+      "lo": [
+        -8.8933,
+        1.422342,
+        -1.6
+      ],
+      "hi": [
+        -7.2932999999999995,
+        2.222342,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/CL10A106KP8NNNC/CL10A106KP8NNNC.obj"
+    },
+    {
+      "name": "R_PWR_LED",
+      "side": "bottom",
+      "lo": [
+        11.4399,
+        5.3768127000000705,
+        -1.1600000000000001
+      ],
+      "hi": [
+        12.4399,
+        5.8768127000000705,
+        -0.7999999999999999
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj"
+    },
+    {
+      "name": "D_PWR",
+      "side": "top",
+      "lo": [
+        12.694050799999939,
+        5.89111270000007,
+        0.8
+      ],
+      "hi": [
+        13.49405079999994,
+        7.511112700000071,
+        1.4100000000000001
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/XL_1608SURC_06/XL_1608SURC_06.obj"
+    },
+    {
+      "name": "R_STATUS_R_GATE",
+      "side": "bottom",
+      "lo": [
+        -13.44371270000007,
+        4.4337,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -12.94371270000007,
+        5.4337,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "R_STATUS_R_PD",
+      "side": "bottom",
+      "lo": [
+        -12.46415670000007,
+        7.617139,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -11.96415670000007,
+        8.617139,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "R_STATUS_G_GATE",
+      "side": "bottom",
+      "lo": [
+        -9.16921270000007,
+        2.997,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -8.66921270000007,
+        3.997,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "R_STATUS_G_PD",
+      "side": "bottom",
+      "lo": [
+        -6.25721270000007,
+        6.5581,
+        -1.1600000000000001
+      ],
+      "hi": [
+        -5.75721270000007,
+        7.5581,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    },
+    {
+      "name": "R_STATUS_B_GATE",
+      "side": "bottom",
+      "lo": [
+        9.241187299999929,
+        -7.7594,
+        -1.1600000000000001
+      ],
+      "hi": [
+        9.741187299999929,
+        -6.7594,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj"
+    },
+    {
+      "name": "R_STATUS_B_PD",
+      "side": "bottom",
+      "lo": [
+        8.25238729999993,
+        -11.361,
+        -1.1600000000000001
+      ],
+      "hi": [
+        8.75238729999993,
+        -10.361,
+        -0.8
+      ],
+      "model": "boards/nema11-rp2040-two-layer--20261022-a1/imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj"
+    }
+  ],
+  "pairs": [
+    {
+      "a": "J_MOTOR",
+      "b": "C_BULK",
+      "side": "top",
+      "whole_model_AABB_gap": 0.5249969999999999
+    },
+    {
+      "a": "R_PG",
+      "b": "D_TVS",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5488999999999997
+    },
+    {
+      "a": "D_DATA",
+      "b": "U_ESD",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5500254000000702
+    },
+    {
+      "a": "D_PD",
+      "b": "R_BUZZER_PD",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5520000000000715
+    },
+    {
+      "a": "R_REF_L",
+      "b": "U_TEMP",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5528084999999336
+    },
+    {
+      "a": "U_PD",
+      "b": "R_BOOT",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5542872999999311
+    },
+    {
+      "a": "R_RUN",
+      "b": "D_BUZZER",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5551872999999299
+    },
+    {
+      "a": "R_STATUS_R",
+      "b": "R_STATUS_R_PD",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5694305999998601
+    },
+    {
+      "a": "D_PD",
+      "b": "Q_STATUS_G",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5705762000000378
+    },
+    {
+      "a": "R_DM",
+      "b": "C_DV50",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5750000000000002
+    },
+    {
+      "a": "R_XOUT",
+      "b": "C_XOUT",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5762063866358993
+    },
+    {
+      "a": "R_DM",
+      "b": "C_ADC",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5762999999999998
+    },
+    {
+      "a": "C_BUCK_OUT1",
+      "b": "C_BUCK_OUT2",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5810999999999993
+    },
+    {
+      "a": "Q_BUZZER",
+      "b": "R_STATUS_G_GATE",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.5942016000001065
+    },
+    {
+      "a": "Q_STATUS_G",
+      "b": "Q_BUZZER",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.6134000000001141
+    },
+    {
+      "a": "C_BUCK_OUT2",
+      "b": "C_ESD",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.6273448297430373
+    },
+    {
+      "a": "U_PD",
+      "b": "D_TVS",
+      "side": "bottom",
+      "whole_model_AABB_gap": 0.6448999999999989
+    }
+  ]
+}

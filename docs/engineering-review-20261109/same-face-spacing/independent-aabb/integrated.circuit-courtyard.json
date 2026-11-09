@@ -1,0 +1,638 @@
+[
+  {
+    "a": "U_PD",
+    "b": "R_PG",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03189050000010485
+  },
+  {
+    "a": "U_PD",
+    "b": "D_TVS",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.14490379999996694
+  },
+  {
+    "a": "U_PD",
+    "b": "R_BOOT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.034300000000133224
+  },
+  {
+    "a": "R_PD_CFG",
+    "b": "R_PG",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0317963000001269
+  },
+  {
+    "a": "R_PD_CFG",
+    "b": "C_BUCK_IN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.023204299999985967
+  },
+  {
+    "a": "R_PD",
+    "b": "C_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.02377360000004991
+  },
+  {
+    "a": "R_PD",
+    "b": "R_BOOT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0334963000001256
+  },
+  {
+    "a": "C_PD",
+    "b": "C_BUCK_IN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.023783099999952872
+  },
+  {
+    "a": "C_PD",
+    "b": "R_BOOT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03569890000000875
+  },
+  {
+    "a": "R_PG",
+    "b": "D_TVS",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.021898599999919277
+  },
+  {
+    "a": "R_PG",
+    "b": "C_BUCK_IN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.022011300000068346
+  },
+  {
+    "a": "D_TVS",
+    "b": "C_BUCK_OUT1",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.02200140000018269
+  },
+  {
+    "a": "D_TVS",
+    "b": "R_RUN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03497230000013185
+  },
+  {
+    "a": "D_PD",
+    "b": "C_FLASH",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.08109690000003855
+  },
+  {
+    "a": "D_PD",
+    "b": "Q_STATUS_R",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.14296760000016562
+  },
+  {
+    "a": "D_PD",
+    "b": "R_STATUS_G",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03464400000000989
+  },
+  {
+    "a": "D_PD",
+    "b": "Q_STATUS_G",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.030477400000170185
+  },
+  {
+    "a": "D_PD",
+    "b": "R_BUZZER_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03198700000002841
+  },
+  {
+    "a": "D_PD",
+    "b": "D_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03267180000012804
+  },
+  {
+    "a": "D_PD",
+    "b": "R_STATUS_R_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03322120000002293
+  },
+  {
+    "a": "D_PD",
+    "b": "R_STATUS_G_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0336772000000396
+  },
+  {
+    "a": "D_DATA",
+    "b": "R_CC2",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0499772000000247
+  },
+  {
+    "a": "D_DATA",
+    "b": "U_ESD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.05003000000004043
+  },
+  {
+    "a": "U_BUCK",
+    "b": "L_BUCK",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.005709299999940853
+  },
+  {
+    "a": "C_BUCK_OUT1",
+    "b": "C_BUCK_OUT2",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.031089999999888818
+  },
+  {
+    "a": "C_BUCK_OUT1",
+    "b": "R_USB_SENSE_H",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.06559760000011983
+  },
+  {
+    "a": "C_BUCK_OUT2",
+    "b": "R_USB_SENSE_H",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0361499999999495
+  },
+  {
+    "a": "C_BUCK_OUT2",
+    "b": "R_USB_SENSE_L",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.034997600000119755
+  },
+  {
+    "a": "C_BUCK_OUT2",
+    "b": "C_ESD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.029692999999967107
+  },
+  {
+    "a": "J_DATA",
+    "b": "C_REF",
+    "side": "top",
+    "courtyard_AABB_gap": 0.03439010000001641
+  },
+  {
+    "a": "J_DATA",
+    "b": "D_PWR",
+    "side": "top",
+    "courtyard_AABB_gap": 0.1269947999999239
+  },
+  {
+    "a": "R_DP",
+    "b": "U_MCU",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03448649999987041
+  },
+  {
+    "a": "R_DP",
+    "b": "C_USB",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03078250000007099
+  },
+  {
+    "a": "R_DM",
+    "b": "U_MCU",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.031986499999870466
+  },
+  {
+    "a": "R_DM",
+    "b": "C_ADC",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03629600000004629
+  },
+  {
+    "a": "R_DM",
+    "b": "C_DV50",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03499600000004577
+  },
+  {
+    "a": "R_DM",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0009998999999911717
+  },
+  {
+    "a": "R_USB_SENSE_H",
+    "b": "R_USB_SENSE_L",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.1358960000000463
+  },
+  {
+    "a": "U_FLASH",
+    "b": "C_FLASH",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.026685200000049036
+  },
+  {
+    "a": "C_FLASH",
+    "b": "R_STATUS_G_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.034796000000046234
+  },
+  {
+    "a": "U_MCU",
+    "b": "Y_MCU",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.031358900000073575
+  },
+  {
+    "a": "U_MCU",
+    "b": "R_XOUT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035086499999872345
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO1",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.06835650000002369
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO10",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.036956500000023595
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO22",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03192950000000394
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO33",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.0549565000000225
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO42",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.06615650000002304
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_IO49",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.032316000000027434
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_ADC",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.031016000000027466
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_DV23",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03672950000000341
+  },
+  {
+    "a": "U_MCU",
+    "b": "C_DV50",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.12001600000002743
+  },
+  {
+    "a": "Y_MCU",
+    "b": "R_XOUT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.028788200000048114
+  },
+  {
+    "a": "Y_MCU",
+    "b": "C_XIN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03088820000004766
+  },
+  {
+    "a": "R_XOUT",
+    "b": "C_XOUT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.033396000000045944
+  },
+  {
+    "a": "R_XOUT",
+    "b": "C_DV23",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03048250000007169
+  },
+  {
+    "a": "C_XIN",
+    "b": "R_REF_H",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.07559630000024042
+  },
+  {
+    "a": "C_XOUT",
+    "b": "C_DV23",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.06068250000007325
+  },
+  {
+    "a": "C_IO22",
+    "b": "C_DV23",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.030369000000096236
+  },
+  {
+    "a": "C_IO42",
+    "b": "C_VREG_IN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.034982500000071526
+  },
+  {
+    "a": "C_IO49",
+    "b": "C_USB",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03238250000007126
+  },
+  {
+    "a": "C_ADC",
+    "b": "C_VREG_IN",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035682500000071116
+  },
+  {
+    "a": "C_ADC",
+    "b": "C_VREG_OUT",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.030969000000096614
+  },
+  {
+    "a": "C_ADC",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.09302940000003446
+  },
+  {
+    "a": "C_USB",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.02996130000003827
+  },
+  {
+    "a": "C_VREG_OUT",
+    "b": "R_BUZZER_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03025299999991482
+  },
+  {
+    "a": "C_VREG_OUT",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.029974800000127644
+  },
+  {
+    "a": "C_VREG_OUT",
+    "b": "R_STATUS_G_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03409600000004609
+  },
+  {
+    "a": "C_DV50",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.004029400000034489
+  },
+  {
+    "a": "R_RUN",
+    "b": "D_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035199599999973685
+  },
+  {
+    "a": "U_DRV",
+    "b": "R_SB",
+    "side": "top",
+    "courtyard_AABB_gap": 0.03450079999995881
+  },
+  {
+    "a": "U_DRV",
+    "b": "C_CP",
+    "side": "top",
+    "courtyard_AABB_gap": 0.15140390000001758
+  },
+  {
+    "a": "U_DRV",
+    "b": "C_VCP",
+    "side": "top",
+    "courtyard_AABB_gap": 0.034203900000017606
+  },
+  {
+    "a": "U_DRV",
+    "b": "C_VREG",
+    "side": "top",
+    "courtyard_AABB_gap": 0.10000679999998763
+  },
+  {
+    "a": "U_DRV",
+    "b": "C_BULK",
+    "side": "top",
+    "courtyard_AABB_gap": 0.14998710000001925
+  },
+  {
+    "a": "U_DRV",
+    "b": "C_REF",
+    "side": "top",
+    "courtyard_AABB_gap": 0.034082699999992805
+  },
+  {
+    "a": "J_MOTOR",
+    "b": "C_BULK",
+    "side": "top",
+    "courtyard_AABB_gap": 0.025000800000058554
+  },
+  {
+    "a": "R_SA",
+    "b": "R_SB",
+    "side": "top",
+    "courtyard_AABB_gap": 0.03466880000032413
+  },
+  {
+    "a": "R_SB",
+    "b": "C_CP",
+    "side": "top",
+    "courtyard_AABB_gap": 0.11197940000000517
+  },
+  {
+    "a": "C_CP",
+    "b": "C_VCP",
+    "side": "top",
+    "courtyard_AABB_gap": 0.14216900000009636
+  },
+  {
+    "a": "C_VCP",
+    "b": "C_VM",
+    "side": "top",
+    "courtyard_AABB_gap": 0.034282500000071714
+  },
+  {
+    "a": "C_DRV_LOGIC",
+    "b": "C_REF",
+    "side": "top",
+    "courtyard_AABB_gap": 0.09593300057282814
+  },
+  {
+    "a": "R_REF_H",
+    "b": "R_REF_L",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.11864426757304465
+  },
+  {
+    "a": "R_REF_L",
+    "b": "U_TEMP",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03282080000001919
+  },
+  {
+    "a": "R_ENABLE",
+    "b": "R_VM_L",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.042752999999914554
+  },
+  {
+    "a": "R_SLEEP",
+    "b": "R_VM_H",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035553000000028145
+  },
+  {
+    "a": "R_VM_H",
+    "b": "U_TEMP",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03553539999999433
+  },
+  {
+    "a": "R_VM_L",
+    "b": "R_TEMP_SDA",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.07365300000002861
+  },
+  {
+    "a": "C_VM_SENSE",
+    "b": "U_TEMP",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03441280000001434
+  },
+  {
+    "a": "C_VM_SENSE",
+    "b": "R_TEMP_SDA",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035082500000071626
+  },
+  {
+    "a": "C_VM_SENSE",
+    "b": "R_TEMP_SCL",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03435300000002872
+  },
+  {
+    "a": "R_STATUS_R",
+    "b": "R_STATUS_R_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.029452000000047107
+  },
+  {
+    "a": "Q_STATUS_R",
+    "b": "R_STATUS_R_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03973029999994271
+  },
+  {
+    "a": "Q_STATUS_R",
+    "b": "R_STATUS_R_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.012369299999941852
+  },
+  {
+    "a": "R_STATUS_G",
+    "b": "R_BUZZER_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03465299999991478
+  },
+  {
+    "a": "R_STATUS_G",
+    "b": "R_BUZZER_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03485299999991476
+  },
+  {
+    "a": "Q_STATUS_G",
+    "b": "Q_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03336370000010325
+  },
+  {
+    "a": "Q_STATUS_G",
+    "b": "R_BUZZER_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.034830299999941694
+  },
+  {
+    "a": "Q_STATUS_G",
+    "b": "D_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.033567900000162965
+  },
+  {
+    "a": "R_STATUS_B",
+    "b": "R_STATUS_B_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03455299999991457
+  },
+  {
+    "a": "Q_STATUS_B",
+    "b": "R_STATUS_B_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03444340000017121
+  },
+  {
+    "a": "Q_STATUS_B",
+    "b": "R_STATUS_B_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.035843399999944126
+  },
+  {
+    "a": "Q_BUZZER",
+    "b": "C_BUZZER",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.18033419999992395
+  },
+  {
+    "a": "Q_BUZZER",
+    "b": "R_STATUS_G_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03408640000018792
+  },
+  {
+    "a": "R_BUZZER_PD",
+    "b": "R_STATUS_G_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03195299999991441
+  },
+  {
+    "a": "D_BUZZER",
+    "b": "R_STATUS_G_PD",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.03205659999995536
+  },
+  {
+    "a": "C_BUZZER",
+    "b": "R_STATUS_G_GATE",
+    "side": "bottom",
+    "courtyard_AABB_gap": 0.00901389999999136
+  }
+]
