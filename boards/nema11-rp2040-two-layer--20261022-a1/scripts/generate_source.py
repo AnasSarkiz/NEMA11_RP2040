@@ -15,7 +15,8 @@ for part in parts.values():
         assert hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest() == entry['sha256'], 'Imported component changed'
 connections = json.loads((ROOT/'config/connections.json').read_text())['components']
 layout = json.loads((ROOT/'config/schematic-layout.json').read_text())
-lines = ['// WIP source construction. Native PCB routing is intentionally disabled.',
+lines = ['// Reconstructed WIP from public 0.6.2 plus retained engineering evidence.',
+         '// This is not the byte-identical lost 0.6.5 placement. Routing remains disabled.',
          '// Supplier definitions are fresh JLCPCB imports; no footprint/symbol/pin/CAD overrides.',
          'import poses from "./config/placement.json"',
          'import requirements from "./config/requirements.json"']
@@ -27,6 +28,8 @@ lines += ['','const position = (name: keyof typeof poses.placements) => ({',
           '', 'export default function Nema11TwoLayerBuzzer() {',
           '  return (', '    <board width={28} height={28} thickness={1.6} layers={2}',
           '      routingDisabled={true} schAutoLayoutEnabled={false}',
+          '      schLayout={{layoutMode: "relative"}}',
+          '      schTraceAutoLabelEnabled={true} schMaxTraceDistance={4}',
           '      minTraceWidth={0.16} minTraceToPadEdgeClearance={0.15}',
           '      minPadEdgeToPadEdgeClearance={0.15} minBoardEdgeClearance={0.25}',
           '      minViaHoleDiameter={0.30} minViaPadDiameter={0.45}',
@@ -47,6 +50,8 @@ for sheet_index, (title,names) in enumerate(layout['sheets'].items()):
         attrs = [f'name="{name}"', f'{{...position("{name}")}}']
         sch = layout['placements'][name]
         attrs += [f'schX={{{sch["schX"]}}}',f'schY={{{sch["schY"]}}}']
+        if 'schRotation' in sch:
+            attrs.append(f'schRotation={{{sch["schRotation"]}}}')
         if name in ['U_ENCODER','C_ENCODER','C_ENCODER_BULK'] or name.startswith('TP_'):
             attrs.append('doNotPlace={true}')
         if c['no_connect']:

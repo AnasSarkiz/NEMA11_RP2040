@@ -574,7 +574,7 @@
         "2": "ENABLE_N"
       },
       "no_connect": [],
-      "resistance": 100000
+      "resistance": 10000
     },
     "R_SLEEP": {
       "connections": {
@@ -582,7 +582,7 @@
         "2": "GND"
       },
       "no_connect": [],
-      "resistance": 100000
+      "resistance": 10000
     },
     "J_MOTOR": {
       "connections": {
@@ -679,9 +679,9 @@
     },
     "Q_STATUS_R": {
       "connections": {
-        "3": "STATUS_R_C",
-        "1": "GND",
-        "2": "LED_R"
+        "1": "STATUS_R_GATE",
+        "2": "STATUS_R_C",
+        "3": "GND"
       },
       "no_connect": []
     },
@@ -695,9 +695,9 @@
     },
     "Q_STATUS_G": {
       "connections": {
-        "3": "STATUS_G_C",
-        "1": "GND",
-        "2": "LED_G"
+        "1": "STATUS_G_GATE",
+        "2": "STATUS_G_C",
+        "3": "GND"
       },
       "no_connect": []
     },
@@ -711,9 +711,9 @@
     },
     "Q_STATUS_B": {
       "connections": {
-        "3": "STATUS_B_C",
-        "1": "GND",
-        "2": "LED_B"
+        "1": "STATUS_B_GATE",
+        "2": "STATUS_B_C",
+        "3": "GND"
       },
       "no_connect": []
     },
@@ -726,9 +726,9 @@
     },
     "Q_BUZZER": {
       "connections": {
-        "3": "BUZZER_SINK",
         "1": "BUZZER_GATE",
-        "2": "GND"
+        "2": "BUZZER_SINK",
+        "3": "GND"
       },
       "no_connect": []
     },
@@ -745,7 +745,7 @@
         "2": "BUZZER_GATE"
       },
       "no_connect": [],
-      "resistance": 100
+      "resistance": 1000
     },
     "R_BUZZER_PD": {
       "connections": {
@@ -753,7 +753,7 @@
         "2": "GND"
       },
       "no_connect": [],
-      "resistance": 100000
+      "resistance": 10000
     },
     "C_BUZZER": {
       "connections": {
@@ -839,6 +839,62 @@
       },
       "no_connect": [],
       "resistance": 56000
+    },
+    "C_ESD": {
+      "connections": {
+        "1": "DATA_VBUS",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "capacitance": 1e-7
+    },
+    "R_STATUS_R_GATE": {
+      "connections": {
+        "1": "LED_R",
+        "2": "STATUS_R_GATE"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "R_STATUS_R_PD": {
+      "connections": {
+        "1": "STATUS_R_GATE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "R_STATUS_G_GATE": {
+      "connections": {
+        "1": "LED_G",
+        "2": "STATUS_G_GATE"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "R_STATUS_G_PD": {
+      "connections": {
+        "1": "STATUS_G_GATE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 10000
+    },
+    "R_STATUS_B_GATE": {
+      "connections": {
+        "1": "LED_B",
+        "2": "STATUS_B_GATE"
+      },
+      "no_connect": [],
+      "resistance": 1000
+    },
+    "R_STATUS_B_PD": {
+      "connections": {
+        "1": "STATUS_B_GATE",
+        "2": "GND"
+      },
+      "no_connect": [],
+      "resistance": 10000
     }
   }
 }

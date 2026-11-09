@@ -25,7 +25,8 @@ def check(name, passed, detail=None):
     checks.append({'check': name, 'passed': bool(passed), 'detail': detail})
 
 
-check('native output belongs to current source', digest('index.circuit.tsx') == load('checks/native-build-status.json')['source_sha256'])
+from run_milestone_checks import fresh_receipt
+check('native output belongs to current complete input fingerprint', fresh_receipt())
 plan = load('config/component-plan.json')['components']
 for name, part in plan.items():
     check(name + ' genuine supplier identity', part in components.get(name, {}).get('supplier_part_numbers', {}).get('jlcpcb', []))
@@ -38,6 +39,9 @@ for name, spec in load('config/connections.json')['components'].items():
         port = ports.get((component.get('source_component_id'), pin), {})
         key = port.get('subcircuit_connectivity_map_key')
         check(name + ' pin ' + pin + ' -> ' + net, key is not None and key == nets[net].get('subcircuit_connectivity_map_key'))
+    for pin in spec.get('no_connect', []):
+        port = ports.get((component.get('source_component_id'), str(pin)))
+        check(name + ' physical NC pin ' + str(pin), port is not None and port.get('do_not_connect') is True and port.get('subcircuit_connectivity_map_key') is None)
     for field in ['resistance', 'capacitance', 'inductance']:
         if field in spec:
             actual = component.get(field)

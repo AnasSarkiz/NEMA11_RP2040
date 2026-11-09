@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/AnasSarkiz/NEMA11_RP2040",
+  "revision": "1233ccdf803a1221820f28eabf4791b4a7cfe90e",
+  "board_path": "boards/nema11-rp2040-two-layer--20261022-a1/",
+  "method": "git show <revision>:<board_path><path>; byte-for-byte immutable public fixture",
+  "files": {
+    "config/connections.json": "99f84c98b2f45c06c7842307fa57942e677848d229f971270004457179872876",
+    "config/component-plan.json": "09180ed32dd9131cacbd8367baac4cdce752d7f0207e4b86bfa3c3182cae8e7d",
+    "dist/index/circuit.json": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac"
+  }
+}

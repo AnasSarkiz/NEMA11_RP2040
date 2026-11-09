@@ -1,0 +1,14 @@
+test_board_envelope_counts_and_unrouted_state (test_electrical_contracts.ElectricalContract.test_board_envelope_counts_and_unrouted_state) ... ok
+test_fixture_provenance (test_electrical_contracts.ElectricalContract.test_fixture_provenance) ... ok
+test_low_side_fets_and_startup_networks (test_electrical_contracts.ElectricalContract.test_low_side_fets_and_startup_networks) ... ok
+test_pd_physical_pins_and_configuration (test_electrical_contracts.ElectricalContract.test_pd_physical_pins_and_configuration) ... ok
+test_preserved_physical_no_connect_ports (test_electrical_contracts.ElectricalContract.test_preserved_physical_no_connect_ports) ... ok
+test_unchanged_features_match_public_baseline (test_electrical_contracts.ElectricalContract.test_unchanged_features_match_public_baseline) ... ok
+test_edge_anchors_and_no_offboard_exemptions (test_mechanical_contracts.MechanicalContract.test_edge_anchors_and_no_offboard_exemptions) ... ok
+test_existing_motor_axes_and_provisional_keepouts (test_mechanical_contracts.MechanicalContract.test_existing_motor_axes_and_provisional_keepouts) ... ok
+test_optional_encoder_and_construction_limits_retained (test_mechanical_contracts.MechanicalContract.test_optional_encoder_and_construction_limits_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.396s
+
+OK

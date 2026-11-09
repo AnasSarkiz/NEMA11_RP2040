@@ -16,7 +16,7 @@
   "motor_maximum_body_length_mm": 33,
   "supplies": {
     "programming": "Independent USB-C data and 5 V",
-    "motor_power": "Independent USB-C CH224A 15 V PD"
+    "motor_power": "Independent USB-C CH224Q 15 V PD candidate"
   },
   "mounts_nominal_XY_mm": [
     [-11.5, -11.5],
@@ -40,5 +40,6 @@
   "imported_component_modifications_allowed": false,
   "routing_enabled": false,
   "manufacturing_release": false,
-  "rear_mounting_user_clarification": "Use the four bolts already used on the motor rear; actual shank/thread/head/under-head length and gap were not provided."
+  "rear_mounting_user_clarification": "Use the four bolts already used on the motor rear; actual shank/thread/head/under-head length and gap were not provided.",
+  "reconstruction_baseline_commit": "1233ccdf803a1221820f28eabf4791b4a7cfe90e"
 }

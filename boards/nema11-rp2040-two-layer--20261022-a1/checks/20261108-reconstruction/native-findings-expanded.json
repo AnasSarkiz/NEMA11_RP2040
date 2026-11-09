@@ -1,0 +1,154 @@
+{
+  "native_json_sha256": "056b8d48bb7fb60edcb96af118652b53589711eab4c5e885eff4c0b32db8ce91",
+  "top_level_error_count": 35,
+  "top_level_errors": {
+    "pcb_placement_error": 6,
+    "pcb_component_outside_board_error": 4,
+    "pcb_footprint_overlap_error": 8,
+    "pcb_courtyard_overlap_error": 17
+  },
+  "nested_detail_error_count": 25,
+  "nested_detail_types": {
+    "pcb_footprint_overlap_error": 17,
+    "pcb_pad_pad_clearance_error": 8
+  },
+  "warning_types": {
+    "source_refdes_convention_warning": 8,
+    "source_no_power_pin_defined_warning": 10,
+    "source_no_ground_pin_defined_warning": 12,
+    "source_component_pins_underspecified_warning": 8,
+    "source_component_availability_warning": 85
+  },
+  "pad_clearance_details": [
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_3_pcb_smtpad_44",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads L_BUCK.pin2 and J_PD.EH4 are too close (clearance: 0.036mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_44",
+        "pcb_plated_hole_3"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.03614260000000047,
+      "center": {
+        "x": 4.993182,
+        "y": 11.5011154
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_5_pcb_smtpad_52",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads C_BUCK_OUT2.pin1 and J_DATA.EH2 are too close (clearance: 0.121mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_52",
+        "pcb_plated_hole_5"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.1210038000000011,
+      "center": {
+        "x": 6.3463034,
+        "y": 4.193355
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_6_pcb_smtpad_260",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads C_VM_SENSE.pin1 and J_DATA.EH3 are too close (clearance: -0.002mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_260",
+        "pcb_plated_hole_6"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": -0.0019300628203926529,
+      "center": {
+        "x": 6.6177034,
+        "y": -4.516363999999999
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_10_pcb_smtpad_247",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads R_REF_L.pin2 and J_MOTOR.pin3 are too close (clearance: 0mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_247",
+        "pcb_plated_hole_10"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0,
+      "center": {
+        "x": 4.982991,
+        "y": -10.855881499999999
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_10_pcb_smtpad_248",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads R_REF_L.pin1 and J_MOTOR.pin3 are too close (clearance: 0.023mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_248",
+        "pcb_plated_hole_10"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.023127431052580083,
+      "center": {
+        "x": 5.415807,
+        "y": -10.855881499999999
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_11_pcb_smtpad_248",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads R_REF_L.pin1 and J_MOTOR.pin4 are too close (clearance: 0mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_248",
+        "pcb_plated_hole_11"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0,
+      "center": {
+        "x": 6.415805,
+        "y": -10.855881499999999
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_11_pcb_smtpad_267",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads C_TEMP.pin2 and J_MOTOR.pin4 are too close (clearance: 0.125mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_267",
+        "pcb_plated_hole_11"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0.12473006283828003,
+      "center": {
+        "x": 6.413304999999999,
+        "y": -10.126931500000001
+      }
+    },
+    {
+      "type": "pcb_pad_pad_clearance_error",
+      "pcb_pad_pad_clearance_error_id": "pad_pad_clearance_pcb_plated_hole_10_pcb_smtpad_268",
+      "error_type": "pcb_pad_pad_clearance_error",
+      "message": "Pads C_TEMP.pin1 and J_MOTOR.pin3 are too close (clearance: 0mm, minimum: 0.15mm)",
+      "pcb_pad_ids": [
+        "pcb_smtpad_268",
+        "pcb_plated_hole_10"
+      ],
+      "minimum_clearance": 0.15,
+      "actual_clearance": 0,
+      "center": {
+        "x": 4.9931909999999995,
+        "y": -10.126931500000001
+      }
+    }
+  ],
+  "count_interpretation": "Top-level records include grouped issues. Nested details are not additional independent top-level groups and must not be omitted or blindly summed into a unique violation count.",
+  "passed": false
+}

@@ -1,0 +1,16 @@
+{
+  "source_sha256": "864cd4929a056bd1c07dfc3345ce04ca563f01db223f340dbc6514da1fb1a045",
+  "typecheck": "passed before schematic position edits; full final run pending",
+  "prebuild_tests": 10,
+  "initial_native_component_count": 99,
+  "initial_native_fitted_count": 89,
+  "initial_native_findings": 143,
+  "focused_final_schematic_log": "checks/20261108-reconstruction/schematic-pass3.txt",
+  "focused_schematic_issue_count": 3,
+  "focused_schematic_exit_code": 0,
+  "strict_gate_passed": false,
+  "complete_input_verification": "not run yet",
+  "native_build_current_source": "pending; dist is earlier diagnostic output, not current final output",
+  "publication_approved": false,
+  "manufacturing_approved": false
+}

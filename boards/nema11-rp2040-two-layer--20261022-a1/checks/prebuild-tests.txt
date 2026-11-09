@@ -1,0 +1,18 @@
+test_known_public_revision_and_bytes (test_baseline_provenance.PublicBaseline.test_known_public_revision_and_bytes) ... ok
+test_clean_output (test_native_summary.NativeSummary.test_clean_output) ... ok
+test_missing_duplicate_exception_or_failure_rejected (test_native_summary.NativeSummary.test_missing_duplicate_exception_or_failure_rejected) ... ok
+test_unresolved_warning_blocks_acceptance (test_native_summary.NativeSummary.test_unresolved_warning_blocks_acceptance) ... ok
+test_build_failure_cannot_be_masked_by_fresh_json (test_validation_runner.Freshness.test_build_failure_cannot_be_masked_by_fresh_json) ... ok
+test_inputs_include_every_relevant_category (test_validation_runner.Freshness.test_inputs_include_every_relevant_category) ... ok
+test_no_fresh_output_skips_dependent_checks (test_validation_runner.Freshness.test_no_fresh_output_skips_dependent_checks) ... ok
+test_receipt_detects_changed_input_output_and_missing_output (test_validation_runner.Freshness.test_receipt_detects_changed_input_output_and_missing_output) ... ok
+test_all_sheets_counted (test_validation_runner.SemanticReports.test_all_sheets_counted) ... ok
+test_clean_xml (test_validation_runner.SemanticReports.test_clean_xml) ... ok
+test_findings_fail_despite_zero_exit (test_validation_runner.SemanticReports.test_findings_fail_despite_zero_exit) ... ok
+test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_nonzero_and_exceptions_fail) ... ok
+test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.032s
+
+OK

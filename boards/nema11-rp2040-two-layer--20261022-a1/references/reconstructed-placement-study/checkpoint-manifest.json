@@ -1,0 +1,20 @@
+{
+  "scope": "Unvalidated local placement study. Native build outcome pending; no passing fit claim.",
+  "files": {
+    "STUDY-REPORT.md": "7195e62c896f07fff4f3cebe4c085220499e044640870ca9a3e85a944586867d",
+    "baseline-local-geometry.png": "f61b30ebfdbab76742dc958e5fbd704b19d85c1a75c272d1d88e807c211aa900",
+    "baseline.circuit.json": "660e0f67a3e06ad738c1f5c2c7befbf7c35886ab0957471fff45d83e0c88bb37",
+    "baseline.placement.json": "80530fd8a6b87b2537e22cf707e31e3e909034b8d63379d4323c617e3edc96da",
+    "candidate-local-geometry.png": "428d4c5b3f7f14c8ee8d349e56db77487fad3a392e3d2952fa91cfd830fceca4",
+    "local-geometry-measurements.json": "994ec5750bf02ba7b1c07c4be56aa4123c0cc1c66fd324755180b4d2bf564ce5",
+    "measure.py": "7126e0223698c2df3272c0966ee01717ac747b1b68a06aa0de7c6e66cd3664a1",
+    "native-build-pending.txt": "4c65a1a1b34ab0273feae3134db6bfce64c12d98be39f7951f761a3d82e5de26",
+    "optimize-fast.py": "55142652f05e866db216da961e9bbe2495efba74e8399f466b7e7efbaa8a61fa",
+    "optimize-final.py": "9b341445c6a6f571d475b05330697cde5299eb268d1e851d9b18efa00662b744",
+    "optimize-second.py": "9aca6e32eca2bee4d5cbe48e302053c8aac29e060c04ddb0bb69fc92855531cb",
+    "optimize-third.py": "433b2ca06462707488af0e29719055c395918e67d41effa2c914d6e54bac8bbf",
+    "optimize.py": "98754cff8b896ca679c94666ce762b85ab9c4b6e1c7f0dec8aff7e3633166512",
+    "placement-stable.json": "dd45d6a31b12d3d0c682f2b619f983058038c7294f41e9881c7d30afcb353519",
+    "study-hashes.txt": "ffcc7f6bbb2932187e5eb1291224acc6e18a726432d2f82a780c128d1c5efa99"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "native_exit": 0,
+  "reported_issue_count": 3,
+  "issue_kinds": {
+    "SchematicBoxInnerLabelCollision": 2,
+    "TwoPinComponentShouldBeVertical": 1
+  },
+  "issues": [
+    {
+      "kind": "SchematicBoxInnerLabelCollision",
+      "attributes": {
+        "message": "Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels.",
+        "componentName": "U_TEMP",
+        "currentSchWidth": "1.2",
+        "currentSchHeight": "0.8",
+        "overlappingSides": "left,right",
+        "minimumLabelGap": "0.1",
+        "suggestedSchWidth": "1.289"
+      }
+    },
+    {
+      "kind": "SchematicBoxInnerLabelCollision",
+      "attributes": {
+        "message": "Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels.",
+        "componentName": "D_STATUS",
+        "currentSchWidth": "1.2",
+        "currentSchHeight": "0.6",
+        "overlappingSides": "left,right",
+        "minimumLabelGap": "0.1",
+        "suggestedSchWidth": "1.272"
+      }
+    },
+    {
+      "kind": "TwoPinComponentShouldBeVertical",
+      "attributes": {
+        "componentName": "C_BOOTSTRAP",
+        "railPin": "pin2",
+        "railType": "power",
+        "deltaSchRotation": "90",
+        "suggestedRailFacingDirection": "up",
+        "message": "rotate C_BOOTSTRAP by 90\u00b0 so its power-connected pin faces up and the component is vertical"
+      }
+    }
+  ],
+  "parse_errors": [],
+  "internal_exception_present": false,
+  "strict_gate_passed": false,
+  "native_log": "checks/check-schematic-placement.txt"
+}

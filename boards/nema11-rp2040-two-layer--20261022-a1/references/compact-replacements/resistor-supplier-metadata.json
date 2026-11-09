@@ -1,0 +1,106 @@
+{
+  "C11702-supplier.html": {
+    "name": "UNI-ROYAL 0402WGF1001TCE",
+    "sku": "C11702",
+    "mpn": "0402WGF1001TCE",
+    "brand": {
+      "@type": "Brand",
+      "name": "UNI-ROYAL"
+    },
+    "description": "1kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Package",
+        "value": "0402"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Resistance",
+        "value": "1kΩ"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Power(Watts)",
+        "value": "62.5mW"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Voltage Rating",
+        "value": "50V"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Type",
+        "value": "Thick Film Resistor"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Temperature Coefficient",
+        "value": "±100ppm/℃"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Tolerance",
+        "value": "±1%"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Operating Temperature",
+        "value": "-55℃~+155℃"
+      }
+    ]
+  },
+  "C25744-supplier.html": {
+    "name": "UNI-ROYAL 0402WGF1002TCE",
+    "sku": "C25744",
+    "mpn": "0402WGF1002TCE",
+    "brand": {
+      "@type": "Brand",
+      "name": "UNI-ROYAL"
+    },
+    "description": "10kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Package",
+        "value": "0402"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Resistance",
+        "value": "10kΩ"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Power(Watts)",
+        "value": "62.5mW"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Voltage Rating",
+        "value": "50V"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Type",
+        "value": "Thick Film Resistor"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Temperature Coefficient",
+        "value": "±100ppm/℃"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Tolerance",
+        "value": "±1%"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Operating Temperature",
+        "value": "-55℃~+155℃"
+      }
+    ]
+  }
+}

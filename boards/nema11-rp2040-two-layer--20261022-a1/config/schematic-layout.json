@@ -32,7 +32,8 @@
       "R_FLASH_CS",
       "R_BOOT",
       "TP_BOOT",
-      "TP_BOOT_GND"
+      "TP_BOOT_GND",
+      "C_ESD"
     ],
     "03 Controller & clocks": [
       "U_MCU",
@@ -98,7 +99,13 @@
       "D_BUZZER",
       "C_BUZZER",
       "R_PWR_LED",
-      "D_PWR"
+      "D_PWR",
+      "R_STATUS_R_GATE",
+      "R_STATUS_R_PD",
+      "R_STATUS_G_GATE",
+      "R_STATUS_G_PD",
+      "R_STATUS_B_GATE",
+      "R_STATUS_B_PD"
     ],
     "06 Optional encoder (DNP)": ["U_ENCODER", "C_ENCODER", "C_ENCODER_BULK"]
   },
@@ -113,23 +120,28 @@
     },
     "R_PD_CFG": {
       "schX": 15.9,
-      "schY": 10.2
+      "schY": 10.2,
+      "schRotation": 270.0
     },
     "R_PD": {
       "schX": 9.8,
-      "schY": 10.2
+      "schY": 10.2,
+      "schRotation": 270.0
     },
     "C_PD": {
       "schX": 12.7,
-      "schY": 10.2
+      "schY": 10.2,
+      "schRotation": 270.0
     },
     "R_PG": {
       "schX": 14.5,
-      "schY": 15.5
+      "schY": 15.5,
+      "schRotation": 270.0
     },
     "D_TVS": {
       "schX": 4,
-      "schY": 9.2
+      "schY": 9.2,
+      "schRotation": 270.0
     },
     "D_PD": {
       "schX": 19.2,
@@ -140,11 +152,11 @@
       "schY": 14.5
     },
     "U_BUCK": {
-      "schX": 24,
+      "schX": 26,
       "schY": 13.2
     },
     "L_BUCK": {
-      "schX": 28.2,
+      "schX": 29.2,
       "schY": 13.2
     },
     "C_BOOTSTRAP": {
@@ -153,27 +165,32 @@
     },
     "C_BUCK_IN": {
       "schX": 21,
-      "schY": 9.5
+      "schY": 9.5,
+      "schRotation": 270.0
     },
     "C_BUCK_OUT1": {
-      "schX": 27,
-      "schY": 9.5
+      "schX": 27.5,
+      "schY": 11.0,
+      "schRotation": 270.0
     },
     "C_BUCK_OUT2": {
       "schX": 29.1,
-      "schY": 9.5
+      "schY": 11.0,
+      "schRotation": 270.0
     },
     "J_DATA": {
       "schX": 4,
       "schY": 14.1
     },
     "R_CC1": {
-      "schX": 8.3,
-      "schY": 16.4
+      "schX": 1.8,
+      "schY": 12.1,
+      "schRotation": 270.0
     },
     "R_CC2": {
-      "schX": 11,
-      "schY": 16.4
+      "schX": 6.8,
+      "schY": 12.2,
+      "schRotation": 270.0
     },
     "U_ESD": {
       "schX": 10,
@@ -181,19 +198,23 @@
     },
     "R_DP": {
       "schX": 15.4,
-      "schY": 11.85
+      "schY": 11.85,
+      "schRotation": 180.0
     },
     "R_DM": {
       "schX": 15.4,
-      "schY": 10.75
+      "schY": 10.75,
+      "schRotation": 180.0
     },
     "R_USB_SENSE_H": {
       "schX": 4,
-      "schY": 6.2
+      "schY": 6.2,
+      "schRotation": 270.0
     },
     "R_USB_SENSE_L": {
       "schX": 4,
-      "schY": 3.8
+      "schY": 3.8,
+      "schRotation": 270.0
     },
     "U_FLASH": {
       "schX": 24.5,
@@ -201,11 +222,13 @@
     },
     "C_FLASH": {
       "schX": 29.8,
-      "schY": 14.8
+      "schY": 14.8,
+      "schRotation": 270.0
     },
     "R_FLASH_CS": {
       "schX": 20,
-      "schY": 11.5
+      "schY": 11.5,
+      "schRotation": 270.0
     },
     "R_BOOT": {
       "schX": 23.5,
@@ -233,63 +256,78 @@
     },
     "C_XIN": {
       "schX": 19.5,
-      "schY": 16
+      "schY": 16,
+      "schRotation": 270.0
     },
     "C_XOUT": {
       "schX": 25.5,
-      "schY": 16
+      "schY": 16,
+      "schRotation": 270.0
     },
     "C_IO1": {
-      "schX": 17.3,
-      "schY": 11.5
+      "schX": 16.2,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_IO10": {
-      "schX": 19.400000000000002,
-      "schY": 11.5
+      "schX": 17.8,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_IO22": {
-      "schX": 21.5,
-      "schY": 11.5
+      "schX": 19.4,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_IO33": {
-      "schX": 23.6,
-      "schY": 11.5
+      "schX": 21.0,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_IO42": {
-      "schX": 25.700000000000003,
-      "schY": 11.5
+      "schX": 22.6,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_IO49": {
-      "schX": 27.8,
-      "schY": 11.5
+      "schX": 24.2,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_ADC": {
-      "schX": 17.3,
-      "schY": 7.8
+      "schX": 25.8,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_USB": {
-      "schX": 19.400000000000002,
-      "schY": 7.8
+      "schX": 27.4,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_VREG_IN": {
-      "schX": 21.5,
-      "schY": 7.8
+      "schX": 29.0,
+      "schY": 8.2,
+      "schRotation": 270.0
     },
     "C_VREG_OUT": {
       "schX": 17.3,
-      "schY": 3.5
+      "schY": 3.5,
+      "schRotation": 270.0
     },
     "C_DV23": {
-      "schX": 19.400000000000002,
-      "schY": 3.5
+      "schX": 18.900000000000002,
+      "schY": 3.5,
+      "schRotation": 270.0
     },
     "C_DV50": {
-      "schX": 21.5,
-      "schY": 3.5
+      "schX": 20.5,
+      "schY": 3.5,
+      "schRotation": 270.0
     },
     "R_RUN": {
       "schX": 3,
-      "schY": 10.1
+      "schY": 10.1,
+      "schRotation": 270.0
     },
     "TP_3V3": {
       "schX": 2,
@@ -321,67 +359,82 @@
     },
     "R_SA": {
       "schX": 22,
-      "schY": 10.9
+      "schY": 10.9,
+      "schRotation": 270.0
     },
     "R_SB": {
       "schX": 25.8,
-      "schY": 10.9
+      "schY": 10.9,
+      "schRotation": 270.0
     },
     "C_CP": {
-      "schX": 23,
-      "schY": 8.4
+      "schX": 12.4,
+      "schY": 13
     },
     "C_VCP": {
       "schX": 27.5,
-      "schY": 8.4
+      "schY": 8.4,
+      "schRotation": 270.0
     },
     "C_VREG": {
       "schX": 29.5,
-      "schY": 5.2
+      "schY": 5.2,
+      "schRotation": 270.0
     },
     "C_VM": {
       "schX": 3,
-      "schY": 16.5
+      "schY": 16.5,
+      "schRotation": 270.0
     },
     "C_BULK": {
-      "schX": 5.1,
-      "schY": 16.5
+      "schX": 4.6,
+      "schY": 16.5,
+      "schRotation": 270.0
     },
     "C_DRV_LOGIC": {
       "schX": 8.5,
-      "schY": 16.5
+      "schY": 16.5,
+      "schRotation": 270.0
     },
     "R_REF_H": {
       "schX": 3,
-      "schY": 11
+      "schY": 11,
+      "schRotation": 270.0
     },
     "R_REF_L": {
       "schX": 3,
-      "schY": 8.6
+      "schY": 8.6,
+      "schRotation": 270.0
     },
     "C_REF": {
       "schX": 6.8,
-      "schY": 8.6
+      "schY": 8.6,
+      "schRotation": 270.0
     },
     "R_ENABLE": {
       "schX": 9,
-      "schY": 11.8
+      "schY": 11.8,
+      "schRotation": 270.0
     },
     "R_SLEEP": {
       "schX": 9,
-      "schY": 8.8
+      "schY": 8.8,
+      "schRotation": 270.0
     },
     "R_VM_H": {
       "schX": 3,
-      "schY": 4.9
+      "schY": 4.9,
+      "schRotation": 270.0
     },
     "R_VM_L": {
       "schX": 7,
-      "schY": 4.9
+      "schY": 4.9,
+      "schRotation": 270.0
     },
     "C_VM_SENSE": {
       "schX": 10.5,
-      "schY": 4.9
+      "schY": 4.9,
+      "schRotation": 270.0
     },
     "U_TEMP": {
       "schX": 5.2,
@@ -389,15 +442,18 @@
     },
     "C_TEMP": {
       "schX": 10.8,
-      "schY": 15.5
+      "schY": 15.5,
+      "schRotation": 270.0
     },
     "R_TEMP_SDA": {
       "schX": 2.3,
-      "schY": 11.5
+      "schY": 11.5,
+      "schRotation": 90.0
     },
     "R_TEMP_SCL": {
       "schX": 6.3,
-      "schY": 11.5
+      "schY": 11.5,
+      "schRotation": 90.0
     },
     "D_STATUS": {
       "schX": 25.3,
@@ -441,23 +497,28 @@
     },
     "R_BUZZER_PD": {
       "schX": 5.8,
-      "schY": 3.6
+      "schY": 3.6,
+      "schRotation": 270.0
     },
     "D_BUZZER": {
       "schX": 14,
-      "schY": 6.5
+      "schY": 6.5,
+      "schRotation": 90.0
     },
     "C_BUZZER": {
-      "schX": 17,
-      "schY": 6.5
+      "schX": 12.4,
+      "schY": 15.5,
+      "schRotation": 270.0
     },
     "R_PWR_LED": {
       "schX": 25,
-      "schY": 6.2
+      "schY": 6.2,
+      "schRotation": 270
     },
     "D_PWR": {
       "schX": 25,
-      "schY": 3.8
+      "schY": 3.8,
+      "schRotation": 270
     },
     "U_ENCODER": {
       "schX": 9,
@@ -465,11 +526,48 @@
     },
     "C_ENCODER": {
       "schX": 19,
-      "schY": 13
+      "schY": 13,
+      "schRotation": 270.0
     },
     "C_ENCODER_BULK": {
-      "schX": 21.1,
-      "schY": 13
+      "schX": 20.6,
+      "schY": 13,
+      "schRotation": 270.0
+    },
+    "C_ESD": {
+      "schX": 12.7,
+      "schY": 8.8,
+      "schRotation": 270.0
+    },
+    "R_STATUS_R_GATE": {
+      "schX": 20.1375,
+      "schY": 12.7,
+      "schRotation": 0
+    },
+    "R_STATUS_R_PD": {
+      "schX": 20.6375,
+      "schY": 10.7,
+      "schRotation": -90
+    },
+    "R_STATUS_G_GATE": {
+      "schX": 23.4375,
+      "schY": 12.7,
+      "schRotation": 0
+    },
+    "R_STATUS_G_PD": {
+      "schX": 23.9375,
+      "schY": 10.7,
+      "schRotation": -90
+    },
+    "R_STATUS_B_GATE": {
+      "schX": 26.7375,
+      "schY": 12.7,
+      "schRotation": 0
+    },
+    "R_STATUS_B_PD": {
+      "schX": 27.2375,
+      "schY": 10.7,
+      "schRotation": -90
     }
   }
 }

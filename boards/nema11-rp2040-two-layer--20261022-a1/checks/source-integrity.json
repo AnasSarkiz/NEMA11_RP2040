@@ -1,9 +1,9 @@
 {
-  "source_sha256": "5ddacf01bd518e2d06f59bc659180162a81034f3619d22d0996f98723e103d1a",
-  "circuit_json_sha256": "300e1da00d0fd55563e730e58af7a33664b25be90b24aba92f6fec9b714760ac",
+  "source_sha256": "864cd4929a056bd1c07dfc3345ce04ca563f01db223f340dbc6514da1fb1a045",
+  "circuit_json_sha256": "056b8d48bb7fb60edcb96af118652b53589711eab4c5e885eff4c0b32db8ce91",
   "structural_checks": [
     {
-      "check": "native output belongs to current source",
+      "check": "native output belongs to current complete input fingerprint",
       "passed": true,
       "detail": null
     },
@@ -429,6 +429,41 @@
     },
     {
       "check": "R_PD_CFG genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ESD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_GATE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_GATE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_PD genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_GATE genuine supplier identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_PD genuine supplier identity",
       "passed": true,
       "detail": null
     },
@@ -1123,6 +1158,36 @@
       "detail": null
     },
     {
+      "check": "untouched import imports/CH224Q/CH224Q.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CH224Q/CH224Q.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/CH224Q/CH224Q.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DMN2300UFB4_7B/DMN2300UFB4_7B.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "untouched import imports/DMN2300UFB4_7B/DMN2300UFB4_7B.tsx",
+      "passed": true,
+      "detail": null
+    },
+    {
       "check": "J_PD pin 1 -> GND",
       "passed": true,
       "detail": null
@@ -1169,6 +1234,36 @@
     },
     {
       "check": "J_PD pin 16 -> PD_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_PD physical NC pin 10",
       "passed": true,
       "detail": null
     },
@@ -1243,6 +1338,16 @@
       "detail": null
     },
     {
+      "check": "J_DATA physical NC pin 5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J_DATA physical NC pin 11",
+      "passed": true,
+      "detail": null
+    },
+    {
       "check": "U_PD pin 1 -> PD_VHV",
       "passed": true,
       "detail": null
@@ -1274,6 +1379,26 @@
     },
     {
       "check": "U_PD pin 11 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD physical NC pin 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD physical NC pin 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD physical NC pin 4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_PD physical NC pin 5",
       "passed": true,
       "detail": null
     },
@@ -1528,6 +1653,91 @@
     },
     {
       "check": "U_MCU pin 57 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_MCU physical NC pin 36",
       "passed": true,
       "detail": null
     },
@@ -2371,6 +2581,21 @@
       "detail": null
     },
     {
+      "check": "U_DRV physical NC pin 7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV physical NC pin 20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_DRV physical NC pin 25",
+      "passed": true,
+      "detail": null
+    },
+    {
       "check": "C_CP pin 1 -> CP1",
       "passed": true,
       "detail": null
@@ -2582,8 +2807,8 @@
       "check": "R_ENABLE supplier resistance",
       "passed": true,
       "detail": {
-        "expected": 100000,
-        "actual": 100000
+        "expected": 10000,
+        "actual": 10000
       }
     },
     {
@@ -2600,8 +2825,8 @@
       "check": "R_SLEEP supplier resistance",
       "passed": true,
       "detail": {
-        "expected": 100000,
-        "actual": 100000
+        "expected": 10000,
+        "actual": 10000
       }
     },
     {
@@ -2686,6 +2911,11 @@
     },
     {
       "check": "U_TEMP pin 6 -> TEMP_SDA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_TEMP physical NC pin 3",
       "passed": true,
       "detail": null
     },
@@ -2810,17 +3040,17 @@
       }
     },
     {
-      "check": "Q_STATUS_R pin 3 -> STATUS_R_C",
+      "check": "Q_STATUS_R pin 1 -> STATUS_R_GATE",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_R pin 1 -> GND",
+      "check": "Q_STATUS_R pin 2 -> STATUS_R_C",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_R pin 2 -> LED_R",
+      "check": "Q_STATUS_R pin 3 -> GND",
       "passed": true,
       "detail": null
     },
@@ -2843,17 +3073,17 @@
       }
     },
     {
-      "check": "Q_STATUS_G pin 3 -> STATUS_G_C",
+      "check": "Q_STATUS_G pin 1 -> STATUS_G_GATE",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_G pin 1 -> GND",
+      "check": "Q_STATUS_G pin 2 -> STATUS_G_C",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_G pin 2 -> LED_G",
+      "check": "Q_STATUS_G pin 3 -> GND",
       "passed": true,
       "detail": null
     },
@@ -2876,17 +3106,17 @@
       }
     },
     {
-      "check": "Q_STATUS_B pin 3 -> STATUS_B_C",
+      "check": "Q_STATUS_B pin 1 -> STATUS_B_GATE",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_B pin 1 -> GND",
+      "check": "Q_STATUS_B pin 2 -> STATUS_B_C",
       "passed": true,
       "detail": null
     },
     {
-      "check": "Q_STATUS_B pin 2 -> LED_B",
+      "check": "Q_STATUS_B pin 3 -> GND",
       "passed": true,
       "detail": null
     },
@@ -2901,7 +3131,7 @@
       "detail": null
     },
     {
-      "check": "Q_BUZZER pin 3 -> BUZZER_SINK",
+      "check": "BZ1 physical NC pin 3",
       "passed": true,
       "detail": null
     },
@@ -2911,7 +3141,12 @@
       "detail": null
     },
     {
-      "check": "Q_BUZZER pin 2 -> GND",
+      "check": "Q_BUZZER pin 2 -> BUZZER_SINK",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q_BUZZER pin 3 -> GND",
       "passed": true,
       "detail": null
     },
@@ -2939,8 +3174,8 @@
       "check": "R_BUZZER_GATE supplier resistance",
       "passed": true,
       "detail": {
-        "expected": 100,
-        "actual": 100
+        "expected": 1000,
+        "actual": 1000
       }
     },
     {
@@ -2957,8 +3192,8 @@
       "check": "R_BUZZER_PD supplier resistance",
       "passed": true,
       "detail": {
-        "expected": 100000,
-        "actual": 100000
+        "expected": 10000,
+        "actual": 10000
       }
     },
     {
@@ -3045,6 +3280,16 @@
       "detail": null
     },
     {
+      "check": "U_ENCODER physical NC pin 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "U_ENCODER physical NC pin 5",
+      "passed": true,
+      "detail": null
+    },
+    {
       "check": "C_ENCODER pin 1 -> V3V3",
       "passed": true,
       "detail": null
@@ -3099,6 +3344,132 @@
       }
     },
     {
+      "check": "C_ESD pin 1 -> DATA_VBUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ESD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "C_ESD supplier capacitance",
+      "passed": true,
+      "detail": {
+        "expected": 1e-07,
+        "actual": 1e-07
+      }
+    },
+    {
+      "check": "R_STATUS_R_GATE pin 1 -> LED_R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_GATE pin 2 -> STATUS_R_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_GATE supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "R_STATUS_R_PD pin 1 -> STATUS_R_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_R_PD supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "R_STATUS_G_GATE pin 1 -> LED_G",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_GATE pin 2 -> STATUS_G_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_GATE supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "R_STATUS_G_PD pin 1 -> STATUS_G_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_G_PD supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
+      "check": "R_STATUS_B_GATE pin 1 -> LED_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_GATE pin 2 -> STATUS_B_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_GATE supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 1000,
+        "actual": 1000
+      }
+    },
+    {
+      "check": "R_STATUS_B_PD pin 1 -> STATUS_B_GATE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_PD pin 2 -> GND",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "R_STATUS_B_PD supplier resistance",
+      "passed": true,
+      "detail": {
+        "expected": 10000,
+        "actual": 10000
+      }
+    },
+    {
       "check": "two copper layers",
       "passed": true,
       "detail": null
@@ -3126,13 +3497,12 @@
   ],
   "structural_failure_count": 0,
   "native_errors": {
-    "pcb_placement_error": 29,
-    "pcb_component_outside_board_error": 2,
-    "pcb_footprint_overlap_error": 60,
-    "pcb_pad_pad_clearance_error": 10,
-    "pcb_courtyard_overlap_error": 56
+    "pcb_placement_error": 6,
+    "pcb_component_outside_board_error": 4,
+    "pcb_footprint_overlap_error": 8,
+    "pcb_courtyard_overlap_error": 17
   },
-  "native_error_count": 157,
+  "native_error_count": 35,
   "manufacturing_approved": false,
   "scope": "Source preservation and import integrity only; does not approve schematic, placement, routing, shorts, mechanics or manufacturing."
 }

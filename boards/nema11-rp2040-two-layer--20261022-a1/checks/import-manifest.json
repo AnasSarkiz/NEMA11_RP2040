@@ -1977,6 +1977,70 @@
           "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.3005.tgz"
         }
       }
+    },
+    {
+      "part": "C46061833",
+      "exported_symbol": "CH224Q",
+      "command": [
+        "tsci",
+        "import",
+        "C46061833",
+        "--jlcpcb",
+        "--use-exact-footprint",
+        "--download"
+      ],
+      "files": [
+        {
+          "path": "imports/CH224Q/CH224Q.obj",
+          "sha256": "a67edc88634f47ee485ef4b97c076d2dfce1b8c041e95ee7d48582c12ab85512",
+          "bytes": 48670
+        },
+        {
+          "path": "imports/CH224Q/CH224Q.step",
+          "sha256": "f65c7dd08c8f555252174866781993e61174052457a8da87259eb72d9daddc73",
+          "bytes": 1844312
+        },
+        {
+          "path": "imports/CH224Q/CH224Q.tsx",
+          "sha256": "0ae4188afe9837c7370c3a5707e863926de4c25901c8f446bcf457ab5a16da94",
+          "bytes": 3003
+        }
+      ],
+      "definitions_symbols_footprints_and_models_unmodified": true,
+      "full_component_approval": false,
+      "provenance": "Fresh supported CLI 0.1.2446 import during reconstruction; original output preserved byte-for-byte."
+    },
+    {
+      "part": "C154728",
+      "exported_symbol": "DMN2300UFB4_7B",
+      "command": [
+        "tsci",
+        "import",
+        "C154728",
+        "--jlcpcb",
+        "--use-exact-footprint",
+        "--download"
+      ],
+      "files": [
+        {
+          "path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+          "sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2",
+          "bytes": 49468
+        },
+        {
+          "path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.step",
+          "sha256": "6a9b9c68d076d0fd14ee931163968ea614359a0a5dbc1f045723d3bdd3179095",
+          "bytes": 1468099
+        },
+        {
+          "path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.tsx",
+          "sha256": "1ae21d61bbdd538191d98b924bba7f5f455a66de53701919e3e4db17e58c2269",
+          "bytes": 7934
+        }
+      ],
+      "definitions_symbols_footprints_and_models_unmodified": true,
+      "full_component_approval": false,
+      "provenance": "Fresh supported CLI 0.1.2446 import during reconstruction; original output preserved byte-for-byte."
     }
   ]
 }

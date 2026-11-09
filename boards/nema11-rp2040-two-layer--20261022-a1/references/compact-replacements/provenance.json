@@ -1,0 +1,61 @@
+{
+  "retrieved_utc": "2026-11-09T00:03:31.675537+00:00",
+  "CH224_source_chain": [
+    "https://www.lcsc.com/product-detail/C46061833.html",
+    "https://www.lcsc.com/datasheet/C46061833.pdf",
+    "https://datasheet.lcsc.com/datasheet/pdf/4f12eebccb4eda2c0038806df0155265.pdf?productCode=C46061833"
+  ],
+  "records": [
+    {
+      "file": "CH224Q.pdf",
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/4f12eebccb4eda2c0038806df0155265.pdf?productCode=C46061833",
+      "bytes": 353846,
+      "sha256": "df4f8a9f305df715b1c3617e89505faaa2223a0e4053b44373c5deb565b63c0d",
+      "pdf_magic": true
+    },
+    {
+      "file": "DMN2300UFB4.pdf",
+      "url": "https://www.diodes.com/datasheet/download/DMN2300UFB4.pdf",
+      "bytes": 458392,
+      "sha256": "8f16c1b98b4dd87a3a37b3c9e7ef1f8db676c00bd6cbc6c4d32df5dc6a1114b2",
+      "pdf_magic": true
+    },
+    {
+      "file": "RP2040.pdf",
+      "url": "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf",
+      "bytes": 5301205,
+      "sha256": "be56fbb75ba0ae9e26558a73c93ac3e75c2ad4e6878d3b6703de2a76d886ea8c",
+      "pdf_magic": true
+    },
+    {
+      "file": "C11702-supplier.html",
+      "url": "https://www.lcsc.com/product-detail/C11702.html",
+      "bytes": 420935,
+      "sha256": "fe4bc0a076e81596679b4d11382af80162fa8e51bef1efefb472a5625d679d94",
+      "pdf_magic": false
+    },
+    {
+      "file": "C25744-supplier.html",
+      "url": "https://www.lcsc.com/product-detail/C25744.html",
+      "bytes": 412256,
+      "sha256": "156f6e99960d28fe6ea108daeb584f12ecbb891a2b329e1e5873e60622072193",
+      "pdf_magic": false
+    },
+    {
+      "file": "CH224Q-failed-legacy-url.html",
+      "url": "https://datasheet.lcsc.com/lcsc/2504101957_WCH-CH224Q_C46061833.pdf",
+      "bytes": 9356,
+      "sha256": "9bdfa063483ed89bcf938608aed4f2eee83039b7dde5d272513669ff1dd6f967",
+      "pdf_magic": false
+    },
+    {
+      "file": "CH224-wch-response",
+      "url": "https://www.wch.cn/downloads/file/385.html",
+      "bytes": 4424,
+      "sha256": "1d6f0bd317ca4940dc5b4e077a3aab2c2a1b0a281d4bbcc606bd1d8e1ec5b570",
+      "pdf_magic": false
+    }
+  ],
+  "failed_download_note": "Legacy CH224 URL and attempted WCH direct endpoint returned HTML, not PDF. Not qualification sources.",
+  "scope": "Read-only board/import review; no build, source patch, commit or publication."
+}

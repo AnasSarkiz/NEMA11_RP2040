@@ -4,7 +4,7 @@ Warnings: 0
 Readable Netlist:
 COMPONENTS:
  - J_PD: TYPE-C-31-M-12
- - U_PD: CH224A
+ - U_PD: CH224Q
  - R_PD_CFG: 56kΩ resistor
  - R_PD: 0Ω resistor
  - C_PD: 1uF capacitor
@@ -32,6 +32,7 @@ COMPONENTS:
  - R_BOOT: 1kΩ resistor
  - TP_BOOT: TP_BOOT, source_component
  - TP_BOOT_GND: TP_BOOT_GND, source_component
+ - C_ESD: 100nF capacitor
  - U_MCU: RP2040
  - Y_MCU: ABM8-272-T3
  - R_XOUT: 1kΩ resistor
@@ -68,8 +69,8 @@ COMPONENTS:
  - R_REF_H: 20kΩ resistor
  - R_REF_L: 10kΩ resistor
  - C_REF: 10nF capacitor
- - R_ENABLE: 100kΩ resistor
- - R_SLEEP: 100kΩ resistor
+ - R_ENABLE: 10kΩ resistor
+ - R_SLEEP: 10kΩ resistor
  - R_VM_H: 100kΩ resistor
  - R_VM_L: 10kΩ resistor
  - C_VM_SENSE: 10nF capacitor
@@ -79,19 +80,25 @@ COMPONENTS:
  - R_TEMP_SCL: 4.7kΩ resistor
  - D_STATUS: LTST-C19HE1WT
  - R_STATUS_R: 1kΩ resistor
- - Q_STATUS_R: DTC114EU3HZGT106
+ - Q_STATUS_R: DMN2300UFB4-7B
  - R_STATUS_G: 1kΩ resistor
- - Q_STATUS_G: DTC114EU3HZGT106
+ - Q_STATUS_G: DMN2300UFB4-7B
  - R_STATUS_B: 1kΩ resistor
- - Q_STATUS_B: DTC114EU3HZGT106
+ - Q_STATUS_B: DMN2300UFB4-7B
  - BZ1: MLT-5020
- - Q_BUZZER: AO3400A
- - R_BUZZER_GATE: 100Ω resistor
- - R_BUZZER_PD: 100kΩ resistor
+ - Q_BUZZER: DMN2300UFB4-7B
+ - R_BUZZER_GATE: 1kΩ resistor
+ - R_BUZZER_PD: 10kΩ resistor
  - D_BUZZER: D_BUZZER, source_component
  - C_BUZZER: 10uF capacitor
  - R_PWR_LED: 330Ω resistor
  - D_PWR: D_PWR, source_component
+ - R_STATUS_R_GATE: 1kΩ resistor
+ - R_STATUS_R_PD: 10kΩ resistor
+ - R_STATUS_G_GATE: 1kΩ resistor
+ - R_STATUS_G_PD: 10kΩ resistor
+ - R_STATUS_B_GATE: 1kΩ resistor
+ - R_STATUS_B_PD: 10kΩ resistor
  - U_ENCODER: AS5600-ASOM
  - C_ENCODER: 100nF capacitor
  - C_ENCODER_BULK: 1uF capacitor
@@ -109,7 +116,7 @@ NET: PD_CFG
   - U_PD CFG1
 
 NET: PD_VHV
-  - C_PD pin1 (+)
+  - C_PD pin1
   - R_PD pin2
   - U_PD VHV
 
@@ -123,7 +130,7 @@ NET: BUCK_SW
   - U_BUCK SW
 
 NET: LOGIC_IN
-  - C_BUCK_IN pin1 (+)
+  - C_BUCK_IN pin1
   - U_BUCK VIN
   - U_BUCK EN
   - D_DATA cathode (-)
@@ -204,19 +211,19 @@ NET: XOUT
   - U_MCU XOUT
 
 NET: XIN
-  - C_XIN pin1 (+)
+  - C_XIN pin1
   - Y_MCU pin1
   - U_MCU XIN
 
 NET: XTAL_OUT
-  - C_XOUT pin1 (+)
+  - C_XOUT pin1
   - R_XOUT pin2
   - Y_MCU pin3
 
 NET: V1V1
-  - C_DV50 pin1 (+)
-  - C_DV23 pin1 (+)
-  - C_VREG_OUT pin1 (+)
+  - C_DV50 pin1
+  - C_DV23 pin1
+  - C_VREG_OUT pin1
   - U_MCU DVDD1
   - U_MCU VREG_VOUT
   - U_MCU DVDD2
@@ -275,15 +282,15 @@ NET: CP2
   - U_DRV CP2
 
 NET: VCP
-  - C_VCP pin1 (+)
+  - C_VCP pin1
   - U_DRV VCP
 
 NET: VREG
-  - C_VREG pin1 (+)
+  - C_VREG pin1
   - U_DRV VREG
 
 NET: VREF
-  - C_REF pin1 (+)
+  - C_REF pin1
   - R_REF_L pin1
   - R_REF_H pin2
   - U_DRV REF
@@ -301,8 +308,8 @@ NET: SLEEP
 NET: PD_VBUS
   - R_VM_H pin1
   - C_BULK pin1 (+)
-  - C_VM pin1 (+)
-  - C_VCP pin2 (-)
+  - C_VM pin1
+  - C_VCP pin2
   - U_DRV VBB2
   - U_DRV VBB1
   - D_PD anode (+)
@@ -313,13 +320,14 @@ NET: PD_VBUS
   - J_PD VBUS1
 
 NET: VM_SENSE
-  - C_VM_SENSE pin1 (+)
+  - C_VM_SENSE pin1
   - R_VM_L pin1
   - R_VM_H pin2
   - U_MCU GPIO28_ADC2
 
 NET: DATA_VBUS
   - D_STATUS _POS
+  - C_ESD pin1
   - R_USB_SENSE_H pin1
   - U_ESD VBUS
   - J_DATA VBUS2
@@ -331,36 +339,24 @@ NET: STATUS_R_K
   - D_STATUS R_NEG
 
 NET: STATUS_R_C
-  - Q_STATUS_R pin3
-  - R_STATUS_R pin2
-
-NET: LED_R
   - Q_STATUS_R pin2
-  - U_MCU GPIO25
+  - R_STATUS_R pin2
 
 NET: STATUS_G_K
   - R_STATUS_G pin1
   - D_STATUS G_NEG
 
 NET: STATUS_G_C
-  - Q_STATUS_G pin3
-  - R_STATUS_G pin2
-
-NET: LED_G
   - Q_STATUS_G pin2
-  - U_MCU GPIO2
+  - R_STATUS_G pin2
 
 NET: STATUS_B_K
   - R_STATUS_B pin1
   - D_STATUS B_NEG
 
 NET: STATUS_B_C
-  - Q_STATUS_B pin3
-  - R_STATUS_B pin2
-
-NET: LED_B
   - Q_STATUS_B pin2
-  - U_MCU GPIO3
+  - R_STATUS_B pin2
 
 NET: BUZZER_PWM
   - R_BUZZER_GATE pin1
@@ -373,12 +369,39 @@ NET: BUZZER_GATE
 
 NET: BUZZER_SINK
   - D_BUZZER anode (+)
-  - Q_BUZZER pin3
+  - Q_BUZZER pin2
   - BZ1 pin2
 
 NET: PWR_LED_A
   - D_PWR anode (+)
   - R_PWR_LED pin2
+
+NET: LED_R
+  - R_STATUS_R_GATE pin1
+  - U_MCU GPIO25
+
+NET: STATUS_R_GATE
+  - R_STATUS_R_PD pin1
+  - R_STATUS_R_GATE pin2
+  - Q_STATUS_R pin1
+
+NET: LED_G
+  - R_STATUS_G_GATE pin1
+  - U_MCU GPIO2
+
+NET: STATUS_G_GATE
+  - R_STATUS_G_PD pin1
+  - R_STATUS_G_GATE pin2
+  - Q_STATUS_G pin1
+
+NET: LED_B
+  - R_STATUS_B_GATE pin1
+  - U_MCU GPIO3
+
+NET: STATUS_B_GATE
+  - R_STATUS_B_PD pin1
+  - R_STATUS_B_GATE pin2
+  - Q_STATUS_B pin1
 
 NET: TEMP_SDA
   - U_ENCODER SDA
@@ -393,21 +416,21 @@ NET: TEMP_SCL
   - U_MCU GPIO27_ADC1
 
 NET: V3V3
-  - C_ENCODER_BULK pin1 (+)
-  - C_ENCODER pin1 (+)
+  - C_ENCODER_BULK pin1
+  - C_ENCODER pin1
   - U_ENCODER VDD3V3
   - U_ENCODER VDD5V
   - R_PWR_LED pin1
-  - C_BUZZER pin1 (+)
+  - C_BUZZER pin1
   - D_BUZZER cathode (-)
   - BZ1 pin1
   - R_TEMP_SCL pin2
   - R_TEMP_SDA pin2
-  - C_TEMP pin1 (+)
+  - C_TEMP pin1
   - U_TEMP V_POS
   - R_ENABLE pin1
   - R_REF_H pin1
-  - C_DRV_LOGIC pin1 (+)
+  - C_DRV_LOGIC pin1
   - U_DRV VDD
   - U_DRV N_RESET
   - U_DRV MS3
@@ -415,15 +438,15 @@ NET: V3V3
   - U_DRV MS1
   - TP_3V3 pin1
   - R_RUN pin1
-  - C_VREG_IN pin1 (+)
-  - C_USB pin1 (+)
-  - C_ADC pin1 (+)
-  - C_IO49 pin1 (+)
-  - C_IO42 pin1 (+)
-  - C_IO33 pin1 (+)
-  - C_IO22 pin1 (+)
-  - C_IO10 pin1 (+)
-  - C_IO1 pin1 (+)
+  - C_VREG_IN pin1
+  - C_USB pin1
+  - C_ADC pin1
+  - C_IO49 pin1
+  - C_IO42 pin1
+  - C_IO33 pin1
+  - C_IO22 pin1
+  - C_IO10 pin1
+  - C_IO1 pin1
   - U_MCU IOVDD1
   - U_MCU USB_VDD
   - U_MCU VREG_IN
@@ -434,38 +457,41 @@ NET: V3V3
   - U_MCU IOVDD5
   - U_MCU IOVDD6
   - R_FLASH_CS pin1
-  - C_FLASH pin1 (+)
+  - C_FLASH pin1
   - U_FLASH VCC
-  - C_BUCK_OUT2 pin1 (+)
-  - C_BUCK_OUT1 pin1 (+)
+  - C_BUCK_OUT2 pin1
+  - C_BUCK_OUT1 pin1
   - L_BUCK pin2 (-)
   - U_BUCK FB
   - R_PG pin1
 
 NET: GND
-  - C_ENCODER_BULK pin2 (-)
-  - C_ENCODER pin2 (-)
+  - C_ENCODER_BULK pin2
+  - C_ENCODER pin2
   - U_ENCODER DIR
   - U_ENCODER GND
+  - R_STATUS_B_PD pin2
+  - R_STATUS_G_PD pin2
+  - R_STATUS_R_PD pin2
   - D_PWR cathode (-)
-  - C_BUZZER pin2 (-)
+  - C_BUZZER pin2
   - R_BUZZER_PD pin2
-  - Q_BUZZER pin2
-  - Q_STATUS_B pin1
-  - Q_STATUS_G pin1
-  - Q_STATUS_R pin1
-  - C_TEMP pin2 (-)
+  - Q_BUZZER pin3
+  - Q_STATUS_B pin3
+  - Q_STATUS_G pin3
+  - Q_STATUS_R pin3
+  - C_TEMP pin2
   - U_TEMP ADD0
   - U_TEMP GND
-  - C_VM_SENSE pin2 (-)
+  - C_VM_SENSE pin2
   - R_VM_L pin2
   - R_SLEEP pin2
-  - C_REF pin2 (-)
+  - C_REF pin2
   - R_REF_L pin2
-  - C_DRV_LOGIC pin2 (-)
+  - C_DRV_LOGIC pin2
   - C_BULK pin2 (-)
-  - C_VM pin2 (-)
-  - C_VREG pin2 (-)
+  - C_VM pin2
+  - C_VREG pin2
   - R_SB pin2
   - R_SA pin2
   - U_DRV PAD
@@ -473,26 +499,27 @@ NET: GND
   - U_DRV ROSC
   - U_DRV GND2
   - TP_GND pin1
-  - C_DV50 pin2 (-)
-  - C_DV23 pin2 (-)
-  - C_VREG_OUT pin2 (-)
-  - C_VREG_IN pin2 (-)
-  - C_USB pin2 (-)
-  - C_ADC pin2 (-)
-  - C_IO49 pin2 (-)
-  - C_IO42 pin2 (-)
-  - C_IO33 pin2 (-)
-  - C_IO22 pin2 (-)
-  - C_IO10 pin2 (-)
-  - C_IO1 pin2 (-)
-  - C_XOUT pin2 (-)
-  - C_XIN pin2 (-)
+  - C_DV50 pin2
+  - C_DV23 pin2
+  - C_VREG_OUT pin2
+  - C_VREG_IN pin2
+  - C_USB pin2
+  - C_ADC pin2
+  - C_IO49 pin2
+  - C_IO42 pin2
+  - C_IO33 pin2
+  - C_IO22 pin2
+  - C_IO10 pin2
+  - C_IO1 pin2
+  - C_XOUT pin2
+  - C_XIN pin2
   - Y_MCU pin2
   - Y_MCU pin4
   - U_MCU GND
   - U_MCU TESTEN
+  - C_ESD pin2
   - TP_BOOT_GND pin1
-  - C_FLASH pin2 (-)
+  - C_FLASH pin2
   - U_FLASH EP
   - U_FLASH VSS
   - R_USB_SENSE_L pin2
@@ -505,14 +532,14 @@ NET: GND
   - J_DATA EH4
   - J_DATA EH1
   - J_DATA EH2
-  - C_BUCK_OUT2 pin2 (-)
-  - C_BUCK_OUT1 pin2 (-)
-  - C_BUCK_IN pin2 (-)
+  - C_BUCK_OUT2 pin2
+  - C_BUCK_OUT1 pin2
+  - C_BUCK_IN pin2
   - U_BUCK GND
   - D_TVS pin1
-  - C_PD pin2 (-)
+  - C_PD pin2
   - R_PD_CFG pin2
-  - U_PD GND
+  - U_PD EP
   - J_PD GND2
   - J_PD GND1
   - J_PD EH3
@@ -540,7 +567,7 @@ J_PD (TYPE-C-31-M-12)
 - pin15(VBUS1, B4A9): NETS(PD_VBUS)
 - pin16(VBUS2, A4B9): NETS(PD_VBUS)
 
-U_PD (CH224A)
+U_PD (CH224Q)
 - pin1(VHV): NETS(PD_VHV)
 - pin2(CFG2, SCL): NOT_CONNECTED
 - pin3(CFG3, SDA): NOT_CONNECTED
@@ -551,7 +578,7 @@ U_PD (CH224A)
 - pin8(VBUS): NETS(PD_VBUS)
 - pin9(CFG1): NETS(PD_CFG)
 - pin10(PG): NETS(PD_GOOD)
-- pin11(GND): NETS(GND)
+- pin11(EP): NETS(GND)
 
 R_PD_CFG (56kΩ undefined)
 - pin1(anode, pos, left): NETS(PD_CFG)
@@ -562,8 +589,8 @@ R_PD (0Ω undefined)
 - pin2(cathode, neg, right): NETS(PD_VHV)
 
 C_PD (1uF undefined)
-- pin1(pos): NETS(PD_VHV)
-- pin2(neg): NETS(GND)
+- pin1: NETS(PD_VHV)
+- pin2: NETS(GND)
 
 R_PG (10kΩ undefined)
 - pin1(anode, pos, left): NETS(V3V3)
@@ -598,16 +625,16 @@ C_BOOTSTRAP (100nF undefined)
 - pin2(neg): NETS(BUCK_SW)
 
 C_BUCK_IN (10uF undefined)
-- pin1(pos): NETS(LOGIC_IN)
-- pin2(neg): NETS(GND)
+- pin1: NETS(LOGIC_IN)
+- pin2: NETS(GND)
 
 C_BUCK_OUT1 (22uF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_BUCK_OUT2 (22uF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 J_DATA (TYPE-C-31-M-12)
 - pin1(EH2): NETS(GND)
@@ -671,8 +698,8 @@ U_FLASH (GD25Q16EEIGR)
 - pin9(EP): NETS(GND)
 
 C_FLASH (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 R_FLASH_CS (10kΩ undefined)
 - pin1(anode, pos, left): NETS(V3V3)
@@ -687,6 +714,10 @@ TP_BOOT
 
 TP_BOOT_GND
 - pin1: NETS(GND)
+
+C_ESD (100nF undefined)
+- pin1: NETS(DATA_VBUS)
+- pin2: NETS(GND)
 
 U_MCU (RP2040)
 - pin1(IOVDD6): NETS(V3V3)
@@ -758,60 +789,60 @@ R_XOUT (1kΩ undefined)
 - pin2(cathode, neg, right): NETS(XTAL_OUT)
 
 C_XIN (15pF undefined)
-- pin1(pos): NETS(XIN)
-- pin2(neg): NETS(GND)
+- pin1: NETS(XIN)
+- pin2: NETS(GND)
 
 C_XOUT (15pF undefined)
-- pin1(pos): NETS(XTAL_OUT)
-- pin2(neg): NETS(GND)
+- pin1: NETS(XTAL_OUT)
+- pin2: NETS(GND)
 
 C_IO1 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_IO10 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_IO22 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_IO33 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_IO42 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_IO49 (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_ADC (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_USB (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_VREG_IN (1uF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_VREG_OUT (1uF undefined)
-- pin1(pos): NETS(V1V1)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V1V1)
+- pin2: NETS(GND)
 
 C_DV23 (100nF undefined)
-- pin1(pos): NETS(V1V1)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V1V1)
+- pin2: NETS(GND)
 
 C_DV50 (100nF undefined)
-- pin1(pos): NETS(V1V1)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V1V1)
+- pin2: NETS(GND)
 
 R_RUN (10kΩ undefined)
 - pin1(anode, pos, left): NETS(V3V3)
@@ -882,24 +913,24 @@ C_CP (100nF undefined)
 - pin2(neg): NETS(CP2)
 
 C_VCP (100nF undefined)
-- pin1(pos): NETS(VCP)
-- pin2(neg): NETS(PD_VBUS)
+- pin1: NETS(VCP)
+- pin2: NETS(PD_VBUS)
 
 C_VREG (220nF undefined)
-- pin1(pos): NETS(VREG)
-- pin2(neg): NETS(GND)
+- pin1: NETS(VREG)
+- pin2: NETS(GND)
 
 C_VM (100nF undefined)
-- pin1(pos): NETS(PD_VBUS)
-- pin2(neg): NETS(GND)
+- pin1: NETS(PD_VBUS)
+- pin2: NETS(GND)
 
 C_BULK (47uF undefined)
 - pin1(pos): NETS(PD_VBUS)
 - pin2(neg): NETS(GND)
 
 C_DRV_LOGIC (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 R_REF_H (20kΩ undefined)
 - pin1(anode, pos, left): NETS(V3V3)
@@ -910,14 +941,14 @@ R_REF_L (10kΩ undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 C_REF (10nF undefined)
-- pin1(pos): NETS(VREF)
-- pin2(neg): NETS(GND)
+- pin1: NETS(VREF)
+- pin2: NETS(GND)
 
-R_ENABLE (100kΩ undefined)
+R_ENABLE (10kΩ undefined)
 - pin1(anode, pos, left): NETS(V3V3)
 - pin2(cathode, neg, right): NETS(ENABLE_N)
 
-R_SLEEP (100kΩ undefined)
+R_SLEEP (10kΩ undefined)
 - pin1(anode, pos, left): NETS(SLEEP)
 - pin2(cathode, neg, right): NETS(GND)
 
@@ -930,8 +961,8 @@ R_VM_L (10kΩ undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 C_VM_SENSE (10nF undefined)
-- pin1(pos): NETS(VM_SENSE)
-- pin2(neg): NETS(GND)
+- pin1: NETS(VM_SENSE)
+- pin2: NETS(GND)
 
 U_TEMP (TMP102AIDRLR)
 - pin1(SCL): NETS(TEMP_SCL)
@@ -942,8 +973,8 @@ U_TEMP (TMP102AIDRLR)
 - pin6(SDA): NETS(TEMP_SDA)
 
 C_TEMP (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 R_TEMP_SDA (4.7kΩ undefined)
 - pin1(anode, pos, left): NETS(TEMP_SDA)
@@ -963,44 +994,44 @@ R_STATUS_R (1kΩ undefined)
 - pin1(anode, pos, left): NETS(STATUS_R_K)
 - pin2(cathode, neg, right): NETS(STATUS_R_C)
 
-Q_STATUS_R (DTC114EU3HZGT106)
-- pin1(E): NETS(GND)
-- pin2(B): NETS(LED_R)
-- pin3(C): NETS(STATUS_R_C)
+Q_STATUS_R (DMN2300UFB4-7B)
+- pin1(G): NETS(STATUS_R_GATE)
+- pin2(D): NETS(STATUS_R_C)
+- pin3(S): NETS(GND)
 
 R_STATUS_G (1kΩ undefined)
 - pin1(anode, pos, left): NETS(STATUS_G_K)
 - pin2(cathode, neg, right): NETS(STATUS_G_C)
 
-Q_STATUS_G (DTC114EU3HZGT106)
-- pin1(E): NETS(GND)
-- pin2(B): NETS(LED_G)
-- pin3(C): NETS(STATUS_G_C)
+Q_STATUS_G (DMN2300UFB4-7B)
+- pin1(G): NETS(STATUS_G_GATE)
+- pin2(D): NETS(STATUS_G_C)
+- pin3(S): NETS(GND)
 
 R_STATUS_B (1kΩ undefined)
 - pin1(anode, pos, left): NETS(STATUS_B_K)
 - pin2(cathode, neg, right): NETS(STATUS_B_C)
 
-Q_STATUS_B (DTC114EU3HZGT106)
-- pin1(E): NETS(GND)
-- pin2(B): NETS(LED_B)
-- pin3(C): NETS(STATUS_B_C)
+Q_STATUS_B (DMN2300UFB4-7B)
+- pin1(G): NETS(STATUS_B_GATE)
+- pin2(D): NETS(STATUS_B_C)
+- pin3(S): NETS(GND)
 
 BZ1 (MLT-5020)
 - pin1(_POS): NETS(V3V3)
 - pin2(_NEG): NETS(BUZZER_SINK)
 - pin3(NC): NOT_CONNECTED
 
-Q_BUZZER (AO3400A)
+Q_BUZZER (DMN2300UFB4-7B)
 - pin1(G): NETS(BUZZER_GATE)
-- pin2(S): NETS(GND)
-- pin3(D): NETS(BUZZER_SINK)
+- pin2(D): NETS(BUZZER_SINK)
+- pin3(S): NETS(GND)
 
-R_BUZZER_GATE (100Ω undefined)
+R_BUZZER_GATE (1kΩ undefined)
 - pin1(anode, pos, left): NETS(BUZZER_PWM)
 - pin2(cathode, neg, right): NETS(BUZZER_GATE)
 
-R_BUZZER_PD (100kΩ undefined)
+R_BUZZER_PD (10kΩ undefined)
 - pin1(anode, pos, left): NETS(BUZZER_GATE)
 - pin2(cathode, neg, right): NETS(GND)
 
@@ -1009,8 +1040,8 @@ D_BUZZER (PMEG6020ELRX)
 - pin2(anode, pos): NETS(BUZZER_SINK)
 
 C_BUZZER (10uF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 R_PWR_LED (330Ω undefined)
 - pin1(anode, pos, left): NETS(V3V3)
@@ -1019,6 +1050,30 @@ R_PWR_LED (330Ω undefined)
 D_PWR (XL-1608SURC-06)
 - pin1(cathode, neg): NETS(GND)
 - pin2(anode, pos): NETS(PWR_LED_A)
+
+R_STATUS_R_GATE (1kΩ undefined)
+- pin1(anode, pos, left): NETS(LED_R)
+- pin2(cathode, neg, right): NETS(STATUS_R_GATE)
+
+R_STATUS_R_PD (10kΩ undefined)
+- pin1(anode, pos, left): NETS(STATUS_R_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_STATUS_G_GATE (1kΩ undefined)
+- pin1(anode, pos, left): NETS(LED_G)
+- pin2(cathode, neg, right): NETS(STATUS_G_GATE)
+
+R_STATUS_G_PD (10kΩ undefined)
+- pin1(anode, pos, left): NETS(STATUS_G_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_STATUS_B_GATE (1kΩ undefined)
+- pin1(anode, pos, left): NETS(LED_B)
+- pin2(cathode, neg, right): NETS(STATUS_B_GATE)
+
+R_STATUS_B_PD (10kΩ undefined)
+- pin1(anode, pos, left): NETS(STATUS_B_GATE)
+- pin2(cathode, neg, right): NETS(GND)
 
 U_ENCODER (AS5600-ASOM)
 - pin1(VDD5V): NETS(V3V3)
@@ -1031,10 +1086,10 @@ U_ENCODER (AS5600-ASOM)
 - pin8(DIR): NETS(GND)
 
 C_ENCODER (100nF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 
 C_ENCODER_BULK (1uF undefined)
-- pin1(pos): NETS(V3V3)
-- pin2(neg): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
 

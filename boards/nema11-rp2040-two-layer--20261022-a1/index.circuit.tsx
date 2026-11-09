@@ -1,4 +1,5 @@
-// WIP source construction. Native PCB routing is intentionally disabled.
+// Reconstructed WIP from public 0.6.2 plus retained engineering evidence.
+// This is not the byte-identical lost 0.6.5 placement. Routing remains disabled.
 // Supplier definitions are fresh JLCPCB imports; no footprint/symbol/pin/CAD overrides.
 import poses from "./config/placement.json";
 import requirements from "./config/requirements.json";
@@ -7,6 +8,7 @@ import { B4B_PH_K_S_LF__SN_ } from "./imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__
 import { CL31A106KBHNNNE } from "./imports/CL31A106KBHNNNE/CL31A106KBHNNNE";
 import { CL05B103KB5NNNC } from "./imports/CL05B103KB5NNNC/CL05B103KB5NNNC";
 import { CL05B104KO5NNNC } from "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC";
+import { DMN2300UFB4_7B } from "./imports/DMN2300UFB4_7B/DMN2300UFB4_7B";
 import { A_0402CG150J500NT } from "./imports/A_0402CG150J500NT/A_0402CG150J500NT";
 import { CL10A105KB8NNNC } from "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC";
 import { CL10B103KB8NNNC } from "./imports/CL10B103KB8NNNC/CL10B103KB8NNNC";
@@ -35,6 +37,7 @@ import { A_0603WAF2002T5E } from "./imports/A_0603WAF2002T5E/A_0603WAF2002T5E";
 import { CH224A } from "./imports/CH224A/CH224A";
 import { CL21A226MAQNNNE } from "./imports/CL21A226MAQNNNE/CL21A226MAQNNNE";
 import { LTST_C19HE1WT } from "./imports/LTST_C19HE1WT/LTST_C19HE1WT";
+import { CH224Q } from "./imports/CH224Q/CH224Q";
 import { PMEG6020ELRX } from "./imports/PMEG6020ELRX/PMEG6020ELRX";
 import { DTC114EU3HZGT106 } from "./imports/DTC114EU3HZGT106/DTC114EU3HZGT106";
 import { CL05A105KA5NQNC } from "./imports/CL05A105KA5NQNC/CL05A105KA5NQNC";
@@ -63,6 +66,9 @@ export default function Nema11TwoLayerBuzzer() {
       layers={2}
       routingDisabled={true}
       schAutoLayoutEnabled={false}
+      schLayout={{ layoutMode: "relative" }}
+      schTraceAutoLabelEnabled={true}
+      schMaxTraceDistance={4}
       minTraceWidth={0.16}
       minTraceToPadEdgeClearance={0.15}
       minPadEdgeToPadEdgeClearance={0.15}
@@ -115,10 +121,13 @@ export default function Nema11TwoLayerBuzzer() {
       <net name="SENSE2" nominalTraceWidth={0.3} />
       <net name="SLEEP" nominalTraceWidth={0.16} />
       <net name="STATUS_B_C" nominalTraceWidth={0.16} />
+      <net name="STATUS_B_GATE" nominalTraceWidth={0.16} />
       <net name="STATUS_B_K" nominalTraceWidth={0.16} />
       <net name="STATUS_G_C" nominalTraceWidth={0.16} />
+      <net name="STATUS_G_GATE" nominalTraceWidth={0.16} />
       <net name="STATUS_G_K" nominalTraceWidth={0.16} />
       <net name="STATUS_R_C" nominalTraceWidth={0.16} />
+      <net name="STATUS_R_GATE" nominalTraceWidth={0.16} />
       <net name="STATUS_R_K" nominalTraceWidth={0.16} />
       <net name="STEP" nominalTraceWidth={0.16} />
       <net name="SWCLK" nominalTraceWidth={0.16} />
@@ -216,7 +225,7 @@ export default function Nema11TwoLayerBuzzer() {
             pin16: "net.PD_VBUS",
           }}
         />
-        <CH224A
+        <CH224Q
           name="U_PD"
           {...position("U_PD")}
           schX={11}
@@ -237,6 +246,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_PD_CFG")}
           schX={15.9}
           schY={10.2}
+          schRotation={270.0}
           connections={{ pin1: "net.PD_CFG", pin2: "net.GND" }}
         />
         <A_0603WAF0000T5E
@@ -244,6 +254,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_PD")}
           schX={9.8}
           schY={10.2}
+          schRotation={270.0}
           connections={{ pin1: "net.PD_VBUS", pin2: "net.PD_VHV" }}
         />
         <CL10A105KB8NNNC
@@ -251,6 +262,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_PD")}
           schX={12.7}
           schY={10.2}
+          schRotation={270.0}
           connections={{ pin1: "net.PD_VHV", pin2: "net.GND" }}
         />
         <A_0603WAF1002T5E
@@ -258,6 +270,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_PG")}
           schX={14.5}
           schY={15.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.PD_GOOD" }}
         />
         <SMF18A
@@ -265,6 +278,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("D_TVS")}
           schX={4}
           schY={9.2}
+          schRotation={270.0}
           connections={{ pin2: "net.PD_VBUS", pin1: "net.GND" }}
         />
         <B5819W_SL
@@ -284,7 +298,7 @@ export default function Nema11TwoLayerBuzzer() {
         <AP63203WU_7
           name="U_BUCK"
           {...position("U_BUCK")}
-          schX={24}
+          schX={26}
           schY={13.2}
           connections={{
             pin1: "net.V3V3",
@@ -298,7 +312,7 @@ export default function Nema11TwoLayerBuzzer() {
         <SRN4018_4R7M
           name="L_BUCK"
           {...position("L_BUCK")}
-          schX={28.2}
+          schX={29.2}
           schY={13.2}
           connections={{ pin1: "net.BUCK_SW", pin2: "net.V3V3" }}
         />
@@ -314,20 +328,23 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_BUCK_IN")}
           schX={21}
           schY={9.5}
+          schRotation={270.0}
           connections={{ pin1: "net.LOGIC_IN", pin2: "net.GND" }}
         />
         <CL21A226MAQNNNE
           name="C_BUCK_OUT1"
           {...position("C_BUCK_OUT1")}
-          schX={27}
-          schY={9.5}
+          schX={27.5}
+          schY={11.0}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL21A226MAQNNNE
           name="C_BUCK_OUT2"
           {...position("C_BUCK_OUT2")}
           schX={29.1}
-          schY={9.5}
+          schY={11.0}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
       </schematicsheet>
@@ -362,15 +379,17 @@ export default function Nema11TwoLayerBuzzer() {
         <A_0402WGF5101TCE
           name="R_CC1"
           {...position("R_CC1")}
-          schX={8.3}
-          schY={16.4}
+          schX={1.8}
+          schY={12.1}
+          schRotation={270.0}
           connections={{ pin1: "net.DATA_CC1", pin2: "net.GND" }}
         />
         <A_0402WGF5101TCE
           name="R_CC2"
           {...position("R_CC2")}
-          schX={11}
-          schY={16.4}
+          schX={6.8}
+          schY={12.2}
+          schRotation={270.0}
           connections={{ pin1: "net.DATA_CC2", pin2: "net.GND" }}
         />
         <USBLC6_2SC6
@@ -392,6 +411,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_DP")}
           schX={15.4}
           schY={11.85}
+          schRotation={180.0}
           connections={{ pin1: "net.MCU_DP", pin2: "net.USB_DP" }}
         />
         <A_0402WGF270JTCE
@@ -399,6 +419,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_DM")}
           schX={15.4}
           schY={10.75}
+          schRotation={180.0}
           connections={{ pin1: "net.MCU_DM", pin2: "net.USB_DM" }}
         />
         <A_0402WGF1003TCE
@@ -406,6 +427,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_USB_SENSE_H")}
           schX={4}
           schY={6.2}
+          schRotation={270.0}
           connections={{ pin1: "net.DATA_VBUS", pin2: "net.DATA_PRESENT" }}
         />
         <A_0402WGF1003TCE
@@ -413,6 +435,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_USB_SENSE_L")}
           schX={4}
           schY={3.8}
+          schRotation={270.0}
           connections={{ pin1: "net.DATA_PRESENT", pin2: "net.GND" }}
         />
         <GD25Q16EEIGR
@@ -437,6 +460,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_FLASH")}
           schX={29.8}
           schY={14.8}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <A_0402WGF1002TCE
@@ -444,6 +468,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_FLASH_CS")}
           schX={20}
           schY={11.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.QSPI_SS" }}
         />
         <A_0402WGF1001TCE
@@ -472,6 +497,14 @@ export default function Nema11TwoLayerBuzzer() {
           connections={{ pin1: "net.GND" }}
           footprintVariant="pad"
           padDiameter="1.1mm"
+        />
+        <CL05B104KO5NNNC
+          name="C_ESD"
+          {...position("C_ESD")}
+          schX={12.7}
+          schY={8.8}
+          schRotation={270.0}
+          connections={{ pin1: "net.DATA_VBUS", pin2: "net.GND" }}
         />
       </schematicsheet>
       <schematicsheet
@@ -570,6 +603,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_XIN")}
           schX={19.5}
           schY={16}
+          schRotation={270.0}
           connections={{ pin1: "net.XIN", pin2: "net.GND" }}
         />
         <A_0402CG150J500NT
@@ -577,69 +611,79 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_XOUT")}
           schX={25.5}
           schY={16}
+          schRotation={270.0}
           connections={{ pin1: "net.XTAL_OUT", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO1"
           {...position("C_IO1")}
-          schX={17.3}
-          schY={11.5}
+          schX={16.2}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO10"
           {...position("C_IO10")}
-          schX={19.400000000000002}
-          schY={11.5}
+          schX={17.8}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO22"
           {...position("C_IO22")}
-          schX={21.5}
-          schY={11.5}
+          schX={19.4}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO33"
           {...position("C_IO33")}
-          schX={23.6}
-          schY={11.5}
+          schX={21.0}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO42"
           {...position("C_IO42")}
-          schX={25.700000000000003}
-          schY={11.5}
+          schX={22.6}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_IO49"
           {...position("C_IO49")}
-          schX={27.8}
-          schY={11.5}
+          schX={24.2}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_ADC"
           {...position("C_ADC")}
-          schX={17.3}
-          schY={7.8}
+          schX={25.8}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_USB"
           {...position("C_USB")}
-          schX={19.400000000000002}
-          schY={7.8}
+          schX={27.4}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05A105KA5NQNC
           name="C_VREG_IN"
           {...position("C_VREG_IN")}
-          schX={21.5}
-          schY={7.8}
+          schX={29.0}
+          schY={8.2}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05A105KA5NQNC
@@ -647,20 +691,23 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_VREG_OUT")}
           schX={17.3}
           schY={3.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V1V1", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_DV23"
           {...position("C_DV23")}
-          schX={19.400000000000002}
+          schX={18.900000000000002}
           schY={3.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V1V1", pin2: "net.GND" }}
         />
         <CL05B104KO5NNNC
           name="C_DV50"
           {...position("C_DV50")}
-          schX={21.5}
+          schX={20.5}
           schY={3.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V1V1", pin2: "net.GND" }}
         />
         <A_0402WGF1002TCE
@@ -668,6 +715,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_RUN")}
           schX={3}
           schY={10.1}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.RUN" }}
         />
         <testpoint
@@ -778,6 +826,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_SA")}
           schX={22}
           schY={10.9}
+          schRotation={270.0}
           connections={{ pin1: "net.SENSE1", pin2: "net.GND" }}
         />
         <HP05W3F240LT5E
@@ -785,13 +834,14 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_SB")}
           schX={25.8}
           schY={10.9}
+          schRotation={270.0}
           connections={{ pin1: "net.SENSE2", pin2: "net.GND" }}
         />
         <CL05B104KB5NNNC
           name="C_CP"
           {...position("C_CP")}
-          schX={23}
-          schY={8.4}
+          schX={12.4}
+          schY={13}
           connections={{ pin1: "net.CP1", pin2: "net.CP2" }}
         />
         <CL05B104KB5NNNC
@@ -799,6 +849,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_VCP")}
           schX={27.5}
           schY={8.4}
+          schRotation={270.0}
           connections={{ pin1: "net.VCP", pin2: "net.PD_VBUS" }}
         />
         <CL10B224KA8NNNC
@@ -806,6 +857,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_VREG")}
           schX={29.5}
           schY={5.2}
+          schRotation={270.0}
           connections={{ pin1: "net.VREG", pin2: "net.GND" }}
         />
         <CL05B104KB5NNNC
@@ -813,13 +865,15 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_VM")}
           schX={3}
           schY={16.5}
+          schRotation={270.0}
           connections={{ pin1: "net.PD_VBUS", pin2: "net.GND" }}
         />
         <RVT1V470M0605
           name="C_BULK"
           {...position("C_BULK")}
-          schX={5.1}
+          schX={4.6}
           schY={16.5}
+          schRotation={270.0}
           connections={{ pin2: "net.GND", pin1: "net.PD_VBUS" }}
         />
         <CL05B104KO5NNNC
@@ -827,6 +881,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_DRV_LOGIC")}
           schX={8.5}
           schY={16.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <A_0603WAF2002T5E
@@ -834,6 +889,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_REF_H")}
           schX={3}
           schY={11}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.VREF" }}
         />
         <A_0402WGF1002TCE
@@ -841,6 +897,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_REF_L")}
           schX={3}
           schY={8.6}
+          schRotation={270.0}
           connections={{ pin1: "net.VREF", pin2: "net.GND" }}
         />
         <CL10B103KB8NNNC
@@ -848,20 +905,23 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_REF")}
           schX={6.8}
           schY={8.6}
+          schRotation={270.0}
           connections={{ pin1: "net.VREF", pin2: "net.GND" }}
         />
-        <A_0402WGF1003TCE
+        <A_0402WGF1002TCE
           name="R_ENABLE"
           {...position("R_ENABLE")}
           schX={9}
           schY={11.8}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.ENABLE_N" }}
         />
-        <A_0603WAF1003T5E
+        <A_0402WGF1002TCE
           name="R_SLEEP"
           {...position("R_SLEEP")}
           schX={9}
           schY={8.8}
+          schRotation={270.0}
           connections={{ pin1: "net.SLEEP", pin2: "net.GND" }}
         />
         <A_0402WGF1003TCE
@@ -869,6 +929,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_VM_H")}
           schX={3}
           schY={4.9}
+          schRotation={270.0}
           connections={{ pin1: "net.PD_VBUS", pin2: "net.VM_SENSE" }}
         />
         <A_0402WGF1002TCE
@@ -876,6 +937,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_VM_L")}
           schX={7}
           schY={4.9}
+          schRotation={270.0}
           connections={{ pin1: "net.VM_SENSE", pin2: "net.GND" }}
         />
         <CL05B103KB5NNNC
@@ -883,6 +945,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_VM_SENSE")}
           schX={10.5}
           schY={4.9}
+          schRotation={270.0}
           connections={{ pin1: "net.VM_SENSE", pin2: "net.GND" }}
         />
       </schematicsheet>
@@ -910,6 +973,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_TEMP")}
           schX={10.8}
           schY={15.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <A_0402WGF4701TCE
@@ -917,6 +981,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_TEMP_SDA")}
           schX={2.3}
           schY={11.5}
+          schRotation={90.0}
           connections={{ pin1: "net.TEMP_SDA", pin2: "net.V3V3" }}
         />
         <A_0402WGF4701TCE
@@ -924,6 +989,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_TEMP_SCL")}
           schX={6.3}
           schY={11.5}
+          schRotation={90.0}
           connections={{ pin1: "net.TEMP_SCL", pin2: "net.V3V3" }}
         />
         <LTST_C19HE1WT
@@ -945,15 +1011,15 @@ export default function Nema11TwoLayerBuzzer() {
           schY={14.8}
           connections={{ pin1: "net.STATUS_R_K", pin2: "net.STATUS_R_C" }}
         />
-        <DTC114EU3HZGT106
+        <DMN2300UFB4_7B
           name="Q_STATUS_R"
           {...position("Q_STATUS_R")}
           schX={21.6375}
           schY={12.7}
           connections={{
-            pin3: "net.STATUS_R_C",
-            pin1: "net.GND",
-            pin2: "net.LED_R",
+            pin1: "net.STATUS_R_GATE",
+            pin2: "net.STATUS_R_C",
+            pin3: "net.GND",
           }}
         />
         <A_0402WGF1001TCE
@@ -963,15 +1029,15 @@ export default function Nema11TwoLayerBuzzer() {
           schY={14.8}
           connections={{ pin1: "net.STATUS_G_K", pin2: "net.STATUS_G_C" }}
         />
-        <DTC114EU3HZGT106
+        <DMN2300UFB4_7B
           name="Q_STATUS_G"
           {...position("Q_STATUS_G")}
           schX={24.9375}
           schY={12.7}
           connections={{
-            pin3: "net.STATUS_G_C",
-            pin1: "net.GND",
-            pin2: "net.LED_G",
+            pin1: "net.STATUS_G_GATE",
+            pin2: "net.STATUS_G_C",
+            pin3: "net.GND",
           }}
         />
         <A_0402WGF1001TCE
@@ -981,15 +1047,15 @@ export default function Nema11TwoLayerBuzzer() {
           schY={14.8}
           connections={{ pin1: "net.STATUS_B_K", pin2: "net.STATUS_B_C" }}
         />
-        <DTC114EU3HZGT106
+        <DMN2300UFB4_7B
           name="Q_STATUS_B"
           {...position("Q_STATUS_B")}
           schX={28.2375}
           schY={12.7}
           connections={{
-            pin3: "net.STATUS_B_C",
-            pin1: "net.GND",
-            pin2: "net.LED_B",
+            pin1: "net.STATUS_B_GATE",
+            pin2: "net.STATUS_B_C",
+            pin3: "net.GND",
           }}
         />
         <MLT_5020
@@ -1000,29 +1066,30 @@ export default function Nema11TwoLayerBuzzer() {
           noConnect={["pin3"]}
           connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
         />
-        <AO3400A
+        <DMN2300UFB4_7B
           name="Q_BUZZER"
           {...position("Q_BUZZER")}
           schX={8.5}
           schY={3.8}
           connections={{
-            pin3: "net.BUZZER_SINK",
             pin1: "net.BUZZER_GATE",
-            pin2: "net.GND",
+            pin2: "net.BUZZER_SINK",
+            pin3: "net.GND",
           }}
         />
-        <A_0402WGF1000TCE
+        <A_0402WGF1001TCE
           name="R_BUZZER_GATE"
           {...position("R_BUZZER_GATE")}
           schX={3.8}
           schY={4.6}
           connections={{ pin1: "net.BUZZER_PWM", pin2: "net.BUZZER_GATE" }}
         />
-        <A_0402WGF1003TCE
+        <A_0402WGF1002TCE
           name="R_BUZZER_PD"
           {...position("R_BUZZER_PD")}
           schX={5.8}
           schY={3.6}
+          schRotation={270.0}
           connections={{ pin1: "net.BUZZER_GATE", pin2: "net.GND" }}
         />
         <PMEG6020ELRX
@@ -1030,13 +1097,15 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("D_BUZZER")}
           schX={14}
           schY={6.5}
+          schRotation={90.0}
           connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
         />
         <CL10A106KP8NNNC
           name="C_BUZZER"
           {...position("C_BUZZER")}
-          schX={17}
-          schY={6.5}
+          schX={12.4}
+          schY={15.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <A_0402WGF3300TCE
@@ -1044,6 +1113,7 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("R_PWR_LED")}
           schX={25}
           schY={6.2}
+          schRotation={270}
           connections={{ pin1: "net.V3V3", pin2: "net.PWR_LED_A" }}
         />
         <XL_1608SURC_06
@@ -1051,7 +1121,56 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("D_PWR")}
           schX={25}
           schY={3.8}
+          schRotation={270}
           connections={{ pin1: "net.GND", pin2: "net.PWR_LED_A" }}
+        />
+        <A_0402WGF1001TCE
+          name="R_STATUS_R_GATE"
+          {...position("R_STATUS_R_GATE")}
+          schX={20.1375}
+          schY={12.7}
+          schRotation={0}
+          connections={{ pin1: "net.LED_R", pin2: "net.STATUS_R_GATE" }}
+        />
+        <A_0402WGF1002TCE
+          name="R_STATUS_R_PD"
+          {...position("R_STATUS_R_PD")}
+          schX={20.6375}
+          schY={10.7}
+          schRotation={-90}
+          connections={{ pin1: "net.STATUS_R_GATE", pin2: "net.GND" }}
+        />
+        <A_0402WGF1001TCE
+          name="R_STATUS_G_GATE"
+          {...position("R_STATUS_G_GATE")}
+          schX={23.4375}
+          schY={12.7}
+          schRotation={0}
+          connections={{ pin1: "net.LED_G", pin2: "net.STATUS_G_GATE" }}
+        />
+        <A_0402WGF1002TCE
+          name="R_STATUS_G_PD"
+          {...position("R_STATUS_G_PD")}
+          schX={23.9375}
+          schY={10.7}
+          schRotation={-90}
+          connections={{ pin1: "net.STATUS_G_GATE", pin2: "net.GND" }}
+        />
+        <A_0402WGF1001TCE
+          name="R_STATUS_B_GATE"
+          {...position("R_STATUS_B_GATE")}
+          schX={26.7375}
+          schY={12.7}
+          schRotation={0}
+          connections={{ pin1: "net.LED_B", pin2: "net.STATUS_B_GATE" }}
+        />
+        <A_0402WGF1002TCE
+          name="R_STATUS_B_PD"
+          {...position("R_STATUS_B_PD")}
+          schX={27.2375}
+          schY={10.7}
+          schRotation={-90}
+          connections={{ pin1: "net.STATUS_B_GATE", pin2: "net.GND" }}
         />
       </schematicsheet>
       <schematicsheet
@@ -1080,14 +1199,16 @@ export default function Nema11TwoLayerBuzzer() {
           {...position("C_ENCODER")}
           schX={19}
           schY={13}
+          schRotation={270.0}
           doNotPlace={true}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
         <CL05A105KA5NQNC
           name="C_ENCODER_BULK"
           {...position("C_ENCODER_BULK")}
-          schX={21.1}
+          schX={20.6}
           schY={13}
+          schRotation={270.0}
           doNotPlace={true}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />

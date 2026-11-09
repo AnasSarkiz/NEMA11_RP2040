@@ -1,0 +1,10 @@
+{
+  "native_exit": 0,
+  "recognized_summary": true,
+  "errors": 0,
+  "warnings": 0,
+  "internal_exception": false,
+  "accepted_warnings": [],
+  "passed": true,
+  "log": "checks/check-source.txt"
+}

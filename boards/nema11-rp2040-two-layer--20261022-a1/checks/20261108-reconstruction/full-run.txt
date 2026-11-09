@@ -1,0 +1,16 @@
+format-check: exit 0
+typecheck: exit 0
+prebuild-tests: exit 0
+native-build: exit 1
+emitted-tests: exit 0
+source-integrity: exit 0
+check-netlist: exit 0
+check-pin_specification: exit 0
+check-source: exit 0
+check-schematic-placement: exit 0
+check-placement: exit 1
+strict-netlist: exit 0
+strict-pin_specification: exit 1
+strict-source: exit 0
+strict-schematic: exit 1
+export-schematic: exit 0

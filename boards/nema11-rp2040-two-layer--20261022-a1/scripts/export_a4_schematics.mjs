@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {convertCircuitJsonToSchematicSvg} from 'circuit-to-svg';
 const input = 'dist/index/circuit.json';
-const output = 'artifacts/20261023/schematic';
+const output = 'artifacts/20261108-reconstruction/schematic';
 const native = fs.readFileSync(input);
 const circuit = JSON.parse(native);
 const sheets = circuit.filter(e => e.type === 'schematic_sheet').sort((a,b) => a.sheet_index-b.sheet_index);
@@ -28,5 +28,5 @@ for (const sheet of sheets) {
 const total = circuit.filter(e=>e.type==='schematic_component').length;
 if(covered.size!==total) throw new Error('Not all native schematic components were exported');
 const manifest={native_json:input,native_json_sha256:crypto.createHash('sha256').update(native).digest('hex'),renderer:'circuit-to-svg official convertCircuitJsonToSchematicSvg with schematicSheetId',pages,components_covered:covered.size,schematic_ports_covered:pages.reduce((n,p)=>n+p.port_count,0),manufacturing_approved:false,layout_approved:false};
-fs.writeFileSync('checks/20261023/a4-sheet-export.json',JSON.stringify(manifest,null,2)+'\n');
+fs.writeFileSync('checks/20261108-reconstruction/a4-sheet-export.json',JSON.stringify(manifest,null,2)+'\n');
 console.log(`Exported ${pages.length} A4 sheets, ${covered.size} components, ${manifest.schematic_ports_covered} ports`);

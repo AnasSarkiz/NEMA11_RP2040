@@ -1,0 +1,25 @@
+<SchematicSheet name="05 Temperature &amp; feedback" id="schematic_sheet_4">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_TEMP" positionAnchor="center" schX="5.2" schY="15.5" width="1.2" height="0.8" />
+<SchematicBoxPlacement componentName="D_STATUS" positionAnchor="center" schX="25.3" schY="17.3" width="1.2" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicBoxInnerLabelCollision message="Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="U_TEMP" currentSchWidth="1.2" currentSchHeight="0.8" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.289">
+  <PinLabelPair label1="ALERT" label2="V_POS" port1="schematic_port_275" port2="schematic_port_277" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
+</SchematicBoxInnerLabelCollision>
+<SchematicBoxInnerLabelCollision message="Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="D_STATUS" currentSchWidth="1.2" currentSchHeight="0.6" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.272">
+  <PinLabelPair label1="R_NEG" label2="B_NEG" port1="schematic_port_285" port2="schematic_port_287" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
+  <PinLabelPair label1="G_NEG" label2="B_NEG" port1="schematic_port_286" port2="schematic_port_287" side1="left" side2="right" kind="clearance" measuredGap="0.028" />
+</SchematicBoxInnerLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="01 Power &amp; USB-PD" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_BUCK" positionAnchor="center" schX="24" schY="13.2" width="1.2" height="0.8" />
+<SchematicBoxPlacement componentName="C_BOOTSTRAP" positionAnchor="center" schX="26.5" schY="15.2" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="C_BOOTSTRAP" railPin="pin2" railType="power" deltaSchRotation="90" suggestedRailFacingDirection="up" message="rotate C_BOOTSTRAP by 90° so its power-connected pin faces up and the component is vertical" />
+<RailPathTooSpreadOut hostName="U_BUCK" pinName="FB" railType="power" pathSpan="8.4" pathLength="11" message="Visible path from U_BUCK.FB to power spans 8.40 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces." />
+</SchematicPlacementIssues>
+</SchematicSheet>

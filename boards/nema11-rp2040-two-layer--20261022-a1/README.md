@@ -1,40 +1,52 @@
-# NEMA11 RP2040 — two-layer buzzer revision
+# NEMA11 RP2040 reconstructed WIP
 
-Work in progress. This revision restores the required buzzer and changes the
-PCB to two copper layers, with fitted components allowed on top and bottom.
-It retains both USB-C inputs, CH224A 15 V PD and POWER_GOOD, RP2040/flash/clock,
-A4988 and both current-sense paths, regulators/protection, LEDs, temperature,
-debug/test points, JST motor connector and documented DNP encoder.
+This continues the same NEMA11 board and package. The local unpublished work
+was lost after a workspace reset. This revision is reconstructed from public
+GitHub main `1233ccdf803a1221820f28eabf4791b4a7cfe90e` and retained engineering
+evidence. It is not byte-identical to the lost 0.6.5 layout. See the repository
+[reconstruction record](../../docs/reconstruction-20261108/README.md).
 
-Source baseline: repository root controller at commit
-`2a9fa01f4c5ee052f18ce4c3c719bab706a5de36`; mechanical/electrical artifacts in
-`artifacts/compact-six-layer`. That six-layer revision and its generated files
-are historical and are not modified by this task.
+The candidate retains a 28 × 28 × 1.6 mm two-layer PCB, both USB-C inputs,
+RP2040, A4988, buzzer, temperature sensor, RGB indicator, motor connector,
+debug points and optional DNP encoder. The two flat USB connectors are placed
+at adjacent board edges. Compact CH224Q and DMN2300UFB4-7B imports are being
+requalified. All-top assembly with two upright USB-C remains a separate
+feasibility question, not a verified fit.
 
-The intended PCB outline remains 28 × 28 mm inside the 28.3 mm maximum motor
-frame, with four existing motor-bolt axes at X/Y = ±11.5 mm. Rear bolt dimensions,
-clamping and space for bottom-side components are not verified. The former
-Ø2.7 mm clearance holes are provisional, not verified rear M2.5 threads.
+**Unrouted, untested prototype. Not fabrication-ready.** Native routing remains
+disabled until schematic, BOM, placement and mechanical gates pass. Do not
+order or infer acceptance from a render. No historical passing check validates
+this reconstructed revision.
 
-Follow [VALIDATION.md](VALIDATION.md) and the exact supplied
-[validation policy](docs/user-validation-policy.md). Use only unmodified JLCPCB
-imports. Native routing stays disabled until schematic, BOM and placement pass.
-No current source or CAM is fabrication-ready or physically tested.
+## Reproduce
 
-Destination: existing public `AnasSarkiz/NEMA11_RP2040` repository, `main` branch,
-and existing `AnasSarkiz/NEMA11_RP2040_Compact_Prototype` package. Versions update
-that same package; a separate registry package is not created for this task.
+Use Node/npm and Python 3. Dependencies are pinned in `package.json` and the
+new `package-lock.json`. The archived public baseline's Bun lockfile is under
+`references/public-0.6.2-review/` and is not the current lockfile.
 
-Current review revision: `0.6.2-issues-review-wip`. Actual `tsci upgrade`
-succeeded; local pins are tscircuit 0.0.3005 / CLI 0.1.2401. All 47 unique
-JLCPCB parts were freshly imported with untouched TSX/OBJ/STEP assets.
-See [the tool/import issue report](docs/tscircuit-issues-20261023.md) for
-reproductions, resolved behavior and remaining blockers. The GCT slot's pinching
-is fixed, but it is 1.51 mm wide against a 1.01 mm drawing dimension.
+```sh
+npm ci
+export PATH="$PWD/node_modules/.bin:$PATH"
+export XDG_CONFIG_HOME="$PWD/.cache/config"
+export XDG_CACHE_HOME="$PWD/.cache/xdg"
+python3 scripts/generate_source.py
+npm run format
+python3 scripts/run_milestone_checks.py
+```
 
-The [complete six-sheet A4 PDF](artifacts/20261023/NEMA11-schematics-A4-WIP.pdf)
-and unchanged vector SVGs cover all 92 components and 332 ports. Source and
-schematic attachment checks pass for 296 connected pins plus 36 explicit NCs;
-layout/readability approval remains blocked. There are 157 native board layout
-records, 13 schematic findings and 31 pin-role warnings. Routing remains
-disabled; no fabrication or physical test approval is claimed.
+Imported definitions/models must remain byte-identical to the manifest. The
+fresh-build receipt rejects changed inputs and stale native circuit JSON.
+A nonzero native build with emitted JSON permits diagnostic analysis but is
+still a failed gate. See [VALIDATION.md](VALIDATION.md) for current results.
+
+Existing public review links, which do not yet show this reconstruction:
+
+- https://github.com/AnasSarkiz/NEMA11_RP2040
+- https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype
+
+Publication remains pending explicit approval. There is no new V2 project.
+
+Current tested checkpoint: formatting/typecheck, 13 prebuild tests, 9 emitted
+contracts and source/net integrity pass. PCB placement still has 35 top-level
+findings plus nested details; schematic has 3 findings and pin semantics has
+30 warnings. These gates remain failed. See the complete validation record.
