@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path('dist/index/circuit.json')
@@ -85,12 +86,18 @@ def main():
         if receipt['fresh_output']:
             check('emitted-tests', ['python3', '-m', 'unittest', 'discover', '-s', 'emitted-tests', '-v'])
             check('source-integrity', ['python3', 'scripts/verify_source.py'])
-            for kind in ('netlist', 'pin_specification', 'source', 'schematic-placement', 'placement'):
-                check('check-' + kind, ['node_modules/.bin/tsci', 'check', kind, 'index.circuit.tsx'])
+            check('independent-geometry', ['python3', 'scripts/audit_placement_geometry.py', '--output', 'checks/20261108-reconstruction/current-geometry-audit.json'])
+            # Independent read-only native diagnostics use unique logs and no dist output.
+            with ThreadPoolExecutor(max_workers=3) as pool:
+                pending = {kind: pool.submit(run, 'check-' + kind, ['node_modules/.bin/tsci', 'check', kind, 'index.circuit.tsx'])
+                           for kind in ('netlist', 'pin_specification', 'source', 'schematic-placement', 'placement')}
+                for kind, future in pending.items():
+                    results['check-' + kind] = future.result()
             for kind in ('netlist', 'pin_specification', 'source'):
                 check('strict-' + kind, ['python3', 'scripts/check_diagnostic_summary.py', 'checks/check-' + kind + '.txt', '--native-exit', str(results['check-' + kind]['exit_code']), '--output', 'checks/strict-' + kind + '.json'])
             check('strict-schematic', ['python3', 'scripts/check_schematic_findings.py', 'checks/check-schematic-placement.txt', '--native-exit', str(results['check-schematic-placement']['exit_code']), '--output', 'checks/strict-schematic.json'])
             check('export-schematic', ['npm', 'run', 'export:schematic-pdf'])
+            check('export-pcb-views', ['node', 'scripts/export_pcb_views.mjs'])
         passed = receipt['build_passed'] and fresh_receipt() and all(x['exit_code'] == 0 for x in results.values())
         Path('checks/milestone-status.json').write_text(json.dumps({'passed': passed, 'manufacturing_approved': False, 'results': results, 'dependent_checks_skipped': not receipt['fresh_output']}, indent=2) + '\n')
         return 0 if passed else 1

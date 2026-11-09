@@ -1,0 +1,45 @@
+{
+  "checked_utc": "2026-11-09T00:12:06.799283+00:00",
+  "api_url": "https://jlcsearch.tscircuit.com/api/search?q=C11702&limit=1",
+  "api_http_status": "200",
+  "api_json": {
+    "components": [
+      {
+        "lcsc": 11702,
+        "mfr": "0402WGF1001TCE",
+        "package": "0402",
+        "description": "-55℃~+155℃ 1kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+        "is_basic": true,
+        "is_preferred": false,
+        "stock": null,
+        "price": 0.0013,
+        "stock_checked_at": "2026-10-31T03:33:13.000Z"
+      }
+    ]
+  },
+  "lcsc_url": "https://www.lcsc.com/product-detail/C11702.html",
+  "lcsc_http_status": "200",
+  "lcsc_product_structured_data": [
+    {
+      "name": "UNI-ROYAL 0402WGF1001TCE",
+      "sku": "C11702",
+      "mpn": "0402WGF1001TCE",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.lcsc.com/product-detail/C11702.html",
+        "priceCurrency": "USD",
+        "price": 0.0009,
+        "itemCondition": "http://schema.org/NewCondition",
+        "availability": "http://schema.org/InStock",
+        "inventoryLevel": 21618900,
+        "seller": {
+          "@type": "Organization",
+          "name": "LCSC Electronics",
+          "url": "https://www.lcsc.com/"
+        },
+        "description": ""
+      }
+    }
+  ],
+  "interpretation": "API HTTP 200 and parsed matching part; stock=null means unknown/missing stock, not evidence of out of stock. LCSC inventory is an independent supplier view and does not establish JLC assembly availability."
+}

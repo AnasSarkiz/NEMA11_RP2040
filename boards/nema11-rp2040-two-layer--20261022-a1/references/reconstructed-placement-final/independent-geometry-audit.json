@@ -1,0 +1,32 @@
+{
+  "scope": "Conservative AABB geometry only; no mechanical/assembly/routing acceptance.",
+  "source_count": 99,
+  "pcb_count": 99,
+  "fitted_sides": {
+    "top": 16,
+    "bottom": 73
+  },
+  "frozen_anchors_unchanged": true,
+  "pcb_traces": 0,
+  "pcb_vias": 0,
+  "copper_min_conservative_AABB_gap_mm": 0.15999999999999837,
+  "DNP_inclusive_min_conservative_AABB_gap_mm": 0.15999999999999837,
+  "copper_min_conservative_edge_gap_mm": 0.36109800000000014,
+  "minimum_conservative_bolt_head_envelope_gap_mm": 0.04454776426458151,
+  "conservative_pad_pairs_below_015mm": [],
+  "native_top_level_errors": {
+    "pcb_component_outside_board_error": 2
+  },
+  "native_nested_errors": {},
+  "rotated_smt_shape_counts": {
+    "rotated_pill:270": 28,
+    "rotated_pill:90": 4,
+    "rotated_pill:180": 8
+  },
+  "independent_geometry_pass": true,
+  "input_sha256": {
+    "circuit": "bf1557983fb119c2f1b09043b997fc294c6f35b3576d703a4d65d3ccd8ed7324",
+    "placement": "9f03259d66c8d6c56d5fdef7e9db00f00e74d19062223aa69d55297cc30770f8",
+    "baseline": "80530fd8a6b87b2537e22cf707e31e3e909034b8d63379d4323c617e3edc96da"
+  }
+}

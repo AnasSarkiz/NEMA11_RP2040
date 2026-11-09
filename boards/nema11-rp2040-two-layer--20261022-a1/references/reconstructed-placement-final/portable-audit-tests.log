@@ -1,0 +1,13 @@
+test_circle_annulus_uses_outer_diameter (test_placement_geometry.PlacementGeometryTests.test_circle_annulus_uses_outer_diameter) ... ok
+test_nonfinite_and_missing_dimensions_fail (test_placement_geometry.PlacementGeometryTests.test_nonfinite_and_missing_dimensions_fail) ... ok
+test_polygon_is_already_in_world_coordinates (test_placement_geometry.PlacementGeometryTests.test_polygon_is_already_in_world_coordinates) ... ok
+test_preserved_native_evidence_includes_dnp_copper (test_placement_geometry.PlacementGeometryTests.test_preserved_native_evidence_includes_dnp_copper) ... ok
+test_rotated_smt_general_angle (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_general_angle) ... ok
+test_rotated_smt_quarter_turns (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_quarter_turns) ... ok
+test_slot_outer_annulus_and_rotation (test_placement_geometry.PlacementGeometryTests.test_slot_outer_annulus_and_rotation) ... ok
+test_unknown_shapes_fail_closed (test_placement_geometry.PlacementGeometryTests.test_unknown_shapes_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.132s
+
+OK

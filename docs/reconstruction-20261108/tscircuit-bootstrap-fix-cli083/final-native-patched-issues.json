@@ -1,0 +1,134 @@
+{
+  "sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "path": "/workspace/scratch/07b71d1575ce/nema11_reconstructed/boards/nema11-rp2040-two-layer--20261022-a1/dist/index/circuit.json",
+  "issues": [
+    {
+      "lineItemType": "SchematicBoxInnerLabelCollision",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": 5.2,
+        "schY": 15.5,
+        "width": 1.2000000000000002,
+        "height": 0.8,
+        "sourceComponentId": "source_component_71",
+        "sourceComponentName": "U_TEMP",
+        "schematicComponentId": "schematic_component_71",
+        "schematicSheetId": "schematic_sheet_4",
+        "schematicSheetName": "05 Temperature & feedback"
+      },
+      "overlappingSides": [
+        "left",
+        "right"
+      ],
+      "minimumLabelGap": 0.1,
+      "labelPairs": [
+        {
+          "firstLabel": {
+            "schematicPortId": "schematic_port_275",
+            "text": "ALERT",
+            "side": "left",
+            "bounds": {
+              "left": 4.699999999999999,
+              "right": 5.202499999999999,
+              "bottom": 15.225000000000001,
+              "top": 15.375
+            }
+          },
+          "secondLabel": {
+            "schematicPortId": "schematic_port_277",
+            "text": "V_POS",
+            "side": "right",
+            "bounds": {
+              "left": 5.214000000000001,
+              "right": 5.700000000000001,
+              "bottom": 15.425,
+              "top": 15.575
+            }
+          },
+          "measuredGap": 0.05000000000000071,
+          "kind": "clearance"
+        }
+      ],
+      "suggestedSchWidth": 1.289,
+      "message": "Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels."
+    },
+    {
+      "lineItemType": "SchematicBoxInnerLabelCollision",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": 25.3,
+        "schY": 17.3,
+        "width": 1.2000000000000002,
+        "height": 0.6000000000000001,
+        "sourceComponentId": "source_component_75",
+        "sourceComponentName": "D_STATUS",
+        "schematicComponentId": "schematic_component_75",
+        "schematicSheetId": "schematic_sheet_4",
+        "schematicSheetName": "05 Temperature & feedback"
+      },
+      "overlappingSides": [
+        "left",
+        "right"
+      ],
+      "minimumLabelGap": 0.1,
+      "labelPairs": [
+        {
+          "firstLabel": {
+            "schematicPortId": "schematic_port_285",
+            "text": "R_NEG",
+            "side": "left",
+            "bounds": {
+              "left": 24.8,
+              "right": 25.286,
+              "bottom": 17.325000000000003,
+              "top": 17.475
+            }
+          },
+          "secondLabel": {
+            "schematicPortId": "schematic_port_287",
+            "text": "B_NEG",
+            "side": "right",
+            "bounds": {
+              "left": 25.314,
+              "right": 25.8,
+              "bottom": 17.125,
+              "top": 17.275
+            }
+          },
+          "measuredGap": 0.05000000000000426,
+          "kind": "clearance"
+        },
+        {
+          "firstLabel": {
+            "schematicPortId": "schematic_port_286",
+            "text": "G_NEG",
+            "side": "left",
+            "bounds": {
+              "left": 24.8,
+              "right": 25.286,
+              "bottom": 17.125,
+              "top": 17.275
+            }
+          },
+          "secondLabel": {
+            "schematicPortId": "schematic_port_287",
+            "text": "B_NEG",
+            "side": "right",
+            "bounds": {
+              "left": 25.314,
+              "right": 25.8,
+              "bottom": 17.125,
+              "top": 17.275
+            }
+          },
+          "measuredGap": 0.027999999999998693,
+          "kind": "clearance"
+        }
+      ],
+      "suggestedSchWidth": 1.272,
+      "message": "Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels."
+    }
+  ]
+}

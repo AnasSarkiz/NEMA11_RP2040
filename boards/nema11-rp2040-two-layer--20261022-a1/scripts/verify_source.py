@@ -4,6 +4,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+from native_findings import summarize
 
 
 def load(path):
@@ -58,6 +59,7 @@ placement = {x['source_component_id']: x for x in records if x['type'] == 'pcb_c
 check('optional encoder remains DNP', all(placement[components[n]['source_component_id']]['do_not_place'] for n in ['U_ENCODER', 'C_ENCODER', 'C_ENCODER_BULK']))
 errors = dict(collections.Counter(x['type'] for x in records if x['type'].endswith('_error')))
 report = {'source_sha256': digest('index.circuit.tsx'), 'circuit_json_sha256': digest('dist/index/circuit.json'), 'structural_checks': checks, 'structural_failure_count': sum(not c['passed'] for c in checks), 'native_errors': errors, 'native_error_count': sum(errors.values()), 'manufacturing_approved': False, 'scope': 'Source preservation and import integrity only; does not approve schematic, placement, routing, shorts, mechanics or manufacturing.'}
+report.update(summarize(records))
 Path('checks/source-integrity.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({k: v for k, v in report.items() if k != 'structural_checks'}, indent=2))
 for c in checks:

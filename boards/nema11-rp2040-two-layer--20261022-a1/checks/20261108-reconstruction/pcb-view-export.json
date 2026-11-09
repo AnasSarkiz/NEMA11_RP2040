@@ -1,0 +1,42 @@
+{
+  "native_json": "dist/index/circuit.json",
+  "native_json_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "renderer": "circuit-to-svg official convertCircuitJsonToPcbSvg, rasterized by @resvg/resvg-js",
+  "views": [
+    {
+      "layer": "top",
+      "options": {
+        "layer": "top",
+        "width": 1600,
+        "height": 1600,
+        "shouldDrawErrors": true,
+        "shouldDrawWarnings": true,
+        "showErrorsInTextOverlay": true,
+        "showCourtyards": true,
+        "drawPaddingOutsideBoard": true,
+        "includeVersion": true
+      },
+      "svg": "artifacts/20261108-reconstruction/pcb/top.svg",
+      "png": "artifacts/20261108-reconstruction/pcb/top.png"
+    },
+    {
+      "layer": "bottom",
+      "options": {
+        "layer": "bottom",
+        "width": 1600,
+        "height": 1600,
+        "shouldDrawErrors": true,
+        "shouldDrawWarnings": true,
+        "showErrorsInTextOverlay": true,
+        "showCourtyards": true,
+        "drawPaddingOutsideBoard": true,
+        "includeVersion": true
+      },
+      "svg": "artifacts/20261108-reconstruction/pcb/bottom.svg",
+      "png": "artifacts/20261108-reconstruction/pcb/bottom.png"
+    }
+  ],
+  "scope": "Layer-specific 2D review only; native errors and warnings enabled. Does not establish plug, bolt, motor, height, electrical routing or assembly clearance.",
+  "manufacturing_approved": false,
+  "layout_approved": false
+}

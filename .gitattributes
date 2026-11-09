@@ -11,3 +11,10 @@ imports/motor/**/*.step binary
 *.csv whitespace=cr-at-eol
 # Keep native exporter SVG formatting intact for registry file comparisons.
 prototypes/compact-current/dist/**/*.svg -whitespace
+
+# Retain portable upstream diagnostic evidence and patch bytes verbatim.
+docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.patch -text -whitespace
+docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.txt -text -whitespace
+docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.bundle binary
+docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.gz binary
+docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.tgz binary

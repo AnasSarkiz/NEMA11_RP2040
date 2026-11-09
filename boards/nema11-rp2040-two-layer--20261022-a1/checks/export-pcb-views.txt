@@ -1,0 +1,1 @@
+Exported native top and bottom PCB review views with diagnostics enabled

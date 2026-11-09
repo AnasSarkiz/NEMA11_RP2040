@@ -1,0 +1,3 @@
+9f03259d66c8d6c56d5fdef7e9db00f00e74d19062223aa69d55297cc30770f8  best-native/placement.json
+bf1557983fb119c2f1b09043b997fc294c6f35b3576d703a4d65d3ccd8ed7324  best-native/dist/index/circuit.json
+3246984032503b68415d5aedbecb034a48bbf91d9a57bde9f6af74db63648384  best-native/dist/index/pcb.png

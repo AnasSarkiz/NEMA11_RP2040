@@ -7,16 +7,16 @@ archived under `references/public-0.6.2-review/` and are historical only.
 
 **Unrouted, untested prototype. Not fabrication-ready.**
 
-| Stage                   | Status      | Current evidence / remaining gate                                                                               |
-| ----------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
-| Requirements            | blocked     | 28 mm, two layers, 0.67 A motor, buzzer retained. Rear bolt/grip/gap and full-assembly fit unverified.          |
-| Schematic/BOM           | in progress | Reconstructing compact PD/FET candidate with unchanged supplier imports. Fresh native electrical tests pending. |
-| Placement               | blocked     | Known adjacent-edge connector anchors restored; full old placement unavailable. Fresh placement required.       |
-| Routing                 | not started | Disabled until all prior gates pass.                                                                            |
-| Automated/visual review | in progress | Fresh toolchain and fail-closed verification are being reconstructed.                                           |
-| Fabrication             | not started | No approved CAM, stackup, panel, assembly process or BOM/CPL.                                                   |
-| Physical prototype      | not started | No physical measurements or approved motor fastening.                                                           |
-| Release/publication     | blocked     | Explicit publication approval pending. No new GitHub or tscircuit revision published.                           |
+| Stage                   | Status      | Current evidence / remaining gate                                                                                        |
+| ----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Requirements            | blocked     | 28 mm, two layers, 0.67 A motor, buzzer retained. Rear bolt/grip/gap and full-assembly fit unverified.                   |
+| Schematic/BOM           | in progress | Source/net contracts pass; untouched compact imports retained. Three schematic findings and 30 pin warnings remain.      |
+| Placement               | blocked     | New placement has two USB courtyard boundary findings; electrical locality, artwork and full mechanical fit remain open. |
+| Routing                 | not started | Disabled until all prior gates pass.                                                                                     |
+| Automated/visual review | in progress | Fresh fail-closed full verification completed; failing gates retained. Native review exports inspected.                  |
+| Fabrication             | not started | No approved CAM, stackup, panel, assembly process or BOM/CPL.                                                            |
+| Physical prototype      | not started | No physical measurements or approved motor fastening.                                                                    |
+| Release/publication     | blocked     | Explicit publication approval pending. No new GitHub or tscircuit revision published.                                    |
 
 Exact C94598 manufacturer evidence is in the repository's reconstruction
 record. The 2021 linked sheet supports 3.0 Vo-p rated and 2–4 Vo-p operation,
@@ -37,27 +37,28 @@ native generated circuit JSON must not be patched.
 ## Verified reconstruction checkpoint, 2026-11-09 UTC
 
 This checkpoint is new work, not recovered old placement. Main native JSON
-SHA-256: `056b8d48bb7fb60edcb96af118652b53589711eab4c5e885eff4c0b32db8ce91`.
+SHA-256: `b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51`.
 Source SHA-256: `864cd4929a056bd1c07dfc3345ce04ca563f01db223f340dbc6514da1fb1a045`.
 The full-input receipt is `checks/native-build-status.json`; all included
 inputs remained unchanged during verification. The private backup is a
 checkpoint of failed-gate WIP, not release or publication approval.
 
 - Format and TypeScript passed.
-- All 13 prebuild regression tests and all 9 emitted contracts passed.
-- Source/import integrity passed: all expected physical nets, genuine part
+- All 23 prebuild regression tests and all 9 emitted contracts passed.
+- All 657 source/import integrity assertions passed: expected physical nets, genuine part
   identities, values and explicit NC ports were preserved.
 - Native source and netlist checks: zero reported errors/warnings.
 - Native pin check: exit 0 but 30 warnings; strict warning gate FAILS.
 - Native schematic check: exit 0 but 3 findings; strict gate FAILS. These are
   two untouched imported label collisions and the bootstrap orientation
   diagnostic. A separately tested upstream candidate is not installed.
-- Native build and placement checks FAIL. There are 35 top-level PCB error
-  groups: 8 footprint, 17 courtyard, 6 placement and 4 outside-board. Within
-  those groups there are 25 related detail records, including 8 pad-clearance
-  failures. Zero standalone pad-clearance records must not be mistaken for
-  zero pad-clearance failures. See `native-findings-expanded.json` in the
-  reconstruction check folder for exact counts and details.
+- Native build and placement checks FAIL. Two top-level outside-board errors
+  remain: J_PD and J_DATA courtyards extend about 0.25 mm beyond their edges.
+  There are no nested error records and no reported footprint, courtyard
+  overlap, pad clearance, copper-edge or bolt-keepout errors. No boundary
+  exemption or diagnostic suppression is used. The earlier 35-error report,
+  including eight nested pad failures, is historical evidence only and is
+  preserved as `historical-35-native-findings-expanded.json`.
 - 99 source/PCB components, 89 fitted CAD components (16 top, 73 bottom),
   67 source nets, 346 source ports, zero PCB traces/vias.
 - Six native A4 pages exported successfully, covering all 99 components and
@@ -65,12 +66,33 @@ checkpoint of failed-gate WIP, not release or publication approval.
   rendering/coverage. This is not detailed schematic readability approval.
   Conversion observations embedded in the inherited PDF-export script refer
   to historical 2026-10-23 attempts, not new failed conversions in this run.
+- Native layer-specific top and bottom SVG/PNG exports were generated with
+  errors/warnings enabled and visually inspected. Silkscreen labels remain
+  crowded, overlapping and in some cases beyond board edges. This is not
+  the final neat presentation or assembly artwork.
 
-The fresh layout improves 143 to 35 top-level PCB findings. Further targeted
-placement remains in progress; nominal body/plug/motor/bolt clearance and
-manufacturability remain unapproved. The fixed USB courtyards extend beyond
-board edges and no off-board exemption is used. Some bottom passives still
-conflict with connector through-hole geometry and provisional bolt keepouts.
+The fresh layout improves 143 to 2 top-level PCB findings. Independent
+conservative AABB analysis includes rotated SMT pills/rectangles, through-hole
+outer copper, polygon pads and DNP copper. Minimum same-layer copper gap is
+0.160 mm, copper-to-edge gap 0.361098 mm, and pad/courtyard-to-provisional
+R2.35 bolt-head envelope gap only 0.044548 mm. Eight regressions cover these
+geometry assumptions. These are nominal lower-bound estimates, not a
+manufacturing-tolerance or mechanical-fit qualification. The tiny bolt margin
+needs actual fastener/tolerance evidence, not an assumption of clearance.
+
+Gate pulldown and gate resistor locality, the 7.84 mm MCU-to-crystal center
+distance, decoupling, buck hot loop and driver-current returns still need an
+electrical placement review before routing. Centers are not trace lengths.
+USB mating, rear bolt grip/engagement, insulation, motor-side component height,
+encoder alignment, PCB gap, panel rails and specific assembly processes remain
+unqualified. All-top assembly with two upright USB-C is not demonstrated.
+
+The separately preserved actual CLI analyzer 0.0.83 patch was replayed on this
+exact native input. It reduces three findings to two by removing only the
+ambiguous bootstrap orientation warning; both imported label findings are
+unchanged. Its 15 regression variants pass. This patch is not installed in
+the board's production dependency and is not a full upstream-suite approval.
+The current strict schematic gate therefore still fails with three findings.
 
 Stock warnings are not proof of zero inventory. One independent public C11702
 lookup returned valid JSON with stock=null, whereas the official LCSC listing

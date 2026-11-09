@@ -1,0 +1,8 @@
+bun test v1.4.4 (38afee6c8)
+
+tests/cases/local-floating-chip-capacitor.test.ts:
+(pass) local floating chip capacitors do not imply rail orientation; explicit rails and ground remain checked [2063.79ms]
+
+ 1 pass
+ 0 fail
+Ran 1 test across 1 file. [2.35s]

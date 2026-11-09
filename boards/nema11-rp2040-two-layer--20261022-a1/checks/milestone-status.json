@@ -63,6 +63,16 @@
       "exit_code": 0,
       "log": "checks/source-integrity.txt"
     },
+    "independent-geometry": {
+      "command": [
+        "python3",
+        "scripts/audit_placement_geometry.py",
+        "--output",
+        "checks/20261108-reconstruction/current-geometry-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "checks/independent-geometry.txt"
+    },
     "check-netlist": {
       "command": [
         "node_modules/.bin/tsci",
@@ -173,6 +183,14 @@
       ],
       "exit_code": 0,
       "log": "checks/export-schematic.txt"
+    },
+    "export-pcb-views": {
+      "command": [
+        "node",
+        "scripts/export_pcb_views.mjs"
+      ],
+      "exit_code": 0,
+      "log": "checks/export-pcb-views.txt"
     }
   },
   "dependent_checks_skipped": false

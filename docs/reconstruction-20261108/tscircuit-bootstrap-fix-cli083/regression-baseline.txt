@@ -1,0 +1,34 @@
+(node:12) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./validation/loader.mjs", pathToFileURL("./")); register("./validation/loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+✖ local floating chip capacitors do not imply rail orientation; explicit rails and ground remain checked (167.191349ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2504.580964
+
+✖ failing tests:
+
+test at tests/cases/local-floating-chip-capacitor.test.ts:29:1
+✖ local floating chip capacitors do not imply rail orientation; explicit rails and ground remain checked (167.191349ms)
+  AssertionError [ERR_ASSERTION]: bootstrap
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/07b71d1575ce/nema11_schematic_cli083_reconstruction/tests/cases/local-floating-chip-capacitor.test.ts:141:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

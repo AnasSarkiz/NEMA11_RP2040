@@ -46,7 +46,11 @@ Existing public review links, which do not yet show this reconstruction:
 
 Publication remains pending explicit approval. There is no new V2 project.
 
-Current tested checkpoint: formatting/typecheck, 13 prebuild tests, 9 emitted
-contracts and source/net integrity pass. PCB placement still has 35 top-level
-findings plus nested details; schematic has 3 findings and pin semantics has
-30 warnings. These gates remain failed. See the complete validation record.
+Current tested checkpoint: formatting/typecheck, 23 prebuild tests, 9 emitted
+contracts, 657 source/import assertions and the conservative geometry audit
+pass. PCB findings fell from 143 to 2, both USB courtyard boundary flags, with
+no nested errors. Schematic still has 3 findings and pin semantics has 30
+warnings. These gates remain failed. The tiny provisional bolt-head margin,
+crowded labels, electrical loop placement and full mechanical fit remain open.
+See the complete validation record and native top/bottom review images in
+`artifacts/20261108-reconstruction/pcb/`.

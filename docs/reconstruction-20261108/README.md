@@ -8,6 +8,9 @@ after an execution-workspace reset. Exact placement and generated outputs from
 those commits are not available. Historical test results do not validate this
 reconstruction. The existing board path and package identity are retained.
 
+The latest fresh main-project result is in [FINAL-CHECKPOINT.md](FINAL-CHECKPOINT.md).
+The recipe and historical constraints below are retained for provenance.
+
 ## Scope and gates
 
 - Existing `boards/nema11-rp2040-two-layer--20261022-a1` project.

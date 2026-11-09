@@ -49,8 +49,8 @@ Exported 6 A4 sheets, 99 components, 346 ports
   ],
   "components_covered": 99,
   "schematic_ports_covered": 346,
-  "native_json_sha256": "056b8d48bb7fb60edcb96af118652b53589711eab4c5e885eff4c0b32db8ce91",
-  "conversion_observations": [
+  "native_json_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "historical_20261023_conversion_observations": [
     "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
     "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."
   ],

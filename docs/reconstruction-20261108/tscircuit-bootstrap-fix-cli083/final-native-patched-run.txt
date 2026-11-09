@@ -1,0 +1,4 @@
+(node:19) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("./validation/loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"mode":"patched","sha256":"b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51","issueCount":2}

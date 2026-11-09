@@ -1,0 +1,22 @@
+{
+  "FINAL-REPLAY.md": "35a519f93903d7689a3428a4f0f88c310c6e64968ddb3ac244c2a41e841bcf49",
+  "REPORT.md": "a176a58995ee482de6fc45ac3bf36937283a3f2a016505df7d7d1105f2b28adc",
+  "current-native-comparison.json": "c68c4ef511986c0836b082c88d978789e46cf780bc00d359330c9855e8ff71cf",
+  "final-native-baseline-analysis.txt": "86d5008e6ea640e10044794dab158219b82a1c50282c63264ffdd0ee4e4873e8",
+  "final-native-baseline-issues.json": "bdb4186cc044cc57e2677048b9dee4bb1c1052730950b1f4005980eefd61d6a7",
+  "final-native-baseline-run.txt": "cef0725f4a6642a1245c848149374a2b05478c095ac5a51478e2bde4a3fce4b5",
+  "final-native-comparison.json": "5aeb78258b54239b8e9bfc964bbd8d72ad7405fab8644f6090108ea9ac5135a4",
+  "final-native-patched-analysis.txt": "b1b27aae5f289d07d61d30a401e6250136479b3546ffbe5e98abda9d2da68ee0",
+  "final-native-patched-issues.json": "ba67bd166145f4e32cc2e7d56ef75ea106b80fa3a44dd361e89d64995f0db008",
+  "final-native-patched-run.txt": "7116b1cc789c2a89889c348c9f9f42cb51d44be32e0a80515a6871211772f019",
+  "official-0.0.83.tgz": "64b676c337f4082e6be47f7ab47a4a94636c7c43e5e0b620e1acd60784dbcc4c",
+  "portable-sha256.txt": "2fdd862a0d35945c3664828f65f05276b5bad9529aa4d9a2205d504139c6c157",
+  "portable-source.tar.gz": "b169733ca89c3a7b2a1052980c389ba80c2537ea5acd161dc85f2e571196f1a2",
+  "regression-baseline.txt": "2d6907100906f9e2aef0eb1714ce95b2e53545e0baca4cfcb16234b865b7b94a",
+  "regression-bun.txt": "d8d2efe89a77364e841a84d8b0d2f88cc6d3bf8b43150765aa5ef1ef23bc066a",
+  "regression-patched.txt": "67ef986a3e4a5c0f54663135618a8e28862e908e15100a016fa4fe2d1250cee7",
+  "source-only.patch": "72693f8660249d716ae91233fc9c48eaf84714d5cb7962116f8d06f4897129d8",
+  "typecheck-focused.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "upstream-candidate.patch": "8e5273ebdb92e77a15e944a9d92278c3abcc80dca0ab6b9827da739bd0487a94",
+  "upstream-cli083.bundle": "272e768ee503d77b6952521102a41c0c2211b8c80469d7ba84f5ce93fd4548d5"
+}
