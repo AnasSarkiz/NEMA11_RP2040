@@ -1,0 +1,402 @@
+{
+  "fitted_count": 89,
+  "layers": {
+    "top": 16,
+    "bottom": 73
+  },
+  "courtyard_count": 89,
+  "courtyard_area_sum_mm2": 765.7932581740786,
+  "flat_usb_pair_mm2": 179.55878664407447,
+  "vertical_usb_each_mm2": 46.55962273044746,
+  "hypothetical_vertical_sum_mm2": 679.3537169908991,
+  "provisional_free_board_area_mm2": 714.6022182822014,
+  "provisional_remaining_area_mm2": 35.24850129130232,
+  "packing_proven": false,
+  "rows": [
+    {
+      "name": "J_PD",
+      "area_mm2": 89.77939332203722
+    },
+    {
+      "name": "U_PD",
+      "area_mm2": 7.150027559937865
+    },
+    {
+      "name": "R_PD_CFG",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_PD",
+      "area_mm2": 3.8372274421016215
+    },
+    {
+      "name": "C_PD",
+      "area_mm2": 3.78006009991642
+    },
+    {
+      "name": "R_PG",
+      "area_mm2": 3.837227442101624
+    },
+    {
+      "name": "D_TVS",
+      "area_mm2": 11.729902060123939
+    },
+    {
+      "name": "D_PD",
+      "area_mm2": 11.22007417985855
+    },
+    {
+      "name": "D_DATA",
+      "area_mm2": 11.220074179858546
+    },
+    {
+      "name": "U_BUCK",
+      "area_mm2": 13.599262121219418
+    },
+    {
+      "name": "L_BUCK",
+      "area_mm2": 22.090398559216855
+    },
+    {
+      "name": "C_BOOTSTRAP",
+      "area_mm2": 1.913847600923809
+    },
+    {
+      "name": "C_BUCK_IN",
+      "area_mm2": 11.51907584384549
+    },
+    {
+      "name": "C_BUCK_OUT1",
+      "area_mm2": 7.2335405800080785
+    },
+    {
+      "name": "C_BUCK_OUT2",
+      "area_mm2": 7.233540580008078
+    },
+    {
+      "name": "J_DATA",
+      "area_mm2": 89.77939332203724
+    },
+    {
+      "name": "R_CC1",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_CC2",
+      "area_mm2": 2.008549325160015
+    },
+    {
+      "name": "U_ESD",
+      "area_mm2": 13.158654152844974
+    },
+    {
+      "name": "R_DP",
+      "area_mm2": 2.0085493251600175
+    },
+    {
+      "name": "R_DM",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_USB_SENSE_H",
+      "area_mm2": 2.008549325160018
+    },
+    {
+      "name": "R_USB_SENSE_L",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "U_FLASH",
+      "area_mm2": 10.407370094510433
+    },
+    {
+      "name": "C_FLASH",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "R_FLASH_CS",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_BOOT",
+      "area_mm2": 2.008549325160015
+    },
+    {
+      "name": "C_ESD",
+      "area_mm2": 1.9138476009238143
+    },
+    {
+      "name": "U_MCU",
+      "area_mm2": 67.24016398397134
+    },
+    {
+      "name": "Y_MCU",
+      "area_mm2": 13.940574042845093
+    },
+    {
+      "name": "R_XOUT",
+      "area_mm2": 2.0085493251600113
+    },
+    {
+      "name": "C_XIN",
+      "area_mm2": 1.9138476009238157
+    },
+    {
+      "name": "C_XOUT",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "C_IO1",
+      "area_mm2": 1.9138476009238141
+    },
+    {
+      "name": "C_IO10",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "C_IO22",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "C_IO33",
+      "area_mm2": 1.913847600923809
+    },
+    {
+      "name": "C_IO42",
+      "area_mm2": 1.9138476009238166
+    },
+    {
+      "name": "C_IO49",
+      "area_mm2": 1.913847600923814
+    },
+    {
+      "name": "C_ADC",
+      "area_mm2": 1.9138476009238135
+    },
+    {
+      "name": "C_USB",
+      "area_mm2": 1.9138476009238135
+    },
+    {
+      "name": "C_VREG_IN",
+      "area_mm2": 1.9138476009238135
+    },
+    {
+      "name": "C_VREG_OUT",
+      "area_mm2": 1.9138476009238135
+    },
+    {
+      "name": "C_DV23",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "C_DV50",
+      "area_mm2": 1.9138476009238126
+    },
+    {
+      "name": "R_RUN",
+      "area_mm2": 2.0085493251600166
+    },
+    {
+      "name": "U_DRV",
+      "area_mm2": 40.95984896013923
+    },
+    {
+      "name": "J_MOTOR",
+      "area_mm2": 54.07979928018449
+    },
+    {
+      "name": "R_SA",
+      "area_mm2": 6.818298114217945
+    },
+    {
+      "name": "R_SB",
+      "area_mm2": 6.818298114217944
+    },
+    {
+      "name": "C_CP",
+      "area_mm2": 1.9138476009238141
+    },
+    {
+      "name": "C_VCP",
+      "area_mm2": 1.9138476009238157
+    },
+    {
+      "name": "C_VREG",
+      "area_mm2": 3.780060099916426
+    },
+    {
+      "name": "C_VM",
+      "area_mm2": 1.9138476009238135
+    },
+    {
+      "name": "C_BULK",
+      "area_mm2": 66.31474584908533
+    },
+    {
+      "name": "C_DRV_LOGIC",
+      "area_mm2": 1.9138476009238121
+    },
+    {
+      "name": "R_REF_H",
+      "area_mm2": 3.8372274421016206
+    },
+    {
+      "name": "R_REF_L",
+      "area_mm2": 2.008549325160022
+    },
+    {
+      "name": "C_REF",
+      "area_mm2": 3.780060099916419
+    },
+    {
+      "name": "R_ENABLE",
+      "area_mm2": 2.0085493251600193
+    },
+    {
+      "name": "R_SLEEP",
+      "area_mm2": 2.008549325160017
+    },
+    {
+      "name": "R_VM_H",
+      "area_mm2": 2.0085493251600166
+    },
+    {
+      "name": "R_VM_L",
+      "area_mm2": 2.0085493251600166
+    },
+    {
+      "name": "C_VM_SENSE",
+      "area_mm2": 1.9138476009238161
+    },
+    {
+      "name": "U_TEMP",
+      "area_mm2": 5.4599295200947715
+    },
+    {
+      "name": "C_TEMP",
+      "area_mm2": 1.9138476009238232
+    },
+    {
+      "name": "R_TEMP_SDA",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_TEMP_SCL",
+      "area_mm2": 2.0085493251600113
+    },
+    {
+      "name": "D_STATUS",
+      "area_mm2": 6.476375011222949
+    },
+    {
+      "name": "R_STATUS_R",
+      "area_mm2": 2.0085493251600326
+    },
+    {
+      "name": "Q_STATUS_R",
+      "area_mm2": 1.9201068811458413
+    },
+    {
+      "name": "R_STATUS_G",
+      "area_mm2": 2.0085493251600113
+    },
+    {
+      "name": "Q_STATUS_G",
+      "area_mm2": 1.9201068811458413
+    },
+    {
+      "name": "R_STATUS_B",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "Q_STATUS_B",
+      "area_mm2": 1.9201068811458413
+    },
+    {
+      "name": "BZ1",
+      "area_mm2": 39.167528736989226
+    },
+    {
+      "name": "Q_BUZZER",
+      "area_mm2": 1.9201068811458377
+    },
+    {
+      "name": "R_BUZZER_GATE",
+      "area_mm2": 2.008549325160022
+    },
+    {
+      "name": "R_BUZZER_PD",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "D_BUZZER",
+      "area_mm2": 10.153095608592885
+    },
+    {
+      "name": "C_BUZZER",
+      "area_mm2": 3.7800600999164207
+    },
+    {
+      "name": "R_PWR_LED",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "D_PWR",
+      "area_mm2": 3.656569570408493
+    },
+    {
+      "name": "R_STATUS_R_GATE",
+      "area_mm2": 2.0085493251600255
+    },
+    {
+      "name": "R_STATUS_R_PD",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_STATUS_G_GATE",
+      "area_mm2": 2.008549325160022
+    },
+    {
+      "name": "R_STATUS_G_PD",
+      "area_mm2": 2.0085493251600184
+    },
+    {
+      "name": "R_STATUS_B_GATE",
+      "area_mm2": 2.008549325160004
+    },
+    {
+      "name": "R_STATUS_B_PD",
+      "area_mm2": 2.0085493251600184
+    }
+  ],
+  "usb_holes": [
+    {
+      "type": "pcb_hole",
+      "pcb_hole_id": "pcb_hole_0",
+      "pcb_component_id": "pcb_component_0",
+      "hole_shape": "circle",
+      "hole_diameter": 0.7099808,
+      "x": -4.1999916,
+      "y": 0.000127,
+      "is_covered_with_solder_mask": false,
+      "subcircuit_id": "subcircuit_source_group_0"
+    },
+    {
+      "type": "pcb_hole",
+      "pcb_hole_id": "pcb_hole_1",
+      "pcb_component_id": "pcb_component_0",
+      "hole_shape": "pill",
+      "hole_width": 1.5099792,
+      "hole_height": 0.7099808,
+      "x": 3.7999924,
+      "y": 2.54e-05,
+      "is_covered_with_solder_mask": false,
+      "subcircuit_id": "subcircuit_source_group_0"
+    }
+  ],
+  "paste_layers": {
+    "top": 20,
+    "bottom": 4
+  }
+}

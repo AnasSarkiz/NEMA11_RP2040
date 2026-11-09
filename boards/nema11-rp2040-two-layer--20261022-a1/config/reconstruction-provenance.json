@@ -108,5 +108,13 @@
   "publication_approved": false,
   "placement_method": "New reconstructed placement optimized against fresh native pad, courtyard, rotated through-hole and keepout geometry",
   "new_study_reference": "references/reconstructed-placement-study/",
-  "best_candidate_reference": "references/reconstructed-placement-final/placement.json"
+  "best_candidate_reference": "references/electrical-placement-20261109/integrated.placement.json",
+  "current_anchor_adjustments": {
+    "J_MOTOR": {
+      "axis": "pcbX",
+      "historical_value_mm": 3.9,
+      "current_value_mm": 3.874997,
+      "reason": "Small nominal provisional head-envelope gain; not qualified clearance or changed motor hole axes."
+    }
+  }
 }

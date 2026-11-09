@@ -1,0 +1,12 @@
+{
+  "baseline_git_head": "7da9556d18d4e8b54cc790c58dd25d4b487f34eb",
+  "baseline_native_file": "inputs/current-board-circuit.json",
+  "baseline_native_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "native_usb_file": "dist/usb/circuit.json",
+  "native_usb_sha256": "2bf7fea867dde855b27a54ff81cc266f9fae3059638848dd09f6407adcf54d00",
+  "cli": "0.1.2446",
+  "tscircuit": "0.0.3121",
+  "bun": "1.4.4",
+  "manufacturer_pdf_sha256": "c38c5977f6123b0178fa25853140c16bb2d8c70808f2203f3ab604ce31d18516",
+  "notes": "Freeze contains no node_modules, config, cache or symlinks. Official live PDF response was HTTP403; its response bytes are HTML, not a valid PDF. PCN evidence is a recorded web-tool extraction, not original downloaded PCN bytes."
+}

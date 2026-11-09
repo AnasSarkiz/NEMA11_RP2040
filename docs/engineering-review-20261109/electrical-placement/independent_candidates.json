@@ -1,0 +1,268 @@
+[
+  null,
+  {
+    "name": "C_BOOTSTRAP",
+    "pcbX": 3.9544,
+    "pcbY": 12.9364,
+    "pcbRotation": 180,
+    "layer": "bottom",
+    "score": 4.78076191173898,
+    "distances": [
+      2.3514,
+      2.4294
+    ],
+    "targets": [
+      [
+        1,
+        "U_BUCK",
+        6
+      ],
+      [
+        2,
+        "U_BUCK",
+        5
+      ]
+    ]
+  },
+  {
+    "name": "C_VM",
+    "pcbX": 1.501,
+    "pcbY": 2.8,
+    "pcbRotation": 180,
+    "layer": "top",
+    "score": 10.119329270637444,
+    "distances": [
+      3.0239,
+      2.9655,
+      4.1299
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        22
+      ],
+      [
+        1,
+        "U_DRV",
+        28
+      ],
+      [
+        2,
+        "U_DRV",
+        29
+      ]
+    ]
+  },
+  {
+    "name": "C_CP",
+    "pcbX": -2.25,
+    "pcbY": -1.4499,
+    "pcbRotation": 180,
+    "layer": "top",
+    "score": 3.8360798017666307,
+    "distances": [
+      1.4806,
+      2.3554
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        4
+      ],
+      [
+        2,
+        "U_DRV",
+        5
+      ]
+    ]
+  },
+  {
+    "name": "C_VCP",
+    "pcbX": -0.75,
+    "pcbY": -7.4506,
+    "pcbRotation": 270,
+    "layer": "top",
+    "score": 2.4398467000000004,
+    "distances": [
+      2.4398
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "C_VREG",
+    "pcbX": 3.2487,
+    "pcbY": -7.2,
+    "pcbRotation": 0,
+    "layer": "top",
+    "score": 1.6247842760709008,
+    "distances": [
+      1.6248
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        8
+      ]
+    ]
+  },
+  {
+    "name": "C_DRV_LOGIC",
+    "pcbX": 6.75,
+    "pcbY": -7.201,
+    "pcbRotation": 0,
+    "layer": "top",
+    "score": 2.3758513321342725,
+    "distances": [
+      2.3759
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        15
+      ]
+    ]
+  },
+  {
+    "name": "C_IO33",
+    "pcbX": -12.4915,
+    "pcbY": -6.7459,
+    "pcbRotation": 90,
+    "layer": "bottom",
+    "score": 0.5549565000000012,
+    "distances": [
+      0.555
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        33
+      ]
+    ]
+  },
+  {
+    "name": "C_DV23",
+    "pcbX": -8.4165,
+    "pcbY": -11.1711,
+    "pcbRotation": 90,
+    "layer": "bottom",
+    "score": 1.6549159999999983,
+    "distances": [
+      1.6549
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        23
+      ]
+    ]
+  },
+  {
+    "name": "C_USB",
+    "pcbX": -11.6665,
+    "pcbY": 1.1791,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 3.220673268827051,
+    "distances": [
+      3.2207
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        48
+      ]
+    ]
+  },
+  {
+    "name": "C_IO49",
+    "pcbX": -6.0165,
+    "pcbY": -0.3209,
+    "pcbRotation": 180,
+    "layer": "bottom",
+    "score": 1.34932175615364,
+    "distances": [
+      1.3493
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        49
+      ]
+    ]
+  },
+  {
+    "name": "C_VREG_OUT",
+    "pcbX": -11.3664,
+    "pcbY": 1.1791,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 2.276671703001279,
+    "distances": [
+      2.2767
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        45
+      ]
+    ]
+  },
+  {
+    "name": "R_DP",
+    "pcbX": -11.5666,
+    "pcbY": 1.1791,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 2.82221261124354,
+    "distances": [
+      2.8222
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        47
+      ]
+    ]
+  },
+  null,
+  {
+    "name": "C_ESD",
+    "pcbX": 9.8,
+    "pcbY": 2.6491,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 3.686189,
+    "distances": [
+      0.694,
+      2.9922
+    ],
+    "targets": [
+      [
+        1,
+        "U_ESD",
+        5
+      ],
+      [
+        2,
+        "U_ESD",
+        2
+      ]
+    ]
+  }
+]

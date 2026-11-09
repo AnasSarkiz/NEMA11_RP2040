@@ -1,0 +1,197 @@
+{
+  "passed": false,
+  "manufacturing_approved": false,
+  "results": {
+    "format-check": {
+      "command": [
+        "npm",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "log": "checks/format-check.txt"
+    },
+    "typecheck": {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "log": "checks/typecheck.txt"
+    },
+    "prebuild-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "checks/prebuild-tests.txt"
+    },
+    "native-build": {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 1,
+      "log": "checks/native-build.txt"
+    },
+    "emitted-tests": {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "emitted-tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "checks/emitted-tests.txt"
+    },
+    "source-integrity": {
+      "command": [
+        "python3",
+        "scripts/verify_source.py"
+      ],
+      "exit_code": 0,
+      "log": "checks/source-integrity.txt"
+    },
+    "independent-geometry": {
+      "command": [
+        "python3",
+        "scripts/audit_placement_geometry.py",
+        "--output",
+        "checks/20261108-reconstruction/current-geometry-audit.json"
+      ],
+      "exit_code": 0,
+      "log": "checks/independent-geometry.txt"
+    },
+    "check-netlist": {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "checks/check-netlist.txt"
+    },
+    "check-pin_specification": {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "checks/check-pin_specification.txt"
+    },
+    "check-source": {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "checks/check-source.txt"
+    },
+    "check-schematic-placement": {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "checks/check-schematic-placement.txt"
+    },
+    "check-placement": {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 1,
+      "log": "checks/check-placement.txt"
+    },
+    "strict-netlist": {
+      "command": [
+        "python3",
+        "scripts/check_diagnostic_summary.py",
+        "checks/check-netlist.txt",
+        "--native-exit",
+        "0",
+        "--output",
+        "checks/strict-netlist.json"
+      ],
+      "exit_code": 0,
+      "log": "checks/strict-netlist.txt"
+    },
+    "strict-pin_specification": {
+      "command": [
+        "python3",
+        "scripts/check_diagnostic_summary.py",
+        "checks/check-pin_specification.txt",
+        "--native-exit",
+        "0",
+        "--output",
+        "checks/strict-pin_specification.json"
+      ],
+      "exit_code": 1,
+      "log": "checks/strict-pin_specification.txt"
+    },
+    "strict-source": {
+      "command": [
+        "python3",
+        "scripts/check_diagnostic_summary.py",
+        "checks/check-source.txt",
+        "--native-exit",
+        "0",
+        "--output",
+        "checks/strict-source.json"
+      ],
+      "exit_code": 0,
+      "log": "checks/strict-source.txt"
+    },
+    "strict-schematic": {
+      "command": [
+        "python3",
+        "scripts/check_schematic_findings.py",
+        "checks/check-schematic-placement.txt",
+        "--native-exit",
+        "0",
+        "--output",
+        "checks/strict-schematic.json"
+      ],
+      "exit_code": 1,
+      "log": "checks/strict-schematic.txt"
+    },
+    "export-schematic": {
+      "command": [
+        "npm",
+        "run",
+        "export:schematic-pdf"
+      ],
+      "exit_code": 0,
+      "log": "checks/export-schematic.txt"
+    },
+    "export-pcb-views": {
+      "command": [
+        "node",
+        "scripts/export_pcb_views.mjs"
+      ],
+      "exit_code": 0,
+      "log": "checks/export-pcb-views.txt"
+    }
+  },
+  "dependent_checks_skipped": false
+}

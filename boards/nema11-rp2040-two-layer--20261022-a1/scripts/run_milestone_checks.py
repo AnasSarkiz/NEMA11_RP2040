@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path('dist/index/circuit.json')
 RECEIPT = Path('checks/native-build-status.json')
+STATUS = Path('checks/milestone-status.json')
 
 
 def digest(path):
@@ -50,6 +51,15 @@ def run(name, command):
     return {'command': command, 'exit_code': code, 'log': str(path)}
 
 
+def write_status(phase, results, **extra):
+    """Invalidate prior success before work; interruptions retain partial evidence."""
+    report = {'passed': False, 'manufacturing_approved': False,
+              'incomplete': True, 'phase': phase, 'results': results, **extra}
+    temporary = STATUS.with_suffix('.json.tmp')
+    temporary.write_text(json.dumps(report, indent=2) + '\n')
+    temporary.replace(STATUS)
+
+
 def main():
     import os
     os.chdir(ROOT)
@@ -61,13 +71,17 @@ def main():
         fcntl.flock(lock, fcntl.LOCK_EX)
         results = {}
         def check(name, command):
+            write_status('running:' + name, results)
             results[name] = run(name, command)
+            write_status('finished:' + name, results)
             return results[name]['exit_code'] == 0
         # Invalidate old evidence even if a prerequisite fails.
         RECEIPT.unlink(missing_ok=True)
+        write_status('starting', results)
         for name, command in [('format-check', ['npm', 'run', 'format:check']), ('typecheck', ['npm', 'run', 'typecheck']), ('prebuild-tests', ['python3', '-m', 'unittest', 'discover', '-s', 'tests', '-v'])]:
             if not check(name, command):
-                Path('checks/milestone-status.json').write_text(json.dumps({'passed': False, 'results': results, 'skipped': 'Build and dependent checks: prerequisite failed'}, indent=2) + '\n')
+                write_status('prerequisite_failed', results, incomplete=False,
+                             skipped='Build and dependent checks: prerequisite failed')
                 return 1
         before = fingerprint()
         shutil.rmtree('dist/index', ignore_errors=False) if Path('dist/index').exists() else None
@@ -86,20 +100,23 @@ def main():
         if receipt['fresh_output']:
             check('emitted-tests', ['python3', '-m', 'unittest', 'discover', '-s', 'emitted-tests', '-v'])
             check('source-integrity', ['python3', 'scripts/verify_source.py'])
-            check('independent-geometry', ['python3', 'scripts/audit_placement_geometry.py', '--output', 'checks/20261108-reconstruction/current-geometry-audit.json'])
+            check('independent-geometry', ['python3', 'scripts/audit_placement_geometry.py', '--baseline', 'references/electrical-placement-20261109/anchor-reference.json', '--output', 'checks/20261108-reconstruction/current-geometry-audit.json'])
             # Independent read-only native diagnostics use unique logs and no dist output.
+            write_status('running:native-diagnostics', results)
             with ThreadPoolExecutor(max_workers=3) as pool:
                 pending = {kind: pool.submit(run, 'check-' + kind, ['node_modules/.bin/tsci', 'check', kind, 'index.circuit.tsx'])
                            for kind in ('netlist', 'pin_specification', 'source', 'schematic-placement', 'placement')}
                 for kind, future in pending.items():
                     results['check-' + kind] = future.result()
+                    write_status('running:native-diagnostics', results)
             for kind in ('netlist', 'pin_specification', 'source'):
                 check('strict-' + kind, ['python3', 'scripts/check_diagnostic_summary.py', 'checks/check-' + kind + '.txt', '--native-exit', str(results['check-' + kind]['exit_code']), '--output', 'checks/strict-' + kind + '.json'])
             check('strict-schematic', ['python3', 'scripts/check_schematic_findings.py', 'checks/check-schematic-placement.txt', '--native-exit', str(results['check-schematic-placement']['exit_code']), '--output', 'checks/strict-schematic.json'])
             check('export-schematic', ['npm', 'run', 'export:schematic-pdf'])
             check('export-pcb-views', ['node', 'scripts/export_pcb_views.mjs'])
         passed = receipt['build_passed'] and fresh_receipt() and all(x['exit_code'] == 0 for x in results.values())
-        Path('checks/milestone-status.json').write_text(json.dumps({'passed': passed, 'manufacturing_approved': False, 'results': results, 'dependent_checks_skipped': not receipt['fresh_output']}, indent=2) + '\n')
+        write_status('complete', results, passed=passed, incomplete=False,
+                     dependent_checks_skipped=not receipt['fresh_output'])
         return 0 if passed else 1
 
 

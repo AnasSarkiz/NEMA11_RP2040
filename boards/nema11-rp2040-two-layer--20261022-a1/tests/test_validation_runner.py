@@ -37,6 +37,32 @@ class SemanticReports(unittest.TestCase):
         self.assertEqual(parser.analyze(text, 0)['reported_issue_count'], 1)
 
 class Freshness(unittest.TestCase):
+    def test_interruption_cannot_leave_old_success_status(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            (root/'checks').mkdir()
+            (root/'index.circuit.tsx').write_text('source')
+            (root/runner.STATUS).write_text('{"passed":true,"incomplete":false}')
+            (root/runner.RECEIPT).write_text('stale')
+            def fake_run(name, command):
+                if name=='native-build':
+                    raise KeyboardInterrupt('simulated interruption, no native tool invoked')
+                return {'command':command,'exit_code':0}
+            import os
+            previous=Path.cwd()
+            try:
+                with patch.object(runner,'ROOT',root),patch.object(runner,'run',side_effect=fake_run),patch.object(runner,'fingerprint',return_value={}):
+                    with self.assertRaises(KeyboardInterrupt):
+                        runner.main()
+            finally:
+                os.chdir(previous)
+            report=json.loads((root/runner.STATUS).read_text())
+            self.assertFalse(report['passed'])
+            self.assertTrue(report['incomplete'])
+            self.assertEqual(report['phase'],'running:native-build')
+            self.assertEqual(len(report['results']),3)
+            self.assertFalse((root/runner.RECEIPT).exists())
+
     def test_inputs_include_every_relevant_category(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

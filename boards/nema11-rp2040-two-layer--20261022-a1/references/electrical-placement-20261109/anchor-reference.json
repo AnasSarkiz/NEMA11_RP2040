@@ -1,0 +1,53 @@
+{
+  "scope": "Reviewed anchor reference for current WIP. This is a placement-regression guard, not physical fit or user-mandated coordinates. Only J_MOTOR X changes from historical reconstruction freeze, 3.9 to 3.874997 mm, to slightly increase nominal provisional head margin. All original board/motor-hole/USB/encoder constraints remain.",
+  "placements": {
+    "J_PD": {
+      "pcbX": 0.0,
+      "pcbY": 8.65,
+      "pcbRotation": 180,
+      "layer": "top"
+    },
+    "J_DATA": {
+      "pcbX": 8.65,
+      "pcbY": 0.0,
+      "pcbRotation": 90,
+      "layer": "top"
+    },
+    "J_MOTOR": {
+      "pcbX": 3.874997,
+      "pcbY": -11.1,
+      "pcbRotation": 180,
+      "layer": "top"
+    },
+    "C_BULK": {
+      "pcbX": -4.9,
+      "pcbY": -9.0,
+      "pcbRotation": 90,
+      "layer": "top"
+    },
+    "U_DRV": {
+      "pcbX": 2.0,
+      "pcbY": -3.2,
+      "pcbRotation": 270,
+      "layer": "top"
+    },
+    "U_ESD": {
+      "pcbX": 9.8,
+      "pcbY": 0.0,
+      "pcbRotation": 0,
+      "layer": "bottom"
+    },
+    "C_ESD": {
+      "pcbX": 7.35,
+      "pcbY": 0.0,
+      "pcbRotation": 270,
+      "layer": "bottom"
+    },
+    "U_ENCODER": {
+      "pcbX": 0.0,
+      "pcbY": 0.0,
+      "pcbRotation": 0,
+      "layer": "bottom"
+    }
+  }
+}

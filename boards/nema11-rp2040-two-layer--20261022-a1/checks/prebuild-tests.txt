@@ -12,8 +12,10 @@ test_rotated_smt_general_angle (test_placement_geometry.PlacementGeometryTests.t
 test_rotated_smt_quarter_turns (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_quarter_turns) ... ok
 test_slot_outer_annulus_and_rotation (test_placement_geometry.PlacementGeometryTests.test_slot_outer_annulus_and_rotation) ... ok
 test_unknown_shapes_fail_closed (test_placement_geometry.PlacementGeometryTests.test_unknown_shapes_fail_closed) ... ok
+test_only_reviewed_motor_header_x_changed (test_reviewed_anchor_reference.ReviewedAnchorReference.test_only_reviewed_motor_header_x_changed) ... ok
 test_build_failure_cannot_be_masked_by_fresh_json (test_validation_runner.Freshness.test_build_failure_cannot_be_masked_by_fresh_json) ... ok
 test_inputs_include_every_relevant_category (test_validation_runner.Freshness.test_inputs_include_every_relevant_category) ... ok
+test_interruption_cannot_leave_old_success_status (test_validation_runner.Freshness.test_interruption_cannot_leave_old_success_status) ... ok
 test_no_fresh_output_skips_dependent_checks (test_validation_runner.Freshness.test_no_fresh_output_skips_dependent_checks) ... ok
 test_receipt_detects_changed_input_output_and_missing_output (test_validation_runner.Freshness.test_receipt_detects_changed_input_output_and_missing_output) ... ok
 test_all_sheets_counted (test_validation_runner.SemanticReports.test_all_sheets_counted) ... ok
@@ -23,6 +25,6 @@ test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_no
 test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.136s
+Ran 25 tests in 0.197s
 
 OK

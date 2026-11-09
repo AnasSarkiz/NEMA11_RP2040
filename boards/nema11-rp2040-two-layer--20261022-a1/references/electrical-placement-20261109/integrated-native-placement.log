@@ -1,0 +1,208 @@
+placement summary: 3 courtyard collisions, 9 suboptimal orientations
+
+worst issues:
+1. C_IO1 and U_ENCODER courtyard collision by 0.092mm. Suggested move: move C_IO1 0.092mm left.
+2. U_ENCODER and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm left.
+3. U_MCU and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm right.
+4. R_USB_SENSE_L connections cross the routing path between its pads. Suggested move: rotate R_USB_SENSE_L 180 degrees.
+5. C_IO42 connections cross the routing path between its pads. Suggested move: rotate C_IO42 180 degrees.
+
+likely bad clusters:
+- U_ENCODER cluster: U_ENCODER, C_ENCODER_BULK, C_IO1, U_MCU
+
+board top-layer utilization:
+- occupied: 52.792% (413.89mm^2 of 784mm^2)
+- empty spaces over 5% of board area:
+  - 8.189% (64.205mm^2); bounds=(minX=-14mm, maxX=-8.45mm, minY=-14mm, maxY=-2.432mm)
+  - 8.178% (64.117mm^2); bounds=(minX=5.175mm, maxX=12.441mm, minY=5.175mm, maxY=14mm)
+  - 7.337% (57.522mm^2); bounds=(minX=-14mm, maxX=-5.175mm, minY=7.482mm, maxY=14mm)
+  - 5.544% (43.463mm^2); bounds=(minX=9.075mm, maxX=14mm, minY=-14mm, maxY=-5.175mm)
+
+board-edge status:
+- J_PD: 1.676mm inside top edge
+- U_PD: 4.458mm inside top edge
+- R_PD_CFG: 4.658mm inside top edge
+- R_PD: 0.449mm inside top edge
+- C_PD: 1.86mm inside top edge
+- R_PG: 5.629mm inside top edge
+- D_TVS: 7.315mm inside top edge
+- D_PD: 2.589mm inside left edge
+- D_DATA: 0.875mm inside right edge
+- U_BUCK: 0.614mm inside top edge
+- L_BUCK: 4.314mm inside right edge
+- C_BOOTSTRAP: 0.578mm inside top edge
+- C_BUCK_IN: 0.437mm inside top edge
+- C_BUCK_OUT1: 9.331mm inside right edge
+- C_BUCK_OUT2: 7.45mm inside right edge
+- J_DATA: 1.676mm inside right edge
+- R_CC1: 4.284mm inside right edge
+- R_CC2: 1.884mm inside right edge
+- U_ESD: 2.984mm inside right edge
+- R_DP: 9.408mm inside left edge
+- R_DM: 5.094mm inside left edge
+- R_USB_SENSE_H: 9.336mm inside right edge
+- R_USB_SENSE_L: 7.752mm inside right edge
+- U_FLASH: 0.389mm inside top edge
+- C_FLASH: 4.562mm inside top edge
+- R_FLASH_CS: 4.738mm inside top edge
+- R_BOOT: 3.296mm inside top edge
+- TP_BOOT: 8.459mm inside right edge
+- TP_BOOT_GND: 8.459mm inside right edge
+- C_ESD: 6.38mm inside right edge
+- U_MCU: 2.333mm inside left edge
+- Y_MCU: 1.076mm inside bottom edge
+- R_XOUT: 3.242mm inside bottom edge
+- C_XIN: 4.737mm inside bottom edge
+- C_XOUT: 2.23mm inside bottom edge
+- C_IO1: 10.602mm inside left edge
+- C_IO10: 8.212mm inside bottom edge
+- C_IO22: 4.136mm inside bottom edge
+- C_IO33: 1.238mm inside left edge
+- C_IO42: 1.227mm inside left edge
+- C_IO49: 8.159mm inside left edge
+- C_ADC: 4.018mm inside left edge
+- C_USB: 7.537mm inside left edge
+- C_VREG_IN: 2.142mm inside left edge
+- C_VREG_OUT: 3.737mm inside left edge
+- C_DV23: 4.131mm inside bottom edge
+- C_DV50: 6.169mm inside left edge
+- R_RUN: 7.114mm inside top edge
+- TP_3V3: 4.348mm inside left edge
+- TP_GND: 3.088mm inside left edge
+- TP_SWCLK: 3.886mm inside left edge
+- TP_SWDIO: 5.598mm inside left edge
+- TP_RUN: 7.383mm inside left edge
+- U_DRV: 7.85mm inside bottom edge
+- J_MOTOR: 2.65mm inside bottom edge
+- R_SA: 9.844mm inside right edge
+- R_SB: 11.357mm inside left edge
+- C_CP: 11.859mm inside left edge
+- C_VCP: 10.35mm inside bottom edge
+- C_VREG: 6.35mm inside bottom edge
+- C_VM: 10.101mm inside left edge
+- C_BULK: 0.58mm inside bottom edge
+- C_DRV_LOGIC: 6.529mm inside bottom edge
+- R_REF_H: 5.654mm inside bottom edge
+- R_REF_L: 4.534mm inside bottom edge
+- C_REF: 6.316mm inside right edge
+- R_ENABLE: 7.45mm inside right edge
+- R_SLEEP: 7.924mm inside bottom edge
+- R_VM_H: 7.742mm inside bottom edge
+- R_VM_L: 8.52mm inside right edge
+- C_VM_SENSE: 6.716mm inside bottom edge
+- U_TEMP: 5.727mm inside bottom edge
+- C_TEMP: 1.826mm inside bottom edge
+- R_TEMP_SDA: 8.048mm inside right edge
+- R_TEMP_SCL: 5.49mm inside right edge
+- D_STATUS: 1.587mm inside left edge
+- R_STATUS_R: 0.446mm inside left edge
+- Q_STATUS_R: 0.846mm inside left edge
+- R_STATUS_G: 3.447mm inside left edge
+- Q_STATUS_G: 6.488mm inside left edge
+- R_STATUS_B: 4.221mm inside right edge
+- Q_STATUS_B: 4.39mm inside bottom edge
+- BZ1: 0.537mm inside left edge
+- Q_BUZZER: 5.885mm inside left edge
+- R_BUZZER_GATE: 1.775mm inside left edge
+- R_BUZZER_PD: 4.522mm inside left edge
+- D_BUZZER: 7.722mm inside left edge
+- C_BUZZER: 4.807mm inside left edge
+- R_PWR_LED: 1.344mm inside right edge
+- D_PWR: 0.503mm inside right edge
+- R_STATUS_R_GATE: 0.536mm inside left edge
+- R_STATUS_R_PD: 1.516mm inside left edge
+- R_STATUS_G_GATE: 4.811mm inside left edge
+- R_STATUS_G_PD: 6.226mm inside top edge
+- R_STATUS_B_GATE: 4.239mm inside right edge
+- R_STATUS_B_PD: 2.423mm inside bottom edge
+- U_ENCODER: 10.32mm inside bottom edge
+- C_ENCODER: 10.479mm inside left edge
+- C_ENCODER_BULK: 10.522mm inside left edge
+
+flagged components:
+- R_USB_SENSE_L
+  source placement: placement_mode=none
+  resolved placement: center=(5.533mm, -0.758mm) on bottom; bounds=(minX=4.817mm, maxX=6.248mm, minY=-1.029mm, maxY=-0.488mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.752mm inside right edge
+  issues:
+  - R_USB_SENSE_L connections cross the routing path between its pads. Suggested move: rotate R_USB_SENSE_L 180 degrees.
+- U_MCU
+  source placement: placement_mode=none
+  resolved placement: center=(-7.817mm, -4.942mm) on bottom; bounds=(minX=-11.667mm, maxX=-3.967mm, minY=-8.792mm, maxY=-1.092mm); size=(width=7.7mm, height=7.7mm); anchor_alignment="center"
+  board edge status: 2.333mm inside left edge
+  issues:
+  - U_MCU and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm right.
+- C_IO1
+  source placement: placement_mode=none
+  resolved placement: center=(-3.128mm, -2.299mm) on bottom; bounds=(minX=-3.398mm, maxX=-2.858mm, minY=-2.969mm, maxY=-1.629mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 10.602mm inside left edge
+  issues:
+  - C_IO1 and U_ENCODER courtyard collision by 0.092mm. Suggested move: move C_IO1 0.092mm left.
+- C_IO42
+  source placement: placement_mode=none
+  resolved placement: center=(-12.503mm, -1.449mm) on bottom; bounds=(minX=-12.773mm, maxX=-12.233mm, minY=-2.119mm, maxY=-0.778mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 1.227mm inside left edge
+  issues:
+  - C_IO42 connections cross the routing path between its pads. Suggested move: rotate C_IO42 180 degrees.
+- R_RUN
+  source placement: placement_mode=none
+  resolved placement: center=(-2.42mm, 6.616mm) on bottom; bounds=(minX=-3.135mm, maxX=-1.704mm, minY=6.346mm, maxY=6.886mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 7.114mm inside top edge
+  issues:
+  - R_RUN connections cross the routing path between its pads. Suggested move: rotate R_RUN 180 degrees.
+- C_VM_SENSE
+  source placement: placement_mode=none
+  resolved placement: center=(6.275mm, -6.614mm) on bottom; bounds=(minX=6.005mm, maxX=6.545mm, minY=-7.284mm, maxY=-5.944mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 6.716mm inside bottom edge
+  issues:
+  - C_VM_SENSE connections cross the routing path between its pads. Suggested move: rotate C_VM_SENSE 180 degrees.
+- C_TEMP
+  source placement: placement_mode=none
+  resolved placement: center=(4.418mm, -11.904mm) on bottom; bounds=(minX=3.748mm, maxX=5.089mm, minY=-12.174mm, maxY=-11.634mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 1.826mm inside bottom edge
+  issues:
+  - C_TEMP connections cross the routing path between its pads. Suggested move: rotate C_TEMP 180 degrees.
+- Q_STATUS_G
+  source placement: placement_mode=none
+  resolved placement: center=(-7.162mm, 4.736mm) on bottom; bounds=(minX=-7.512mm, maxX=-6.812mm, minY=4.186mm, maxY=5.286mm); size=(width=0.7mm, height=1.1mm); anchor_alignment="center"
+  board edge status: 6.488mm inside left edge
+  issues:
+  - Q_STATUS_G connections favor the opposite orientation. Suggested move: rotate Q_STATUS_G 180 degrees.
+- R_STATUS_R_GATE
+  source placement: placement_mode=none
+  resolved placement: center=(-13.194mm, 4.934mm) on bottom; bounds=(minX=-13.464mm, maxX=-12.924mm, minY=4.218mm, maxY=5.649mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 0.536mm inside left edge
+  issues:
+  - R_STATUS_R_GATE connections cross the routing path between its pads. Suggested move: rotate R_STATUS_R_GATE 180 degrees.
+- R_STATUS_G_GATE
+  source placement: placement_mode=none
+  resolved placement: center=(-8.919mm, 3.497mm) on bottom; bounds=(minX=-9.189mm, maxX=-8.649mm, minY=2.781mm, maxY=4.213mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 4.811mm inside left edge
+  issues:
+  - R_STATUS_G_GATE connections cross the routing path between its pads. Suggested move: rotate R_STATUS_G_GATE 180 degrees.
+- R_STATUS_G_PD
+  source placement: placement_mode=none
+  resolved placement: center=(-6.007mm, 7.058mm) on bottom; bounds=(minX=-6.277mm, maxX=-5.737mm, minY=6.342mm, maxY=7.774mm); size=(width=0.54mm, height=1.431mm); anchor_alignment="center"
+  board edge status: 6.226mm inside top edge
+  issues:
+  - R_STATUS_G_PD connections cross the routing path between its pads. Suggested move: rotate R_STATUS_G_PD 180 degrees.
+- U_ENCODER
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on bottom; bounds=(minX=-2.189mm, maxX=2.189mm, minY=-3.68mm, maxY=3.68mm); size=(width=4.378mm, height=7.36mm); anchor_alignment="center"
+  board edge status: 10.32mm inside bottom edge
+  issues:
+  - C_IO1 and U_ENCODER courtyard collision by 0.092mm. Suggested move: move C_IO1 0.092mm left.
+  - U_ENCODER and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm left.
+- C_ENCODER_BULK
+  source placement: placement_mode=none
+  resolved placement: center=(-3.208mm, -0.377mm) on bottom; bounds=(minX=-3.478mm, maxX=-2.938mm, minY=-1.047mm, maxY=0.293mm); size=(width=0.54mm, height=1.34mm); anchor_alignment="center"
+  board edge status: 10.522mm inside left edge
+  issues:
+  - U_ENCODER and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm left.
+  - U_MCU and C_ENCODER_BULK courtyard collision by 0.012mm. Suggested move: move C_ENCODER_BULK 0.012mm right.
+
+placement drc:
+Errors: 2
+Warnings: 0
+- pcb_component_outside_board_error: Component J_PD extends outside board boundaries by 0.25mm. Try moving it 0.25mm down to fit within the board edge.
+- pcb_component_outside_board_error: Component J_DATA extends outside board boundaries by 0.25mm. Try moving it 0.25mm left to fit within the board edge.

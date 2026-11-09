@@ -1,0 +1,8 @@
+{'name': 'C_VM', 'pcbX': 1.501, 'pcbY': 0.8, 'pcbRotation': 180, 'layer': 'top', 'score': 4.846549244415609, 'distances': [1.4228, 1.2939, 2.1299], 'targets': [(1, 'U_DRV', 22), (1, 'U_DRV', 28), (2, 'U_DRV', 29)]}
+{'name': 'R_SA', 'pcbX': 3.5006, 'pcbY': 2.05, 'pcbRotation': 90, 'layer': 'top', 'score': 4.8173468999999995, 'distances': [0.7337, 4.0836], 'targets': [(1, 'U_DRV', 23), (2, 'U_DRV', 29)]}
+{'name': 'R_SB', 'pcbX': -1.5009, 'pcbY': 1.05, 'pcbRotation': 180, 'layer': 'top', 'score': 4.0510597597178055, 'distances': [1.002, 3.0491], 'targets': [(1, 'U_DRV', 27), (2, 'U_DRV', 29)]}
+{'name': 'C_CP', 'pcbX': -2.0, 'pcbY': -3.1999, 'pcbRotation': 270, 'layer': 'top', 'score': 1.560587766851794, 'distances': [0.7806, 0.78], 'targets': [(1, 'U_DRV', 4), (2, 'U_DRV', 5)]}
+{'name': 'C_VCP', 'pcbX': -2.0, 'pcbY': -1.2006, 'pcbRotation': 90, 'layer': 'top', 'score': 5.887288940444254, 'distances': [2.3247, 3.5626], 'targets': [(1, 'U_DRV', 6), (2, 'C_VM', 1)]}
+{'name': 'C_VREG', 'pcbX': 0.7487, 'pcbY': -7.2, 'pcbRotation': 0, 'layer': 'top', 'score': 2.5501379, 'distances': [0.6, 1.9501], 'targets': [(1, 'U_DRV', 8), (2, 'U_DRV', 29)]}
+{'name': 'C_DRV_LOGIC', 'pcbX': 6.25, 'pcbY': -5.951, 'pcbRotation': 0, 'layer': 'top', 'score': 3.8143539078312214, 'distances': [1.0499, 2.7644], 'targets': [(1, 'U_DRV', 15), (2, 'U_DRV', 18)]}
+{'name': 'C_REF', 'pcbX': 3.75, 'pcbY': -7.2003, 'pcbRotation': 180, 'layer': 'top', 'score': 6.3728469583555505, 'distances': [2.91, 3.4628], 'targets': [(1, 'U_DRV', 17), (2, 'U_DRV', 18)]}

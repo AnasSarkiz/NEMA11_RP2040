@@ -8,7 +8,9 @@ after an execution-workspace reset. Exact placement and generated outputs from
 those commits are not available. Historical test results do not validate this
 reconstruction. The existing board path and package identity are retained.
 
-The latest fresh main-project result is in [FINAL-CHECKPOINT.md](FINAL-CHECKPOINT.md).
+The completed main-project result at `7da9556` is in [FINAL-CHECKPOINT.md](FINAL-CHECKPOINT.md).
+For subsequent work and the current incomplete native verification, see
+[the engineering review](../engineering-review-20261109/README.md).
 The recipe and historical constraints below are retained for provenance.
 
 ## Scope and gates

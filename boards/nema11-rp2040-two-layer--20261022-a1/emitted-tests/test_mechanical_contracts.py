@@ -38,7 +38,8 @@ class MechanicalContract(unittest.TestCase):
 
     def test_edge_anchors_and_no_offboard_exemptions(self):
         anchors = {'J_PD': (0, 8.65, 180), 'J_DATA': (8.65, 0, 90),
-                   'J_MOTOR': (3.9, -11.1, 180), 'C_BULK': (-4.9, -9, 90),
+                   # Reviewed placement-only adjustment; motor hole axes unchanged.
+                   'J_MOTOR': (3.874997, -11.1, 180), 'C_BULK': (-4.9, -9, 90),
                    'U_DRV': (2, -3.2, 270)}
         for name, (x, y, angle) in anchors.items():
             pose = self.placements[self.components[name]['source_component_id']]

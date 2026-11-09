@@ -18,3 +18,8 @@ docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.txt -text -whitesp
 docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.bundle binary
 docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.gz binary
 docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.tgz binary
+
+# Preserve frozen engineering evidence and portable archives exactly.
+docs/engineering-review-20261109/**/*.txt -text -whitespace
+docs/engineering-review-20261109/**/*.log -text -whitespace
+docs/engineering-review-20261109/*.tar.gz binary

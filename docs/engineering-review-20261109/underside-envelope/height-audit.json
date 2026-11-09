@@ -1,0 +1,3039 @@
+{
+  "scope": "Nominal imported OBJ mesh envelope only; not manufacturer maximum dimensions, mating, motor geometry, tolerances, solder or insulation qualification.",
+  "native_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "board_thickness_mm": 1.6,
+  "fitted_models_checked": 89,
+  "models_match_official_world_loader": true,
+  "official_loader": "circuit-json-to-gltf 0.0.164 loadCadComponentMesh, Bun 1.4.4 file URL loading",
+  "max_model_protrusion_below_bottom_mm": 1.8299999999999998,
+  "components": [
+    {
+      "name": "L_BUCK",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C780206"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -2.0,
+          -2.0,
+          -0.02
+        ],
+        "max": [
+          2.0,
+          2.05,
+          1.81
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0.02499999999999991,
+        "z": -0.02
+      },
+      "native_world_z_bounds_mm": [
+        -2.63,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.8299999999999998,
+      "official_loader_difference_mm": 4.440892098500626e-16,
+      "model_path": "imports/SRN4018_4R7M/SRN4018_4R7M.obj",
+      "model_sha256": "108e122d483c901c50656619eb0b126d30b2570239c220269cf2ff7b06bb5103"
+    },
+    {
+      "name": "U_ESD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2687116"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.406359,
+          -1.45,
+          -0.048939
+        ],
+        "max": [
+          1.406359,
+          1.45,
+          1.6
+        ]
+      },
+      "model_origin_mm": {
+        "x": -1.2700000070253736e-05,
+        "y": 1.2700000070253736e-05,
+        "z": -0.048939
+      },
+      "native_world_z_bounds_mm": [
+        -2.448939,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.6489390000000002,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "model_sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45"
+    },
+    {
+      "name": "D_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8598"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.925,
+          -0.85,
+          -0.6
+        ],
+        "max": [
+          1.925,
+          0.85,
+          0.85
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "native_world_z_bounds_mm": [
+        -2.25,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.45,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/B5819W_SL/B5819W_SL.obj",
+      "model_sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344"
+    },
+    {
+      "name": "D_DATA",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C8598"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.925,
+          -0.85,
+          -0.6
+        ],
+        "max": [
+          1.925,
+          0.85,
+          0.85
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "native_world_z_bounds_mm": [
+        -2.25,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.45,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/B5819W_SL/B5819W_SL.obj",
+      "model_sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344"
+    },
+    {
+      "name": "J_MOTOR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C131334"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.95,
+          -3.0,
+          -3.0
+        ],
+        "max": [
+          7.95,
+          1.7,
+          6.0
+        ]
+      },
+      "model_origin_mm": {
+        "x": 2.9999872999999297,
+        "y": -0.5500383000000056,
+        "z": -5.999999999950489e-06
+      },
+      "native_world_z_bounds_mm": [
+        -2.1999940000000002,
+        6.800006
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.3999940000000002,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
+      "model_sha256": "333d51fc2722f28c1a73c3ef4b240453d4ce90bba01e4b2a7b6d8c059fa62d0f"
+    },
+    {
+      "name": "C_BUCK_IN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C13585"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.6,
+          -0.8,
+          -0.65
+        ],
+        "max": [
+          1.6,
+          0.8,
+          0.65
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.65
+      },
+      "native_world_z_bounds_mm": [
+        -2.1,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.3,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "model_sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0"
+    },
+    {
+      "name": "C_BUCK_OUT1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          -0.65
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.65
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "native_world_z_bounds_mm": [
+        -2.1,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.3,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "model_sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1"
+    },
+    {
+      "name": "C_BUCK_OUT2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          -0.65
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.65
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "native_world_z_bounds_mm": [
+        -2.1,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.3,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "model_sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1"
+    },
+    {
+      "name": "D_BUZZER",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C478000"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.84,
+          -0.8,
+          -0.55
+        ],
+        "max": [
+          1.84,
+          0.8,
+          0.67
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.55
+      },
+      "native_world_z_bounds_mm": [
+        -2.0200000000000005,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.2200000000000004,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/PMEG6020ELRX/PMEG6020ELRX.obj",
+      "model_sha256": "d4efac8e5f91e7bb3c860ee095f910ec9311d50abfa025c11df78c7d0d134fb3"
+    },
+    {
+      "name": "D_TVS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19077512"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.8,
+          -0.9,
+          -0.11
+        ],
+        "max": [
+          1.8,
+          0.9,
+          0.9
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0.00010160000010728254,
+        "y": 0,
+        "z": -0.11
+      },
+      "native_world_z_bounds_mm": [
+        -1.81,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 1.01,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/SMF18A/SMF18A.obj",
+      "model_sha256": "da7ea2615c07f6b32365b75ea560ce49a73847950b28adc2758b09e13fab6d3a"
+    },
+    {
+      "name": "U_BUCK",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C780769"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.45,
+          -1.4,
+          -0.62
+        ],
+        "max": [
+          1.45,
+          1.4,
+          0.27
+        ]
+      },
+      "model_origin_mm": {
+        "x": 1.2700000070253736e-05,
+        "y": 0,
+        "z": -0.62
+      },
+      "native_world_z_bounds_mm": [
+        -1.69,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.8899999999999999,
+      "official_loader_difference_mm": 4.440892098500626e-16,
+      "model_path": "imports/AP63203WU_7/AP63203WU_7.obj",
+      "model_sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69"
+    },
+    {
+      "name": "U_MCU",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2040"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -3.51,
+          -3.51,
+          -0.02
+        ],
+        "max": [
+          3.51,
+          3.51,
+          0.85
+        ]
+      },
+      "model_origin_mm": {
+        "x": 1.2699999956566899e-05,
+        "y": -0.0001269999999067295,
+        "z": -0.02
+      },
+      "native_world_z_bounds_mm": [
+        -1.67,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.8699999999999999,
+      "official_loader_difference_mm": 4.440892098500626e-16,
+      "model_path": "imports/RP2040/RP2040.obj",
+      "model_sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e"
+    },
+    {
+      "name": "U_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C46061833"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.0,
+          -1.01,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.01,
+          0.813
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.613,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.813,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CH224Q/CH224Q.obj",
+      "model_sha256": "a67edc88634f47ee485ef4b97c076d2dfce1b8c041e95ee7d48582c12ab85512"
+    },
+    {
+      "name": "C_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "native_world_z_bounds_mm": [
+        -1.6,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.8,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+      "model_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "name": "C_BUZZER",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "native_world_z_bounds_mm": [
+        -1.6,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.8,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
+      "model_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "name": "Y_MCU",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20625731"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.6,
+          -1.25,
+          0.0
+        ],
+        "max": [
+          1.6,
+          1.25,
+          0.701
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.501,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.7009999999999998,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/ABM8_272_T3/ABM8_272_T3.obj",
+      "model_sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7"
+    },
+    {
+      "name": "U_TEMP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C99269"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          0.8,
+          0.8,
+          0.61
+        ]
+      },
+      "model_origin_mm": {
+        "x": -5.079999999679785e-05,
+        "y": 0.029921200000003978,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.4100000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.6100000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/TMP102AIDRLR/TMP102AIDRLR.obj",
+      "model_sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59"
+    },
+    {
+      "name": "C_BOOTSTRAP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_FLASH",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_ESD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_XIN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_XOUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO10",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO22",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO33",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO42",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_IO49",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_ADC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_USB",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_VREG_IN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C52923"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_VREG_OUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C52923"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_DV23",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_DV50",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_VM_SENSE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15195"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_TEMP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        -1.3,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.5,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "U_FLASH",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2986331"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.5,
+          -1.01,
+          -0.02
+        ],
+        "max": [
+          1.5,
+          1.0,
+          0.45
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -0.005107950000000305,
+        "z": -0.02
+      },
+      "native_world_z_bounds_mm": [
+        -1.27,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.47,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "model_sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed"
+    },
+    {
+      "name": "R_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21189"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "model_origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.25,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.44999999999999996,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
+      "model_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    {
+      "name": "R_PG",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25804"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "model_origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.25,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.44999999999999996,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+      "model_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    {
+      "name": "R_REF_H",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C4184"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "model_origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.25,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.44999999999999996,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+      "model_sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    {
+      "name": "Q_STATUS_R",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C154728"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.21,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.4099999999999999,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "model_sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2"
+    },
+    {
+      "name": "Q_STATUS_G",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C154728"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.21,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.4099999999999999,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "model_sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2"
+    },
+    {
+      "name": "Q_STATUS_B",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C154728"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.21,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.4099999999999999,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "model_sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2"
+    },
+    {
+      "name": "Q_BUZZER",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C154728"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        -1.21,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.4099999999999999,
+      "official_loader_difference_mm": 2.220446049250313e-16,
+      "model_path": "imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "model_sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2"
+    },
+    {
+      "name": "R_PD_CFG",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25796"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_CC1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25905"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_CC2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25905"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_DP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_DM",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_USB_SENSE_H",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_USB_SENSE_L",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_FLASH_CS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_BOOT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_XOUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_RUN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_REF_L",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_ENABLE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_SLEEP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_VM_H",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25741"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_VM_L",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_TEMP_SDA",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_TEMP_SCL",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_R",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_G",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_B",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_BUZZER_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_BUZZER_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_PWR_LED",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25104"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 1.1102230246251565e-16,
+      "model_path": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_R_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_R_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_G_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_G_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_B_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "R_STATUS_B_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "layer": "bottom",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        -1.1600000000000001,
+        -0.8
+      ],
+      "protrusion_below_pcb_bottom_mm": 0.3600000000000001,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "model_sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "name": "J_PD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C165948"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -4.47,
+          -5.3,
+          -0.85
+        ],
+        "max": [
+          4.47,
+          2.6,
+          3.251
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "native_world_z_bounds_mm": [
+        -0.050010999999999806,
+        4.050989
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "model_sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320"
+    },
+    {
+      "name": "J_DATA",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C165948"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -4.47,
+          -5.3,
+          -0.85
+        ],
+        "max": [
+          4.47,
+          2.6,
+          3.251
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "native_world_z_bounds_mm": [
+        -0.050010999999999806,
+        4.050989
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "model_sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320"
+    },
+    {
+      "name": "U_DRV",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C38437"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -2.501,
+          -2.501,
+          -0.05
+        ],
+        "max": [
+          2.501,
+          2.501,
+          0.58
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.05
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.4300000000000002
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/A4988SETTR_T/A4988SETTR_T.obj",
+      "model_sha256": "01eb47f12909a50a9f70825ab23b31c6be4b33ffe26bd7c8697f94077b87ebd9"
+    },
+    {
+      "name": "R_SA",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C7434086"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.61
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 1.2699999842880061e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.4100000000000001
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "model_sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84"
+    },
+    {
+      "name": "R_SB",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C7434086"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.61
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 1.2699999842880061e-05,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.4100000000000001
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "model_sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84"
+    },
+    {
+      "name": "C_CP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.3
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_VCP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.3
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_VREG",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C21120"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.6
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
+      "model_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "name": "C_VM",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C960916"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.3
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_BULK",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C72522"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -3.9,
+          -3.3,
+          -0.05
+        ],
+        "max": [
+          3.9,
+          3.3,
+          7.7
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.05
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        8.55
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/RVT1V470M0605/RVT1V470M0605.obj",
+      "model_sha256": "c2f7aa7cd71a979dfeda7f8834d57e7bc89a1a551214fb36539b6e2a07d00d5f"
+    },
+    {
+      "name": "C_DRV_LOGIC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.3
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "model_sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "name": "C_REF",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1589"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.6
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
+      "model_sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "name": "D_STATUS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C458749"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.8,
+          -0.11
+        ],
+        "max": [
+          0.8,
+          0.8,
+          0.25
+        ]
+      },
+      "model_origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.11
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.1600000000000001
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/LTST_C19HE1WT/LTST_C19HE1WT.obj",
+      "model_sha256": "91d2ed9dbc575337fd7846c7fffc5d6380171764896dfc49ed433cf571c81d1b"
+    },
+    {
+      "name": "BZ1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C94598"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -2.632913,
+          -2.539604,
+          -0.0
+        ],
+        "max": [
+          2.632913,
+          2.660396,
+          2.01
+        ]
+      },
+      "model_origin_mm": {
+        "x": 7.619999996677507e-05,
+        "y": 0.06042139999991303,
+        "z": 0
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        2.8099999999999996
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/MLT_5020/MLT_5020.obj",
+      "model_sha256": "bb843b8f6a60474d75146187d2a08d8d5c8e1ac4b9e2ff4331cc13beef10191a"
+    },
+    {
+      "name": "D_PWR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C965799"
+        ]
+      },
+      "layer": "top",
+      "raw_obj_bounds_mm": {
+        "min": [
+          -0.81,
+          -0.4,
+          -0.01
+        ],
+        "max": [
+          0.81,
+          0.4,
+          0.6
+        ]
+      },
+      "model_origin_mm": {
+        "x": -1.2700000070253736e-05,
+        "y": 5.079999993995443e-05,
+        "z": -0.01
+      },
+      "native_world_z_bounds_mm": [
+        0.8,
+        1.4100000000000001
+      ],
+      "protrusion_below_pcb_bottom_mm": 0,
+      "official_loader_difference_mm": 0.0,
+      "model_path": "imports/XL_1608SURC_06/XL_1608SURC_06.obj",
+      "model_sha256": "48b853b32050e3b0fe52d090b0c82f45539d9917a32d294915d0ef32bb8fbbee"
+    }
+  ],
+  "physical_fit_approved": false,
+  "manufacturing_approved": false
+}

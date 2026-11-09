@@ -1,0 +1,8 @@
+test_bottom_origin_and_height (test_height.HeightTests.test_bottom_origin_and_height) ... ok
+test_top_through_hole_tail (test_height.HeightTests.test_top_through_hole_tail) ... ok
+test_unsupported_transform_rejected (test_height.HeightTests.test_unsupported_transform_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "C_VREG",
+    "pcbX": 0.7487,
+    "pcbY": -7.2,
+    "pcbRotation": 0,
+    "layer": "top",
+    "score": 2.5501379,
+    "distances": [
+      0.6,
+      1.9501
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        8
+      ],
+      [
+        2,
+        "U_DRV",
+        29
+      ]
+    ]
+  },
+  {
+    "name": "C_DRV_LOGIC",
+    "pcbX": 4.25,
+    "pcbY": -7.201,
+    "pcbRotation": 0,
+    "layer": "top",
+    "score": 5.681100399999998,
+    "distances": [
+      2.09,
+      3.5911
+    ],
+    "targets": [
+      [
+        1,
+        "U_DRV",
+        15
+      ],
+      [
+        2,
+        "U_DRV",
+        18
+      ]
+    ]
+  }
+]

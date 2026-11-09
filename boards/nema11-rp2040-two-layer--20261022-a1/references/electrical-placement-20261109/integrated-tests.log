@@ -1,0 +1,28 @@
+test_known_public_revision_and_bytes (test_baseline_provenance.PublicBaseline.test_known_public_revision_and_bytes) ... ok
+test_clean_output (test_native_summary.NativeSummary.test_clean_output) ... ok
+test_missing_duplicate_exception_or_failure_rejected (test_native_summary.NativeSummary.test_missing_duplicate_exception_or_failure_rejected) ... ok
+test_unresolved_warning_blocks_acceptance (test_native_summary.NativeSummary.test_unresolved_warning_blocks_acceptance) ... ok
+test_empty_records_have_no_errors_or_details (test_nested_findings.NestedFindings.test_empty_records_have_no_errors_or_details) ... ok
+test_nested_pad_failure_is_not_hidden_by_grouping (test_nested_findings.NestedFindings.test_nested_pad_failure_is_not_hidden_by_grouping) ... ok
+test_circle_annulus_uses_outer_diameter (test_placement_geometry.PlacementGeometryTests.test_circle_annulus_uses_outer_diameter) ... ok
+test_nonfinite_and_missing_dimensions_fail (test_placement_geometry.PlacementGeometryTests.test_nonfinite_and_missing_dimensions_fail) ... ok
+test_polygon_is_already_in_world_coordinates (test_placement_geometry.PlacementGeometryTests.test_polygon_is_already_in_world_coordinates) ... ok
+test_preserved_native_evidence_includes_dnp_copper (test_placement_geometry.PlacementGeometryTests.test_preserved_native_evidence_includes_dnp_copper) ... ok
+test_rotated_smt_general_angle (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_general_angle) ... ok
+test_rotated_smt_quarter_turns (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_quarter_turns) ... ok
+test_slot_outer_annulus_and_rotation (test_placement_geometry.PlacementGeometryTests.test_slot_outer_annulus_and_rotation) ... ok
+test_unknown_shapes_fail_closed (test_placement_geometry.PlacementGeometryTests.test_unknown_shapes_fail_closed) ... ok
+test_build_failure_cannot_be_masked_by_fresh_json (test_validation_runner.Freshness.test_build_failure_cannot_be_masked_by_fresh_json) ... ok
+test_inputs_include_every_relevant_category (test_validation_runner.Freshness.test_inputs_include_every_relevant_category) ... ok
+test_no_fresh_output_skips_dependent_checks (test_validation_runner.Freshness.test_no_fresh_output_skips_dependent_checks) ... ok
+test_receipt_detects_changed_input_output_and_missing_output (test_validation_runner.Freshness.test_receipt_detects_changed_input_output_and_missing_output) ... ok
+test_all_sheets_counted (test_validation_runner.SemanticReports.test_all_sheets_counted) ... ok
+test_clean_xml (test_validation_runner.SemanticReports.test_clean_xml) ... ok
+test_findings_fail_despite_zero_exit (test_validation_runner.SemanticReports.test_findings_fail_despite_zero_exit) ... ok
+test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_nonzero_and_exceptions_fail) ... ok
+test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.158s
+
+OK

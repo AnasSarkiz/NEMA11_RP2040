@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "python": "3.12.14",
+  "result": "All seven saved JSON artifacts replay byte-for-byte from frozen inputs. Baseline metadata restored from exact baseline commit, not mutable working tree. Config/circuit/helper SHA bindings enforced.",
+  "replayed_artifacts": {
+    "metrics.json": "73351cde346e69f270b305988e3459e6293705c66a29a14aa4337a413f7a1d8e",
+    "nearest_rail_caps.json": "47af9bc54a09c057636c562d14cb83b3c2bc44b9ea3938cac2e393bb49db80d8",
+    "independent_candidates.json": "3584b9ae99d226e7ccd32ca865086aa4a2bc65f0381d78fada6cb7d381ee5b41",
+    "crystal_cluster_candidates.json": "d822b72122dee0beeef0106bcf7079513b5000ae53521f544688e291ab80d043",
+    "driver_cluster_candidates.json": "5945911cc29747bb639c367508e01b9970b3f8818a222c124765045c98420669",
+    "driver_two_caps_candidates.json": "917dec6439f29b0f53a26f2459ca854ed68f7e549e756299f8ced294bcc52746",
+    "integrated_comparison.json": "4161e7357b2e82025816cda56c1d92249c9b3484fce76b106f0c18247014a3d8"
+  },
+  "algorithms_changed": false,
+  "board_files_edited": false
+}

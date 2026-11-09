@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Y_MCU",
+    "pcbX": -6.7167,
+    "pcbY": -10.9211,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 3.0838572714995354,
+    "distances": [
+      2.4588,
+      0.625
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        20
+      ],
+      [
+        3,
+        "U_MCU",
+        21
+      ]
+    ]
+  },
+  {
+    "name": "R_XOUT",
+    "pcbX": -3.8664,
+    "pcbY": -10.1711,
+    "pcbRotation": 90,
+    "layer": "bottom",
+    "score": 6.4149132848341655,
+    "distances": [
+      3.4345,
+      2.9804
+    ],
+    "targets": [
+      [
+        1,
+        "U_MCU",
+        21
+      ],
+      [
+        2,
+        "Y_MCU",
+        3
+      ]
+    ]
+  },
+  {
+    "name": "C_XIN",
+    "pcbX": -3.6166,
+    "pcbY": -12.5211,
+    "pcbRotation": 180,
+    "layer": "bottom",
+    "score": 0.6299118999999997,
+    "distances": [
+      0.6299
+    ],
+    "targets": [
+      [
+        1,
+        "Y_MCU",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "C_XOUT",
+    "pcbX": -8.3168,
+    "pcbY": -13.3211,
+    "pcbRotation": 0,
+    "layer": "bottom",
+    "score": 2.380010200000001,
+    "distances": [
+      2.38
+    ],
+    "targets": [
+      [
+        1,
+        "Y_MCU",
+        3
+      ]
+    ]
+  },
+  null,
+  null
+]

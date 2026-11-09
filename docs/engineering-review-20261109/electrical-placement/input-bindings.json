@@ -1,0 +1,10 @@
+{
+  "baseline_commit": "7da9556d18d4e8b54cc790c58dd25d4b487f34eb",
+  "files": {
+    "inputs/board/config/connections.json": "c2d7f498884fea1c2df9ab443b6423bc008c18196043753ed739d29f444151e7",
+    "inputs/board/config/placement.json": "12dec2b98b47ac4374a035228cdb47cd60c51bc75e20b78f09053ecaa7a90f83",
+    "inputs/board/dist/index/circuit.json": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+    "inputs/board/scripts/audit_placement_geometry.py": "f722d20a367b33fa372f0c42efe965c7097c0ebea4197c991bdc17c37782ae55",
+    "inputs/integrated.circuit.json": "f590d22ad18feff381969d4dfc4032eb65f51c80465a360de8063ea7953ab538"
+  }
+}

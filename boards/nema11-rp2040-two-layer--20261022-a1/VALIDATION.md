@@ -7,13 +7,39 @@ archived under `references/public-0.6.2-review/` and are historical only.
 
 **Unrouted, untested prototype. Not fabrication-ready.**
 
+## Current verification state
+
+The new electrical-locality pose is present in source, but main native
+verification is incomplete pending approval for external validation traffic.
+There is no current `dist/index/circuit.json` or fresh native receipt. Current
+local TypeScript and 25 prebuild tests pass. Native-dependent checks have not
+completed for these inputs; the current status file records that explicitly.
+
+The isolated candidate was built separately with the unmodified toolchain:
+two existing USB boundary errors and no nested native errors. Three supply-pad
+distances improve, with the other 42 measured pairs unchanged; both reviewed
+driver-cap ground-return bounds also improve. Nominal provisional head margin
+is 0.075 mm, still not a tolerance qualification. J_MOTOR X changed from 3.9
+to 3.874997 mm; the reviewed anchor reference and explicit regression test
+record this placement change without changing motor holes or USB anchors.
+See `references/electrical-placement-20261109/` and the new engineering review.
+
+The runner now writes a fail-closed partial status before each stage so an
+interrupted future run cannot leave an old success summary looking current.
+The interruption regression invokes no native tool or external request.
+
+Everything in the following checkpoint section is historical evidence for
+`7da9556`, not verification of the current main placement. Existing review
+images/PDF also belong to that checkpoint. No production tool patches are
+installed.
+
 | Stage                   | Status      | Current evidence / remaining gate                                                                                        |
 | ----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Requirements            | blocked     | 28 mm, two layers, 0.67 A motor, buzzer retained. Rear bolt/grip/gap and full-assembly fit unverified.                   |
 | Schematic/BOM           | in progress | Source/net contracts pass; untouched compact imports retained. Three schematic findings and 30 pin warnings remain.      |
 | Placement               | blocked     | New placement has two USB courtyard boundary findings; electrical locality, artwork and full mechanical fit remain open. |
 | Routing                 | not started | Disabled until all prior gates pass.                                                                                     |
-| Automated/visual review | in progress | Fresh fail-closed full verification completed; failing gates retained. Native review exports inspected.                  |
+| Automated/visual review | in progress | Current main native verification incomplete; historical evidence retained and clearly distinguished.                     |
 | Fabrication             | not started | No approved CAM, stackup, panel, assembly process or BOM/CPL.                                                            |
 | Physical prototype      | not started | No physical measurements or approved motor fastening.                                                                    |
 | Release/publication     | blocked     | Explicit publication approval pending. No new GitHub or tscircuit revision published.                                    |
@@ -34,7 +60,7 @@ checked against the actual overhanging connector/panel arrangement.
 No findings are waived or suppressed. Imported component definitions and
 native generated circuit JSON must not be patched.
 
-## Verified reconstruction checkpoint, 2026-11-09 UTC
+## Historical verified checkpoint 7da9556, 2026-11-09 UTC
 
 This checkpoint is new work, not recovered old placement. Main native JSON
 SHA-256: `b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51`.

@@ -1,5 +1,5 @@
 {
-  "scope": "New reconstructed two-edge layout. Only two USB courtyard boundary findings remain in the isolated native result; current acceptance must use checks/milestone-status.json and the complete-input build receipt. No hardware fit or manufacturing acceptance.",
+  "scope": "New electrical-locality WIP: C_IO33 and driver regulator/logic capacitors improved; small provisional fastener-margin gain only. Two USB boundary findings and major electrical/mechanical/assembly gates remain. No routing or manufacturing approval.",
   "placement_pass": false,
   "placements": {
     "J_PD": {
@@ -40,91 +40,91 @@
     },
     "U_MCU": {
       "pcbX": -7.8166,
-      "pcbY": -4.996,
+      "pcbY": -4.942002,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_IO1": {
       "pcbX": -3.1283,
-      "pcbY": -2.3533,
+      "pcbY": -2.299302,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "C_IO10": {
       "pcbX": -3.1597,
-      "pcbY": -5.172,
+      "pcbY": -5.118002,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "C_IO22": {
       "pcbX": -8.59,
-      "pcbY": -9.648,
+      "pcbY": -9.594002,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_IO33": {
-      "pcbX": -13.3689,
-      "pcbY": -3.45,
+      "pcbX": -12.4915,
+      "pcbY": -6.691902,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "C_IO42": {
       "pcbX": -12.5027,
-      "pcbY": -1.5025,
+      "pcbY": -1.448502,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "C_IO49": {
       "pcbX": -5.5706,
-      "pcbY": 0.0565,
+      "pcbY": 0.110498,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "C_DV23": {
       "pcbX": -6.7194,
-      "pcbY": -9.6528,
+      "pcbY": -9.598802,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_DV50": {
       "pcbX": -7.5606,
-      "pcbY": 0.1442,
+      "pcbY": 0.198198,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "C_USB": {
       "pcbX": -5.7932,
-      "pcbY": 1.529,
+      "pcbY": 1.582998,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_ADC": {
       "pcbX": -9.7119,
-      "pcbY": 0.0552,
+      "pcbY": 0.109198,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "C_VREG_IN": {
       "pcbX": -11.1877,
-      "pcbY": -0.0274,
+      "pcbY": 0.026598,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_VREG_OUT": {
       "pcbX": -9.9933,
-      "pcbY": 1.9264,
+      "pcbY": 1.980398,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "U_FLASH": {
       "pcbX": -6.2131,
-      "pcbY": 11.7338,
+      "pcbY": 11.787798,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "C_FLASH": {
       "pcbX": -7.082,
-      "pcbY": 8.7138,
+      "pcbY": 8.767798,
       "pcbRotation": 90,
       "layer": "bottom"
     },
@@ -142,25 +142,25 @@
     },
     "Y_MCU": {
       "pcbX": -3.0,
-      "pcbY": -11.1775,
+      "pcbY": -11.123502,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "R_XOUT": {
       "pcbX": -5.2488,
-      "pcbY": -10.0968,
+      "pcbY": -10.042802,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "C_XIN": {
       "pcbX": -0.7491,
-      "pcbY": -8.6464,
+      "pcbY": -8.592402,
       "pcbRotation": 90,
       "layer": "bottom"
     },
     "C_XOUT": {
       "pcbX": -6.3222,
-      "pcbY": -11.1536,
+      "pcbY": -11.099602,
       "pcbRotation": 90,
       "layer": "bottom"
     },
@@ -172,18 +172,18 @@
     },
     "R_DM": {
       "pcbX": -8.6356,
-      "pcbY": 0.1017,
+      "pcbY": 0.155698,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "R_DP": {
       "pcbX": -4.3223,
-      "pcbY": 0.1042,
+      "pcbY": 0.158198,
       "pcbRotation": 270,
       "layer": "bottom"
     },
     "R_CC1": {
-      "pcbX": 9,
+      "pcbX": 9.0,
       "pcbY": -2.8,
       "pcbRotation": 180,
       "layer": "bottom"
@@ -268,7 +268,7 @@
     },
     "D_DATA": {
       "pcbX": 12.65,
-      "pcbY": 0,
+      "pcbY": -0.0,
       "pcbRotation": 90,
       "layer": "bottom"
     },
@@ -291,14 +291,14 @@
       "layer": "top"
     },
     "C_VREG": {
-      "pcbX": 4.4132,
-      "pcbY": -7.3458,
+      "pcbX": 0.7487,
+      "pcbY": -7.2,
       "pcbRotation": 0,
       "layer": "top"
     },
     "C_DRV_LOGIC": {
-      "pcbX": 0.8848,
-      "pcbY": -7.4868,
+      "pcbX": 4.25,
+      "pcbY": -7.201,
       "pcbRotation": 0,
       "layer": "top"
     },
@@ -357,7 +357,7 @@
       "layer": "bottom"
     },
     "J_MOTOR": {
-      "pcbX": 3.9,
+      "pcbX": 3.874997,
       "pcbY": -11.1,
       "pcbRotation": 180,
       "layer": "top"
@@ -484,19 +484,19 @@
     },
     "C_BUZZER": {
       "pcbX": -8.0933,
-      "pcbY": 1.7993,
+      "pcbY": 1.822342,
       "pcbRotation": 0,
       "layer": "bottom"
     },
     "TP_3V3": {
-      "pcbX": -9.1049,
+      "pcbX": -9.10207,
       "pcbY": -7.8365,
       "pcbRotation": 0,
       "layer": "top"
     },
     "TP_GND": {
-      "pcbX": -10.3649,
-      "pcbY": -8.62,
+      "pcbX": -10.36207,
+      "pcbY": -8.59735,
       "pcbRotation": 0,
       "layer": "top"
     },
@@ -567,8 +567,8 @@
       "layer": "bottom"
     },
     "R_STATUS_R_PD": {
-      "pcbX": -12.2123,
-      "pcbY": 8.1401,
+      "pcbX": -12.214144,
+      "pcbY": 8.117139,
       "pcbRotation": 90,
       "layer": "bottom"
     },

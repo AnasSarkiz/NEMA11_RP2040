@@ -18,6 +18,14 @@ disabled until schematic, BOM, placement and mechanical gates pass. Do not
 order or infer acceptance from a render. No historical passing check validates
 this reconstructed revision.
 
+**Current main verification is paused.** A new electrical-locality placement
+is integrated in source, but its main native rebuild did not finish and no
+fresh circuit JSON or build receipt exists. External validation traffic needs
+approval before that run resumes. The isolated candidate has native evidence
+under `references/electrical-placement-20261109/`; it is not a substitute for
+the main build. The last fully verified main checkpoint is Git `7da9556`.
+See [the new engineering review](../../docs/engineering-review-20261109/README.md).
+
 ## Reproduce
 
 Use Node/npm and Python 3. Dependencies are pinned in `package.json` and the
@@ -46,7 +54,7 @@ Existing public review links, which do not yet show this reconstruction:
 
 Publication remains pending explicit approval. There is no new V2 project.
 
-Current tested checkpoint: formatting/typecheck, 23 prebuild tests, 9 emitted
+Historical tested checkpoint `7da9556`: formatting/typecheck, 23 prebuild tests, 9 emitted
 contracts, 657 source/import assertions and the conservative geometry audit
 pass. PCB findings fell from 143 to 2, both USB courtyard boundary flags, with
 no nested errors. Schematic still has 3 findings and pin semantics has 30
@@ -54,3 +62,6 @@ warnings. These gates remain failed. The tiny provisional bolt-head margin,
 crowded labels, electrical loop placement and full mechanical fit remain open.
 See the complete validation record and native top/bottom review images in
 `artifacts/20261108-reconstruction/pcb/`.
+Those images and the A4 PDF still show that historical checkpoint. Current
+local code passes 25 prebuild tests and TypeScript; native-dependent current
+checks remain pending. No tool candidate has been installed in production.

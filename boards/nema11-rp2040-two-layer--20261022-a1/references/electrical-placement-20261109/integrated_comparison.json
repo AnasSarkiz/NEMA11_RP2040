@@ -1,0 +1,413 @@
+{
+  "baseline_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "candidate_sha256": "f590d22ad18feff381969d4dfc4032eb65f51c80465a360de8063ea7953ab538",
+  "pair_count": 45,
+  "comparison": [
+    {
+      "a": "U_MCU.1",
+      "b": "C_IO1.1",
+      "baseline_mm": 0.5794,
+      "integrated_mm": 0.5794,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.10",
+      "b": "C_IO10.1",
+      "baseline_mm": 0.5396,
+      "integrated_mm": 0.5396,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.22",
+      "b": "C_IO22.1",
+      "baseline_mm": 0.5319,
+      "integrated_mm": 0.5319,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.33",
+      "b": "C_IO33.1",
+      "baseline_mm": 2.9825,
+      "integrated_mm": 0.555,
+      "delta_mm": -2.4275,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.42",
+      "b": "C_IO42.1",
+      "baseline_mm": 1.1176,
+      "integrated_mm": 1.1176,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.49",
+      "b": "C_IO49.1",
+      "baseline_mm": 2.1431,
+      "integrated_mm": 2.1431,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.23",
+      "b": "C_DV23.1",
+      "baseline_mm": 1.847,
+      "integrated_mm": 1.847,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.50",
+      "b": "C_DV50.1",
+      "baseline_mm": 0.62,
+      "integrated_mm": 0.62,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.48",
+      "b": "C_USB.1",
+      "baseline_mm": 3.6109,
+      "integrated_mm": 3.6109,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.43",
+      "b": "C_ADC.1",
+      "baseline_mm": 0.6277,
+      "integrated_mm": 0.6277,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.44",
+      "b": "C_VREG_IN.1",
+      "baseline_mm": 0.9385,
+      "integrated_mm": 0.9385,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.45",
+      "b": "C_VREG_OUT.1",
+      "baseline_mm": 2.4022,
+      "integrated_mm": 2.4022,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.20",
+      "b": "Y_MCU.1",
+      "baseline_mm": 4.3989,
+      "integrated_mm": 4.3989,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.21",
+      "b": "R_XOUT.1",
+      "baseline_mm": 2.0681,
+      "integrated_mm": 2.0681,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "R_XOUT.2",
+      "b": "Y_MCU.3",
+      "baseline_mm": 0.9301,
+      "integrated_mm": 0.9301,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "Y_MCU.1",
+      "b": "C_XIN.1",
+      "baseline_mm": 1.0459,
+      "integrated_mm": 1.0459,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "Y_MCU.3",
+      "b": "C_XOUT.1",
+      "baseline_mm": 1.7088,
+      "integrated_mm": 1.7088,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.3",
+      "b": "C_BUCK_IN.1",
+      "baseline_mm": 4.9409,
+      "integrated_mm": 4.9409,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.4",
+      "b": "C_BUCK_IN.2",
+      "baseline_mm": 4.9409,
+      "integrated_mm": 4.9409,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.5",
+      "b": "L_BUCK.1",
+      "baseline_mm": 1.4481,
+      "integrated_mm": 1.4481,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.6",
+      "b": "C_BOOTSTRAP.1",
+      "baseline_mm": 2.143,
+      "integrated_mm": 2.143,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.5",
+      "b": "C_BOOTSTRAP.2",
+      "baseline_mm": 3.3725,
+      "integrated_mm": 3.3725,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "L_BUCK.2",
+      "b": "C_BUCK_OUT1.1",
+      "baseline_mm": 0.9673,
+      "integrated_mm": 0.9673,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "L_BUCK.2",
+      "b": "C_BUCK_OUT2.1",
+      "baseline_mm": 1.7242,
+      "integrated_mm": 1.7242,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_BUCK.1",
+      "b": "C_BUCK_OUT1.1",
+      "baseline_mm": 7.661,
+      "integrated_mm": 7.661,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.22",
+      "b": "C_VM.1",
+      "baseline_mm": 6.9901,
+      "integrated_mm": 6.9901,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.28",
+      "b": "C_VM.1",
+      "baseline_mm": 4.1577,
+      "integrated_mm": 4.1577,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.29",
+      "b": "C_VM.2",
+      "baseline_mm": 2.9584,
+      "integrated_mm": 2.9584,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.4",
+      "b": "C_CP.1",
+      "baseline_mm": 2.3255,
+      "integrated_mm": 2.3255,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.5",
+      "b": "C_CP.2",
+      "baseline_mm": 2.0015,
+      "integrated_mm": 2.0015,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.6",
+      "b": "C_VCP.1",
+      "baseline_mm": 1.3601,
+      "integrated_mm": 1.3601,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.8",
+      "b": "C_VREG.1",
+      "baseline_mm": 2.7765,
+      "integrated_mm": 0.6,
+      "delta_mm": -2.1765,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.15",
+      "b": "C_DRV_LOGIC.1",
+      "baseline_mm": 4.095,
+      "integrated_mm": 2.09,
+      "delta_mm": -2.005,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.23",
+      "b": "R_SA.1",
+      "baseline_mm": 1.0474,
+      "integrated_mm": 1.0474,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.27",
+      "b": "R_SB.1",
+      "baseline_mm": 2.4296,
+      "integrated_mm": 2.4296,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.29",
+      "b": "R_SA.2",
+      "baseline_mm": 2.1251,
+      "integrated_mm": 2.1251,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.29",
+      "b": "R_SB.2",
+      "baseline_mm": 1.8844,
+      "integrated_mm": 1.8844,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_DRV.17",
+      "b": "C_REF.1",
+      "baseline_mm": 1.705,
+      "integrated_mm": 1.705,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_ESD.5",
+      "b": "C_ESD.1",
+      "baseline_mm": 2.068,
+      "integrated_mm": 2.068,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_ESD.2",
+      "b": "C_ESD.2",
+      "baseline_mm": 2.068,
+      "integrated_mm": 2.068,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "J_DATA.8",
+      "b": "U_ESD.1",
+      "baseline_mm": 3.3648,
+      "integrated_mm": 3.3648,
+      "delta_mm": 0.0,
+      "same_layer": false
+    },
+    {
+      "a": "J_DATA.7",
+      "b": "U_ESD.3",
+      "baseline_mm": 1.4581,
+      "integrated_mm": 1.4581,
+      "delta_mm": 0.0,
+      "same_layer": false
+    },
+    {
+      "a": "U_MCU.46",
+      "b": "R_DM.1",
+      "baseline_mm": 0.5723,
+      "integrated_mm": 0.5723,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.47",
+      "b": "R_DP.1",
+      "baseline_mm": 4.1588,
+      "integrated_mm": 4.1588,
+      "delta_mm": 0.0,
+      "same_layer": true
+    },
+    {
+      "a": "U_MCU.52",
+      "b": "U_FLASH.6",
+      "baseline_mm": 14.0033,
+      "integrated_mm": 14.0033,
+      "delta_mm": 0.0,
+      "same_layer": true
+    }
+  ],
+  "additional_driver_returns": [
+    {
+      "a": "C_VREG.2",
+      "b": "U_DRV.29",
+      "baseline_mm": 2.373286,
+      "integrated_mm": 1.950131,
+      "delta_mm": -0.423155
+    },
+    {
+      "a": "C_DRV_LOGIC.2",
+      "b": "U_DRV.18",
+      "baseline_mm": 4.610416,
+      "integrated_mm": 3.59112,
+      "delta_mm": -1.019296
+    }
+  ],
+  "summary": {
+    "improved": [
+      {
+        "a": "U_MCU.33",
+        "b": "C_IO33.1",
+        "baseline_mm": 2.9825,
+        "integrated_mm": 0.555,
+        "delta_mm": -2.4275,
+        "same_layer": true
+      },
+      {
+        "a": "U_DRV.8",
+        "b": "C_VREG.1",
+        "baseline_mm": 2.7765,
+        "integrated_mm": 0.6,
+        "delta_mm": -2.1765,
+        "same_layer": true
+      },
+      {
+        "a": "U_DRV.15",
+        "b": "C_DRV_LOGIC.1",
+        "baseline_mm": 4.095,
+        "integrated_mm": 2.09,
+        "delta_mm": -2.005,
+        "same_layer": true
+      }
+    ],
+    "worsened": [],
+    "unchanged_count": 42
+  }
+}
