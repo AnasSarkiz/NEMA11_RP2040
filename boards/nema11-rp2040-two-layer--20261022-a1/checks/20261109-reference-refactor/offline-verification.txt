@@ -1,0 +1,130 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> NEMA11_RP2040@0.6.7-reference-refactor-wip verify:offline
+> npm run test:repository && npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run verify:offline
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> NEMA11_RP2040@0.6.7-reference-refactor-wip test:repository
+> python3 -m unittest discover -s tests -p test_repository_defaults.py -v
+
+test_active_offline_pipeline_cannot_invoke_native_tools (test_repository_defaults.RepositoryDefaults.test_active_offline_pipeline_cannot_invoke_native_tools) ... ok
+test_ci_runs_offline_source_workflow_only (test_repository_defaults.RepositoryDefaults.test_ci_runs_offline_source_workflow_only) ... ok
+test_documents_do_not_link_removed_runtime (test_repository_defaults.RepositoryDefaults.test_documents_do_not_link_removed_runtime) ... ok
+test_only_active_two_layer_entry_is_selected (test_repository_defaults.RepositoryDefaults.test_only_active_two_layer_entry_is_selected) ... ok
+test_removed_paths_stay_absent (test_repository_defaults.RepositoryDefaults.test_removed_paths_stay_absent) ... ok
+test_root_commands_forward_current_source_checks (test_repository_defaults.RepositoryDefaults.test_root_commands_forward_current_source_checks) ... ok
+test_shared_builders_reject_removed_modes (test_repository_defaults.RepositoryDefaults.test_shared_builders_reject_removed_modes) ... ok
+test_shared_runtime_has_no_deleted_path_references (test_repository_defaults.RepositoryDefaults.test_shared_runtime_has_no_deleted_path_references) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.106s
+
+OK
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip verify:offline
+> npm run check:contracts && npm run test:prebuild && npm run source:check && npm run typecheck && npm run format:check
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip check:contracts
+> python3 scripts/check_nema14_alignment.py
+
+{
+  "source_contract_passed": true,
+  "failures": [],
+  "nema14_feature_parity_complete": false,
+  "unresolved": [
+    "current_telemetry",
+    "spring_clamp_and_AWG26_termination",
+    "upright_USB_import_and_fit",
+    "top_only_fitted_assembly",
+    "top_fitted_encoder_capacitors",
+    "official_bottom_artwork_and_port_labels",
+    "rear_fasteners_gap_and_insulation",
+    "native_build_and_full_validation",
+    "routing_and_CAM",
+    "firmware_and_bench"
+  ],
+  "native_validation_run": false,
+  "routing_enabled": false,
+  "manufacturing_release": false
+}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip test:prebuild
+> python3 -m unittest discover -s tests -v
+
+test_known_public_revision_and_bytes (test_baseline_provenance.PublicBaseline.test_known_public_revision_and_bytes) ... ok
+test_clean_output (test_native_summary.NativeSummary.test_clean_output) ... ok
+test_missing_duplicate_exception_or_failure_rejected (test_native_summary.NativeSummary.test_missing_duplicate_exception_or_failure_rejected) ... ok
+test_unresolved_warning_blocks_acceptance (test_native_summary.NativeSummary.test_unresolved_warning_blocks_acceptance) ... ok
+test_buzzer_cannot_be_removed (test_nema14_alignment.Nema14Alignment.test_buzzer_cannot_be_removed) ... ok
+test_current_adc_cannot_be_falsely_connected (test_nema14_alignment.Nema14Alignment.test_current_adc_cannot_be_falsely_connected) ... ok
+test_duplicate_sheet_component_fails (test_nema14_alignment.Nema14Alignment.test_duplicate_sheet_component_fails) ... ok
+test_false_telemetry_completion_fails (test_nema14_alignment.Nema14Alignment.test_false_telemetry_completion_fails) ... ok
+test_i2c_must_use_gpio4_and_gpio5 (test_nema14_alignment.Nema14Alignment.test_i2c_must_use_gpio4_and_gpio5) ... ok
+test_missing_seventh_sheet_fails (test_nema14_alignment.Nema14Alignment.test_missing_seventh_sheet_fails) ... ok
+test_old_six_layer_defaults_fail (test_nema14_alignment.Nema14Alignment.test_old_six_layer_defaults_fail) ... ok
+test_routing_cannot_be_silently_enabled (test_nema14_alignment.Nema14Alignment.test_routing_cannot_be_silently_enabled) ... ok
+test_source_contract_is_consistent_but_full_parity_is_incomplete (test_nema14_alignment.Nema14Alignment.test_source_contract_is_consistent_but_full_parity_is_incomplete) ... ok
+test_empty_records_have_no_errors_or_details (test_nested_findings.NestedFindings.test_empty_records_have_no_errors_or_details) ... ok
+test_nested_pad_failure_is_not_hidden_by_grouping (test_nested_findings.NestedFindings.test_nested_pad_failure_is_not_hidden_by_grouping) ... ok
+test_circle_annulus_uses_outer_diameter (test_placement_geometry.PlacementGeometryTests.test_circle_annulus_uses_outer_diameter) ... ok
+test_nonfinite_and_missing_dimensions_fail (test_placement_geometry.PlacementGeometryTests.test_nonfinite_and_missing_dimensions_fail) ... ok
+test_polygon_is_already_in_world_coordinates (test_placement_geometry.PlacementGeometryTests.test_polygon_is_already_in_world_coordinates) ... ok
+test_preserved_native_evidence_includes_dnp_copper (test_placement_geometry.PlacementGeometryTests.test_preserved_native_evidence_includes_dnp_copper) ... ok
+test_rotated_smt_general_angle (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_general_angle) ... ok
+test_rotated_smt_quarter_turns (test_placement_geometry.PlacementGeometryTests.test_rotated_smt_quarter_turns) ... ok
+test_slot_outer_annulus_and_rotation (test_placement_geometry.PlacementGeometryTests.test_slot_outer_annulus_and_rotation) ... ok
+test_unknown_shapes_fail_closed (test_placement_geometry.PlacementGeometryTests.test_unknown_shapes_fail_closed) ... ok
+test_only_reviewed_motor_header_x_changed (test_reviewed_anchor_reference.ReviewedAnchorReference.test_only_reviewed_motor_header_x_changed) ... ok
+test_build_failure_cannot_be_masked_by_fresh_json (test_validation_runner.Freshness.test_build_failure_cannot_be_masked_by_fresh_json) ... ok
+test_inputs_include_every_relevant_category (test_validation_runner.Freshness.test_inputs_include_every_relevant_category) ... ok
+test_interruption_cannot_leave_old_success_status (test_validation_runner.Freshness.test_interruption_cannot_leave_old_success_status) ... ok
+test_no_fresh_output_skips_dependent_checks (test_validation_runner.Freshness.test_no_fresh_output_skips_dependent_checks) ... ok
+test_receipt_detects_changed_input_output_and_missing_output (test_validation_runner.Freshness.test_receipt_detects_changed_input_output_and_missing_output) ... ok
+test_all_sheets_counted (test_validation_runner.SemanticReports.test_all_sheets_counted) ... ok
+test_clean_xml (test_validation_runner.SemanticReports.test_clean_xml) ... ok
+test_findings_fail_despite_zero_exit (test_validation_runner.SemanticReports.test_findings_fail_despite_zero_exit) ... ok
+test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_nonzero_and_exceptions_fail) ... ok
+test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.357s
+
+OK
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip source:check
+> python3 scripts/generate_source.py --check
+
+Current source reproduces exactly; no native tool or network request was run
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip typecheck
+> tsc --noEmit
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip format:check
+> prettier --check index.circuit.tsx assets.d.ts package.json tsconfig.json tscircuit.config.json "config/*.json" README.md VALIDATION.md
+
+Checking formatting...
+All matched files use Prettier code style!
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

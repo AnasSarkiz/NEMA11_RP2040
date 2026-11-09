@@ -8,36 +8,31 @@ import BaselineExample from "../examples/full-controller.circuit"
 import CompactExample from "../examples/compact-controller.circuit"
 import Controller from "../src/controller/board"
 import { compactProfile } from "../src/compact/board"
-import { HybridBulkSupplierPart } from "../src/compact/hybrid-bulk-parts"
 import compactAssets from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 import cadAssets from "../config/controller-cad-assets.json"
 import fourMountConfig from "../config/compact-four-mounts.json"
-import motorBoltConfig from "../config/compact-motor-bolts.json"
+
+if (process.argv.includes("--motor-bolts") || process.argv.includes("--hybrid-bulk")) throw new Error("Retired six-layer design options are no longer supported")
 
 const compact=process.argv.includes("--compact")
 const Example=compact ? CompactExample : BaselineExample
 const option=(key:string)=>{const i=process.argv.indexOf(key);return i<0?undefined:process.argv[i+1]}
 const constructionPlacement=option("--placement")
 const fourMounts=process.argv.includes("--four-mounts")
-const motorBolts=process.argv.includes("--motor-bolts")
 const omitBuzzer=process.argv.includes("--no-buzzer")
-const hybridBulk=process.argv.includes("--hybrid-bulk")
 const layerOption=option("--layers")
 const layerCount=layerOption===undefined?undefined:Number(layerOption)
-if(layerCount!==undefined && (![4,6].includes(layerCount) || !compact || !constructionPlacement))throw new Error("Layer experiments require --compact, --placement, a separate --out and --layers 4 or 6")
+if(layerCount!==undefined && (layerCount!==4 || !compact || !constructionPlacement))throw new Error("Layer experiments require --compact, --placement, a separate --out and --layers 4")
 const output=option("--out") ?? (compact ? "artifacts/compact-controller" : "artifacts/controller")
-if(hybridBulk && (!compact || !fourMounts || !omitBuzzer || layerCount!==6 || !constructionPlacement || ["artifacts/compact-controller","artifacts/compact-four-mounts","artifacts/compact-six-layer"].includes(output)))throw new Error("Hybrid-bulk construction requires a separate next-iteration output, six layers, four mounts and no buzzer")
 if((fourMounts || omitBuzzer) && (!compact || !constructionPlacement))throw new Error("Four-mount construction requires --compact, --placement and a separate --out folder")
-if(motorBolts && (!compact || !fourMounts || !omitBuzzer || layerCount!==6 || !constructionPlacement))throw new Error("Motor-bolt construction requires --compact --four-mounts --no-buzzer --layers 6 and an explicit placement")
 if(constructionPlacement && (!compact || output === "artifacts/compact-controller"))throw new Error("Routing placement experiments require --compact and a separate --out folder")
 const circuit = new Circuit()
 circuit.schematicDisabled = true
 circuit.add(constructionPlacement ? <Controller routingDisabled profile={{...compactProfile,
- ...(fourMounts?{mounts:motorBolts?motorBoltConfig.mounts:fourMountConfig.mounts}:{}),
+ ...(fourMounts?{mounts:fourMountConfig.mounts}:{}),
  ...(omitBuzzer?{buzzerEnabled:false}:{}),
- ...(layerCount?{layers:layerCount as 4|6}:{}),
- ...(hybridBulk?{Part:HybridBulkSupplierPart,bulkCapacitance:"68uF",filledCappedVias:true}:{}),
+ ...(layerCount?{layers:layerCount as 4}:{}),
  placementOverrides:JSON.parse(readFileSync(constructionPlacement,"utf8")).placements}} /> : <Example />)
 await circuit.renderUntilSettled()
 const raw = circuit.getCircuitJson() as any[]

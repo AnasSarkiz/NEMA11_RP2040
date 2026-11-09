@@ -18,8 +18,8 @@ from OCP.GeomAbs import GeomAbs_Cylinder
 
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
-parser.add_argument('--input',type=Path,default=ROOT/'artifacts/compact-six-layer/board.circuit.json')
-parser.add_argument('--out',type=Path,default=ROOT/'artifacts/requirements/direct-motor-bolts')
+parser.add_argument('--input',type=Path,required=True,help='Explicit native PCB JSON to compare with the unchanged OEM motor')
+parser.add_argument('--out',type=Path,required=True,help='Separate output directory; preserve the historical mechanical evidence')
 parser.add_argument('--require-compatible-pcb',action='store_true')
 args=parser.parse_args();args.out.mkdir(parents=True,exist_ok=True)
 path=ROOT/'imports/motor/11HS12-0674S.step'

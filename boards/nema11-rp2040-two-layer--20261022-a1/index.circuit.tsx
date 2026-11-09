@@ -1,5 +1,6 @@
-// Reconstructed WIP from public 0.6.2 plus retained engineering evidence.
+// Existing NEMA11 WIP refactored against pinned NEMA14 V2 requirements.
 // This is not the byte-identical lost 0.6.5 placement. Routing remains disabled.
+// I2C0 uses GPIO4/5. ADC0/1 remain NC until independent current telemetry is implemented.
 // Supplier definitions are fresh JLCPCB imports; no footprint/symbol/pin/CAD overrides.
 import poses from "./config/placement.json";
 import requirements from "./config/requirements.json";
@@ -520,8 +521,6 @@ export default function Nema11TwoLayerBuzzer() {
           noConnect={[
             "pin2",
             "pin3",
-            "pin6",
-            "pin7",
             "pin14",
             "pin15",
             "pin16",
@@ -535,11 +534,15 @@ export default function Nema11TwoLayerBuzzer() {
             "pin34",
             "pin35",
             "pin36",
+            "pin38",
+            "pin39",
           ]}
           connections={{
             pin1: "net.V3V3",
             pin4: "net.LED_G",
             pin5: "net.LED_B",
+            pin6: "net.TEMP_SDA",
+            pin7: "net.TEMP_SCL",
             pin8: "net.STEP",
             pin9: "net.DIR",
             pin10: "net.V3V3",
@@ -557,8 +560,6 @@ export default function Nema11TwoLayerBuzzer() {
             pin27: "net.BUZZER_PWM",
             pin33: "net.V3V3",
             pin37: "net.LED_R",
-            pin38: "net.TEMP_SDA",
-            pin39: "net.TEMP_SCL",
             pin40: "net.VM_SENSE",
             pin41: "net.DATA_PRESENT",
             pin42: "net.V3V3",
@@ -950,7 +951,7 @@ export default function Nema11TwoLayerBuzzer() {
         />
       </schematicsheet>
       <schematicsheet
-        name="05 Temperature &amp; feedback"
+        name="05 Temperature &amp; optional encoder"
         sheetIndex={4}
         sheetSize="A4"
       >
@@ -992,6 +993,46 @@ export default function Nema11TwoLayerBuzzer() {
           schRotation={90.0}
           connections={{ pin1: "net.TEMP_SCL", pin2: "net.V3V3" }}
         />
+        <AS5600_ASOM
+          name="U_ENCODER"
+          {...position("U_ENCODER")}
+          schX={9}
+          schY={13}
+          doNotPlace={true}
+          noConnect={["pin3", "pin5"]}
+          connections={{
+            pin1: "net.V3V3",
+            pin2: "net.V3V3",
+            pin4: "net.GND",
+            pin6: "net.TEMP_SDA",
+            pin7: "net.TEMP_SCL",
+            pin8: "net.GND",
+          }}
+        />
+        <CL05B104KO5NNNC
+          name="C_ENCODER"
+          {...position("C_ENCODER")}
+          schX={19}
+          schY={13}
+          schRotation={270.0}
+          doNotPlace={true}
+          connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
+        />
+        <CL05A105KA5NQNC
+          name="C_ENCODER_BULK"
+          {...position("C_ENCODER_BULK")}
+          schX={20.6}
+          schY={13}
+          schRotation={270.0}
+          doNotPlace={true}
+          connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
+        />
+      </schematicsheet>
+      <schematicsheet
+        name="06 RGB &amp; power indicators"
+        sheetIndex={5}
+        sheetSize="A4"
+      >
         <LTST_C19HE1WT
           name="D_STATUS"
           {...position("D_STATUS")}
@@ -1058,56 +1099,6 @@ export default function Nema11TwoLayerBuzzer() {
             pin3: "net.GND",
           }}
         />
-        <MLT_5020
-          name="BZ1"
-          {...position("BZ1")}
-          schX={9.4}
-          schY={6.5}
-          noConnect={["pin3"]}
-          connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
-        />
-        <DMN2300UFB4_7B
-          name="Q_BUZZER"
-          {...position("Q_BUZZER")}
-          schX={8.5}
-          schY={3.8}
-          connections={{
-            pin1: "net.BUZZER_GATE",
-            pin2: "net.BUZZER_SINK",
-            pin3: "net.GND",
-          }}
-        />
-        <A_0402WGF1001TCE
-          name="R_BUZZER_GATE"
-          {...position("R_BUZZER_GATE")}
-          schX={3.8}
-          schY={4.6}
-          connections={{ pin1: "net.BUZZER_PWM", pin2: "net.BUZZER_GATE" }}
-        />
-        <A_0402WGF1002TCE
-          name="R_BUZZER_PD"
-          {...position("R_BUZZER_PD")}
-          schX={5.8}
-          schY={3.6}
-          schRotation={270.0}
-          connections={{ pin1: "net.BUZZER_GATE", pin2: "net.GND" }}
-        />
-        <PMEG6020ELRX
-          name="D_BUZZER"
-          {...position("D_BUZZER")}
-          schX={14}
-          schY={6.5}
-          schRotation={90.0}
-          connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
-        />
-        <CL10A106KP8NNNC
-          name="C_BUZZER"
-          {...position("C_BUZZER")}
-          schX={12.4}
-          schY={15.5}
-          schRotation={270.0}
-          connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
-        />
         <A_0402WGF3300TCE
           name="R_PWR_LED"
           {...position("R_PWR_LED")}
@@ -1173,43 +1164,55 @@ export default function Nema11TwoLayerBuzzer() {
           connections={{ pin1: "net.STATUS_B_GATE", pin2: "net.GND" }}
         />
       </schematicsheet>
-      <schematicsheet
-        name="06 Optional encoder (DNP)"
-        sheetIndex={5}
-        sheetSize="A4"
-      >
-        <AS5600_ASOM
-          name="U_ENCODER"
-          {...position("U_ENCODER")}
-          schX={9}
-          schY={13}
-          doNotPlace={true}
-          noConnect={["pin3", "pin5"]}
+      <schematicsheet name="07 Buzzer" sheetIndex={6} sheetSize="A4">
+        <MLT_5020
+          name="BZ1"
+          {...position("BZ1")}
+          schX={9.4}
+          schY={6.5}
+          noConnect={["pin3"]}
+          connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
+        />
+        <DMN2300UFB4_7B
+          name="Q_BUZZER"
+          {...position("Q_BUZZER")}
+          schX={8.5}
+          schY={3.8}
           connections={{
-            pin1: "net.V3V3",
-            pin2: "net.V3V3",
-            pin4: "net.GND",
-            pin6: "net.TEMP_SDA",
-            pin7: "net.TEMP_SCL",
-            pin8: "net.GND",
+            pin1: "net.BUZZER_GATE",
+            pin2: "net.BUZZER_SINK",
+            pin3: "net.GND",
           }}
         />
-        <CL05B104KO5NNNC
-          name="C_ENCODER"
-          {...position("C_ENCODER")}
-          schX={19}
-          schY={13}
-          schRotation={270.0}
-          doNotPlace={true}
-          connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
+        <A_0402WGF1001TCE
+          name="R_BUZZER_GATE"
+          {...position("R_BUZZER_GATE")}
+          schX={3.8}
+          schY={4.6}
+          connections={{ pin1: "net.BUZZER_PWM", pin2: "net.BUZZER_GATE" }}
         />
-        <CL05A105KA5NQNC
-          name="C_ENCODER_BULK"
-          {...position("C_ENCODER_BULK")}
-          schX={20.6}
-          schY={13}
+        <A_0402WGF1002TCE
+          name="R_BUZZER_PD"
+          {...position("R_BUZZER_PD")}
+          schX={5.8}
+          schY={3.6}
           schRotation={270.0}
-          doNotPlace={true}
+          connections={{ pin1: "net.BUZZER_GATE", pin2: "net.GND" }}
+        />
+        <PMEG6020ELRX
+          name="D_BUZZER"
+          {...position("D_BUZZER")}
+          schX={14}
+          schY={6.5}
+          schRotation={90.0}
+          connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_SINK" }}
+        />
+        <CL10A106KP8NNNC
+          name="C_BUZZER"
+          {...position("C_BUZZER")}
+          schX={12.4}
+          schY={15.5}
+          schRotation={270.0}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
       </schematicsheet>

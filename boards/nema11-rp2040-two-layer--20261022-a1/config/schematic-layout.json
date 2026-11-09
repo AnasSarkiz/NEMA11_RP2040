@@ -1,5 +1,5 @@
 {
-  "scope": "Draft functional A4 positions only; fresh imported symbols must be visually checked",
+  "scope": "Seven A4 functional sheets following NEMA14 V2; complete source component coverage. Native/visual checks pending; unchanged PCB placement.",
   "sheets": {
     "01 Power & USB-PD": [
       "J_PD",
@@ -80,11 +80,16 @@
       "R_VM_L",
       "C_VM_SENSE"
     ],
-    "05 Temperature & feedback": [
+    "05 Temperature & optional encoder": [
       "U_TEMP",
       "C_TEMP",
       "R_TEMP_SDA",
       "R_TEMP_SCL",
+      "U_ENCODER",
+      "C_ENCODER",
+      "C_ENCODER_BULK"
+    ],
+    "06 RGB & power indicators": [
       "D_STATUS",
       "R_STATUS_R",
       "Q_STATUS_R",
@@ -92,12 +97,6 @@
       "Q_STATUS_G",
       "R_STATUS_B",
       "Q_STATUS_B",
-      "BZ1",
-      "Q_BUZZER",
-      "R_BUZZER_GATE",
-      "R_BUZZER_PD",
-      "D_BUZZER",
-      "C_BUZZER",
       "R_PWR_LED",
       "D_PWR",
       "R_STATUS_R_GATE",
@@ -107,7 +106,14 @@
       "R_STATUS_B_GATE",
       "R_STATUS_B_PD"
     ],
-    "06 Optional encoder (DNP)": ["U_ENCODER", "C_ENCODER", "C_ENCODER_BULK"]
+    "07 Buzzer": [
+      "BZ1",
+      "Q_BUZZER",
+      "R_BUZZER_GATE",
+      "R_BUZZER_PD",
+      "D_BUZZER",
+      "C_BUZZER"
+    ]
   },
   "placements": {
     "J_PD": {

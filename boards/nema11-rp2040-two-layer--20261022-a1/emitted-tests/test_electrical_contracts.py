@@ -51,7 +51,19 @@ class ElectricalContract(unittest.TestCase):
         baseline = read(FIXTURE / 'config/connections.json')['components']
         for name, spec in baseline.items():
             for pin in spec.get('no_connect', []):
+                if name == 'U_MCU' and pin in ('6', '7'):
+                    continue  # NEMA14-aligned I2C0 moved here; checked explicitly below.
                 self.no_connect(name, pin)
+
+    def test_nema14_i2c0_allocation_and_reserved_current_adc(self):
+        self.connection('U_MCU', 6, 'TEMP_SDA')
+        self.connection('U_MCU', 7, 'TEMP_SCL')
+        for pin in (38, 39):
+            self.no_connect('U_MCU', pin)
+        sheets = sorted((r for r in self.records if r['type'] == 'schematic_sheet'), key=lambda r: r['sheet_index'])
+        expected = read(ROOT / 'config/schematic-layout.json')['sheets']
+        self.assertEqual(len(sheets), 7)
+        self.assertEqual([s['name'] for s in sheets], list(expected))
 
     def test_fixture_provenance(self):
         metadata = read(FIXTURE / 'provenance.json')
@@ -117,6 +129,8 @@ class ElectricalContract(unittest.TestCase):
             if name in {'U_PD', 'Q_BUZZER', 'Q_STATUS_R', 'Q_STATUS_G', 'Q_STATUS_B'}:
                 continue
             for pin, net in spec['connections'].items():
+                if name == 'U_MCU' and pin in ('38', '39'):
+                    continue  # Reserved ADC0/1, not a claim of implemented telemetry.
                 self.connection(name, pin, net)
             for field in ('resistance', 'capacitance', 'inductance'):
                 if field in spec and name not in {'R_ENABLE', 'R_SLEEP', 'R_BUZZER_GATE', 'R_BUZZER_PD'}:

@@ -6,15 +6,12 @@
 > carrier interface, which does not meet that requirement. No carrier or case
 > is allowed in the current design.
 
-The historical [routed six-layer checkpoint](compact-six-layer.md) retains all four
-holes. Native DRC, independent copper, every-pin connectivity, Gerber raster
-shorts and six-layer CAM checks report zero errors, opens and shorts. The
-[A4 mounting comparison](../artifacts/requirements/mounting-review/four-mount-comparison.pdf)
-separates the PCB interface from the motor front threads and shows why the
-reference dimensions cannot be copied directly. Its
-[verification record](../artifacts/requirements/mounting-review/verification.json)
-is bound to the actual routed native PCB. These are nominal geometry checks;
-carrier, hardware and maximum-tolerance qualification remain open.
+The later six-layer variants were [removed](legacy-six-layer-removal.md).
+The retained [A4 mounting comparison](../artifacts/requirements/mounting-review/four-mount-comparison.pdf)
+and [verification record](../artifacts/requirements/mounting-review/verification.json)
+are historical drawings bound to their original board hash, not validation of
+the active two-layer board. Carrier, hardware and maximum-tolerance
+qualification remain open.
 
 The historical candidate uses four PCB holes, adapting the reference's four-corner
 arrangement to the 28.3 mm maximum assembly frame. The reference's exact 26 mm
@@ -34,16 +31,10 @@ and the optional DNP encoder, are compared against published NEMA14 v1.13.0.
 The source contains 86 components and 326 physical pins; all 76 fitted parts are
 on top. Supplier copper pads and models are unchanged.
 
-[Current native source](../src/compact/six-layer-board.tsx),
-[current six-page A4 schematic](../artifacts/compact-six-layer/schematic-a4.pdf),
-[current native assembly GLB](../artifacts/compact-six-layer/development-assembly.glb),
-[exact review Gerbers/BOM/CPL](../artifacts/compact-six-layer/manufacturing-review.zip),
-[mount requirements](../config/compact-four-mounts.json) and
+The [mount requirements](../config/compact-four-mounts.json) and
 [carrier proposal evidence](../artifacts/requirements/four-mount-carrier-proposal.json)
-are retained for review. The actual native GLB has 78 models; all supplier/motor/
-carrier bounds match their original CAD within 0.05 mm. Tolerance and physical
-qualification are separate release requirements; this checkpoint is not
-fabrication-ready.
+remain historical references. They are not fabrication-ready and do not apply
+to the current direct-motor-bolt design.
 
 The earlier [four-layer source](../src/compact/four-mount-board.tsx),
 [placement and source evidence](../artifacts/compact-four-mounts/README.md),
@@ -56,15 +47,6 @@ radially before PCB installation. Its narrow rails are not strength qualified.
 The nominal OEM STEP corner relief is not guaranteed by the drawing. Neither
 sampled CAD paths nor a final nonintersecting model proves a buildable product.
 
-The checked routed native snapshot is published separately as
-[NEMA11_RP2040_Compact_Prototype 0.4.1](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype).
-Version 0.4.1 adds this mounting review while preserving every native
-circuit/PCB/3D record from 0.4.0.
-All seven required remote files were independently downloaded and matched
-byte-for-byte; the [publication receipt](../artifacts/publication/compact-prototype-0.4.1.json)
-records the incomplete CLI upload and successful authenticated archive recovery.
-Version 0.3.0 remains the historical unrouted release. Neither is a fabrication
-release.
-
-[Routing construction and layer-validation evidence](compact-routing-construction.md)
-tracks development beyond the frozen 0.3.0 placement snapshot.
+The 0.3.0 four-layer source remains the historical unrouted release. Remote
+registry versions were not changed by deleting the later six-layer design from
+this checkout. None of these historical snapshots is a fabrication release.

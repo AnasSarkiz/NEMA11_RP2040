@@ -1,38 +1,38 @@
-# Development environment
+# Current development environment
 
-Use the existing `/workspace/NEMA11_RP2040` checkout. Cloud tasks are already
-isolated; do not create a Git worktree unless the user explicitly requests one.
+Work on `boards/nema11-rp2040-two-layer--20261022-a1` in the existing checkout.
+The root package, preview and TypeScript configuration select this board only.
+Historical root `src/`, `examples/`, `tools/pcb` and retained prototype folders
+are not the current board's toolchain or validation target.
 
-Run `bash scripts/setup-tools.sh` from the checkout to install the frozen native
-PCB toolchain and isolated CAD Python environment. Lockfile-based npm install
-retains TLS/integrity checks; the locked Git trace-linter sources receive an
-additional SHA-256 check. Python transitive versions are retained in
-`tools/requirements-cad.lock`; the direct requirements are documented alongside
-it. Dependencies/caches are excluded from Git. The tooling
-currently follows the inspected GitHub v1.12.0 lock; compare it against the
-published v1.13.0 before rendering NEMA11 source.
+## Offline source verification
 
-For native commands in each new shell:
+From the repository root:
 
 ```sh
-cd /workspace/NEMA11_RP2040
-export PATH="$PWD/tools/pcb/node_modules/.bin:$PATH"
-export XDG_CONFIG_HOME=/workspace/.config
-export XDG_CACHE_HOME=/workspace/.cache
-export XDG_DATA_HOME=/workspace/.local/share
-tsci version
+npm ci --prefix boards/nema11-rp2040-two-layer--20261022-a1 --ignore-scripts --legacy-peer-deps --no-audit --no-fund
+npm run verify:offline
 ```
 
-Use `/workspace/.venvs/nema11-cad/bin/python` for native STEP geometry, PDF,
-routing and CAM utilities. No service is required for the current requirements
-milestone. No NEMA11 circuit exists yet, so do not run inherited NEMA14 scripts
-against this checkout or claim reference validation applies to it.
+The lockfile controls the active dependencies. Installation may fetch packages;
+`--ignore-scripts` prevents dependency lifecycle hooks. The verification itself
+uses local Python/TypeScript/formatting and source-generation checks. The active `source:check` regenerates in memory and compares the result with
+`index.circuit.tsx` without modifying it.
 
-Never print tokens or credential files. Configure `TSCIRCUIT_TOKEN` securely
-through environment settings for registry publication; GitHub uses the existing
-platform HTTPS Git authentication. No new GitHub token is required for native
-Git operations that already succeed.
+These checks do not invoke native rendering, autorouting, registry operations,
+or source-uploading tscircuit commands. They do not validate native output or
+approve copper, mechanics, fabrication or physical hardware.
 
-Future work must first retrieve and verify the exact v1.13.0 package and motor
-PDF/STEP. See [validation gates](validation-plan.md). This setup is a development
-tooling environment, not evidence of an electrically working motor controller.
+## Native work is separate
+
+`npm run build` and `npm run dev` select the active two-layer source, but they
+are manual native entry points, not part of offline validation or CI. A native
+build can contact `api.tscircuit.com`; do not run it while source-upload approval
+is pending. Do not publish or upload a registry package without authorization.
+After an approved build, use the active board's validation instructions and
+fresh input-bound reports. Never reuse old reports as evidence for changed
+source. Never print credentials or tokens.
+
+The former root setup and native scripts are retained only where needed for
+historical four-layer/MCU evidence. They are not recommended setup or validation
+for current work. See [scoped six-layer deletion](legacy-six-layer-removal.md).

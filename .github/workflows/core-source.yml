@@ -1,4 +1,4 @@
-name: Controller source, schematics, PCB and CAM checks
+name: NEMA11 offline source checks
 
 on:
   push:
@@ -9,143 +9,27 @@ permissions:
   contents: read
 
 concurrency:
-  group: core-source-${{ github.ref }}
+  group: nema11-offline-source-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  core-source:
+  offline-source:
+    name: Two-layer prebuild source only
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: tools/pcb/package-lock.json
+          cache-dependency-path: boards/nema11-rp2040-two-layer--20261022-a1/package-lock.json
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install frozen PCB tooling
-        run: |
-          git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
-          npm ci --prefix tools/pcb --legacy-peer-deps --no-audit --no-fund
-          (cd tools/pcb && sha256sum --check trace-linter.sha256)
-          python3 scripts/apply_native_keepout_fix.py
-          ln -s tools/pcb/node_modules node_modules
-          echo "$GITHUB_WORKSPACE/tools/pcb/node_modules/.bin" >> "$GITHUB_PATH"
-      - name: Check source and native subsystem
-        run: |
-          npm run typecheck
-          npm run core:build
-          npm run core:check
-          npm run controller:build
-          npm run controller:check
-          python3 scripts/schematic_core.py
-          bun scripts/render-core.tsx
-          tsci check schematic-placement artifacts/rp2040-core/core-schematic.circuit.json > artifacts/rp2040-core/native-schematic-placement.txt
-          python3 scripts/verify_core_schematic.py
-          npm test
-          bun test tests-native
-      - name: Check native PCB and independent copper geometry
-        run: |
-          python3 -m pip install numpy==2.3.5 shapely==2.1.2
-          bun scripts/schematic-controller.tsx
-          python3 scripts/verify_controller_schematic.py
-          tsci check schematic-placement artifacts/controller/schematic.circuit.json > artifacts/controller/native-schematic-placement.txt
-          git diff --exit-code -- artifacts/controller/schematic.circuit.json
-          python3 scripts/route_core_pcb.py
-          bun scripts/check-render-pcb.tsx
-          python3 scripts/audit_core_pcb.py
-          python3 scripts/audit_core_clock.py
-          python3 -m unittest discover -s tests-pcb -v
-          git diff --exit-code -- artifacts/rp2040-pcb/board.circuit.json
-      - name: Reproduce and independently check full controller PCB
-        run: |
-          python3 scripts/build_controller_pcb.py --check
-          bun scripts/check-controller-pcb.tsx --checks-only
-          python3 scripts/audit_controller_pcb.py
-          python3 scripts/audit_controller_connectivity.py
-          python3 scripts/audit_core_clock.py --controller
-          python3 scripts/audit_controller_routing.py
-          python3 scripts/audit_controller_usb.py
-          python3 scripts/review_controller_native_drc.py
-      - name: Reproduce compact placement and connected A4 source milestone
-        run: |
-          bun scripts/build-controller.tsx --compact
-          python3 scripts/verify_controller.py --compact
-          python3 scripts/audit_compact_placement.py
-          bun scripts/schematic-controller.tsx --compact
-          python3 scripts/verify_controller_schematic.py --compact
-          python3 scripts/check_compact_source.py
-          python3 scripts/verify_compact_milestone.py
-          (cd prototypes/compact-placement-0.1.0 && tsci build index.circuit.json)
-          python3 scripts/verify_compact_prototype.py
-          git diff --exit-code -- artifacts/compact-controller/unrouted.circuit.json artifacts/compact-controller/schematic.circuit.json
-      - name: Check four-corner source and connected A4 drawings
-        run: |
-          bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --placement artifacts/compact-four-mounts/placement-source.json --out /tmp/nema11-four-mounts
-          cmp artifacts/compact-four-mounts/unrouted.circuit.json /tmp/nema11-four-mounts/unrouted.circuit.json
-          python3 scripts/verify_controller.py --compact --no-buzzer --folder artifacts/compact-four-mounts
-          python3 scripts/audit_compact_placement.py --folder artifacts/compact-four-mounts --placement artifacts/compact-four-mounts/placement-source.json --USB-escape
-          bun scripts/schematic-controller.tsx --compact --folder artifacts/compact-four-mounts
-          python3 scripts/verify_controller_schematic.py --compact --folder artifacts/compact-four-mounts
-          python3 scripts/check_compact_source.py --folder artifacts/compact-four-mounts --netlist examples/four-mount-controller.circuit.tsx
-          python3 scripts/verify_four_mounts.py --assembly
-          (cd prototypes/compact-four-mounts-0.3.0 && tsci build index.circuit.json)
-          python3 scripts/verify_four_mount_prototype.py
-          git diff --exit-code -- artifacts/compact-four-mounts/unrouted.circuit.json artifacts/compact-four-mounts/schematic.circuit.json
-      - name: Independently parse committed review CAM and verify prototype
-        run: |
-          python3 -m pip install -r tools/requirements-cam.lock
-          python3 scripts/audit_core_cam.py
-          python3 scripts/audit_controller_cam.py
-          (cd prototypes/controller-pcb-0.3.0 && tsci build index.circuit.json)
-          python3 scripts/verify_controller_pcb_prototype.py
-          python3 scripts/verify_controller_milestone.py
-          python3 scripts/package_controller_review.py --check
-          python3 scripts/prepare-core-prototype.py
-          (cd prototypes/rp2040-core && tsci build index.circuit.json)
-          python3 scripts/verify_core_prototype.py
-          git diff --exit-code -- prototypes/rp2040-core/index.circuit.json
-      - name: Check explicitly limited compact clock and USB milestone
-        run: |
-          bun scripts/build-controller.tsx --compact --placement artifacts/compact-escape/placement-source.json --out /tmp/nema11-escape-source
-          cmp /tmp/nema11-escape-source/unrouted.circuit.json artifacts/compact-escape/unrouted.circuit.json
-          python3 scripts/verify_compact_escape.py
-          (cd prototypes/compact-escape-0.2.0 && tsci build index.circuit.json)
-          python3 scripts/verify_escape_prototype.py
-      - name: Reproduce routed six-layer four-hole compact checkpoint
-        run: |
-          bun scripts/build-controller.tsx --compact --four-mounts --motor-bolts --no-buzzer --layers 6 --placement config/compact-routing-placement.json --out /tmp/nema11-six-source
-          cmp /tmp/nema11-six-source/unrouted.circuit.json artifacts/compact-six-layer/unrouted.circuit.json
-          python3 scripts/verify_controller.py --compact --no-buzzer --folder artifacts/compact-six-layer
-          python3 scripts/audit_compact_placement.py --folder artifacts/compact-six-layer --placement config/compact-routing-placement.json --USB-escape --extra-constraints config/compact-four-mount-routing-constraints.json
-          python3 scripts/build_compact_six_layer.py --check
-          python3 scripts/verify_controller_schematic.py --compact --folder artifacts/compact-six-layer
-          python3 scripts/check_compact_source.py --folder artifacts/compact-six-layer --netlist examples/six-layer-controller.circuit.tsx
-          bun scripts/check-controller-pcb.tsx --checks-only --compact --folder artifacts/compact-six-layer --filled-capped-policy artifacts/compact-six-layer/filled-capped-via-policy.json
-          python3 scripts/audit_controller_pcb.py --input artifacts/compact-six-layer/board.circuit.json
-          python3 scripts/audit_controller_connectivity.py --compact-four-mounts --input artifacts/compact-six-layer/board.circuit.json
-          python3 scripts/verify_compact_clock.py --verify-existing --folder artifacts/compact-six-layer --source-folder artifacts/compact-six-layer
-          python3 scripts/audit_compact_electrical.py
-          python3 scripts/audit_controller_cam.py --folder artifacts/compact-six-layer
-          python3 scripts/verify_compact_six_layer.py
-          python3 scripts/package_compact_review.py --check
-          git diff --exit-code -- artifacts/compact-six-layer/board.circuit.json
-          (cd prototypes/compact-six-layer-0.4.0 && tsci build index.circuit.json)
-          python3 scripts/compact_six_layer_prototype_dist.py
-          python3 scripts/verify_six_layer_prototype.py
-      - name: Verify committed native source reproduces
-        run: |
-          git diff --exit-code -- artifacts/rp2040-core/core.circuit.json artifacts/rp2040-core/core-schematic.circuit.json
-          git diff --exit-code -- artifacts/controller/unrouted.circuit.json
-          python3 - <<'PY'
-          import hashlib, json, pathlib
-          root = pathlib.Path('.')
-          manifest = json.loads((root / 'artifacts/rp2040-core/supplier-provenance.json').read_text())
-          for entry in manifest['files']:
-              assert hashlib.sha256((root / entry['path']).read_bytes()).hexdigest() == entry['sha256'] == entry['reference_sha256'], entry['path']
-          print('Original supplier and manufacturer inputs verified.')
-          PY
+      - name: Install locked source-check dependencies without lifecycle scripts
+        run: npm ci --prefix boards/nema11-rp2040-two-layer--20261022-a1 --ignore-scripts --legacy-peer-deps --no-audit --no-fund
+      - name: Check repository selection and two-layer source offline
+        run: npm run verify:offline
+      # Dependency installation fetches packages. All checks after it are local.
+      # This workflow does not render circuits, route copper, export CAM, contact
+      # a tscircuit service, or establish an electrical/mechanical hardware pass.

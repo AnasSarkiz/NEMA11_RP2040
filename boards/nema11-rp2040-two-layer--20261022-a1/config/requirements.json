@@ -1,7 +1,5 @@
 {
-  "source_board_directory": "artifacts/compact-six-layer",
-  "source_revision": "2a9fa01f4c5ee052f18ce4c3c719bab706a5de36",
-  "published_reference": "AnasSarkiz/NEMA14_RP2040@1.13.0",
+  "published_reference": "AnasSarkiz/NEMA14_RP2040_V2@d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
   "destination_repository": "AnasSarkiz/NEMA11_RP2040",
   "destination_branch": "main",
   "tscircuit_package": "AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
@@ -41,5 +39,22 @@
   "routing_enabled": false,
   "manufacturing_release": false,
   "rear_mounting_user_clarification": "Use the four bolts already used on the motor rear; actual shank/thread/head/under-head length and gap were not provided.",
-  "reconstruction_baseline_commit": "1233ccdf803a1221820f28eabf4791b4a7cfe90e"
+  "reconstruction_baseline_commit": "1233ccdf803a1221820f28eabf4791b4a7cfe90e",
+  "historical_source_board": {
+    "commit": "2a9fa01f4c5ee052f18ce4c3c719bab706a5de36",
+    "path": "artifacts/compact-six-layer",
+    "historical_only": true
+  },
+  "reference_provenance": "references/nema14-v2-20261109/provenance.json",
+  "PCB_thickness_mm": 1.6,
+  "schematic_sheet_count": 7,
+  "desired_component_sides": ["top"],
+  "desired_USB_orientation": "upright at two different board edges",
+  "all_top_assembly_verified": false,
+  "upright_USB_verified": false,
+  "independent_coil_current_telemetry_required": true,
+  "independent_coil_current_telemetry_implemented": false,
+  "spring_clamp_motor_connection_required": true,
+  "spring_clamp_motor_connection_qualified": false,
+  "nema14_alignment_contract": "config/nema14-alignment.json"
 }

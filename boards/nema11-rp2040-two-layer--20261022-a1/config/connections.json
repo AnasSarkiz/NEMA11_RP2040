@@ -1,5 +1,5 @@
 {
-  "scope": "Board wiring by manufacturer physical pin numbers, derived from baseline reference; imported pin definitions are not changed",
+  "scope": "NEMA14 V2 aligned MCU I2C0 allocation; ADC0/1 reserved but telemetry not implemented. Manufacturer physical pin numbering; imported definitions unchanged.",
   "baseline": "2a9fa01f4c5ee052f18ce4c3c719bab706a5de36",
   "candidate_USB_part": "C165948",
   "candidate_buzzer_part": "C94598",
@@ -79,6 +79,8 @@
         "1": "V3V3",
         "4": "LED_G",
         "5": "LED_B",
+        "6": "TEMP_SDA",
+        "7": "TEMP_SCL",
         "8": "STEP",
         "9": "DIR",
         "10": "V3V3",
@@ -96,8 +98,6 @@
         "27": "BUZZER_PWM",
         "33": "V3V3",
         "37": "LED_R",
-        "38": "TEMP_SDA",
-        "39": "TEMP_SCL",
         "40": "VM_SENSE",
         "41": "DATA_PRESENT",
         "42": "V3V3",
@@ -120,8 +120,6 @@
       "no_connect": [
         "2",
         "3",
-        "6",
-        "7",
         "14",
         "15",
         "16",
@@ -134,7 +132,9 @@
         "32",
         "34",
         "35",
-        "36"
+        "36",
+        "38",
+        "39"
       ]
     },
     "C_IO1": {

@@ -4,13 +4,12 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import { populatePartOrientationMetadata, convertCircuitJsonToPickAndPlaceRows } from "circuit-json-to-pnp-csv"
 import { SupplierPart as BaselineSupplierPart } from "../src/controller/supplier-parts"
-import { HybridBulkSupplierPart } from "../src/compact/hybrid-bulk-parts"
 import candidates from "../artifacts/requirements/compact-supplier-candidates.json"
 import catalog from "../src/controller/jlcpcb-catalog.json"
 
 const compact=process.argv.includes("--compact-four-mounts")
-const hybrid=process.argv.includes("--hybrid-bulk")
-const SupplierPart=hybrid?HybridBulkSupplierPart:BaselineSupplierPart
+if (process.argv.includes("--hybrid-bulk")) throw new Error("Retired hybrid six-layer variant is no longer supported")
+const SupplierPart=BaselineSupplierPart
 const folderArg=process.argv.indexOf("--folder")
 const path=folderArg>=0?process.argv[folderArg+1].replace(/\/$/,"")+"/":"artifacts/controller-pcb/"
 const output=path+"assembly-data/"
@@ -18,7 +17,7 @@ mkdirSync(output,{recursive:true})
 const bytes=readFileSync(path+"board.circuit.json")
 const records=JSON.parse(bytes.toString()) as any[]
 const sources=records.filter(r=>r.type==="source_component")
-if((sources.find(r=>r.name==="C_BULK")?.manufacturer_part_number==="EEHZC1V680XP")!==hybrid)throw new Error("Select the exact bulk-capacitor variant for genuine supplier R0 orientation")
+if(sources.find(r=>r.name==="C_BULK")?.manufacturer_part_number==="EEHZC1V680XP")throw new Error("Retired hybrid six-layer variant is no longer supported")
 const fitted=records.filter(r=>r.type==="pcb_component" && !r.do_not_place)
 const names=new Map(sources.map(r=>[r.source_component_id,r.name]))
 const unique=new Map<string,string>()

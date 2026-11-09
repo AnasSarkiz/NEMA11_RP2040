@@ -1,4 +1,9 @@
-# Bulk capacitor review after routed prototype 0.4.0
+# Historical bulk capacitor candidate review
+
+The six-layer prototype and its hybrid integration branch were
+[removed](legacy-six-layer-removal.md). This page preserves component-selection
+research and original manufacturer inputs only; it does not select or qualify
+a capacitor for the active two-layer board.
 
 The 0.4.0 BOM still contains the original **ROQANG RVT1V470M0605 / C72522**,
 47 µF / 35 V. Its public distributor listing specifies 54 mA RMS at 120 Hz;
@@ -44,23 +49,10 @@ capacitance also requires USB-PD attachment/inrush review. Actual peak current,
 PWM spectrum/overshoot, capacitor temperature and regenerative stops still need
 hardware validation.
 
-The [separate integration validation](../artifacts/requirements/hybrid-bulk-source-validation.json)
-now records zero native DRC, independent copper, opens and shorts with the 68 µF
-part. All 76 fitted native GLB model bounds match their STEP poses within
-0.011 mm. The corrected PCB-frame model is upright in the actual native exporter.
-The new connected A4 sheets and 75-placement SMT BOM/CPL also pass locally.
-This remains a development candidate; it has not replaced the public 0.4.0 package.
-
-```sh
-bun scripts/build-controller.tsx --compact --four-mounts --no-buzzer --layers 6 \
-  --hybrid-bulk --placement config/compact-hybrid-placement.json --out /tmp/nema11-hybrid
-python scripts/build_hybrid_candidate.py --folder /tmp/nema11-hybrid
-```
-
-Use the CAD Python environment for the construction and geometry checks. The
-explicit source profile enables the selected native filled/capped via feature;
-the strict process-policy check still rejects ordinary vias in component lands.
-The old 0.4.0 source reproduces byte-for-byte after these optional changes.
+The former six-layer integration implementation and its result report were
+removed with the obsolete design. Recover them from the pre-removal Git revision
+only when historical inspection is needed. Current source, native PCB, CAM,
+BOM/CPL and assembly checks must be rerun for any newly selected component.
 
 Maximum frame tolerance is a known open layout issue. The Panasonic drawing
 specifies 6.6 ±0.2 mm base dimensions and a 6.3 ±0.5 mm can. At the present Y

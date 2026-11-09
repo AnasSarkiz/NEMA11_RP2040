@@ -1,6 +1,6 @@
 {
   "includeBoardFiles": [
-    "artifacts/compact-six-layer/board.circuit.json"
+    "boards/nema11-rp2040-two-layer--20261022-a1/index.circuit.tsx"
   ],
-  "previewComponentPath": "artifacts/compact-six-layer/board.circuit.json"
+  "previewComponentPath": "boards/nema11-rp2040-two-layer--20261022-a1/index.circuit.tsx"
 }

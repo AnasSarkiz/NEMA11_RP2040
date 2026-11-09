@@ -1,0 +1,37 @@
+test_candidate_matches_with_explicit_changes (test_controller_parity.ControllerParityTests.test_candidate_matches_with_explicit_changes) ... ok
+test_missing_USB_locating_hole_is_detected (test_controller_parity.ControllerParityTests.test_missing_USB_locating_hole_is_detected) ... ok
+test_missing_nc_pin_is_detected (test_controller_parity.ControllerParityTests.test_missing_nc_pin_is_detected) ... ok
+test_swapped_sense_net_is_detected (test_controller_parity.ControllerParityTests.test_swapped_sense_net_is_detected) ... ok
+test_boot_ground_short_is_rejected (test_core_contract.CoreContractTests.test_boot_ground_short_is_rejected) ... ok
+test_built_subsystem_satisfies_contract (test_core_contract.CoreContractTests.test_built_subsystem_satisfies_contract) ... ok
+test_core_rail_cannot_be_shortened_to_3v3 (test_core_contract.CoreContractTests.test_core_rail_cannot_be_shortened_to_3v3) ... ok
+test_flash_io2_io3_swap_is_rejected (test_core_contract.CoreContractTests.test_flash_io2_io3_swap_is_rejected) ... ok
+test_missing_bypass_is_rejected (test_core_contract.CoreContractTests.test_missing_bypass_is_rejected) ... ok
+test_paste_on_bare_debug_pad_is_rejected (test_core_contract.CoreContractTests.test_paste_on_bare_debug_pad_is_rejected) ... ok
+test_candidate_covers_all_tolerance_corners (test_current_budget.CurrentBudgetTests.test_candidate_covers_all_tolerance_corners) ... ok
+test_copper_screen_is_conservative_with_thinner_internal_copper (test_current_budget.CurrentBudgetTests.test_copper_screen_is_conservative_with_thinner_internal_copper) ... ok
+test_exact_rated_vref_does_not_provide_tolerance_margin (test_current_budget.CurrentBudgetTests.test_exact_rated_vref_does_not_provide_tolerance_margin) ... ok
+test_known_winding_loss_and_unknown_junction_temperature (test_current_budget.CurrentBudgetTests.test_known_winding_loss_and_unknown_junction_temperature) ... ok
+test_changed_pitch_in_frozen_carrier_snapshot_is_rejected (test_four_mount_contract.FourMountContractTests.test_changed_pitch_in_frozen_carrier_snapshot_is_rejected) ... ok
+test_missing_corner_hole_is_rejected (test_four_mount_contract.FourMountContractTests.test_missing_corner_hole_is_rejected) ... ok
+test_missing_inner_layer_screw_exclusion_is_rejected (test_four_mount_contract.FourMountContractTests.test_missing_inner_layer_screw_exclusion_is_rejected) ... ok
+test_missing_temperature_sensor_is_rejected (test_four_mount_contract.FourMountContractTests.test_missing_temperature_sensor_is_rejected) ... ok
+test_reference_features_preserved_with_authorized_buzzer_omission (test_four_mount_contract.FourMountContractTests.test_reference_features_preserved_with_authorized_buzzer_omission) ... ok
+test_released_buzzer_GPIO_must_be_explicit_NC (test_four_mount_contract.FourMountContractTests.test_released_buzzer_GPIO_must_be_explicit_NC) ... ok
+test_active_offline_pipeline_cannot_invoke_native_tools (test_repository_defaults.RepositoryDefaults.test_active_offline_pipeline_cannot_invoke_native_tools) ... ok
+test_ci_runs_offline_source_workflow_only (test_repository_defaults.RepositoryDefaults.test_ci_runs_offline_source_workflow_only) ... ok
+test_documents_do_not_link_removed_runtime (test_repository_defaults.RepositoryDefaults.test_documents_do_not_link_removed_runtime) ... ok
+test_only_active_two_layer_entry_is_selected (test_repository_defaults.RepositoryDefaults.test_only_active_two_layer_entry_is_selected) ... ok
+test_removed_paths_stay_absent (test_repository_defaults.RepositoryDefaults.test_removed_paths_stay_absent) ... ok
+test_root_commands_forward_current_source_checks (test_repository_defaults.RepositoryDefaults.test_root_commands_forward_current_source_checks) ... ok
+test_shared_builders_reject_removed_modes (test_repository_defaults.RepositoryDefaults.test_shared_builders_reject_removed_modes) ... ok
+test_shared_runtime_has_no_deleted_path_references (test_repository_defaults.RepositoryDefaults.test_shared_runtime_has_no_deleted_path_references) ... ok
+test_missing_symbol_pin_is_rejected (test_schematic_contract.SchematicContractTests.test_missing_symbol_pin_is_rejected) ... ok
+test_native_symbols_are_connected_to_real_nets (test_schematic_contract.SchematicContractTests.test_native_symbols_are_connected_to_real_nets) ... ok
+test_wire_gap_at_symbol_pin_is_rejected (test_schematic_contract.SchematicContractTests.test_wire_gap_at_symbol_pin_is_rejected) ... ok
+test_wrong_net_label_is_rejected (test_schematic_contract.SchematicContractTests.test_wrong_net_label_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.785s
+
+OK

@@ -1,6 +1,6 @@
 # Reconstruction validation
 
-Revision: `0.6.6-reconstruction-wip`. Public baseline: `1233ccdf`.
+Revision: `0.6.7-reference-refactor-wip`. Public baseline: `1233ccdf`.
 The lost local placement and generated files were not recovered. All results
 below must come from this revision's fresh runs. Older review records are
 archived under `references/public-0.6.2-review/` and are historical only.
@@ -9,10 +9,11 @@ archived under `references/public-0.6.2-review/` and are historical only.
 
 ## Current verification state
 
+The source refactor adds NEMA14 I2C0 pin allocation and seven functional sheets. No physical placement or supplier asset changed. Offline source consistency is checked separately from incomplete feature parity: `npm run verify:offline` must pass, while `npm run check:reference-complete` intentionally fails until the missing requirements are implemented. See [the current source-refactor report](docs/nema14-source-refactor-20261109.md).
+
 The new electrical-locality pose is present in source, but main native
 verification is incomplete pending approval for external validation traffic.
-There is no current `dist/index/circuit.json` or fresh native receipt. Current
-local TypeScript and 25 prebuild tests pass. Native-dependent checks have not
+There is no current `dist/index/circuit.json` or fresh native receipt. Fresh offline results are recorded in `checks/20261109-reference-refactor/`; prior 25-test results are historical. Native-dependent checks have not
 completed for these inputs; the current status file records that explicitly.
 
 The isolated candidate was built separately with the unmodified toolchain:

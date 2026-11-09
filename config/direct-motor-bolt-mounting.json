@@ -54,5 +54,5 @@
   ],
   "manufacturing_release": false,
   "PCB_hole_diameter_status": "Provisional clearance envelope for a shank up to 2.5 mm; not verification of rear bolt thread",
-  "current_PCB_geometry": "config/compact-motor-bolts.json"
+  "current_PCB_geometry": "boards/nema11-rp2040-two-layer--20261022-a1/config/requirements.json"
 }

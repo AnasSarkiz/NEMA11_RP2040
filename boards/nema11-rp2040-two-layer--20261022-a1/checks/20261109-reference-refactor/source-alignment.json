@@ -1,0 +1,20 @@
+{
+  "source_contract_passed": true,
+  "failures": [],
+  "nema14_feature_parity_complete": false,
+  "unresolved": [
+    "current_telemetry",
+    "spring_clamp_and_AWG26_termination",
+    "upright_USB_import_and_fit",
+    "top_only_fitted_assembly",
+    "top_fitted_encoder_capacitors",
+    "official_bottom_artwork_and_port_labels",
+    "rear_fasteners_gap_and_insulation",
+    "native_build_and_full_validation",
+    "routing_and_CAM",
+    "firmware_and_bench"
+  ],
+  "native_validation_run": false,
+  "routing_enabled": false,
+  "manufacturing_release": false
+}

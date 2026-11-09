@@ -4,7 +4,6 @@ import { readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import { SupplierPart as BaselineSupplierPart } from "../src/controller/supplier-parts"
 import { CompactSupplierPart } from "../src/compact/supplier-parts"
-import { HybridBulkSupplierPart } from "../src/compact/hybrid-bulk-parts"
 import { prepareSchematic } from "./prepare-controller-schematic"
 import { convertCircuitJsonToSchematicSvg } from "circuit-to-svg"
 import { Resvg } from "@resvg/resvg-js"
@@ -13,7 +12,8 @@ import * as schemas from "circuit-json"
 const compact=process.argv.includes("--compact")
 const folderArg=process.argv.indexOf("--folder")
 const folder=folderArg>=0?process.argv[folderArg+1]:compact?"artifacts/compact-controller":"artifacts/controller"
-const SupplierPart=process.argv.includes("--hybrid-bulk")?HybridBulkSupplierPart:compact?CompactSupplierPart:BaselineSupplierPart
+if (process.argv.includes("--hybrid-bulk")) throw new Error("Retired hybrid six-layer variant is no longer supported")
+const SupplierPart=compact?CompactSupplierPart:BaselineSupplierPart
 const baseBytes = readFileSync(folder+"/unrouted.circuit.json")
 const base = JSON.parse(baseBytes.toString()) as any[]
 const source=base.filter(e=>e.type === "source_component")

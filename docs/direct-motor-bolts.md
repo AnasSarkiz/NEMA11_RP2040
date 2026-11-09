@@ -1,83 +1,59 @@
 # Direct mounting using the motor bolts
 
-The active requirement is **four PCB mounting locations on the motor's existing
-rear case-bolt axes, with no custom carrier, case clamp or enclosure**. This
-supersedes the 25 mm pitch / M1.6 carrier proposal. That proposal and the
-published 0.4.x assemblies are historical references, not the requested mount.
+The active design is the [two-layer board](../boards/nema11-rp2040-two-layer--20261022-a1/).
+It must use four PCB mounting locations on the motor's existing rear case-bolt
+axes, with no custom carrier, case clamp or enclosure. Its
+[current requirements](../boards/nema11-rp2040-two-layer--20261022-a1/config/requirements.json)
+define the provisional PCB hole and head clearance dimensions. These remain
+unqualified until actual rear hardware and assembly tolerances are confirmed.
 
-The current controller PCB/source has now been changed in place: four **Ø2.7 mm
-holes on a 23 mm square**, with centres at X/Y = ±11.5 mm and all-six-layer head
-exclusions of radius 2.35 mm. The drill is a **provisional design clearance for a
-shank up to 2.5 mm**, not a claim that the rear bolts are M2.5. The design reserves
-a maximum 4.5 mm head plus 0.10 mm radial allowance. See
-[`compact-motor-bolts.json`](../config/compact-motor-bolts.json). Native alignment
-now passes; component placement and copper routing must be corrected and all
-manufacturing checks rerun for the changed board.
+## What the unchanged motor evidence establishes
 
-[Current A4 PCB bolt-pattern drawing](../artifacts/requirements/direct-motor-bolts/current-PCB-motor-bolts-A4.pdf)
-shows the actual four revised holes, coordinate origin, PCB/frame edges and head
-exclusions. Its [verification](../artifacts/requirements/direct-motor-bolts/current-drawing-verification.json)
-binds the drawing to the current native PCB hash. It is a mechanical review,
-not an approved drilling or fabrication release.
+The original STEPPERONLINE 11HS12-0674S STEP contains four existing rear bolt
+heads on a nominal **23 × 23 mm square**, at X/Y = ±11.5 mm. Their convex
+cylindrical head surfaces are nominally Ø4 mm at Z = 29–30 mm in OEM coordinates.
+The nominal rear body maximum is Z = 31.5 mm. These are actual model features,
+not invented rear holes; no rear shaft is assumed.
 
-The unchanged original STEPPERONLINE STEP contains **four existing rear bolt
-heads on a nominal 23 × 23 mm square**, at X/Y = ±11.5 mm. Their convex cylindrical
-head surfaces have nominal Ø4 mm and Z = 29–30 mm in the OEM coordinates. These
-are actual model features, not newly invented rear holes. No rear shaft is
-assumed. The nominal rear body maximum is Z = 31.5 mm.
+![Rear view of the unchanged OEM motor](../artifacts/requirements/direct-motor-bolts/OEM-rear-bolt-view.png)
 
-![Rear view generated from the unchanged OEM motor solid](../artifacts/requirements/direct-motor-bolts/OEM-rear-bolt-view.png)
+The [retained CAD inspection](../artifacts/requirements/direct-motor-bolts/nominal-step-bolt-audit.json)
+records the original model hash, head axes and convex surface normals. Its PCB
+comparison is historical and names the deleted six-layer board. It does not
+prove alignment or qualification of the active two-layer source.
 
-The [CAD inspection](../artifacts/requirements/direct-motor-bolts/nominal-step-bolt-audit.json)
-checks the original model hash, the four head axes and their convex surface
-normals. It now compares those axes against the current changed PCB and confirms
-alignment. The former 25 mm holes were **1.414 mm from each corresponding motor
-bolt axis**; that old geometry and its zero-error copper reports are historical.
+The manufacturer drawing specifies **front M2.5 mounting threads**, at
+23 ±0.15 mm pitch and at least 3.5 mm thread depth. It does not specify the rear
+case-bolt thread, under-head length, engagement or torque. Matching nominal
+front/rear pitch does not establish matching threads. A CAD head diameter does
+not establish the shank size, thread or maximum tolerance.
 
-The published drawing specifies **front M2.5 mounting threads**, at 23 ±0.15 mm
-pitch and 3.5 mm minimum thread depth. It does **not** specify the rear case-bolt
-thread, under-head length, engagement or torque. Equal nominal front/rear pitch
-does not establish that the bolts have the same thread. The CAD's visible head
-diameter does not establish a shank diameter, thread or maximum head tolerance.
+## Qualification still needed
 
-The [direct mounting contract](../config/direct-motor-bolt-mounting.json) leaves
-rear bolt specifications unverified. Provisional PCB drill/head design limits
-are set explicitly and must be checked against the actual hardware. An added PCB and any standard insulating spacers
-consume bolt length. Original bolts must retain proper motor clamping and
-engagement; correctly specified longer bolts may be needed. The recessed heads,
-metal rear cover, PCB bottom copper, case temperature and mechanical support
-also need an actual insulation/spacing design. There is no approved direct
-assembly or orderable hardware selection yet.
+The [direct-mounting contract](../config/direct-motor-bolt-mounting.json) keeps
+rear bolt specifications unverified. An added PCB and insulating spacers consume
+bolt length. Original bolts must preserve proper case clamping and engagement;
+correctly specified longer bolts may be needed. Rear-cover metal, bottom copper,
+case temperature, screw/tool access, insulation and PCB support need an actual
+assembly design and physical verification.
 
-Default controller preview now shows the **current hole-revised PCB and genuine
-OEM motor together**, with the four bolt axes aligned. The native assembly has
-77 models and no carrier. The nominal rear-body gap is 2 mm for this clearance
-study; clamp hardware and final insulation/support are not represented as
-qualified. The unchanged OEM solid retains its seated original bolt heads, not
-invented longer screws. Its original wire stubs are preserved and extend beyond
-the frame toward the JST edge; final terminated harness fit remains unresolved.
+The retained [A4 bolt-pattern drawing](../artifacts/requirements/direct-motor-bolts/current-PCB-motor-bolts-A4.pdf)
+and [drawing verification](../artifacts/requirements/direct-motor-bolts/current-drawing-verification.json)
+are frozen evidence for the removed six-layer snapshot. The word `current` in
+those historical filenames is not a current status claim. Likewise, the earlier
+25 mm carrier drawings do not define the current requirement. See the
+[removal and recovery record](legacy-six-layer-removal.md).
 
-[Current native GLB](../artifacts/compact-six-layer/development-assembly.glb)
-and [geometry/export verification](../artifacts/compact-six-layer/current-assembly-geometry.json)
-check every fitted supplier STEP pose and the OEM motor against the actual
-native GLB. This proves export geometry, not collision-free attachment or valid
-routing. Historical motor/carrier rebuilding requires `--historical-carrier`.
-
-Future controller publications update versions of the existing
-[`AnasSarkiz/NEMA11_RP2040_Compact_Prototype`](https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype)
-package. Earlier separately named studies remain historical; no additional
-package name is needed for this revision.
-
-Reproduce the geometry inspection with the CAD environment:
+The shared OEM inspection tool remains available for an explicitly selected
+native PCB, with fresh results written separately:
 
 ```sh
-/workspace/.venvs/nema11-cad/bin/python scripts/inspect_direct_motor_bolts.py
-# This now checks the actual revised current PCB's 23 mm hole alignment.
-/workspace/.venvs/nema11-cad/bin/python scripts/inspect_direct_motor_bolts.py --require-compatible-pcb
-/workspace/.venvs/nema11-cad/bin/python scripts/verify_direct_motor_assembly.py
+python3 scripts/inspect_direct_motor_bolts.py \
+  --input /path/to/approved-native-board.circuit.json \
+  --out /path/to/new-mechanical-review \
+  --require-compatible-pcb
 ```
 
-The PCB requires placement and routing changes around its updated holes, then
-fresh DRC, every-pin connectivity, shorts, CAM, BOM/CPL and complete native 3D
-assembly checks. The old zero-error electrical results do not qualify a new
-layout. This mounting redesign is **not fabrication-ready**.
+This needs the documented CAD dependencies and existing native board output.
+It performs a nominal geometry comparison only. It does not run a native build
+or qualify clamping hardware, component placement, copper or manufacturing.

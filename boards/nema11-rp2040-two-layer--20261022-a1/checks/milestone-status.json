@@ -2,27 +2,24 @@
   "passed": false,
   "manufacturing_approved": false,
   "incomplete": true,
-  "phase": "native-verification-paused",
-  "reason": "External validation traffic requires approval before this main-project run resumes. No fresh main circuit JSON or native receipt was emitted. Do not reuse historical check results for the current placement.",
+  "phase": "source-refactor-native-verification-paused",
+  "reason": "NEMA14 pin allocation/seven-sheet source refactor passes offline checks. Native build remains pending external-validation approval; no current native JSON/receipt exists. Missing telemetry, spring-clamp qualification and upright/all-top fit are explicit blockers.",
   "results": {
-    "prebuild-tests": {
+    "offline-source": {
       "exit_code": 0,
-      "test_count": 25,
-      "log": "checks/prebuild-tests.txt"
+      "repository_test_count": 8,
+      "board_test_count": 34,
+      "log": "checks/20261109-reference-refactor/offline-verification.txt"
     },
-    "typecheck": {
-      "exit_code": 0,
-      "log": "checks/typecheck.txt"
-    },
-    "format-check": {
-      "exit_code": 0,
-      "log": "checks/format-check.txt"
+    "full-nema14-feature-parity": {
+      "exit_code": 1,
+      "expected_blocker": true,
+      "log": "checks/20261109-reference-refactor/full-parity-gate.txt"
     }
   },
   "dependent_checks_skipped": true,
+  "current_source_sha256": "e534b89873edec43ccdd36525f7566f7a63e1ff36d9e1778b2a6ebedb37199ce",
+  "current_placement_sha256": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
   "last_verified_main_commit": "7da9556d18d4e8b54cc790c58dd25d4b487f34eb",
-  "isolated_candidate_native_sha256": "f590d22ad18feff381969d4dfc4032eb65f51c80465a360de8063ea7953ab538",
-  "isolated_evidence": "references/electrical-placement-20261109/",
-  "current_source_sha256": "864cd4929a056bd1c07dfc3345ce04ca563f01db223f340dbc6514da1fb1a045",
-  "current_placement_sha256": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae"
+  "source_refactor_evidence": "checks/20261109-reference-refactor/verification.json"
 }

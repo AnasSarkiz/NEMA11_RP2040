@@ -1,0 +1,23 @@
+{
+  "repository": "AnasSarkiz/NEMA14_RP2040_V2",
+  "commit": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+  "retrieved_on": "2026-11-09",
+  "reference_only": true,
+  "files": [
+    {
+      "path": "firmware-interface.md",
+      "source_url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/firmware-interface.md",
+      "sha256": "329cb4b6665fb1e6caa880568a190316aa0737f19f67d36aefb3aa78f23f5df4"
+    },
+    {
+      "path": "v2-design.md",
+      "source_url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/v2-design.md",
+      "sha256": "70d1671518be6a5bdad3c550d31a2674bbbd4715c4081f908d8cd002abd9f4b7"
+    },
+    {
+      "path": "v2-requirements-checklist.md",
+      "source_url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/docs/v2-requirements-checklist.md",
+      "sha256": "a901280b56aa5474885585e6241fc39fbd5e14b439579d6d1549ea2084796a17"
+    }
+  ]
+}

@@ -9,8 +9,6 @@ imports/supplier/**/*.tsx.original -diff
 imports/motor/**/*.step binary
 # Standard CSV exports retain the CSV writer's CRLF line endings.
 *.csv whitespace=cr-at-eol
-# Keep native exporter SVG formatting intact for registry file comparisons.
-prototypes/compact-current/dist/**/*.svg -whitespace
 
 # Retain portable upstream diagnostic evidence and patch bytes verbatim.
 docs/reconstruction-20261108/tscircuit-bootstrap-fix-cli083/*.patch -text -whitespace

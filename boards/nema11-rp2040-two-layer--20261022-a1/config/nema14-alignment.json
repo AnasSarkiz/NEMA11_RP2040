@@ -1,0 +1,83 @@
+{
+  "scope": "Source refactor targets and limitations; not native or hardware acceptance. No imported definitions are altered.",
+  "reference_commit": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+  "source_component_count": 99,
+  "fitted_component_count": 89,
+  "schematic_sheet_count": 7,
+  "mcu_i2c": {
+    "peripheral": "I2C0",
+    "SDA": {
+      "gpio": 4,
+      "physical_pin": "6",
+      "net": "TEMP_SDA"
+    },
+    "SCL": {
+      "gpio": 5,
+      "physical_pin": "7",
+      "net": "TEMP_SCL"
+    }
+  },
+  "reserved_current_adc": {
+    "A": {
+      "gpio": 26,
+      "physical_pin": "38",
+      "status": "explicit_NC_until_telemetry_implemented"
+    },
+    "B": {
+      "gpio": 27,
+      "physical_pin": "39",
+      "status": "explicit_NC_until_telemetry_implemented"
+    }
+  },
+  "independent_telemetry": {
+    "required": true,
+    "implemented": false,
+    "reference_shunt_ohms": 0.05,
+    "reference_gain_v_per_v": 20,
+    "reference_amp_part": "C93965",
+    "reference_shunt_part": "C713441",
+    "reference_filter_ohms": 100,
+    "reference_filter_f": 1e-8,
+    "nominal_reference_v": 1.65,
+    "nominal_output_at_motor_rating_v": [0.98, 2.32],
+    "nominal_shunt_power_at_motor_rating_w": 0.022445,
+    "blockers": [
+      "Untouched supported imports and manufacturer pin verification",
+      "Two-layer 28 mm placement and mechanical fit",
+      "Kelvin routing, amplifier switching common-mode/transient and thermal review",
+      "Firmware pin map, calibration, sampling and bench tests"
+    ]
+  },
+  "motor_terminal": {
+    "required_type": "spring clamp",
+    "current_part": "C131334",
+    "current_type": "JST",
+    "reference_part": "C2765063",
+    "qualified": false,
+    "motor_lead_AWG": 26,
+    "reference_bare_wire_AWG_range": [24, 16],
+    "blocker": "AWG26 is outside WAGO 250-204 documented bare stranded range; qualify compatible terminal or termination, and fit/access."
+  },
+  "encoder": {
+    "ic": "U_ENCODER",
+    "ic_dnp": true,
+    "capacitors": ["C_ENCODER", "C_ENCODER_BULK"],
+    "target_capacitors_fitted_on_top": true,
+    "target_implemented": false,
+    "blocker": "Current capacitors remain bottom/DNP pending top-side placement and native validation."
+  },
+  "unresolved": [
+    "current_telemetry",
+    "spring_clamp_and_AWG26_termination",
+    "upright_USB_import_and_fit",
+    "top_only_fitted_assembly",
+    "top_fitted_encoder_capacitors",
+    "official_bottom_artwork_and_port_labels",
+    "rear_fasteners_gap_and_insulation",
+    "native_build_and_full_validation",
+    "routing_and_CAM",
+    "firmware_and_bench"
+  ],
+  "routing_enabled": false,
+  "manufacturing_release": false
+}

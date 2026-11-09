@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
-  "version": "0.6.6-reconstruction-wip",
+  "version": "0.6.7-reference-refactor-wip",
   "private": false,
   "type": "module",
   "description": "WIP two-layer NEMA11 controller with required buzzer, imported JLCPCB components; unrouted until validation gates pass",
@@ -18,7 +18,13 @@
     "check:imports": "python3 scripts/audit_component_refresh.py --evidence-dir checks/20261023",
     "check:usb-locator": "python3 scripts/check_usb_locator_holes.py imports/USB4145_03_0070_C/USB4145_03_0070_C.tsx --output checks/20261108-reconstruction/usb-locator.json",
     "export:schematic-pdf": "node scripts/export_a4_schematics.mjs && python3 scripts/export_a4_pdf.py",
-    "verify": "python3 scripts/run_milestone_checks.py"
+    "verify": "python3 scripts/run_milestone_checks.py",
+    "source:generate": "python3 scripts/generate_source.py",
+    "source:check": "python3 scripts/generate_source.py --check",
+    "test:prebuild": "python3 -m unittest discover -s tests -v",
+    "check:contracts": "python3 scripts/check_nema14_alignment.py",
+    "check:reference-complete": "python3 scripts/check_nema14_alignment.py --require-complete",
+    "verify:offline": "npm run check:contracts && npm run test:prebuild && npm run source:check && npm run typecheck && npm run format:check"
   },
   "dependencies": {
     "@tscircuit/cli": "0.1.2446",

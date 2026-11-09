@@ -1,6 +1,0 @@
-{
-  "includeBoardFiles": [
-    "index.circuit.json"
-  ],
-  "previewComponentPath": "index.circuit.json"
-}

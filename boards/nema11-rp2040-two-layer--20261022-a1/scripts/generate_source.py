@@ -3,9 +3,20 @@
 import hashlib
 import json
 from pathlib import Path
+import argparse
+import subprocess
+
+from check_nema14_alignment import audit, load_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 assert Path.cwd() == ROOT
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--check', action='store_true', help='Check generated source without modifying files')
+args = parser.parse_args()
+inputs = load_inputs(ROOT)
+alignment = audit(inputs)
+if not alignment['source_contract_passed']:
+    raise SystemExit('Source contracts failed: ' + '; '.join(alignment['failures']))
 plan = json.loads((ROOT/'config/component-plan.json').read_text())
 manifest = json.loads((ROOT/'checks/import-manifest.json').read_text())['imports']
 parts = {e['part']: e for e in manifest}
@@ -15,8 +26,9 @@ for part in parts.values():
         assert hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest() == entry['sha256'], 'Imported component changed'
 connections = json.loads((ROOT/'config/connections.json').read_text())['components']
 layout = json.loads((ROOT/'config/schematic-layout.json').read_text())
-lines = ['// Reconstructed WIP from public 0.6.2 plus retained engineering evidence.',
+lines = ['// Existing NEMA11 WIP refactored against pinned NEMA14 V2 requirements.',
          '// This is not the byte-identical lost 0.6.5 placement. Routing remains disabled.',
+         '// I2C0 uses GPIO4/5. ADC0/1 remain NC until independent current telemetry is implemented.',
          '// Supplier definitions are fresh JLCPCB imports; no footprint/symbol/pin/CAD overrides.',
          'import poses from "./config/placement.json"',
          'import requirements from "./config/requirements.json"']
@@ -67,5 +79,13 @@ for sheet_index, (title,names) in enumerate(layout['sheets'].items()):
         lines.append('        <'+tag+' '+' '.join(attrs)+' />')
     lines.append('      </schematicsheet>')
 lines += ['    </board>','  )','}','']
-(ROOT/'index.circuit.tsx').write_text('\n'.join(lines))
-print('Generated native full-controller source: two layers, restored complete buzzer circuit, top/bottom fitted components, native A4 sheets; routing disabled')
+formatted = subprocess.run([str(ROOT/'node_modules/.bin/prettier'), '--stdin-filepath', 'index.circuit.tsx'],
+                           input='\n'.join(lines), text=True, capture_output=True, check=True).stdout
+output = ROOT/'index.circuit.tsx'
+if args.check:
+    if output.read_text() != formatted:
+        raise SystemExit('Generated source is stale; run npm run source:generate')
+    print('Current source reproduces exactly; no native tool or network request was run')
+else:
+    output.write_text(formatted)
+    print('Generated two-layer NEMA11 source with I2C0 and seven A4 sheets; routing disabled, telemetry still missing')
