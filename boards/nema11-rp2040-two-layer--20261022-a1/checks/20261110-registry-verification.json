@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-11-10T15:16:46.999262+00:00",
+  "package_url": "https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype",
+  "version": "0.6.7-reference-refactor-wip",
+  "release_id": "58a5854d-11b0-4b99-a451-4aa5e301c0e9",
+  "expected_files": 161,
+  "remote_files": 161,
+  "exact_byte_matches": 161,
+  "missing_files": [],
+  "mismatches": [],
+  "is_latest": true,
+  "ready_to_build": true,
+  "preview_status": "pending",
+  "transpilation_status": "pending",
+  "registry_build_status": "pending",
+  "preview_urls": null,
+  "source_sha256": "e534b89873edec43ccdd36525f7566f7a63e1ff36d9e1778b2a6ebedb37199ce",
+  "native_circuit_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+  "native_receipt_sha256": "d73bd05c3d9b39cae1f2b7c539682a709fa3940b9bccd35a3aae3a7f30e9a2ca",
+  "native_validation": "FAILED WIP: 2 USB boundary errors; 30 pin warnings; 4 schematic findings; zero PCB traces/vias. NOT hardware-approved."
+}
