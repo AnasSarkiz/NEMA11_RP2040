@@ -1,0 +1,24 @@
+{
+  "motor": "STEPPERONLINE 11HS12-0674S",
+  "phase_current_A": 0.67,
+  "view": "EXPLODED REVIEW ONLY; not a qualified mounting stack",
+  "board_thickness_mm": 1.6,
+  "oem_rear_max_z_mm": 31.5,
+  "exploded_review_gap_mm": 10,
+  "motor_translation_mm": { "x": 0, "y": 0, "z": -42.3 },
+  "motor_rotation_deg": { "x": 0, "y": 0, "z": 0 },
+  "nominal_rear_axes_mm": [
+    [-11.5, -11.5],
+    [-11.5, 11.5],
+    [11.5, -11.5],
+    [11.5, 11.5]
+  ],
+  "step_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "obj_sha256": "c39b0649babb9bdc0a37033344ef9249c53a7caf53b17f2adc587f39237c083b",
+  "source_step_url": "https://files.omc-stepperonline.com/11HS12-0674S.STEP",
+  "rear_thread_qualified": false,
+  "replacement_fasteners_qualified": false,
+  "stack_gap_and_insulation_qualified": false,
+  "harness_qualified": false,
+  "manufacturing_release": false
+}

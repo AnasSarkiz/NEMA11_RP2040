@@ -1,2 +1,7 @@
 Errors: 0
-Warnings: 0
+Warnings: 5
+- source_property_ignored_warning: Datasheet information for chip "U_TEMP" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+- source_property_ignored_warning: Datasheet information for chip "U_BUCK" could not be fetched: Datasheet lookup failed (500) for ap63203wu-7. Pin attributes may not be populated.
+- source_property_ignored_warning: Datasheet information for chip "U_PD" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+- source_property_ignored_warning: Datasheet information for chip "D_TVS" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
+- source_property_ignored_warning: Datasheet information for chip "U_DRV" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.

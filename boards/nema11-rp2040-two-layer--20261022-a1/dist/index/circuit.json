@@ -78204,31 +78204,7 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_9iDEQ2ZuRu",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_XIN may not have availability from jlcpcb (C1548).",
-    "source_component_id": "source_component_33",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1548"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_H1wqxG9giC",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_XOUT may not have availability from jlcpcb (C1548).",
-    "source_component_id": "source_component_34",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1548"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_DPO5cHChiF",
+    "source_component_availability_warning_id": "source_component_availability_warning_JB1IB3o9UO",
     "warning_type": "source_component_availability_warning",
     "message": "R_PD_CFG may not have availability from jlcpcb (C25796).",
     "source_component_id": "source_component_2",
@@ -78240,799 +78216,7 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_CXL6KyXruD",
-    "warning_type": "source_component_availability_warning",
-    "message": "D_PD may not have availability from jlcpcb (C8598).",
-    "source_component_id": "source_component_7",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C8598"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_D6rtHbdgIg",
-    "warning_type": "source_component_availability_warning",
-    "message": "D_DATA may not have availability from jlcpcb (C8598).",
-    "source_component_id": "source_component_8",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C8598"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_TnoFKj6cEY",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_TEMP_SDA may not have availability from jlcpcb (C25900).",
-    "source_component_id": "source_component_73",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25900"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_FCIRjDG9ey",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_TEMP_SCL may not have availability from jlcpcb (C25900).",
-    "source_component_id": "source_component_74",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25900"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_YcZ7mE7BJi",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_BOOTSTRAP may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_11",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_f15ZNqKNxA",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_FLASH may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_24",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_VOW7nefmHr",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_ESD may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_29",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_UASj3gj9hz",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO1 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_35",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_XTDtbc5Shx",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO10 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_36",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_sa4oSEP96O",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO22 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_37",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_mpCkgsleTv",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO33 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_38",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_tTO2J8yipn",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO42 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_39",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_jC9GX4MY0L",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_IO49 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_40",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_a2lDjYryqp",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_ADC may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_41",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_LEsFQx4hRE",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_USB may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_42",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_sjXJSApwxz",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_DV23 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_45",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_vTxcmz0e2x",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_DV50 may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_46",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_uuGAf5rMTt",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_DRV_LOGIC may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_62",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_HpnbO5Y76V",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_TEMP may not have availability from jlcpcb (C1525).",
-    "source_component_id": "source_component_72",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1525"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_PLVobCoer7",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_USB_SENSE_H may not have availability from jlcpcb (C25741).",
-    "source_component_id": "source_component_21",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25741"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_oHUhKgShce",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_USB_SENSE_L may not have availability from jlcpcb (C25741).",
-    "source_component_id": "source_component_22",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25741"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_3XtOxy9bDs",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_VM_H may not have availability from jlcpcb (C25741).",
-    "source_component_id": "source_component_68",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25741"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_IASMCYJ0hB",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_BOOT may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_26",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_7PIrLf9FFB",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_XOUT may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_32",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_lvh2scEFVs",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_R may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_79",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_MSoLjcMBzX",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_G may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_81",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_SWMFxGLvLQ",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_B may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_83",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_l0hb7Q0u6m",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_R_GATE may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_87",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_KtfK14SZAJ",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_G_GATE may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_89",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_sz4m7cjHF3",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_B_GATE may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_91",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_lgMc3LYQro",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_BUZZER_GATE may not have availability from jlcpcb (C11702).",
-    "source_component_id": "source_component_95",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C11702"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_r2n6Ur4pX6",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_CP may not have availability from jlcpcb (C960916).",
-    "source_component_id": "source_component_57",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C960916"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_R8TPLqiL1y",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VCP may not have availability from jlcpcb (C960916).",
-    "source_component_id": "source_component_58",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C960916"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_NJelJvflcY",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VM may not have availability from jlcpcb (C960916).",
-    "source_component_id": "source_component_60",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C960916"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_CNFSvOi35M",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VREG may not have availability from jlcpcb (C21120).",
-    "source_component_id": "source_component_59",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C21120"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_eP9tOb071k",
-    "warning_type": "source_component_availability_warning",
-    "message": "D_BUZZER may not have availability from jlcpcb (C478000).",
-    "source_component_id": "source_component_97",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C478000"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_C9782ySwAR",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_BULK may not have availability from jlcpcb (C72522).",
-    "source_component_id": "source_component_61",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C72522"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_e8W6jJ9JaQ",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_PD may not have availability from jlcpcb (C15849).",
-    "source_component_id": "source_component_4",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C15849"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_jVdA0XG4Bp",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_DP may not have availability from jlcpcb (C25100).",
-    "source_component_id": "source_component_19",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25100"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_9w7ywYbnG4",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_DM may not have availability from jlcpcb (C25100).",
-    "source_component_id": "source_component_20",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25100"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_uOL2EkxpJj",
-    "warning_type": "source_component_availability_warning",
-    "message": "D_PWR may not have availability from jlcpcb (C965799).",
-    "source_component_id": "source_component_86",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C965799"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_xHSorYK7YG",
-    "warning_type": "source_component_availability_warning",
-    "message": "L_BUCK may not have availability from jlcpcb (C780206).",
-    "source_component_id": "source_component_10",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C780206"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_TXwfP905Zj",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_CC1 may not have availability from jlcpcb (C25905).",
-    "source_component_id": "source_component_16",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25905"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_WmlEiJ0CXH",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_CC2 may not have availability from jlcpcb (C25905).",
-    "source_component_id": "source_component_17",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25905"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_CugthScj66",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VREG_IN may not have availability from jlcpcb (C52923).",
-    "source_component_id": "source_component_43",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C52923"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_5MBI2JHr5K",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VREG_OUT may not have availability from jlcpcb (C52923).",
-    "source_component_id": "source_component_44",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C52923"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_SkOJmqTw2T",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_BUCK_IN may not have availability from jlcpcb (C13585).",
-    "source_component_id": "source_component_12",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C13585"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_AAO6wGPsoM",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_VM_SENSE may not have availability from jlcpcb (C15195).",
-    "source_component_id": "source_component_70",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C15195"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_9boDkqEeL5",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_PWR_LED may not have availability from jlcpcb (C25104).",
-    "source_component_id": "source_component_85",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25104"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_iLIGid5blw",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_REF_H may not have availability from jlcpcb (C4184).",
-    "source_component_id": "source_component_63",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C4184"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_30Hw71mcF2",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_BUCK_OUT1 may not have availability from jlcpcb (C45783).",
-    "source_component_id": "source_component_13",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C45783"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_LJeG032yTt",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_BUCK_OUT2 may not have availability from jlcpcb (C45783).",
-    "source_component_id": "source_component_14",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C45783"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_x5m9KuWDpC",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_FLASH_CS may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_25",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_tjrDOHclzg",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_RUN may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_47",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_hIQQbe2Zyy",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_REF_L may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_64",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_gq0ZR1rk2C",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_ENABLE may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_66",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_PQ6sbz86w5",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_SLEEP may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_67",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_g1pGwWtsEg",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_VM_L may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_69",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_cwgUGijVom",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_R_PD may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_88",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_ZVEBrQbLyZ",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_G_PD may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_90",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_Fy2hKVDxEU",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_STATUS_B_PD may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_92",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_wiavHu8nEK",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_BUZZER_PD may not have availability from jlcpcb (C25744).",
-    "source_component_id": "source_component_96",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25744"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_Me5S6KG73r",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_PG may not have availability from jlcpcb (C25804).",
-    "source_component_id": "source_component_5",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C25804"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_j51hOOSIZv",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_SA may not have availability from jlcpcb (C7434086).",
-    "source_component_id": "source_component_55",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C7434086"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_EadgGED205",
-    "warning_type": "source_component_availability_warning",
-    "message": "R_SB may not have availability from jlcpcb (C7434086).",
-    "source_component_id": "source_component_56",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C7434086"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_n12JGTffMc",
-    "warning_type": "source_component_availability_warning",
-    "message": "C_REF may not have availability from jlcpcb (C1589).",
-    "source_component_id": "source_component_65",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C1589"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_0CEb6c06ZV",
+    "source_component_availability_warning_id": "source_component_availability_warning_0mEbnd6qmr",
     "warning_type": "source_component_availability_warning",
     "message": "R_PD may not have availability from jlcpcb (C21189).",
     "source_component_id": "source_component_3",
@@ -79044,7 +78228,823 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_YynEw7TJpH",
+    "source_component_availability_warning_id": "source_component_availability_warning_zF7czBrs1p",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_PD may not have availability from jlcpcb (C15849).",
+    "source_component_id": "source_component_4",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C15849"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_OtEOlNL3dE",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_PG may not have availability from jlcpcb (C25804).",
+    "source_component_id": "source_component_5",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25804"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_4A7WirYOhU",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_PD may not have availability from jlcpcb (C8598).",
+    "source_component_id": "source_component_7",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C8598"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_TH7afhoQST",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_DATA may not have availability from jlcpcb (C8598).",
+    "source_component_id": "source_component_8",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C8598"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_kAeOj4gs3y",
+    "warning_type": "source_component_availability_warning",
+    "message": "L_BUCK may not have availability from jlcpcb (C780206).",
+    "source_component_id": "source_component_10",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C780206"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_XWxXyiS2cf",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_BOOTSTRAP may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_11",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_GllYfQg2Uj",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_FLASH may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_24",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_D30dx08Rz0",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_ESD may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_29",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_6mRsdbWsw9",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO1 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_35",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_jITG1OONZ8",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO10 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_36",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_RBtqlU07eN",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO22 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_37",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_lMWCoebu2P",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO33 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_38",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_y1rkE9GgFh",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO42 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_39",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_wNUeVlZkxT",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_IO49 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_40",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Lc9PhJsw8s",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_ADC may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_41",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_DnSJqTUZXH",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_USB may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_42",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_ltyMm6QamS",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_DV23 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_45",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_VIOomEJTUt",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_DV50 may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_46",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_H9X1UUJjDJ",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_DRV_LOGIC may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_62",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_BuSSSN5nIW",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_TEMP may not have availability from jlcpcb (C1525).",
+    "source_component_id": "source_component_72",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1525"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_te9g07MegC",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_BUCK_IN may not have availability from jlcpcb (C13585).",
+    "source_component_id": "source_component_12",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C13585"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_EImb4cc72r",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_BUCK_OUT1 may not have availability from jlcpcb (C45783).",
+    "source_component_id": "source_component_13",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C45783"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_kNW89FuZ6C",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_BUCK_OUT2 may not have availability from jlcpcb (C45783).",
+    "source_component_id": "source_component_14",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C45783"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_xWiuDBypr5",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_CC1 may not have availability from jlcpcb (C25905).",
+    "source_component_id": "source_component_16",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25905"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Ux6hIJoI2F",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_CC2 may not have availability from jlcpcb (C25905).",
+    "source_component_id": "source_component_17",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25905"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_P8FvUFpsap",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_DP may not have availability from jlcpcb (C25100).",
+    "source_component_id": "source_component_19",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25100"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_p7eU0mpIXQ",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_DM may not have availability from jlcpcb (C25100).",
+    "source_component_id": "source_component_20",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25100"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_4WnlQcBvMt",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_USB_SENSE_H may not have availability from jlcpcb (C25741).",
+    "source_component_id": "source_component_21",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25741"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_ertCZGcGsf",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_USB_SENSE_L may not have availability from jlcpcb (C25741).",
+    "source_component_id": "source_component_22",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25741"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_09MQO6LRmw",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_VM_H may not have availability from jlcpcb (C25741).",
+    "source_component_id": "source_component_68",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25741"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_e4CIPXAcrh",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_FLASH_CS may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_25",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_aywwHmbEYM",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_RUN may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_47",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_7eW9SVplf4",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_REF_L may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_64",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_vVPECa5gxa",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_ENABLE may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_66",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_rDEcoj1csf",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_SLEEP may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_67",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_1xNoVCDZjN",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_VM_L may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_69",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_5wNkVZnELN",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_R_PD may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_88",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_jYHvy471NO",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_G_PD may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_90",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Pgmlzx1NtX",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_B_PD may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_92",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_RtlgxTrWtl",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_BUZZER_PD may not have availability from jlcpcb (C25744).",
+    "source_component_id": "source_component_96",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25744"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_8cituZxVa3",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_BOOT may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_26",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_3FwlFZZlVm",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_XOUT may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_32",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_qWlC3W8Dat",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_R may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_79",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_5NvEchYqVo",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_G may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_81",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_qMdKE1ZOw2",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_B may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_83",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_soi94xyyA3",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_R_GATE may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_87",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_aYtvPtIhsE",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_G_GATE may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_89",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_5mO5hgRmFv",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_STATUS_B_GATE may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_91",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_eApNMnPav8",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_BUZZER_GATE may not have availability from jlcpcb (C11702).",
+    "source_component_id": "source_component_95",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C11702"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_H5sBK47V5z",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_XIN may not have availability from jlcpcb (C1548).",
+    "source_component_id": "source_component_33",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1548"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Vv7ldOkhiL",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_XOUT may not have availability from jlcpcb (C1548).",
+    "source_component_id": "source_component_34",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1548"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_q0CdZittxw",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VREG_IN may not have availability from jlcpcb (C52923).",
+    "source_component_id": "source_component_43",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C52923"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_i14qohDxDJ",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VREG_OUT may not have availability from jlcpcb (C52923).",
+    "source_component_id": "source_component_44",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C52923"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_nsiFhKJKGW",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_SA may not have availability from jlcpcb (C7434086).",
+    "source_component_id": "source_component_55",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C7434086"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_JhdfmhWm6c",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_SB may not have availability from jlcpcb (C7434086).",
+    "source_component_id": "source_component_56",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C7434086"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_a2j3lBx2PH",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_CP may not have availability from jlcpcb (C960916).",
+    "source_component_id": "source_component_57",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C960916"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_6HVmmI6iCh",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VCP may not have availability from jlcpcb (C960916).",
+    "source_component_id": "source_component_58",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C960916"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_5o80DZy15k",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VM may not have availability from jlcpcb (C960916).",
+    "source_component_id": "source_component_60",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C960916"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_H43s0bbzgj",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VREG may not have availability from jlcpcb (C21120).",
+    "source_component_id": "source_component_59",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C21120"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_UNiF3pKNtm",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_BULK may not have availability from jlcpcb (C72522).",
+    "source_component_id": "source_component_61",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C72522"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_HAUeFFiPWW",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_REF_H may not have availability from jlcpcb (C4184).",
+    "source_component_id": "source_component_63",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C4184"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_t9mIMCJrei",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_REF may not have availability from jlcpcb (C1589).",
+    "source_component_id": "source_component_65",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C1589"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_cxk9xwkdIk",
+    "warning_type": "source_component_availability_warning",
+    "message": "C_VM_SENSE may not have availability from jlcpcb (C15195).",
+    "source_component_id": "source_component_70",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C15195"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Tdv9PxRgwj",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_TEMP_SDA may not have availability from jlcpcb (C25900).",
+    "source_component_id": "source_component_73",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25900"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_Z9myB5lOE9",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_TEMP_SCL may not have availability from jlcpcb (C25900).",
+    "source_component_id": "source_component_74",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25900"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_R8sQg9wdkl",
+    "warning_type": "source_component_availability_warning",
+    "message": "R_PWR_LED may not have availability from jlcpcb (C25104).",
+    "source_component_id": "source_component_85",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C25104"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_bMwf2lLZGq",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_PWR may not have availability from jlcpcb (C965799).",
+    "source_component_id": "source_component_86",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C965799"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_DPdG7dlVXo",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_BUZZER may not have availability from jlcpcb (C478000).",
+    "source_component_id": "source_component_97",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C478000"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_D13tApJewE",
     "warning_type": "source_component_availability_warning",
     "message": "C_BUZZER may not have availability from jlcpcb (C19702).",
     "source_component_id": "source_component_98",
@@ -79056,19 +79056,7 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_ANPuH26uQS",
-    "warning_type": "source_component_availability_warning",
-    "message": "J_MOTOR may not have availability from jlcpcb (C131334).",
-    "source_component_id": "source_component_54",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C131334"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_Ay7npChNse",
+    "source_component_availability_warning_id": "source_component_availability_warning_1UBxmmyJPG",
     "warning_type": "source_component_availability_warning",
     "message": "J_PD may not have availability from jlcpcb (C165948).",
     "source_component_id": "source_component_0",
@@ -79080,7 +79068,7 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_C4pcpDXb2Z",
+    "source_component_availability_warning_id": "source_component_availability_warning_b2YvSJCtei",
     "warning_type": "source_component_availability_warning",
     "message": "J_DATA may not have availability from jlcpcb (C165948).",
     "source_component_id": "source_component_15",
@@ -79092,31 +79080,7 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_fkXd3DLF8c",
-    "warning_type": "source_component_availability_warning",
-    "message": "U_MCU may not have availability from jlcpcb (C2040).",
-    "source_component_id": "source_component_30",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C2040"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_Nb1hDW9BAe",
-    "warning_type": "source_component_availability_warning",
-    "message": "U_PD may not have availability from jlcpcb (C46061833).",
-    "source_component_id": "source_component_1",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C46061833"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_YE9L2iZNT3",
+    "source_component_availability_warning_id": "source_component_availability_warning_vCEwHc4tVm",
     "warning_type": "source_component_availability_warning",
     "message": "U_ESD may not have availability from jlcpcb (C2687116).",
     "source_component_id": "source_component_18",
@@ -79128,115 +79092,123 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_4PettQIzL6",
+    "source_component_availability_warning_id": "source_component_availability_warning_QPMUmTMpWo",
     "warning_type": "source_component_availability_warning",
-    "message": "BZ1 may not have availability from jlcpcb (C94598).",
-    "source_component_id": "source_component_93",
+    "message": "J_MOTOR may not have availability from jlcpcb (C131334).",
+    "source_component_id": "source_component_54",
     "subcircuit_id": "subcircuit_source_group_0",
     "supplier_name": "jlcpcb",
     "supplier_part_numbers": [
-      "C94598"
+      "C131334"
     ]
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_XedreUV1FL",
-    "warning_type": "source_component_availability_warning",
-    "message": "Y_MCU may not have availability from jlcpcb (C20625731).",
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_0",
     "source_component_id": "source_component_31",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C20625731"
-    ]
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"Y_MCU\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_1L56Bz4TRg",
-    "warning_type": "source_component_availability_warning",
-    "message": "Q_STATUS_R may not have availability from jlcpcb (C154728).",
-    "source_component_id": "source_component_80",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C154728"
-    ]
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_1",
+    "source_component_id": "source_component_23",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_FLASH\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_CC2Oh5RERy",
-    "warning_type": "source_component_availability_warning",
-    "message": "Q_STATUS_G may not have availability from jlcpcb (C154728).",
-    "source_component_id": "source_component_82",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C154728"
-    ]
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_2",
+    "source_component_id": "source_component_6",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"D_TVS\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_m3WyihrnUZ",
-    "warning_type": "source_component_availability_warning",
-    "message": "Q_STATUS_B may not have availability from jlcpcb (C154728).",
-    "source_component_id": "source_component_84",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C154728"
-    ]
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_3",
+    "source_component_id": "source_component_75",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_ENCODER\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_yPSWpCw8YB",
-    "warning_type": "source_component_availability_warning",
-    "message": "Q_BUZZER may not have availability from jlcpcb (C154728).",
-    "source_component_id": "source_component_94",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C154728"
-    ]
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_4",
+    "source_component_id": "source_component_1",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_PD\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_KdDSddCUvO",
-    "warning_type": "source_component_availability_warning",
-    "message": "U_BUCK may not have availability from jlcpcb (C780769).",
-    "source_component_id": "source_component_9",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C780769"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_WPwYWoCXCR",
-    "warning_type": "source_component_availability_warning",
-    "message": "U_TEMP may not have availability from jlcpcb (C99269).",
-    "source_component_id": "source_component_71",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C99269"
-    ]
-  },
-  {
-    "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_Nd120It4cz",
-    "warning_type": "source_component_availability_warning",
-    "message": "D_STATUS may not have availability from jlcpcb (C458749).",
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_5",
     "source_component_id": "source_component_78",
-    "subcircuit_id": "subcircuit_source_group_0",
-    "supplier_name": "jlcpcb",
-    "supplier_part_numbers": [
-      "C458749"
-    ]
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"D_STATUS\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_6",
+    "source_component_id": "source_component_9",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_BUCK\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_7",
+    "source_component_id": "source_component_80",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"Q_STATUS_R\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_8",
+    "source_component_id": "source_component_82",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"Q_STATUS_G\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_9",
+    "source_component_id": "source_component_84",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"Q_STATUS_B\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_10",
+    "source_component_id": "source_component_94",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"Q_BUZZER\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_11",
+    "source_component_id": "source_component_71",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_TEMP\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_12",
+    "source_component_id": "source_component_53",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_DRV\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_MFEQACOqux",
+    "source_component_availability_warning_id": "source_component_availability_warning_fNgsYV3Eh7",
     "warning_type": "source_component_availability_warning",
     "message": "U_FLASH may not have availability from jlcpcb (C2986331).",
     "source_component_id": "source_component_23",
@@ -79248,7 +79220,47 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_bj9v9r1yk0",
+    "source_component_availability_warning_id": "source_component_availability_warning_Lzl0pPEQWA",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_TVS may not have availability from jlcpcb (C19077512).",
+    "source_component_id": "source_component_6",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C19077512"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_u37955xrkn",
+    "warning_type": "source_component_availability_warning",
+    "message": "Y_MCU may not have availability from jlcpcb (C20625731).",
+    "source_component_id": "source_component_31",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C20625731"
+    ]
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_13",
+    "source_component_id": "source_component_93",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"BZ1\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_property_ignored_warning",
+    "source_property_ignored_warning_id": "source_property_ignored_warning_14",
+    "source_component_id": "source_component_30",
+    "property_name": "pinAttributes",
+    "message": "Datasheet information for chip \"U_MCU\" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.",
+    "error_type": "source_property_ignored_warning"
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_dUJ4eztF47",
     "warning_type": "source_component_availability_warning",
     "message": "U_DRV may not have availability from jlcpcb (C38437).",
     "source_component_id": "source_component_53",
@@ -79260,18 +79272,126 @@
   },
   {
     "type": "source_component_availability_warning",
-    "source_component_availability_warning_id": "source_component_availability_warning_TiZSakxCBR",
+    "source_component_availability_warning_id": "source_component_availability_warning_AgP5K3Az50",
     "warning_type": "source_component_availability_warning",
-    "message": "D_TVS may not have availability from jlcpcb (C19077512).",
-    "source_component_id": "source_component_6",
+    "message": "U_BUCK may not have availability from jlcpcb (C780769).",
+    "source_component_id": "source_component_9",
     "subcircuit_id": "subcircuit_source_group_0",
     "supplier_name": "jlcpcb",
     "supplier_part_numbers": [
-      "C19077512"
+      "C780769"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_NxjgUqB0P2",
+    "warning_type": "source_component_availability_warning",
+    "message": "U_PD may not have availability from jlcpcb (C46061833).",
+    "source_component_id": "source_component_1",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C46061833"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_c5VB6J2tyy",
+    "warning_type": "source_component_availability_warning",
+    "message": "BZ1 may not have availability from jlcpcb (C94598).",
+    "source_component_id": "source_component_93",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C94598"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_lYgzNHMoqU",
+    "warning_type": "source_component_availability_warning",
+    "message": "U_MCU may not have availability from jlcpcb (C2040).",
+    "source_component_id": "source_component_30",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C2040"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_gdrPS1lOXl",
+    "warning_type": "source_component_availability_warning",
+    "message": "D_STATUS may not have availability from jlcpcb (C458749).",
+    "source_component_id": "source_component_78",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C458749"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_e82wxgdLzv",
+    "warning_type": "source_component_availability_warning",
+    "message": "U_TEMP may not have availability from jlcpcb (C99269).",
+    "source_component_id": "source_component_71",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C99269"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_DfYnPiJgrU",
+    "warning_type": "source_component_availability_warning",
+    "message": "Q_STATUS_R may not have availability from jlcpcb (C154728).",
+    "source_component_id": "source_component_80",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C154728"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_nMBEFYI09X",
+    "warning_type": "source_component_availability_warning",
+    "message": "Q_STATUS_G may not have availability from jlcpcb (C154728).",
+    "source_component_id": "source_component_82",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C154728"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_IfdxysNvNC",
+    "warning_type": "source_component_availability_warning",
+    "message": "Q_STATUS_B may not have availability from jlcpcb (C154728).",
+    "source_component_id": "source_component_84",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C154728"
+    ]
+  },
+  {
+    "type": "source_component_availability_warning",
+    "source_component_availability_warning_id": "source_component_availability_warning_TFU67yLprM",
+    "warning_type": "source_component_availability_warning",
+    "message": "Q_BUZZER may not have availability from jlcpcb (C154728).",
+    "source_component_id": "source_component_94",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "supplier_name": "jlcpcb",
+    "supplier_part_numbers": [
+      "C154728"
     ]
   },
   {
     "type": "source_project_metadata",
-    "source_filesystem_md5_hash": "33b5b071ffb042869f53713f410cab38"
+    "source_filesystem_md5_hash": "93067bcfd7ad4cec13e1e23c631fea80"
   }
 ]

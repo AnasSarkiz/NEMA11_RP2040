@@ -11,6 +11,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 BOARD = 'boards/nema11-rp2040-two-layer--20261022-a1'
 ENTRY = BOARD + '/index.circuit.tsx'
+ASSEMBLY = BOARD + '/assembly-preview.circuit.tsx'
 
 
 def load(relative):
@@ -23,8 +24,15 @@ class RepositoryDefaults(unittest.TestCase):
         self.assertEqual(load('package.json')['main'], ENTRY)
         self.assertEqual(load('package.json')['version'], load(BOARD + '/package.json')['version'])
         config = load('tscircuit.config.json')
-        self.assertEqual(config['includeBoardFiles'], [ENTRY])
-        self.assertEqual(config['previewComponentPath'], ENTRY)
+        self.assertEqual(config['includeBoardFiles'], [ENTRY, ASSEMBLY])
+        self.assertEqual(config['previewComponentPath'], ASSEMBLY)
+        active = load(BOARD + '/tscircuit.config.json')
+        self.assertEqual(active['includeBoardFiles'], ['index.circuit.tsx', 'assembly-preview.circuit.tsx'])
+        self.assertEqual(active['previewComponentPath'], 'assembly-preview.circuit.tsx')
+        assembly = (ROOT / ASSEMBLY).read_text()
+        self.assertIn('import Controller from "./index.circuit"', assembly)
+        self.assertIn('<Controller />', assembly)
+        self.assertIn('EXPLODED_REVIEW_NOT_QUALIFIED_FOR_ASSEMBLY', assembly)
         self.assertEqual(load('tsconfig.json'), {'extends': './' + BOARD + '/tsconfig.json'})
         source = (ROOT / ENTRY).read_text()
         self.assertRegex(source, r'layers=\{2\}')
@@ -43,6 +51,8 @@ class RepositoryDefaults(unittest.TestCase):
             self.assertNotIn('compact-current', command, name)
             self.assertNotIn('artifacts/', command, name)
         self.assertEqual(scripts['build'], f'npm --prefix {BOARD} run build')
+        self.assertEqual(scripts['build:assembly'], f'npm --prefix {BOARD} run build:assembly')
+        self.assertIn('assembly-preview.circuit.tsx', scripts['dev:assembly'])
         self.assertIn(ENTRY.split('/')[-1], scripts['dev'])
         self.assertIn(BOARD, scripts['dev'])
 

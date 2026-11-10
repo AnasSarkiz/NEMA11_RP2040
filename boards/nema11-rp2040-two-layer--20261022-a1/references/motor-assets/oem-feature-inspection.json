@@ -1,0 +1,92 @@
+{
+  "scope": "Fresh local CadQuery/OCP inspection of unchanged OEM STEP, 2026-11-10",
+  "step_sha256": "b4ff0bd732ad45daac9830bbae1ff3a6306149dc32ce631b943f577a9507cbf2",
+  "solid_count": 5,
+  "solids": [
+    {
+      "index": 0,
+      "volume_mm3": 16.60900024020618,
+      "bounds_mm": [
+        -1.5141404951998307,
+        -34.100000000000016,
+        26.62809831948019,
+        -0.48585950480016604,
+        -14.100000000000001,
+        27.656379309879856
+      ],
+      "interpretation": "one of four supplied straight lead stubs"
+    },
+    {
+      "index": 1,
+      "volume_mm3": 25599.12959380175,
+      "bounds_mm": [
+        -14.100000100000003,
+        -17.1,
+        -19.99999999998181,
+        14.100000100000008,
+        14.100000100000004,
+        31.500000100000012
+      ],
+      "interpretation": "main motor solid including shaft and lateral wire-exit feature"
+    },
+    {
+      "index": 2,
+      "volume_mm3": 16.610803442972784,
+      "bounds_mm": [
+        4.485831596004092,
+        -34.100000000000016,
+        26.628070410684117,
+        5.514168403995909,
+        -14.100000000000001,
+        27.656407218675934
+      ],
+      "interpretation": "one of four supplied straight lead stubs"
+    },
+    {
+      "index": 3,
+      "volume_mm3": 15.744487472792784,
+      "bounds_mm": [
+        -5.500580963256032,
+        -34.100000000000016,
+        26.64165785142399,
+        -4.499419036743963,
+        -14.100000000000001,
+        27.642819777936058
+      ],
+      "interpretation": "one of four supplied straight lead stubs"
+    },
+    {
+      "index": 4,
+      "volume_mm3": 16.537797447086398,
+      "bounds_mm": [
+        0.4869627487641556,
+        -34.100000000000016,
+        26.629201563444177,
+        1.5130372512358465,
+        -14.100000000000001,
+        27.65527606591587
+      ],
+      "interpretation": "one of four supplied straight lead stubs"
+    }
+  ],
+  "whole_motor_xy_extent_mm": [
+    28.2,
+    48.2
+  ],
+  "required_whole_assembly_frame_maximum_mm": [
+    28.3,
+    28.3
+  ],
+  "whole_assembly_frame_pass": false,
+  "lead_exit_feature_bounds_mm": [
+    -6.000001095,
+    -17.1,
+    24.54987884,
+    5.999998905,
+    -14.10001,
+    29.5
+  ],
+  "feature_function": "Geometry at the lead exit; exact material/construction not established",
+  "notes": "Four slender separate solids extend 20mm along negative Y from -14.1 to -34.1. Main solid also protrudes to Y=-17.1. Do not crop either feature or treat nominal 28.2mm body width as a whole-assembly pass. Real cable bending/routing and frame interpretation require qualification.",
+  "manufacturing_release": false
+}

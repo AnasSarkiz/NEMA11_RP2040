@@ -49,7 +49,7 @@
   "PCB_thickness_mm": 1.6,
   "schematic_sheet_count": 7,
   "desired_component_sides": ["top"],
-  "desired_USB_orientation": "upright at two different board edges",
+  "desired_USB_orientation": "upright at opposite board edges",
   "all_top_assembly_verified": false,
   "upright_USB_verified": false,
   "independent_coil_current_telemetry_required": true,

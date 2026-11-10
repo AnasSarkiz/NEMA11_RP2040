@@ -25,7 +25,7 @@
   },
   "independent_geometry_pass": true,
   "input_sha256": {
-    "circuit": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+    "circuit": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
     "placement": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
     "baseline": "044a4a2561e21454eac4bedde4dc8c8bf3d537b6bd8ff0e38a462ddc681f6b4f"
   }

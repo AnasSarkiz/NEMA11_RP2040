@@ -1,0 +1,41 @@
+{
+  "scope": "Camera-only labeled render of unchanged native GLB; preliminary layout",
+  "input": "dist/assembly-preview/3d.glb",
+  "input_sha256": "55e9a3bf7599e518459fbb231c2e82408085d381256f8cdf625504c09747f47e",
+  "output": "artifacts/motor-assembly-review/full-assembly.png",
+  "output_sha256": "b7057683a9fc4a60d8fec759f71752ad867bb25136c8aa6ec9c854092f17d7ed",
+  "gltf_world_bounds": {
+    "min": [
+      -14.100000381469727,
+      -62.29999923706055,
+      -34.099998474121094
+    ],
+    "max": [
+      14.100000381469727,
+      8.550000190734863,
+      14.100000381469727
+    ]
+  },
+  "camera": {
+    "width": 1200,
+    "height": 1000,
+    "camPos": [
+      81.43099632976441,
+      20.269261509858666,
+      -138.5752564091116
+    ],
+    "lookAt": [
+      0,
+      -26.874999523162842,
+      -9.999999046325684
+    ],
+    "up": "y+",
+    "fov": 38,
+    "realistic": true,
+    "supersampling": 1,
+    "backgroundColor": "#edf1f5",
+    "grid": false
+  },
+  "geometry_mutated": false,
+  "manufacturing_release": false
+}

@@ -16,3 +16,8 @@ dist/*
 !dist/index/
 dist/index/*
 !dist/index/circuit.json
+
+# Retain the separate native exploded assembly JSON, not unbounded render output.
+!dist/assembly-preview/
+dist/assembly-preview/*
+!dist/assembly-preview/circuit.json

@@ -1,0 +1,1053 @@
+{
+  "scope": "Counterfactual rigid-transform AABB screen only; all candidates rejected, active placement unchanged. No routing, native build, assembly, tolerance or fabrication approval.",
+  "input_sha256": {
+    "baseline-geometry.json": "918d65ca4148fc9404b608fa44bc1e02317bdd7b06c1b5a17a438d761fddbedc",
+    "candidates.json": "2d304a4cb2e7aba91a639cd0f999bfeb607f11e58e9ce9e86ebef0b975a7105f",
+    "audit_placement_geometry.py": "f722d20a367b33fa372f0c42efe965c7097c0ebea4197c991bdc17c37782ae55"
+  },
+  "candidates": {
+    "south_connector_only": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_145",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_146",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_147",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_148",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Y_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_161",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Y_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_162",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_XOUT",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_163",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0536872000000006
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_215",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.12636177799180365
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_215",
+          "b_id": "pcb_smtpad_62",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_216",
+          "b_id": "pcb_smtpad_62",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_217",
+          "b_id": "pcb_smtpad_63",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_218",
+          "b_id": "pcb_smtpad_60",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_218",
+          "b_id": "pcb_smtpad_63",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_219",
+          "b_id": "pcb_smtpad_59",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_219",
+          "b_id": "pcb_smtpad_60",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_220",
+          "b_id": "pcb_smtpad_58",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_220",
+          "b_id": "pcb_smtpad_59",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_221",
+          "b_id": "pcb_smtpad_57",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_221",
+          "b_id": "pcb_smtpad_58",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "J_DATA",
+          "a_id": "pcb_plated_hole_8",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.05011580000000038
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "J_DATA",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_237",
+          "b_id": "pcb_smtpad_58",
+          "conservative_AABB_gap_mm": 0.14866309999999994
+        },
+        {
+          "a": "C_VREG",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_237",
+          "b_id": "pcb_smtpad_59",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_237",
+          "b_id": "pcb_smtpad_60",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_238",
+          "b_id": "pcb_smtpad_56",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_238",
+          "b_id": "pcb_smtpad_57",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_BULK",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_241",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_BULK",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_242",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DRV_LOGIC",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_243",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DRV_LOGIC",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_244",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DRV_LOGIC",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_244",
+          "b_id": "pcb_smtpad_62",
+          "conservative_AABB_gap_mm": 0.07986609999999983
+        },
+        {
+          "a": "R_VM_H",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_255",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.01551120000000017
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_261",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_262",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_263",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_264",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_265",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_266",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_267",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_268",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.0
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.3890026999999989,
+      "minimum_bolt_envelope_gap_mm": 0.07499973348452027,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "west_power_connector_only": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_102",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_120",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0830324
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_121",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_122",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_123",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_124",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.11691640000000003
+        },
+        {
+          "a": "TP_SWDIO",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_198",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "TP_RUN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_199",
+          "b_id": "pcb_smtpad_5",
+          "conservative_AABB_gap_mm": 0.004238299999999473
+        },
+        {
+          "a": "TP_RUN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_199",
+          "b_id": "pcb_smtpad_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "TP_RUN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_199",
+          "b_id": "pcb_smtpad_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "TP_RUN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_199",
+          "b_id": "pcb_smtpad_10",
+          "conservative_AABB_gap_mm": 0.09584820000000027
+        },
+        {
+          "a": "R_STATUS_G",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_294",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_G",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_295",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Q_STATUS_G",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_296",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Q_STATUS_G",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_297",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Q_STATUS_G",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_298",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "BZ1",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_320",
+          "b_id": "pcb_smtpad_5",
+          "conservative_AABB_gap_mm": 0.06328360633244495
+        },
+        {
+          "a": "BZ1",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_320",
+          "b_id": "pcb_smtpad_6",
+          "conservative_AABB_gap_mm": 0.036676199999998715
+        },
+        {
+          "a": "BZ1",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_320",
+          "b_id": "pcb_smtpad_7",
+          "conservative_AABB_gap_mm": 0.036676199999998715
+        },
+        {
+          "a": "Q_BUZZER",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_324",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.07238849999999974
+        },
+        {
+          "a": "Q_BUZZER",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_325",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.07259169999999893
+        },
+        {
+          "a": "R_BUZZER_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_328",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "D_BUZZER",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_330",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.3890026999999989,
+      "minimum_bolt_envelope_gap_mm": 0.07499973348452027,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "south_repacked_top": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_145",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_146",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_147",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_148",
+          "b_id": "pcb_plated_hole_6",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Y_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_161",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "Y_MCU",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_162",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_XOUT",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_163",
+          "b_id": "pcb_plated_hole_7",
+          "conservative_AABB_gap_mm": 0.0536872000000006
+        },
+        {
+          "a": "U_DRV",
+          "b": "TP_BOOT_GND",
+          "a_id": "pcb_smtpad_208",
+          "b_id": "pcb_smtpad_99",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_DRV",
+          "b": "TP_BOOT_GND",
+          "a_id": "pcb_smtpad_209",
+          "b_id": "pcb_smtpad_99",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "R_CC1",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_smtpad_65",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "R_CC2",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_smtpad_67",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_smtpad_69",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_smtpad_70",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_10",
+          "b_id": "pcb_smtpad_71",
+          "conservative_AABB_gap_mm": 0.029184100000000157
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_11",
+          "b_id": "pcb_smtpad_69",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_11",
+          "b_id": "pcb_smtpad_70",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "J_MOTOR",
+          "b": "U_ESD",
+          "a_id": "pcb_plated_hole_11",
+          "b_id": "pcb_smtpad_71",
+          "conservative_AABB_gap_mm": 0.029184100000000157
+        },
+        {
+          "a": "R_SA",
+          "b": "TP_BOOT",
+          "a_id": "pcb_smtpad_229",
+          "b_id": "pcb_smtpad_98",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_BULK",
+          "b": "TP_3V3",
+          "a_id": "pcb_smtpad_241",
+          "b_id": "pcb_smtpad_195",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_BULK",
+          "b": "TP_SWCLK",
+          "a_id": "pcb_smtpad_241",
+          "b_id": "pcb_smtpad_197",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_BULK",
+          "b": "TP_SWDIO",
+          "a_id": "pcb_smtpad_242",
+          "b_id": "pcb_smtpad_198",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_VM_H",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_255",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.01551120000000017
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_261",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_262",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_263",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_264",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_265",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_266",
+          "b_id": "pcb_plated_hole_5",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_267",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_TEMP",
+          "b": "J_DATA",
+          "a_id": "pcb_smtpad_268",
+          "b_id": "pcb_plated_hole_4",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_B",
+          "b": "J_MOTOR",
+          "a_id": "pcb_smtpad_299",
+          "b_id": "pcb_plated_hole_9",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_B_GATE",
+          "b": "J_MOTOR",
+          "a_id": "pcb_smtpad_316",
+          "b_id": "pcb_plated_hole_9",
+          "conservative_AABB_gap_mm": 0.13691160000000124
+        },
+        {
+          "a": "R_STATUS_B_GATE",
+          "b": "J_MOTOR",
+          "a_id": "pcb_smtpad_317",
+          "b_id": "pcb_plated_hole_9",
+          "conservative_AABB_gap_mm": 0.0
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.3890026999999989,
+      "minimum_bolt_envelope_gap_mm": 0.054929499999983644,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "west_power_offset_buzzer_north": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "R_DM",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_77",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14574082986411174
+        },
+        {
+          "a": "R_DM",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_78",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.12129320000000021
+        },
+        {
+          "a": "C_FLASH",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_92",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_FLASH",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_93",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.06280370000000168
+        },
+        {
+          "a": "C_IO42",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_178",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG_IN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_185",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG_IN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_186",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DV50",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_191",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.1434276999999995
+        },
+        {
+          "a": "C_DV50",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_192",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "TP_RUN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_199",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_310",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_311",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_G_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_315",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.3890026999999989,
+      "minimum_bolt_envelope_gap_mm": 0.007929499999981271,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "west_broader_relayout_rejected": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "R_STATUS_R",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_289",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917299999999926
+        },
+        {
+          "a": "R_STATUS_R",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_290",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917299999999926
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.1483460000000001,
+      "minimum_bolt_envelope_gap_mm": -0.07684650000001847,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "west_mcu_right_relayout_rejected": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "D_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_33",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.07603380000000026
+        },
+        {
+          "a": "D_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_34",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.07603380000000026
+        },
+        {
+          "a": "J_DATA",
+          "b": "C_BUCK_OUT2",
+          "a_id": "pcb_plated_hole_5",
+          "b_id": "pcb_smtpad_52",
+          "conservative_AABB_gap_mm": 0.0914268000000007
+        },
+        {
+          "a": "R_DM",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_78",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_FLASH",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_92",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_108",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14985069999999934
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_109",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14985069999999934
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_110",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14985069999999934
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_111",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14985069999999934
+        },
+        {
+          "a": "U_MCU",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_112",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.14985069999999934
+        },
+        {
+          "a": "C_IO1",
+          "b": "U_MCU",
+          "a_id": "pcb_smtpad_169",
+          "b_id": "pcb_smtpad_156",
+          "conservative_AABB_gap_mm": 0.13733750000000056
+        },
+        {
+          "a": "C_IO1",
+          "b": "U_MCU",
+          "a_id": "pcb_smtpad_169",
+          "b_id": "pcb_smtpad_157",
+          "conservative_AABB_gap_mm": 0.13733750000000056
+        },
+        {
+          "a": "C_IO1",
+          "b": "U_MCU",
+          "a_id": "pcb_smtpad_170",
+          "b_id": "pcb_smtpad_158",
+          "conservative_AABB_gap_mm": 0.13733750000000056
+        },
+        {
+          "a": "C_ADC",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_182",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG_IN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_185",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DV50",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_192",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_310",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917200000000001
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_311",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917200000000001
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.09438669999999938,
+      "minimum_bolt_envelope_gap_mm": -0.04300687995728669,
+      "historical_frozen_anchors_unchanged": false
+    },
+    "west_mcu_right_intermediate_rejected": {
+      "candidate_adopted": false,
+      "native_build_run": false,
+      "copper_AABB_pairs_below_015mm": [
+        {
+          "a": "R_DM",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_77",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "R_DM",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_78",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_FLASH",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_92",
+          "b_id": "pcb_plated_hole_2",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_IO1",
+          "b": "U_MCU",
+          "a_id": "pcb_smtpad_169",
+          "b_id": "pcb_smtpad_157",
+          "conservative_AABB_gap_mm": 0.12917150000000044
+        },
+        {
+          "a": "C_IO1",
+          "b": "U_MCU",
+          "a_id": "pcb_smtpad_169",
+          "b_id": "pcb_smtpad_158",
+          "conservative_AABB_gap_mm": 0.12917150000000044
+        },
+        {
+          "a": "C_ADC",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_182",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_VREG_IN",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_185",
+          "b_id": "pcb_plated_hole_0",
+          "conservative_AABB_gap_mm": 0.0
+        },
+        {
+          "a": "C_DV50",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_191",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.07491980000000087
+        },
+        {
+          "a": "C_DV50",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_192",
+          "b_id": "pcb_plated_hole_1",
+          "conservative_AABB_gap_mm": 0.07491980000000087
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_310",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917200000000001
+        },
+        {
+          "a": "R_STATUS_R_PD",
+          "b": "J_PD",
+          "a_id": "pcb_smtpad_311",
+          "b_id": "pcb_plated_hole_3",
+          "conservative_AABB_gap_mm": 0.06917200000000001
+        }
+      ],
+      "copper_min_edge_gap_mm": 0.09438769999999863,
+      "minimum_bolt_envelope_gap_mm": -0.1773252313301894,
+      "historical_frozen_anchors_unchanged": false
+    }
+  }
+}

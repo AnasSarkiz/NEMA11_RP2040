@@ -1,4 +1,4 @@
 {
-  "includeBoardFiles": ["index.circuit.tsx"],
-  "previewComponentPath": "index.circuit.tsx"
+  "includeBoardFiles": ["index.circuit.tsx", "assembly-preview.circuit.tsx"],
+  "previewComponentPath": "assembly-preview.circuit.tsx"
 }

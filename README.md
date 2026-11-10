@@ -2,8 +2,9 @@
 
 The only active design is
 [`boards/nema11-rp2040-two-layer--20261022-a1`](boards/nema11-rp2040-two-layer--20261022-a1/).
-Root package entry, tscircuit preview and TypeScript configuration all select
-that **two-layer** board. It is being refactored around the NEMA14 reference
+Root package entry and TypeScript configuration select that **two-layer** board.
+The tscircuit preview wraps the same board with its genuine OEM motor in a
+separate, explicitly exploded assembly view. It is being refactored around the NEMA14 reference
 requirements, with parts and mounting adapted to the smaller STEPPERONLINE
 11HS12-0674S motor. The NEMA14 source remains a read-only reference.
 
@@ -14,6 +15,24 @@ See the active board's [README](boards/nema11-rp2040-two-layer--20261022-a1/READ
 and [validation status](boards/nema11-rp2040-two-layer--20261022-a1/VALIDATION.md)
 for its current scope and blockers. Existing reports are tied to their original
 inputs and do not validate subsequent source changes.
+
+## Motor assembly and opposite-side USB request
+
+Version **0.6.8-motor-assembly-wip** adds the genuine STEPPERONLINE motor to
+[`assembly-preview.circuit.tsx`](boards/nema11-rp2040-two-layer--20261022-a1/assembly-preview.circuit.tsx),
+following the NEMA14 separate-preview workflow. The **10 mm exploded gap is
+only a viewing separation**, not an approved spacer or mounting stack. Rear
+fasteners, engagement, insulation and mating remain unqualified. The unchanged
+OEM leads extend the model to 28.2 × 48.2 mm; even the main solid's wire exit
+exceeds the saved 28.3 mm whole-frame target. No geometry is cropped or hidden.
+See the [motor assembly review](boards/nema11-rp2040-two-layer--20261022-a1/docs/motor-assembly-review.md).
+
+**The USB ports remain on adjacent edges.** Opposite-edge trials include both
+layers and real through-hole shell copper. The closest bounded-search candidate
+still has two conservative copper-clearance flags and an MCU courtyard intrusion
+into a motor-bolt envelope, so it was rejected. No unsafe candidate was applied.
+See the [reproducible opposite-edge study](docs/engineering-review-20261110/opposite-usb/README.md).
+The broader floorplan redesign remains open.
 
 ## Current all-top feasibility screen
 

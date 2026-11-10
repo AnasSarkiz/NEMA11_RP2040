@@ -1,0 +1,32 @@
+{
+  "scope": "Installed camera helper comparison, no build or model edits",
+  "packageVersion": "0.0.164",
+  "full": {
+    "camPos": [
+      24.182425814157742,
+      41.45558710998471,
+      -27.63705807332314
+    ],
+    "lookAt": [
+      0,
+      0,
+      0
+    ],
+    "fov": 50
+  },
+  "boardOnly": {
+    "camPos": [
+      24.182425814157742,
+      41.45558710998471,
+      -27.63705807332314
+    ],
+    "lookAt": [
+      0,
+      0,
+      0
+    ],
+    "fov": 50
+  },
+  "identical": true,
+  "finding": "Default helper fits board/panel rectangle only and ignores cad_component bounds; applies generally to off-board/tall assembly geometry, not a motor transform failure"
+}

@@ -13,6 +13,7 @@
   },
   "include": [
     "index.circuit.tsx",
+    "assembly-preview.circuit.tsx",
     "imports/**/*.tsx",
     "scripts/**/*.tsx",
     "assets.d.ts"

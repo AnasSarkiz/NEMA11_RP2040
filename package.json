@@ -1,6 +1,6 @@
 {
   "name": "NEMA11_RP2040",
-  "version": "0.6.7-reference-refactor-wip",
+  "version": "0.6.8-motor-assembly-wip",
   "private": true,
   "type": "module",
   "description": "Active two-layer NEMA11 RP2040 source; NEMA14 requirements adaptation in progress, routing and hardware unqualified",
@@ -16,6 +16,8 @@
     "verify:offline": "npm run test:repository && npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run verify:offline",
     "build": "npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run build",
     "dev": "cd boards/nema11-rp2040-two-layer--20261022-a1 && ./node_modules/.bin/tsci dev index.circuit.tsx",
-    "source:check": "npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run source:check"
+    "source:check": "npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run source:check",
+    "build:assembly": "npm --prefix boards/nema11-rp2040-two-layer--20261022-a1 run build:assembly",
+    "dev:assembly": "cd boards/nema11-rp2040-two-layer--20261022-a1 && ./node_modules/.bin/tsci dev assembly-preview.circuit.tsx"
   }
 }

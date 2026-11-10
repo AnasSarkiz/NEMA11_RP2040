@@ -1,4 +1,18 @@
 test_known_public_revision_and_bytes (test_baseline_provenance.PublicBaseline.test_known_public_revision_and_bytes) ... ok
+test_bom_mismatch (test_motor_assembly.EmittedMotorAssemblyTests.test_bom_mismatch) ... ok
+test_electrical_mutation (test_motor_assembly.EmittedMotorAssemblyTests.test_electrical_mutation) ... ok
+test_matching_native_records (test_motor_assembly.EmittedMotorAssemblyTests.test_matching_native_records) ... ok
+test_missing_motor (test_motor_assembly.EmittedMotorAssemblyTests.test_missing_motor) ... ok
+test_native_transform_mismatches (test_motor_assembly.EmittedMotorAssemblyTests.test_native_transform_mismatches) ... ok
+test_unexpected_part (test_motor_assembly.EmittedMotorAssemblyTests.test_unexpected_part) ... ok
+test_bad_hash_rejected (test_motor_assembly.MotorAssemblyTests.test_bad_hash_rejected) ... ok
+test_bottom_flip (test_motor_assembly.MotorAssemblyTests.test_bottom_flip) ... ok
+test_entrypoint_preserves_real_board_and_omits_fake_hardware (test_motor_assembly.MotorAssemblyTests.test_entrypoint_preserves_real_board_and_omits_fake_hardware) ... ok
+test_genuine_model_hashes_and_axes (test_motor_assembly.MotorAssemblyTests.test_genuine_model_hashes_and_axes) ... ok
+test_motor_bounds_and_nominal_review_separation (test_motor_assembly.MotorAssemblyTests.test_motor_bounds_and_nominal_review_separation) ... ok
+test_source_uses_exact_contract_transform_and_assets (test_motor_assembly.MotorAssemblyTests.test_source_uses_exact_contract_transform_and_assets) ... ok
+test_transform_origin_rotation_translation (test_motor_assembly.MotorAssemblyTests.test_transform_origin_rotation_translation) ... ok
+test_uncropped_motor_fails_whole_frame (test_motor_assembly.MotorAssemblyTests.test_uncropped_motor_fails_whole_frame) ... ok
 test_clean_output (test_native_summary.NativeSummary.test_clean_output) ... ok
 test_missing_duplicate_exception_or_failure_rejected (test_native_summary.NativeSummary.test_missing_duplicate_exception_or_failure_rejected) ... ok
 test_unresolved_warning_blocks_acceptance (test_native_summary.NativeSummary.test_unresolved_warning_blocks_acceptance) ... ok
@@ -34,6 +48,6 @@ test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_no
 test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 0.120s
+Ran 48 tests in 0.366s
 
 OK

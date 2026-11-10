@@ -163,7 +163,7 @@
         "--output",
         "checks/strict-source.json"
       ],
-      "exit_code": 0,
+      "exit_code": 1,
       "log": "checks/strict-source.txt"
     },
     "strict-schematic": {

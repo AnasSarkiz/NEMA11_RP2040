@@ -36,3 +36,11 @@ source. Never print credentials or tokens.
 The former root setup and native scripts are retained only where needed for
 historical four-layer/MCU evidence. They are not recommended setup or validation
 for current work. See [scoped six-layer deletion](legacy-six-layer-removal.md).
+
+## Separate motor assembly preview
+
+`npm run build:assembly` and `npm run dev:assembly` select the genuine motor
+assembly around the same active PCB. The ordinary electrical build still selects
+`index.circuit.tsx`. The preview is an exploded review, not an approved hardware
+stack; native errors remain failures. Assembly commands are manual native work
+under the same service-access permission rules above, never part of offline CI.

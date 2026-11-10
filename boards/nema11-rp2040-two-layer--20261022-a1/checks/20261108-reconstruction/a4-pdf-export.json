@@ -48,7 +48,7 @@
   ],
   "components_covered": 99,
   "schematic_ports_covered": 346,
-  "native_json_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+  "native_json_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
   "historical_20261023_conversion_observations": [
     "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
     "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."

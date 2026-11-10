@@ -1,6 +1,7 @@
 {
   "includeBoardFiles": [
-    "boards/nema11-rp2040-two-layer--20261022-a1/index.circuit.tsx"
+    "boards/nema11-rp2040-two-layer--20261022-a1/index.circuit.tsx",
+    "boards/nema11-rp2040-two-layer--20261022-a1/assembly-preview.circuit.tsx"
   ],
-  "previewComponentPath": "boards/nema11-rp2040-two-layer--20261022-a1/index.circuit.tsx"
+  "previewComponentPath": "boards/nema11-rp2040-two-layer--20261022-a1/assembly-preview.circuit.tsx"
 }

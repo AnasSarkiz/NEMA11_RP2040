@@ -20,3 +20,7 @@ references/compact-replacements/CH224-wch-response -text -whitespace
 # Preserve the fetched reference checklist bytes and its recorded hash.
 references/nema14-v2-requirements-20261108.md -text -whitespace
 references/electrical-placement-20261109/*.log -text -whitespace
+
+# Keep OEM motor source and tessellation byte-identical, including supplier CRLF.
+references/motor-assets/*.step binary
+references/motor-assets/*.obj binary

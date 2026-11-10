@@ -1,24 +1,39 @@
 # Reconstruction validation
 
-Revision: `0.6.7-reference-refactor-wip`. Public baseline: `1233ccdf`.
+Revision: `0.6.8-motor-assembly-wip`. Public baseline: `1233ccdf`.
 The lost local placement and generated files were not recovered. All results
 below must come from this revision's fresh runs. Older review records are
 archived under `references/public-0.6.2-review/` and are historical only.
 
 **Unrouted, untested prototype. Not fabrication-ready.**
 
-## Current verification state, 2026-11-10
+## Motor assembly checkpoint
+
+The separate native assembly wraps the unchanged electrical board with the
+genuine OEM motor. Its 10 mm exploded viewing separation is not an approved
+stack or spacer. Active USB placements remain adjacent; the opposite-edge
+study rejects all recorded candidates and broader layout work remains open.
+The complete motor model spans 28.2 × 48.2 mm in XY, failing the saved
+28.3 × 28.3 mm whole-frame target. Excluding flexible leads still leaves a
+31.2 mm main-solid wire-exit span, so that exclusion would not establish a pass.
+No motor geometry is cropped. Hardware, mating, fasteners and insulation remain
+unqualified. See [the motor review](docs/motor-assembly-review.md).
+
+## Electrical verification state, 2026-11-10
 
 The NEMA14 I2C0 pin allocation and seven functional sheets now have a fresh
-native build. The source, physical placement and supplier assets were not
-changed in this refresh. `checks/native-build-status.json` binds all native
+native build. Electrical source, physical placement and supplier assets are unchanged.
+The package now also includes the separate motor assembly and its validation. `checks/native-build-status.json` binds all native
 inputs and the generated `dist/index/circuit.json` by SHA-256. The receipt
 reports `fresh_output: true` and `build_passed: false`.
 
-- Offline repository/source checks pass, including 34 prebuild regressions.
+- Offline repository/source checks pass, including 48 prebuild regressions (14 for the motor assembly), plus eight
+  root-selection tests and nine opposite-edge study tests.
 - All 10 emitted contracts, 657 source/import assertions and independent
   conservative geometry checks pass.
-- Native source and netlist checks report zero errors or warnings.
+- Native netlist reports zero errors/warnings. The current source check reports
+  zero errors and five datasheet-service warnings (four timeouts and one HTTP 500);
+  its strict gate fails. These are retained, not treated as a clean source pass.
 - Pin semantics reports 30 warnings; its strict gate fails.
 - Schematic analysis reports four findings: two imported label collisions,
   one cross-device decoupling grouping suggestion, and the bootstrap
@@ -135,3 +150,5 @@ reported stock. Complete live JLC assembly availability/quote is still open.
 Review artifacts and all failed gates are retained. At that historical checkpoint, no routing, fabrication
 order, GitHub push, merge or tscircuit publication had occurred. This sentence
 does not describe the current publication state.
+
+Current source-bound motor evidence: [motor assembly checkpoint](docs/motor-assembly-checkpoint-20261110.md).

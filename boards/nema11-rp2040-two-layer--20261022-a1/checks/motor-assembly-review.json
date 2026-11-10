@@ -1,0 +1,4177 @@
+{
+  "native_input_receipt_current": true,
+  "scope": "Exploded preview nominal mesh/AABB check, not physical qualification",
+  "input": "dist/index/circuit.json",
+  "input_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "placement_sha256": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
+  "motor_source_bounds_mm": {
+    "min": [
+      -14.1,
+      -34.1,
+      -20.0
+    ],
+    "max": [
+      14.1,
+      14.1,
+      31.5
+    ]
+  },
+  "motor_preview_bounds_mm": {
+    "min": [
+      -14.1,
+      -34.1,
+      -62.3
+    ],
+    "max": [
+      14.1,
+      14.1,
+      -10.799999999999997
+    ]
+  },
+  "whole_motor_xy_extent_mm": [
+    28.2,
+    48.2
+  ],
+  "whole_assembly_frame_maximum_mm": [
+    28.3,
+    28.3
+  ],
+  "whole_assembly_frame_pass": false,
+  "frame_failure_reason": "Uncropped OEM motor and straight lead stubs alone span 28.2 x 48.2mm; main motor solid also has a lead-exit protrusion to Y=-17.1mm",
+  "nominal_bolt_axes_aligned": true,
+  "pcb_bottom_to_motor_rear_mm": 9.999999999999996,
+  "minimum_component_vertical_gap_mm": 8.169999999999996,
+  "components": [
+    {
+      "name": "J_PD",
+      "layer": "top",
+      "model": "./imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320",
+      "source_bounds_mm": {
+        "min": [
+          -4.47,
+          -5.3,
+          -0.85
+        ],
+        "max": [
+          4.47,
+          2.6,
+          3.251
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 0,
+        "y": 8.65,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -4.47,
+          6.100028900000052,
+          -0.050010999999999806
+        ],
+        "max": [
+          4.47,
+          14.000028900000052,
+          4.050989
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 10.749988999999998
+    },
+    {
+      "name": "U_PD",
+      "layer": "bottom",
+      "model": "./imports/CH224Q/CH224Q.obj",
+      "sha256": "a67edc88634f47ee485ef4b97c076d2dfce1b8c041e95ee7d48582c12ab85512",
+      "source_bounds_mm": {
+        "min": [
+          -1.0,
+          -1.01,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.01,
+          0.813
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -1.6452,
+        "y": 8.6299,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -2.6551872999999295,
+          7.629899999999999,
+          -1.613
+        ],
+        "max": [
+          -0.6351872999999297,
+          9.6299,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.186999999999998
+    },
+    {
+      "name": "R_PD_CFG",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF5602TCE/A_0402WGF5602TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 3.1817,
+        "y": 8.626,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          2.9317127000000704,
+          8.126,
+          -1.1600000000000001
+        ],
+        "max": [
+          3.4317127000000704,
+          9.126,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_PD",
+      "layer": "bottom",
+      "model": "./imports/A_0603WAF0000T5E/A_0603WAF0000T5E.obj",
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "source_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -3.0191,
+        "y": 12.3943,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -3.4240999999999997,
+          11.584299999999999,
+          -1.25
+        ],
+        "max": [
+          -2.6140999999999996,
+          13.2043,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.549999999999997
+    },
+    {
+      "name": "C_PD",
+      "layer": "bottom",
+      "model": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -0.9633,
+        "y": 11.6899,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -1.7633,
+          11.2899,
+          -1.6
+        ],
+        "max": [
+          -0.1632999999999999,
+          12.0899,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.199999999999998
+    },
+    {
+      "name": "R_PG",
+      "layer": "bottom",
+      "model": "./imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj",
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "source_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 1.2233,
+        "y": 7.9389,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          0.4133,
+          7.5339,
+          -1.2500000000000002
+        ],
+        "max": [
+          2.0333,
+          8.3439,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.549999999999997
+    },
+    {
+      "name": "D_TVS",
+      "layer": "bottom",
+      "model": "./imports/SMF18A/SMF18A.obj",
+      "sha256": "da7ea2615c07f6b32365b75ea560ce49a73847950b28adc2758b09e13fab6d3a",
+      "source_bounds_mm": {
+        "min": [
+          -1.8,
+          -0.9,
+          -0.11
+        ],
+        "max": [
+          1.8,
+          0.9,
+          0.9
+        ]
+      },
+      "origin_mm": {
+        "x": 0.00010160000010728254,
+        "y": 0,
+        "z": -0.11
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 1.1308,
+        "y": 6.085,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -0.6690983999998927,
+          5.185,
+          -1.8100000000000003
+        ],
+        "max": [
+          2.9309016000001074,
+          6.985,
+          -0.7999999999999998
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.989999999999997
+    },
+    {
+      "name": "D_PD",
+      "layer": "bottom",
+      "model": "./imports/B5819W_SL/B5819W_SL.obj",
+      "sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344",
+      "source_bounds_mm": {
+        "min": [
+          -1.925,
+          -0.85,
+          -0.6
+        ],
+        "max": [
+          1.925,
+          0.85,
+          0.85
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -9.1109,
+        "y": 6.6666,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -11.035900000000002,
+          5.816587300000001,
+          -2.25
+        ],
+        "max": [
+          -7.185900000000001,
+          7.5165873,
+          -0.7999999999999998
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.549999999999997
+    },
+    {
+      "name": "D_DATA",
+      "layer": "bottom",
+      "model": "./imports/B5819W_SL/B5819W_SL.obj",
+      "sha256": "7c8e2c97e9b3e5c32c1eca57a40e13681407e988333317e3024a8635b37b7344",
+      "source_bounds_mm": {
+        "min": [
+          -1.925,
+          -0.85,
+          -0.6
+        ],
+        "max": [
+          1.925,
+          0.85,
+          0.85
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 1.2699999999199463e-05,
+        "z": -0.6
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 12.65,
+        "y": 0,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          11.8000127,
+          -1.925,
+          -2.25
+        ],
+        "max": [
+          13.5000127,
+          1.925,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.549999999999997
+    },
+    {
+      "name": "U_BUCK",
+      "layer": "bottom",
+      "model": "./imports/AP63203WU_7/AP63203WU_7.obj",
+      "sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69",
+      "source_bounds_mm": {
+        "min": [
+          -1.45,
+          -1.4,
+          -0.62
+        ],
+        "max": [
+          1.45,
+          1.4,
+          0.27
+        ]
+      },
+      "origin_mm": {
+        "x": 1.2700000070253736e-05,
+        "y": 0,
+        "z": -0.62
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 6.6544,
+        "y": 11.6363,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.204387299999929,
+          10.2363,
+          -1.6900000000000004
+        ],
+        "max": [
+          8.10438729999993,
+          13.0363,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.109999999999996
+    },
+    {
+      "name": "L_BUCK",
+      "layer": "bottom",
+      "model": "./imports/SRN4018_4R7M/SRN4018_4R7M.obj",
+      "sha256": "108e122d483c901c50656619eb0b126d30b2570239c220269cf2ff7b06bb5103",
+      "source_bounds_mm": {
+        "min": [
+          -2.0,
+          -2.0,
+          -0.02
+        ],
+        "max": [
+          2.0,
+          2.05,
+          1.81
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0.02499999999999991,
+        "z": -0.02
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 7.5863,
+        "y": 7.2807,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.5863,
+          5.255700000000001,
+          -2.6300000000000003
+        ],
+        "max": [
+          9.5863,
+          9.3057,
+          -0.7999999999999998
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.169999999999996
+    },
+    {
+      "name": "C_BOOTSTRAP",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 3.7604,
+        "y": 13.1523,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.2604,
+          12.90231270000007,
+          -1.3000000000000003
+        ],
+        "max": [
+          4.260400000000001,
+          13.40231270000007,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_BUCK_IN",
+      "layer": "bottom",
+      "model": "./imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0",
+      "source_bounds_mm": {
+        "min": [
+          -1.6,
+          -0.8,
+          -0.65
+        ],
+        "max": [
+          1.6,
+          0.8,
+          0.65
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.65
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 1.5245,
+        "y": 11.228,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          0.7244999999999996,
+          9.628,
+          -2.1
+        ],
+        "max": [
+          2.3245000000000005,
+          12.828,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.699999999999998
+    },
+    {
+      "name": "C_BUCK_OUT1",
+      "layer": "bottom",
+      "model": "./imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "source_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          -0.65
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.65
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 3.9942,
+        "y": 2.958,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.3441872999999296,
+          1.9580000000000002,
+          -2.1
+        ],
+        "max": [
+          4.64418729999993,
+          3.958,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.699999999999998
+    },
+    {
+      "name": "C_BUCK_OUT2",
+      "layer": "bottom",
+      "model": "./imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "source_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          -0.65
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.65
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.65
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 5.8753,
+        "y": 1.7515,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.22528729999993,
+          0.7515000000000001,
+          -2.1
+        ],
+        "max": [
+          6.52528729999993,
+          2.7515,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.699999999999998
+    },
+    {
+      "name": "J_DATA",
+      "layer": "top",
+      "model": "./imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320",
+      "source_bounds_mm": {
+        "min": [
+          -4.47,
+          -5.3,
+          -0.85
+        ],
+        "max": [
+          4.47,
+          2.6,
+          3.251
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 8.65,
+        "y": 0,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          6.100028900000051,
+          -4.470000000000001,
+          -0.050010999999999806
+        ],
+        "max": [
+          14.000028900000054,
+          4.47,
+          4.050989
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 10.749988999999998
+    },
+    {
+      "name": "R_CC1",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 9,
+        "y": -2.8,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          8.5,
+          -3.05001270000007,
+          -1.1600000000000001
+        ],
+        "max": [
+          9.5,
+          -2.55001270000007,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_CC2",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF5101TCE/A_0402WGF5101TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 11.4,
+        "y": -3.12,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          10.9,
+          -3.36998729999993,
+          -1.1600000000000001
+        ],
+        "max": [
+          11.9,
+          -2.86998729999993,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "U_ESD",
+      "layer": "bottom",
+      "model": "./imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45",
+      "source_bounds_mm": {
+        "min": [
+          -1.406359,
+          -1.45,
+          -0.048939
+        ],
+        "max": [
+          1.406359,
+          1.45,
+          1.6
+        ]
+      },
+      "origin_mm": {
+        "x": -1.2700000070253736e-05,
+        "y": 1.2700000070253736e-05,
+        "z": -0.048939
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 9.8,
+        "y": 0,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          8.349987299999931,
+          -1.4063462999999297,
+          -2.448939
+        ],
+        "max": [
+          11.24998729999993,
+          1.4063717000000702,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.351060999999998
+    },
+    {
+      "name": "R_DP",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -4.3223,
+        "y": 0.158198,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -4.57228729999993,
+          -0.341802,
+          -1.1600000000000001
+        ],
+        "max": [
+          -4.07228729999993,
+          0.6581980000000001,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_DM",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -8.6356,
+        "y": 0.155698,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -8.88558729999993,
+          -0.344302,
+          -1.1600000000000001
+        ],
+        "max": [
+          -8.38558729999993,
+          0.655698,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_USB_SENSE_H",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 3.9485,
+        "y": 0.4174,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.4485,
+          0.16738729999992968,
+          -1.1600000000000001
+        ],
+        "max": [
+          4.4485,
+          0.6673872999999297,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_USB_SENSE_L",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 5.5328,
+        "y": -0.7585,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.0328,
+          -1.0084872999999297,
+          -1.1600000000000001
+        ],
+        "max": [
+          6.0328,
+          -0.5084872999999297,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "U_FLASH",
+      "layer": "bottom",
+      "model": "./imports/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed",
+      "source_bounds_mm": {
+        "min": [
+          -1.5,
+          -1.01,
+          -0.02
+        ],
+        "max": [
+          1.5,
+          1.0,
+          0.45
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -0.005107950000000305,
+        "z": -0.02
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -6.2131,
+        "y": 11.787798,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -7.217992049999999,
+          10.287798,
+          -1.2700000000000002
+        ],
+        "max": [
+          -5.20799205,
+          13.287798,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.529999999999998
+    },
+    {
+      "name": "C_FLASH",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -7.082,
+        "y": 8.767798,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -7.33201270000007,
+          8.267798,
+          -1.3
+        ],
+        "max": [
+          -6.83201270000007,
+          9.267798,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "R_FLASH_CS",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -5.3372,
+        "y": 8.9919,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -5.8372,
+          8.741887299999929,
+          -1.1600000000000001
+        ],
+        "max": [
+          -4.8372,
+          9.241887299999929,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_BOOT",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -2.7267,
+        "y": 10.4342,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -3.2267,
+          10.18418729999993,
+          -1.1600000000000001
+        ],
+        "max": [
+          -2.2267,
+          10.68418729999993,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "C_ESD",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 7.35,
+        "y": 0,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          7.10001270000007,
+          -0.5,
+          -1.3
+        ],
+        "max": [
+          7.60001270000007,
+          0.5,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "U_MCU",
+      "layer": "bottom",
+      "model": "./imports/RP2040/RP2040.obj",
+      "sha256": "a3a668d5b1ab3b8962838676908b1a52503a1374525738f51d09eef15bbcd39e",
+      "source_bounds_mm": {
+        "min": [
+          -3.51,
+          -3.51,
+          -0.02
+        ],
+        "max": [
+          3.51,
+          3.51,
+          0.85
+        ]
+      },
+      "origin_mm": {
+        "x": 1.2699999956566899e-05,
+        "y": -0.0001269999999067295,
+        "z": -0.02
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -7.8166,
+        "y": -4.942002,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -11.326587300000043,
+          -8.451875000000094,
+          -1.6700000000000004
+        ],
+        "max": [
+          -4.306587300000044,
+          -1.431875000000093,
+          -0.7999999999999996
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.129999999999997
+    },
+    {
+      "name": "Y_MCU",
+      "layer": "bottom",
+      "model": "./imports/ABM8_272_T3/ABM8_272_T3.obj",
+      "sha256": "4b75001f08c9e627eb8c88ca2c599b8b278cbe76d399495cfd15b2fc366c45a7",
+      "source_bounds_mm": {
+        "min": [
+          -1.6,
+          -1.25,
+          0.0
+        ],
+        "max": [
+          1.6,
+          1.25,
+          0.701
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -3,
+        "y": -11.123502,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -4.25001270000007,
+          -12.723502,
+          -1.501
+        ],
+        "max": [
+          -1.75001270000007,
+          -9.523502,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.298999999999998
+    },
+    {
+      "name": "R_XOUT",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -5.2488,
+        "y": -10.042802,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -5.49881270000007,
+          -10.542802,
+          -1.1600000000000001
+        ],
+        "max": [
+          -4.99881270000007,
+          -9.542802,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "C_XIN",
+      "layer": "bottom",
+      "model": "./imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -0.7491,
+        "y": -8.592402,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -0.9991127000000704,
+          -9.092402,
+          -1.3
+        ],
+        "max": [
+          -0.49911270000007013,
+          -8.092402,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_XOUT",
+      "layer": "bottom",
+      "model": "./imports/A_0402CG150J500NT/A_0402CG150J500NT.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -6.3222,
+        "y": -11.099602,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -6.57221270000007,
+          -11.599602,
+          -1.3
+        ],
+        "max": [
+          -6.07221270000007,
+          -10.599602,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO1",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -3.1283,
+        "y": -2.299302,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -3.37831270000007,
+          -2.799302,
+          -1.3
+        ],
+        "max": [
+          -2.87831270000007,
+          -1.799302,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO10",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -3.1597,
+        "y": -5.118002,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -3.4096872999999297,
+          -5.618002,
+          -1.3
+        ],
+        "max": [
+          -2.9096872999999297,
+          -4.618002,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO22",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -8.59,
+        "y": -9.594002,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -9.09,
+          -9.84398929999993,
+          -1.3000000000000003
+        ],
+        "max": [
+          -8.09,
+          -9.34398929999993,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO33",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -12.4915,
+        "y": -6.691902,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -12.74151270000007,
+          -7.191902,
+          -1.3
+        ],
+        "max": [
+          -12.24151270000007,
+          -6.191902,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO42",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -12.5027,
+        "y": -1.448502,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -12.752712700000071,
+          -1.948502,
+          -1.3
+        ],
+        "max": [
+          -12.252712700000071,
+          -0.948502,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_IO49",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -5.5706,
+        "y": 0.110498,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -5.8205872999999295,
+          -0.389502,
+          -1.3
+        ],
+        "max": [
+          -5.3205872999999295,
+          0.610498,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_ADC",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -9.7119,
+        "y": 0.109198,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -9.96188729999993,
+          -0.390802,
+          -1.3
+        ],
+        "max": [
+          -9.46188729999993,
+          0.609198,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_USB",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -5.7932,
+        "y": 1.582998,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -6.2932,
+          1.3330107000000702,
+          -1.3000000000000003
+        ],
+        "max": [
+          -5.2932,
+          1.8330107000000702,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_VREG_IN",
+      "layer": "bottom",
+      "model": "./imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -11.1877,
+        "y": 0.026598,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -11.6877,
+          -0.22338929999992974,
+          -1.3000000000000003
+        ],
+        "max": [
+          -10.6877,
+          0.27661070000007026,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_VREG_OUT",
+      "layer": "bottom",
+      "model": "./imports/CL05A105KA5NQNC/CL05A105KA5NQNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -9.9933,
+        "y": 1.980398,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -10.24328729999993,
+          1.480398,
+          -1.3
+        ],
+        "max": [
+          -9.74328729999993,
+          2.480398,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_DV23",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -6.7194,
+        "y": -9.598802,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -7.2194,
+          -9.848789299999929,
+          -1.3000000000000003
+        ],
+        "max": [
+          -6.2194,
+          -9.348789299999929,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "C_DV50",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -7.5606,
+        "y": 0.198198,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -7.81058729999993,
+          -0.301802,
+          -1.3
+        ],
+        "max": [
+          -7.31058729999993,
+          0.698198,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "R_RUN",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -2.4198,
+        "y": 6.6156,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -2.9198,
+          6.3655872999999294,
+          -1.1600000000000001
+        ],
+        "max": [
+          -1.9198,
+          6.8655872999999294,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "U_DRV",
+      "layer": "top",
+      "model": "./imports/A4988SETTR_T/A4988SETTR_T.obj",
+      "sha256": "01eb47f12909a50a9f70825ab23b31c6be4b33ffe26bd7c8697f94077b87ebd9",
+      "source_bounds_mm": {
+        "min": [
+          -2.501,
+          -2.501,
+          -0.05
+        ],
+        "max": [
+          2.501,
+          2.501,
+          0.58
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.05
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 2,
+        "y": -3.2,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -0.5010000000000003,
+          -5.7010000000000005,
+          0.8
+        ],
+        "max": [
+          4.501,
+          -0.6989999999999998,
+          1.4300000000000002
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "J_MOTOR",
+      "layer": "top",
+      "model": "./imports/B4B_PH_K_S_LF__SN_/B4B_PH_K_S_LF__SN_.obj",
+      "sha256": "333d51fc2722f28c1a73c3ef4b240453d4ce90bba01e4b2a7b6d8c059fa62d0f",
+      "source_bounds_mm": {
+        "min": [
+          -1.95,
+          -3.0,
+          -3.0
+        ],
+        "max": [
+          7.95,
+          1.7,
+          6.0
+        ]
+      },
+      "origin_mm": {
+        "x": 2.9999872999999297,
+        "y": -0.5500383000000056,
+        "z": -5.999999999950489e-06
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 3.874997,
+        "y": -11.1,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -1.07499029999993,
+          -13.549961699999994,
+          -2.1999940000000002
+        ],
+        "max": [
+          8.82500970000007,
+          -8.849961699999994,
+          6.800006
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.600005999999997
+    },
+    {
+      "name": "R_SA",
+      "layer": "top",
+      "model": "./imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
+      "source_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.61
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 1.2699999842880061e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 2.59,
+        "y": 1.2137,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          1.5899999999999999,
+          0.5636873000001571,
+          0.8
+        ],
+        "max": [
+          3.59,
+          1.8636873000001573,
+          1.4100000000000001
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "R_SB",
+      "layer": "top",
+      "model": "./imports/HP05W3F240LT5E/HP05W3F240LT5E.obj",
+      "sha256": "6bbe05c8bf2262e8c377c9a7cb422b1725e8842352dcd40bc47f3a573bb08a84",
+      "source_bounds_mm": {
+        "min": [
+          -1.0,
+          -0.65,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.65,
+          0.61
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 1.2699999842880061e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -1.0772,
+        "y": 0.973,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -2.0772,
+          0.3229873000001571,
+          0.8
+        ],
+        "max": [
+          -0.07719999999999994,
+          1.6229873000001571,
+          1.4100000000000001
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_CP",
+      "layer": "top",
+      "model": "./imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -1.8714,
+        "y": -0.9976,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -2.1213872999999297,
+          -1.4976,
+          0.8
+        ],
+        "max": [
+          -1.6213872999999297,
+          -0.49760000000000004,
+          1.3
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_VCP",
+      "layer": "top",
+      "model": "./imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -1.7542,
+        "y": -2.98,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -2.0041872999999297,
+          -3.48,
+          0.8
+        ],
+        "max": [
+          -1.5041872999999297,
+          -2.48,
+          1.3
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_VREG",
+      "layer": "top",
+      "model": "./imports/CL10B224KA8NNNC/CL10B224KA8NNNC.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 0.7487,
+        "y": -7.2,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -0.05130000000000001,
+          -7.6000000000000005,
+          0.8
+        ],
+        "max": [
+          1.5487000000000002,
+          -6.8,
+          1.6
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_VM",
+      "layer": "top",
+      "model": "./imports/CL05B104KB5NNNC/CL05B104KB5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -3.2286,
+        "y": -3.1999,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -3.7286,
+          -3.4498872999999297,
+          0.8
+        ],
+        "max": [
+          -2.7286,
+          -2.9498872999999297,
+          1.3
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_BULK",
+      "layer": "top",
+      "model": "./imports/RVT1V470M0605/RVT1V470M0605.obj",
+      "sha256": "c2f7aa7cd71a979dfeda7f8834d57e7bc89a1a551214fb36539b6e2a07d00d5f",
+      "source_bounds_mm": {
+        "min": [
+          -3.9,
+          -3.3,
+          -0.05
+        ],
+        "max": [
+          3.9,
+          3.3,
+          7.7
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.05
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -4.9,
+        "y": -9,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -8.19998729999993,
+          -12.9,
+          0.8
+        ],
+        "max": [
+          -1.5999872999999298,
+          -5.1,
+          8.55
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "C_DRV_LOGIC",
+      "layer": "top",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 4.25,
+        "y": -7.201,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.75,
+          -7.450987299999929,
+          0.8
+        ],
+        "max": [
+          4.75,
+          -6.950987299999929,
+          1.3
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "R_REF_H",
+      "layer": "bottom",
+      "model": "./imports/A_0603WAF2002T5E/A_0603WAF2002T5E.obj",
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94",
+      "source_bounds_mm": {
+        "min": [
+          -0.41,
+          -0.81,
+          -0.01
+        ],
+        "max": [
+          0.4,
+          0.81,
+          0.44
+        ]
+      },
+      "origin_mm": {
+        "x": -0.004999999999999977,
+        "y": 0,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 1.2531,
+        "y": -7.9136,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          0.44310000000000005,
+          -8.3186,
+          -1.2500000000000002
+        ],
+        "max": [
+          2.0631000000000004,
+          -7.5085999999999995,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.549999999999997
+    },
+    {
+      "name": "R_REF_L",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 3.7126,
+        "y": -9.196,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.2126,
+          -9.44598729999993,
+          -1.1600000000000001
+        ],
+        "max": [
+          4.2126,
+          -8.94598729999993,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "C_REF",
+      "layer": "top",
+      "model": "./imports/CL10B103KB8NNNC/CL10B103KB8NNNC.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 6.5841,
+        "y": -5.9095,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.7841000000000005,
+          -6.309500000000001,
+          0.8
+        ],
+        "max": [
+          7.3841,
+          -5.5095,
+          1.6
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "R_ENABLE",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 5.8341,
+        "y": -2.0509,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          5.3341,
+          -2.30091270000007,
+          -1.1600000000000001
+        ],
+        "max": [
+          6.3341,
+          -1.8009127000000702,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_SLEEP",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 1.9184,
+        "y": -5.8055,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          1.4184,
+          -6.055512700000071,
+          -1.1600000000000001
+        ],
+        "max": [
+          2.4184,
+          -5.555512700000071,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_VM_H",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1003TCE/A_0402WGF1003TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 3.4396,
+        "y": -5.542,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.1895872999999297,
+          -6.042,
+          -1.1600000000000001
+        ],
+        "max": [
+          3.6895872999999297,
+          -5.042,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_VM_L",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 5.2098,
+        "y": -3.5793,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          4.95978729999993,
+          -4.0793,
+          -1.1600000000000001
+        ],
+        "max": [
+          5.45978729999993,
+          -3.0793,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "C_VM_SENSE",
+      "layer": "bottom",
+      "model": "./imports/CL05B103KB5NNNC/CL05B103KB5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 6.2748,
+        "y": -6.6138,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          6.02481270000007,
+          -7.1138,
+          -1.3
+        ],
+        "max": [
+          6.52481270000007,
+          -6.1138,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "U_TEMP",
+      "layer": "bottom",
+      "model": "./imports/TMP102AIDRLR/TMP102AIDRLR.obj",
+      "sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          0.8,
+          0.8,
+          0.61
+        ]
+      },
+      "origin_mm": {
+        "x": -5.079999999679785e-05,
+        "y": 0.029921200000003978,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 4.4204,
+        "y": -7.6231,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.6204507999999964,
+          -8.393178799999996,
+          -1.4100000000000001
+        ],
+        "max": [
+          5.2204507999999965,
+          -6.793178799999996,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.389999999999997
+    },
+    {
+      "name": "C_TEMP",
+      "layer": "bottom",
+      "model": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          -0.25
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.25
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 4.4185,
+        "y": -11.9039,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          3.9185,
+          -12.15391270000007,
+          -1.3000000000000003
+        ],
+        "max": [
+          4.9185,
+          -11.65391270000007,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.499999999999996
+    },
+    {
+      "name": "R_TEMP_SDA",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 5.2367,
+        "y": -5.1386,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          4.7367,
+          -5.3886127000000705,
+          -1.1600000000000001
+        ],
+        "max": [
+          5.7367,
+          -4.8886127000000705,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_TEMP_SCL",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 7.7948,
+        "y": -7.539,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          7.2948,
+          -7.7889872999999294,
+          -1.1600000000000001
+        ],
+        "max": [
+          8.2948,
+          -7.2889872999999294,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "D_STATUS",
+      "layer": "top",
+      "model": "./imports/LTST_C19HE1WT/LTST_C19HE1WT.obj",
+      "sha256": "91d2ed9dbc575337fd7846c7fffc5d6380171764896dfc49ed433cf571c81d1b",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.8,
+          -0.11
+        ],
+        "max": [
+          0.8,
+          0.8,
+          0.25
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.11
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -11.1213,
+        "y": 6.4319,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -11.9213,
+          5.6319,
+          0.8
+        ],
+        "max": [
+          -10.321299999999999,
+          7.2318999999999996,
+          1.1600000000000001
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "R_STATUS_R",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -13.2836,
+        "y": 8.4575,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -13.53358729999993,
+          7.9575,
+          -1.1600000000000001
+        ],
+        "max": [
+          -13.03358729999993,
+          8.9575,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "Q_STATUS_R",
+      "layer": "bottom",
+      "model": "./imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2",
+      "source_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -12.6039,
+        "y": 6.5391,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -13.113988900000036,
+          6.2291889000001515,
+          -1.2100000000000002
+        ],
+        "max": [
+          -12.093988900000037,
+          6.849188900000151,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.589999999999996
+    },
+    {
+      "name": "R_STATUS_G",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -10.2828,
+        "y": 4.5663,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -10.53278729999993,
+          4.0663,
+          -1.1600000000000001
+        ],
+        "max": [
+          -10.03278729999993,
+          5.0663,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "Q_STATUS_G",
+      "layer": "bottom",
+      "model": "./imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2",
+      "source_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -7.1618,
+        "y": 4.7361,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -7.471888900000151,
+          4.226011099999964,
+          -1.2100000000000002
+        ],
+        "max": [
+          -6.8518889000001515,
+          5.246011099999963,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.589999999999996
+    },
+    {
+      "name": "R_STATUS_B",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 9.0633,
+        "y": -5.7392,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          8.5633,
+          -5.9892127000000706,
+          -1.1600000000000001
+        ],
+        "max": [
+          9.5633,
+          -5.4892127000000706,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "Q_STATUS_B",
+      "layer": "bottom",
+      "model": "./imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2",
+      "source_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": 9.0668,
+        "y": -9.0595,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          8.75671109999985,
+          -9.569588900000037,
+          -1.2100000000000002
+        ],
+        "max": [
+          9.37671109999985,
+          -8.549588900000037,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.589999999999996
+    },
+    {
+      "name": "R_PWR_LED",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": 11.9399,
+        "y": 5.6268,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          11.4399,
+          5.3768127000000705,
+          -1.1600000000000001
+        ],
+        "max": [
+          12.4399,
+          5.8768127000000705,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "D_PWR",
+      "layer": "top",
+      "model": "./imports/XL_1608SURC_06/XL_1608SURC_06.obj",
+      "sha256": "48b853b32050e3b0fe52d090b0c82f45539d9917a32d294915d0ef32bb8fbbee",
+      "source_bounds_mm": {
+        "min": [
+          -0.81,
+          -0.4,
+          -0.01
+        ],
+        "max": [
+          0.81,
+          0.4,
+          0.6
+        ]
+      },
+      "origin_mm": {
+        "x": -1.2700000070253736e-05,
+        "y": 5.079999993995443e-05,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      },
+      "position_mm": {
+        "x": 13.094,
+        "y": 6.7011,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          12.694050799999939,
+          5.89111270000007,
+          0.8
+        ],
+        "max": [
+          13.49405079999994,
+          7.511112700000071,
+          1.4100000000000001
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "R_STATUS_R_GATE",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -13.1937,
+        "y": 4.9337,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -13.44371270000007,
+          4.4337,
+          -1.1600000000000001
+        ],
+        "max": [
+          -12.94371270000007,
+          5.4337,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_STATUS_R_PD",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -12.214144,
+        "y": 8.117139,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -12.46415670000007,
+          7.617139,
+          -1.1600000000000001
+        ],
+        "max": [
+          -11.96415670000007,
+          8.617139,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_STATUS_G_GATE",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -8.9192,
+        "y": 3.497,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -9.16921270000007,
+          2.997,
+          -1.1600000000000001
+        ],
+        "max": [
+          -8.66921270000007,
+          3.997,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_STATUS_G_PD",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -6.0072,
+        "y": 7.0581,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -6.25721270000007,
+          6.5581,
+          -1.1600000000000001
+        ],
+        "max": [
+          -5.75721270000007,
+          7.5581,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_STATUS_B_GATE",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 9.4912,
+        "y": -7.2594,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          9.241187299999929,
+          -7.7594,
+          -1.1600000000000001
+        ],
+        "max": [
+          9.741187299999929,
+          -6.7594,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_STATUS_B_PD",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 270
+      },
+      "position_mm": {
+        "x": 8.5024,
+        "y": -10.861,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          8.25238729999993,
+          -11.361,
+          -1.1600000000000001
+        ],
+        "max": [
+          8.75238729999993,
+          -10.361,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "BZ1",
+      "layer": "top",
+      "model": "./imports/MLT_5020/MLT_5020.obj",
+      "sha256": "bb843b8f6a60474d75146187d2a08d8d5c8e1ac4b9e2ff4331cc13beef10191a",
+      "source_bounds_mm": {
+        "min": [
+          -2.632913,
+          -2.539604,
+          -0.0
+        ],
+        "max": [
+          2.632913,
+          2.660396,
+          2.01
+        ]
+      },
+      "origin_mm": {
+        "x": 7.619999996677507e-05,
+        "y": 0.06042139999991303,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 0,
+        "z": 270
+      },
+      "position_mm": {
+        "x": -10.3126,
+        "y": 0.4483,
+        "z": 0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -12.912625399999914,
+          -2.1845368000000334,
+          0.8
+        ],
+        "max": [
+          -7.712625399999912,
+          3.081289199999967,
+          2.8099999999999996
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 11.599999999999998
+    },
+    {
+      "name": "Q_BUZZER",
+      "layer": "bottom",
+      "model": "./imports/DMN2300UFB4_7B/DMN2300UFB4_7B.obj",
+      "sha256": "310882fefbe8a4a1b7b28b691a8221ef7033e0392c7fc15bc6f78f75b555c3a2",
+      "source_bounds_mm": {
+        "min": [
+          -0.31,
+          -0.51,
+          -0.01
+        ],
+        "max": [
+          0.31,
+          0.51,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 8.890000015071564e-05,
+        "y": -8.89000000370288e-05,
+        "z": -0.01
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 90
+      },
+      "position_mm": {
+        "x": -7.5651,
+        "y": 3.3027,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -8.075011099999964,
+          2.9926110999998494,
+          -1.2100000000000002
+        ],
+        "max": [
+          -7.055011099999963,
+          3.6126110999998495,
+          -0.8
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.589999999999996
+    },
+    {
+      "name": "R_BUZZER_GATE",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -11.5092,
+        "y": 3.046,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -12.0092,
+          2.79601270000007,
+          -1.1600000000000001
+        ],
+        "max": [
+          -11.0092,
+          3.29601270000007,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "R_BUZZER_PD",
+      "layer": "bottom",
+      "model": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "source_bounds_mm": {
+        "min": [
+          -0.5,
+          -0.25,
+          0.0
+        ],
+        "max": [
+          0.5,
+          0.25,
+          0.36
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": 0
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 180
+      },
+      "position_mm": {
+        "x": -8.7623,
+        "y": 5.0146,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -9.2623,
+          4.7645872999999295,
+          -1.1600000000000001
+        ],
+        "max": [
+          -8.2623,
+          5.2645872999999295,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.639999999999997
+    },
+    {
+      "name": "D_BUZZER",
+      "layer": "bottom",
+      "model": "./imports/PMEG6020ELRX/PMEG6020ELRX.obj",
+      "sha256": "d4efac8e5f91e7bb3c860ee095f910ec9311d50abfa025c11df78c7d0d134fb3",
+      "source_bounds_mm": {
+        "min": [
+          -1.84,
+          -0.8,
+          -0.55
+        ],
+        "max": [
+          1.84,
+          0.8,
+          0.67
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.55
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -4.1108,
+        "y": 5.0104,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -5.9508,
+          4.2104,
+          -2.0200000000000005
+        ],
+        "max": [
+          -2.2708000000000004,
+          5.8104,
+          -0.7999999999999998
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 8.779999999999998
+    },
+    {
+      "name": "C_BUZZER",
+      "layer": "bottom",
+      "model": "./imports/CL10A106KP8NNNC/CL10A106KP8NNNC.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "source_bounds_mm": {
+        "min": [
+          -0.8,
+          -0.4,
+          -0.4
+        ],
+        "max": [
+          0.8,
+          0.4,
+          0.4
+        ]
+      },
+      "origin_mm": {
+        "x": 0,
+        "y": 0,
+        "z": -0.4
+      },
+      "rotation_deg": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "position_mm": {
+        "x": -8.0933,
+        "y": 1.822342,
+        "z": -0.8
+      },
+      "world_bounds_mm": {
+        "min": [
+          -8.8933,
+          1.422342,
+          -1.6
+        ],
+        "max": [
+          -7.2932999999999995,
+          2.222342,
+          -0.7999999999999999
+        ]
+      },
+      "conservative_vertical_gap_to_motor_mm": 9.199999999999998
+    }
+  ],
+  "unmodeled_placed_components": [],
+  "actual_stack_gap_mm": null,
+  "fastener_thread_length_engagement_and_tool_access_qualified": false,
+  "harness_clearance_qualified": false,
+  "manufacturing_release": false,
+  "native_assembly": {
+    "emitted_motor_source_id": "source_component_99",
+    "emitted_motor_cad_id": "cad_component_89",
+    "emitted_motor_transform_verified": true,
+    "emitted_motor_bom_verified": true,
+    "electrical_pcb_and_existing_cad_records_identical": true,
+    "compared_records": 4078,
+    "excluded_diagnostic_counts": {
+      "index": {
+        "source_refdes_convention_warning": 8,
+        "source_no_power_pin_defined_warning": 10,
+        "source_no_ground_pin_defined_warning": 12,
+        "source_component_pins_underspecified_warning": 8,
+        "pcb_component_outside_board_error": 2,
+        "source_component_availability_warning": 89,
+        "source_property_ignored_warning": 15,
+        "source_project_metadata": 1
+      },
+      "assembly": {
+        "source_refdes_convention_warning": 8,
+        "source_no_power_pin_defined_warning": 10,
+        "source_no_ground_pin_defined_warning": 12,
+        "source_component_pins_underspecified_warning": 8,
+        "pcb_component_outside_board_error": 2,
+        "source_component_availability_warning": 89,
+        "source_property_ignored_warning": 1,
+        "source_project_metadata": 1
+      }
+    },
+    "input": "dist/assembly-preview/circuit.json",
+    "input_sha256": "3e356b4919839505d09f5acba519f7e3f4e19d5f1508620696f8cd0d0d864660"
+  }
+}

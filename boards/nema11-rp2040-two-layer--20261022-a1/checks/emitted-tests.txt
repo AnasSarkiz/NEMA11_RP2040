@@ -10,6 +10,6 @@ test_existing_motor_axes_and_provisional_keepouts (test_mechanical_contracts.Mec
 test_optional_encoder_and_construction_limits_retained (test_mechanical_contracts.MechanicalContract.test_optional_encoder_and_construction_limits_retained) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.225s
+Ran 10 tests in 0.258s
 
 OK
