@@ -2,6 +2,15 @@ test_known_public_revision_and_bytes (test_baseline_provenance.PublicBaseline.te
 test_clean_output (test_native_summary.NativeSummary.test_clean_output) ... ok
 test_missing_duplicate_exception_or_failure_rejected (test_native_summary.NativeSummary.test_missing_duplicate_exception_or_failure_rejected) ... ok
 test_unresolved_warning_blocks_acceptance (test_native_summary.NativeSummary.test_unresolved_warning_blocks_acceptance) ... ok
+test_buzzer_cannot_be_removed (test_nema14_alignment.Nema14Alignment.test_buzzer_cannot_be_removed) ... ok
+test_current_adc_cannot_be_falsely_connected (test_nema14_alignment.Nema14Alignment.test_current_adc_cannot_be_falsely_connected) ... ok
+test_duplicate_sheet_component_fails (test_nema14_alignment.Nema14Alignment.test_duplicate_sheet_component_fails) ... ok
+test_false_telemetry_completion_fails (test_nema14_alignment.Nema14Alignment.test_false_telemetry_completion_fails) ... ok
+test_i2c_must_use_gpio4_and_gpio5 (test_nema14_alignment.Nema14Alignment.test_i2c_must_use_gpio4_and_gpio5) ... ok
+test_missing_seventh_sheet_fails (test_nema14_alignment.Nema14Alignment.test_missing_seventh_sheet_fails) ... ok
+test_old_six_layer_defaults_fail (test_nema14_alignment.Nema14Alignment.test_old_six_layer_defaults_fail) ... ok
+test_routing_cannot_be_silently_enabled (test_nema14_alignment.Nema14Alignment.test_routing_cannot_be_silently_enabled) ... ok
+test_source_contract_is_consistent_but_full_parity_is_incomplete (test_nema14_alignment.Nema14Alignment.test_source_contract_is_consistent_but_full_parity_is_incomplete) ... ok
 test_empty_records_have_no_errors_or_details (test_nested_findings.NestedFindings.test_empty_records_have_no_errors_or_details) ... ok
 test_nested_pad_failure_is_not_hidden_by_grouping (test_nested_findings.NestedFindings.test_nested_pad_failure_is_not_hidden_by_grouping) ... ok
 test_circle_annulus_uses_outer_diameter (test_placement_geometry.PlacementGeometryTests.test_circle_annulus_uses_outer_diameter) ... ok
@@ -25,6 +34,6 @@ test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_no
 test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 0.197s
+Ran 34 tests in 0.120s
 
 OK

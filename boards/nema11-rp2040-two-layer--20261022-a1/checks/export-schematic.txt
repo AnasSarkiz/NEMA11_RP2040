@@ -1,13 +1,17 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
-> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.6-reconstruction-wip export:schematic-pdf
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip export:schematic-pdf
 > node scripts/export_a4_schematics.mjs && python3 scripts/export_a4_pdf.py
 
-Exported 6 A4 sheets, 99 components, 346 ports
+Exported 7 A4 sheets, 99 components, 346 ports
 {
   "pdf": "artifacts/20261108-reconstruction/NEMA11-schematics-A4-WIP.pdf",
-  "page_count": 6,
+  "page_count": 7,
   "page_size_points": [
+    [
+      841.8898,
+      595.2756
+    ],
     [
       841.8898,
       595.2756
@@ -45,11 +49,12 @@ Exported 6 A4 sheets, 99 components, 346 ports
     "artifacts/20261108-reconstruction/schematic/03.svg",
     "artifacts/20261108-reconstruction/schematic/04.svg",
     "artifacts/20261108-reconstruction/schematic/05.svg",
-    "artifacts/20261108-reconstruction/schematic/06.svg"
+    "artifacts/20261108-reconstruction/schematic/06.svg",
+    "artifacts/20261108-reconstruction/schematic/07.svg"
   ],
   "components_covered": 99,
   "schematic_ports_covered": 346,
-  "native_json_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "native_json_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
   "historical_20261023_conversion_observations": [
     "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
     "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."
@@ -57,8 +62,3 @@ Exported 6 A4 sheets, 99 components, 346 ports
   "layout_approved": false,
   "manufacturing_approved": false
 }
-npm notice
-npm notice New major version of npm available! 11.9.0 -> 12.2.2
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
-npm notice To update run: npm install -g npm@12.2.2
-npm notice

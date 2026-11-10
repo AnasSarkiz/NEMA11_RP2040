@@ -9,3 +9,10 @@ __pycache__/
 !references/baseline-1233ccdf/dist/
 !references/baseline-1233ccdf/dist/index/
 !references/baseline-1233ccdf/dist/index/circuit.json
+
+# Preserve only the current native WIP JSON and its separate hash receipt.
+!dist/
+dist/*
+!dist/index/
+dist/index/*
+!dist/index/circuit.json

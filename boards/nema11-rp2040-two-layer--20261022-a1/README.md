@@ -20,7 +20,14 @@ this reconstructed revision.
 
 **Current source refactor: 0.6.7-reference-refactor-wip.** The reference is pinned to NEMA14 V2 commit `d9fcd420`. I²C now uses GPIO4/5 (I2C0), leaving ADC0/1 explicitly NC for the still-missing winding-current telemetry. There are seven functional A4 sheets, with all 99 source components preserved. The PCB placement and all supplier files are unchanged. See [the source-refactor record](docs/nema14-source-refactor-20261109.md).
 
-**Native verification remains paused.** No current native circuit JSON/build receipt exists, and no new schematic/PCB render or hardware pass is claimed. Build traffic requires external-service approval before resuming. The older six-layer board has been removed from the working tree and defaults; it remains recoverable in Git history. Only this existing two-layer board is active.
+**Fresh native WIP checkpoint, 2026-11-10.** The current source now has native
+[`dist/index/circuit.json`](dist/index/circuit.json), a full-input hash receipt,
+seven A4 schematic pages and top/bottom PCB review views. Native build and
+strict milestone gates fail: two USB boundary errors, 30 pin warnings and
+four schematic findings remain. The placement analyzer additionally reports
+three courtyard collisions and nine orientation suggestions. All findings are
+retained. See [the native refresh report](docs/native-refresh-20261110.md).
+The older six-layer design remains deleted and recoverable in Git history.
 
 ## Reproduce
 
@@ -37,24 +44,21 @@ npm run source:generate
 npm run verify:offline
 ```
 
-Imported definitions/models must remain byte-identical to the manifest. The offline command does not call native tools or send board data. After external-validation approval, `npm run verify` performs the separate native gates. The
+Imported definitions/models must remain byte-identical to the manifest. The offline command does not call native tools or send board data. For authorized native work, `npm rebuild bun --offline` activates the locked runtime after the script-free install, then `npm run verify` performs the separate native gates. The
 fresh-build receipt rejects changed inputs and stale native circuit JSON.
 A nonzero native build with emitted JSON permits diagnostic analysis but is
 still a failed gate. See [VALIDATION.md](VALIDATION.md) for current results.
 
-Project links (the registry does not yet show this source refactor):
+Project links:
 
 - https://github.com/AnasSarkiz/NEMA11_RP2040
 - https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype
 
-Registry publication and hardware ordering remain separate approval-gated actions. There is no new V2 project.
+The publication target is the existing package, version `0.6.7-reference-refactor-wip`, with the native `dist/index/circuit.json` included. Publication is not a hardware release. There is no new V2 project.
 
-Historical tested checkpoint `7da9556`: formatting/typecheck, 23 prebuild tests, 9 emitted
-contracts, 657 source/import assertions and the conservative geometry audit
-pass. PCB findings fell from 143 to 2, both USB courtyard boundary flags, with
-no nested errors. Schematic still has 3 findings and pin semantics has 30
-warnings. These gates remain failed. The tiny provisional bolt-head margin,
-crowded labels, electrical loop placement and full mechanical fit remain open.
-See the complete validation record and native top/bottom review images in
-`artifacts/20261108-reconstruction/pcb/`.
-Those images and the A4 PDF still show that historical checkpoint. Current offline source tests and TypeScript are recorded in the source-refactor report; native-dependent current checks remain pending. No tool candidate has been installed in production.
+Historical checkpoint `7da9556` remains available in Git history. Current
+review images and the seven-page A4 PDF under
+`artifacts/20261108-reconstruction/` were refreshed on 2026-11-10; that folder
+name identifies the reconstruction workflow, not the generation date.
+The source and supplier imports were not changed by this native refresh.
+No upstream tool candidate has been installed in production.

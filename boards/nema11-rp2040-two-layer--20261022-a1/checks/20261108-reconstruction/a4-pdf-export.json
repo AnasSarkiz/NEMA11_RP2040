@@ -1,7 +1,11 @@
 {
   "pdf": "artifacts/20261108-reconstruction/NEMA11-schematics-A4-WIP.pdf",
-  "page_count": 6,
+  "page_count": 7,
   "page_size_points": [
+    [
+      841.8898,
+      595.2756
+    ],
     [
       841.8898,
       595.2756
@@ -39,11 +43,12 @@
     "artifacts/20261108-reconstruction/schematic/03.svg",
     "artifacts/20261108-reconstruction/schematic/04.svg",
     "artifacts/20261108-reconstruction/schematic/05.svg",
-    "artifacts/20261108-reconstruction/schematic/06.svg"
+    "artifacts/20261108-reconstruction/schematic/06.svg",
+    "artifacts/20261108-reconstruction/schematic/07.svg"
   ],
   "components_covered": 99,
   "schematic_ports_covered": 346,
-  "native_json_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "native_json_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
   "historical_20261023_conversion_observations": [
     "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
     "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."

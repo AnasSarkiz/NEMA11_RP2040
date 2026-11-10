@@ -78,6 +78,9 @@ COMPONENTS:
  - C_TEMP: 100nF capacitor
  - R_TEMP_SDA: 4.7kΩ resistor
  - R_TEMP_SCL: 4.7kΩ resistor
+ - U_ENCODER: AS5600-ASOM
+ - C_ENCODER: 100nF capacitor
+ - C_ENCODER_BULK: 1uF capacitor
  - D_STATUS: LTST-C19HE1WT
  - R_STATUS_R: 1kΩ resistor
  - Q_STATUS_R: DMN2300UFB4-7B
@@ -85,12 +88,6 @@ COMPONENTS:
  - Q_STATUS_G: DMN2300UFB4-7B
  - R_STATUS_B: 1kΩ resistor
  - Q_STATUS_B: DMN2300UFB4-7B
- - BZ1: MLT-5020
- - Q_BUZZER: DMN2300UFB4-7B
- - R_BUZZER_GATE: 1kΩ resistor
- - R_BUZZER_PD: 10kΩ resistor
- - D_BUZZER: D_BUZZER, source_component
- - C_BUZZER: 10uF capacitor
  - R_PWR_LED: 330Ω resistor
  - D_PWR: D_PWR, source_component
  - R_STATUS_R_GATE: 1kΩ resistor
@@ -99,9 +96,12 @@ COMPONENTS:
  - R_STATUS_G_PD: 10kΩ resistor
  - R_STATUS_B_GATE: 1kΩ resistor
  - R_STATUS_B_PD: 10kΩ resistor
- - U_ENCODER: AS5600-ASOM
- - C_ENCODER: 100nF capacitor
- - C_ENCODER_BULK: 1uF capacitor
+ - BZ1: MLT-5020
+ - Q_BUZZER: DMN2300UFB4-7B
+ - R_BUZZER_GATE: 1kΩ resistor
+ - R_BUZZER_PD: 10kΩ resistor
+ - D_BUZZER: D_BUZZER, source_component
+ - C_BUZZER: 10uF capacitor
 
 NET: PD_CC2
   - U_PD CC2
@@ -325,6 +325,18 @@ NET: VM_SENSE
   - R_VM_H pin2
   - U_MCU GPIO28_ADC2
 
+NET: TEMP_SDA
+  - U_ENCODER SDA
+  - R_TEMP_SDA pin1
+  - U_TEMP SDA
+  - U_MCU GPIO4
+
+NET: TEMP_SCL
+  - U_ENCODER SCL
+  - R_TEMP_SCL pin1
+  - U_TEMP SCL
+  - U_MCU GPIO5
+
 NET: DATA_VBUS
   - D_STATUS _POS
   - C_ESD pin1
@@ -358,20 +370,6 @@ NET: STATUS_B_C
   - Q_STATUS_B pin2
   - R_STATUS_B pin2
 
-NET: BUZZER_PWM
-  - R_BUZZER_GATE pin1
-  - U_MCU GPIO16
-
-NET: BUZZER_GATE
-  - R_BUZZER_PD pin1
-  - R_BUZZER_GATE pin2
-  - Q_BUZZER pin1
-
-NET: BUZZER_SINK
-  - D_BUZZER anode (+)
-  - Q_BUZZER pin2
-  - BZ1 pin2
-
 NET: PWR_LED_A
   - D_PWR anode (+)
   - R_PWR_LED pin2
@@ -403,27 +401,29 @@ NET: STATUS_B_GATE
   - R_STATUS_B_GATE pin2
   - Q_STATUS_B pin1
 
-NET: TEMP_SDA
-  - U_ENCODER SDA
-  - R_TEMP_SDA pin1
-  - U_TEMP SDA
-  - U_MCU GPIO26_ADC0
+NET: BUZZER_PWM
+  - R_BUZZER_GATE pin1
+  - U_MCU GPIO16
 
-NET: TEMP_SCL
-  - U_ENCODER SCL
-  - R_TEMP_SCL pin1
-  - U_TEMP SCL
-  - U_MCU GPIO27_ADC1
+NET: BUZZER_GATE
+  - R_BUZZER_PD pin1
+  - R_BUZZER_GATE pin2
+  - Q_BUZZER pin1
+
+NET: BUZZER_SINK
+  - D_BUZZER anode (+)
+  - Q_BUZZER pin2
+  - BZ1 pin2
 
 NET: V3V3
+  - C_BUZZER pin1
+  - D_BUZZER cathode (-)
+  - BZ1 pin1
+  - R_PWR_LED pin1
   - C_ENCODER_BULK pin1
   - C_ENCODER pin1
   - U_ENCODER VDD3V3
   - U_ENCODER VDD5V
-  - R_PWR_LED pin1
-  - C_BUZZER pin1
-  - D_BUZZER cathode (-)
-  - BZ1 pin1
   - R_TEMP_SCL pin2
   - R_TEMP_SDA pin2
   - C_TEMP pin1
@@ -466,20 +466,20 @@ NET: V3V3
   - R_PG pin1
 
 NET: GND
-  - C_ENCODER_BULK pin2
-  - C_ENCODER pin2
-  - U_ENCODER DIR
-  - U_ENCODER GND
+  - C_BUZZER pin2
+  - R_BUZZER_PD pin2
+  - Q_BUZZER pin3
   - R_STATUS_B_PD pin2
   - R_STATUS_G_PD pin2
   - R_STATUS_R_PD pin2
   - D_PWR cathode (-)
-  - C_BUZZER pin2
-  - R_BUZZER_PD pin2
-  - Q_BUZZER pin3
   - Q_STATUS_B pin3
   - Q_STATUS_G pin3
   - Q_STATUS_R pin3
+  - C_ENCODER_BULK pin2
+  - C_ENCODER pin2
+  - U_ENCODER DIR
+  - U_ENCODER GND
   - C_TEMP pin2
   - U_TEMP ADD0
   - U_TEMP GND
@@ -725,8 +725,8 @@ U_MCU (RP2040)
 - pin3(GPIO1): NOT_CONNECTED
 - pin4(GPIO2): NETS(LED_G)
 - pin5(GPIO3): NETS(LED_B)
-- pin6(GPIO4): NOT_CONNECTED
-- pin7(GPIO5): NOT_CONNECTED
+- pin6(GPIO4): NETS(TEMP_SDA)
+- pin7(GPIO5): NETS(TEMP_SCL)
 - pin8(GPIO6): NETS(STEP)
 - pin9(GPIO7): NETS(DIR)
 - pin10(IOVDD5): NETS(V3V3)
@@ -757,8 +757,8 @@ U_MCU (RP2040)
 - pin35(GPIO23): NOT_CONNECTED
 - pin36(GPIO24): NOT_CONNECTED
 - pin37(GPIO25): NETS(LED_R)
-- pin38(GPIO26_ADC0): NETS(TEMP_SDA)
-- pin39(GPIO27_ADC1): NETS(TEMP_SCL)
+- pin38(GPIO26_ADC0): NOT_CONNECTED
+- pin39(GPIO27_ADC1): NOT_CONNECTED
 - pin40(GPIO28_ADC2): NETS(VM_SENSE)
 - pin41(GPIO29_ADC3): NETS(DATA_PRESENT)
 - pin42(IOVDD2): NETS(V3V3)
@@ -984,6 +984,24 @@ R_TEMP_SCL (4.7kΩ undefined)
 - pin1(anode, pos, left): NETS(TEMP_SCL)
 - pin2(cathode, neg, right): NETS(V3V3)
 
+U_ENCODER (AS5600-ASOM)
+- pin1(VDD5V): NETS(V3V3)
+- pin2(VDD3V3): NETS(V3V3)
+- pin3(OUT): NOT_CONNECTED
+- pin4(GND): NETS(GND)
+- pin5(PGO): NOT_CONNECTED
+- pin6(SDA): NETS(TEMP_SDA)
+- pin7(SCL): NETS(TEMP_SCL)
+- pin8(DIR): NETS(GND)
+
+C_ENCODER (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C_ENCODER_BULK (1uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
 D_STATUS (LTST-C19HE1WT)
 - pin1(R_NEG): NETS(STATUS_R_K)
 - pin2(G_NEG): NETS(STATUS_G_K)
@@ -1017,32 +1035,6 @@ Q_STATUS_B (DMN2300UFB4-7B)
 - pin2(D): NETS(STATUS_B_C)
 - pin3(S): NETS(GND)
 
-BZ1 (MLT-5020)
-- pin1(_POS): NETS(V3V3)
-- pin2(_NEG): NETS(BUZZER_SINK)
-- pin3(NC): NOT_CONNECTED
-
-Q_BUZZER (DMN2300UFB4-7B)
-- pin1(G): NETS(BUZZER_GATE)
-- pin2(D): NETS(BUZZER_SINK)
-- pin3(S): NETS(GND)
-
-R_BUZZER_GATE (1kΩ undefined)
-- pin1(anode, pos, left): NETS(BUZZER_PWM)
-- pin2(cathode, neg, right): NETS(BUZZER_GATE)
-
-R_BUZZER_PD (10kΩ undefined)
-- pin1(anode, pos, left): NETS(BUZZER_GATE)
-- pin2(cathode, neg, right): NETS(GND)
-
-D_BUZZER (PMEG6020ELRX)
-- pin1(cathode, neg): NETS(V3V3)
-- pin2(anode, pos): NETS(BUZZER_SINK)
-
-C_BUZZER (10uF undefined)
-- pin1: NETS(V3V3)
-- pin2: NETS(GND)
-
 R_PWR_LED (330Ω undefined)
 - pin1(anode, pos, left): NETS(V3V3)
 - pin2(cathode, neg, right): NETS(PWR_LED_A)
@@ -1075,21 +1067,29 @@ R_STATUS_B_PD (10kΩ undefined)
 - pin1(anode, pos, left): NETS(STATUS_B_GATE)
 - pin2(cathode, neg, right): NETS(GND)
 
-U_ENCODER (AS5600-ASOM)
-- pin1(VDD5V): NETS(V3V3)
-- pin2(VDD3V3): NETS(V3V3)
-- pin3(OUT): NOT_CONNECTED
-- pin4(GND): NETS(GND)
-- pin5(PGO): NOT_CONNECTED
-- pin6(SDA): NETS(TEMP_SDA)
-- pin7(SCL): NETS(TEMP_SCL)
-- pin8(DIR): NETS(GND)
+BZ1 (MLT-5020)
+- pin1(_POS): NETS(V3V3)
+- pin2(_NEG): NETS(BUZZER_SINK)
+- pin3(NC): NOT_CONNECTED
 
-C_ENCODER (100nF undefined)
-- pin1: NETS(V3V3)
-- pin2: NETS(GND)
+Q_BUZZER (DMN2300UFB4-7B)
+- pin1(G): NETS(BUZZER_GATE)
+- pin2(D): NETS(BUZZER_SINK)
+- pin3(S): NETS(GND)
 
-C_ENCODER_BULK (1uF undefined)
+R_BUZZER_GATE (1kΩ undefined)
+- pin1(anode, pos, left): NETS(BUZZER_PWM)
+- pin2(cathode, neg, right): NETS(BUZZER_GATE)
+
+R_BUZZER_PD (10kΩ undefined)
+- pin1(anode, pos, left): NETS(BUZZER_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+D_BUZZER (PMEG6020ELRX)
+- pin1(cathode, neg): NETS(V3V3)
+- pin2(anode, pos): NETS(BUZZER_SINK)
+
+C_BUZZER (10uF undefined)
 - pin1: NETS(V3V3)
 - pin2: NETS(GND)
 

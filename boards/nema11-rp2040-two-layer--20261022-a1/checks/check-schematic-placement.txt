@@ -1,15 +1,25 @@
-<SchematicSheet name="05 Temperature &amp; feedback" id="schematic_sheet_4">
+<SchematicSheet name="05 Temperature &amp; optional encoder" id="schematic_sheet_4">
 <SchematicBoxPositions>
 <SchematicBoxPlacement componentName="U_TEMP" positionAnchor="center" schX="5.2" schY="15.5" width="1.2" height="0.8" />
-<SchematicBoxPlacement componentName="D_STATUS" positionAnchor="center" schX="25.3" schY="17.3" width="1.2" height="0.6" />
+<SchematicBoxPlacement componentName="C_TEMP" positionAnchor="center" schX="10.8" schY="15.5" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C_ENCODER" positionAnchor="center" schX="19" schY="13" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C_ENCODER_BULK" positionAnchor="center" schX="20.6" schY="13" width="0.9" height="0.6" />
 </SchematicBoxPositions>
 <SchematicPlacementIssues>
 <SchematicBoxInnerLabelCollision message="Labels ALERT (left) and V_POS (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="U_TEMP" currentSchWidth="1.2" currentSchHeight="0.8" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.289">
   <PinLabelPair label1="ALERT" label2="V_POS" port1="schematic_port_275" port2="schematic_port_277" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
 </SchematicBoxInnerLabelCollision>
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="C_TEMP, C_ENCODER, C_ENCODER_BULK" maxBodyGap="7.543" maxRecommendedBodyGap="1" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="06 RGB &amp; power indicators" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D_STATUS" positionAnchor="center" schX="25.3" schY="17.3" width="1.2" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
 <SchematicBoxInnerLabelCollision message="Labels R_NEG (left) and B_NEG (right) are too close. Labels G_NEG (left) and B_NEG (right) are too close. Increase the schWidth to leave at least 0.1 schematic units between these labels." componentName="D_STATUS" currentSchWidth="1.2" currentSchHeight="0.6" overlappingSides="left,right" minimumLabelGap="0.1" suggestedSchWidth="1.272">
-  <PinLabelPair label1="R_NEG" label2="B_NEG" port1="schematic_port_285" port2="schematic_port_287" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
-  <PinLabelPair label1="G_NEG" label2="B_NEG" port1="schematic_port_286" port2="schematic_port_287" side1="left" side2="right" kind="clearance" measuredGap="0.028" />
+  <PinLabelPair label1="R_NEG" label2="B_NEG" port1="schematic_port_297" port2="schematic_port_299" side1="left" side2="right" kind="clearance" measuredGap="0.05" />
+  <PinLabelPair label1="G_NEG" label2="B_NEG" port1="schematic_port_298" port2="schematic_port_299" side1="left" side2="right" kind="clearance" measuredGap="0.028" />
 </SchematicBoxInnerLabelCollision>
 </SchematicPlacementIssues>
 </SchematicSheet>

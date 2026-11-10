@@ -1,8 +1,9 @@
 {
   "native_exit": 0,
-  "reported_issue_count": 3,
+  "reported_issue_count": 4,
   "issue_kinds": {
     "SchematicBoxInnerLabelCollision": 2,
+    "DecouplingCapacitorsNotCloseTogether": 1,
     "TwoPinComponentShouldBeVertical": 1
   },
   "issues": [
@@ -16,6 +17,17 @@
         "overlappingSides": "left,right",
         "minimumLabelGap": "0.1",
         "suggestedSchWidth": "1.289"
+      }
+    },
+    {
+      "kind": "DecouplingCapacitorsNotCloseTogether",
+      "attributes": {
+        "rail": "V3V3",
+        "ground": "GND",
+        "capacitorNames": "C_TEMP, C_ENCODER, C_ENCODER_BULK",
+        "maxBodyGap": "7.543",
+        "maxRecommendedBodyGap": "1",
+        "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
       }
     },
     {

@@ -1,6 +1,6 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
-> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.6-reconstruction-wip format:check
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.7-reference-refactor-wip format:check
 > prettier --check index.circuit.tsx assets.d.ts package.json tsconfig.json tscircuit.config.json "config/*.json" README.md VALIDATION.md
 
 Checking formatting...

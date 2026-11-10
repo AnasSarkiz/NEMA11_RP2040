@@ -11,8 +11,8 @@
   "pcb_vias": 0,
   "copper_min_conservative_AABB_gap_mm": 0.15999999999999837,
   "DNP_inclusive_min_conservative_AABB_gap_mm": 0.15999999999999837,
-  "copper_min_conservative_edge_gap_mm": 0.36109800000000014,
-  "minimum_conservative_bolt_head_envelope_gap_mm": 0.04454776426458151,
+  "copper_min_conservative_edge_gap_mm": 0.3890026999999989,
+  "minimum_conservative_bolt_head_envelope_gap_mm": 0.07499973348452027,
   "conservative_pad_pairs_below_015mm": [],
   "native_top_level_errors": {
     "pcb_component_outside_board_error": 2
@@ -20,13 +20,13 @@
   "native_nested_errors": {},
   "rotated_smt_shape_counts": {
     "rotated_pill:270": 28,
-    "rotated_pill:90": 4,
-    "rotated_pill:180": 8
+    "rotated_pill:180": 8,
+    "rotated_pill:90": 4
   },
   "independent_geometry_pass": true,
   "input_sha256": {
-    "circuit": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
-    "placement": "12dec2b98b47ac4374a035228cdb47cd60c51bc75e20b78f09053ecaa7a90f83",
-    "baseline": "80530fd8a6b87b2537e22cf707e31e3e909034b8d63379d4323c617e3edc96da"
+    "circuit": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+    "placement": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
+    "baseline": "044a4a2561e21454eac4bedde4dc8c8bf3d537b6bd8ff0e38a462ddc681f6b4f"
   }
 }

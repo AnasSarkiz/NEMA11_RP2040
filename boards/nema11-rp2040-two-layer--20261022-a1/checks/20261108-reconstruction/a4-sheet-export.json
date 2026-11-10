@@ -1,6 +1,6 @@
 {
   "native_json": "dist/index/circuit.json",
-  "native_json_sha256": "b93b921adc556e840dee2bc4acb0d4f2de8fe990ebf6b6a2638e4636379acf51",
+  "native_json_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
   "renderer": "circuit-to-svg official convertCircuitJsonToSchematicSvg with schematicSheetId",
   "pages": [
     {
@@ -116,13 +116,26 @@
     },
     {
       "sheet_id": "schematic_sheet_4",
-      "name": "05 Temperature & feedback",
+      "name": "05 Temperature & optional encoder",
       "file": "artifacts/20261108-reconstruction/schematic/05.svg",
       "component_names": [
         "U_TEMP",
         "C_TEMP",
         "R_TEMP_SDA",
         "R_TEMP_SCL",
+        "U_ENCODER",
+        "C_ENCODER",
+        "C_ENCODER_BULK"
+      ],
+      "component_count": 7,
+      "port_count": 24,
+      "native_connected_port_count": 20
+    },
+    {
+      "sheet_id": "schematic_sheet_5",
+      "name": "06 RGB & power indicators",
+      "file": "artifacts/20261108-reconstruction/schematic/06.svg",
+      "component_names": [
         "D_STATUS",
         "R_STATUS_R",
         "Q_STATUS_R",
@@ -130,12 +143,6 @@
         "Q_STATUS_G",
         "R_STATUS_B",
         "Q_STATUS_B",
-        "BZ1",
-        "Q_BUZZER",
-        "R_BUZZER_GATE",
-        "R_BUZZER_PD",
-        "D_BUZZER",
-        "C_BUZZER",
         "R_PWR_LED",
         "D_PWR",
         "R_STATUS_R_GATE",
@@ -145,22 +152,25 @@
         "R_STATUS_B_GATE",
         "R_STATUS_B_PD"
       ],
-      "component_count": 25,
-      "port_count": 61,
-      "native_connected_port_count": 55
+      "component_count": 15,
+      "port_count": 35,
+      "native_connected_port_count": 31
     },
     {
-      "sheet_id": "schematic_sheet_5",
-      "name": "06 Optional encoder (DNP)",
-      "file": "artifacts/20261108-reconstruction/schematic/06.svg",
+      "sheet_id": "schematic_sheet_6",
+      "name": "07 Buzzer",
+      "file": "artifacts/20261108-reconstruction/schematic/07.svg",
       "component_names": [
-        "U_ENCODER",
-        "C_ENCODER",
-        "C_ENCODER_BULK"
+        "BZ1",
+        "Q_BUZZER",
+        "R_BUZZER_GATE",
+        "R_BUZZER_PD",
+        "D_BUZZER",
+        "C_BUZZER"
       ],
-      "component_count": 3,
-      "port_count": 12,
-      "native_connected_port_count": 10
+      "component_count": 6,
+      "port_count": 14,
+      "native_connected_port_count": 11
     }
   ],
   "components_covered": 99,
