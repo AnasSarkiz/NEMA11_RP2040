@@ -15,6 +15,15 @@ and [validation status](boards/nema11-rp2040-two-layer--20261022-a1/VALIDATION.m
 for its current scope and blockers. Existing reports are tied to their original
 inputs and do not validate subsequent source changes.
 
+## Current all-top feasibility screen
+
+The exact NEMA14 current-sensing parts and fitted encoder capacitors would
+exceed the hypothetical upright-USB courtyard budget by **48.55 mm²** after
+the provisional screw-head exclusions. This is a conservative area screen,
+not proof that physical bodies cannot fit. No parts were added or removed
+from the active board, and upright connector footprints still need qualification.
+See the [reproducible area study](docs/engineering-review-20261110/all-top-parity-area/README.md).
+
 ## Current development
 
 Install the active board's locked dependencies without lifecycle scripts:

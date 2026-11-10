@@ -1,0 +1,69 @@
+{
+  "repository": "AnasSarkiz/NEMA14_RP2040_V2",
+  "commit": "d9fcd4208bf7a93743447e1a0ab2c780aa08e304",
+  "source_note": "Snapshots preserve the UTF-8 content returned by GitHub connector fetch_file, without edits. Git blob verification performed by study script.",
+  "sources": [
+    {
+      "local": "sources/INA240A1PWR.tsx",
+      "original": "imports/supplier/INA240A1PWR/INA240A1PWR.tsx",
+      "git_blob_sha": "032a333a70d8b87f1a1483bad55f3a2fa9147482",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/INA240A1PWR/INA240A1PWR.tsx"
+    },
+    {
+      "local": "sources/ERJL06KF50MV.tsx",
+      "original": "imports/supplier/ERJL06KF50MV/ERJL06KF50MV.tsx",
+      "git_blob_sha": "028528955c0d6e780188626b9adefa6125cde030",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/ERJL06KF50MV/ERJL06KF50MV.tsx"
+    },
+    {
+      "local": "sources/A_0402WGF1000TCE.tsx",
+      "original": "imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "git_blob_sha": "e27aeb903f68cc54cdef5d20dac1dfe4719f6f72",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx"
+    },
+    {
+      "local": "sources/CL05B103KB5NNNC.tsx",
+      "original": "imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx",
+      "git_blob_sha": "926114b3dcb13c493d45c94d19c5924e305eb0a0",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/CL05B103KB5NNNC/CL05B103KB5NNNC.tsx"
+    },
+    {
+      "local": "sources/CL05B104KO5NNNC.tsx",
+      "original": "imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "git_blob_sha": "b7cfa9eb4f2028885663227ac889aa8ef629a7a3",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx"
+    },
+    {
+      "local": "sources/board.tsx",
+      "original": "src/board.tsx",
+      "git_blob_sha": "bc49518873bc2d500e7fc041bc8994e2c7e8181a",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/src/board.tsx"
+    },
+    {
+      "local": "sources/jlcpcb-catalog.json",
+      "original": "src/jlcpcb-catalog.json",
+      "git_blob_sha": "f85859b507299e9a5a6442cf05f852a61e617be9",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/src/jlcpcb-catalog.json"
+    },
+    {
+      "local": "sources/supplier-parts.tsx",
+      "original": "src/supplier-parts.tsx",
+      "git_blob_sha": "9ab3975a3d8e38061ade0fa9058b39de95378238",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/src/supplier-parts.tsx"
+    },
+    {
+      "local": "sources/CL05A105KA5NQNC.tsx",
+      "original": "imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx",
+      "git_blob_sha": "607e1c7ad030f9fb583a0c7fb51103710bcf2f5d",
+      "url": "https://github.com/AnasSarkiz/NEMA14_RP2040_V2/blob/d9fcd4208bf7a93743447e1a0ab2c780aa08e304/imports/supplier/CL05A105KA5NQNC/CL05A105KA5NQNC.tsx"
+    }
+  ],
+  "baseline": {
+    "source": "../../engineering-review-20261109/upright-usb-report.md",
+    "hypothetical_upright_mm2": 679.353717,
+    "usable_mm2": 714.602218,
+    "notes": "Archived rounded courtyard totals, not freshly built geometry. 28 x 28 mm minus four provisional radius 2.35 mm disks.",
+    "source_sha256": "1c165c914bd743df2dd64db82ee16b9f6557e43fd9dccd97be8ebfd1755db706"
+  },
+  "nema11_revision": "1aa5516a87c4e4aa568ee7a677441639ee44b71e"
+}

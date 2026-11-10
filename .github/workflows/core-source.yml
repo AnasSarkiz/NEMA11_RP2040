@@ -30,6 +30,8 @@ jobs:
         run: npm ci --prefix boards/nema11-rp2040-two-layer--20261022-a1 --ignore-scripts --legacy-peer-deps --no-audit --no-fund
       - name: Check repository selection and two-layer source offline
         run: npm run verify:offline
+      - name: Check reference courtyard screen without native rendering
+        run: python3 -m unittest discover -s docs/engineering-review-20261110/all-top-parity-area -p test_calculate.py -v
       # Dependency installation fetches packages. All checks after it are local.
       # This workflow does not render circuits, route copper, export CAM, contact
       # a tscircuit service, or establish an electrical/mechanical hardware pass.
