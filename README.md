@@ -24,6 +24,16 @@ not proof that physical bodies cannot fit. No parts were added or removed
 from the active board, and upright connector footprints still need qualification.
 See the [reproducible area study](docs/engineering-review-20261110/all-top-parity-area/README.md).
 
+## Current USB boundary investigation
+
+The native connector errors concern courtyards extending 0.250021 mm past the
+board edge, while the outward copper remains 1.675871 mm inside it. Moving the
+data connector inward just to clear that error would reduce two measured copper
+gaps to about **0.035 mm**, below the required 0.15 mm. The original placements
+remain unchanged. Connector mating, assembly and tolerance evidence is still
+needed before choosing a mechanical correction or any boundary exemption.
+See the [pinned geometry audit and regression tests](docs/engineering-review-20261110/usb-edge-boundary/README.md).
+
 ## Current development
 
 Install the active board's locked dependencies without lifecycle scripts:

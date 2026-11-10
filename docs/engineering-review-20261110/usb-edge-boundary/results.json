@@ -1,0 +1,100 @@
+{
+  "input_sha256": {
+    "index.circuit.tsx": "e534b89873edec43ccdd36525f7566f7a63e1ff36d9e1778b2a6ebedb37199ce",
+    "dist/index/circuit.json": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+    "scripts/audit_placement_geometry.py": "f722d20a367b33fa372f0c42efe965c7097c0ebea4197c991bdc17c37782ae55",
+    "config/requirements.json": "37df7df1b28430867702d6327f5c9a25148a7a24844936840fc8a64953207955",
+    "config/placement.json": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
+    "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx": "f72ec6955f7f982441478d44f69e2f67961da1195766faefe651de29dd2b0cbd",
+    "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320",
+    "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461"
+  },
+  "units": "mm",
+  "minimum_copper_clearance": 0.15,
+  "connectors": {
+    "J_PD": {
+      "copper_bounds": [
+        [
+          -4.9251108,
+          5.8258692
+        ],
+        [
+          4.9251108,
+          12.324129000000001
+        ]
+      ],
+      "courtyard_bounds": [
+        [
+          -5.17511079999997,
+          5.57586920000008
+        ],
+        [
+          5.175110799999971,
+          14.250020999999972
+        ]
+      ],
+      "outward_board_edge": 14.0,
+      "outward_copper_edge_gap": 1.675870999999999,
+      "courtyard_overrun": 0.25002099999997185
+    },
+    "J_DATA": {
+      "copper_bounds": [
+        [
+          5.8258692000000005,
+          -4.9251108
+        ],
+        [
+          12.324129000000001,
+          4.9251108
+        ]
+      ],
+      "courtyard_bounds": [
+        [
+          5.57586920000008,
+          -5.17511079999997
+        ],
+        [
+          14.25002099999997,
+          5.17511079999997
+        ]
+      ],
+      "outward_board_edge": 14.0,
+      "outward_copper_edge_gap": 1.675870999999999,
+      "courtyard_overrun": 0.2500209999999701
+    }
+  },
+  "data_move_exact_distances": [
+    {
+      "target": "TP_BOOT",
+      "usb_pad": "pcb_smtpad_63",
+      "usb_shape": "polygon",
+      "dx": 0,
+      "gap": 0.28476920000000017,
+      "meets_clearance": true
+    },
+    {
+      "target": "TP_BOOT",
+      "usb_pad": "pcb_smtpad_63",
+      "usb_shape": "polygon",
+      "dx": -0.2500209999999701,
+      "gap": 0.034748200000030094,
+      "meets_clearance": false
+    },
+    {
+      "target": "TP_BOOT_GND",
+      "usb_pad": "pcb_smtpad_58",
+      "usb_shape": "rect",
+      "dx": 0,
+      "gap": 0.2848580999999999,
+      "meets_clearance": true
+    },
+    {
+      "target": "TP_BOOT_GND",
+      "usb_pad": "pcb_smtpad_58",
+      "usb_shape": "rect",
+      "dx": -0.2500209999999701,
+      "gap": 0.03483710000002982,
+      "meets_clearance": false
+    }
+  ]
+}
