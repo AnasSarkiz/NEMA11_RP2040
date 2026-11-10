@@ -1,6 +1,8 @@
-# Motor assembly checkpoint, 2026-11-10
+# Historical motor assembly checkpoint, 2026-11-10
 
-Version `0.6.8-motor-assembly-wip`. Electrical source, placement, connectivity
+Version `0.6.8-motor-assembly-wip`, preserved at Git commit `0be7261`.
+Evidence and counts below describe that immutable checkpoint, not later placements.
+See [the current opposite-side update](opposite-usb-checkpoint-20261110.md). Electrical source, placement, connectivity
 and supplier component definitions are unchanged from `b62ede0`. The user
 requested opposite-side USB ports and a motor assembly. **Only the motor
 assembly preview is implemented in this checkpoint.** All recorded opposite-edge
@@ -45,15 +47,18 @@ spacers, carrier or replacement geometry are invented.
 
 ## Visual review and publication
 
-![Full genuine exploded assembly](../artifacts/motor-assembly-review/full-assembly.png)
+[Historical full genuine exploded assembly at 0be7261](https://github.com/AnasSarkiz/NEMA11_RP2040/blob/0be7261ecebbb84cd46cf184fde9bb1c0989d90d/boards/nema11-rp2040-two-layer--20261022-a1/artifacts/motor-assembly-review/full-assembly.png)
 
 The default native 480 × 320 thumbnail frames the PCB and crops the motor.
-The full image above uses the same unmodified native GLB with an explicit
+The linked historical image uses the same unmodified native GLB with an explicit
 whole-scene camera. Both original output hashes and the derivative camera/hash
 receipt are retained. The image is a WIP review, not an assembly approval.
 
-GitHub and the existing tscircuit package are the intended destinations,
-including both native Circuit JSON files. Publication status is recorded
-separately; no successful hosted preview is assumed. Previous release 0.6.7
+GitHub main contains `0be7261`, with exact-head offline CI passed. All 174
+explicitly scoped runtime files in the existing tscircuit package release
+`a0c7a339-f646-48ac-a2e4-458488f5ea0d` were independently byte-verified,
+including both native Circuit JSON files and the OEM STEP/OBJ. The automatic
+preview remained pending at 21:30:49 UTC, with no output verified. See the
+[sanitized publication receipt](../../../docs/publication/nema11-motor-publication-receipt-20261110.json). Previous release 0.6.7
 timed out after 30 minutes despite byte-verified runtime files. Its last
 server log only reported “Starting execution”; no root cause is established.

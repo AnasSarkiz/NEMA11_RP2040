@@ -1,0 +1,111 @@
+{
+  "scope": "Conservative imported-geometry placement screen; not native boundary, routing, mating, assembly, tolerance or manufacturing approval.",
+  "source_count": 99,
+  "pcb_count": 99,
+  "fitted_sides": {
+    "top": 16,
+    "bottom": 73
+  },
+  "frozen_anchors_unchanged": true,
+  "pcb_traces": 0,
+  "pcb_vias": 0,
+  "copper_min_conservative_AABB_gap_mm": 0.16000100000000006,
+  "DNP_inclusive_min_conservative_AABB_gap_mm": 0.16000100000000006,
+  "copper_min_conservative_edge_gap_mm": 0.35008579999999867,
+  "minimum_conservative_bolt_head_envelope_gap_mm": 0.07499973348452027,
+  "conservative_pad_pairs_below_015mm": [],
+  "native_top_level_errors": {},
+  "native_nested_errors": {},
+  "rotated_smt_shape_counts": {
+    "rotated_rect:-90": 16,
+    "rotated_rect:270": 8,
+    "rotated_pill:270": 28,
+    "rotated_rect:180": 2,
+    "rotated_rect:90": 2,
+    "rotated_rect:-270": 2,
+    "rotated_pill:180": 8,
+    "rotated_pill:90": 4
+  },
+  "independent_geometry_pass": true,
+  "reviewed_full_placement_unchanged": true,
+  "testpoint_pad_edge_to_fitted_courtyard": [
+    {
+      "testpoint": "TP_BOOT",
+      "nearest_fitted_courtyard": "U_DRV",
+      "pad_edge_gap_mm": 0.5312780094036986
+    },
+    {
+      "testpoint": "TP_BOOT_GND",
+      "nearest_fitted_courtyard": "U_DRV",
+      "pad_edge_gap_mm": 0.4500059000000023
+    },
+    {
+      "testpoint": "TP_3V3",
+      "nearest_fitted_courtyard": "C_BULK",
+      "pad_edge_gap_mm": 0.19998120000002484
+    },
+    {
+      "testpoint": "TP_GND",
+      "nearest_fitted_courtyard": "C_BULK",
+      "pad_edge_gap_mm": 1.212051200000024
+    },
+    {
+      "testpoint": "TP_SWCLK",
+      "nearest_fitted_courtyard": "C_BULK",
+      "pad_edge_gap_mm": 0.41358120000002474
+    },
+    {
+      "testpoint": "TP_SWDIO",
+      "nearest_fitted_courtyard": "C_BULK",
+      "pad_edge_gap_mm": 0.2697554999999825
+    },
+    {
+      "testpoint": "TP_RUN",
+      "nearest_fitted_courtyard": "BZ1",
+      "pad_edge_gap_mm": 0.29603169999993084
+    }
+  ],
+  "testpoint_pad_courtyard_overlaps": [],
+  "testpoint_centers_inside_fitted_courtyards": [],
+  "probe_access_qualified": false,
+  "testpoint_screen_scope": "Actual copper pad versus genuine fitted courtyard, not a probe diameter or complete probing-access qualification.",
+  "fitted_courtyard_limiting_pair": {
+    "a": "C_BUZZER",
+    "b": "R_DM",
+    "a_geometry_id": "pcb_courtyard_outline_91",
+    "b_geometry_id": "pcb_courtyard_outline_20",
+    "conservative_gap_mm": 0.0009998999999911717
+  },
+  "plated_tab_body_limiting_pair": {
+    "a": "R_PWR_LED",
+    "b": "J_MOTOR",
+    "a_geometry_id": "pcb_courtyard_outline_78",
+    "b_geometry_id": "pcb_plated_hole_9",
+    "conservative_gap_mm": 0.00999960000000577
+  },
+  "clearance_qualification": "Nominal imported-geometry screen only; small positive courtyard/tab gaps are not tolerance-qualified.",
+  "fitted_courtyard_overlap_pairs": [],
+  "plated_tab_body_overlap_pairs": [],
+  "npth_body_overlaps": [],
+  "npth_own_copper_pairs_below_015mm": [],
+  "npth_min_own_copper_gap_mm": 0.3183890020865856,
+  "npth_copper_pairs_below_025mm": [],
+  "npth_min_conservative_copper_gap_mm": 0.28992280000000015,
+  "genuine_usb_locator_geometry_verified": true,
+  "copper_minimum_rule_mm": 0.15,
+  "npth_other_copper_minimum_rule_mm": 0.25,
+  "npth_own_copper_minimum_rule_mm": 0.15,
+  "npth_board_edge_minimum_rule_mm": 0.25,
+  "copper_board_edge_minimum_rule_mm": 0.25,
+  "fitted_courtyard_min_conservative_gap_mm": 0.0009998999999911717,
+  "plated_tab_body_min_conservative_gap_mm": 0.00999960000000577,
+  "npth_body_min_conservative_gap_mm": 0.03992279999989179,
+  "npth_min_board_edge_gap_mm": 1.15,
+  "usb_courtyard_edge_gaps_mm": {
+    "J_PD": -0.25002099999997185,
+    "J_DATA": -0.2500209999999701
+  },
+  "non_usb_fitted_courtyard_min_edge_gap_mm": 0.10008579999999156,
+  "usb_courtyard_boundary_approval": false,
+  "evidence_kind": "Counterfactual rigid transform of pinned native geometry and component poses; not a fresh native circuit."
+}

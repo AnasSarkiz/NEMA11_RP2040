@@ -27,12 +27,13 @@ OEM leads extend the model to 28.2 × 48.2 mm; even the main solid's wire exit
 exceeds the saved 28.3 mm whole-frame target. No geometry is cropped or hidden.
 See the [motor assembly review](boards/nema11-rp2040-two-layer--20261022-a1/docs/motor-assembly-review.md).
 
-**The USB ports remain on adjacent edges.** Opposite-edge trials include both
-layers and real through-hole shell copper. The closest bounded-search candidate
-still has two conservative copper-clearance flags and an MCU courtyard intrusion
-into a motor-bolt envelope, so it was rejected. No unsafe candidate was applied.
-See the [reproducible opposite-edge study](docs/engineering-review-20261110/opposite-usb/README.md).
-The broader floorplan redesign remains open.
+**The new 0.6.9 floorplan places the power USB on the north edge and the data
+USB on the south edge, offset 3.8 mm east.** The motor header moves to the east
+and support components are coordinated on both layers. Earlier rejected trials
+remain in the [historical search study](docs/engineering-review-20261110/opposite-usb/README.md).
+The expanded audit includes actual USB locator holes, which revealed pre-existing
+PD/support copper conflicts omitted by the older pad-only screen. Final native
+results and remaining physical limits are recorded in the active board validation.
 
 ## Current all-top feasibility screen
 
@@ -43,13 +44,13 @@ not proof that physical bodies cannot fit. No parts were added or removed
 from the active board, and upright connector footprints still need qualification.
 See the [reproducible area study](docs/engineering-review-20261110/all-top-parity-area/README.md).
 
-## Current USB boundary investigation
+## Earlier USB boundary investigation
 
-The native connector errors concern courtyards extending 0.250021 mm past the
+The earlier adjacent-port connector errors concerned courtyards extending 0.250021 mm past the
 board edge, while the outward copper remains 1.675871 mm inside it. Moving the
 data connector inward just to clear that error would reduce two measured copper
-gaps to about **0.035 mm**, below the required 0.15 mm. The original placements
-remain unchanged. Connector mating, assembly and tolerance evidence is still
+gaps to about **0.035 mm**, below the required 0.15 mm. That study is pinned to the earlier adjacent-port placements. Connector mating,
+assembly and tolerance evidence is still
 needed before choosing a mechanical correction or any boundary exemption.
 See the [pinned geometry audit and regression tests](docs/engineering-review-20261110/usb-edge-boundary/README.md).
 

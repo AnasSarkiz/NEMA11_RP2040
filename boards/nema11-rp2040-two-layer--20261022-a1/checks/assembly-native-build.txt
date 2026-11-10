@@ -1,6 +1,6 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
-> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.8-motor-assembly-wip build:assembly
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.9-opposite-usb-wip build:assembly
 > tsci build assembly-preview.circuit.tsx --3d-png --glbs
 
 Building 1 file(s)...
@@ -45,34 +45,43 @@ BZ1 has no pin with requires_ground=true
 Q_BUZZER has no pin with requires_power=true
 Q_BUZZER has no pin with requires_ground=true
 All pins on Q_BUZZER are underspecified (no pinAttributes set)
-R_SA may not have availability from jlcpcb (C7434086).
-R_SB may not have availability from jlcpcb (C7434086).
-D_PD may not have availability from jlcpcb (C8598).
-D_DATA may not have availability from jlcpcb (C8598).
+J_MOTOR is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+C_PD may not have availability from jlcpcb (C15849).
+R_PD may not have availability from jlcpcb (C21189).
+C_VM_SENSE may not have availability from jlcpcb (C15195).
+C_BULK may not have availability from jlcpcb (C72522).
+R_PWR_LED may not have availability from jlcpcb (C25104).
+L_BUCK may not have availability from jlcpcb (C780206).
+C_BUZZER may not have availability from jlcpcb (C19702).
+R_PG may not have availability from jlcpcb (C25804).
+D_BUZZER may not have availability from jlcpcb (C478000).
+R_FLASH_CS may not have availability from jlcpcb (C25744).
+R_RUN may not have availability from jlcpcb (C25744).
+R_REF_L may not have availability from jlcpcb (C25744).
+R_ENABLE may not have availability from jlcpcb (C25744).
+R_SLEEP may not have availability from jlcpcb (C25744).
+R_VM_L may not have availability from jlcpcb (C25744).
+R_STATUS_R_PD may not have availability from jlcpcb (C25744).
+R_STATUS_G_PD may not have availability from jlcpcb (C25744).
+R_STATUS_B_PD may not have availability from jlcpcb (C25744).
+R_BUZZER_PD may not have availability from jlcpcb (C25744).
+R_PD_CFG may not have availability from jlcpcb (C25796).
+C_REF may not have availability from jlcpcb (C1589).
 R_USB_SENSE_H may not have availability from jlcpcb (C25741).
 R_USB_SENSE_L may not have availability from jlcpcb (C25741).
 R_VM_H may not have availability from jlcpcb (C25741).
-C_VM_SENSE may not have availability from jlcpcb (C15195).
-R_PG may not have availability from jlcpcb (C25804).
 C_CP may not have availability from jlcpcb (C960916).
 C_VCP may not have availability from jlcpcb (C960916).
 C_VM may not have availability from jlcpcb (C960916).
-C_BUZZER may not have availability from jlcpcb (C19702).
-D_PWR may not have availability from jlcpcb (C965799).
+R_CC1 may not have availability from jlcpcb (C25905).
+R_CC2 may not have availability from jlcpcb (C25905).
+D_PD may not have availability from jlcpcb (C8598).
+D_DATA may not have availability from jlcpcb (C8598).
+R_DP may not have availability from jlcpcb (C25100).
+R_DM may not have availability from jlcpcb (C25100).
+R_TEMP_SDA may not have availability from jlcpcb (C25900).
+R_TEMP_SCL may not have availability from jlcpcb (C25900).
 R_REF_H may not have availability from jlcpcb (C4184).
-D_BUZZER may not have availability from jlcpcb (C478000).
-R_PWR_LED may not have availability from jlcpcb (C25104).
-L_BUCK may not have availability from jlcpcb (C780206).
-R_BOOT may not have availability from jlcpcb (C11702).
-R_XOUT may not have availability from jlcpcb (C11702).
-R_STATUS_R may not have availability from jlcpcb (C11702).
-R_STATUS_G may not have availability from jlcpcb (C11702).
-R_STATUS_B may not have availability from jlcpcb (C11702).
-R_STATUS_R_GATE may not have availability from jlcpcb (C11702).
-R_STATUS_G_GATE may not have availability from jlcpcb (C11702).
-R_STATUS_B_GATE may not have availability from jlcpcb (C11702).
-R_BUZZER_GATE may not have availability from jlcpcb (C11702).
-R_PD may not have availability from jlcpcb (C21189).
 C_BOOTSTRAP may not have availability from jlcpcb (C1525).
 C_FLASH may not have availability from jlcpcb (C1525).
 C_ESD may not have availability from jlcpcb (C1525).
@@ -88,55 +97,46 @@ C_DV23 may not have availability from jlcpcb (C1525).
 C_DV50 may not have availability from jlcpcb (C1525).
 C_DRV_LOGIC may not have availability from jlcpcb (C1525).
 C_TEMP may not have availability from jlcpcb (C1525).
+C_VREG may not have availability from jlcpcb (C21120).
+R_BOOT may not have availability from jlcpcb (C11702).
+R_XOUT may not have availability from jlcpcb (C11702).
+R_STATUS_R may not have availability from jlcpcb (C11702).
+R_STATUS_G may not have availability from jlcpcb (C11702).
+R_STATUS_B may not have availability from jlcpcb (C11702).
+R_STATUS_R_GATE may not have availability from jlcpcb (C11702).
+R_STATUS_G_GATE may not have availability from jlcpcb (C11702).
+R_STATUS_B_GATE may not have availability from jlcpcb (C11702).
+R_BUZZER_GATE may not have availability from jlcpcb (C11702).
+C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
+C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
+R_SA may not have availability from jlcpcb (C7434086).
+R_SB may not have availability from jlcpcb (C7434086).
 C_VREG_IN may not have availability from jlcpcb (C52923).
 C_VREG_OUT may not have availability from jlcpcb (C52923).
-C_VREG may not have availability from jlcpcb (C21120).
-C_REF may not have availability from jlcpcb (C1589).
-R_CC1 may not have availability from jlcpcb (C25905).
-R_CC2 may not have availability from jlcpcb (C25905).
 C_BUCK_IN may not have availability from jlcpcb (C13585).
 C_XIN may not have availability from jlcpcb (C1548).
 C_XOUT may not have availability from jlcpcb (C1548).
-C_PD may not have availability from jlcpcb (C15849).
-C_BUCK_OUT1 may not have availability from jlcpcb (C45783).
-C_BUCK_OUT2 may not have availability from jlcpcb (C45783).
-R_TEMP_SDA may not have availability from jlcpcb (C25900).
-R_TEMP_SCL may not have availability from jlcpcb (C25900).
-R_PD_CFG may not have availability from jlcpcb (C25796).
-C_BULK may not have availability from jlcpcb (C72522).
-R_DP may not have availability from jlcpcb (C25100).
-R_DM may not have availability from jlcpcb (C25100).
-R_FLASH_CS may not have availability from jlcpcb (C25744).
-R_RUN may not have availability from jlcpcb (C25744).
-R_REF_L may not have availability from jlcpcb (C25744).
-R_ENABLE may not have availability from jlcpcb (C25744).
-R_SLEEP may not have availability from jlcpcb (C25744).
-R_VM_L may not have availability from jlcpcb (C25744).
-R_STATUS_R_PD may not have availability from jlcpcb (C25744).
-R_STATUS_G_PD may not have availability from jlcpcb (C25744).
-R_STATUS_B_PD may not have availability from jlcpcb (C25744).
-R_BUZZER_PD may not have availability from jlcpcb (C25744).
-D_TVS may not have availability from jlcpcb (C19077512).
-U_ESD may not have availability from jlcpcb (C2687116).
-U_MCU may not have availability from jlcpcb (C2040).
+D_PWR may not have availability from jlcpcb (C965799).
+J_PD may not have availability from jlcpcb (C165948).
+J_DATA may not have availability from jlcpcb (C165948).
+Y_MCU may not have availability from jlcpcb (C20625731).
+U_TEMP may not have availability from jlcpcb (C99269).
+J_MOTOR may not have availability from jlcpcb (C131334).
 U_DRV may not have availability from jlcpcb (C38437).
 BZ1 may not have availability from jlcpcb (C94598).
+U_BUCK may not have availability from jlcpcb (C780769).
+U_ESD may not have availability from jlcpcb (C2687116).
+U_MCU may not have availability from jlcpcb (C2040).
+U_PD may not have availability from jlcpcb (C46061833).
 U_FLASH may not have availability from jlcpcb (C2986331).
-Y_MCU may not have availability from jlcpcb (C20625731).
+D_TVS may not have availability from jlcpcb (C19077512).
 Q_STATUS_R may not have availability from jlcpcb (C154728).
 Q_STATUS_G may not have availability from jlcpcb (C154728).
 Q_STATUS_B may not have availability from jlcpcb (C154728).
 Q_BUZZER may not have availability from jlcpcb (C154728).
-J_PD may not have availability from jlcpcb (C165948).
-J_DATA may not have availability from jlcpcb (C165948).
-U_PD may not have availability from jlcpcb (C46061833).
-U_TEMP may not have availability from jlcpcb (C99269).
-J_MOTOR may not have availability from jlcpcb (C131334).
-U_BUCK may not have availability from jlcpcb (C780769).
-Datasheet information for chip "D_STATUS" could not be fetched: Datasheet API did not respond within 5 seconds; pin attributes may not be populated. Pin attributes may not be populated.
 D_STATUS may not have availability from jlcpcb (C458749).
 Component J_PD extends outside board boundaries by 0.25mm. Try moving it 0.25mm down to fit within the board edge.
-Component J_DATA extends outside board boundaries by 0.25mm. Try moving it 0.25mm left to fit within the board edge.
+Component J_DATA extends outside board boundaries by 0.25mm. Try moving it 0.25mm up to fit within the board edge.
 Generating preview images...
 [assembly-preview] Generating PCB SVG...
 [assembly-preview] Written pcb.svg

@@ -1,0 +1,21 @@
+{
+  "scope": "Bounded floorplan investigation, not an impossibility proof or exhaustive optimizer. Active candidate chosen only after separate locator-inclusive conservative geometry and electrical-locality review.",
+  "historical_study": "docs/engineering-review-20261110/opposite-usb",
+  "outside_repo_workspace": "nema11_opposite_extended",
+  "completed_optimizer_starts": {
+    "additional_west_fixed_mcu": 3,
+    "additional_west_with_tab_body_constraints": 3,
+    "offset_south_initial_global": 1,
+    "offset_south_frozen_top_north_cluster": 8,
+    "offset_south_rotated_reference_resistor": 12
+  },
+  "selection_notes": [
+    "Earlier centered north/south and west/east candidates were rejected and remain unchanged in the historical study.",
+    "Offset south DATA at X3.8 preserves the MCU cluster. Motor header rotates and moves east; driver and its local bypass/sense group move north.",
+    "Final explicit local corrections add genuine USB locator-to-copper/body clearance, including pre-existing north-PD overlaps. These were verified after, rather than accepted from, the optimizer score.",
+    "The final full pose set is anchor-reference.json, the before/after list and origin-distance review are placement-review.json, and pin/net copper lower bounds are pad-locality-review.json.",
+    "Counterfactual geometry is rigidly transformed historical native geometry with matching transformed poses, not a new native build. Native acceptance, routing and assembly review remain parent-owned gates.",
+    "Final focused check physically rotates C_BULK180 degrees at unchanged XY. Selected for shorter positive feeds and more balanced driver connection, with longer ground return explicitly retained as a routing-review requirement.",
+    "After fresh native output, only TP_BOOT/TP_BOOT_GND/TP_3V3 were moved to eliminate actual test-pad/fitted-courtyard interference; reviewed electrical, USB and motor component poses remain unchanged."
+  ]
+}

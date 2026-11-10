@@ -1,6 +1,6 @@
 {
   "source_sha256": "e534b89873edec43ccdd36525f7566f7a63e1ff36d9e1778b2a6ebedb37199ce",
-  "circuit_json_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "circuit_json_sha256": "d07d9965d138ab20566007170f2b5ecf6586a6cec1393fdfe3dfe928a01abdf0",
   "structural_failure_count": 0,
   "native_errors": {
     "pcb_component_outside_board_error": 2
@@ -15,8 +15,9 @@
     "source_no_power_pin_defined_warning": 10,
     "source_no_ground_pin_defined_warning": 12,
     "source_component_pins_underspecified_warning": 8,
+    "pcb_connector_not_in_accessible_orientation_warning": 1,
     "source_component_availability_warning": 89,
-    "source_property_ignored_warning": 15
+    "source_property_ignored_warning": 19
   },
   "error_count_interpretation": "native_error_count counts top-level groups; nested details are retained separately and must not be ignored or blindly added as independent groups."
 }

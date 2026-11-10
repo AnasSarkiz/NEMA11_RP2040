@@ -1,0 +1,246 @@
+{
+  "scope": "Physical180-degree rotation of genuine polarized RVT1V470M0605 at unchanged XY, never a pin/net override. WIP electrical-placement choice, not routed-performance qualification.",
+  "adopted": true,
+  "before_pose": {
+    "pcbX": -5.05,
+    "pcbY": -9.0,
+    "pcbRotation": 90,
+    "layer": "top"
+  },
+  "after_pose": {
+    "pcbX": -5.05,
+    "pcbY": -9.0,
+    "pcbRotation": 270,
+    "layer": "top"
+  },
+  "unchanged_polarity": {
+    "pin1": "PD_VBUS (positive)",
+    "pin2": "GND (negative)"
+  },
+  "unchanged_connections_sha256": "db4666b95d102c085313adc21fc0cf5acb40b0688d5182ea0d64ac38b268c2c1",
+  "same_net_pad_comparison": [
+    {
+      "component": "U_DRV",
+      "net": "PD_VBUS",
+      "current": {
+        "gap_mm": 12.05481120720326,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 7.46823131528346,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "change_mm": -4.5865798919198
+    },
+    {
+      "component": "U_DRV",
+      "net": "GND",
+      "current": {
+        "gap_mm": 5.270887196528954,
+        "a_pad": "pcb_smtpad_200",
+        "a_pins": [
+          "29"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 8.851269945666058,
+        "a_pad": "pcb_smtpad_200",
+        "a_pins": [
+          "29"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "change_mm": 3.5803827491371036
+    },
+    {
+      "component": "J_PD",
+      "net": "PD_VBUS",
+      "current": {
+        "gap_mm": 15.842850738424508,
+        "a_pad": "pcb_smtpad_10",
+        "a_pins": [
+          "15"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 10.551923451032023,
+        "a_pad": "pcb_smtpad_10",
+        "a_pins": [
+          "15"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "change_mm": -5.290927287392485
+    },
+    {
+      "component": "J_PD",
+      "net": "GND",
+      "current": {
+        "gap_mm": 10.449098286810493,
+        "a_pad": "pcb_smtpad_9",
+        "a_pins": [
+          "14"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 15.77455184818207,
+        "a_pad": "pcb_smtpad_9",
+        "a_pins": [
+          "14"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "change_mm": 5.325453561371576
+    },
+    {
+      "component": "U_PD",
+      "net": "PD_VBUS",
+      "current": {
+        "gap_mm": 19.45389363123173,
+        "a_pad": "pcb_smtpad_19",
+        "a_pins": [
+          "8"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 14.225292553155317,
+        "a_pad": "pcb_smtpad_19",
+        "a_pins": [
+          "8"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "change_mm": -5.228601078076412
+    },
+    {
+      "component": "U_PD",
+      "net": "GND",
+      "current": {
+        "gap_mm": 13.420726213063956,
+        "a_pad": "pcb_smtpad_22",
+        "a_pins": [
+          "11"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 18.706442666069965,
+        "a_pad": "pcb_smtpad_22",
+        "a_pins": [
+          "11"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "change_mm": 5.285716453006009
+    },
+    {
+      "component": "C_VM",
+      "net": "PD_VBUS",
+      "current": {
+        "gap_mm": 8.268547798457401,
+        "a_pad": "pcb_smtpad_240",
+        "a_pins": [
+          "1"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 2.9618114889180136,
+        "a_pad": "pcb_smtpad_240",
+        "a_pins": [
+          "1"
+        ],
+        "bulk_pad": "pcb_smtpad_241",
+        "bulk_pin": [
+          "1"
+        ]
+      },
+      "change_mm": -5.306736309539388
+    },
+    {
+      "component": "C_VM",
+      "net": "GND",
+      "current": {
+        "gap_mm": 3.2256368180989536,
+        "a_pad": "pcb_smtpad_239",
+        "a_pins": [
+          "2"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "rotated": {
+        "gap_mm": 8.366677254547561,
+        "a_pad": "pcb_smtpad_239",
+        "a_pins": [
+          "2"
+        ],
+        "bulk_pad": "pcb_smtpad_242",
+        "bulk_pin": [
+          "2"
+        ]
+      },
+      "change_mm": 5.141040436448607
+    }
+  ],
+  "reason": [
+    "Positive feed to the driver improves12.055\u21927.468mm and to local VM ceramic8.269\u21922.962mm.",
+    "Driver two-leg proxy sum improves17.326\u219216.320mm and worst leg12.055\u21928.851mm.",
+    "J_PD two-leg sum changes only about+0.034mm, but the ground leg grows10.449\u219215.775mm.",
+    "All conservative copper, fitted-courtyard, tab/body, own/other-locator, board-edge and screw-envelope gates still pass.",
+    "Longer ground return remains a routing-review requirement; these are nearest-land geometric bounds, not routed loop lengths."
+  ]
+}

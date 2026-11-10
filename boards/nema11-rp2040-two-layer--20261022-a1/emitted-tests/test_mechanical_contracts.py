@@ -37,17 +37,24 @@ class MechanicalContract(unittest.TestCase):
             self.assertFalse(r['allow_placements'])
 
     def test_edge_anchors_and_no_offboard_exemptions(self):
-        anchors = {'J_PD': (0, 8.65, 180), 'J_DATA': (8.65, 0, 90),
-                   # Reviewed placement-only adjustment; motor hole axes unchanged.
-                   'J_MOTOR': (3.874997, -11.1, 180), 'C_BULK': (-4.9, -9, 90),
-                   'U_DRV': (2, -3.2, 270)}
-        for name, (x, y, angle) in anchors.items():
+        anchors = json.loads((ROOT/'references/opposite-usb-20261110/anchor-reference.json').read_text())['placements']
+        for name, expected in anchors.items():
             pose = self.placements[self.components[name]['source_component_id']]
-            self.assertEqual(pose['layer'], 'top', name)
-            self.assertAlmostEqual(pose['footprint_origin']['x'], x, places=6, msg=name)
-            self.assertAlmostEqual(pose['footprint_origin']['y'], y, places=6, msg=name)
-            self.assertEqual(pose['rotation'] % 360, angle, name)
+            self.assertEqual(pose['layer'], expected['layer'], name)
+            self.assertAlmostEqual(pose['footprint_origin']['x'], expected['pcbX'], places=6, msg=name)
+            self.assertAlmostEqual(pose['footprint_origin']['y'], expected['pcbY'], places=6, msg=name)
+            self.assertEqual(pose['rotation'] % 360, expected['pcbRotation'] % 360, name)
         self.assertFalse(any(p.get('is_allowed_to_be_off_board', False) for p in self.placements.values()))
+
+    def test_complete_copper_body_and_locator_screen(self):
+        spec=importlib.util.spec_from_file_location('opposite_geometry', ROOT/'scripts/audit_opposite_usb_geometry.py')
+        module=importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        poses=json.loads((ROOT/'config/placement.json').read_text())
+        reference=json.loads((ROOT/'references/opposite-usb-20261110/anchor-reference.json').read_text())
+        report=module.audit(self.records,poses,reference)
+        self.assertTrue(report['independent_geometry_pass'],report)
+        self.assertFalse(report['usb_courtyard_boundary_approval'])
 
     def test_optional_encoder_and_construction_limits_retained(self):
         for name in ('U_ENCODER', 'C_ENCODER', 'C_ENCODER_BULK'):

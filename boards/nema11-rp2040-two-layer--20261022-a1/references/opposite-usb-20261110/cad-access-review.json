@@ -1,0 +1,109 @@
+{
+  "scope": "Read-only mesh-registration interpretation using genuine OBJ vertices and supplier-declared model origins/rotation offsets. Not evaluated STEP solids, native rendered CAD, plug mating, tolerance or assembly qualification.",
+  "pcb_surfaces_z_mm": [
+    -0.8,
+    0.8
+  ],
+  "components": {
+    "J_PD": {
+      "obj_sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320",
+      "model_origin_position": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "cad_rotation_z_degrees": 0,
+      "world_mesh_bounds_mm": {
+        "x": [
+          -4.47,
+          4.47
+        ],
+        "y": [
+          6.100028900000052,
+          14.000028900000052
+        ],
+        "z": [
+          -0.050010999999999806,
+          4.050989
+        ]
+      }
+    },
+    "J_DATA": {
+      "obj_sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320",
+      "model_origin_position": {
+        "x": 0,
+        "y": -2.7500289000000517,
+        "z": 1.0999999999872223e-05
+      },
+      "cad_rotation_z_degrees": 180,
+      "world_mesh_bounds_mm": {
+        "x": [
+          -0.6700000000000006,
+          8.27
+        ],
+        "y": [
+          -14.000028900000052,
+          -6.100028900000052
+        ],
+        "z": [
+          -0.050010999999999806,
+          4.050989
+        ]
+      }
+    },
+    "J_MOTOR": {
+      "obj_sha256": "333d51fc2722f28c1a73c3ef4b240453d4ce90bba01e4b2a7b6d8c059fa62d0f",
+      "model_origin_position": {
+        "x": 2.9999872999999297,
+        "y": -0.5500383000000056,
+        "z": -5.999999999950489e-06
+      },
+      "cad_rotation_z_degrees": 270,
+      "world_mesh_bounds_mm": {
+        "x": [
+          7.613064300000005,
+          12.313064300000008
+        ],
+        "y": [
+          -1.9970617000000708,
+          7.9029382999999305
+        ],
+        "z": [
+          -2.1999940000000002,
+          6.800006
+        ]
+      }
+    },
+    "C_BULK": {
+      "obj_sha256": "c2f7aa7cd71a979dfeda7f8834d57e7bc89a1a551214fb36539b6e2a07d00d5f",
+      "model_origin_position": {
+        "x": 0,
+        "y": -1.2700000070253736e-05,
+        "z": -0.05
+      },
+      "cad_rotation_z_degrees": 90,
+      "world_mesh_bounds_mm": {
+        "x": [
+          -8.35001270000007,
+          -1.7500127000000703
+        ],
+        "y": [
+          -12.9,
+          -5.1
+        ],
+        "z": [
+          0.8,
+          8.55
+        ]
+      }
+    }
+  },
+  "access_review": [
+    "PD remains north-facing; DATA now south-facing. Nominal USB outer mesh faces remain Y=\u00b114.0000289mm, preserving prior approximately flush registration rather than recessing connectors to silence courtyard errors.",
+    "J_MOTOR is the genuine vertical/top-entry JST B4B-PH-K-S(LF)(SN). Its PCB move/quarter-turn retains top-side insertion; it does not intentionally require insertion through the motor. This does not qualify the cable plug/hand-access envelope.",
+    "Registered J_MOTOR raw mesh extends nominally to Z\u2248\u22122.20mm, including pins, or 1.40mm below the PCB bottom. Check solder and motor/spacer/insulation tolerance in the assembled geometry before release.",
+    "Imported J_MOTOR mesh stays inside its positive-clearance fitted courtyard and the 28mm board outline. The mating plug, cable bend and extraction envelope are not part of that model and remain unverified.",
+    "No STEP, OBJ, footprint, symbol, pin map, PCB outline or mounting-axis modification was made.",
+    "C_BULK rotates physically from90 to270 degrees at the same XY, preserving imported polarized markings/model. Pin1(PD_VBUS) is now north-facing, pin2(GND) south-facing; assembly polarity must follow the genuine transformed markings, not the old placement."
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "scope": "Camera-only labeled render of unchanged native GLB; preliminary layout",
   "input": "dist/assembly-preview/3d.glb",
-  "input_sha256": "55e9a3bf7599e518459fbb231c2e82408085d381256f8cdf625504c09747f47e",
+  "input_sha256": "c19cf8bb6811194e195f06528da7d6bc0b4505d91a801afff2218aa84dc74fa7",
   "output": "artifacts/motor-assembly-review/full-assembly.png",
-  "output_sha256": "b7057683a9fc4a60d8fec759f71752ad867bb25136c8aa6ec9c854092f17d7ed",
+  "output_sha256": "07d520e474b3586dc41207684cae49397c024d1645b3dee83668f3865d6faadf",
   "gltf_world_bounds": {
     "min": [
       -14.100000381469727,
@@ -20,9 +20,9 @@
     "width": 1200,
     "height": 1000,
     "camPos": [
-      81.43099632976441,
-      20.269261509858666,
-      -138.5752564091116
+      74.27778661457573,
+      51.31214428165373,
+      -127.28071475355054
     ],
     "lookAt": [
       0,

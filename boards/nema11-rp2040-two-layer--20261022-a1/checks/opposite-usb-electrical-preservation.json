@@ -1,0 +1,29 @@
+{
+  "scope": "Exact electrical source record preservation; no routing or hardware qualification",
+  "baseline_commit": "0be7261ecebbb84cd46cf184fde9bb1c0989d90d",
+  "baseline_json_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "current_json_sha256": "d07d9965d138ab20566007170f2b5ecf6586a6cec1393fdfe3dfe928a01abdf0",
+  "record_types": {
+    "source_component": {
+      "count": 99,
+      "exact_multiset_equal": true
+    },
+    "source_port": {
+      "count": 346,
+      "exact_multiset_equal": true
+    },
+    "source_net": {
+      "count": 67,
+      "exact_multiset_equal": true
+    },
+    "source_trace": {
+      "count": 310,
+      "exact_multiset_equal": true
+    },
+    "source_group": {
+      "count": 1,
+      "exact_multiset_equal": true
+    }
+  },
+  "all_equal": true
+}

@@ -1,87 +1,90 @@
 # Reconstruction validation
 
-Revision: `0.6.8-motor-assembly-wip`. Public baseline: `1233ccdf`.
-The lost local placement and generated files were not recovered. All results
-below must come from this revision's fresh runs. Older review records are
-archived under `references/public-0.6.2-review/` and are historical only.
+Revision: `0.6.9-opposite-usb-wip`, continuing motor checkpoint `0be7261`.
+The original lost local work was not recovered; this is the existing reconstructed
+NEMA11 project. Historical evidence does not validate later revisions.
 
 **Unrouted, untested prototype. Not fabrication-ready.**
 
-## Motor assembly checkpoint
+## Opposite-side USB and motor checkpoint, 2026-11-10
 
-The separate native assembly wraps the unchanged electrical board with the
-genuine OEM motor. Its 10 mm exploded viewing separation is not an approved
-stack or spacer. Active USB placements remain adjacent; the opposite-edge
-study rejects all recorded candidates and broader layout work remains open.
-The complete motor model spans 28.2 × 48.2 mm in XY, failing the saved
-28.3 × 28.3 mm whole-frame target. Excluding flexible leads still leaves a
-31.2 mm main-solid wire-exit span, so that exclusion would not establish a pass.
-No motor geometry is cropped. Hardware, mating, fasteners and insulation remain
-unqualified. See [the motor review](docs/motor-assembly-review.md).
+Power USB J_PD is north at (0,8.65) mm, rotation 180°. Data USB J_DATA is south
+at (3.8,-8.65) mm, rotation 0°. Forty-five component poses are coordinated,
+including three test-pad access corrections. Supplier definitions and electrical
+connections are unchanged. All 99 source components, 346 ports, 67 nets and
+310 source-trace records match published `0be7261` exactly.
 
-## Electrical verification state, 2026-11-10
+Both normal and assembly native outputs are fresh, with equal before/after
+291-file input fingerprints. Both native builds exit 1, retaining the same two
+USB courtyard boundary errors. The test-point accessibility error found during
+the first trial is fixed by physical pad relocation, not a waiver.
 
-The NEMA14 I2C0 pin allocation and seven functional sheets now have a fresh
-native build. Electrical source, physical placement and supplier assets are unchanged.
-The package now also includes the separate motor assembly and its validation. `checks/native-build-status.json` binds all native
-inputs and the generated `dist/index/circuit.json` by SHA-256. The receipt
-reports `fresh_output: true` and `build_passed: false`.
-
-- Offline repository/source checks pass, including 48 prebuild regressions (14 for the motor assembly), plus eight
-  root-selection tests and nine opposite-edge study tests.
-- All 10 emitted contracts, 657 source/import assertions and independent
-  conservative geometry checks pass.
-- Native netlist reports zero errors/warnings. The current source check reports
-  zero errors and five datasheet-service warnings (four timeouts and one HTTP 500);
-  its strict gate fails. These are retained, not treated as a clean source pass.
-- Pin semantics reports 30 warnings; its strict gate fails.
-- Schematic analysis reports four findings: two imported label collisions,
-  one cross-device decoupling grouping suggestion, and the bootstrap
-  orientation diagnostic. Its strict gate fails. Findings are not waived.
-- Native build exits 1 with two USB courtyard boundary errors, each 0.25 mm.
-  There are no nested native errors. Placement analysis separately reports
-  three courtyard collisions involving the optional encoder cluster and nine
-  orientation suggestions. These are preserved for review, not dismissed by
-  the separate native DRC result.
-- 99 source/PCB components, 89 fitted CAD components (16 top, 73 bottom),
-  67 source nets and 346 ports; zero PCB traces and vias.
-- Seven A4 pages cover all 99 components and 346 schematic ports. Native PCB
-  top/bottom views retain visible diagnostics. Crowded and off-board labels
-  remain. Rendering/coverage is not detailed readability or assembly approval.
+- 70 prebuild tests, eight repository tests, 11 emitted contracts and 657
+  source/import assertions pass. Source regeneration, TypeScript, formatting
+  and the expanded independent geometry screen pass.
+- Native netlist and the separate final source check report zero errors/warnings.
+  The main build JSON still retains 19 datasheet-service timeout warnings from
+  that earlier build pass; the assembly build has none. This service variability
+  is not silently normalized or evidence of complete pin qualification.
+- Pin check reports 30 warnings. Schematic analysis reports four findings:
+  two imported label collisions, cross-device decoupling grouping and bootstrap
+  orientation. Both strict gates fail; no finding is waived.
+- Placement analysis reports three optional-encoder courtyard collisions and
+  eight orientation suggestions. Its native DRC reports two USB boundary errors
+  and one motor-connector direction warning. The genuine JST is top-entry, but
+  its imported footprint lacks insertion-direction metadata and the tool infers
+  horizontal insertion. The warning remains for a documented supplier/import fix.
+- There are 99 source/PCB components, 89 fitted CAD components (16 top, 73 bottom),
+  67 nets, 346 ports and zero PCB traces/vias. Routing stays disabled.
+- Seven A4 schematic pages and diagnostic-enabled top/bottom PCB views are fresh.
+  Rendering/coverage is not detailed readability or assembly-artwork approval.
 - `checks/milestone-status.json` is complete with `passed: false` and
-  `manufacturing_approved: false`. Routing remains disabled.
+  `manufacturing_approved: false`.
 
-The conservative geometry audit finds minimum copper gap 0.160 mm, edge gap
-0.389003 mm and provisional R2.35 screw-head envelope gap 0.075 mm. These are
-nominal estimates, not tolerance or mechanical-fit qualification.
-See [the current native refresh report](docs/native-refresh-20261110.md).
+The expanded screen includes all DNP copper, genuine locator NPTH holes,
+actual full test pads, fitted courtyards, plated tabs, board edges and provisional
+screw envelopes. Minimum nominal copper gap is 0.160 mm, copper/edge gap
+0.350086 mm, other-part NPTH/copper gap 0.289923 mm and full test-pad/courtyard
+gap 0.199981 mm. However, C_BUZZER/R_DM courtyards have only 0.001 mm separation,
+R_PWR_LED/J_MOTOR tab/body only 0.010 mm, and the provisional R2.35 screw-head
+envelope only 0.075 mm. These are not tolerance-qualified assembly margins.
+The two USB courtyards still extend 0.250021 mm beyond the board; their genuine
+model faces are nominally flush. No envelope is shrunk or exempted.
 
-| Stage                   | Status      | Remaining gate                                                                                                                     |
-| ----------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Requirements            | blocked     | Full NEMA14 parity, all-top/upright USB fit and rear-bolt qualification remain incomplete.                                         |
-| Schematic/BOM           | in progress | Four schematic findings, 30 pin warnings and live supplier qualification remain open.                                              |
-| Placement               | blocked     | Two native USB boundary errors, three analyzer courtyard findings, orientations, artwork and mechanical qualification remain open. |
-| Routing                 | not started | Disabled until prior gates pass.                                                                                                   |
-| Automated/visual review | in progress | Fresh native evidence exists, but strict milestone gates fail.                                                                     |
-| Fabrication             | not started | No approved CAM, assembly process or BOM/CPL.                                                                                      |
-| Physical prototype      | not started | No physical measurements or approved fastening.                                                                                    |
-| Publication             | WIP only    | Existing GitHub and tscircuit package; publication receipts are separate from hardware approval.                                   |
+The assembly contains the unchanged OEM motor. All 4,078 electrical, schematic,
+PCB and existing CAD records match the normal board exactly; diagnostics and
+project metadata are separately reported. All 89 fitted CAD models were checked,
+with no missing models. The minimum nominal vertical gap is 8.17 mm only in the
+explicitly exploded view. The 10 mm PCB-to-motor viewing separation is not an
+approved spacer or stack. The uncropped motor spans 28.2 × 48.2 mm; its main
+solid alone spans 31.2 mm in Y. The saved 28.3 mm whole-frame target still fails.
 
-Exact C94598 manufacturer evidence is in the repository's reconstruction
-record. The 2021 linked sheet supports 3.0 Vo-p rated and 2–4 Vo-p operation,
-4 kHz ±200 Hz, 50% square wave, and 250 °C maximum reflow peak. It does not
-resolve peak/RMS current, freewheel behavior, acoustics or thermal limits at
-the candidate's actual waveform. Preserve the buzzer and clamp; bench tests
-remain mandatory.
+Rear threads, replacement bolts, length/engagement, torque, insulation, actual
+stack gap, harness, mated plugs, extraction/tool access, assembly tolerances and
+thermal behavior remain unqualified. Electrical routing, ground return paths,
+USB impedance, current sensing and bench tests remain open. The bulk positive
+feed improves but its longer ground return needs routing review. All-top/upright
+USB feasibility and full NEMA14 parity are not demonstrated.
 
-Current mechanical assumptions are provisional: X/Y ±11.5 mm motor case-bolt
-axes, Ø2.7 mm holes, R2.35 mm head envelopes. Front M2.5 threads do not qualify
-rear bolts. No carrier, approved gap, rear thread, grip, torque or insulation
-has been established. JLCPCB body-to-edge and panel-rail requirements must be
-checked against the actual overhanging connector/panel arrangement.
+See [the current checkpoint](docs/opposite-usb-checkpoint-20261110.md),
+[the genuine motor review](docs/motor-assembly-review.md) and
+[historical motor checkpoint 0.6.8](docs/motor-assembly-checkpoint-20261110.md).
+GitHub/tscircuit publication is a separate WIP checkpoint, not hardware approval.
 
-No findings are waived or suppressed. Imported component definitions and
-native generated circuit JSON must not be patched.
+## Preserved buzzer and mounting requirements
+
+C94598 manufacturer evidence remains in the reconstruction record. The linked
+2021 sheet supports 3.0 Vo-p rated and 2–4 Vo-p operation, 4 kHz ±200 Hz, 50%
+square wave and 250 °C maximum reflow peak. Peak/RMS current, freewheel behavior,
+acoustics and thermal limits at the actual waveform require bench qualification.
+The buzzer and clamp remain present.
+
+Nominal motor case-bolt axes are X/Y ±11.5 mm, PCB holes Ø2.7 mm and provisional
+head envelopes R2.35 mm. Front M2.5 threads do not qualify rear bolts. No carrier,
+rear thread, approved gap, grip, torque or insulation is established. Actual JLCPCB
+edge/panel-rail and connector-overhang arrangements remain unqualified.
+
+No findings are waived. Imported components and native generated JSON are not patched.
 
 ## Historical verified checkpoint 7da9556, 2026-11-09 UTC
 
@@ -151,4 +154,4 @@ Review artifacts and all failed gates are retained. At that historical checkpoin
 order, GitHub push, merge or tscircuit publication had occurred. This sentence
 does not describe the current publication state.
 
-Current source-bound motor evidence: [motor assembly checkpoint](docs/motor-assembly-checkpoint-20261110.md).
+Current source-bound evidence: [opposite-side USB and motor checkpoint](docs/opposite-usb-checkpoint-20261110.md).

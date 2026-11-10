@@ -5,11 +5,12 @@ test_nema14_i2c0_allocation_and_reserved_current_adc (test_electrical_contracts.
 test_pd_physical_pins_and_configuration (test_electrical_contracts.ElectricalContract.test_pd_physical_pins_and_configuration) ... ok
 test_preserved_physical_no_connect_ports (test_electrical_contracts.ElectricalContract.test_preserved_physical_no_connect_ports) ... ok
 test_unchanged_features_match_public_baseline (test_electrical_contracts.ElectricalContract.test_unchanged_features_match_public_baseline) ... ok
+test_complete_copper_body_and_locator_screen (test_mechanical_contracts.MechanicalContract.test_complete_copper_body_and_locator_screen) ... ok
 test_edge_anchors_and_no_offboard_exemptions (test_mechanical_contracts.MechanicalContract.test_edge_anchors_and_no_offboard_exemptions) ... ok
 test_existing_motor_axes_and_provisional_keepouts (test_mechanical_contracts.MechanicalContract.test_existing_motor_axes_and_provisional_keepouts) ... ok
 test_optional_encoder_and_construction_limits_retained (test_mechanical_contracts.MechanicalContract.test_optional_encoder_and_construction_limits_retained) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.258s
+Ran 11 tests in 0.311s
 
 OK

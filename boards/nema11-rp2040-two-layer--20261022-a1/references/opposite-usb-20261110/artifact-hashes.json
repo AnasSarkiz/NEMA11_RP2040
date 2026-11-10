@@ -1,0 +1,15 @@
+{
+  "scope": "Hashes bind only these new offline review artifacts. Native build receipts remain separate.",
+  "files": {
+    "anchor-reference.json": "ef4bf60e1795299a5cb82fc4169597b433ab6666f69f6d6262abd856a88e06bf",
+    "before-placement.json": "164443f6acd85aaed9f1e0e49c2048a0ae7a2113b9420d07c7c5f66cc8808aae",
+    "bulk-rotation-review.json": "590998a3895e1cf2bf8c6f29664f1ee2a0633c2e465db60e5ef21c0f6150b4e0",
+    "cad-access-review.json": "3b49d97b7f6a91f39f2007b3fb6a3c067ec42393500249c9bf42088a521478ae",
+    "counterfactual-geometry.json": "32cf0b1f17bb1a2db1ddde16e062338bacb223b24fec561e5fcd0cb3f7af5264",
+    "counterfactual-screen.json": "5908d235bce6139af0c438461bd7a087a12a5508109a4e22b4b4b48a6f58870a",
+    "pad-locality-review.json": "394055d0b3c94338f87a08a2ae9692760937d913f71cf05b8996a9ca7cdf8f41",
+    "placement-review.json": "a312ef0a24e341bd747cf16126edf2e7643d7af01a6e42d5bdb97d263a194543",
+    "search-scope.json": "70c1f990a55c9d71faf18b49138858f97accfec2cc60783682aa8d80f4b6cb3a",
+    "testpoint-access-review.json": "6d875b2baa309ede818d2d79487fd0b8895505adce6eb97f81f7bbf1d6d16257"
+  }
+}

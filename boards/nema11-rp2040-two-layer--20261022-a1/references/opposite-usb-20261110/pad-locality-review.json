@@ -1,0 +1,510 @@
+{
+  "scope": "Nearest same-net copper AABB edge separation, mapped from genuine native port_hints to unchanged config connections. Conservative geometric lower bounds only, not routed lengths or electrical equivalence; nearest GND may be a different driver ground pad after placement. Does not prove loop area, return path, impedance or thermal/current delivery.",
+  "connections_sha256": "db4666b95d102c085313adc21fc0cf5acb40b0688d5182ea0d64ac38b268c2c1",
+  "pairs": [
+    {
+      "a": "U_DRV",
+      "b": "C_CP",
+      "same_net": "CP1",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 2.325482420860088,
+        "a_pad": "pcb_smtpad_225",
+        "a_pins": [
+          "4"
+        ],
+        "b_pad": "pcb_smtpad_234",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.8656795005390656,
+        "a_pad": "pcb_smtpad_225",
+        "a_pins": [
+          "4"
+        ],
+        "b_pad": "pcb_smtpad_234",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -0.45980292032102255
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_CP",
+      "same_net": "CP2",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 2.0015012019742824,
+        "a_pad": "pcb_smtpad_224",
+        "a_pins": [
+          "5"
+        ],
+        "b_pad": "pcb_smtpad_233",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.551759063541405,
+        "a_pad": "pcb_smtpad_224",
+        "a_pins": [
+          "5"
+        ],
+        "b_pad": "pcb_smtpad_233",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": -0.44974213843287747
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VCP",
+      "same_net": "PD_VBUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 2.7197107550767607,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_235",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 3.09318325150522,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_235",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": 0.37347249642845926
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VCP",
+      "same_net": "VCP",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.360050040018124,
+        "a_pad": "pcb_smtpad_223",
+        "a_pins": [
+          "6"
+        ],
+        "b_pad": "pcb_smtpad_236",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 0.9343921931799835,
+        "a_pad": "pcb_smtpad_223",
+        "a_pins": [
+          "6"
+        ],
+        "b_pad": "pcb_smtpad_236",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -0.42565784683814045
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VREG",
+      "same_net": "GND",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.1764182458085382,
+        "a_pad": "pcb_smtpad_216",
+        "a_pins": [
+          "13"
+        ],
+        "b_pad": "pcb_smtpad_237",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.1476021248662094,
+        "a_pad": "pcb_smtpad_216",
+        "a_pins": [
+          "13"
+        ],
+        "b_pad": "pcb_smtpad_237",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": -0.02881612094232877
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VREG",
+      "same_net": "VREG",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 0.6000068000000001,
+        "a_pad": "pcb_smtpad_221",
+        "a_pins": [
+          "8"
+        ],
+        "b_pad": "pcb_smtpad_238",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 0.5299988000000009,
+        "a_pad": "pcb_smtpad_221",
+        "a_pins": [
+          "8"
+        ],
+        "b_pad": "pcb_smtpad_238",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -0.07000799999999918
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_DRV_LOGIC",
+      "same_net": "GND",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.4990106188979777,
+        "a_pad": "pcb_smtpad_216",
+        "a_pins": [
+          "13"
+        ],
+        "b_pad": "pcb_smtpad_243",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.5585729196404319,
+        "a_pad": "pcb_smtpad_216",
+        "a_pins": [
+          "13"
+        ],
+        "b_pad": "pcb_smtpad_243",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": 0.059562300742454166
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_DRV_LOGIC",
+      "same_net": "V3V3",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.2218287225172353,
+        "a_pad": "pcb_smtpad_217",
+        "a_pins": [
+          "12"
+        ],
+        "b_pad": "pcb_smtpad_244",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.2942110096254402,
+        "a_pad": "pcb_smtpad_217",
+        "a_pins": [
+          "12"
+        ],
+        "b_pad": "pcb_smtpad_244",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": 0.07238228710820493
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VM",
+      "same_net": "GND",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.6110287281896,
+        "a_pad": "pcb_smtpad_226",
+        "a_pins": [
+          "3"
+        ],
+        "b_pad": "pcb_smtpad_239",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.7080145426959341,
+        "a_pad": "pcb_smtpad_226",
+        "a_pins": [
+          "3"
+        ],
+        "b_pad": "pcb_smtpad_239",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": 0.09698581450633403
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VM",
+      "same_net": "PD_VBUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 4.15769322687657,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_240",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 4.386814913456517,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_240",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": 0.2291216865799468
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_BULK",
+      "same_net": "GND",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 3.775147755458017,
+        "a_pad": "pcb_smtpad_226",
+        "a_pins": [
+          "3"
+        ],
+        "b_pad": "pcb_smtpad_242",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 8.851269945666058,
+        "a_pad": "pcb_smtpad_200",
+        "a_pins": [
+          "29"
+        ],
+        "b_pad": "pcb_smtpad_242",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": 5.076122190208041
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_BULK",
+      "same_net": "PD_VBUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 9.930633968718771,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_241",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 7.46823131528346,
+        "a_pad": "pcb_smtpad_201",
+        "a_pins": [
+          "28"
+        ],
+        "b_pad": "pcb_smtpad_241",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -2.462402653435311
+    },
+    {
+      "a": "U_DRV",
+      "b": "J_MOTOR",
+      "same_net": "A_MINUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 7.920109428286991,
+        "a_pad": "pcb_smtpad_208",
+        "a_pins": [
+          "21"
+        ],
+        "b_pad": "pcb_plated_hole_8",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 5.4353013964771355,
+        "a_pad": "pcb_smtpad_208",
+        "a_pins": [
+          "21"
+        ],
+        "b_pad": "pcb_plated_hole_8",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": -2.4848080318098553
+    },
+    {
+      "a": "U_DRV",
+      "b": "J_MOTOR",
+      "same_net": "A_PLUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 8.62721761511036,
+        "a_pad": "pcb_smtpad_205",
+        "a_pins": [
+          "24"
+        ],
+        "b_pad": "pcb_plated_hole_9",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 7.82152669181973,
+        "a_pad": "pcb_smtpad_205",
+        "a_pins": [
+          "24"
+        ],
+        "b_pad": "pcb_plated_hole_9",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -0.8056909232906309
+    },
+    {
+      "a": "U_DRV",
+      "b": "J_MOTOR",
+      "same_net": "B_MINUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 10.00514835503055,
+        "a_pad": "pcb_smtpad_228",
+        "a_pins": [
+          "1"
+        ],
+        "b_pad": "pcb_plated_hole_11",
+        "b_pins": [
+          "4"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 9.8630605,
+        "a_pad": "pcb_smtpad_228",
+        "a_pins": [
+          "1"
+        ],
+        "b_pad": "pcb_plated_hole_11",
+        "b_pins": [
+          "4"
+        ]
+      },
+      "change_mm": -0.14208785503054955
+    },
+    {
+      "a": "U_DRV",
+      "b": "J_MOTOR",
+      "same_net": "B_PLUS",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 8.938175149680257,
+        "a_pad": "pcb_smtpad_203",
+        "a_pins": [
+          "26"
+        ],
+        "b_pad": "pcb_plated_hole_10",
+        "b_pins": [
+          "3"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 8.1735668,
+        "a_pad": "pcb_smtpad_203",
+        "a_pins": [
+          "26"
+        ],
+        "b_pad": "pcb_plated_hole_10",
+        "b_pins": [
+          "3"
+        ]
+      },
+      "change_mm": -0.7646083496802571
+    },
+    {
+      "a": "U_PD",
+      "b": "C_PD",
+      "same_net": "GND",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 1.9100023000000004,
+        "a_pad": "pcb_smtpad_22",
+        "a_pins": [
+          "11"
+        ],
+        "b_pad": "pcb_smtpad_27",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 1.1899023,
+        "a_pad": "pcb_smtpad_22",
+        "a_pins": [
+          "11"
+        ],
+        "b_pad": "pcb_smtpad_27",
+        "b_pins": [
+          "2"
+        ]
+      },
+      "change_mm": -0.7201000000000004
+    },
+    {
+      "a": "U_PD",
+      "b": "C_PD",
+      "same_net": "PD_VHV",
+      "before": {
+        "conservative_AABB_edge_distance_mm": 3.6908274370569054,
+        "a_pad": "pcb_smtpad_12",
+        "a_pins": [
+          "1"
+        ],
+        "b_pad": "pcb_smtpad_28",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "after": {
+        "conservative_AABB_edge_distance_mm": 3.1196731271933036,
+        "a_pad": "pcb_smtpad_12",
+        "a_pins": [
+          "1"
+        ],
+        "b_pad": "pcb_smtpad_28",
+        "b_pins": [
+          "1"
+        ]
+      },
+      "change_mm": -0.5711543098636018
+    }
+  ]
+}

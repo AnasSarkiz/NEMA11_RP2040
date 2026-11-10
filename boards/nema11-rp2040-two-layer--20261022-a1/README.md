@@ -9,7 +9,7 @@ evidence. It is not byte-identical to the lost 0.6.5 layout. See the repository
 The candidate retains a 28 × 28 × 1.6 mm two-layer PCB, both USB-C inputs,
 RP2040, A4988, buzzer, temperature sensor, RGB indicator, motor connector,
 debug points and optional DNP encoder. The two flat USB connectors are placed
-at adjacent board edges. Compact CH224Q and DMN2300UFB4-7B imports are being
+at opposite north/south board edges; the south data port is offset 3.8 mm east. Compact CH224Q and DMN2300UFB4-7B imports are being
 requalified. All-top assembly with two upright USB-C remains a separate
 feasibility question, not a verified fit.
 
@@ -20,23 +20,24 @@ this reconstructed revision.
 
 **Historical source refactor: 0.6.7-reference-refactor-wip.** The reference is pinned to NEMA14 V2 commit `d9fcd420`. I²C now uses GPIO4/5 (I2C0), leaving ADC0/1 explicitly NC for the still-missing winding-current telemetry. There are seven functional A4 sheets, with all 99 source components preserved. The PCB placement and all supplier files are unchanged. See [the source-refactor record](docs/nema14-source-refactor-20261109.md).
 
-**Electrical native WIP baseline, 2026-11-10.** The current source now has native
-[`dist/index/circuit.json`](dist/index/circuit.json), a full-input hash receipt,
-seven A4 schematic pages and top/bottom PCB review views. Native build and
-strict milestone gates fail: two USB boundary errors, 30 pin warnings and
-four schematic findings remain. The placement analyzer additionally reports
-three courtyard collisions and nine orientation suggestions. All findings are
-retained. See [the native refresh report](docs/native-refresh-20261110.md).
+**Current opposite-side native WIP, 2026-11-10.** Both normal and genuine motor
+assembly JSON outputs have fresh complete-input receipts. Eleven emitted
+contracts, 657 source/import assertions and the expanded geometry screen pass.
+Native builds still fail with two USB boundary errors; 30 pin warnings, four
+schematic findings and a motor-header insertion-metadata warning remain.
+Very small nominal mechanical margins and actual mating/fastening remain
+unqualified. See [the current checkpoint](docs/opposite-usb-checkpoint-20261110.md)
+and [complete validation](VALIDATION.md).
 The older six-layer design remains deleted and recoverable in Git history.
 
-## Current motor assembly checkpoint
+## Historical motor assembly checkpoint (0.6.8)
 
 **0.6.8-motor-assembly-wip** adds the actual OEM motor through a separate
 `assembly-preview.circuit.tsx`, now selected for tscircuit preview. The normal
 electrical build remains `index.circuit.tsx`. Supplier definitions, electrical
-connections and active PCB placements are unchanged. The two USB ports are
-**still adjacent**: opposite-edge candidates were rejected for remaining copper
-and provisional fastener-envelope conflicts, and broader re-layout is ongoing.
+connections and PCB placements were unchanged in 0.6.8. Its USB ports remained
+**adjacent**: opposite-edge candidates were rejected for remaining copper
+and provisional fastener-envelope conflicts, and broader re-layout was still pending at that historical checkpoint.
 See the [USB study](../../docs/engineering-review-20261110/opposite-usb/README.md).
 
 The motor view uses a clearly labeled 10 mm exploded separation, with no invented
@@ -47,6 +48,17 @@ Run `npm run build:assembly` separately for native JSON, PNG and GLB. The defaul
 CLI thumbnail crops the lower motor; `scripts/render_motor_assembly.mjs` provides
 a camera-only full-assembly view without changing native geometry. Rendering
 and publication do not override any failed native gate.
+
+## Current opposite-side USB floorplan
+
+Version **0.6.9-opposite-usb-wip** keeps power USB north and moves data USB south
+to (3.8, -8.65) mm, rotation 0°. Its ESD and input network follow the data port.
+The motor header moves east, and the driver, bypass and supporting circuitry
+are coordinated without changing the electrical netlist or supplier assets.
+The expanded conservative screen includes genuine locator NPTH holes and catches
+old PD/support conflicts that the older copper-only screen omitted. Native
+validation and detailed limitations are recorded in `VALIDATION.md`; positive
+nominal gaps are not plug, fastener, tolerance, routing or manufacture approval.
 
 ## Reproduce
 
@@ -73,7 +85,7 @@ Project links:
 - https://github.com/AnasSarkiz/NEMA11_RP2040
 - https://tscircuit.com/AnasSarkiz/NEMA11_RP2040_Compact_Prototype
 
-The publication target is the existing package, version `0.6.8-motor-assembly-wip`, with both native `dist/index/circuit.json` and `dist/assembly-preview/circuit.json` included. Publication is not a hardware release. There is no new V2 project.
+The publication target is the existing package, version `0.6.9-opposite-usb-wip`, with both native `dist/index/circuit.json` and `dist/assembly-preview/circuit.json` included. Publication is not a hardware release. There is no new V2 project.
 
 Historical checkpoint `7da9556` remains available in Git history. Current
 review images and the seven-page A4 PDF under
@@ -82,4 +94,4 @@ name identifies the reconstruction workflow, not the generation date.
 The source and supplier imports were not changed by this native refresh.
 No upstream tool candidate has been installed in production.
 
-Current source-bound motor evidence: [motor assembly checkpoint](docs/motor-assembly-checkpoint-20261110.md).
+Current source-bound evidence: [opposite-side USB and motor checkpoint](docs/opposite-usb-checkpoint-20261110.md).

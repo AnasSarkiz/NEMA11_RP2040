@@ -100,7 +100,7 @@ def main():
         if receipt['fresh_output']:
             check('emitted-tests', ['python3', '-m', 'unittest', 'discover', '-s', 'emitted-tests', '-v'])
             check('source-integrity', ['python3', 'scripts/verify_source.py'])
-            check('independent-geometry', ['python3', 'scripts/audit_placement_geometry.py', '--baseline', 'references/electrical-placement-20261109/anchor-reference.json', '--output', 'checks/20261108-reconstruction/current-geometry-audit.json'])
+            check('independent-geometry', ['python3', 'scripts/audit_opposite_usb_geometry.py', '--baseline', 'references/opposite-usb-20261110/anchor-reference.json', '--output', 'checks/20261108-reconstruction/current-geometry-audit.json'])
             # Independent read-only native diagnostics use unique logs and no dist output.
             write_status('running:native-diagnostics', results)
             with ThreadPoolExecutor(max_workers=3) as pool:

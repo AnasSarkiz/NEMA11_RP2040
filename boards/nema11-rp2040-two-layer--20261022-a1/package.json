@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype",
-  "version": "0.6.8-motor-assembly-wip",
+  "version": "0.6.9-opposite-usb-wip",
   "private": false,
   "type": "module",
   "description": "WIP two-layer NEMA11 controller with required buzzer, imported JLCPCB components; unrouted until validation gates pass",

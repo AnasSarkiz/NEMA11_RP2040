@@ -52,7 +52,7 @@ const radius = Math.hypot(...hi.map((v, i) => (v - lo[i]) / 2));
 const fov = 38;
 // Bounding sphere fit at 1.15 margin, width >= height: contains every mesh.
 const distance = (radius / Math.sin((fov * Math.PI) / 360)) * 1.15;
-const direction = [0.95, 0.55, -1.5],
+const direction = [0.95, 1.0, -1.5],
   length = Math.hypot(...direction);
 const camPos = lookAt.map((v, i) => v + (distance * direction[i]) / length);
 const options = {

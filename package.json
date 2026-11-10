@@ -1,6 +1,6 @@
 {
   "name": "NEMA11_RP2040",
-  "version": "0.6.8-motor-assembly-wip",
+  "version": "0.6.9-opposite-usb-wip",
   "private": true,
   "type": "module",
   "description": "Active two-layer NEMA11 RP2040 source; NEMA14 requirements adaptation in progress, routing and hardware unqualified",

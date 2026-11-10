@@ -1,6 +1,6 @@
 {
   "native_json": "dist/index/circuit.json",
-  "native_json_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "native_json_sha256": "d07d9965d138ab20566007170f2b5ecf6586a6cec1393fdfe3dfe928a01abdf0",
   "renderer": "circuit-to-svg official convertCircuitJsonToPcbSvg, rasterized by @resvg/resvg-js",
   "views": [
     {

@@ -1,6 +1,6 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
-> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.8-motor-assembly-wip export:schematic-pdf
+> @tsci/AnasSarkiz.NEMA11_RP2040_Compact_Prototype@0.6.9-opposite-usb-wip export:schematic-pdf
 > node scripts/export_a4_schematics.mjs && python3 scripts/export_a4_pdf.py
 
 Exported 7 A4 sheets, 99 components, 346 ports
@@ -54,7 +54,7 @@ Exported 7 A4 sheets, 99 components, 346 ports
   ],
   "components_covered": 99,
   "schematic_ports_covered": 346,
-  "native_json_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "native_json_sha256": "d07d9965d138ab20566007170f2b5ecf6586a6cec1393fdfe3dfe928a01abdf0",
   "historical_20261023_conversion_observations": [
     "Installed Inkscape rendered transparent shapes as black fills; that PDF was rejected.",
     "Installed headless Chromium timed out after 60 seconds; not attributed to tscircuit."

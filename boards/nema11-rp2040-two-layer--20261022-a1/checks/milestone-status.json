@@ -68,9 +68,9 @@
     "independent-geometry": {
       "command": [
         "python3",
-        "scripts/audit_placement_geometry.py",
+        "scripts/audit_opposite_usb_geometry.py",
         "--baseline",
-        "references/electrical-placement-20261109/anchor-reference.json",
+        "references/opposite-usb-20261110/anchor-reference.json",
         "--output",
         "checks/20261108-reconstruction/current-geometry-audit.json"
       ],
@@ -163,7 +163,7 @@
         "--output",
         "checks/strict-source.json"
       ],
-      "exit_code": 1,
+      "exit_code": 0,
       "log": "checks/strict-source.txt"
     },
     "strict-schematic": {

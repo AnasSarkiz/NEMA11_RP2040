@@ -27,6 +27,28 @@ test_routing_cannot_be_silently_enabled (test_nema14_alignment.Nema14Alignment.t
 test_source_contract_is_consistent_but_full_parity_is_incomplete (test_nema14_alignment.Nema14Alignment.test_source_contract_is_consistent_but_full_parity_is_incomplete) ... ok
 test_empty_records_have_no_errors_or_details (test_nested_findings.NestedFindings.test_empty_records_have_no_errors_or_details) ... ok
 test_nested_pad_failure_is_not_hidden_by_grouping (test_nested_findings.NestedFindings.test_nested_pad_failure_is_not_hidden_by_grouping) ... ok
+test_active_poses_and_opposite_edge_orientations (test_opposite_usb_geometry.OppositeUsbGeometry.test_active_poses_and_opposite_edge_orientations) ... ok
+test_all_actual_test_pads_clear_fitted_courtyards (test_opposite_usb_geometry.OppositeUsbGeometry.test_all_actual_test_pads_clear_fitted_courtyards) ... ok
+test_board_center_cannot_silently_shift_edge_rules (test_opposite_usb_geometry.OppositeUsbGeometry.test_board_center_cannot_silently_shift_edge_rules) ... ok
+test_boot_ground_courtyard_access_regression (test_opposite_usb_geometry.OppositeUsbGeometry.test_boot_ground_courtyard_access_regression) ... ok
+test_bulk_physical_rotation_preserves_positive_and_ground_pins (test_opposite_usb_geometry.OppositeUsbGeometry.test_bulk_physical_rotation_preserves_positive_and_ground_pins) ... ok
+test_circle_rectangle_distances_and_positive_clearance (test_opposite_usb_geometry.OppositeUsbGeometry.test_circle_rectangle_distances_and_positive_clearance) ... ok
+test_dnp_copper_remains_included (test_opposite_usb_geometry.OppositeUsbGeometry.test_dnp_copper_remains_included) ... ok
+test_duplicate_locator_cannot_replace_missing_locator (test_opposite_usb_geometry.OppositeUsbGeometry.test_duplicate_locator_cannot_replace_missing_locator) ... ok
+test_fitted_courtyard_overlap_is_not_copper_pass (test_opposite_usb_geometry.OppositeUsbGeometry.test_fitted_courtyard_overlap_is_not_copper_pass) ... ok
+test_limiting_nominal_pairs_are_identified (test_opposite_usb_geometry.OppositeUsbGeometry.test_limiting_nominal_pairs_are_identified) ... ok
+test_missing_or_changed_locator_fails_closed (test_opposite_usb_geometry.OppositeUsbGeometry.test_missing_or_changed_locator_fails_closed) ... ok
+test_moved_motor_axis_fails_closed (test_opposite_usb_geometry.OppositeUsbGeometry.test_moved_motor_axis_fails_closed) ... ok
+test_new_review_artifact_hashes_match (test_opposite_usb_geometry.OppositeUsbGeometry.test_new_review_artifact_hashes_match) ... ok
+test_nonfinite_hole_geometry_fails_closed (test_opposite_usb_geometry.OppositeUsbGeometry.test_nonfinite_hole_geometry_fails_closed) ... ok
+test_npth_body_overlap_fails (test_opposite_usb_geometry.OppositeUsbGeometry.test_npth_body_overlap_fails) ... ok
+test_npth_collision_with_other_component_copper_fails (test_opposite_usb_geometry.OppositeUsbGeometry.test_npth_collision_with_other_component_copper_fails) ... ok
+test_original_native_testpoint_error_is_preserved (test_opposite_usb_geometry.OppositeUsbGeometry.test_original_native_testpoint_error_is_preserved) ... ok
+test_partial_pad_overlap_without_center_inclusion (test_opposite_usb_geometry.OppositeUsbGeometry.test_partial_pad_overlap_without_center_inclusion) ... ok
+test_pinned_counterfactual_passes_without_approving_native_boundary (test_opposite_usb_geometry.OppositeUsbGeometry.test_pinned_counterfactual_passes_without_approving_native_boundary) ... ok
+test_same_connector_locator_to_copper_is_checked (test_opposite_usb_geometry.OppositeUsbGeometry.test_same_connector_locator_to_copper_is_checked) ... ok
+test_stale_native_pose_and_nonfinite_pose_fail_closed (test_opposite_usb_geometry.OppositeUsbGeometry.test_stale_native_pose_and_nonfinite_pose_fail_closed) ... ok
+test_testpoint_screen_uses_actual_polygon_not_rectangle_proxy (test_opposite_usb_geometry.OppositeUsbGeometry.test_testpoint_screen_uses_actual_polygon_not_rectangle_proxy) ... ok
 test_circle_annulus_uses_outer_diameter (test_placement_geometry.PlacementGeometryTests.test_circle_annulus_uses_outer_diameter) ... ok
 test_nonfinite_and_missing_dimensions_fail (test_placement_geometry.PlacementGeometryTests.test_nonfinite_and_missing_dimensions_fail) ... ok
 test_polygon_is_already_in_world_coordinates (test_placement_geometry.PlacementGeometryTests.test_polygon_is_already_in_world_coordinates) ... ok
@@ -48,6 +70,6 @@ test_nonzero_and_exceptions_fail (test_validation_runner.SemanticReports.test_no
 test_truncated_or_malformed_fail (test_validation_runner.SemanticReports.test_truncated_or_malformed_fail) ... ok
 
 ----------------------------------------------------------------------
-Ran 48 tests in 0.366s
+Ran 70 tests in 1.400s
 
 OK

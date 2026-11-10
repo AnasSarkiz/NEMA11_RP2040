@@ -1,0 +1,806 @@
+{
+  "scope": "Imported geometry placement candidate, not native build or routing/assembly qualification. All origin distances below are proxies, never routed lengths.",
+  "parent_checkpoint": "0be7261ecebbb84cd46cf184fde9bb1c0989d90d",
+  "baseline_native_geometry_source_sha256": "37e2f0f8123048bf3c87dbaed27447afeeebb32125d14c78fac18f444e827903",
+  "locator_source_native_sha256": "44a681858961bb94c2c150e7acef6d8d2a1dab3bc70e3a7f244a58175aae9bf7",
+  "locator_source_other_geometry_byte_structure_equal_to_baseline": true,
+  "moved_components": {
+    "J_DATA": {
+      "before": {
+        "pcbX": 8.65,
+        "pcbY": 0.0,
+        "pcbRotation": 90,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 3.8,
+        "pcbY": -8.65,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "U_PD": {
+      "before": {
+        "pcbX": -1.6452,
+        "pcbY": 8.6299,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": -1.7452,
+        "pcbY": 9.35,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      }
+    },
+    "R_PG": {
+      "before": {
+        "pcbX": 1.2233,
+        "pcbY": 7.9389,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 1.1233,
+        "pcbY": 7.9389,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "R_FLASH_CS": {
+      "before": {
+        "pcbX": -5.3372,
+        "pcbY": 8.9919,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": -5.5372,
+        "pcbY": 8.9919,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "R_BOOT": {
+      "before": {
+        "pcbX": -2.7267,
+        "pcbY": 10.4342,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": -4,
+        "pcbY": 9.4,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "C_XIN": {
+      "before": {
+        "pcbX": -0.7491,
+        "pcbY": -8.592402,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": -0.749988,
+        "pcbY": -9.17442,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "R_CC1": {
+      "before": {
+        "pcbX": 9.0,
+        "pcbY": -2.8,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 1,
+        "pcbY": -9.05,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "R_CC2": {
+      "before": {
+        "pcbX": 11.4,
+        "pcbY": -3.12,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 0.6799999999999997,
+        "pcbY": -11.4,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      }
+    },
+    "R_USB_SENSE_L": {
+      "before": {
+        "pcbX": 5.5328,
+        "pcbY": -0.7585,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 5.516271,
+        "pcbY": -0.7585,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "R_VM_H": {
+      "before": {
+        "pcbX": 3.4396,
+        "pcbY": -5.542,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.707663,
+        "pcbY": -5.542,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "R_VM_L": {
+      "before": {
+        "pcbX": 5.2098,
+        "pcbY": -3.5793,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 5.218677,
+        "pcbY": -3.5793,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "C_VM_SENSE": {
+      "before": {
+        "pcbX": 6.2748,
+        "pcbY": -6.6138,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 6.3,
+        "pcbY": -6.4,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "L_BUCK": {
+      "before": {
+        "pcbX": 7.5863,
+        "pcbY": 7.2807,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 7.453018,
+        "pcbY": 7.256409,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "D_DATA": {
+      "before": {
+        "pcbX": 12.65,
+        "pcbY": -0.0,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.8,
+        "pcbY": -12.65,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "U_DRV": {
+      "before": {
+        "pcbX": 2.0,
+        "pcbY": -3.2,
+        "pcbRotation": 270,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 2.0,
+        "pcbY": -0.915881,
+        "pcbRotation": 270,
+        "layer": "top"
+      }
+    },
+    "C_CP": {
+      "before": {
+        "pcbX": -1.8714,
+        "pcbY": -0.9976,
+        "pcbRotation": 270,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -1.8714,
+        "pcbY": 0.8024,
+        "pcbRotation": 270,
+        "layer": "top"
+      }
+    },
+    "C_VCP": {
+      "before": {
+        "pcbX": -1.7542,
+        "pcbY": -2.98,
+        "pcbRotation": 270,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -1.7542,
+        "pcbY": -1.18,
+        "pcbRotation": 270,
+        "layer": "top"
+      }
+    },
+    "C_VREG": {
+      "before": {
+        "pcbX": 0.7487,
+        "pcbY": -7.2,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 0.742719,
+        "pcbY": -4.845873,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "C_DRV_LOGIC": {
+      "before": {
+        "pcbX": 4.25,
+        "pcbY": -7.201,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 4.25,
+        "pcbY": -5.025868,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "C_VM": {
+      "before": {
+        "pcbX": -3.2286,
+        "pcbY": -3.1999,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -3.2286,
+        "pcbY": -1.3999,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "C_BULK": {
+      "before": {
+        "pcbX": -4.9,
+        "pcbY": -9.0,
+        "pcbRotation": 90,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -5.05,
+        "pcbY": -9.0,
+        "pcbRotation": 270,
+        "layer": "top"
+      }
+    },
+    "R_SA": {
+      "before": {
+        "pcbX": 2.59,
+        "pcbY": 1.2137,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 2.59,
+        "pcbY": 3.252618,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "R_SB": {
+      "before": {
+        "pcbX": -1.0772,
+        "pcbY": 0.973,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -1.0772,
+        "pcbY": 3.252616,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "R_REF_H": {
+      "before": {
+        "pcbX": 1.2531,
+        "pcbY": -7.9136,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 1.94,
+        "pcbY": -6.65,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "R_REF_L": {
+      "before": {
+        "pcbX": 3.7126,
+        "pcbY": -9.196,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 0.25,
+        "pcbY": -4.64115,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "C_REF": {
+      "before": {
+        "pcbX": 6.5841,
+        "pcbY": -5.9095,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 6.656837,
+        "pcbY": -4.845871,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "R_ENABLE": {
+      "before": {
+        "pcbX": 5.8341,
+        "pcbY": -2.0509,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.695652,
+        "pcbY": -2.3,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "R_SLEEP": {
+      "before": {
+        "pcbX": 1.9184,
+        "pcbY": -5.8055,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 2.192016,
+        "pcbY": -4.480207,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "J_MOTOR": {
+      "before": {
+        "pcbX": 3.874997,
+        "pcbY": -11.1,
+        "pcbRotation": 180,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 10.063026,
+        "pcbY": 2.952951,
+        "pcbRotation": 90,
+        "layer": "top"
+      }
+    },
+    "U_ESD": {
+      "before": {
+        "pcbX": 9.8,
+        "pcbY": 0.0,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.8,
+        "pcbY": -9.8,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      }
+    },
+    "U_TEMP": {
+      "before": {
+        "pcbX": 4.4204,
+        "pcbY": -7.6231,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 7.816529,
+        "pcbY": -2.2,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "C_TEMP": {
+      "before": {
+        "pcbX": 4.4185,
+        "pcbY": -11.9039,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 7.0,
+        "pcbY": -4.081742,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "R_TEMP_SDA": {
+      "before": {
+        "pcbX": 5.2367,
+        "pcbY": -5.1386,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 5.245894,
+        "pcbY": -5.156858,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "R_TEMP_SCL": {
+      "before": {
+        "pcbX": 7.7948,
+        "pcbY": -7.539,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 7.5,
+        "pcbY": -5.351742,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "D_PWR": {
+      "before": {
+        "pcbX": 13.094,
+        "pcbY": 6.7011,
+        "pcbRotation": 90,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 13.246486,
+        "pcbY": 6.7011,
+        "pcbRotation": 90,
+        "layer": "top"
+      }
+    },
+    "R_PWR_LED": {
+      "before": {
+        "pcbX": 11.9399,
+        "pcbY": 5.6268,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 12.388706,
+        "pcbY": 5.651185,
+        "pcbRotation": 0,
+        "layer": "bottom"
+      }
+    },
+    "R_STATUS_B": {
+      "before": {
+        "pcbX": 9.0633,
+        "pcbY": -5.7392,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 9.0633,
+        "pcbY": -4.281738,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "Q_STATUS_B": {
+      "before": {
+        "pcbX": 9.0668,
+        "pcbY": -9.0595,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 9.335137,
+        "pcbY": -7.744936,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "TP_BOOT": {
+      "before": {
+        "pcbX": 4.9911,
+        "pcbY": 2.3639,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 6.2,
+        "pcbY": 2.695392,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "TP_BOOT_GND": {
+      "before": {
+        "pcbX": 4.9911,
+        "pcbY": 0.8601,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": 6.2,
+        "pcbY": 1.435391,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    },
+    "R_PD_CFG": {
+      "before": {
+        "pcbX": 3.1817,
+        "pcbY": 8.626,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.1817,
+        "pcbY": 9.326,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      }
+    },
+    "C_ESD": {
+      "before": {
+        "pcbX": 7.35,
+        "pcbY": 0.0,
+        "pcbRotation": 270,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 3.8,
+        "pcbY": -7.35,
+        "pcbRotation": 180,
+        "layer": "bottom"
+      }
+    },
+    "R_STATUS_B_GATE": {
+      "before": {
+        "pcbX": 9.4912,
+        "pcbY": -7.2594,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 9.52142,
+        "pcbY": -5.945761,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "R_STATUS_B_PD": {
+      "before": {
+        "pcbX": 8.5024,
+        "pcbY": -10.861,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      },
+      "after": {
+        "pcbX": 8.7652,
+        "pcbY": -9.540657,
+        "pcbRotation": 90,
+        "layer": "bottom"
+      }
+    },
+    "TP_3V3": {
+      "before": {
+        "pcbX": -9.10207,
+        "pcbY": -7.8365,
+        "pcbRotation": 0,
+        "layer": "top"
+      },
+      "after": {
+        "pcbX": -9.35,
+        "pcbY": -7.2,
+        "pcbRotation": 0,
+        "layer": "top"
+      }
+    }
+  },
+  "electrical_locality": [
+    {
+      "a": "U_DRV",
+      "b": "C_CP",
+      "before_origin_distance_mm": 4.454021073142784,
+      "after_origin_distance_mm": 4.235590579241696,
+      "change_mm": -0.2184304939010886
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VCP",
+      "before_origin_distance_mm": 3.7606405890486263,
+      "after_origin_distance_mm": 3.763479305929687,
+      "change_mm": 0.0028387168810608543
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VREG",
+      "before_origin_distance_mm": 4.1911515947290665,
+      "after_origin_distance_mm": 4.126208021055773,
+      "change_mm": -0.06494357367329329
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_DRV_LOGIC",
+      "before_origin_distance_mm": 4.590261539389667,
+      "after_origin_distance_mm": 4.685562201077796,
+      "change_mm": 0.09530066168812912
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_VM",
+      "before_origin_distance_mm": 5.228600000956279,
+      "after_origin_distance_mm": 5.250955375201831,
+      "change_mm": 0.022355374245552007
+    },
+    {
+      "a": "U_DRV",
+      "b": "C_BULK",
+      "before_origin_distance_mm": 9.013878188659973,
+      "after_origin_distance_mm": 10.726391751477333,
+      "change_mm": 1.7125135628173602
+    },
+    {
+      "a": "U_DRV",
+      "b": "R_SA",
+      "before_origin_distance_mm": 4.4529594305360565,
+      "after_origin_distance_mm": 4.210045595121388,
+      "change_mm": -0.2429138354146687
+    },
+    {
+      "a": "U_DRV",
+      "b": "R_SB",
+      "before_origin_distance_mm": 5.184890436643768,
+      "after_origin_distance_mm": 5.181266937633015,
+      "change_mm": -0.003623499010752873
+    },
+    {
+      "a": "U_DRV",
+      "b": "J_MOTOR",
+      "before_origin_distance_mm": 8.119458956729137,
+      "after_origin_distance_mm": 8.943167745318211,
+      "change_mm": 0.8237087885890748
+    },
+    {
+      "a": "U_PD",
+      "b": "C_PD",
+      "before_origin_distance_mm": 3.1350578320024662,
+      "after_origin_distance_mm": 2.467083221133815,
+      "change_mm": -0.6679746108686513
+    },
+    {
+      "a": "U_PD",
+      "b": "R_PD",
+      "before_origin_distance_mm": 4.007281942913425,
+      "after_origin_distance_mm": 3.300088438208891,
+      "change_mm": -0.7071935047045343
+    },
+    {
+      "a": "U_PD",
+      "b": "R_PD_CFG",
+      "before_origin_distance_mm": 4.826901575545124,
+      "after_origin_distance_mm": 4.926958454259585,
+      "change_mm": 0.10005687871446067
+    },
+    {
+      "a": "U_PD",
+      "b": "R_PG",
+      "before_origin_distance_mm": 2.9505547359776263,
+      "after_origin_distance_mm": 3.1967945601805567,
+      "change_mm": 0.24623982420293045
+    },
+    {
+      "a": "U_PD",
+      "b": "J_PD",
+      "before_origin_distance_mm": 1.6453227798824157,
+      "after_origin_distance_mm": 1.8803518394172936,
+      "change_mm": 0.23502905953487785
+    },
+    {
+      "a": "J_DATA",
+      "b": "U_ESD",
+      "before_origin_distance_mm": 1.1500000000000004,
+      "after_origin_distance_mm": 1.1500000000000004,
+      "change_mm": 0.0
+    },
+    {
+      "a": "J_DATA",
+      "b": "D_DATA",
+      "before_origin_distance_mm": 4.0,
+      "after_origin_distance_mm": 4.0,
+      "change_mm": 0.0
+    },
+    {
+      "a": "J_DATA",
+      "b": "R_CC1",
+      "before_origin_distance_mm": 2.821790211904492,
+      "after_origin_distance_mm": 2.82842712474619,
+      "change_mm": 0.006636912841697651
+    },
+    {
+      "a": "J_DATA",
+      "b": "R_CC2",
+      "before_origin_distance_mm": 4.158954195467895,
+      "after_origin_distance_mm": 4.158954195467895,
+      "change_mm": 0.0
+    },
+    {
+      "a": "U_ESD",
+      "b": "C_ESD",
+      "before_origin_distance_mm": 2.450000000000001,
+      "after_origin_distance_mm": 2.450000000000001,
+      "change_mm": 0.0
+    },
+    {
+      "a": "U_MCU",
+      "b": "Y_MCU",
+      "before_origin_distance_mm": 7.836490146104952,
+      "after_origin_distance_mm": 7.836490146104952,
+      "change_mm": 0.0
+    },
+    {
+      "a": "Y_MCU",
+      "b": "C_XIN",
+      "before_origin_distance_mm": 3.3871843793924183,
+      "after_origin_distance_mm": 2.976822910901487,
+      "change_mm": -0.41036146849093136
+    },
+    {
+      "a": "Y_MCU",
+      "b": "C_XOUT",
+      "before_origin_distance_mm": 3.322285967522964,
+      "after_origin_distance_mm": 3.322285967522964,
+      "change_mm": 0.0
+    }
+  ],
+  "unresolved": [
+    "No routed copper: actual loop area, trace length, impedance, current density, return continuity and thermal behavior are not proven.",
+    "Driver VM bulk origin separation increases; local VM ceramic remains adjacent. Bulk-current delivery still needs routing review.",
+    "USB nominal mating faces retain the existing flush-model interpretation; inward recess and off-board exemption are not used. Both native courtyard overhang findings remain open.",
+    "Motor header moved on PCB with genuine supplier rotation; mating cable, hand access and OEM motor screw/insulation/tolerance assembly require review.",
+    "Old baseline has previously untested USB locator overlap with bottom PD parts; this candidate corrects that geometry.",
+    "AABB screen is conservative; positive clearances are nominal, not assembly or manufacturing tolerances.",
+    "Minimum fitted courtyard separation remains the inherited C_BUZZER/R_DM gap\u22480.001mm. Positive nominal clearance is not a tolerance or manufacturing pass.",
+    "C_BULK is physically rotated180 degrees to face pin1(PD_VBUS) toward the driver and local VM ceramic. Pin2 remains GND. Compared with the unrotated opposite-edge candidate, driver positive separation improves12.055\u21927.468mm while ground increases5.271\u21928.851mm. The longer ground return requires explicit routing review; no electrical performance qualification is claimed.",
+    "Native testpoint-center exclusion exposed TP_BOOT_GND inside U_DRV. Full actual pad geometry also exposed partial TP_BOOT/TP_3V3 courtyard overlaps. All three pads were relocated without changing connectivity; real probe/fixture approach remains unqualified."
+  ]
+}
