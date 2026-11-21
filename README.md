@@ -16,6 +16,24 @@ and [validation status](boards/nema11-rp2040-two-layer--20261022-a1/VALIDATION.m
 for its current scope and blockers. Existing reports are tied to their original
 inputs and do not validate subsequent source changes.
 
+## Before enabling routing
+
+The last checked-in native milestone is the November 10 opposite-side USB
+checkpoint for `0.6.9-opposite-usb-wip`. The reports below describe that
+source revision, not a fresh pass or a fabrication approval.
+
+| Gate | Last checked-in result | What to verify next |
+| --- | --- | --- |
+| Pin specification | Strict check failed with 30 warnings. | Review the [pin report](boards/nema11-rp2040-two-layer--20261022-a1/checks/check-pin_specification.txt) against the exact fitted parts, then rerun the strict check. |
+| Schematic placement | Strict check failed with four findings: two imported label collisions, cross-device decoupling grouping and bootstrap orientation. | Review all four in the [schematic report](boards/nema11-rp2040-two-layer--20261022-a1/checks/check-schematic-placement.txt) and rerun the strict check on the current source. |
+| PCB placement | Native build and placement failed on the J_PD and J_DATA courtyard boundary errors. | Check the actual USB plug, overmold and panel/rail clearances against the [opposite-side geometry review](boards/nema11-rp2040-two-layer--20261022-a1/docs/opposite-usb-checkpoint-20261110.md). A nominally flush CAD model is not a mating or tolerance check. |
+
+The [milestone record](boards/nema11-rp2040-two-layer--20261022-a1/checks/milestone-status.json)
+records `passed: false` and `manufacturing_approved: false`. Keep routing
+disabled while these gates remain open. Use the offline commands below for
+source-only edits; when native checks are authorized, regenerate the evidence
+from the exact current inputs rather than reusing these reports.
+
 ## Motor assembly and opposite-side USB request
 
 Version **0.6.8-motor-assembly-wip** adds the genuine STEPPERONLINE motor to
